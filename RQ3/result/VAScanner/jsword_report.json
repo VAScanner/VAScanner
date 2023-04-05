@@ -1,0 +1,24 @@
+{
+    "project name": "jsword",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.14": {
+            "used-method num": 14,
+            "CVE": [
+                "CVE-2018-11771"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.archivers.zip.ZipFile:java.io.InputStream getInputStream(org.apache.commons.compress.archivers.zip.ZipArchiveEntry)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.utils.IOUtils:long copy(java.io.InputStream,java.io.OutputStream)"
+            ],
+            "vul-called frequency": 11
+        },
+        "org.apache.httpcomponents:httpclient:4.5": {
+            "used-method num": 10
+        },
+        "junit:junit:4.12": {
+            "used-method num": 6
+        }
+    }
+}

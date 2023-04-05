@@ -1,0 +1,21 @@
+{
+    "project name": "maven-ant-plugin",
+    "vulnerable dependencies": {
+        "org.apache.ant:ant:1.9.4": {
+            "used-method num": 4
+        },
+        "xalan:xalan:2.7.0": {
+            "used-method num": 5,
+            "CVE": [
+                "CVE-2014-0107"
+            ],
+            "used vul-method": [
+                "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)"
+            ],
+            "vul-called frequency": 1
+        },
+        "junit:junit:4.11": {
+            "used-method num": 4
+        }
+    }
+}

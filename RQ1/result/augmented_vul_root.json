@@ -1,0 +1,651 @@
+{
+    "CVE-2020-26282": {
+        "com.browserup:browserup-proxy-rest": [
+            {
+                "patchV": "2.1.2",
+                "implement": [
+                    "com.browserup.bup.rest.validation.LongPositiveConstraint$LongPositiveValidator:boolean isValid(java.lang.String,javax.validation.ConstraintValidatorContext)",
+                    "com.browserup.bup.rest.validation.PatternConstraint$PatternValidator:boolean isValid(java.lang.String,javax.validation.ConstraintValidatorContext)",
+                    "com.browserup.bup.rest.validation.NotBlankConstraint$NotBlankValidator:boolean isValid(java.lang.Object,javax.validation.ConstraintValidatorContext)",
+                    "com.browserup.bup.rest.validation.PortWithExistingProxyConstraint$PortWithExistingProxyConstraintValidator:boolean isValid(java.lang.Integer,javax.validation.ConstraintValidatorContext)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-12668": {
+        "com.hubspot.jinjava:jinjava": [
+            {
+                "patchV": "2.5.4",
+                "implement": [
+                    "com.hubspot.jinjava.el.ext.JinjavaBeanELResolver:java.lang.Object invoke(jinjava.javax.el.ELContext,java.lang.Object,java.lang.Object,java.lang.Class[],java.lang.Object[])"
+                ]
+            }
+        ]
+    },
+    "CVE-2017-12972": {
+        "com.nimbusds:nimbus-jose-jwt": [
+            {
+                "patchV": "4.39",
+                "implement": [
+                    "com.nimbusds.jose.crypto.RSA1_5:javax.crypto.SecretKey decryptCEK(java.security.PrivateKey,byte[],int,java.security.Provider)"
+                ]
+            }
+        ]
+    },
+    "CVE-2017-2617": {
+        "io.hawt:hawtio-system": [
+            {
+                "patchV": "1.5.5",
+                "implement": [
+                    "io.hawt.web.GitServlet$2:java.lang.Object apply(io.hawt.git.WriteContext)"
+                ]
+            }
+        ]
+    },
+    "CVE-2021-21295": {
+        "io.netty:netty-codec-http2": [
+            {
+                "patchV": "4.1.60.Final",
+                "implement": [
+                    "io.netty.handler.codec.http2.DefaultHttp2ConnectionDecoder$FrameReadListener:int onDataRead(io.netty.channel.ChannelHandlerContext,int,io.netty.buffer.ByteBuf,int,boolean)",
+                    "io.netty.handler.codec.http2.DefaultHttp2ConnectionDecoder$FrameReadListener:void onHeadersRead(io.netty.channel.ChannelHandlerContext,int,io.netty.handler.codec.http2.Http2Headers,int,short,boolean,int,boolean)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-10705": {
+        "io.undertow:undertow-core": [
+            {
+                "patchV": "2.1.1.Final",
+                "implement": [
+                    "io.undertow.server.HttpServerExchange:void invokeExchangeCompleteListeners()",
+                    "io.undertow.server.HttpServerExchange$ExchangeCompleteNextListener:void proceed()",
+                    "io.undertow.server.HttpServerExchange$6:org.xnio.conduits.StreamSinkConduit wrap(io.undertow.util.ConduitFactory,io.undertow.server.HttpServerExchange)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-10719": {
+        "io.undertow:undertow-core": [
+            {
+                "patchV": "2.1.1.Final",
+                "implement": [
+                    "io.undertow.server.HttpServerExchange$6:org.xnio.conduits.StreamSinkConduit wrap(io.undertow.util.ConduitFactory,io.undertow.server.HttpServerExchange)",
+                    "io.undertow.server.HttpServerExchange:void invokeExchangeCompleteListeners()",
+                    "io.undertow.server.HttpServerExchange$ExchangeCompleteNextListener:void proceed()"
+                ]
+            }
+        ]
+    },
+    "CVE-2019-10184": {
+        "io.undertow:undertow-servlet": [
+            {
+                "patchV": "2.0.23.Final",
+                "implement": [
+                    "io.undertow.servlet.handlers.security.ServletSecurityConstraintHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.security.SSLInformationAssociationHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.security.ServletSecurityRoleHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.CrawlerSessionManagerHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.FilterHandler$FilterChainImpl:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                    "io.undertow.servlet.handlers.ServletInitialHandler:void dispatchRequest(io.undertow.server.HttpServerExchange,io.undertow.servlet.handlers.ServletRequestContext,io.undertow.servlet.handlers.ServletChain,javax.servlet.DispatcherType)",
+                    "io.undertow.servlet.handlers.ServletInitialHandler:void handleFirstRequest(io.undertow.server.HttpServerExchange,io.undertow.servlet.handlers.ServletRequestContext)",
+                    "io.undertow.servlet.handlers.SessionRestoringHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.MarkSecureHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.ServletDispatchingHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.FilterHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.handlers.ServletChain$1:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.compat.rewrite.RewriteHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.core.MetricsChainHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                    "io.undertow.servlet.spec.ServletContextImpl:void lambda$null$0(java.lang.String,io.undertow.server.HttpHandler,io.undertow.server.HttpServerExchange)"
+                ]
+            }
+        ]
+    },
+    "CVE-2018-12544": {
+        "io.vertx:vertx-web-api-contract": [
+            {
+                "patchV": "3.5.4",
+                "implement": [
+                    "io.vertx.ext.web.api.validation.impl.XMLTypeValidator$XMLTypeValidatorFactory:io.vertx.ext.web.api.validation.impl.XMLTypeValidator createXMLTypeValidator(java.lang.String)"
+                ]
+            }
+        ]
+    },
+    "CVE-2018-3258": {
+        "mysql:mysql-connector-java": [
+            {
+                "patchV": "8.0.13",
+                "implement": [
+                    "com.mysql.cj.MysqlxSession:void <init>(com.mysql.cj.conf.HostInfo,com.mysql.cj.conf.PropertySet)"
+                ]
+            }
+        ]
+    },
+    "CVE-2018-11775": {
+        "org.apache.activemq:activemq-client": [
+            {
+                "patchV": "5.15.6",
+                "implement": [
+                    "org.apache.activemq.transport.tcp.TcpTransport:void connect()"
+                ]
+            }
+        ]
+    },
+    "CVE-2011-4905": {
+        "org.apache.activemq:activemq-core": [
+            {
+                "patchV": "5.6.0",
+                "implement": [
+                    "org.apache.activemq.ActiveMQConnectionFactory:org.apache.activemq.ActiveMQConnection createActiveMQConnection(org.apache.activemq.transport.Transport,org.apache.activemq.management.JMSStatsImpl)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-1945": {
+        "org.apache.ant:ant": [
+            {
+                "patchV": "1.9.15",
+                "implement": [
+                    "org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter:int executeExternalCompile(java.lang.String[],int,boolean)",
+                    "org.apache.tools.ant.taskdefs.cvslib.CvsTagDiff:void execute()",
+                    "org.apache.tools.ant.taskdefs.optional.Cab:java.io.File createListFile(java.util.Vector)",
+                    "org.apache.tools.ant.taskdefs.optional.Cab:void execute()",
+                    "org.apache.tools.ant.taskdefs.optional.ReplaceRegExp:void doReplace(java.io.File,int)",
+                    "org.apache.tools.ant.taskdefs.FixCRLF:void processFile(java.lang.String)",
+                    "org.apache.tools.ant.taskdefs.Javadoc:void execute()",
+                    "org.apache.tools.ant.taskdefs.Javadoc:void writeExternalArgs(org.apache.tools.ant.types.Commandline)",
+                    "org.apache.tools.ant.taskdefs.Jikes:void compile(java.lang.String[])",
+                    "org.apache.tools.ant.taskdefs.Replace:void processFile(java.io.File)",
+                    "org.apache.tools.ant.taskdefs.TempFile:void execute()",
+                    "org.apache.tools.ant.taskdefs.Zip:java.io.File renameFile()",
+                    "org.apache.tools.ant.types.selectors.modifiedselector.ModifiedSelector:boolean isSelected(org.apache.tools.ant.types.Resource)",
+                    "org.apache.tools.ant.util.JavaEnvUtils:java.io.File createVmsJavaOptionFile(java.lang.String[])",
+                    "org.apache.tools.ant.util.SymbolicLinkUtils:void deleteSymbolicLink(java.io.File,org.apache.tools.ant.Task)"
+                ]
+            },
+            {
+                "patchV": "1.10.8",
+                "implement": [
+                    "org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter:int executeExternalCompile(java.lang.String[],int,boolean)",
+                    "org.apache.tools.ant.taskdefs.cvslib.CvsTagDiff:void execute()",
+                    "org.apache.tools.ant.taskdefs.optional.Cab:java.io.File createListFile(java.util.Vector)",
+                    "org.apache.tools.ant.taskdefs.optional.Cab:void execute()",
+                    "org.apache.tools.ant.taskdefs.optional.ReplaceRegExp:void doReplace(java.io.File,int)",
+                    "org.apache.tools.ant.taskdefs.FixCRLF:void processFile(java.lang.String)",
+                    "org.apache.tools.ant.taskdefs.Javadoc:void execute()",
+                    "org.apache.tools.ant.taskdefs.Javadoc:void writeExternalArgs(org.apache.tools.ant.types.Commandline)",
+                    "org.apache.tools.ant.taskdefs.Jikes:void compile(java.lang.String[])",
+                    "org.apache.tools.ant.taskdefs.Replace:void processFile(java.io.File)",
+                    "org.apache.tools.ant.taskdefs.TempFile:void execute()",
+                    "org.apache.tools.ant.taskdefs.Zip:java.io.File renameFile()",
+                    "org.apache.tools.ant.types.selectors.modifiedselector.ModifiedSelector:boolean isSelected(org.apache.tools.ant.types.Resource)",
+                    "org.apache.tools.ant.util.JavaEnvUtils:java.io.File createVmsJavaOptionFile(java.lang.String[])",
+                    "org.apache.tools.ant.util.SymbolicLinkUtils:void deleteSymbolicLink(java.io.File,org.apache.tools.ant.Task)"
+                ]
+            }
+        ]
+    },
+    "CVE-2022-26884": {
+        "org.apache.dolphinscheduler:dolphinscheduler-server": [
+            {
+                "patchV": "2.0.6",
+                "implement": [
+                    "org.apache.dolphinscheduler.server.log.LoggerRequestProcessor:void process(io.netty.channel.Channel,org.apache.dolphinscheduler.remote.command.Command)"
+                ]
+            }
+        ]
+    },
+    "CVE-2021-26920,CVE-2021-36749": {
+        "org.apache.druid:druid-core": [
+            {
+                "patchV": "0.22.0",
+                "implement": [
+                    "org.apache.druid.java.util.common.collect.Utils:boolean isPrefix(java.util.List,java.util.List)",
+                    "org.apache.druid.java.util.http.client.pool.ResourcePool$ImmediateCreationResourceHolder:boolean lambda$holderListContains$0(java.lang.Object,org.apache.druid.java.util.http.client.pool.ResourcePool$ResourceHolder)",
+                    "org.apache.druid.data.input.impl.TimestampSpec:org.joda.time.DateTime parseDateTime(java.lang.Object)",
+                    "org.apache.druid.timeline.VersionedIntervalTimeline$TimelineEntry:boolean equals(java.lang.Object)",
+                    "org.apache.druid.java.util.common.Pair:int hashCode()",
+                    "org.apache.druid.timeline.partition.StringPartitionChunk:int hashCode()"
+                ]
+            }
+        ]
+    },
+    "CVE-2014-0229": {
+        "org.apache.hadoop:hadoop-hdfs": [
+            {
+                "patchV": "2.4.1",
+                "implement": [
+                    "org.apache.hadoop.hdfs.server.datanode.DataNode:void shutdownDatanode(boolean)"
+                ]
+            }
+        ]
+    },
+    "CVE-2022-40955": {
+        "org.apache.inlong:manager-pojo": [
+            {
+                "patchV": "1.4.0",
+                "implement": [
+                    "org.apache.inlong.manager.pojo.sink.mysql.MySQLSinkDTO:org.apache.inlong.manager.pojo.sink.mysql.MySQLSinkDTO getFromRequest(org.apache.inlong.manager.pojo.sink.mysql.MySQLSinkRequest)"
+                ]
+            }
+        ]
+    },
+    "CVE-2015-1833": {
+        "org.apache.jackrabbit:jackrabbit-webdav": [
+            {
+                "patchV": "2.10.1",
+                "implement": [
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:org.w3c.dom.Document createDocument()",
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:void <clinit>()"
+                ]
+            },
+            {
+                "patchV": "2.4.6",
+                "implement": [
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:org.w3c.dom.Document createDocument()",
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:void <clinit>()"
+                ]
+            },
+            {
+                "patchV": "2.6.6",
+                "implement": [
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:org.w3c.dom.Document createDocument()",
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:void <clinit>()"
+                ]
+            },
+            {
+                "patchV": "2.8.1",
+                "implement": [
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:org.w3c.dom.Document createDocument()",
+                    "org.apache.jackrabbit.webdav.xml.DomUtil:void <clinit>()"
+                ]
+            }
+        ]
+    },
+    "CVE-2017-15703": {
+        "org.apache.nifi:nifi-file-authorizer": [
+            {
+                "patchV": "1.4.0",
+                "implement": [
+                    "org.apache.nifi.authorization.FileAuthorizer:void doOnConfigured(org.apache.nifi.authorization.AuthorizerConfigurationContext)"
+                ]
+            }
+        ]
+    },
+    "CVE-2022-26112": {
+        "org.apache.pinot:pinot-broker": [
+            {
+                "patchV": "0.11.0",
+                "implement": [
+                    "org.apache.pinot.broker.api.resources.PinotClientRequest:void processSqlQueryGet(java.lang.String,java.lang.String,java.lang.String,javax.ws.rs.container.AsyncResponse,org.glassfish.grizzly.http.server.Request)",
+                    "org.apache.pinot.broker.api.resources.PinotClientRequest:void processSqlQueryPost(java.lang.String,javax.ws.rs.container.AsyncResponse,org.glassfish.grizzly.http.server.Request)"
+                ]
+            }
+        ]
+    },
+    "CVE-2022-24280": {
+        "org.apache.pulsar:pulsar-proxy": [
+            {
+                "patchV": "2.7.5",
+                "implement": [
+                    "org.apache.pulsar.proxy.server.ProxyConnection:void doAuthentication(org.apache.pulsar.common.api.AuthData)",
+                    "org.apache.pulsar.proxy.server.ProxyConnection:void handleConnect(org.apache.pulsar.common.api.proto.PulsarApi$CommandConnect)"
+                ]
+            },
+            {
+                "patchV": "2.8.3",
+                "implement": [
+                    "org.apache.pulsar.proxy.server.ProxyConnection:void doAuthentication(org.apache.pulsar.common.api.AuthData)"
+                ]
+            },
+            {
+                "patchV": "2.9.2",
+                "implement": [
+                    "org.apache.pulsar.proxy.server.ProxyConnection:void doAuthentication(org.apache.pulsar.common.api.AuthData)"
+                ]
+            }
+        ]
+    },
+    "CVE-2018-1305": {
+        "org.apache.tomcat.embed:tomcat-embed-core": [
+            {
+                "patchV": "7.0.85",
+                "implement": [
+                    "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet)"
+                ]
+            }
+        ],
+        "org.apache.tomcat:tomcat-catalina": [
+            {
+                "patchV": "8.0.50",
+                "implement": [
+                    "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet)"
+                ]
+            },
+            {
+                "patchV": "7.0.85",
+                "implement": [
+                    "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet)"
+                ]
+            }
+        ]
+    },
+    "CVE-2021-30640": {
+        "org.apache.tomcat.embed:tomcat-embed-core": [
+            {
+                "patchV": "7.0.109",
+                "implement": [
+                    "org.apache.catalina.realm.JNDIRealm:org.apache.catalina.realm.JNDIRealm$User getUserByPattern(javax.naming.directory.DirContext,java.lang.String,java.lang.String,java.lang.String[],int)",
+                    "org.apache.catalina.realm.JNDIRealm:java.util.List getRoles(javax.naming.directory.DirContext,org.apache.catalina.realm.JNDIRealm$User)"
+                ]
+            }
+        ],
+        "org.apache.tomcat:tomcat-catalina": [
+            {
+                "patchV": "7.0.109",
+                "implement": [
+                    "org.apache.catalina.realm.JNDIRealm:org.apache.catalina.realm.JNDIRealm$User getUserByPattern(javax.naming.directory.DirContext,java.lang.String,java.lang.String,java.lang.String[],int)",
+                    "org.apache.catalina.realm.JNDIRealm:java.util.List getRoles(javax.naming.directory.DirContext,org.apache.catalina.realm.JNDIRealm$User)"
+                ]
+            }
+        ]
+    },
+    "CVE-2011-1184": {
+        "org.apache.tomcat:catalina": [
+            {
+                "patchV": "6.0.33",
+                "implement": [
+                    "org.apache.catalina.core.ContainerBase:void setLoader(org.apache.catalina.Loader)",
+                    "org.apache.catalina.core.ContainerBase:void setManager(org.apache.catalina.Manager)",
+                    "org.apache.catalina.core.ContainerBase:void setCluster(org.apache.catalina.Cluster)",
+                    "org.apache.catalina.core.ContainerBase:void setRealm(org.apache.catalina.Realm)",
+                    "org.apache.catalina.core.ContainerBase:void addChildInternal(org.apache.catalina.Container)",
+                    "org.apache.catalina.core.ContainerBase:void start()",
+                    "org.apache.catalina.core.StandardContext:void start()",
+                    "org.apache.catalina.core.StandardPipeline:void start()",
+                    "org.apache.catalina.core.StandardPipeline:void setBasic(org.apache.catalina.Valve)",
+                    "org.apache.catalina.core.StandardPipeline:void addValve(org.apache.catalina.Valve)",
+                    "org.apache.catalina.core.StandardServer:void addService(org.apache.catalina.Service)",
+                    "org.apache.catalina.core.StandardServer:void start()",
+                    "org.apache.catalina.core.StandardService:void setContainer(org.apache.catalina.Container)",
+                    "org.apache.catalina.core.StandardService:void start()",
+                    "org.apache.catalina.manager.host.HostManagerServlet:void start(java.io.PrintWriter,java.lang.String)",
+                    "org.apache.catalina.manager.ManagerServlet:void start(java.io.PrintWriter,java.lang.String)",
+                    "org.apache.catalina.realm.CombinedRealm:void start()",
+                    "org.apache.catalina.session.PersistentManagerBase:void start()",
+                    "org.apache.catalina.startup.Catalina:void start()",
+                    "org.apache.catalina.startup.Embedded:void addEngine(org.apache.catalina.Engine)",
+                    "org.apache.catalina.startup.Embedded:void start()",
+                    "org.apache.catalina.startup.HostConfig:void checkResources(org.apache.catalina.startup.HostConfig$DeployedApplication)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-6816": {
+        "org.apache.tomcat:coyote": [
+            {
+                "patchV": "6.0.48",
+                "implement": [
+                    "org.apache.coyote.http11.InternalInputBuffer:void parseRequestLine()"
+                ]
+            }
+        ]
+    },
+    "CVE-2011-3375": {
+        "org.apache.tomcat:tomcat-coyote": [
+            {
+                "patchV": "7.0.22",
+                "implement": [
+                    "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler:org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState process(org.apache.tomcat.util.net.SocketWrapper,org.apache.tomcat.util.net.SocketStatus)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-6817": {
+        "org.apache.tomcat:tomcat-coyote": [
+            {
+                "patchV": "8.5.8",
+                "implement": [
+                    "org.apache.coyote.http2.Http2Parser:void readHeadersFrame(int,int,int)",
+                    "org.apache.coyote.http2.Http2Parser:void readContinuationFrame(int,int,int)"
+                ]
+            },
+            {
+                "patchV": "9.0.0.M13",
+                "implement": [
+                    "org.apache.coyote.http2.Http2Parser:void readHeadersFrame(int,int,int)",
+                    "org.apache.coyote.http2.Http2Parser:void readContinuationFrame(int,int,int)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-1000339": {
+        "org.bouncycastle:bcprov-jdk14": [
+            {
+                "patchV": "1.56",
+                "implement": [
+                    "org.bouncycastle.crypto.params.DHPublicKeyParameters:void <init>(java.math.BigInteger,org.bouncycastle.crypto.params.DHParameters)"
+                ]
+            }
+        ],
+        "org.bouncycastle:bcprov-jdk15on": [
+            {
+                "patchV": "1.56",
+                "implement": [
+                    "org.bouncycastle.crypto.params.DHPublicKeyParameters:void <init>(java.math.BigInteger,org.bouncycastle.crypto.params.DHParameters)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-1000346": {
+        "org.bouncycastle:bcprov-jdk14": [
+            {
+                "patchV": "1.56",
+                "implement": [
+                    "org.bouncycastle.crypto.params.DHPublicKeyParameters:void <init>(java.math.BigInteger,org.bouncycastle.crypto.params.DHParameters)"
+                ]
+            }
+        ],
+        "org.bouncycastle:bcprov-jdk15on": [
+            {
+                "patchV": "1.56",
+                "implement": [
+                    "org.bouncycastle.crypto.params.DHPublicKeyParameters:void <init>(java.math.BigInteger,org.bouncycastle.crypto.params.DHParameters)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-6347": {
+        "org.jboss.resteasy:resteasy-jaxrs": [
+            {
+                "patchV": "3.0.20.Final",
+                "implement": [
+                    "org.jboss.resteasy.core.ServerResponseWriter:void executeFilters(org.jboss.resteasy.specimpl.BuiltResponse,org.jboss.resteasy.spi.HttpRequest,org.jboss.resteasy.spi.HttpResponse,org.jboss.resteasy.spi.ResteasyProviderFactory,org.jboss.resteasy.core.ResourceMethodInvoker)"
+                ]
+            }
+        ]
+    },
+    "CVE-2018-1000130": {
+        "org.jolokia:jolokia-core": [
+            {
+                "patchV": "1.5.0",
+                "implement": [
+                    "org.jolokia.backend.BackendManager:org.json.simple.JSONObject callRequestDispatcher(org.jolokia.request.JmxRequest)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-7647": {
+        "org.jooby:jooby": [
+            {
+                "patchV": "1.6.7",
+                "implement": [
+                    "org.jooby.Route$AssetDefinition:void <init>(java.lang.String,java.lang.String,org.jooby.Route$Filter,boolean)",
+                    "org.jooby.handlers.AssetHandler:java.net.URL resolve(java.lang.String)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-8629": {
+        "org.keycloak:keycloak-model-infinispan": [
+            {
+                "patchV": "2.4.0.Final",
+                "implement": [
+                    "org.keycloak.models.cache.infinispan.UserCacheSession:org.keycloak.models.UserModel getUserById(java.lang.String,org.keycloak.models.RealmModel)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-1744": {
+        "org.keycloak:keycloak-services": [
+            {
+                "patchV": "9.0.2",
+                "implement": [
+                    "org.keycloak.services.managers.AuthenticationManager:javax.ws.rs.core.Response redirectAfterSuccessfulFlow(org.keycloak.models.KeycloakSession,org.keycloak.models.RealmModel,org.keycloak.models.UserSessionModel,org.keycloak.models.ClientSessionContext,org.jboss.resteasy.spi.HttpRequest,javax.ws.rs.core.UriInfo,org.keycloak.common.ClientConnection,org.keycloak.events.EventBuilder,org.keycloak.sessions.AuthenticationSessionModel,org.keycloak.protocol.LoginProtocol)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-27826": {
+        "org.keycloak:keycloak-services": [
+            {
+                "patchV": "12.0.0",
+                "implement": [
+                    "org.keycloak.authentication.authenticators.broker.IdpReviewProfileAuthenticator:void actionImpl(org.keycloak.authentication.AuthenticationFlowContext,org.keycloak.authentication.authenticators.broker.util.SerializedBrokeredIdentityContext,org.keycloak.broker.provider.BrokeredIdentityContext)",
+                    "org.keycloak.authentication.forms.RegistrationUserCreation:void validate(org.keycloak.authentication.ValidationContext)",
+                    "org.keycloak.authentication.forms.RegistrationProfile:void validate(org.keycloak.authentication.ValidationContext)",
+                    "org.keycloak.authentication.requiredactions.UpdateProfile:void processAction(org.keycloak.authentication.RequiredActionContext)"
+                ]
+            }
+        ]
+    },
+    "CVE-2022-21724": {
+        "org.postgresql:postgresql": [
+            {
+                "patchV": "42.2.25",
+                "implement": [
+                    "org.postgresql.jdbc.PgConnection:void <init>(org.postgresql.util.HostSpec[],java.lang.String,java.lang.String,java.util.Properties,java.lang.String)"
+                ]
+            },
+            {
+                "patchV": "42.3.2",
+                "implement": [
+                    "org.postgresql.core.v3.ConnectionFactoryImpl:void doAuthentication(org.postgresql.core.PGStream,java.lang.String,java.lang.String,java.util.Properties)"
+                ]
+            }
+        ]
+    },
+    "CVE-2013-2165": {
+        "org.richfaces.core:richfaces-core-impl": [
+            {
+                "patchV": "4.3.3.Final",
+                "implement": [
+                    "org.richfaces.util.Util:java.lang.Object decodeObjectData(java.lang.String)"
+                ]
+            }
+        ]
+    },
+    "CVE-2016-5007": {
+        "org.springframework.security:spring-security-web": [
+            {
+                "patchV": "4.1.1.RELEASE",
+                "implement": [
+                    "org.springframework.security.web.access.expression.ExpressionBasedFilterInvocationSecurityMetadataSource:java.util.LinkedHashMap processMap(java.util.LinkedHashMap,org.springframework.expression.ExpressionParser)",
+                    "org.springframework.security.web.DefaultSecurityFilterChain:boolean matches(javax.servlet.http.HttpServletRequest)",
+                    "org.springframework.security.web.header.writers.HstsHeaderWriter:void writeHeaders(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                    "org.springframework.security.web.header.writers.DelegatingRequestMatcherHeaderWriter:void writeHeaders(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                    "org.springframework.security.web.util.matcher.OrRequestMatcher:boolean matches(javax.servlet.http.HttpServletRequest)",
+                    "org.springframework.security.web.util.matcher.NegatedRequestMatcher:boolean matches(javax.servlet.http.HttpServletRequest)",
+                    "org.springframework.security.web.util.matcher.AndRequestMatcher:boolean matches(javax.servlet.http.HttpServletRequest)",
+                    "org.springframework.security.web.csrf.CsrfFilter:void doFilterInternal(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,javax.servlet.FilterChain)",
+                    "org.springframework.security.web.access.intercept.DefaultFilterInvocationSecurityMetadataSource:java.util.Collection getAttributes(java.lang.Object)",
+                    "org.springframework.security.web.savedrequest.HttpSessionRequestCache:void saveRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                    "org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter:boolean requiresAuthentication(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                    "org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint:void commence(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.security.core.AuthenticationException)",
+                    "org.springframework.security.web.authentication.logout.LogoutFilter:boolean requiresLogout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)"
+                ]
+            }
+        ]
+    },
+    "CVE-2018-1199": {
+        "org.springframework.security:spring-security-web": [
+            {
+                "patchV": "4.1.5.RELEASE",
+                "implement": [
+                    "org.springframework.security.web.FilterChainProxy:void doFilterInternal(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)",
+                    "org.springframework.security.web.FilterChainProxy:java.util.List getFilters(java.lang.String)",
+                    "org.springframework.security.web.FilterChainProxy:void <init>()",
+                    "org.springframework.security.web.FilterChainProxy:void <init>(java.util.List)"
+                ]
+            },
+            {
+                "patchV": "4.2.4.RELEASE",
+                "implement": [
+                    "org.springframework.security.web.FilterChainProxy:void doFilterInternal(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)",
+                    "org.springframework.security.web.FilterChainProxy:java.util.List getFilters(java.lang.String)",
+                    "org.springframework.security.web.FilterChainProxy:void <init>()",
+                    "org.springframework.security.web.FilterChainProxy:void <init>(java.util.List)"
+                ]
+            }
+        ]
+    },
+    "CVE-2011-2730": {
+        "org.springframework:spring-web": [
+            {
+                "patchV": "3.0.6.RELEASE",
+                "implement": [
+                    "org.springframework.web.util.ExpressionEvaluationUtils:java.lang.Object evaluate(java.lang.String,java.lang.String,java.lang.Class,javax.servlet.jsp.PageContext)",
+                    "org.springframework.web.util.ExpressionEvaluationUtils:java.lang.Object evaluate(java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)",
+                    "org.springframework.web.util.ExpressionEvaluationUtils:java.lang.String evaluateString(java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)",
+                    "org.springframework.web.util.ExpressionEvaluationUtils:int evaluateInteger(java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)",
+                    "org.springframework.web.util.ExpressionEvaluationUtils:boolean evaluateBoolean(java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)"
+                ]
+            }
+        ]
+    },
+    "CVE-2013-6429": {
+        "org.springframework:spring-web": [
+            {
+                "patchV": "3.2.5.RELEASE",
+                "implement": [
+                    "org.springframework.http.converter.xml.SourceHttpMessageConverter:java.lang.Long getContentLength(javax.xml.transform.Source,org.springframework.http.MediaType)",
+                    "org.springframework.http.converter.AbstractHttpMessageConverter:java.lang.Object read(java.lang.Class,org.springframework.http.HttpInputMessage)"
+                ]
+            }
+        ]
+    },
+    "CVE-2015-3192": {
+        "org.springframework:spring-web": [
+            {
+                "patchV": "4.1.7.RELEASE",
+                "implement": [
+                    "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.Source readStAXSource(java.io.InputStream)"
+                ]
+            }
+        ]
+    },
+    "CVE-2020-28191": {
+        "org.togglz:togglz-console": [
+            {
+                "patchV": "2.9.4",
+                "implement": [
+                    "org.togglz.console.handlers.index.IndexPageHandler:void process(org.togglz.console.RequestEvent)",
+                    "org.togglz.console.handlers.edit.EditPageHandler:void renderEditPage(org.togglz.console.RequestEvent,org.togglz.console.model.FeatureModel)"
+                ]
+            }
+        ]
+    },
+    "CVE-2012-0881": {
+        "xerces:xercesImpl": [
+            {
+                "patchV": "2.12.0",
+                "implement": [
+                    "org.apache.xerces.util.SoftReferenceSymbolTable:void rehash()",
+                    "org.apache.xerces.util.SymbolHash:java.lang.Object get(java.lang.Object)"
+                ]
+            }
+        ]
+    }
+}

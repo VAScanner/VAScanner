@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "22.03.2023 22:21 +0800",
+		"generatedFor": {
+			"space": "EEA3ABE2DF5E9207AE69D54E0763122B",
+			"groupId": "com.excelsiorjet",
+			"artifactId": "excelsior-jet-maven-plugin",
+			"version": "1.3.4-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11771",
+				"cvssScore": "5.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-compress-1.10.jar",
+			"sha1": "5EEB27C57EECE1FAF2D837868AECCC94D84DCC9A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.excelsiorjet",
+				"artifactId": "excelsior-jet-maven-plugin",
+				"version": "1.3.4-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/com.excelsiorjet/excelsior-jet-maven-plugin/1.3.4-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

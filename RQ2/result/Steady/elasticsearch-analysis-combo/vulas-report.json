@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "15.03.2023 11:37 +0800",
+		"generatedFor": {
+			"space": "9CD9F5E854F9F138500FE4CF1D64EC74",
+			"groupId": "com.yakaz.elasticsearch.plugins",
+			"artifactId": "elasticsearch-analysis-combo",
+			"version": "1.5.2-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2017-12629",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "lucene-queryparser-4.6.0.jar",
+			"sha1": "EF35F1EB55E50725777162E376E7B5222F45F7FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.yakaz.elasticsearch.plugins",
+				"artifactId": "elasticsearch-analysis-combo",
+				"version": "1.5.2-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.yakaz.elasticsearch.plugins/elasticsearch-analysis-combo/1.5.2-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

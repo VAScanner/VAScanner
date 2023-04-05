@@ -1,0 +1,70 @@
+{
+    "project name": "tx-lcn",
+    "modules": {
+        "com.github.1991wangliang:lorne-tx-core": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.1.12.Final": {
+                    "used-method num": 12,
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.channel.ChannelInitializer:void <init>()",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void channelUnregistered(io.netty.channel.ChannelHandlerContext)",
+                        "io.netty.util.ReferenceCountUtil:boolean release(java.lang.Object)",
+                        "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf buffer()",
+                        "io.netty.handler.codec.LengthFieldPrepender:void <init>(int,boolean)",
+                        "io.netty.handler.codec.LengthFieldBasedFrameDecoder:void <init>(int,int,int,int,int)",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void channelActive(io.netty.channel.ChannelHandlerContext)"
+                    ],
+                    "vul-called frequency": 11
+                }
+            }
+        },
+        "com.lorne.tx:lorne-tx-core-redis": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.1.12.Final": {
+                    "used-method num": 0
+                }
+            }
+        },
+        "com.lorne.tx:tx-manager": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.1.12.Final": {
+                    "used-method num": 14,
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.util.ReferenceCountUtil:boolean release(java.lang.Object)",
+                        "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf buffer()",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void channelRegistered(io.netty.channel.ChannelHandlerContext)",
+                        "io.netty.handler.codec.LengthFieldPrepender:void <init>(int,boolean)",
+                        "io.netty.handler.codec.LengthFieldBasedFrameDecoder:void <init>(int,int,int,int,int)",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.channel.ChannelInitializer:void <init>()",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void channelUnregistered(io.netty.channel.ChannelHandlerContext)",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)"
+                    ],
+                    "vul-called frequency": 11
+                }
+            }
+        },
+        "com.github.1991wangliang:springcloud-transaction": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.1.12.Final": {
+                    "used-method num": 0
+                }
+            }
+        },
+        "com.github.1991wangliang:dubbo-transaction": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.1.12.Final": {
+                    "used-method num": 0
+                }
+            }
+        }
+    }
+}

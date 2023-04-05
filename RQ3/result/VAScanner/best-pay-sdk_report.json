@@ -1,0 +1,24 @@
+{
+    "project name": "best-pay-sdk",
+    "vulnerable dependencies": {
+        "org.apache.tomcat.embed:tomcat-embed-core:8.5.50": {
+            "used-method num": 1,
+            "CVE": [
+                "CVE-2019-17569,CVE-2020-1935",
+                "CVE-2020-11996",
+                "CVE-2020-13943",
+                "CVE-2021-24122",
+                "CVE-2021-33037",
+                "CVE-2021-41079",
+                "CVE-2022-42252"
+            ],
+            "used vul-method": [
+                "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+            ],
+            "vul-called frequency": 2
+        },
+        "org.bouncycastle:bcprov-jdk15on:1.59": {
+            "used-method num": 1
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "project name": "kafka_book_demo",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:2.0.0": {
+            "used-method num": 44,
+            "CVE": [
+                "CVE-2021-38153"
+            ],
+            "used vul-method": [
+                "org.apache.kafka.clients.admin.AdminClient:org.apache.kafka.clients.admin.AdminClient create(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void commitAsync(org.apache.kafka.clients.consumer.OffsetCommitCallback)",
+                "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.Iterator iterator()",
+                "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.List records(org.apache.kafka.common.TopicPartition)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(java.time.Duration)",
+                "org.apache.kafka.clients.producer.ProducerRecord:void <init>(java.lang.String,java.lang.Integer,java.lang.Long,java.lang.Object,java.lang.Object,java.lang.Iterable)",
+                "org.apache.kafka.common.requests.MetadataResponse:void <init>(int,java.util.List,java.lang.String,int,java.util.List)",
+                "org.apache.kafka.clients.producer.ProducerRecord:void <init>(java.lang.String,java.lang.Object,java.lang.Object)",
+                "org.apache.kafka.clients.admin.Config:void <init>(java.util.Collection)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void commitAsync()",
+                "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void commitAsync(java.util.Map,org.apache.kafka.clients.consumer.OffsetCommitCallback)",
+                "org.apache.kafka.clients.consumer.internals.AbstractPartitionAssignor:void put(java.util.Map,java.lang.Object,java.lang.Object)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void commitSync(java.util.Map)",
+                "org.apache.kafka.clients.producer.KafkaProducer:java.util.concurrent.Future send(org.apache.kafka.clients.producer.ProducerRecord)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void commitSync()",
+                "org.apache.kafka.clients.producer.ProducerRecord:void <init>(java.lang.String,java.lang.Object)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                "org.apache.kafka.common.header.internals.RecordHeaders:void <init>()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)"
+            ],
+            "vul-called frequency": 108
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0
+        }
+    }
+}

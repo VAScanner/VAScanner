@@ -1,0 +1,29 @@
+{
+    "project name": "light-task-scheduler",
+    "modules": {
+        "com.github.ltsopensource:lts-parent": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.7": {
+                    "used-method num": 14
+                },
+                "io.netty:netty-all:4.0.20.Final": {
+                    "used-method num": 30
+                },
+                "org.apache.mina:mina-core:2.0.9": {
+                    "used-method num": 22,
+                    "CVE": [
+                        "CVE-2019-0231"
+                    ],
+                    "used vul-method": [
+                        "org.apache.mina.transport.socket.nio.NioSocketConnector:void <init>()",
+                        "org.apache.mina.transport.socket.nio.NioSocketAcceptor:void <init>()"
+                    ],
+                    "vul-called frequency": 2
+                },
+                "org.codehaus.groovy:groovy:2.4.5": {
+                    "used-method num": 10
+                }
+            }
+        }
+    }
+}

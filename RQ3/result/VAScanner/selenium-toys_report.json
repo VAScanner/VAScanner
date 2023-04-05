@@ -1,0 +1,19 @@
+{
+    "project name": "selenium-toys",
+    "modules": {
+        "org.apache.commons:core": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.3": {
+                    "used-method num": 3
+                }
+            }
+        },
+        "${project.groupId}:testfacade": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.3": {
+                    "used-method num": 0
+                }
+            }
+        }
+    }
+}

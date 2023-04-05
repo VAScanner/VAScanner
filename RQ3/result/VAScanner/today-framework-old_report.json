@@ -1,0 +1,25 @@
+{
+    "project name": "today-framework-old",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.70": {
+            "used-method num": 0
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:9.0.43": {
+            "used-method num": 26,
+            "CVE": [
+                "CVE-2021-30640",
+                "CVE-2021-33037",
+                "CVE-2021-41079"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.core.StandardContext:void setLoader(org.apache.catalina.Loader)",
+                "org.apache.catalina.core.StandardContext:void <init>()",
+                "org.apache.catalina.startup.Tomcat:void destroy()",
+                "org.apache.catalina.startup.Tomcat:void stop()",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.core.StandardContext:void setManager(org.apache.catalina.Manager)"
+            ],
+            "vul-called frequency": 6
+        }
+    }
+}

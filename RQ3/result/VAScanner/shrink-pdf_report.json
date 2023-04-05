@@ -1,0 +1,17 @@
+{
+    "project name": "shrink-pdf",
+    "vulnerable dependencies": {
+        "org.apache.pdfbox:pdfbox:2.0.16": {
+            "used-method num": 4,
+            "CVE": [
+                "CVE-2021-27807"
+            ],
+            "used vul-method": [
+                "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory:org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject createFromStream(org.apache.pdfbox.pdmodel.PDDocument,java.io.InputStream)",
+                "org.apache.pdfbox.pdmodel.graphics.image.LosslessFactory:org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject createFromImage(org.apache.pdfbox.pdmodel.PDDocument,java.awt.image.BufferedImage)",
+                "org.apache.pdfbox.pdfparser.PDFParser:void <init>(org.apache.pdfbox.io.RandomAccessRead)"
+            ],
+            "vul-called frequency": 3
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "project name": "vaadin-hibernate-tomcat-maven-demo",
+    "vulnerable dependencies": {
+        "org.hibernate:hibernate-core:5.2.2.Final": {
+            "used-method num": 3,
+            "CVE": [
+                "CVE-2020-25638"
+            ],
+            "used vul-method": [
+                "org.hibernate.cfg.Configuration:org.hibernate.cfg.Configuration configure(java.lang.String)",
+                "org.hibernate.cfg.Configuration:void <init>()",
+                "org.hibernate.cfg.Configuration:org.hibernate.SessionFactory buildSessionFactory()"
+            ],
+            "vul-called frequency": 3
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "project name": "deb-maven-plugin",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.15": {
+            "used-method num": 7,
+            "CVE": [
+                "CVE-2019-12402"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void <init>(java.io.OutputStream,org.apache.commons.compress.compressors.gzip.GzipParameters)"
+            ],
+            "vul-called frequency": 15
+        }
+    }
+}

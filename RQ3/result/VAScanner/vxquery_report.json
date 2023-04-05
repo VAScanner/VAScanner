@@ -1,0 +1,29 @@
+{
+    "project name": "vxquery",
+    "modules": {
+        "org.apache.vxquery:apache-vxquery": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.3.1": {
+                    "used-method num": 6,
+                    "CVE": [
+                        "CVE-2017-7957",
+                        "CVE-2021-43859"
+                    ],
+                    "used vul-method": [
+                        "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                    ],
+                    "vul-called frequency": 2
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 4
+                },
+                "org.apache.hadoop:hadoop-common:2.7.0": {
+                    "used-method num": 20
+                },
+                "org.apache.hadoop:hadoop-mapreduce-client-core:2.7.0": {
+                    "used-method num": 21
+                }
+            }
+        }
+    }
+}

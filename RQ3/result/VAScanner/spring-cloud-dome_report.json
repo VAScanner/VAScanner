@@ -1,0 +1,27 @@
+{
+    "project name": "spring-cloud-dome",
+    "modules": {
+        "com.yangqifang:fast-cloud": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 2,
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2
+                }
+            }
+        },
+        "com.yangqifang:fast-oauth2-server": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 4
+                }
+            }
+        }
+    }
+}

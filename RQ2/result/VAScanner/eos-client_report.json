@@ -1,0 +1,25 @@
+{
+    "project name": "eos-client",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 4
+        },
+        "com.alibaba:fastjson:1.2.29": {
+            "used-method num": 4
+        },
+        "com.squareup.retrofit2:retrofit:2.4.0": {
+            "used-method num": 5
+        },
+        "org.bouncycastle:bcprov-jdk15on:1.59": {
+            "used-method num": 7,
+            "CVE": [
+                "CVE-2018-1000613",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.jce.ECNamedCurveTable:org.bouncycastle.jce.spec.ECNamedCurveParameterSpec getParameterSpec(java.lang.String)"
+            ],
+            "vul-called frequency": 1
+        }
+    }
+}

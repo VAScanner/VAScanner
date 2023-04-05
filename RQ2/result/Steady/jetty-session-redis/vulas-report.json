@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "15.03.2023 16:38 +0800",
+		"generatedFor": {
+			"space": "9CD9F5E854F9F138500FE4CF1D64EC74",
+			"groupId": "com.ovea",
+			"artifactId": "jetty-session-redis",
+			"version": "2.4.ga-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.6.5.jar",
+			"sha1": "7D18FAF23DF1A5C3A43613952E0E8A182664564B",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.ovea",
+				"artifactId": "jetty-session-redis",
+				"version": "2.4.ga-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.ovea/jetty-session-redis/2.4.ga-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

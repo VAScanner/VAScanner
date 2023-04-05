@@ -1,0 +1,30 @@
+{
+    "project name": "dilithium",
+    "vulnerable dependencies": {
+        "org.bouncycastle:bcprov-jdk15on:1.58": {
+            "used-method num": 27,
+            "CVE": [
+                "CVE-2018-1000613",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.crypto.params.ECDomainParameters:void <init>(org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger,java.math.BigInteger)",
+                "org.bouncycastle.jce.spec.ECPublicKeySpec:void <init>(org.bouncycastle.math.ec.ECPoint,org.bouncycastle.jce.spec.ECParameterSpec)",
+                "org.bouncycastle.util.encoders.Base64:byte[] encode(byte[])",
+                "org.bouncycastle.crypto.params.ECPublicKeyParameters:void <init>(org.bouncycastle.math.ec.ECPoint,org.bouncycastle.crypto.params.ECDomainParameters)",
+                "org.bouncycastle.util.encoders.Hex:byte[] decode(java.lang.String)",
+                "org.bouncycastle.asn1.ASN1InputStream:org.bouncycastle.asn1.ASN1Primitive readObject()",
+                "org.bouncycastle.util.encoders.Hex:java.lang.String toHexString(byte[])",
+                "org.bouncycastle.math.ec.ECAlgorithms:org.bouncycastle.math.ec.ECPoint sumOfTwoMultiplies(org.bouncycastle.math.ec.ECPoint,java.math.BigInteger,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger)",
+                "org.bouncycastle.util.encoders.Base64:byte[] decode(java.lang.String)",
+                "org.bouncycastle.jce.spec.ECParameterSpec:void <init>(org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger,java.math.BigInteger)",
+                "org.bouncycastle.crypto.signers.ECDSASigner:boolean verifySignature(byte[],java.math.BigInteger,java.math.BigInteger)",
+                "org.bouncycastle.asn1.sec.SECNamedCurves:org.bouncycastle.asn1.x9.X9ECParameters getByName(java.lang.String)"
+            ],
+            "vul-called frequency": 32
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0
+        }
+    }
+}

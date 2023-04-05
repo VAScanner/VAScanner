@@ -1,0 +1,21 @@
+{
+    "project name": "OrderLibrary",
+    "vulnerable dependencies": {
+        "org.hibernate:hibernate-core:4.3.5.Final": {
+            "used-method num": 9,
+            "CVE": [
+                "CVE-2020-25638"
+            ],
+            "used vul-method": [
+                "org.hibernate.boot.registry.StandardServiceRegistryBuilder:void <init>()",
+                "org.hibernate.cfg.Configuration:org.hibernate.cfg.Configuration configure(java.lang.String)",
+                "org.hibernate.boot.registry.StandardServiceRegistryBuilder:org.hibernate.boot.registry.StandardServiceRegistry build()",
+                "org.hibernate.cfg.Configuration:void <init>()",
+                "org.hibernate.cfg.Configuration:org.hibernate.SessionFactory buildSessionFactory(org.hibernate.service.ServiceRegistry)",
+                "org.hibernate.boot.registry.StandardServiceRegistryBuilder:org.hibernate.boot.registry.StandardServiceRegistryBuilder applySettings(java.util.Map)",
+                "org.hibernate.Hibernate:void initialize(java.lang.Object)"
+            ],
+            "vul-called frequency": 8
+        }
+    }
+}

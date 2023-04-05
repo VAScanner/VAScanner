@@ -1,0 +1,34 @@
+{
+    "project name": "actframework",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.75": {
+            "used-method num": 59,
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.serializer.JSONSerializer:void write(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,com.alibaba.fastjson.TypeReference,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,boolean)",
+                "com.alibaba.fastjson.JSONObject:java.lang.String getString(java.lang.String)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig,com.alibaba.fastjson.serializer.SerializeFilter[],com.alibaba.fastjson.serializer.SerializerFeature[])",
+                "com.alibaba.fastjson.serializer.JSONSerializer:com.alibaba.fastjson.serializer.ObjectSerializer getObjectWriter(java.lang.Class)",
+                "com.alibaba.fastjson.JSONPath:java.lang.Object eval(java.lang.Object,java.lang.String)",
+                "com.alibaba.fastjson.serializer.SerializeFilterable:java.lang.Object processValue(com.alibaba.fastjson.serializer.JSONSerializer,com.alibaba.fastjson.serializer.BeanContext,java.lang.Object,java.lang.String,java.lang.Object,int)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Boolean getBoolean(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+            ],
+            "vul-called frequency": 59
+        },
+        "junit:junit:4.12": {
+            "used-method num": 6
+        }
+    }
+}

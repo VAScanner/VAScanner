@@ -1,0 +1,3567 @@
+{
+    "CVE-2010-2076": {
+        "rt_frontend_jaxrs_src_main_java_org_apache_cxf_jaxrs_provider_XMLBeanStreamSerializer": [
+            "serialize(XmlObject,XMLStreamWriter)"
+        ]
+    },
+    "CVE-2020-7647": {
+        "jooby_src_main_java_org_jooby_handlers_AssetHandler": [
+            "setRoute()",
+            "toStringPath(Path)",
+            "AssetHandler(String,ClassLoader)",
+            "AssetHandler(String)",
+            "init(String,Path,ClassLoader)",
+            "AssetHandler(Path)"
+        ]
+    },
+    "CVE-2010-2245": {
+        "wink-client-apache-httpclient_src_main_java_org_apache_wink_client_internal_handlers_ApacheHttpClientConnectionHandler": [
+            "openConnection(ClientRequest)"
+        ],
+        "wink-client_src_main_java_org_apache_wink_client_ClientConfig": [
+            "ClientConfig()"
+        ],
+        "wink-server_src_main_java_org_apache_wink_server_internal_handlers_ServerMessageContext": [
+            "getDeploymentConfiguration()"
+        ],
+        "wink-server_src_main_java_org_apache_wink_server_internal_contexts_ServerMediaTypeCharsetAdjuster": [
+            "setDefaultCharsetOnMediaTypeHeader(MultivaluedMap,MediaType)"
+        ],
+        "wink-common_src_main_java_org_apache_wink_common_internal_properties_WinkSystemProperties": [
+            "getSystemProperty(String)"
+        ],
+        "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_xml_AbstractJAXBProvider": [
+            "getXMLInputFactory()",
+            "getXMLStreamReader(InputStream)"
+        ],
+        "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_SourceProvider": [
+            "setupDocumentBuilderToFilterDTD(DocumentBuilder)",
+            "writeTo(Source,Class,Type,Annotation,MediaType,MultivaluedMap,OutputStream)",
+            "asIOExcpetion(Exception)"
+        ]
+    },
+    "CVE-2011-1184": {
+        "container_catalina_src_share_org_apache_catalina_authenticator_DigestAuthenticator": [
+            "setAuthenticateHeader(Request,Response,LoginConfig,String)",
+            "getNonceValidity()",
+            "isValidateUri()",
+            "setNonceValidity(long)",
+            "setOpaque(String)",
+            "isNonceStale()",
+            "getCnonceCacheSize()",
+            "getKey()",
+            "DigestInfo(String,long,String,Map,boolean)",
+            "getCount()",
+            "setValidateUri(boolean)",
+            "setTimestamp(long)",
+            "setCount(long)",
+            "getTimestamp()",
+            "getOpaque()",
+            "setCnonceCacheSize(int)",
+            "setAuthenticateHeader(Request,Response,LoginConfig,String,boolean)",
+            "setKey(String)"
+        ]
+    },
+    "CVE-2020-9487": {
+        "src_main_java_org_apache_nifi_web_security_otp_OtpService": [
+            "OtpService(int,TimeUnit)",
+            "generateUiExtensionToken(OtpAuthenticationToken)",
+            "generateDownloadToken(OtpAuthenticationToken)",
+            "getAuthenticationFromDownloadToken(String)",
+            "getAuthenticationFromUiExtensionToken(String)"
+        ],
+        "src_main_java_org_apache_nifi_web_security_otp_TokenCache": [
+            "toString()",
+            "getKeyForValue(String)",
+            "getIfPresent(Object)",
+            "TokenCache(String,int,TimeUnit)"
+        ]
+    },
+    "CVE-2011-2526": {
+        "container_catalina_src_share_org_apache_catalina_servlets_DefaultServlet": [
+            "checkSendfile(HttpServletRequest,HttpServletResponse,CacheEntry,long,Range)"
+        ]
+    },
+    "CVE-2020-9488": {
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_net_SmtpManager": [
+            "getSmtpManager(Configuration,String,String,String,String,String,String,String,String,int,String,String,boolean,String,int)",
+            "FactoryData(String,String,String,String,String,Serializer,String,String,int,String,String,boolean,int)"
+        ],
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_appender_SmtpAppender": [
+            "setFilter(Filter)",
+            "setSubject(String)",
+            "setSslConfiguration(SslConfiguration)",
+            "setSmtpUsername(String)",
+            "setSmtpHost(String)",
+            "setTo(String)",
+            "setBcc(String)",
+            "setCc(String)",
+            "setReplyTo(String)",
+            "setSmtpPassword(String)",
+            "setBufferSize(int)",
+            "setSmtpDebug(boolean)",
+            "setSmtpProtocol(String)",
+            "setSmtpPort(int)",
+            "setFrom(String)",
+            "setLayout(Layout)"
+        ]
+    },
+    "CVE-2018-11799": {
+        "core_src_main_java_org_apache_oozie_util_ConfigUtils": [
+            "checkAndSetConfigValue(Configuration,String,String,E,boolean)",
+            "checkAndSetDisallowedProperties(Configuration,String,E,boolean)"
+        ],
+        "core_src_main_java_org_apache_oozie_command_coord_CoordUpdateXCommand": [
+            "storeToDB(String,Element,CoordinatorJobBean)"
+        ]
+    },
+    "CVE-2019-12416": {
+        "src_main_java_org_apache_deltaspike_jsf_impl_scope_window_strategy_AbstractClientWindowStrategy": [
+            "sanitiseWindowId(String)"
+        ]
+    },
+    "CVE-2011-2732": {
+        "web_src_main_java_org_springframework_security_web_firewall_FirewalledResponse": [
+            "FirewalledResponse(HttpServletResponse)"
+        ],
+        "web_src_main_java_org_springframework_security_web_firewall_DefaultHttpFirewall": [
+            "getFirewalledResponse(HttpServletResponse)"
+        ],
+        "web_src_main_java_org_springframework_security_web_authentication_logout_SimpleUrlLogoutSuccessHandler": [
+            "SimpleUrlLogoutSuccessHandler()"
+        ]
+    },
+    "CVE-2018-1199": {
+        "web_src_main_java_org_springframework_security_web_firewall_StrictHttpFirewall": [
+            "reset()",
+            "StrictHttpFirewall()",
+            "setAllowUrlEncodedPeriod(boolean)",
+            "decodedUrlContains(HttpServletRequest,String)",
+            "encodedUrlContains(HttpServletRequest,String)",
+            "getFirewalledRequest(HttpServletRequest)",
+            "setAllowUrlEncodedSlash(boolean)",
+            "setAllowSemicolon(boolean)",
+            "getFirewalledResponse(HttpServletResponse)",
+            "setAllowUrlEncodedPercent(boolean)",
+            "setAllowBackSlash(boolean)"
+        ]
+    },
+    "CVE-2020-9489": {
+        "src_main_java_org_apache_tika_parser_pdf_PDFParser": [
+            "setSpacingTolerance(float)",
+            "setAverageCharTolerance(float)"
+        ],
+        "src_main_java_org_apache_tika_parser_pdf_PDFParserConfig": [
+            "setDropThreshold(float)",
+            "getDropThreshold()",
+            "hashCode()",
+            "toString()"
+        ]
+    },
+    "CVE-2019-15477": {
+        "src_main_java_org_jooby_Err": [
+            "handle(Request,Response,Err)"
+        ]
+    },
+    "CVE-2018-12537": {
+        "src_main_java_io_vertx_core_http_impl_headers_VertxHttpHeaders": [
+            "MapEntry()"
+        ]
+    },
+    "CVE-2011-3375": {
+        "java_org_apache_catalina_connector_CoyoteAdapter": [
+            "log(long)"
+        ]
+    },
+    "CVE-2018-12540": {
+        "vertx-web_src_main_java_io_vertx_ext_web_handler_impl_CSRFHandlerImpl": [
+            "handle(RoutingContext)"
+        ]
+    },
+    "CVE-2011-3923": {
+        "xwork-core_src_main_java_com_opensymphony_xwork2_interceptor_ParametersInterceptor": [
+            "setParameters(Object,ValueStack,Map)"
+        ],
+        "xwork-core_src_main_java_com_opensymphony_xwork2_ognl_OgnlValueStack": [
+            "setParameter(String,Object)",
+            "setValue(String,Object,boolean)",
+            "setValue(String,Object)",
+            "trySetValue(String,Object,boolean,Map)"
+        ]
+    },
+    "CVE-2011-4461": {
+        "jetty-server_src_main_java_org_eclipse_jetty_server_handler_ContextHandler": [
+            "getMaxFormKeys()",
+            "setMaxFormKeys(int)",
+            "setMaxFormContentSize(int)"
+        ],
+        "jetty-util_src_main_java_org_eclipse_jetty_util_UrlEncoded": [
+            "decodeUtf16To(InputStream,MultiMap,int)",
+            "decodeUtf16To(InputStream,MultiMap,int,int)",
+            "decode(String)",
+            "decodeTo(InputStream,MultiMap,String,int)",
+            "decode(String,String)"
+        ]
+    },
+    "CVE-2011-4905": {
+        "activemq-core_src_main_java_org_apache_activemq_broker_TransportConnection": [
+            "setConnected(boolean)",
+            "setMarkedCandidate(boolean)",
+            "setBlockedCandidate(boolean)",
+            "TransportConnection(TransportConnector,Transport,Broker,TaskRunnerFactory)",
+            "setBlocked(boolean)",
+            "setSlow(boolean)",
+            "setActive(boolean)"
+        ]
+    },
+    "CVE-2012-0818": {
+        "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_server_tjws_TJWSServletServer": [
+            "setInitParams(Hashtable)",
+            "getInitParams()",
+            "getInitParameter(String)"
+        ],
+        "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_server_tjws_TJWSEmbeddedJaxrsServer": [
+            "setContextParameters(Hashtable)",
+            "setInitParameters(Hashtable)",
+            "start()"
+        ]
+    },
+    "CVE-2018-12972": {
+        "src_query_expression_ExpressionIterator": [
+            "next(long)"
+        ]
+    },
+    "CVE-2012-0881": {
+        "src_org_apache_xerces_impl_dtd_DTDGrammar": [
+            "get(String)"
+        ],
+        "src_org_apache_xerces_util_SymbolHash": [
+            "SymbolHash()",
+            "makeClone()"
+        ],
+        "src_org_apache_xerces_util_SymbolTable": [
+            "SymbolTable(int,float)"
+        ],
+        "src_org_apache_xerces_util_XMLAttributesImpl": [
+            "getTableViewBucket(String)"
+        ]
+    },
+    "CVE-2012-2098": {
+        "src_main_java_org_apache_commons_compress_compressors_bzip2_BZip2CompressorOutputStream": [
+            "endBlock()"
+        ]
+    },
+    "CVE-2018-1305": {
+        "java_org_apache_catalina_authenticator_AuthenticatorBase": [
+            "invoke(Request,Response)"
+        ],
+        "java_org_apache_catalina_core_StandardWrapper": [
+            "servletSecurityAnnotationScan()",
+            "setServletSecurityAnnotationScanRequired(boolean)"
+        ],
+        "java_org_apache_catalina_core_ApplicationServletRegistration": [
+            "setServletSecurity(ServletSecurityElement)"
+        ],
+        "java_org_apache_catalina_core_StandardContext": [
+            "dynamicServletAdded(Wrapper)",
+            "dynamicServletCreated(Servlet)"
+        ]
+    },
+    "CVE-2021-25329": {
+        "java_org_apache_catalina_startup_ContextConfig": [
+            "fixDocBase()"
+        ]
+    },
+    "CVE-2012-2379": {
+        "rt_ws_security_src_main_java_org_apache_cxf_ws_security_wss4j_policyvalidators_ConcreteSupportingTokenPolicyValidator": [
+            "ConcreteSupportingTokenPolicyValidator()"
+        ],
+        "rt_ws_security_src_main_java_org_apache_cxf_ws_security_wss4j_PolicyBasedWSS4JInInterceptor": [
+            "checkSupportingTokenCoverage(AssertionInfoMap,SoapMessage,List,List,List,boolean)"
+        ],
+        "rt_ws_security_src_main_java_org_apache_cxf_ws_security_wss4j_policyvalidators_AbstractSupportingTokenPolicyValidator": [
+            "setSignedElements(SignedEncryptedElements)",
+            "setTimestamp(Element)",
+            "setEncryptedParts(SignedEncryptedParts)",
+            "setSignedParts(SignedEncryptedParts)",
+            "setUtResults(List)",
+            "setEncryptedElements(SignedEncryptedElements)",
+            "setValidateUsernameToken(boolean)",
+            "checkTimestampIsSigned(List)",
+            "checkSignature(WSSecurityEngineResult,List)",
+            "checkSignatureIsSigned(List)"
+        ]
+    },
+    "CVE-2018-1335": {
+        "tika-parsers_src_main_java_org_apache_tika_parser_ocr_TesseractOCRConfig": [
+            "setOutputType(String)",
+            "setTrustedPageSeparator(String)",
+            "loadOtherTesseractConfig(Properties)",
+            "setTessdataPath(String)",
+            "setTesseractPath(String)",
+            "setImageMagickPath(String)",
+            "init(InputStream)"
+        ],
+        "tika-server_src_main_java_org_apache_tika_server_resource_TikaResource": [
+            "tryToGetMethod(Object,String,Class)"
+        ]
+    },
+    "CVE-2012-3451": {
+        "rt_bindings_soap_src_main_java_org_apache_cxf_binding_soap_interceptor_SoapActionInInterceptor": [
+            "SoapActionInAttemptTwoInterceptor()"
+        ]
+    },
+    "CVE-2012-4387": {
+        "xwork-core_src_main_java_com_opensymphony_xwork2_interceptor_ParametersInterceptor": [
+            "setParamNameMaxLength(int)",
+            "setAcceptParamNames(String)"
+        ]
+    },
+    "CVE-2021-32824": {
+        "src_main_java_org_apache_dubbo_common_beanutil_JavaBeanSerializeUtil": [
+            "name2Class(ClassLoader,String)"
+        ],
+        "src_main_java_org_apache_dubbo_common_utils_SerializeClassChecker": [
+            "getInstance()",
+            "SerializeClassChecker()"
+        ]
+    },
+    "CVE-2012-5633": {
+        "api_src_main_java_org_apache_cxf_interceptor_URIMappingInterceptor": [
+            "URIMappingInterceptor()"
+        ]
+    },
+    "CVE-2018-15756": {
+        "spring-web_src_main_java_org_springframework_http_HttpRange": [
+            "getLengthFor(Resource)",
+            "toResourceRegion(Resource)"
+        ]
+    },
+    "CVE-2018-15801": {
+        "oauth2_oauth2-jose_src_main_java_org_springframework_security_oauth2_jwt_JwtIssuerValidator": [
+            "validate(Jwt)"
+        ]
+    },
+    "CVE-2018-16153": {
+        "org_opencastproject_ingest_impl_IngestServiceImpl": [
+            "getAuthedHttpClient()",
+            "getNoAuthHttpClient()"
+        ]
+    },
+    "CVE-2013-1965": {
+        "xwork-core_src_main_java_com_opensymphony_xwork2_ognl_OgnlUtil": [
+            "setEnableEvalExpression(String)",
+            "setEnableExpressionCache(String)",
+            "getValue(String,Map,Object,Class)",
+            "copy(Object,Object,Map,Collection,Collection)",
+            "getValue(String,Map,Object)",
+            "setValue(String,Map,Object,Object,boolean)"
+        ]
+    },
+    "CVE-2021-21290": {
+        "handler_src_main_java_io_netty_handler_ssl_util_SelfSignedCertificate": [
+            "newSelfSignedCertificate(String,PrivateKey,X509Certificate)"
+        ],
+        "common_src_main_java_io_netty_util_internal_NativeLibraryLoader": [
+            "load(String,ClassLoader)"
+        ]
+    },
+    "CVE-2021-21295": {
+        "codec-http2_src_main_java_io_netty_handler_codec_http2_DefaultHttp2ConnectionDecoder": [
+            "ContentLength(long)",
+            "DefaultHttp2ConnectionDecoder(Http2Connection,Http2ConnectionEncoder,Http2FrameReader,Http2PromisedRequestVerifier,boolean,boolean)"
+        ],
+        "codec-http_src_main_java_io_netty_handler_codec_http_HttpUtil": [
+            "normalizeAndGetContentLength(List,boolean,boolean)"
+        ]
+    },
+    "CVE-2013-1966": {
+        "xwork-core_src_main_java_com_opensymphony_xwork2_config_impl_DefaultConfiguration": [
+            "createBootstrapContainer(List)"
+        ],
+        "xwork-core_src_main_java_com_opensymphony_xwork2_ognl_OgnlUtil": [
+            "setEnableEvalExpression(String)",
+            "setEnableExpressionCache(String)",
+            "getValue(String,Map,Object,Class)",
+            "copy(Object,Object,Map,Collection,Collection)",
+            "getValue(String,Map,Object)",
+            "setValue(String,Map,Object,Object,boolean)"
+        ]
+    },
+    "CVE-2021-21318": {
+        "modules_search-service-impl_src_main_java_org_opencastproject_search_impl_persistence_SearchServiceDatabaseImpl": [
+            "getMediaPackages(String)",
+            "getAccessControlLists(String,String)"
+        ]
+    },
+    "CVE-2021-22095": {
+        "spring-amqp_src_main_java_org_springframework_amqp_core_Message": [
+            "setMaxBodyLength(int)"
+        ]
+    },
+    "CVE-2013-2160": {
+        "wstx_branches_4.1_src_java_com_ctc_wstx_api_ReaderConfig": [
+            "getMaxCharacters()",
+            "setMaxCharacters(long)",
+            "getMaxChildrenPerElement()",
+            "setMaxElementCount(long)",
+            "getMaxAttributesPerElement()",
+            "getMaxElementDepth()",
+            "getMaxElementCount()",
+            "setMaxAttributesPerElement(int)",
+            "setMaxChildrenPerElement(int)",
+            "setMaxElementDepth(int)",
+            "getProperty(int)",
+            "setProperty(String,int,Object)"
+        ],
+        "wstx_branches_4.1_src_java_com_ctc_wstx_sr_Element": [
+            "reset(Element,int,String,String)"
+        ],
+        "wstx_branches_4.1_src_java_com_ctc_wstx_sr_AttributeCollector": [
+            "getDefaultNsBuilder()",
+            "AttributeCollector(ReaderConfig,boolean)"
+        ]
+    },
+    "CVE-2013-2165": {
+        "framework_src_main_java_org_richfaces_resource_ResourceUtils": [
+            "ObjectInputStreamImpl(InputStream)",
+            "decodeObjectData(String)"
+        ],
+        "framework_src_main_java_org_richfaces_resource_LookAheadObjectInputStream": [
+            "LookAheadObjectInputStream(InputStream)"
+        ]
+    },
+    "CVE-2021-22696": {
+        "rt_rs_security_oauth-parent_oauth2_src_main_java_org_apache_cxf_rs_security_oauth2_grants_code_JwtRequestCodeFilter": [
+            "isRequestUriValid(Client,String)"
+        ]
+    },
+    "CVE-2021-23792": {
+        "imageio_imageio-metadata_src_main_java_com_twelvemonkeys_imageio_metadata_xmp_XMPReader": [
+            "getChildTextValue(Node)"
+        ]
+    },
+    "CVE-2013-4322": {
+        "java_org_apache_coyote_http11_filters_ChunkedInputFilter": [
+            "ChunkedInputFilter(int,int)",
+            "ChunkedInputFilter(int)"
+        ],
+        "java_org_apache_coyote_http11_AbstractHttp11Protocol": [
+            "getMaxExtensionSize()",
+            "setMaxExtensionSize(int)"
+        ],
+        "java_org_apache_coyote_http11_Http11AprProcessor": [
+            "Http11AprProcessor(int,AprEndpoint,int)"
+        ],
+        "java_org_apache_coyote_http11_AbstractHttp11Processor": [
+            "initializeFilters(int)"
+        ],
+        "java_org_apache_coyote_http11_Http11NioProcessor": [
+            "Http11NioProcessor(int,NioEndpoint,int)"
+        ],
+        "java_org_apache_coyote_http11_Http11Protocol": [
+            "createProcessor()"
+        ],
+        "java_org_apache_coyote_http11_Http11Processor": [
+            "Http11Processor(int,JIoEndpoint,int)"
+        ]
+    },
+    "CVE-2018-17187": {
+        "proton-j_src_main_java_org_apache_qpid_proton_engine_impl_ssl_SslDomainImpl": [
+            "setPeerAuthentication(VerifyMode)"
+        ]
+    },
+    "CVE-2021-43859": {
+        "src_java_com_thoughtworks_xstream_converters_collections_CollectionConverter": [
+            "addCurrentElementToCollection(HierarchicalStreamReader,UnmarshallingContext,Collection,Collection)"
+        ],
+        "src_java_com_thoughtworks_xstream_converters_extended_NamedMapConverter": [
+            "populateMap(HierarchicalStreamReader,UnmarshallingContext,Map,Map)"
+        ],
+        "src_java_com_thoughtworks_xstream_security_InputManipulationException": [
+            "InputManipulationException(String)"
+        ],
+        "src_java_com_thoughtworks_xstream_XStream": [
+            "setCollectionUpdateLimit(int)",
+            "readFromStream()"
+        ],
+        "src_java_com_thoughtworks_xstream_security_AbstractSecurityException": [
+            "AbstractSecurityException(String)"
+        ],
+        "src_java_com_thoughtworks_xstream_converters_collections_MapConverter": [
+            "putCurrentEntryIntoMap(HierarchicalStreamReader,UnmarshallingContext,Map,Map)"
+        ]
+    },
+    "CVE-2013-6429": {
+        "spring-web_src_main_java_org_springframework_http_converter_xml_SourceHttpMessageConverter": [
+            "SourceHttpMessageConverter()",
+            "setProcessExternalEntities(boolean)"
+        ]
+    },
+    "CVE-2021-25641": {
+        "dubbo-rpc_dubbo-rpc-dubbo_src_main_java_org_apache_dubbo_rpc_protocol_dubbo_DubboCodec": [
+            "getSerialization(Channel,Response)",
+            "getSerialization(Channel,Request)",
+            "decodeBody(Channel,InputStream,byte)"
+        ],
+        "dubbo-rpc_dubbo-rpc-dubbo_src_main_java_org_apache_dubbo_rpc_protocol_dubbo_DecodeableRpcInvocation": [
+            "checkSerializationTypeFromRemote()"
+        ],
+        "dubbo-remoting_dubbo-remoting-api_src_main_java_org_apache_dubbo_remoting_exchange_codec_ExchangeCodec": [
+            "decodeHeartbeatData(ObjectInput)",
+            "encodeResponse(Channel,ChannelBuffer,Response)",
+            "encodeRequest(Channel,ChannelBuffer,Request)",
+            "decodeHeartbeatData(Channel,ObjectInput)"
+        ],
+        "dubbo-rpc_dubbo-rpc-api_src_main_java_org_apache_dubbo_rpc_AppResponse": [
+            "AppResponse(Invocation)"
+        ],
+        "dubbo-rpc_dubbo-rpc-api_src_main_java_org_apache_dubbo_rpc_AsyncRpcResult": [
+            "newDefaultAsyncResult(Object,Throwable,Invocation)"
+        ],
+        "dubbo-rpc_dubbo-rpc-dubbo_src_main_java_org_apache_dubbo_rpc_protocol_dubbo_DubboInvoker": [
+            "DubboInvoker(Class,URL,ExchangeClient,Set)"
+        ],
+        "dubbo-rpc_dubbo-rpc-dubbo_src_main_java_org_apache_dubbo_rpc_protocol_dubbo_DubboCodecSupport": [
+            "getResponseSerialization(URL,AppResponse)",
+            "getRequestSerialization(URL,Invocation)"
+        ],
+        "dubbo-common_src_main_java_org_apache_dubbo_common_BaseServiceMetadata": [
+            "versionFromServiceKey(String)"
+        ],
+        "dubbo-rpc_dubbo-rpc-api_src_main_java_org_apache_dubbo_rpc_proxy_AbstractProxyInvoker": [
+            "invoke(Invocation)"
+        ],
+        "src_main_java_org_apache_dubbo_rpc_AsyncRpcResult": [
+            "setException(Throwable)",
+            "setValue(Object)"
+        ],
+        "src_main_java_org_apache_dubbo_remoting_exchange_codec_ExchangeCodec": [
+            "decodeHeartbeatData(Channel,ObjectInput,InputStream)"
+        ],
+        "src_main_java_org_apache_dubbo_remoting_transport_CodecSupport": [
+            "getBuffer(int)",
+            "getPayload(InputStream)"
+        ]
+    },
+    "CVE-2018-17197": {
+        "tika-parsers_src_main_java_org_apache_tika_parser_jdbc_AbstractDBParser": [
+            "getTableReader(Connection,String,EmbeddedDocumentUtil)",
+            "getTableReader(Connection,String,ParseContext)"
+        ],
+        "tika-parsers_src_main_java_org_apache_tika_parser_jdbc_SQLite3TableReader": [
+            "SQLite3TableReader(Connection,String,ParseContext)"
+        ],
+        "tika-parsers_src_main_java_org_apache_tika_parser_jdbc_JDBCTableReader": [
+            "JDBCTableReader(Connection,String,ParseContext)"
+        ],
+        "tika-core_src_main_java_org_apache_tika_parser_RecursiveParserWrapper": [
+            "RecursiveParserWrapper(Parser,boolean)"
+        ],
+        "tika-core_src_main_java_org_apache_tika_exception_CorruptedFileException": [
+            "CorruptedFileException(String)",
+            "CorruptedFileException(String,Throwable)"
+        ]
+    },
+    "CVE-2018-17297": {
+        "hutool-core_src_main_java_cn_hutool_core_io_FileUtil": [
+            "file(String,String)"
+        ]
+    },
+    "CVE-2021-26118": {
+        "src_main_java_org_apache_activemq_artemis_core_protocol_openwire_OpenWireConnection": [
+            "setAdvisorySession(AMQSession)",
+            "getAdvisorySession()",
+            "getCoreMessageObjectPools()",
+            "addSession(SessionInfo,boolean)"
+        ],
+        "src_main_java_org_apache_activemq_artemis_core_protocol_openwire_OpenWireProtocolManager": [
+            "fireAdvisory(AMQConnectionContext,ActiveMQTopic,Command,ConsumerId,String)"
+        ],
+        "src_main_java_org_apache_activemq_artemis_core_protocol_openwire_amq_AMQSession": [
+            "AMQSession(ConnectionInfo,SessionInfo,ActiveMQServer,OpenWireConnection,OpenWireProtocolManager)",
+            "initialize()"
+        ]
+    },
+    "CVE-2013-7285": {
+        "xstream_src_java_com_thoughtworks_xstream_security_RegExpTypePermission": [
+            "getPatterns(String)",
+            "RegExpTypePermission(Pattern)",
+            "RegExpTypePermission(String)"
+        ],
+        "xstream_src_java_com_thoughtworks_xstream_security_ForbiddenClassException": [
+            "ForbiddenClassException(Class)"
+        ],
+        "xstream_src_java_com_thoughtworks_xstream_XStream": [
+            "setupSecurity()",
+            "setupMappers()",
+            "XStream(ReflectionProvider,HierarchicalStreamDriver,ClassLoaderReference,Mapper,ConverterLookup,ConverterRegistry)"
+        ],
+        "xstream_src_java_com_thoughtworks_xstream_security_NoPermission": [
+            "NoPermission(TypePermission)"
+        ],
+        "xstream_src_java_com_thoughtworks_xstream_mapper_SecurityMapper": [
+            "SecurityMapper(Mapper)",
+            "SecurityMapper(Mapper,TypePermission)"
+        ],
+        "xstream_src_java_com_thoughtworks_xstream_security_WildcardTypePermission": [
+            "getRegExpPatterns(String)",
+            "WildcardTypePermission(String)"
+        ],
+        "xstream_src_java_com_thoughtworks_xstream_security_ExplicitTypePermission": [
+            "ExplicitTypePermission(String)"
+        ]
+    },
+    "CVE-2021-26920,CVE-2021-36749": {
+        "core_src_main_java_org_apache_druid_data_input_impl_HttpInputSourceConfig": [
+            "HttpInputSourceConfig(Set)",
+            "toString()",
+            "getAllowedProtocols()"
+        ],
+        "extensions-core_hdfs-storage_src_main_java_org_apache_druid_inputsource_hdfs_HdfsInputSourceConfig": [
+            "HdfsInputSourceConfig(Set)"
+        ],
+        "server_src_main_java_org_apache_druid_metadata_input_InputSourceModule": [
+            "configure(Binder)"
+        ],
+        "server_src_main_java_org_apache_druid_segment_realtime_firehose_HttpFirehoseFactory": [
+            "HttpFirehoseFactory(List,Long,Long,Long,Long,Integer,String,PasswordProvider)",
+            "withSplit(InputSplit)"
+        ],
+        "extensions-core_hdfs-storage_src_main_java_org_apache_druid_firehose_hdfs_HdfsFirehoseFactory": [
+            "HdfsFirehoseFactory(Configuration,Object,Long,Long,Long,Long,Integer)"
+        ],
+        "core_src_main_java_org_apache_druid_data_input_impl_HttpInputSource": [
+            "HttpInputSource(List,String,PasswordProvider)"
+        ],
+        "extensions-core_hdfs-storage_src_main_java_org_apache_druid_inputsource_hdfs_HdfsInputSource": [
+            "HdfsInputSource(Object,Configuration)",
+            "build()"
+        ]
+    },
+    "CVE-2022-1245": {
+        "src_main_java_org_keycloak_services_resources_admin_permissions_ClientPermissions": [
+            "canExchangeTo(ClientModel,ClientModel)"
+        ]
+    },
+    "CVE-2018-20227": {
+        "util_src_main_java_org_eclipse_rdf4j_common_io_ZipUtil": [
+            "isZipStream(InputStream)"
+        ]
+    },
+    "CVE-2022-1415": {
+        "src_main_java_org_drools_compiler_builder_impl_KnowledgeBuilderImpl": [
+            "getLines()",
+            "getMessage()"
+        ]
+    },
+    "CVE-2018-20433": {
+        "src_java_com_mchange_v2_c3p0_cfg_C3P0ConfigXmlUtils": [
+            "extractXmlConfigFromInputStream(InputStream)",
+            "extractXmlConfigFromDefaultResource()"
+        ]
+    },
+    "CVE-2014-0110": {
+        "core_src_main_java_org_apache_cxf_interceptor_OutgoingChainInterceptor": [
+            "handleMessage(Message)"
+        ]
+    },
+    "CVE-2018-8016": {
+        "src_java_org_apache_cassandra_utils_JMXServerUtils": [
+            "Registry(int,RMIClientSocketFactory,RMIServerSocketFactory,Remote)",
+            "Registry(int,Remote)",
+            "createJMXServer(int,boolean)"
+        ]
+    },
+    "CVE-2022-21724": {
+        "src_main_java_org_postgresql_util_ObjectFactory": [
+            "instantiate(String,Properties,boolean,String)"
+        ]
+    },
+    "CVE-2018-8025": {
+        "hbase-thrift_src_main_java_org_apache_hadoop_hbase_thrift_ThriftHttpServlet": [
+            "RemoteUserIdentity(String,String)"
+        ]
+    },
+    "CVE-2014-0193": {
+        "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_UTF8Exception": [
+            "UTF8Exception(String)"
+        ],
+        "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_ContinuationWebSocketFrame": [
+            "ContinuationWebSocketFrame(boolean,int,ByteBuf,String)",
+            "aggregatedText()",
+            "ContinuationWebSocketFrame()",
+            "ContinuationWebSocketFrame(boolean,int,String)"
+        ],
+        "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_UTF8Output": [
+            "UTF8Output(ByteBuf)",
+            "toString()"
+        ]
+    },
+    "CVE-2021-29061": {
+        "src_main_java_com_googlecode_vfsjfilechooser2_utils_VFSURIValidator": [
+            "main(String)"
+        ]
+    },
+    "CVE-2014-0225": {
+        "spring-web_src_main_java_org_springframework_http_converter_xml_Jaxb2CollectionHttpMessageConverter": [
+            "createXmlInputFactory()"
+        ]
+    },
+    "CVE-2018-9159": {
+        "src_main_java_spark_resource_ClassPathResource": [
+            "ClassPathResource(String,ClassLoader)"
+        ]
+    },
+    "CVE-2019-0194": {
+        "camel-core_src_main_java_org_apache_camel_component_file_GenericFileEndpoint": [
+            "isJailStartingDirectory()",
+            "setJailStartingDirectory(boolean)"
+        ]
+    },
+    "CVE-2014-0228": {
+        "ql_src_java_org_apache_hadoop_hive_ql_Driver": [
+            "getHivePrivObjects(HashSet)"
+        ]
+    },
+    "CVE-2014-0229": {
+        "hadoop-hdfs-project_hadoop-hdfs_src_main_java_org_apache_hadoop_hdfs_server_datanode_DataNode": [
+            "DataNode(Configuration,AbstractList,SecureResources)",
+            "startDataNode(Configuration,AbstractList,SecureResources)"
+        ]
+    },
+    "CVE-2014-1904": {
+        "spring-webmvc_src_main_java_org_springframework_web_servlet_tags_form_FormTag": [
+            "getHttpMethod()",
+            "writeTagContent(TagWriter)"
+        ],
+        "spring-tx_src_main_java_org_springframework_transaction_interceptor_RollbackRuleAttribute": [
+            "RollbackRuleAttribute(Class)",
+            "getDepth(Class,int)",
+            "RollbackRuleAttribute(String)"
+        ],
+        "spring-webmvc_src_main_java_org_springframework_web_servlet_mvc_method_annotation_ServletRequestMethodArgumentResolver": [
+            "resolveArgument(MethodParameter,ModelAndViewContainer,NativeWebRequest,WebDataBinderFactory)"
+        ]
+    },
+    "CVE-2021-30129": {
+        "sshd-core_src_main_java_org_apache_sshd_common_channel_exception_SshChannelBufferedOutputException": [
+            "SshChannelBufferedOutputException(int,Throwable)",
+            "SshChannelBufferedOutputException(int,String,Throwable)",
+            "SshChannelBufferedOutputException(int,String)"
+        ],
+        "sshd-core_src_main_java_org_apache_sshd_common_channel_BufferedIoOutputStream": [
+            "BufferedIoOutputStream(Object,int,IoOutputStream,PropertyResolver)",
+            "operationComplete(IoWriteFuture)",
+            "toString()",
+            "BufferedIoOutputStream(Object,IoOutputStream)"
+        ],
+        "sshd-sftp_src_main_java_org_apache_sshd_sftp_server_SftpSubsystem": [
+            "setIoOutputStream(IoOutputStream)"
+        ]
+    },
+    "CVE-2021-30640": {
+        "java_org_apache_catalina_realm_JNDIRealm": [
+            "getUserBySearch(JNDIConnection,String,String)",
+            "getUserByPattern(JNDIConnection,String,String,String,int)"
+        ]
+    },
+    "CVE-2019-0231": {
+        "mina-statemachine_src_main_java_org_apache_mina_statemachine_StateMachineProxyBuilder": [
+            "invoke(Object,Method,Object)"
+        ],
+        "mina-transport-serial_src_main_java_org_apache_mina_transport_serial_SerialConnector": [
+            "SerialConnector(Executor)",
+            "connect0(SocketAddress,SocketAddress,IoSessionInitializer)"
+        ],
+        "mina-core_src_main_java_org_apache_mina_filter_logging_LoggingFilter": [
+            "messageSent(NextFilter,IoSession,WriteRequest)",
+            "exceptionCaught(NextFilter,IoSession,Throwable)",
+            "sessionIdle(NextFilter,IoSession,IdleStatus)",
+            "sessionClosed(NextFilter,IoSession)",
+            "sessionOpened(NextFilter,IoSession)"
+        ],
+        "mina-core_src_main_java_org_apache_mina_filter_firewall_BlacklistFilter": [
+            "setBlacklist(InetAddress)"
+        ]
+    },
+    "CVE-2021-31812": {
+        "pdfbox_src_main_java_org_apache_pdfbox_pdfparser_BaseParser": [
+            "parseCOSDictionaryNameValuePair(COSDictionary)"
+        ]
+    },
+    "CVE-2022-24280": {
+        "src_main_java_org_apache_pulsar_proxy_server_TargetAddressDeniedException": [
+            "TargetAddressDeniedException(String)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+            "ServiceChannelInitializer(ProxyService,ProxyConfiguration,boolean)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ProxyService": [
+            "ProxyService(ProxyConfiguration,AuthenticationService)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_BrokerDiscoveryProvider": [
+            "getAvailableBrokers()"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+            "ProxyConnection(ProxyService,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_BrokerProxyValidator": [
+            "BrokerProxyValidator(AddressResolver,String,String,String)",
+            "resolveAndCheckTargetAddress(String)"
+        ]
+    },
+    "CVE-2014-3579": {
+        "apollo-selector_src_main_java_org_apache_activemq_apollo_filter_XalanXPathEvaluator": [
+            "setupFeatures(DocumentBuilderFactory)"
+        ]
+    },
+    "CVE-2022-24721": {
+        "src_main_java_org_cometd_oort_Seti": [
+            "unprotectSetiChannels(BayeuxServer)",
+            "protectSetiChannels(BayeuxServer)"
+        ]
+    },
+    "CVE-2014-3600": {
+        "activemq-client_src_main_java_org_apache_activemq_filter_XPathExpression": [
+            "setupFeatures(DocumentBuilderFactory)",
+            "getXPathEvaluatorConstructor(String)",
+            "createEvaluator(String)"
+        ]
+    },
+    "CVE-2014-3612": {
+        "activemq-jaas_src_main_java_org_apache_activemq_jaas_LDAPLoginModule": [
+            "getRoles(DirContext,String,String,List)"
+        ]
+    },
+    "CVE-2014-9970": {
+        "src_main_java_org_jasypt_digest_StandardByteDigester": [
+            "matches(byte,byte)"
+        ]
+    },
+    "CVE-2022-25867": {
+        "src_main_java_io_socket_parser_DecodingException": [
+            "DecodingException(String)"
+        ]
+    },
+    "CVE-2019-10088": {
+        "tika-core_src_main_java_org_apache_tika_parser_RecursiveParserWrapper": [
+            "RecursivelySecureContentHandler(ContentHandler,TikaInputStream)"
+        ]
+    },
+    "CVE-2022-26112": {
+        "src_main_java_org_apache_pinot_broker_requesthandler_BaseBrokerRequestHandler": [
+            "BaseBrokerRequestHandler(PinotConfiguration,BrokerRoutingManager,AccessControlFactory,QueryQuotaManager,TableCache,BrokerMetrics)"
+        ]
+    },
+    "CVE-2015-1776": {
+        "src_main_java_org_apache_hadoop_mapreduce_v2_app_MRAppMaster": [
+            "createTaskAttemptListener(AppContext,AMPreemptionPolicy)"
+        ],
+        "src_main_java_org_apache_hadoop_mapred_LocalContainerLauncher": [
+            "setEncryptedSpillKey(byte)"
+        ],
+        "src_main_java_org_apache_hadoop_mapreduce_security_TokenCache": [
+            "getEncryptedSpillKey(Credentials)",
+            "setEncryptedSpillKey(byte,Credentials)"
+        ],
+        "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapreduce_CryptoUtils": [
+            "cryptoPadding(Configuration)",
+            "wrapIfNecessary(Configuration,FSDataOutputStream)",
+            "wrapIfNecessary(Configuration,InputStream,long)",
+            "wrapIfNecessary(Configuration,FSDataInputStream)",
+            "isShuffleEncrypted(Configuration)",
+            "createIV(Configuration)",
+            "getEncryptionKey()"
+        ],
+        "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapred_Task": [
+            "getEncryptedSpillKey()",
+            "readFields(DataInput)",
+            "write(DataOutput)"
+        ],
+        "src_main_java_org_apache_hadoop_mapred_TaskAttemptListenerImpl": [
+            "TaskAttemptListenerImpl(AppContext,JobTokenSecretManager,RMHeartbeatHandler,AMPreemptionPolicy)"
+        ],
+        "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-app_src_main_java_org_apache_hadoop_mapred_YarnChild": [
+            "setEncryptedSpillKeyIfRequired(Task)",
+            "run()"
+        ]
+    },
+    "CVE-2019-10093": {
+        "tika-core_src_main_java_org_apache_tika_utils_XMLReaderUtils": [
+            "acquireSAXParser()",
+            "acquireDOMBuilder()"
+        ]
+    },
+    "CVE-2019-10094": {
+        "tika-core_src_main_java_org_apache_tika_parser_RecursiveParserWrapper": [
+            "RecursivelySecureContentHandler(ContentHandler,TikaInputStream)"
+        ]
+    },
+    "CVE-2022-26850": {
+        "src_main_java_org_apache_nifi_authentication_single_user_writer_StandardLoginCredentialsWriter": [
+            "writeLoginCredentials(SingleUserCredentials,File)"
+        ]
+    },
+    "CVE-2015-2582": {
+        "saml-core_src_main_java_org_keycloak_saml_common_util_StaxParserUtil": [
+            "getElementText(XMLEventReader)"
+        ]
+    },
+    "CVE-2019-10158": {
+        "spring_spring5_spring5-common_src_main_java_org_infinispan_spring_common_provider_SpringCache": [
+            "getWriteTimeout()"
+        ]
+    },
+    "CVE-2019-10174": {
+        "commons_src_main_java_org_infinispan_commons_util_ReflectionUtil": [
+            "setAccessibly(Object,Field,Object)",
+            "getAnnotation(Class,Class)"
+        ],
+        "core_src_main_java_org_infinispan_factories_impl_BasicComponentRegistryImpl": [
+            "invokeInjectionMethod(Object,boolean)",
+            "setInjectionField(Object,boolean)"
+        ],
+        "core_src_main_java_org_infinispan_factories_impl_SecurityActions": [
+            "setAccessible(AccessibleObject)"
+        ]
+    },
+    "CVE-2015-3192": {
+        "spring-web_src_main_java_org_springframework_http_converter_xml_Jaxb2RootElementHttpMessageConverter": [
+            "setSupportDtd(boolean)"
+        ]
+    },
+    "CVE-2019-10184": {
+        "servlet_src_main_java_io_undertow_servlet_core_DeploymentManagerImpl": [
+            "call(HttpServerExchange,Object)"
+        ],
+        "servlet_src_main_java_io_undertow_servlet_handlers_RedirectDirHandler": [
+            "RedirectDirHandler(HttpHandler,ServletPathMatches)"
+        ]
+    },
+    "CVE-2021-32623": {
+        "modules_event-comment_src_main_java_org_opencastproject_event_comment_EventCommentParser": [
+            "getCommentsFromXml(String,UserDirectoryService)",
+            "serializeNode(Document)",
+            "getCommentFromXml(String,UserDirectoryService)",
+            "getCommentReplyFromXml(String,UserDirectoryService)",
+            "newDocument()"
+        ],
+        "modules_common_src_main_java_org_opencastproject_util_XmlSafeParser": [
+            "XmlSafeParser()"
+        ],
+        "modules_oaipmh_src_main_java_org_opencastproject_oaipmh_harvester_OaiPmhRepositoryClient": [
+            "OaiPmhRepositoryClient(String)"
+        ],
+        "modules_caption-impl_src_main_java_org_opencastproject_caption_converters_DFXPCaptionConverter": [
+            "getLanguageList(InputStream)"
+        ],
+        "modules_cover-image-impl_src_main_java_org_opencastproject_coverimage_impl_AbstractCoverImageService": [
+            "generateCoverImageInternal(Job,String,String,int,int,String,String)",
+            "parseXsl(String)"
+        ],
+        "modules_mpeg7_src_main_java_org_opencastproject_metadata_mpeg7_Mpeg7CatalogImpl": [
+            "createDocument()"
+        ],
+        "modules_common_src_main_java_org_opencastproject_util_XmlUtil": [
+            "toXml(Document,OutputStream)"
+        ],
+        "modules_dublincore_src_main_java_org_opencastproject_metadata_dublincore_DublinCoreCatalogList": [
+            "nodeToString(Node)",
+            "parse(String)"
+        ],
+        "modules_dublincore_src_main_java_org_opencastproject_metadata_dublincore_DublinCoreXmlFormat": [
+            "readImpl(Node)",
+            "readImpl(InputSource)",
+            "writeDocument(DublinCoreCatalog)"
+        ],
+        "modules_mpeg7_src_main_java_org_opencastproject_metadata_mpeg7_Mpeg7CatalogService": [
+            "serialize(Mpeg7Catalog)"
+        ],
+        "modules_caption-remote_src_main_java_org_opencastproject_caption_remote_CaptionServiceRemoteImpl": [
+            "getLanguageList(MediaPackageElement,String)"
+        ],
+        "modules_common_src_main_java_org_opencastproject_mediapackage_MediaPackageParser": [
+            "getAsXml(MediaPackage,MediaPackageSerializer)"
+        ],
+        "modules_common_src_main_java_org_opencastproject_mediapackage_XMLCatalogImpl": [
+            "toXml(OutputStream,boolean)",
+            "saveToXml(Node,String,OutputStream)"
+        ],
+        "modules_common_src_main_java_org_opencastproject_mediapackage_MediaPackageBuilderImpl": [
+            "loadFromXml(InputStream)"
+        ]
+    },
+    "CVE-2019-10241": {
+        "jetty-servlet_src_main_java_org_eclipse_jetty_servlet_DefaultServlet": [
+            "sendDirectory(HttpServletRequest,HttpServletResponse,Resource,String)"
+        ],
+        "jetty-util_src_main_java_org_eclipse_jetty_util_resource_Resource": [
+            "getListHTML(String,boolean)",
+            "getListHTML(String,boolean,String)"
+        ]
+    },
+    "CVE-2022-28220": {
+        "src_main_java_org_apache_james_mpt_session_ExternalSession": [
+            "writeLine(String)"
+        ],
+        "src_main_java_org_apache_james_imapserver_netty_SwitchableLineBasedFrameDecoder": [
+            "removeTag(String)"
+        ],
+        "src_main_java_org_apache_james_managesieveserver_netty_ChannelManageSieveResponseWriter": [
+            "needsCommandInjectionDetection()"
+        ]
+    },
+    "CVE-2021-32769": {
+        "inject_src_main_java_io_micronaut_context_env_DefaultEnvironment": [
+            "readPropertySourceListFromFiles(String)",
+            "readPropertiesFromLoader(String,String,PropertySourceLoader)"
+        ],
+        "core_src_main_java_io_micronaut_core_io_file_DefaultFileSystemResourceLoader": [
+            "DefaultFileSystemResourceLoader(String)",
+            "DefaultFileSystemResourceLoader(File)",
+            "DefaultFileSystemResourceLoader()"
+        ],
+        "core_src_main_java_io_micronaut_core_io_scan_DefaultClassPathResourceLoader": [
+            "DefaultClassPathResourceLoader(ClassLoader,String)"
+        ]
+    },
+    "CVE-2021-33330": {
+        "src_main_java_com_liferay_portal_remote_cors_internal_jaxrs_feature_CORSAnnotationDynamicFeature": [
+            "CORSContainerRequestFilter(CORSSupport)"
+        ],
+        "src_main_java_com_liferay_portal_remote_cors_internal_servlet_filter_CORSServletFilter": [
+            "destroy()",
+            "init(FilterConfig)",
+            "getLog()",
+            "doFilter(ServletRequest,ServletResponse,FilterChain)"
+        ]
+    },
+    "CVE-2021-33333": {
+        "src_main_java_com_liferay_portal_workflow_web_internal_portlet_tab_MyWorkflowInstancePortletTab": [
+            "setWorkflowInstanceRenderRequestAttribute(RenderRequest)"
+        ]
+    },
+    "CVE-2022-31139": {
+        "src_main_java_io_github_karlatemp_unsafeaccessor_Root": [
+            "throw0(Throwable)"
+        ]
+    },
+    "CVE-2015-5211": {
+        "spring-webmvc_src_main_java_org_springframework_web_servlet_mvc_method_annotation_AbstractMessageConverterMethodProcessor": [
+            "AbstractMessageConverterMethodProcessor(List,ContentNegotiationManager)",
+            "getProducibleMediaTypes(HttpServletRequest,Class)",
+            "AbstractMessageConverterMethodProcessor(List)",
+            "AbstractMessageConverterMethodProcessor(List,ContentNegotiationManager,List)"
+        ],
+        "spring-web_src_main_java_org_springframework_web_accept_PathExtensionContentNegotiationStrategy": [
+            "setUseJaf(boolean)"
+        ],
+        "spring-web_src_main_java_org_springframework_web_accept_ContentNegotiationManager": [
+            "getAllFileExtensions()"
+        ],
+        "spring-websocket_src_main_java_org_springframework_web_socket_sockjs_transport_handler_JsonpPollingTransportHandler": [
+            "getFrameFormat(ServerHttpRequest)"
+        ]
+    },
+    "CVE-2015-5262": {
+        "httpclient_src_main_java-deprecated_org_apache_http_conn_ssl_SSLSocketFactory": [
+            "connectSocket(Socket,InetSocketAddress,InetSocketAddress,HttpParams)"
+        ]
+    },
+    "CVE-2015-5344": {
+        "camel-core_src_main_java_org_apache_camel_model_dataformat_XStreamDataFormat": [
+            "getPermissions()",
+            "setPermissions(String)"
+        ],
+        "camel-core_src_main_java_org_apache_camel_model_dataformat_JsonDataFormat": [
+            "setPermissions(Class)"
+        ]
+    },
+    "CVE-2015-6524": {
+        "activemq-jaas_src_main_java_org_apache_activemq_jaas_LDAPLoginModule": [
+            "getRoles(DirContext,String,String,List)"
+        ]
+    },
+    "CVE-2021-34433": {
+        "scandium-core_src_main_java_org_eclipse_californium_scandium_dtls_EcdhEcdsaServerKeyExchange": [
+            "EcdhEcdsaServerKeyExchange(SignatureAndHashAlgorithm,XECDHECryptography,PrivateKey,Random,Random)"
+        ]
+    },
+    "CVE-2021-35516": {
+        "src_main_java_org_apache_commons_compress_archivers_sevenz_SevenZFile": [
+            "assertFitsIntoNonNegativeInt(String,long)"
+        ]
+    },
+    "CVE-2015-7940": {
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP192K1Curve": [
+            "SecP192K1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_ECCurve": [
+            "AbstractFp(BigInteger)",
+            "AbstractF2m(int,int,int,int)",
+            "F2m(int,int,int,int,ECFieldElement,ECFieldElement,BigInteger,BigInteger)",
+            "importPoint(ECPoint)",
+            "Fp(BigInteger,BigInteger,ECFieldElement,ECFieldElement,BigInteger,BigInteger)",
+            "Fp(BigInteger,BigInteger,BigInteger,BigInteger,BigInteger)",
+            "F2m(int,int,int,int,BigInteger,BigInteger,BigInteger,BigInteger)"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_ReferenceMultiplier": [
+            "multiplyPositive(ECPoint,BigInteger)"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP224R1Curve": [
+            "SecP224R1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP256K1Curve": [
+            "SecP256K1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP192R1Curve": [
+            "SecP192R1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_djb_Curve25519": [
+            "Curve25519()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP224K1Curve": [
+            "SecP224K1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP521R1Point": [
+            "getCompressionYTilde()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP256R1Curve": [
+            "SecP256R1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP521R1Curve": [
+            "SecP521R1Curve()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_ECPoint": [
+            "AbstractFp(ECCurve,ECFieldElement,ECFieldElement,ECFieldElement)",
+            "AbstractF2m(ECCurve,ECFieldElement,ECFieldElement,ECFieldElement)",
+            "AbstractF2m(ECCurve,ECFieldElement,ECFieldElement)",
+            "AbstractFp(ECCurve,ECFieldElement,ECFieldElement)",
+            "Fp(ECCurve,ECFieldElement,ECFieldElement,boolean)",
+            "checkCurveEquation()"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_AbstractECMultiplier": [
+            "multiply(ECPoint,BigInteger)"
+        ],
+        "core_src_main_java_org_bouncycastle_math_ec_custom_sec_SecP384R1Curve": [
+            "SecP384R1Curve()"
+        ]
+    },
+    "CVE-2021-36162": {
+        "dubbo-registry_dubbo-registry-kubernetes_src_main_java_org_apache_dubbo_registry_kubernetes_MeshConstant": [
+            "getVsDefinition()",
+            "getDrDefinition()"
+        ],
+        "dubbo-registry_dubbo-registry-kubernetes_src_main_java_org_apache_dubbo_registry_kubernetes_KubernetesMeshEnvListener": [
+            "onClose(WatcherException)",
+            "isEnable()"
+        ],
+        "dubbo-common_src_main_java_org_apache_dubbo_common_utils_PojoUtils": [
+            "getFieldObject(Object,Type)"
+        ]
+    },
+    "CVE-2019-11343": {
+        "src_main_java_org_torpedoquery_jpa_internal_conditions_NotLikeCondition": [
+            "NotLikeCondition(Type,Selector,String)",
+            "getLike()"
+        ],
+        "src_main_java_org_torpedoquery_jpa_internal_conditions_LikeCondition": [
+            "getParameters()",
+            "getComparator()",
+            "LikeCondition(Type,Selector,String)"
+        ]
+    },
+    "CVE-2022-33681": {
+        "src_main_java_org_apache_pulsar_client_impl_PulsarChannelInitializer": [
+            "PulsarChannelInitializer(ClientConfigurationData,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+            "handleConnected(CommandConnected)",
+            "connect(String,InetSocketAddress,int,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+            "get()",
+            "ServiceChannelInitializer(ProxyService,ProxyConfiguration,boolean)"
+        ],
+        "src_main_java_org_apache_pulsar_common_util_NettyClientSslContextRefresher": [
+            "NettyClientSslContextRefresher(boolean,String,AuthenticationDataProvider,long)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+            "connectToBroker(InetSocketAddress)",
+            "ProxyConnection(ProxyService,Supplier,DnsAddressResolverGroup)"
+        ],
+        "src_main_java_org_apache_pulsar_client_impl_ClientCnx": [
+            "ClientCnx(ClientConfigurationData,EventLoopGroup,int)"
+        ]
+    },
+    "CVE-2019-11808": {
+        "ratpack-session_src_main_java_ratpack_session_internal_DefaultSessionIdGenerator": [
+            "generateSessionId()"
+        ]
+    },
+    "CVE-2016-0750": {
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_marshall_MarshallerUtil": [
+            "CheckedInputStream(InputStream,List)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_BulkGetKeysOperation": [
+            "BulkGetKeysOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence,int)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_HotRodOperation": [
+            "HotRodOperation(Codec,int,ClientIntelligence,byte,AtomicInteger)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_PutOperation": [
+            "PutOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,byte,long,TimeUnit,long,TimeUnit)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_FaultTolerantPingOperation": [
+            "FaultTolerantPingOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_PutStreamOperation": [
+            "PutStreamOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,long,long,TimeUnit,long,TimeUnit)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_RetryOnFailureOperation": [
+            "RetryOnFailureOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_iteration_ReplKeyTracker": [
+            "track(byte,short)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_RemoveOperation": [
+            "RemoveOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_ReplaceIfUnmodifiedOperation": [
+            "ReplaceIfUnmodifiedOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,byte,long,TimeUnit,long,TimeUnit,long)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_RemoteCacheManager": [
+            "start()",
+            "administration()"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_ContainsKeyOperation": [
+            "ContainsKeyOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_GetAllOperation": [
+            "GetAllOperation(Codec,TransportFactory,Set,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_AddClientListenerOperation": [
+            "AddClientListenerOperation(Codec,TransportFactory,String,AtomicInteger,int,ClientIntelligence,ClientListenerNotifier,Object,byte,byte)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_configuration_Configuration": [
+            "serialWhitelist()",
+            "Configuration(ExecutorFactoryConfiguration,Class,FailoverRequestBalancingStrategy,ClassLoader,ClientIntelligence,ConnectionPoolConfiguration,int,Class,boolean,int,Marshaller,Class,ProtocolVersion,List,int,SecurityConfiguration,boolean,boolean,Class,int,int,NearCacheConfiguration,List)",
+            "toString()"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_RemoveIfUnmodifiedOperation": [
+            "RemoveIfUnmodifiedOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,long)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_BulkGetOperation": [
+            "BulkGetOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence,int)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_ClearOperation": [
+            "ClearOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_configuration_ConfigurationBuilder": [
+            "create()"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_event_ClientListenerNotifier": [
+            "run()",
+            "ClientListenerNotifier(ExecutorService,Codec,Marshaller,TransportFactory)",
+            "create(Codec,Marshaller,TransportFactory)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_protocol_CodecUtils": [
+            "readUnmarshallByteArray(Transport,short)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_PutIfAbsentOperation": [
+            "PutIfAbsentOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,byte,long,TimeUnit,long,TimeUnit)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_AuthMechListOperation": [
+            "AuthMechListOperation(Codec,AtomicInteger,ClientIntelligence,Transport)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_GetWithVersionOperation": [
+            "GetWithVersionOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_IterationEndOperation": [
+            "IterationEndOperation(Codec,int,ClientIntelligence,byte,AtomicInteger,String,TransportFactory,Transport)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_PutAllParallelOperation": [
+            "PutAllParallelOperation(Codec,TransportFactory,Map,byte,AtomicInteger,int,ClientIntelligence,long,TimeUnit,long,TimeUnit,ExecutorService)",
+            "mapOperations()"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_ReplaceOperation": [
+            "ReplaceOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,byte,long,TimeUnit,long,TimeUnit)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_protocol_Codec10": [
+            "returnPossiblePrevValue(Transport,short,int)",
+            "readEvent(Transport,byte,Marshaller)",
+            "readHeaderOrEvent(Transport,HeaderParams,byte,Marshaller)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_ParallelHotRodOperation": [
+            "ParallelHotRodOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence,ExecutorService)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_AuthOperation": [
+            "AuthOperation(Codec,AtomicInteger,ClientIntelligence,Transport,String,byte)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_IterationStartOperation": [
+            "IterationStartOperation(Codec,int,ClientIntelligence,byte,AtomicInteger,String,byte,Set,int,TransportFactory,boolean)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_AbstractKeyValueOperation": [
+            "AbstractKeyValueOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence,byte,long,TimeUnit,long,TimeUnit)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_AbstractKeyOperation": [
+            "AbstractKeyOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_GetAllParallelOperation": [
+            "GetAllParallelOperation(Codec,TransportFactory,Set,byte,AtomicInteger,int,ClientIntelligence,ExecutorService)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_GetOperation": [
+            "GetOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_protocol_Codec21": [
+            "readPartialEvent(Transport,byte,Marshaller,short)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_QueryOperation": [
+            "QueryOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence,RemoteQuery)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_StatsOperation": [
+            "StatsOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_IterationNextOperation": [
+            "IterationNextOperation(Codec,int,ClientIntelligence,byte,AtomicInteger,String,Transport,KeyTracker)",
+            "unmarshall(byte,short)",
+            "execute()"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_GetStreamOperation": [
+            "GetStreamOperation(Codec,TransportFactory,Object,byte,int,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_PutAllOperation": [
+            "PutAllOperation(Codec,TransportFactory,Map,byte,AtomicInteger,int,ClientIntelligence,long,TimeUnit,long,TimeUnit)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_OperationsFactory": [
+            "OperationsFactory(TransportFactory,Codec,ExecutorService,ClientIntelligence)",
+            "OperationsFactory(TransportFactory,Codec,ExecutorService,Configuration)",
+            "newPutStreamOperation(K,byte,long,TimeUnit,long,TimeUnit)",
+            "newPingOperation(Transport)",
+            "newGetAllOperation(Set)",
+            "newBulkGetOperation(int)",
+            "newReplaceOperation(Object,byte,byte,long,TimeUnit,long,TimeUnit)",
+            "newGetKeyOperation(Object,byte)",
+            "newIterationStartOperation(String,byte,Set,int,boolean)",
+            "newGetWithMetadataOperation(Object,byte)",
+            "newPutStreamOperation(K,byte,long,long,TimeUnit,long,TimeUnit)",
+            "OperationsFactory(TransportFactory,String,boolean,Codec,ClientListenerNotifier,ExecutorService,ClientIntelligence)",
+            "newContainsKeyOperation(Object,byte)",
+            "newRemoveOperation(Object,byte)",
+            "newGetStreamOperation(K,byte,int)",
+            "newFaultTolerantPingOperation()",
+            "newPutKeyValueOperation(Object,byte,byte,long,TimeUnit,long,TimeUnit)",
+            "newExecuteOperation(String,Map)",
+            "newGetWithVersionOperation(Object,byte)",
+            "newRemoveIfUnmodifiedOperation(Object,byte,long)",
+            "newPutAllOperation(Map,long,TimeUnit,long,TimeUnit)",
+            "newPutIfAbsentStreamOperation(K,byte,long,TimeUnit,long,TimeUnit)",
+            "newPutIfAbsentOperation(Object,byte,byte,long,TimeUnit,long,TimeUnit)",
+            "newBulkGetKeysOperation(int)",
+            "newAddClientListenerOperation(Object,byte,byte)",
+            "newReplaceIfUnmodifiedOperation(Object,byte,byte,long,TimeUnit,long,TimeUnit,long)",
+            "newIterationEndOperation(String,Transport)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_SizeOperation": [
+            "SizeOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_PingOperation": [
+            "PingOperation(Codec,AtomicInteger,ClientIntelligence,Transport,byte)",
+            "PingOperation(Codec,AtomicInteger,ClientIntelligence,Transport)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_RemoveClientListenerOperation": [
+            "RemoveClientListenerOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence,ClientListenerNotifier,Object)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_GetWithMetadataOperation": [
+            "GetWithMetadataOperation(Codec,TransportFactory,Object,byte,byte,AtomicInteger,int,ClientIntelligence)"
+        ],
+        "client_hotrod-client_src_main_java_org_infinispan_client_hotrod_impl_operations_ExecuteOperation": [
+            "ExecuteOperation(Codec,TransportFactory,byte,AtomicInteger,int,ClientIntelligence,String,Map)"
+        ]
+    },
+    "CVE-2019-12415": {
+        "src_ooxml_java_org_apache_poi_xssf_streaming_SXSSFCell": [
+            "getPreEvaluatedValue()",
+            "getFormulaType()",
+            "setPreEvaluatedValue(RichTextString)"
+        ]
+    },
+    "CVE-2019-12418": {
+        "java_org_apache_catalina_mbeans_JmxRemoteLifecycleListener": [
+            "rebind(String,Remote)",
+            "unbind(String)",
+            "JmxRegistry(int,RMIClientSocketFactory,RMIServerSocketFactory,String,Remote)",
+            "bind(String,Remote)"
+        ]
+    },
+    "CVE-2021-37578": {
+        "juddi-core_src_main_java_org_apache_juddi_Registry": [
+            "start()",
+            "stop()"
+        ],
+        "uddi-tck-base_src_main_java_org_apache_juddi_v2_tck_TckPublisher": [
+            "isRMI()"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_subscription_notify_RMINotifier": [
+            "RMINotifier(BindingTemplate)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_UDDIPublicationService": [
+            "getAssertionStatusReport(String,CompletionStatus)",
+            "getRegisteredInfo(GetRegisteredInfo)",
+            "getPublisherAssertions(String)",
+            "setPublisherAssertions(String,Holder)",
+            "UDDIPublicationService(int)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_subscription_notify_JNDI_RMINotifier": [
+            "JNDI_RMINotifier(BindingTemplate)"
+        ],
+        "juddi-client_src_main_java_org_apache_juddi_v3_client_transport_RMITransport": [
+            "getUDDISubscriptionListenerService(String)",
+            "RMITransport(String)",
+            "getUDDIPublishService(String)",
+            "getUDDICustodyTransferService(String)",
+            "getUDDISecurityService(String)",
+            "getUDDISubscriptionService(String)",
+            "RMITransport(String,String)",
+            "getJUDDIApiService(String)",
+            "RMITransport()",
+            "getUDDIInquiryService(String)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_UDDISubscriptionListenerService": [
+            "UDDISubscriptionListenerService(int)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_UDDISubscriptionService": [
+            "getSubscriptions(String)",
+            "getSubscriptionResults(GetSubscriptionResults)",
+            "UDDISubscriptionService(int)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_JNDIRegistration": [
+            "JNDIRegistration()",
+            "getInstance()"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_UDDISecurityService": [
+            "UDDISecurityService(int)",
+            "getAuthToken(GetAuthToken)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_UDDICustodyTransferService": [
+            "getTransferToken(String,KeyBag,Holder,Holder,Holder)",
+            "UDDICustodyTransferService(int)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_UDDIInquiryService": [
+            "getBusinessDetail(GetBusinessDetail)",
+            "getBindingDetail(GetBindingDetail)",
+            "getServiceDetail(GetServiceDetail)",
+            "getTModelDetail(GetTModelDetail)",
+            "getOperationalInfo(GetOperationalInfo)",
+            "UDDIInquiryService(int)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_JUDDIApiService": [
+            "getEntityHistory(GetEntityHistoryMessageRequest)",
+            "getAllNodes(String)",
+            "JUDDIApiService(int)",
+            "getAllClerks(String)",
+            "getFailedReplicationChangeRecords(GetFailedReplicationChangeRecordsMessageRequest)",
+            "setReplicationNodes(String,ReplicationConfiguration)",
+            "getAllClientSubscriptionInfo(String)",
+            "getAllPublisherDetail(GetAllPublisherDetail)",
+            "getReplicationNodes(String)",
+            "getPublisherDetail(GetPublisherDetail)"
+        ],
+        "juddi-core_src_main_java_org_apache_juddi_rmi_RMIRegistration": [
+            "RMIRegistration(int)",
+            "getInstance(int)"
+        ]
+    },
+    "CVE-2019-12422": {
+        "crypto_cipher_src_main_java_org_apache_shiro_crypto_AesCipherService": [
+            "AesCipherService()"
+        ]
+    },
+    "CVE-2022-33682": {
+        "src_main_java_org_apache_pulsar_client_impl_PulsarChannelInitializer": [
+            "PulsarChannelInitializer(ClientConfigurationData,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+            "handleConnected(CommandConnected)",
+            "connect(String,InetSocketAddress,int,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+            "get()",
+            "ServiceChannelInitializer(ProxyService,ProxyConfiguration,boolean)"
+        ],
+        "src_main_java_org_apache_pulsar_common_util_NettyClientSslContextRefresher": [
+            "NettyClientSslContextRefresher(boolean,String,AuthenticationDataProvider,long)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+            "connectToBroker(InetSocketAddress)",
+            "ProxyConnection(ProxyService,Supplier,DnsAddressResolverGroup)"
+        ],
+        "src_main_java_org_apache_pulsar_client_impl_ClientCnx": [
+            "ClientCnx(ClientConfigurationData,EventLoopGroup,int)"
+        ]
+    },
+    "CVE-2019-12423": {
+        "rt_rs_security_sso_oidc_src_main_java_org_apache_cxf_rs_security_oidc_idp_OidcKeysService": [
+            "isStripPrivateParameters()",
+            "setStripPrivateParameters(boolean)",
+            "getFromLocalStore()"
+        ],
+        "rt_rs_security_jose-parent_jose_src_main_java_org_apache_cxf_rs_security_jose_jwk_JsonWebKeys": [
+            "JsonWebKeys(JsonWebKey)",
+            "JsonWebKeys(List)",
+            "setInitKey(JsonWebKey)"
+        ]
+    },
+    "CVE-2021-38153": {
+        "clients_src_main_java_org_apache_kafka_common_security_scram_internals_ScramSaslServer": [
+            "verifyClientProof(ClientFinalMessage)"
+        ],
+        "clients_src_main_java_org_apache_kafka_common_security_plain_internals_PlainServerCallbackHandler": [
+            "authenticate(String,char)"
+        ],
+        "clients_src_main_java_org_apache_kafka_common_security_scram_internals_ScramSaslClient": [
+            "handleServerFinalMessage(byte)"
+        ],
+        "clients_src_main_java_org_apache_kafka_common_security_token_delegation_DelegationToken": [
+            "equals(Object)"
+        ],
+        "src_main_java_org_apache_kafka_connect_runtime_rest_InternalRequestSignature": [
+            "isValid(SecretKey)"
+        ]
+    },
+    "CVE-2021-3869": {
+        "src_edu_stanford_nlp_util_XMLUtils": [
+            "readDocumentFromFile(String)",
+            "getValidatingXmlParser(File)",
+            "getTextContentFromTagsFromFileSAXException(File,String)",
+            "getTagElementsFromFileSAXException(File,String)",
+            "readDocumentFromString(String)",
+            "getXmlParser()"
+        ],
+        "src_edu_stanford_nlp_time_XMLUtils": [
+            "parseElement(String)",
+            "createDocument()"
+        ]
+    },
+    "CVE-2021-39239": {
+        "jena-arq_src_main_java_org_apache_jena_riot_lang_ReaderTriX": [
+            "read(Reader,String,ContentType,StreamRDF,Context)",
+            "read(InputStream,String,ContentType,StreamRDF,Context)"
+        ],
+        "jena-core_src_main_java_org_apache_jena_rdfxml_xmlinput_impl_RDFXMLParser": [
+            "create()"
+        ]
+    },
+    "CVE-2022-33683": {
+        "src_main_java_org_apache_pulsar_client_impl_PulsarChannelInitializer": [
+            "PulsarChannelInitializer(ClientConfigurationData,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+            "handleConnected(CommandConnected)",
+            "connect(String,InetSocketAddress,int,Supplier)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+            "get()",
+            "ServiceChannelInitializer(ProxyService,ProxyConfiguration,boolean)"
+        ],
+        "src_main_java_org_apache_pulsar_common_util_NettyClientSslContextRefresher": [
+            "NettyClientSslContextRefresher(boolean,String,AuthenticationDataProvider,long)"
+        ],
+        "src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+            "connectToBroker(InetSocketAddress)",
+            "ProxyConnection(ProxyService,Supplier,DnsAddressResolverGroup)"
+        ],
+        "src_main_java_org_apache_pulsar_client_impl_ClientCnx": [
+            "ClientCnx(ClientConfigurationData,EventLoopGroup,int)"
+        ]
+    },
+    "CVE-2016-1000339": {
+        "core_src_main_java_org_bouncycastle_crypto_engines_AESEngine": [
+            "decryptBlock(int)",
+            "encryptBlock(int)"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_dh_BCDHPublicKey": [
+            "engineGetKeyParameters()",
+            "BCDHPublicKey(DHPublicKeySpec)",
+            "BCDHPublicKey(DHPublicKey)",
+            "BCDHPublicKey(DHPublicKeyParameters)",
+            "BCDHPublicKey(BigInteger,DHParameterSpec)"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_ec_IESCipher": [
+            "ECIESwithAESCBC()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_symmetric_AES": [
+            "Poly1305()",
+            "CCM()",
+            "PBEWithAESCBC()",
+            "AESCMAC()",
+            "PBEWithSHA1AESCBC128()",
+            "CBC()",
+            "AESGMAC()",
+            "RFC3211Wrap()",
+            "CFB()",
+            "PBEWithSHA1AESCBC256()",
+            "ECB()",
+            "get()",
+            "PBEWithSHA1AESCBC192()",
+            "PBEWithSHA256AESCBC192()",
+            "PBEWithSHA256AESCBC256()",
+            "PBEWithSHA256AESCBC128()",
+            "GCM()",
+            "RFC5649Wrap()",
+            "OFB()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_drbg_DRBG": [
+            "getVIMID()",
+            "generateNonceIVPersonalizationString()",
+            "engineSetSeed(byte)",
+            "generateDefaultPersonalizationString()"
+        ]
+    },
+    "CVE-2022-34917": {
+        "src_main_java_org_apache_kafka_common_protocol_DataInputStreamReadable": [
+            "readByteBuffer(int)"
+        ],
+        "src_main_java_org_apache_kafka_raft_internals_StringSerde": [
+            "read(Readable,int)"
+        ]
+    },
+    "CVE-2019-16530": {
+        "plugins_restlet1x_nexus-restlet1x-plugin_src_main_java_org_sonatype_nexus_rest_repositories_AbstractRepositoryPlexusResource": [
+            "setStorageWhitelist(StorageWhitelist)"
+        ],
+        "components_nexus-core_src_main_java_org_sonatype_nexus_proxy_storage_StorageWhitelist": [
+            "StorageWhitelist(String)"
+        ],
+        "components_nexus-core_src_main_java_org_sonatype_nexus_proxy_storage_StorageWhitelistUpgradeEvent": [
+            "StorageWhitelistUpgradeEvent(ApplicationStatusSource,ApplicationDirectories,RepositoryRegistry,StorageWhitelist)"
+        ]
+    },
+    "CVE-2019-16771": {
+        "core_src_main_java_com_linecorp_armeria_internal_ArmeriaHttpUtil": [
+            "toLowercaseMap(Iterator,int)"
+        ],
+        "core_src_main_java_com_linecorp_armeria_common_HttpHeadersBase": [
+            "set(CharSequence,Iterable)",
+            "set(CharSequence,String)",
+            "addObject(CharSequence,Iterable)",
+            "setObject(CharSequence,Object)",
+            "setObject(CharSequence,Iterable)",
+            "addObject(CharSequence,Object)"
+        ]
+    },
+    "CVE-2019-17359": {
+        "core_src_main_java_org_bouncycastle_asn1_ASN1InputStream": [
+            "buildObject(int,int,int)"
+        ],
+        "core_src_main_java_org_bouncycastle_asn1_StreamUtil": [
+            "findLimit(InputStream)"
+        ],
+        "core_src_main_java_org_bouncycastle_asn1_LimitedInputStream": [
+            "getRemaining()",
+            "LimitedInputStream(InputStream,int)"
+        ],
+        "core_src_main_java_org_bouncycastle_asn1_IndefiniteLengthInputStream": [
+            "IndefiniteLengthInputStream(InputStream,int)"
+        ],
+        "core_src_main_java_org_bouncycastle_asn1_DefiniteLengthInputStream": [
+            "DefiniteLengthInputStream(InputStream,int)"
+        ],
+        "core_src_main_java_org_bouncycastle_asn1_ASN1StreamParser": [
+            "readObject()"
+        ]
+    },
+    "CVE-2016-1000344": {
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_EC": [
+            "configure(ConfigurableProvider)"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_ec_IESCipher": [
+            "ECIESwithAES()",
+            "OldECIESwithCipher(BlockCipher)",
+            "OldECIESwithDESede()",
+            "OldECIESwithCipher(BlockCipher,int)",
+            "OldECIESwithAESCBC()",
+            "OldECIES()",
+            "OldECIESwithDESedeCBC()",
+            "ECIESwithDESede()",
+            "OldECIESwithAES()",
+            "ECIESwithCipher(BlockCipher)",
+            "ECIESwithAESCBC()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_util_IESUtil": [
+            "guessParameterSpec(BufferedBlockCipher)"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_dh_IESCipher": [
+            "IESCipher(OldIESEngine)",
+            "OldIES()",
+            "OldIESwithDESede()",
+            "OldIESwithAES()",
+            "IESwithDESede()",
+            "OldIESwithCipher(BlockCipher)",
+            "IESwithAESCBC()",
+            "IESCipher(IESEngine,int)",
+            "IESCipher(IESEngine)",
+            "IESwithAES()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jce_spec_IESParameterSpec": [
+            "IESParameterSpec(byte,byte,int,int)"
+        ]
+    },
+    "CVE-2016-1000345": {
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_rsa_CipherSpi": [
+            "getCause()",
+            "getOutput()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_util_BadBlockException": [
+            "BadBlockException(String,Throwable)"
+        ],
+        "core_src_main_java_org_bouncycastle_crypto_engines_IESEngine": [
+            "IESEngine(BasicAgreement,DerivationFunction,Mac,BufferedBlockCipher)"
+        ]
+    },
+    "CVE-2019-17566": {
+        "batik-transcoder_src_main_java_org_apache_batik_transcoder_SVGAbstractTranscoder": [
+            "getExternalResourceSecurity(ParsedURL,ParsedURL)"
+        ],
+        "batik-svgrasterizer_src_main_java_org_apache_batik_apps_rasterizer_Main": [
+            "getOptionDescription()"
+        ]
+    },
+    "CVE-2016-1000352": {
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_EC": [
+            "configure(ConfigurableProvider)"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_ec_IESCipher": [
+            "ECIESwithAES()",
+            "OldECIESwithCipher(BlockCipher)",
+            "OldECIESwithDESede()",
+            "OldECIESwithCipher(BlockCipher,int)",
+            "OldECIESwithAESCBC()",
+            "OldECIES()",
+            "OldECIESwithDESedeCBC()",
+            "ECIESwithDESede()",
+            "OldECIESwithAES()",
+            "ECIESwithCipher(BlockCipher)",
+            "ECIESwithAESCBC()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_util_IESUtil": [
+            "guessParameterSpec(BufferedBlockCipher)"
+        ],
+        "prov_src_main_java_org_bouncycastle_jcajce_provider_asymmetric_dh_IESCipher": [
+            "IESCipher(OldIESEngine)",
+            "OldIES()",
+            "OldIESwithDESede()",
+            "OldIESwithAES()",
+            "IESwithDESede()",
+            "OldIESwithCipher(BlockCipher)",
+            "IESwithAESCBC()",
+            "IESCipher(IESEngine,int)",
+            "IESCipher(IESEngine)",
+            "IESwithAES()"
+        ],
+        "prov_src_main_java_org_bouncycastle_jce_spec_IESParameterSpec": [
+            "IESParameterSpec(byte,byte,int,int)"
+        ]
+    },
+    "CVE-2019-17572": {
+        "client_src_main_java_org_apache_rocketmq_client_impl_MQClientAPIImpl": [
+            "createPlainAccessConfig(String,PlainAccessConfig,long)"
+        ],
+        "common_src_main_java_org_apache_rocketmq_common_UtilAll": [
+            "List2String(List,String)",
+            "String2List(String,String)"
+        ],
+        "client_src_main_java_org_apache_rocketmq_client_Validators": [
+            "checkMessage(Message,DefaultMQProducer)",
+            "checkTopic(String)"
+        ],
+        "broker_src_main_java_org_apache_rocketmq_broker_processor_AbstractSendMessageProcessor": [
+            "msgCheck(ChannelHandlerContext,SendMessageRequestHeader,RemotingCommand)"
+        ],
+        "broker_src_main_java_org_apache_rocketmq_broker_processor_AdminBrokerProcessor": [
+            "updateAndCreateAccessConfig(ChannelHandlerContext,RemotingCommand)",
+            "updateGlobalWhiteAddrsConfig(ChannelHandlerContext,RemotingCommand)"
+        ]
+    },
+    "CVE-2019-17573": {
+        "rt_transports_http_src_main_java_org_apache_cxf_transport_commons_text_EntityArrays": [
+            "EntityArrays()"
+        ],
+        "rt_transports_http_src_main_java_org_apache_cxf_transport_commons_text_AggregateTranslator": [
+            "AggregateTranslator(CharSequenceTranslator)"
+        ],
+        "rt_transports_http_src_main_java_org_apache_cxf_transport_commons_text_StringEscapeUtils": [
+            "StringEscapeUtils()"
+        ],
+        "rt_transports_http_src_main_java_org_apache_cxf_transport_commons_text_LookupTranslator": [
+            "LookupTranslator(Map)"
+        ]
+    },
+    "CVE-2021-43795": {
+        "core_src_main_java_com_linecorp_armeria_internal_common_PathAndQuery": [
+            "encodeToPercents(Bytes,boolean)",
+            "encodePathToPercents(Bytes)",
+            "numEncodedBytes()",
+            "slowEncodeQueryToPercents(Bytes)",
+            "hasEncodedBytes()",
+            "isEncoded(int)",
+            "slowEncodePathToPercents(Bytes)",
+            "addEncoded(byte)",
+            "encodeQueryToPercents(Bytes)",
+            "toString()"
+        ],
+        "core_src_main_java_com_linecorp_armeria_server_RoutingResultBuilder": [
+            "rawParam(String,String)"
+        ],
+        "core_src_main_java_com_linecorp_armeria_internal_common_ArmeriaHttpUtil": [
+            "decodePathParam(String)"
+        ]
+    },
+    "CVE-2021-43797": {
+        "codec-http_src_main_java_io_netty_handler_codec_http_HttpObjectDecoder": [
+            "findNonWhitespace(AppendableCharSequence,int,boolean)"
+        ]
+    },
+    "CVE-2021-44145": {
+        "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_TransformXml": [
+            "getTemplateSource(LookupService,String,boolean)",
+            "getSecureSource(StreamSource)",
+            "getTransformerFactory(boolean)",
+            "newTemplates(ProcessContext,String)"
+        ]
+    },
+    "CVE-2021-44832": {
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_appender_db_jdbc_DataSourceConnectionSource": [
+            "DataSourceConnectionSource(String,DataSource)"
+        ],
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_net_JndiManager": [
+            "isJndiJdbcEnabled()"
+        ]
+    },
+    "CVE-2019-19899": {
+        "pebble_src_main_java_com_mitchellbosecke_pebble_template_EvaluationOptions": [
+            "setAllowGetClass(boolean)",
+            "isAllowGetClass()"
+        ],
+        "pebble_src_main_java_com_mitchellbosecke_pebble_attributes_UnsafeMethods": [
+            "createUnsafeMethodsSet()",
+            "UnsafeMethods()"
+        ],
+        "pebble_src_main_java_com_mitchellbosecke_pebble_PebbleEngine": [
+            "build()",
+            "allowGetClass(boolean)"
+        ]
+    },
+    "CVE-2012-6612": {
+        "src_java_org_apache_solr_util_EmptyEntityResolver": [
+            "EmptyEntityResolver()",
+            "trySetStAXProperty(XMLInputFactory,String,Object)",
+            "trySetSAXFeature(SAXParserFactory,String,boolean)"
+        ],
+        "src_java_org_apache_solr_handler_loader_XMLLoader": [
+            "init(SolrParams)"
+        ]
+    },
+    "CVE-2019-3772": {
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_source_StringSourceFactory": [
+            "StringSourceFactory()",
+            "StringSourceFactory(TransformerFactory)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_transformer_ResultToStringTransformer": [
+            "ResultToStringTransformer(TransformerFactory)",
+            "ResultToStringTransformer()",
+            "getNewTransformer()"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_result_DomResultFactory": [
+            "DomResultFactory(DocumentBuilderFactory)",
+            "DomResultFactory()"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_source_DomSourceFactory": [
+            "DomSourceFactory()",
+            "DomSourceFactory(DocumentBuilderFactory)"
+        ],
+        "org_springframework_integration_xml_transformer_support_XPathExpressionEvaluatingHeaderValueMessageProcessor": [
+            "XPathExpressionEvaluatingHeaderValueMessageProcessor(String,XmlPayloadConverter)",
+            "XPathExpressionEvaluatingHeaderValueMessageProcessor(XPathExpression)",
+            "XPathExpressionEvaluatingHeaderValueMessageProcessor(String)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_config_XPathHeaderEnricherParser": [
+            "parseTransformer(Element,ParserContext,BeanDefinitionBuilder)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_transformer_XsltPayloadTransformer": [
+            "XsltPayloadTransformer(Templates,ResultTransformer)",
+            "XsltPayloadTransformer(Resource,String)",
+            "XsltPayloadTransformer(Resource,ResultTransformer,String)",
+            "setXsltParamHeaders(String)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_splitter_XPathMessageSplitter": [
+            "XPathMessageSplitter(XPathExpression)",
+            "XPathMessageSplitter(String,TransformerFactory)",
+            "XPathMessageSplitter(String,Map)",
+            "XPathMessageSplitter(String)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_xpath_XPathUtils": [
+            "evaluate(Object,String,Object)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_DefaultXmlPayloadConverter": [
+            "DefaultXmlPayloadConverter()",
+            "DefaultXmlPayloadConverter(DocumentBuilderFactory)",
+            "convertToSource(Object)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_selector_XmlValidatingMessageSelector": [
+            "XmlValidatingMessageSelector(Resource,SchemaType)"
+        ],
+        "spring-integration-xml_src_main_java_org_springframework_integration_xml_transformer_ResultToDocumentTransformer": [
+            "ResultToDocumentTransformer()",
+            "ResultToDocumentTransformer(DocumentBuilderFactory)"
+        ]
+    },
+    "CVE-2019-3868": {
+        "services_src_main_java_org_keycloak_services_managers_AuthenticationManager": [
+            "authenticateIdentityCookie(KeycloakSession,RealmModel,boolean)"
+        ]
+    },
+    "CVE-2014-0168": {
+        "src_main_java_org_jolokia_backend_BackendManager": [
+            "isCorsAccessAllowed(String)"
+        ],
+        "src_main_java_org_jolokia_osgi_DelegatingRestrictor": [
+            "check(Restrictor,Object)"
+        ],
+        "src_main_java_org_jolokia_http_AgentServlet": [
+            "getOriginOrReferer(HttpServletRequest)"
+        ]
+    },
+    "CVE-2014-125087": {
+        "src_main_java_com_jamesmurty_utils_BaseXMLBuilder": [
+            "parseDocumentImpl(InputSource)",
+            "createDocumentImpl(String,String)"
+        ]
+    },
+    "CVE-2019-7722": {
+        "pmd-core_src_main_java_net_sourceforge_pmd_RuleSetFactory": [
+            "parseRuleSetNode(RuleSetReferenceId,boolean)"
+        ]
+    },
+    "CVE-2019-9827": {
+        "hawtio-system_src_main_java_io_hawt_web_filters_HttpHeaderFilter": [
+            "init(FilterConfig)"
+        ],
+        "hawtio-system_src_main_java_io_hawt_web_auth_LoginServlet": [
+            "setupSessionTimeout()"
+        ],
+        "hawtio-system_src_main_java_io_hawt_system_ConfigManager": [
+            "getBoolean(String,boolean)"
+        ],
+        "hawtio-system_src_main_java_io_hawt_HawtioContextListener": [
+            "contextInitialized(ServletContextEvent)"
+        ]
+    },
+    "CVE-2020-10683": {
+        "src_main_java_org_dom4j_io_SAXReader": [
+            "SAXReader(boolean)",
+            "setDefaultHandler(ElementHandler)",
+            "SAXReader(DocumentFactory,boolean)",
+            "SAXReader(DocumentFactory)",
+            "setIgnoreComments(boolean)",
+            "setStripWhitespaceText(boolean)",
+            "getXMLReader()",
+            "SAXReader()",
+            "setEncoding(String)",
+            "setIncludeInternalDTDDeclarations(boolean)",
+            "setStringInternEnabled(boolean)",
+            "setXMLFilter(XMLFilter)",
+            "setEntityResolver(EntityResolver)",
+            "setErrorHandler(ErrorHandler)",
+            "setIncludeExternalDTDDeclarations(boolean)",
+            "setXMLReaderClassName(String)",
+            "setMergeAdjacentText(boolean)",
+            "setValidation(boolean)",
+            "setXMLReader(XMLReader)",
+            "setDocumentFactory(DocumentFactory)"
+        ]
+    },
+    "CVE-2019-19135": {
+        "src_main_java_org_eclipse_milo_opcua_sdk_client_api_identity_UsernameProvider": [
+            "getIdentityToken(EndpointDescription,ByteString)"
+        ],
+        "src_main_java_org_eclipse_milo_opcua_stack_core_util_NonceUtil": [
+            "getNonceLength(SecurityPolicy)"
+        ]
+    },
+    "CVE-2020-10705": {
+        "src_main_java_io_undertow_server_protocol_http_HttpServerConnection": [
+            "wrap(ConduitFactory,HttpServerExchange)"
+        ]
+    },
+    "CVE-2022-40955": {
+        "src_main_java_org_apache_inlong_sort_jdbc_table_JdbcDynamicTableFactory": [
+            "getJdbcOptions(ReadableConfig)"
+        ]
+    },
+    "CVE-2015-1833": {
+        "src_main_java_org_apache_jackrabbit_webdav_xml_DavDocumentBuilderFactory": [
+            "setFactory(DocumentBuilderFactory)"
+        ],
+        "src_main_java_org_apache_jackrabbit_webdav_xml_DomUtil": [
+            "setBuilderFactory(DocumentBuilderFactory)"
+        ]
+    },
+    "CVE-2020-10719": {
+        "core_src_main_java_io_undertow_server_protocol_http_HttpServerConnection": [
+            "wrap(ConduitFactory,HttpServerExchange)"
+        ]
+    },
+    "CVE-2016-5007": {
+        "spring-webmvc_src_main_java_org_springframework_web_servlet_handler_AbstractHandlerMapping": [
+            "getCorsConfiguration(HttpServletRequest)"
+        ],
+        "spring-webmvc_src_main_java_org_springframework_web_servlet_support_RequestMatchResult": [
+            "RequestMatchResult(String,String,PathMatcher)"
+        ],
+        "spring-webmvc_src_main_java_org_springframework_web_servlet_support_HandlerMappingIntrospector": [
+            "getMatchableHandlerMapping(HttpServletRequest)",
+            "RequestAttributeChangeIgnoringWrapper(HttpServletRequest)",
+            "HandlerMappingIntrospector(ApplicationContext)",
+            "getHandlerMappings()",
+            "setAttribute(String,Object)"
+        ],
+        "config_src_main_java_org_springframework_security_config_http_FilterChainMapBeanDefinitionDecorator": [
+            "decorate(Node,BeanDefinitionHolder,ParserContext)"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_configurers_ExpressionUrlAuthorizationConfigurer": [
+            "ExpressionUrlAuthorizationConfigurer()",
+            "ExpressionInterceptUrlRegistry(ApplicationContext)",
+            "ExpressionUrlAuthorizationConfigurer(ApplicationContext)"
+        ],
+        "web_src_main_java_org_springframework_security_web_access_expression_ExpressionBasedFilterInvocationSecurityMetadataSource": [
+            "RequestVariablesExtractorEvaluationContextPostProcessor(RequestVariablesExtractor)",
+            "postProcessVariableName(String)"
+        ],
+        "config_src_main_java_org_springframework_security_config_http_HttpConfigurationBuilder": [
+            "parseInterceptUrlsForChannelSecurity()"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_configurers_UrlAuthorizationConfigurer": [
+            "UrlAuthorizationConfigurer(ApplicationContext)",
+            "StandardInterceptUrlRegistry(ApplicationContext)"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_AbstractConfiguredSecurityBuilder": [
+            "postProcess(P)",
+            "getSharedObjects()",
+            "setSharedObject(Class,C)"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_configurers_CsrfConfigurer": [
+            "IgnoreCsrfProtectionRegistry(ApplicationContext)",
+            "CsrfConfigurer()"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_configurers_ChannelSecurityConfigurer": [
+            "ChannelRequestMatcherRegistry()",
+            "ChannelRequestMatcherRegistry(ApplicationContext)",
+            "ChannelSecurityConfigurer()"
+        ],
+        "config_src_main_java_org_springframework_security_config_http_HttpSecurityBeanDefinitionParser": [
+            "createSecurityFilterChainBean(Element,ParserContext,List)"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_builders_WebSecurity": [
+            "IgnoredRequestConfigurer()",
+            "IgnoredRequestConfigurer(ApplicationContext)",
+            "setApplicationContext(ApplicationContext)"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_configuration_WebSecurityConfigurerAdapter": [
+            "getApplicationContext()"
+        ],
+        "config_src_main_java_org_springframework_security_config_http_FilterChainBeanDefinitionParser": [
+            "parse(Element,ParserContext)"
+        ],
+        "config_src_main_java_org_springframework_security_config_annotation_web_builders_HttpSecurity": [
+            "RequestMatcherConfigurer()",
+            "getContext()",
+            "RequestMatcherConfigurer(ApplicationContext)",
+            "HttpSecurity(ObjectPostProcessor,AuthenticationManagerBuilder,Map)",
+            "requiresChannel()",
+            "csrf()",
+            "authorizeRequests()"
+        ],
+        "config_src_main_java_org_springframework_security_config_http_FilterInvocationSecurityMetadataSourceParser": [
+            "parseInterceptUrlsForFilterInvocationRequestMap(MatcherType,List,boolean,boolean,ParserContext)"
+        ],
+        "web_src_main_java_org_springframework_security_web_servlet_util_matcher_MvcRequestMatcher": [
+            "setMethod(HttpMethod)",
+            "MvcRequestMatcher(HandlerMappingIntrospector,String)",
+            "getMapping(HttpServletRequest)"
+        ]
+    },
+    "CVE-2016-5018": {
+        "java_org_apache_jasper_security_SecurityClassLoad": [
+            "securityClassLoad(ClassLoader)"
+        ],
+        "java_org_apache_jasper_runtime_JspRuntimeLibrary": [
+            "PrivilegedIntrospectHelper(Object,String,String,ServletRequest,String,boolean)",
+            "internalIntrospecthelper(Object,String,String,ServletRequest,String,boolean)"
+        ]
+    },
+    "CVE-2022-41917": {
+        "src_main_java_org_opensearch_analysis_common_StemmerOverrideTokenFilterFactory": [
+            "StemmerOverrideTokenFilterFactory(IndexSettings,Environment,String,Settings)"
+        ],
+        "src_main_java_org_opensearch_index_analysis_NoriAnalyzerProvider": [
+            "NoriAnalyzerProvider(IndexSettings,Environment,String,Settings)"
+        ],
+        "src_main_java_org_opensearch_analysis_common_WordDelimiterGraphTokenFilterFactory": [
+            "WordDelimiterGraphTokenFilterFactory(IndexSettings,Environment,String,Settings)"
+        ],
+        "src_main_java_org_opensearch_index_analysis_MappingRule": [
+            "getLeft()",
+            "getRight()",
+            "MappingRule(L,R)"
+        ],
+        "src_main_java_org_opensearch_index_analysis_NoriPartOfSpeechStopFilterFactory": [
+            "NoriPartOfSpeechStopFilterFactory(IndexSettings,Environment,String,Settings)"
+        ],
+        "src_main_java_org_opensearch_index_analysis_KuromojiPartOfSpeechFilterFactory": [
+            "KuromojiPartOfSpeechFilterFactory(IndexSettings,Environment,String,Settings)"
+        ],
+        "src_main_java_org_opensearch_analysis_common_MappingCharFilterFactory": [
+            "MappingCharFilterFactory(IndexSettings,Environment,String,Settings)"
+        ],
+        "src_main_java_org_opensearch_index_analysis_Analysis": [
+            "getWordList(Environment,Settings,String,String,boolean)",
+            "getWordList(Environment,Settings,String,String)",
+            "loadWordList(Path,boolean)",
+            "getWordSet(Environment,Settings,String)",
+            "getWordList(Environment,Settings,String)",
+            "parseWords(Environment,Settings,String,CharArraySet,Map,boolean)"
+        ],
+        "src_main_java_org_opensearch_analysis_common_WordDelimiterTokenFilterFactory": [
+            "WordDelimiterTokenFilterFactory(IndexSettings,Environment,String,Settings)"
+        ]
+    },
+    "CVE-2020-10748": {
+        "server-spi-private_src_main_java_org_keycloak_models_utils_RepresentationToModel": [
+            "createClients(KeycloakSession,RealmRepresentation,RealmModel,Map)"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_validation_ValidationResult": [
+            "getErrors()",
+            "getAllErrorsAsString()",
+            "ValidationResult(Set)",
+            "getAllErrorsAsString(Function)",
+            "getAllLocalizedErrorsAsString(Properties)"
+        ],
+        "services_src_main_java_org_keycloak_services_clientregistration_AbstractClientRegistrationProvider": [
+            "update(String,ClientRegistrationContext)",
+            "create(ClientRegistrationContext)"
+        ],
+        "services_src_main_java_org_keycloak_services_validation_ValidationMessage": [
+            "setFieldId(String)",
+            "getMessage()",
+            "setLocalizedMessageKey(String)",
+            "ValidationMessage(String,String,Object)",
+            "getFieldId()",
+            "setLocalizedMessageParameters(Object)",
+            "getLocalizedMessageKey()",
+            "getLocalizedMessageParameters()",
+            "ValidationMessage(String)",
+            "getMessage(Properties)"
+        ],
+        "services_src_main_java_org_keycloak_validation_DefaultClientValidationProvider": [
+            "ValidationException(String)",
+            "getFragmentKey()",
+            "getSchemeKey()",
+            "getInvalid()",
+            "getFragment()",
+            "getScheme()",
+            "getInvalidKey()",
+            "validate(ClientModel)"
+        ],
+        "services_src_main_java_org_keycloak_services_validation_ValidationMessages": [
+            "getStringMessages(Properties)",
+            "ValidationMessages(String)",
+            "getStringMessages(Function)",
+            "getMessages()",
+            "ValidationMessages()",
+            "getStringMessages()"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_validation_ClientValidationUtil": [
+            "getEvent()",
+            "getError()",
+            "getClient()",
+            "DefaultClientValidationContext(Event,KeycloakSession,ClientModel)",
+            "getSession()"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_validation_DefaultValidationContext": [
+            "getObjectToValidate()",
+            "DefaultValidationContext(Event,KeycloakSession,T)"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_validation_ClientValidationContext": [
+            "getOIDCClient()",
+            "ClientValidationContext(Event,KeycloakSession,ClientModel)"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_validation_ValidationError": [
+            "ValidationError(String,String,String,Object)",
+            "getLocalizedMessage(Properties)",
+            "getLocalizedMessageParams()"
+        ]
+    },
+    "CVE-2020-10770": {
+        "core_src_main_java_org_keycloak_protocol_oidc_representations_OIDCConfigurationRepresentation": [
+            "getRequireRequestUriRegistration()",
+            "setRequireRequestUriRegistration(Boolean)"
+        ],
+        "services_src_main_java_org_keycloak_protocol_oidc_OIDCAdvancedConfigWrapper": [
+            "getRequestUris()",
+            "setRequestUris(List)"
+        ],
+        "services_src_main_java_org_keycloak_protocol_oidc_OIDCWellKnownProvider": [
+            "getConfig()"
+        ]
+    },
+    "CVE-2015-2156": {
+        "src_main_java_org_jboss_netty_handler_codec_http_DefaultCookie": [
+            "getMaxAge()"
+        ],
+        "src_main_java_org_jboss_netty_handler_codec_http_cookie_DefaultCookie": [
+            "setMaxAge(long)",
+            "maxAge()"
+        ]
+    },
+    "CVE-2020-13920": {
+        "src_main_java_org_apache_activemq_broker_jmx_ManagementContext": [
+            "rebind(String,Remote)",
+            "unbind(String)",
+            "JmxRegistry(int)",
+            "bind(String,Remote)"
+        ]
+    },
+    "CVE-2016-6796": {
+        "java_org_apache_naming_factory_ResourceLinkFactory": [
+            "validateGlobalResourceAccess(String)"
+        ]
+    },
+    "CVE-2016-6797": {
+        "java_org_apache_catalina_core_NamingContextListener": [
+            "getGlobalNamingContext()",
+            "removeResourceLink(String)",
+            "addResourceLink(ContextResourceLink)"
+        ]
+    },
+    "CVE-2022-42129": {
+        "src_main_java_com_liferay_dynamic_data_mapping_form_web_internal_portlet_DDMFormPortlet": [
+            "setRenderRequestAttributes(RenderRequest,RenderResponse)"
+        ],
+        "src_main_java_com_liferay_dynamic_data_mapping_form_web_internal_display_context_DDMFormDisplayContext": [
+            "DDMFormDisplayContext(DDMFormFieldTypeServicesTracker,DDMFormInstanceLocalService,DDMFormInstanceRecordLocalService,DDMFormInstanceRecordVersionLocalService,DDMFormInstanceService,DDMFormInstanceVersionLocalService,DDMFormRenderer,DDMFormValuesFactory,DDMFormValuesMerger,DDMFormWebConfiguration,DDMStorageAdapterTracker,FFSubmissionsSettingsConfigurationActivator,GroupLocalService,JSONFactory,ObjectFieldLocalService,ObjectRelationshipLocalService,Portal,RenderRequest,RenderResponse,RoleLocalService,UserLocalService,WorkflowDefinitionLinkLocalService)"
+        ]
+    },
+    "CVE-2020-11002": {
+        "dropwizard-validation_src_main_java_io_dropwizard_validation_selfvalidating_SelfValidatingValidator": [
+            "isValid(Object,ConstraintValidatorContext)"
+        ],
+        "dropwizard-validation_src_main_java_io_dropwizard_validation_InterpolationHelper": [
+            "InterpolationHelper()"
+        ],
+        "dropwizard-validation_src_main_java_io_dropwizard_validation_selfvalidating_ViolationCollector": [
+            "getContextWithMessageParameters(Map)",
+            "ViolationCollector(ConstraintValidatorContext)",
+            "addViolation(String,Integer,String)",
+            "getContext()"
+        ]
+    },
+    "CVE-2016-6812": {
+        "distribution_src_main_release_samples_jax_rs_spring_boot_src_main_java_sample_rs_service_SampleRestApplication": [
+            "rsServer()"
+        ]
+    },
+    "CVE-2016-3084": {
+        "src_main_java_org_cloudfoundry_identity_uaa_account_UaaResetPasswordService": [
+            "forgotPassword(String,String,String)"
+        ]
+    },
+    "CVE-2016-3093": {
+        "src_java_ognl_OgnlRuntime": [
+            "CacheKey(Class,String)",
+            "get(Class,String)",
+            "ClassPropertyMethodCache()"
+        ]
+    },
+    "CVE-2020-1719": {
+        "src_main_java_org_jboss_as_security_service_SimpleSecurityManager": [
+            "push(String)",
+            "push(String,String,char,Subject)"
+        ]
+    },
+    "CVE-2022-43766": {
+        "src_main_java_org_apache_iotdb_tsfile_read_filter_operator_Regexp": [
+            "MatcherInput(CharSequence,AccessCount)",
+            "toString()"
+        ],
+        "src_main_java_org_apache_iotdb_tsfile_common_conf_TSFileConfig": [
+            "getPatternMatchingThreshold()",
+            "setPatternMatchingThreshold(int)"
+        ]
+    },
+    "CVE-2020-11976": {
+        "wicket-core_src_main_java_org_apache_wicket_MarkupContainer": [
+            "removals_get(int)"
+        ]
+    },
+    "CVE-2020-13692": {
+        "pgjdbc_src_main_java_org_postgresql_jdbc_PgSQLXML": [
+            "fatalError(SAXParseException)",
+            "warning(SAXParseException)",
+            "error(SAXParseException)",
+            "getXmlFactoryFactory()"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_xml_LegacyInsecurePGXmlFactoryFactory": [
+            "LegacyInsecurePGXmlFactoryFactory()"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_jdbc_PgConnection": [
+            "PgConnection(HostSpec,String,String,Properties,String)"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_xml_DefaultPGXmlFactoryFactory": [
+            "setFactoryProperties(Object)",
+            "DefaultPGXmlFactoryFactory()",
+            "getDocumentBuilderFactory()"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_ds_common_BaseDataSource": [
+            "setXmlFactoryFactory(String)"
+        ]
+    },
+    "CVE-2020-13931": {
+        "container_openejb-core_src_main_java_org_apache_openejb_resource_activemq_ActiveMQResourceAdapter": [
+            "setServerUrl(String)"
+        ],
+        "container_openejb-loader_src_main_java_org_apache_openejb_loader_SystemInstance": [
+            "setDefaults()",
+            "SystemInstance(Properties)"
+        ]
+    },
+    "CVE-2022-45935": {
+        "src_main_java_org_apache_james_transport_mailets_StripAttachment": [
+            "createTempFile(String)"
+        ],
+        "src_main_java_org_apache_james_server_core_BufferedDeferredFileOutputStream": [
+            "BufferedDeferredFileOutputStream(int,String,String,File)",
+            "BufferedDeferredFileOutputStream(int,File,String,String,File)",
+            "BufferedDeferredFileOutputStream(int,File)"
+        ],
+        "src_main_java_org_apache_james_server_core_MimeMessageInputStreamSource": [
+            "MimeMessageInputStreamSource(String)",
+            "MimeMessageInputStreamSource(String,InputStream)"
+        ]
+    },
+    "CVE-2016-6816": {
+        "java_org_apache_tomcat_util_http_parser_HttpParser": [
+            "isNotRequestTarget(int)"
+        ]
+    },
+    "CVE-2022-46166": {
+        "src_main_java_de_codecentric_boot_admin_server_notify_HipchatNotifier": [
+            "getMessage(InstanceEvent,Instance)"
+        ],
+        "src_main_java_de_codecentric_boot_admin_server_notify_LetsChatNotifier": [
+            "getText(InstanceEvent,Instance)"
+        ],
+        "src_main_java_de_codecentric_boot_admin_server_notify_MicrosoftTeamsNotifier": [
+            "createEvaluationContext(InstanceEvent,Instance)",
+            "createMessage(Instance,String,String,StandardEvaluationContext)",
+            "getDeregisteredMessage(Instance,StandardEvaluationContext)",
+            "evaluateExpression(StandardEvaluationContext,Expression)",
+            "getStatusChangedMessage(Instance,StandardEvaluationContext)",
+            "getRegisteredMessage(Instance,StandardEvaluationContext)",
+            "doNotify(InstanceEvent,Instance)"
+        ],
+        "src_main_java_de_codecentric_boot_admin_server_notify_PagerdutyNotifier": [
+            "getDescription(InstanceEvent,Instance)"
+        ],
+        "src_main_java_de_codecentric_boot_admin_server_notify_DiscordNotifier": [
+            "createContent(InstanceEvent,Instance)"
+        ]
+    },
+    "CVE-2016-9879": {
+        "web_src_main_java_org_springframework_security_web_firewall_DefaultHttpFirewall": [
+            "containsInvalidUrlEncodedSlash(String)",
+            "setAllowUrlEncodedSlash(boolean)",
+            "getFirewalledResponse(HttpServletResponse)"
+        ]
+    },
+    "CVE-2020-13940": {
+        "src_main_java_org_apache_nifi_cluster_protocol_StandardDataFlow": [
+            "parseFlowBytes(byte)"
+        ],
+        "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-file-authorizer_src_main_java_org_apache_nifi_authorization_FlowParser": [
+            "parse(File)",
+            "FlowParser()"
+        ],
+        "nifi-bootstrap_src_main_java_org_apache_nifi_bootstrap_NotificationServiceManager": [
+            "loadNotificationServices(File)"
+        ],
+        "src_main_java_org_apache_nifi_controller_serialization_StandardFlowSerializer": [
+            "addTemplate(Element,Template)"
+        ],
+        "src_main_java_org_apache_nifi_processors_standard_util_DocumentReaderCallback": [
+            "DocumentReaderCallback(boolean)"
+        ]
+    },
+    "CVE-2020-13942": {
+        "common_src_main_java_org_apache_unomi_common_SecureFilteringClassLoader": [
+            "SecureFilteringClassLoader(Set,Set,ClassLoader)",
+            "SecureFilteringClassLoader(ClassLoader)"
+        ],
+        "scripting_src_main_java_org_apache_unomi_scripting_MvelScriptExecutor": [
+            "setExpressionFilterFactory(ExpressionFilterFactory)"
+        ],
+        "scripting_src_main_java_org_apache_unomi_scripting_ExpressionFilter": [
+            "ExpressionFilter(Set,Set)"
+        ],
+        "services_src_main_java_org_apache_unomi_services_actions_ActionExecutorDispatcher": [
+            "setScriptExecutor(ScriptExecutor)",
+            "executeScript(String,Event)"
+        ],
+        "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PastEventConditionESQueryBuilder": [
+            "getEventCondition(Condition,Map)"
+        ],
+        "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PastEventConditionEvaluator": [
+            "eval(Condition,Item,Map,ConditionEvaluatorDispatcher)"
+        ],
+        "scripting_src_main_java_org_apache_unomi_scripting_internal_ExpressionFilterFactoryImpl": [
+            "getExpressionFilter(String)",
+            "setBundleContext(BundleContext)",
+            "ExpressionFilterFactoryImpl()"
+        ],
+        "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionContextHelper": [
+            "getContextualCondition(Condition,Map)"
+        ],
+        "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionESQueryBuilderDispatcher": [
+            "buildFilter(Condition,Map)",
+            "count(Condition,Map)"
+        ],
+        "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionEvaluatorDispatcher": [
+            "execute(Object)"
+        ]
+    },
+    "CVE-2020-13946": {
+        "src_java_org_apache_cassandra_service_CassandraDaemon": [
+            "JmxRegistry(int,RMIClientSocketFactory,RMIServerSocketFactory,String)",
+            "rebind(String,Remote)",
+            "unbind(String)",
+            "setRemoteServerStub(Remote)",
+            "bind(String,Remote)"
+        ]
+    },
+    "CVE-2017-1000209": {
+        "src_main_java_com_neovisionaries_ws_client_Address": [
+            "getHostname()"
+        ],
+        "src_main_java_com_neovisionaries_ws_client_OkHostnameVerifier": [
+            "OkHostnameVerifier()",
+            "getSubjectAltNames(X509Certificate,int)"
+        ],
+        "src_main_java_com_neovisionaries_ws_client_DistinguishedNameParser": [
+            "getByte(int)",
+            "getEscaped()",
+            "DistinguishedNameParser(X500Principal)",
+            "getUTF8()"
+        ],
+        "src_main_java_com_neovisionaries_ws_client_ProxyHandshaker": [
+            "getProxiedHostname()"
+        ]
+    },
+    "CVE-2017-1000487": {
+        "src_main_java_org_codehaus_plexus_util_cli_shell_Shell": [
+            "setUnconditionalQuoting(boolean)",
+            "getShellCommandLine(String)"
+        ],
+        "src_main_java_org_codehaus_plexus_util_cli_shell_BourneShell": [
+            "getQuotingTriggerChars()",
+            "getExecutionPreamble()",
+            "BourneShell(boolean)",
+            "unifyQuotes(String)",
+            "getExecutable()"
+        ],
+        "src_main_java_org_codehaus_plexus_util_cli_Commandline": [
+            "getLiteralExecutable()",
+            "Commandline(String)",
+            "setShell(Shell)",
+            "Commandline(String,Shell)",
+            "Commandline()",
+            "getShell()",
+            "getPosition()",
+            "getShellCommandline()",
+            "Commandline(Shell)",
+            "execute()",
+            "verifyShellState()",
+            "getCommandline()"
+        ]
+    },
+    "CVE-2017-11467": {
+        "core_src_main_java_com_orientechnologies_orient_core_sql_OCommandExecutorSQLSelect": [
+            "addResult(OIdentifiable,OCommandContext)"
+        ]
+    },
+    "CVE-2017-12159": {
+        "services_src_main_java_org_keycloak_forms_account_freemarker_model_AccountFederatedIdentityBean": [
+            "getActionUrl()",
+            "AccountFederatedIdentityBean(KeycloakSession,RealmModel,UserModel,URI,String)",
+            "FederatedIdentityEntry(FederatedIdentityModel,String,String,String,String,String)"
+        ],
+        "services_src_main_java_org_keycloak_services_managers_AuthenticationManager": [
+            "getAccountCookiePath(RealmModel,UriInfo)"
+        ],
+        "services_src_main_java_org_keycloak_forms_account_freemarker_model_UrlBean": [
+            "getTotpRemoveUrl()",
+            "getSessionsLogoutUrl()",
+            "UrlBean(RealmModel,Theme,URI,URI,URI,String)"
+        ],
+        "services_src_main_java_org_keycloak_services_resources_account_AccountFormService": [
+            "processSessionsLogout(String)",
+            "processTotpRemove(String)",
+            "processFederatedIdentityUpdate(String,String,String)"
+        ],
+        "services_src_main_java_org_keycloak_services_Urls": [
+            "accountTotpRemove(URI,String,String)",
+            "accountSessionsLogoutPage(URI,String,String)"
+        ]
+    },
+    "CVE-2020-1697": {
+        "server-spi-private_src_main_java_org_keycloak_validation_ClientValidationSPI": [
+            "getProviderClass()",
+            "getName()",
+            "getProviderFactoryClass()"
+        ],
+        "services_src_main_java_org_keycloak_validation_DefaultClientValidationProvider": [
+            "ValidationException(String)"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_validation_ClientValidationUtil": [
+            "getError()",
+            "DefaultClientValidationContext(Event,KeycloakSession,ClientModel)",
+            "getClient()",
+            "getEvent()",
+            "getSession()"
+        ],
+        "services_src_main_java_org_keycloak_validation_DefaultClientValidationProviderFactory": [
+            "create(KeycloakSession)",
+            "getId()"
+        ]
+    },
+    "CVE-2017-12972": {
+        "src_main_java_com_nimbusds_jose_crypto_DirectEncrypter": [
+            "encrypt(JWEHeader,byte)"
+        ],
+        "src_main_java_com_nimbusds_jose_crypto_AESGCM": [
+            "validate(byte,int)"
+        ],
+        "src_main_java_com_nimbusds_jose_crypto_AESGCMKW": [
+            "decryptCEK(SecretKey,byte,AuthenticatedCipherText,int,Provider)"
+        ],
+        "src_main_java_com_nimbusds_jose_crypto_AAD": [
+            "computeLength(byte)"
+        ],
+        "src_main_java_com_nimbusds_jose_crypto_RSA1_5": [
+            "decryptCEK(PrivateKey,byte,int,Provider)"
+        ],
+        "src_main_java_com_nimbusds_jose_crypto_ConcatKDF": [
+            "deriveKey(SecretKey,int,byte)"
+        ],
+        "src_main_java_com_nimbusds_jose_util_IntegerOverflowException": [
+            "IntegerOverflowException()"
+        ]
+    },
+    "CVE-2017-12620": {
+        "opennlp-tools_src_main_java_opennlp_tools_formats_letsmt_LetsmtDocument": [
+            "parse(InputStream)"
+        ],
+        "opennlp-tools_src_main_java_opennlp_tools_util_featuregen_GeneratorFactory": [
+            "createDOM(InputStream)"
+        ],
+        "opennlp-tools_src_main_java_opennlp_tools_formats_frenchtreebank_ConstitParseSampleStream": [
+            "ConstitParseSampleStream(ObjectStream)"
+        ]
+    },
+    "CVE-2017-12973": {
+        "src_main_java_com_nimbusds_jose_crypto_AESCBC": [
+            "decryptAuthenticated(SecretKey,byte,byte,byte,byte,Provider,Provider)"
+        ]
+    },
+    "CVE-2020-1727": {
+        "services_src_main_java_org_keycloak_social_google_GoogleIdentityProviderConfig": [
+            "GoogleIdentityProviderConfig()"
+        ],
+        "services_src_main_java_org_keycloak_broker_oidc_OIDCIdentityProviderConfig": [
+            "OIDCIdentityProviderConfig()"
+        ],
+        "server-spi-private_src_main_java_org_keycloak_models_utils_RepresentationToModel": [
+            "importIdentityProviders(RealmRepresentation,RealmModel)"
+        ],
+        "services_src_main_java_org_keycloak_partialimport_IdentityProvidersPartialImport": [
+            "create(RealmModel,KeycloakSession,IdentityProviderRepresentation)"
+        ],
+        "services_src_main_java_org_keycloak_social_openshift_OpenshiftV4IdentityProviderConfig": [
+            "OpenshiftV4IdentityProviderConfig()"
+        ],
+        "services_src_main_java_org_keycloak_services_resources_admin_IdentityProviderResource": [
+            "updateIdpFromRep(IdentityProviderRepresentation,RealmModel,KeycloakSession)"
+        ],
+        "services_src_main_java_org_keycloak_broker_oidc_OAuth2IdentityProviderConfig": [
+            "OAuth2IdentityProviderConfig()"
+        ],
+        "services_src_main_java_org_keycloak_social_openshift_OpenshiftV3IdentityProviderConfig": [
+            "OpenshiftV3IdentityProviderConfig()"
+        ],
+        "services_src_main_java_org_keycloak_social_stackoverflow_StackOverflowIdentityProviderConfig": [
+            "StackOverflowIdentityProviderConfig()"
+        ],
+        "services_src_main_java_org_keycloak_social_paypal_PayPalIdentityProviderConfig": [
+            "PayPalIdentityProviderConfig()"
+        ]
+    },
+    "CVE-2020-1729": {
+        "implementation_src_main_java_io_smallrye_config_inject_SecuritySupport": [
+            "SecuritySupport()"
+        ]
+    },
+    "CVE-2020-1744": {
+        "services_src_main_java_org_keycloak_authentication_AuthenticationProcessor": [
+            "logFailure()"
+        ]
+    },
+    "CVE-2017-15703": {
+        "src_main_java_org_apache_nifi_cluster_protocol_HeartbeatPayload": [
+            "unmarshal(byte)"
+        ],
+        "src_main_java_org_apache_nifi_controller_TemplateUtils": [
+            "parseTemplateStream(byte)"
+        ]
+    },
+    "CVE-2020-28191": {
+        "src_main_java_org_togglz_console_security_TogglzCSRFTokenProvider": [
+            "getToken(HttpServletRequest)"
+        ]
+    },
+    "CVE-2017-12624": {
+        "rt_frontend_jaxrs_src_main_java_org_apache_cxf_jaxrs_ext_multipart_Attachment": [
+            "Attachment(MultivaluedMap,DataHandler,Object)"
+        ],
+        "core_src_main_java_org_apache_cxf_attachment_AttachmentDeserializer": [
+            "AttachmentDeserializer(Message,List)"
+        ],
+        "core_src_main_java_org_apache_cxf_message_MessageUtils": [
+            "getContextualInteger(Message,String,int)"
+        ],
+        "core_src_main_java_org_apache_cxf_attachment_HeaderSizeExceededException": [
+            "HeaderSizeExceededException()",
+            "HeaderSizeExceededException(Throwable)",
+            "HeaderSizeExceededException(String)",
+            "HeaderSizeExceededException(String,Throwable)"
+        ]
+    },
+    "CVE-2017-2589": {
+        "src_main_java_io_hawt_web_ProxyDetails": [
+            "getFullProxyUrl()",
+            "getPassword()",
+            "getUserName()"
+        ],
+        "src_main_java_io_hawt_web_ProxyServlet": [
+            "parseProxyAddress(HttpServletRequest)"
+        ]
+    },
+    "CVE-2017-14063": {
+        "client_src_main_java_org_asynchttpclient_uri_UriParser": [
+            "inheritContextQuery(Uri,boolean)",
+            "trimRight(String)",
+            "currentPositionStartsWith2Slashes()",
+            "computeFragment(String)",
+            "isFragmentOnly(String)",
+            "currentPositionStartsWith4Slashes()"
+        ]
+    },
+    "CVE-2020-36634": {
+        "src_main_java_com_indeed_util_varexport_Variable": [
+            "getIndexableNames()"
+        ],
+        "src_main_java_com_indeed_util_varexport_servlet_ViewExportedVariablesServlet": [
+            "showUsingTemplate(VariableHost,String,String,boolean,Template,boolean,PrintWriter,String)",
+            "buildIndex(List)"
+        ]
+    },
+    "CVE-2020-17521": {
+        "src_main_java_org_codehaus_groovy_runtime_DefaultGroovyStaticMethods": [
+            "createTempDir(File,String,String)",
+            "createTempDir(File)"
+        ]
+    },
+    "CVE-2017-15691": {
+        "uimaj-core_src_main_java_org_apache_uima_util_XmlCasDeserializer": [
+            "deserialize(InputStream,CAS,boolean)",
+            "deserializeR(InputStream,CAS,boolean)"
+        ],
+        "uimaj-core_src_main_java_org_apache_uima_cas_impl_XmiCasDeserializer": [
+            "deserialize(InputStream,CAS,boolean,XmiSerializationSharedData,int,AllowPreexistingFS)",
+            "deserialize(InputStream,CAS,boolean,XmiSerializationSharedData,int)"
+        ]
+    },
+    "CVE-2020-1758": {
+        "services_src_main_java_org_keycloak_email_DefaultEmailSenderProvider": [
+            "getSupportedSslProtocols()"
+        ]
+    },
+    "CVE-2017-2582": {
+        "saml-core_src_main_java_org_keycloak_saml_common_util_StaxParserUtil": [
+            "getElementText(XMLEventReader)"
+        ]
+    },
+    "CVE-2017-2617": {
+        "hawtio-system_src_main_java_io_hawt_web_UploadServlet": [
+            "doPost(HttpServletRequest,HttpServletResponse)"
+        ],
+        "hawtio-system_src_main_java_io_hawt_web_GlobalFileUploadFilter": [
+            "getFilterConfig()",
+            "getFinalProhibitedList(List)",
+            "getByteOffset()",
+            "MagicNumberFileFilter()",
+            "setMagicNumbers(byte)",
+            "setExceptions(List)",
+            "getMagicNumbers()",
+            "getMaxSize()",
+            "setByteOffset(long)",
+            "GlobalFileUploadFilter()",
+            "getMaxFileSizeAllowed(List)",
+            "getExceptions()",
+            "getFilters()",
+            "setMaxSize(String)"
+        ]
+    },
+    "CVE-2020-1937": {
+        "server-base_src_main_java_org_apache_kylin_rest_service_CubeService": [
+            "getPrepareQueryResult(String,String)",
+            "getCuboidHitFrequency(String,boolean)",
+            "getCuboidQueryMatchCount(String)",
+            "getCuboidRollingUpStats(String)"
+        ]
+    },
+    "CVE-2020-1938": {
+        "java_org_apache_coyote_ajp_AjpNioProtocol": [
+            "AjpNioProtocol()",
+            "createProcessor()"
+        ],
+        "java_org_apache_tomcat_util_compat_Jre7Compat": [
+            "getLoopbackAddress()"
+        ],
+        "java_org_apache_coyote_ajp_AjpProtocol": [
+            "AjpProtocol()"
+        ],
+        "java_org_apache_coyote_ajp_AjpAprProtocol": [
+            "AjpAprProtocol()"
+        ],
+        "java_org_apache_coyote_ajp_AbstractAjpProtocol": [
+            "getAllowedRequestAttributesPatternPattern()",
+            "getAllowedRequestAttributesPattern()",
+            "setAllowedRequestAttributesPattern(String)"
+        ],
+        "java_org_apache_coyote_ajp_AbstractAjpProcessor": [
+            "setAllowedRequestAttributesPatternPattern(Pattern)"
+        ]
+    },
+    "CVE-2020-1952": {
+        "server_src_main_java_org_apache_iotdb_db_service_JMXService": [
+            "stop()"
+        ]
+    },
+    "CVE-2020-1953": {
+        "src_main_java_org_apache_commons_configuration2_YAMLConfiguration": [
+            "getClassForName(String)"
+        ]
+    },
+    "CVE-2020-1954": {
+        "rt_management_src_main_java_org_apache_cxf_management_jmx_InstrumentationManagerImpl": [
+            "setEnvironment(Map)",
+            "setCreateMBServerConnectorFactory(boolean)",
+            "isEnabled()",
+            "setEnabled(boolean)",
+            "shutdown()",
+            "readJMXProperties(Bus)",
+            "init()"
+        ],
+        "distribution_src_main_release_samples_throttling_src_main_java_demo_throttling_client_Client": [
+            "main(String)"
+        ],
+        "rt_management_src_main_java_org_apache_cxf_management_jmx_MBServerConnectorFactory": [
+            "setMBeanServer(MBeanServer)",
+            "getRegistryPort(String)",
+            "setServiceUrl(String)",
+            "getInstance()",
+            "bind(String,Remote)",
+            "getBindingName(JMXServiceURL)",
+            "setDaemon(boolean)",
+            "unbind(String)",
+            "setThreaded(boolean)",
+            "getServerPort(String)",
+            "rebind(String,Remote)",
+            "MBServerConnectorFactory()",
+            "JmxRegistry(int,String)"
+        ]
+    },
+    "CVE-2017-7957": {
+        "src_java_com_thoughtworks_xstream_XStream": [
+            "setupConverters()",
+            "setupSecurity()"
+        ]
+    },
+    "CVE-2020-1958": {
+        "extensions-core_druid-basic-security_src_main_java_org_apache_druid_security_basic_authentication_validator_LDAPCredentialsValidator": [
+            "encodeForLDAP(String,boolean)"
+        ]
+    },
+    "CVE-2018-1000130": {
+        "src_main_java_org_jolokia_backend_BackendManager": [
+            "createRequestDispatchers(String,Converters,ServerHandle,Restrictor)",
+            "init(Configuration)"
+        ],
+        "src_main_java_org_jolokia_jsr160_Jsr160RequestDispatcher": [
+            "acceptTargetUrl(String)"
+        ],
+        "src_main_java_org_jolokia_http_Jsr160ProxyNotEnabledByDefaultAnymoreDispatcher": [
+            "Jsr160ProxyNotEnabledByDefaultAnymoreDispatcher(Converters,ServerHandle,Restrictor,Configuration)"
+        ]
+    },
+    "CVE-2017-3159": {
+        "camel-core_src_main_java_org_apache_camel_model_dataformat_YAMLDataFormat": [
+            "setTypeFilters(List)",
+            "getTypeFilters()",
+            "isAllowAnyType()",
+            "setAllowAnyType(boolean)"
+        ],
+        "camel-core_src_main_java_org_apache_camel_model_dataformat_YAMLTypeFilterDefinition": [
+            "getValue()",
+            "setValue(String)",
+            "getType()",
+            "setType(YAMLTypeFilterType)"
+        ],
+        "components_camel-snakeyaml_src_main_java_org_apache_camel_component_snakeyaml_SnakeYAMLDataFormat": [
+            "getClassForName(String)",
+            "setTypeFilterDefinitions(List)",
+            "setTypeDescriptions(List)",
+            "SnakeYAMLDataFormat()",
+            "setUnmarshalType(Class)",
+            "setClassTags(Map)",
+            "addTypeDescription(Class,Tag)",
+            "addClassTags(Class,Tag)"
+        ],
+        "components_camel-snakeyaml_src_main_java_org_apache_camel_component_snakeyaml_TypeFilters": [
+            "RegExp(Collection)",
+            "TypeName(Collection)",
+            "RegExp(String)",
+            "TypeName(String)",
+            "TypeFilters()"
+        ],
+        "src_main_java_org_apache_camel_component_snakeyaml_springboot_SnakeYAMLDataFormatConfiguration": [
+            "getTypeFilter()",
+            "setTypeFilter(List)",
+            "getAllowAnyType()",
+            "setAllowAnyType(Boolean)"
+        ]
+    },
+    "CVE-2017-4974": {
+        "common_src_main_java_org_cloudfoundry_identity_uaa_rest_jdbc_SimpleSearchQueryConverter": [
+            "SimpleSearchQueryConverter()"
+        ]
+    },
+    "CVE-2017-4995": {
+        "core_src_main_java_org_springframework_security_jackson2_SecurityJackson2Modules": [
+            "getMechanism()",
+            "WhitelistTypeIdResolver(TypeIdResolver)",
+            "idFromBaseType()",
+            "getDescForKnownTypeIds()",
+            "WhitelistTypeResolverBuilder()"
+        ]
+    },
+    "CVE-2017-5641": {
+        "core_src_main_java_flex_messaging_validators_ClassDeserializationValidator": [
+            "ClassDeserializationValidator()"
+        ]
+    },
+    "CVE-2020-25633": {
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyNotFoundException": [
+            "ResteasyNotFoundException(NotFoundException)",
+            "unwrap()"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyRedirectionException": [
+            "getLocation()",
+            "ResteasyRedirectionException(RedirectionException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyNotAuthorizedException": [
+            "ResteasyNotAuthorizedException(NotAuthorizedException)",
+            "getChallenges()"
+        ],
+        "resteasy-core_src_main_java_org_jboss_resteasy_core_providerfactory_ResteasyProviderFactoryDelegate": [
+            "ResteasyProviderFactoryDelegate(ResteasyProviderFactory)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyWebApplicationException": [
+            "ResteasyWebApplicationException(WebApplicationException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyNotAcceptableException": [
+            "ResteasyNotAcceptableException(NotAcceptableException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyInternalServerErrorException": [
+            "ResteasyInternalServerErrorException(InternalServerErrorException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyNotSupportedException": [
+            "ResteasyNotSupportedException(NotSupportedException)"
+        ],
+        "resteasy-core_src_main_java_org_jboss_resteasy_util_ThreadLocalStack": [
+            "get(int)"
+        ],
+        "resteasy-client-microprofile-base_src_main_java_org_jboss_resteasy_microprofile_client_DefaultResponseExceptionMapper": [
+            "handles(int,MultivaluedMap)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyServiceUnavailableException": [
+            "ResteasyServiceUnavailableException(ServiceUnavailableException)",
+            "getRetryTime(Date)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyBadRequestException": [
+            "ResteasyBadRequestException(BadRequestException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyServerErrorException": [
+            "ResteasyServerErrorException(ServerErrorException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyClientErrorException": [
+            "ResteasyClientErrorException(ClientErrorException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyNotAllowedException": [
+            "ResteasyNotAllowedException(NotAllowedException)"
+        ],
+        "resteasy-client-api_src_main_java_org_jboss_resteasy_client_exception_ResteasyForbiddenException": [
+            "ResteasyForbiddenException(ForbiddenException)"
+        ]
+    },
+    "CVE-2017-5645": {
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_net_server_UdpSocketServer": [
+            "main(String)"
+        ],
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_net_server_ObjectInputStreamLogEventBridge": [
+            "ObjectInputStreamLogEventBridge(List)",
+            "ObjectInputStreamLogEventBridge()",
+            "wrapStream(InputStream)"
+        ],
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_net_server_AbstractSocketServer": [
+            "getAllowedClasses()",
+            "setAllowedClasses(List)"
+        ],
+        "log4j-core_src_main_java_org_apache_logging_log4j_core_util_FilteredObjectInputStream": [
+            "FilteredObjectInputStream(InputStream,Collection)"
+        ]
+    },
+    "CVE-2017-5664": {
+        "java_org_apache_catalina_servlets_DefaultServlet": [
+            "serveResource(HttpServletRequest,HttpServletResponse,boolean,String)"
+        ]
+    },
+    "CVE-2017-5929": {
+        "logback-classic_src_main_java_ch_qos_logback_classic_net_server_HardenedLoggingEventInputStream": [
+            "HardenedLoggingEventInputStream(InputStream,List)",
+            "getWhilelist()",
+            "HardenedLoggingEventInputStream(InputStream)"
+        ],
+        "logback-access_src_main_java_ch_qos_logback_access_net_SocketNode": [
+            "run()"
+        ],
+        "logback-classic_src_main_java_ch_qos_logback_classic_net_server_RemoteAppenderStreamClient": [
+            "createObjectInputStream()"
+        ],
+        "logback-classic_src_main_java_ch_qos_logback_classic_net_SocketNode": [
+            "close()"
+        ],
+        "logback-core_src_main_java_ch_qos_logback_core_net_HardenedObjectInputStream": [
+            "HardenedObjectInputStream(InputStream,String)",
+            "HardenedObjectInputStream(InputStream,List)"
+        ]
+    },
+    "CVE-2017-7656": {
+        "jetty-http_src_main_java_org_eclipse_jetty_http_HttpParser": [
+            "BadMessageException(int,String)",
+            "reset()"
+        ]
+    },
+    "CVE-2020-26234": {
+        "modules_kernel_src_main_java_org_opencastproject_kernel_http_impl_HttpClientImpl": [
+            "getAcceptedIssuers()"
+        ]
+    },
+    "CVE-2020-26282": {
+        "browserup-proxy-rest_src_main_java_com_browserup_bup_rest_validation_util_MessageSanitizer": [
+            "MessageSanitizer()"
+        ],
+        "browserup-proxy-rest_src_main_java_com_browserup_bup_rest_validation_PortWithExistingProxyConstraint": [
+            "isValid(Integer,ConstraintValidatorContext)"
+        ],
+        "browserup-proxy-rest_src_main_java_com_browserup_bup_rest_validation_NotBlankConstraint": [
+            "isValid(Object,ConstraintValidatorContext)"
+        ]
+    },
+    "CVE-2020-27178": {
+        "support_cas-server-support-otp-mfa-core_src_main_java_org_apereo_cas_otp_util_QRUtils": [
+            "generateQRCode(OutputStream,String,int,int)"
+        ]
+    },
+    "CVE-2017-7661": {
+        "plugins_spring_src_main_java_org_apache_cxf_fediz_spring_web_FederationAuthenticationFilter": [
+            "getState(ServletRequest)",
+            "attemptAuthentication(HttpServletRequest,HttpServletResponse)"
+        ],
+        "plugins_spring2_src_main_java_org_apache_cxf_fediz_spring_web_FederationAuthenticationFilter": [
+            "attemptAuthentication(HttpServletRequest)"
+        ]
+    },
+    "CVE-2020-27216": {
+        "jetty-webapp_src_main_java_org_eclipse_jetty_webapp_WebInfConfiguration": [
+            "cloneConfigure(WebAppContext,WebAppContext)"
+        ]
+    },
+    "CVE-2020-27219": {
+        "hawkbit-runtime_hawkbit-update-server_src_main_java_org_eclipse_hawkbit_app_StreamAwareErrorController": [
+            "StreamAwareErrorController(ErrorAttributes,ServerProperties)"
+        ]
+    },
+    "CVE-2020-27220": {
+        "src_main_java_org_eclipse_hono_adapter_mqtt_AbstractVertxBasedMqttProtocolAdapter": [
+            "onSubscribe(MqttEndpoint,Device,MqttSubscribeMessage,CommandSubscriptionsManager,OptionalInt)"
+        ]
+    },
+    "CVE-2017-8046": {
+        "spring-data-rest-webmvc_src_main_java_org_springframework_data_rest_webmvc_json_patch_PatchOperation": [
+            "evaluateValueFromTarget(Object,Class)"
+        ]
+    },
+    "CVE-2020-27826": {
+        "services_src_main_java_org_keycloak_userprofile_LegacyUserProfileProvider": [
+            "addSessionValidators(ValidationChainBuilder)",
+            "addUserCreationValidators(ValidationChainBuilder)",
+            "validate(UserProfileContext,UserProfile)",
+            "addBasicValidators(ValidationChainBuilder,boolean)",
+            "LegacyUserProfileProvider(KeycloakSession)"
+        ],
+        "services_src_main_java_org_keycloak_services_resources_admin_UserResource": [
+            "updateUserFromRep(UserModel,UserRepresentation,KeycloakSession,boolean)"
+        ],
+        "services_src_main_java_org_keycloak_userprofile_validation_Validator": [
+            "Validator(String,BiFunction)"
+        ],
+        "services_src_main_java_org_keycloak_userprofile_profile_DefaultUserProfileContext": [
+            "forUserResource(UserRepresentation)"
+        ],
+        "services_src_main_java_org_keycloak_userprofile_LegacyUserProfileProviderFactory": [
+            "getRegexPatternString(String,String)",
+            "create(KeycloakSession)",
+            "init()"
+        ]
+    },
+    "CVE-2020-36282": {
+        "src_main_java_com_rabbitmq_jms_client_message_RMQStreamMessage": [
+            "RMQStreamMessage(List)",
+            "RMQStreamMessage(boolean)",
+            "RMQStreamMessage()",
+            "readBody(ObjectInput,ByteArrayInputStream)"
+        ]
+    },
+    "CVE-2020-36319": {
+        "flow-server_src_main_java_com_vaadin_flow_server_connect_VaadinConnectController": [
+            "VaadinConnectController(ObjectMapper,VaadinConnectAccessChecker,EndpointNameChecker,ExplicitNullableTypeChecker,ApplicationContext)"
+        ]
+    },
+    "CVE-2018-1000129": {
+        "agent_core_src_main_java_org_jolokia_http_AgentServlet": [
+            "getMimeType(HttpServletRequest)",
+            "sendResponse(HttpServletResponse,HttpServletRequest,JSONAware)"
+        ],
+        "agent_jvm_src_main_java_org_jolokia_jvmagent_handler_JolokiaHttpHandler": [
+            "getMimeType(ParsedUri)"
+        ],
+        "agent_core_src_main_java_org_jolokia_util_MimeTypeUtil": [
+            "getResponseMimeType(String,String,String)"
+        ]
+    },
+    "CVE-2020-5407": {
+        "src_main_java_org_springframework_security_saml2_provider_service_authentication_OpenSamlAuthenticationProvider": [
+            "getAssertionValidator(Saml2AuthenticationToken)",
+            "getVerificationCredential(X509Certificate)"
+        ]
+    },
+    "CVE-2018-1000180": {
+        "core_src_main_java_org_bouncycastle_crypto_generators_RSAKeyPairGenerator": [
+            "isProbablePrime(BigInteger,int)",
+            "chooseRandomPrime(int,BigInteger,BigInteger)",
+            "isProbablePrime(BigInteger)"
+        ]
+    },
+    "CVE-2020-9491": {
+        "src_main_java_org_apache_nifi_security_util_SslContextFactory": [
+            "getTrustManagers(TlsConfiguration)",
+            "getX509TrustManager(TlsConfiguration)",
+            "getType()",
+            "getKeyManagers(TlsConfiguration)",
+            "toString()",
+            "getDescription()"
+        ],
+        "src_main_java_org_apache_nifi_processors_solr_SolrUtils": [
+            "writeValue(SolrInputDocument,Object,String,DataType,List)"
+        ],
+        "src_main_java_org_apache_nifi_security_util_TlsConfiguration": [
+            "getKeystoreType()",
+            "getKeyPasswordForLogging()",
+            "getTruststorePropertiesForLogging()",
+            "getKeyPassword()",
+            "TlsConfiguration(String,String,String,String,String,String,String,String)",
+            "TlsConfiguration(String,String,String,String,String,String,String)",
+            "TlsConfiguration(String,String,KeystoreType,String,String,KeystoreType)",
+            "getKeystorePropertiesForLogging()",
+            "getFunctionalKeyPasswordForLogging()",
+            "getTruststorePassword()",
+            "getTruststoreType()",
+            "TlsConfiguration()",
+            "getKeystorePath()",
+            "getFunctionalKeyPassword()",
+            "TlsConfiguration(String,String,String,KeystoreType,String,String,KeystoreType)",
+            "TlsConfiguration(TlsConfiguration)",
+            "getProtocol()",
+            "getKeystorePassword()",
+            "getKeystorePasswordForLogging()",
+            "TlsConfiguration(String,String,String,KeystoreType,String,String,KeystoreType,String)",
+            "getTruststorePasswordForLogging()",
+            "getTruststorePath()"
+        ],
+        "src_main_java_org_apache_nifi_processors_standard_InvokeHTTP": [
+            "setSslSocketFactory(SSLContextService,SSLContext,boolean)"
+        ],
+        "src_main_java_org_apache_nifi_security_util_KeyStoreUtils": [
+            "getKeyManagerFactoryFromKeyStore(KeyStore,char,char)",
+            "getTrustManagerFactoryFromTrustStore(KeyStore)",
+            "sslServerSocketToString(SSLServerSocket)",
+            "sslContextToString(SSLContext)",
+            "sslParametersToString(SSLParameters)"
+        ],
+        "src_main_java_org_apache_nifi_framework_security_util_SslContextCreationException": [
+            "SslContextCreationException(String)",
+            "SslContextCreationException(Throwable)",
+            "SslContextCreationException()",
+            "SslContextCreationException(String,Throwable)"
+        ],
+        "src_main_java_org_apache_nifi_controller_queue_clustered_server_ConnectionLoadBalanceServer": [
+            "CommunicateAction(LoadBalanceProtocol,Socket)"
+        ],
+        "src_main_java_org_apache_nifi_web_server_JettyServer": [
+            "configureSslContextFactory(SslContextFactory,NiFiProperties)"
+        ],
+        "src_main_java_org_apache_nifi_io_socket_ServerSocketConfiguration": [
+            "setSSLContextFactory(SSLContextFactory)"
+        ],
+        "src_main_java_org_apache_nifi_toolkit_tls_service_server_TlsCertificateAuthorityService": [
+            "createServer(Handler,int,KeyStore,String)"
+        ],
+        "src_main_java_org_apache_nifi_service_CassandraSessionProvider": [
+            "getContactPoints(String)"
+        ],
+        "src_main_java_org_apache_nifi_framework_security_util_SslServerSocketFactoryCreationException": [
+            "SslServerSocketFactoryCreationException(String,Throwable)",
+            "SslServerSocketFactoryCreationException(Throwable)",
+            "SslServerSocketFactoryCreationException()",
+            "SslServerSocketFactoryCreationException(String)"
+        ],
+        "src_main_java_org_apache_nifi_framework_security_util_SslException": [
+            "SslException(String)",
+            "SslException(Throwable)",
+            "SslException()",
+            "SslException(String,Throwable)"
+        ],
+        "src_main_java_org_apache_nifi_security_util_CertificateUtils": [
+            "getHighestCurrentSupportedTlsProtocolVersion()",
+            "getJavaVersion()",
+            "getCurrentSupportedTlsProtocolVersions()",
+            "getClientAuthStatus(SSLSocket)"
+        ],
+        "src_main_java_org_apache_nifi_io_socket_SSLContextFactory": [
+            "SSLContextFactory(NiFiProperties)",
+            "getPass(String)"
+        ],
+        "src_main_java_org_apache_nifi_reporting_AbstractSiteToSiteReportingTask": [
+            "getNextJsonNode()"
+        ],
+        "src_main_java_org_apache_nifi_framework_security_util_SslSocketFactoryCreationException": [
+            "SslSocketFactoryCreationException(Throwable)",
+            "SslSocketFactoryCreationException(String)",
+            "SslSocketFactoryCreationException()",
+            "SslSocketFactoryCreationException(String,Throwable)"
+        ]
+    },
+    "CVE-2018-1000873": {
+        "src_main_java_com_fasterxml_jackson_datatype_jsr310_deser_DurationDeserializer": [
+            "deserialize(JsonParser,DeserializationContext)"
+        ],
+        "src_main_java_com_fasterxml_jackson_datatype_jsr310_DecimalUtils": [
+            "extractNanosecondDecimal(BigDecimal,long)"
+        ],
+        "src_main_java_com_fasterxml_jackson_datatype_jsr310_deser_InstantDeserializer": [
+            "_fromDecimal(DeserializationContext,BigDecimal)"
+        ]
+    },
+    "CVE-2020-9492": {
+        "src_main_java_org_apache_hadoop_security_AuthenticationWithProxyUserFilter": [
+            "getDoAs(HttpServletRequest)",
+            "getRemoteUser()"
+        ],
+        "src_main_java_org_apache_hadoop_security_AuthenticationFilterInitializer": [
+            "initFilter(FilterContainer,Configuration)"
+        ]
+    },
+    "CVE-2018-12536": {
+        "src_main_java_org_eclipse_jetty_util_resource_PathResource": [
+            "PathResource(URI)",
+            "PathResource(PathResource,String)"
+        ]
+    },
+    "CVE-2018-1000613": {
+        "core_src_main_java_org_bouncycastle_pqc_math_linearalgebra_GF2nField": [
+            "invertMatrix(GF2Polynomial)"
+        ],
+        "core_src_main_java_org_bouncycastle_pqc_crypto_gmss_GMSSKeyPairGenerator": [
+            "genKeyPair()"
+        ],
+        "core_src_main_java_org_bouncycastle_pqc_crypto_rainbow_RainbowParameters": [
+            "RainbowParameters(int)",
+            "checkParams()"
+        ]
+    },
+    "CVE-2021-21234": {
+        "src_main_java_eu_hinsch_spring_boot_actuator_logview_LogViewEndpoint": [
+            "view(String,String,Integer,HttpServletResponse)"
+        ]
+    },
+    "CVE-2018-1000632": {
+        "src_main_java_org_dom4j_QName": [
+            "QName(String,Namespace,String)"
+        ]
+    },
+    "CVE-2018-1048": {
+        "core_src_main_java_io_undertow_server_protocol_ajp_AjpOpenListener": [
+            "setUndertowOptions(OptionMap)",
+            "AjpOpenListener(ByteBufferPool,OptionMap)"
+        ],
+        "core_src_main_java_io_undertow_server_protocol_ajp_AjpRequestParser": [
+            "AjpRequestParser(String,boolean,int,int)"
+        ]
+    },
+    "CVE-2018-25068": {
+        "src_main_java_com_anrisoftware_globalpom_fileresourcemanager_FileResourceManagerProvider": [
+            "setStoreDir(String)",
+            "setStoreDir(File)",
+            "setDebug(boolean)"
+        ]
+    },
+    "CVE-2018-10899": {
+        "agent_core_src_main_java_org_jolokia_http_AgentServlet": [
+            "doOptions(HttpServletRequest,HttpServletResponse)"
+        ],
+        "agent_jvm_src_main_java_org_jolokia_jvmagent_handler_JolokiaHttpHandler": [
+            "performCorsPreflightCheck(HttpExchange)"
+        ]
+    },
+    "CVE-2021-21364": {
+        "src_main_java_io_swagger_codegen_languages_JavaJerseyServerCodegen": [
+            "JavaJerseyServerCodegen()"
+        ],
+        "src_main_java_io_swagger_client_api_FakeApi": [
+            "FakeApi(ApiClient)",
+            "getApiClient()",
+            "FakeApi()",
+            "setApiClient(ApiClient)"
+        ],
+        "src_main_java_io_swagger_client_model_Client": [
+            "toString()",
+            "getClient()",
+            "setClient(String)"
+        ],
+        "src_main_java_io_swagger_client_model_Dog": [
+            "setBreed(String)",
+            "getBreed()"
+        ],
+        "src_main_java_io_swagger_client_model_Animal": [
+            "getClassName()",
+            "setClassName(String)",
+            "getColor()",
+            "setColor(String)"
+        ],
+        "src_main_java_io_swagger_client_CustomInstantDeserializer": [
+            "FromDecimalArguments(long,int,ZoneId)",
+            "CustomInstantDeserializer(Class,DateTimeFormatter,Function,Function,Function,BiFunction)",
+            "FromIntegerArguments(long,ZoneId)",
+            "apply(T,ZoneId)",
+            "CustomInstantDeserializer(CustomInstantDeserializer,DateTimeFormatter)",
+            "getZone(DeserializationContext)"
+        ],
+        "src_main_java_io_swagger_client_model_SpecialModelName": [
+            "setSpecialPropertyName(Long)",
+            "getSpecialPropertyName()"
+        ],
+        "src_main_java_io_swagger_client_model_ModelReturn": [
+            "setReturn(Integer)",
+            "getReturn()"
+        ],
+        "src_main_java_io_swagger_client_model_NumberOnly": [
+            "getJustNumber()",
+            "setJustNumber(BigDecimal)"
+        ],
+        "src_main_java_io_swagger_client_api_FakeClassnameTags123Api": [
+            "FakeClassnameTags123Api(ApiClient)",
+            "FakeClassnameTags123Api()"
+        ],
+        "src_main_java_io_swagger_client_model_AdditionalPropertiesClass": [
+            "getMapProperty()",
+            "setMapOfMapProperty(Map)",
+            "setMapProperty(Map)",
+            "getMapOfMapProperty()"
+        ],
+        "src_main_java_io_swagger_client_model_Order": [
+            "setShipDate(OffsetDateTime)",
+            "setQuantity(Integer)",
+            "getId()",
+            "isComplete()",
+            "setComplete(Boolean)",
+            "getStatus()",
+            "setId(Long)",
+            "getQuantity()",
+            "getValue()",
+            "getPetId()",
+            "setStatus(StatusEnum)",
+            "setPetId(Long)",
+            "getShipDate()"
+        ],
+        "src_main_java_io_swagger_client_ApiResponse": [
+            "ApiResponse(int,Map,T)",
+            "getStatusCode()",
+            "getData()",
+            "ApiResponse(int,Map)",
+            "getHeaders()"
+        ],
+        "src_main_java_io_swagger_client_model_Name": [
+            "setName(Integer)",
+            "get123Number()",
+            "getProperty()",
+            "getName()",
+            "getSnakeCase()"
+        ],
+        "src_main_java_io_swagger_client_model_User": [
+            "getPhone()",
+            "getUsername()",
+            "setLastName(String)",
+            "setFirstName(String)",
+            "setPhone(String)",
+            "setUsername(String)",
+            "setUserStatus(Integer)",
+            "getFirstName()",
+            "getPassword()",
+            "setPassword(String)",
+            "getUserStatus()",
+            "setEmail(String)",
+            "getLastName()",
+            "getEmail()"
+        ],
+        "src_main_java_io_swagger_client_model_HasOnlyReadOnly": [
+            "getFoo()",
+            "getBar()"
+        ],
+        "src_main_java_io_swagger_client_ApiException": [
+            "ApiException(String,Throwable,int,Map)",
+            "ApiException(Throwable)",
+            "ApiException(String,int,Map,String)",
+            "ApiException(String,Throwable,int,Map,String)",
+            "getResponseHeaders()",
+            "getCode()",
+            "ApiException(int,String)",
+            "ApiException()",
+            "ApiException(int,Map,String)",
+            "ApiException(int,String,Map,String)",
+            "ApiException(String)",
+            "getResponseBody()"
+        ],
+        "src_main_java_io_swagger_client_model_EnumArrays": [
+            "setArrayEnum(List)",
+            "getArrayEnum()",
+            "getJustSymbol()",
+            "setJustSymbol(JustSymbolEnum)"
+        ],
+        "src_main_java_io_swagger_client_model_Category": [
+            "setName(String)"
+        ],
+        "src_main_java_io_swagger_client_model_Model200Response": [
+            "getPropertyClass()"
+        ],
+        "src_main_java_io_swagger_client_auth_ApiKeyAuth": [
+            "getApiKeyPrefix()",
+            "getApiKey()",
+            "ApiKeyAuth(String,String)",
+            "setApiKey(String)",
+            "getParamName()",
+            "getLocation()",
+            "setApiKeyPrefix(String)"
+        ],
+        "src_main_java_io_swagger_codegen_languages_JavaClientCodegen": [
+            "JavaClientCodegen()"
+        ],
+        "src_main_java_io_swagger_client_api_AnotherFakeApi": [
+            "AnotherFakeApi()",
+            "AnotherFakeApi(ApiClient)"
+        ],
+        "src_main_java_io_swagger_client_model_OuterComposite": [
+            "setMyBoolean(Boolean)",
+            "getMyString()",
+            "getMyBoolean()",
+            "setMyString(String)",
+            "setMyNumber(BigDecimal)",
+            "getMyNumber()"
+        ],
+        "src_main_java_io_swagger_client_model_Capitalization": [
+            "getCapitalSnake()",
+            "getSmallCamel()",
+            "getCapitalCamel()",
+            "getScAETHFlowPoints()",
+            "setScAETHFlowPoints(String)",
+            "setATTNAME(String)",
+            "setSmallSnake(String)",
+            "setCapitalSnake(String)",
+            "getSmallSnake()",
+            "getATTNAME()",
+            "setSmallCamel(String)",
+            "setCapitalCamel(String)"
+        ],
+        "src_main_java_io_swagger_client_model_ModelApiResponse": [
+            "setCode(Integer)",
+            "getMessage()",
+            "setType(String)",
+            "getType()",
+            "setMessage(String)"
+        ],
+        "src_main_java_io_swagger_client_api_UserApi": [
+            "UserApi()",
+            "getUserByName(String)",
+            "getUserByNameWithHttpInfo(String)",
+            "UserApi(ApiClient)"
+        ],
+        "src_main_java_io_swagger_client_model_ReadOnlyFirst": [
+            "setBaz(String)",
+            "getBaz()"
+        ],
+        "src_main_java_io_swagger_client_model_Cat": [
+            "setDeclawed(Boolean)",
+            "isDeclawed()"
+        ],
+        "src_main_java_io_swagger_client_JSON": [
+            "getContext(Class)",
+            "JSON()",
+            "setDateFormat(DateFormat)"
+        ],
+        "src_main_java_io_swagger_client_Configuration": [
+            "setDefaultApiClient(ApiClient)",
+            "getDefaultApiClient()"
+        ],
+        "src_main_java_io_swagger_client_model_ModelList": [
+            "set123List(String)",
+            "get123List()"
+        ],
+        "src_main_java_io_swagger_client_model_ArrayOfArrayOfNumberOnly": [
+            "setArrayArrayNumber(List)",
+            "getArrayArrayNumber()"
+        ],
+        "src_main_java_io_swagger_client_model_ArrayOfNumberOnly": [
+            "getArrayNumber()",
+            "setArrayNumber(List)"
+        ],
+        "src_main_java_io_swagger_client_auth_OAuth": [
+            "setAccessToken(String)",
+            "getAccessToken()"
+        ],
+        "src_main_java_io_swagger_client_model_MixedPropertiesAndAdditionalPropertiesClass": [
+            "setMap(Map)",
+            "getDateTime()",
+            "setUuid(UUID)",
+            "getMap()",
+            "setDateTime(OffsetDateTime)",
+            "getUuid()"
+        ],
+        "src_main_java_io_swagger_client_Pair": [
+            "setValue(String)",
+            "Pair(String,String)"
+        ],
+        "src_main_java_io_swagger_client_api_PetApi": [
+            "PetApi()",
+            "getPetByIdWithHttpInfo(Long)",
+            "getPetById(Long)",
+            "PetApi(ApiClient)"
+        ],
+        "src_main_java_io_swagger_client_api_StoreApi": [
+            "getInventoryWithHttpInfo()",
+            "getOrderById(Long)",
+            "StoreApi(ApiClient)",
+            "getOrderByIdWithHttpInfo(Long)",
+            "StoreApi()",
+            "getInventory()"
+        ],
+        "src_main_java_io_swagger_client_model_Pet": [
+            "getPhotoUrls()",
+            "getCategory()",
+            "setPhotoUrls(List)",
+            "getTags()",
+            "setTags(List)",
+            "setCategory(Category)"
+        ]
+    },
+    "CVE-2018-10936": {
+        "pgjdbc_src_main_java_org_postgresql_ssl_jdbc4_LazyKeyManager": [
+            "LazyKeyManager(String,String,CallbackHandler,boolean)",
+            "getPrivateKey(String)",
+            "getCertificateChain(String)",
+            "getServerAliases(String,Principal)",
+            "getClientAliases(String,Principal)"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_core_SocketFactoryFactory": [
+            "getSslSocketFactory(Properties)"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_ssl_DefaultJavaSSLFactory": [
+            "DefaultJavaSSLFactory(Properties)"
+        ],
+        "pgjdbc_src_main_java_org_postgresql_ssl_LibPQFactory": [
+            "ConsoleCallbackHandler(String)",
+            "LibPQFactory(Properties)"
+        ]
+    },
+    "CVE-2018-11039": {
+        "spring-web_src_main_java_org_springframework_web_filter_HiddenHttpMethodFilter": [
+            "HttpMethodRequestWrapper(HttpServletRequest,String)"
+        ]
+    },
+    "CVE-2018-11761": {
+        "tika-core_src_main_java_org_apache_tika_utils_XMLReaderUtils": [
+            "setMaxEntityExpansions(int)",
+            "trySetStaxSecurityManager(XMLInputFactory)",
+            "trySetXercesSecurityManager(SAXParser)",
+            "trySetXercesSecurityManager(DocumentBuilderFactory)",
+            "getDocumentBuilderFactory()",
+            "getXMLInputFactory()"
+        ]
+    },
+    "CVE-2018-11765": {
+        "hadoop-common-project_hadoop-common_src_main_java_org_apache_hadoop_http_AdminAuthorizedServlet": [
+            "doGet(HttpServletRequest,HttpServletResponse)"
+        ]
+    },
+    "CVE-2018-11775": {
+        "activemq-client_src_main_java_org_apache_activemq_transport_nio_NIOSSLTransport": [
+            "setVerifyHostName(boolean)",
+            "isVerifyHostName()"
+        ],
+        "activemq-client_src_main_java_org_apache_activemq_transport_tcp_TcpTransport": [
+            "getWireFormat()"
+        ],
+        "activemq-client_src_main_java_org_apache_activemq_transport_tcp_SslTransport": [
+            "setVerifyHostName(Boolean)"
+        ]
+    }
+}

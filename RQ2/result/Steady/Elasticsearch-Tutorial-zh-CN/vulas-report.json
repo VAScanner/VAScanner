@@ -1,0 +1,860 @@
+{
+	"vulasReport": {
+		"generatedAt": "15.03.2023 12:22 +0800",
+		"generatedFor": {
+			"space": "9CD9F5E854F9F138500FE4CF1D64EC74",
+			"groupId": "com.youmeek.elasticsearch",
+			"artifactId": "elasticsearch-parent",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": true,
+	
+		"aggregatedModules": [
+				{
+					"groupId": "com.youmeek.elasticsearch",
+					"artifactId": "elasticsearch-parent",
+					"version": "1.0-SNAPSHOT"
+				}
+				,
+				{
+					"groupId": "com.youmeek.elasticsearch",
+					"artifactId": "elasticsearch-gis",
+					"version": "1.0-SNAPSHOT"
+				}
+				,
+				{
+					"groupId": "com.youmeek.elasticsearch",
+					"artifactId": "elasticsearch-base",
+					"version": "1.0-SNAPSHOT"
+				}
+		],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.5.2.jar",
+			"sha1": "733DB77AA8D9B2D68015189DF76AB06304406E50",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-45105",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-api-2.7.jar",
+			"sha1": "8DE00E382A817981B737BE84CB8DEF687D392963",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2017-5645",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.7.jar",
+			"sha1": "A3F2B4E64C61A7FC1ED8F1E5BA371933404ED98A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-9488",
+				"cvssScore": "3.7" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.7.jar",
+			"sha1": "A3F2B4E64C61A7FC1ED8F1E5BA371933404ED98A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-44228",
+				"cvssScore": "10.0" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.7.jar",
+			"sha1": "A3F2B4E64C61A7FC1ED8F1E5BA371933404ED98A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-44832",
+				"cvssScore": "6.6" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.7.jar",
+			"sha1": "A3F2B4E64C61A7FC1ED8F1E5BA371933404ED98A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-45046",
+				"cvssScore": "9.0" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.7.jar",
+			"sha1": "A3F2B4E64C61A7FC1ED8F1E5BA371933404ED98A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-45105",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.7.jar",
+			"sha1": "A3F2B4E64C61A7FC1ED8F1E5BA371933404ED98A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2017-12629",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "lucene-queryparser-6.4.1.jar",
+			"sha1": "1FC5795A072770A2C47DCE11A3C85A80F3437AF6",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-11612",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-4.1.7.Final.jar",
+			"sha1": "B3ECD69E7AB0EB2054B26AD3EFB13C34204FFE19",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0193",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "netty-codec-http-4.1.7.Final.jar",
+			"sha1": "9F957998C651E7B73D6DC878F704D81B4C085387",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-2156",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "netty-codec-http-4.1.7.Final.jar",
+			"sha1": "9F957998C651E7B73D6DC878F704D81B4C085387",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-16869",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-http-4.1.7.Final.jar",
+			"sha1": "9F957998C651E7B73D6DC878F704D81B4C085387",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-20445",
+				"cvssScore": "9.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-http-4.1.7.Final.jar",
+			"sha1": "9F957998C651E7B73D6DC878F704D81B4C085387",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-7238",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-http-4.1.7.Final.jar",
+			"sha1": "9F957998C651E7B73D6DC878F704D81B4C085387",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-4970",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-handler-4.1.7.Final.jar",
+			"sha1": "6F7DFA01C1AF4280C154213B6D548405DF352DF9",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-base",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-base/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.youmeek.elasticsearch",
+				"artifactId": "elasticsearch-gis",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.youmeek.elasticsearch/elasticsearch-gis/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

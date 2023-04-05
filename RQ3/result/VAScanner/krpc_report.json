@@ -1,0 +1,52 @@
+{
+    "project name": "krpc",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.16.Final": {
+            "used-method num": 52,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpMethod,java.lang.String)",
+                "io.netty.handler.codec.http.HttpResponseStatus:io.netty.handler.codec.http.HttpResponseStatus valueOf(int)",
+                "io.netty.handler.codec.http.HttpUtil:void setTransferEncodingChunked(io.netty.handler.codec.http.HttpMessage,boolean)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:void <init>()",
+                "io.netty.handler.codec.http.HttpMethod:io.netty.handler.codec.http.HttpMethod valueOf(java.lang.String)",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf wrappedBuffer(byte[])",
+                "io.netty.handler.codec.http.HttpClientCodec:void <init>()",
+                "io.netty.handler.codec.http.HttpUtil:void setKeepAlive(io.netty.handler.codec.http.HttpMessage,boolean)",
+                "io.netty.handler.codec.http.HttpUtil:boolean isKeepAlive(io.netty.handler.codec.http.HttpMessage)",
+                "io.netty.buffer.ByteBufOutputStream:void write(byte[])",
+                "io.netty.buffer.ByteBufOutputStream:void writeInt(int)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus,io.netty.buffer.ByteBuf)",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf wrappedBuffer(byte[],int,int)",
+                "io.netty.handler.codec.LengthFieldBasedFrameDecoder:void <init>(int,int,int,int,int)",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.util.ReferenceCountUtil:boolean release(java.lang.Object)",
+                "io.netty.channel.epoll.EpollEventLoopGroup:void <init>(int,java.util.concurrent.ThreadFactory)",
+                "io.netty.channel.ChannelDuplexHandler:void write(io.netty.channel.ChannelHandlerContext,java.lang.Object,io.netty.channel.ChannelPromise)",
+                "io.netty.channel.group.DefaultChannelGroup:void <init>(io.netty.util.concurrent.EventExecutor)",
+                "io.netty.buffer.ByteBufUtil:int utf8MaxBytes(java.lang.CharSequence)",
+                "io.netty.buffer.ByteBufUtil:io.netty.buffer.ByteBuf writeUtf8(io.netty.buffer.ByteBufAllocator,java.lang.CharSequence)",
+                "io.netty.handler.codec.http.DefaultHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>(int,int,int)",
+                "io.netty.handler.codec.http.HttpContentDecompressor:void <init>()",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf buffer(int)",
+                "io.netty.buffer.ByteBufOutputStream:void writeByte(int)",
+                "io.netty.buffer.ByteBufInputStream:void <init>(io.netty.buffer.ByteBuf)",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpMethod,java.lang.String,io.netty.buffer.ByteBuf)",
+                "io.netty.util.HashedWheelTimer:void <init>(java.util.concurrent.ThreadFactory,long,java.util.concurrent.TimeUnit)",
+                "io.netty.handler.codec.http.HttpContentCompressor:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int,java.util.concurrent.ThreadFactory)",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.buffer.ByteBufOutputStream:void writeShort(int)",
+                "io.netty.handler.codec.http.DefaultLastHttpContent:void <init>(io.netty.buffer.ByteBuf)"
+            ],
+            "vul-called frequency": 135
+        },
+        "junit:junit:4.12": {
+            "used-method num": 6
+        }
+    }
+}

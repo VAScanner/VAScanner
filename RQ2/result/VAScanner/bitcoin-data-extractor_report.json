@@ -1,0 +1,23 @@
+{
+    "project name": "bitcoin-data-extractor",
+    "vulnerable dependencies": {
+        "org.bouncycastle:bcprov-jdk15on:1.55": {
+            "used-method num": 6,
+            "CVE": [
+                "CVE-2016-1000339",
+                "CVE-2016-1000340",
+                "CVE-2016-1000342",
+                "CVE-2016-1000346",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.util.encoders.Hex:byte[] decode(java.lang.String)",
+                "org.bouncycastle.util.encoders.Hex:java.lang.String toHexString(byte[])"
+            ],
+            "vul-called frequency": 2
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 12
+        }
+    }
+}

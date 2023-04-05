@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "15.03.2023 13:05 +0800",
+		"generatedFor": {
+			"space": "9CD9F5E854F9F138500FE4CF1D64EC74",
+			"groupId": "com.seaboat",
+			"artifactId": "TextAnalyzer",
+			"version": "0.2.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-25.1-jre.jar",
+			"sha1": "6C57E4B22B44E89E548B5C9F70F0C45FE10FB0B4",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.seaboat",
+				"artifactId": "TextAnalyzer",
+				"version": "0.2.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.seaboat/TextAnalyzer/0.2.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

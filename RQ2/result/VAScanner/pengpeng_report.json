@@ -1,0 +1,25 @@
+{
+    "project name": "pengpeng",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.25.Final": {
+            "used-method num": 10,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:void <init>(java.lang.String)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler:void <init>(java.lang.String)",
+                "io.netty.channel.group.DefaultChannelGroup:void <init>(io.netty.util.concurrent.EventExecutor)",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()"
+            ],
+            "vul-called frequency": 9
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0
+        }
+    }
+}

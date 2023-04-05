@@ -1,0 +1,57 @@
+{
+    "project name": "julongchain",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.4": {
+            "used-method num": 6
+        },
+        "io.netty:netty-all:4.1.26.Final": {
+            "used-method num": 4
+        },
+        "com.alibaba:fastjson:1.2.47": {
+            "used-method num": 6,
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parse(byte[],com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,boolean)"
+            ],
+            "vul-called frequency": 4
+        },
+        "junit:junit:4.12": {
+            "used-method num": 2
+        },
+        "org.bouncycastle:bcprov-jdk15on:1.59": {
+            "used-method num": 32,
+            "CVE": [
+                "CVE-2018-1000613",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.util.encoders.Hex:java.lang.String toHexString(byte[])",
+                "org.bouncycastle.asn1.x509.Certificate:org.bouncycastle.asn1.x509.Certificate getInstance(java.lang.Object)",
+                "org.bouncycastle.crypto.params.ECDomainParameters:void <init>(org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger)",
+                "org.bouncycastle.math.ec.ECCurve$Fp:void <init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)",
+                "org.bouncycastle.crypto.engines.SM2Engine:byte[] processBlock(byte[],int,int)",
+                "org.bouncycastle.crypto.params.ECPublicKeyParameters:void <init>(org.bouncycastle.math.ec.ECPoint,org.bouncycastle.crypto.params.ECDomainParameters)",
+                "org.bouncycastle.util.encoders.Base64:byte[] decode(java.lang.String)",
+                "org.bouncycastle.asn1.ASN1Integer:org.bouncycastle.asn1.ASN1Integer getInstance(java.lang.Object)",
+                "org.bouncycastle.asn1.ASN1Sequence:org.bouncycastle.asn1.ASN1Sequence getInstance(java.lang.Object)",
+                "org.bouncycastle.crypto.signers.SM2Signer:byte[] generateSignature()",
+                "org.bouncycastle.util.io.pem.PemReader:org.bouncycastle.util.io.pem.PemObject readPemObject()",
+                "org.bouncycastle.util.io.pem.PemWriter:void writeObject(org.bouncycastle.util.io.pem.PemObjectGenerator)"
+            ],
+            "vul-called frequency": 61
+        },
+        "org.apache.activemq:activemq-broker:5.15.4": {
+            "used-method num": 5
+        },
+        "org.apache.activemq:activemq-client:5.15.4": {
+            "used-method num": 4
+        },
+        "org.apache.kafka:kafka-clients:1.1.0": {
+            "used-method num": 3
+        }
+    }
+}

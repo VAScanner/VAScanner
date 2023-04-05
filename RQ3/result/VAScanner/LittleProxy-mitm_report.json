@@ -1,0 +1,24 @@
+{
+    "project name": "LittleProxy-mitm",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0
+        },
+        "org.bouncycastle:bcprov-jdk15on:1.51": {
+            "used-method num": 11,
+            "CVE": [
+                "CVE-2016-1000339",
+                "CVE-2016-1000340",
+                "CVE-2016-1000342",
+                "CVE-2016-1000346",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.asn1.ASN1InputStream:org.bouncycastle.asn1.ASN1Primitive readObject()",
+                "org.bouncycastle.asn1.x509.SubjectPublicKeyInfo:void <init>(org.bouncycastle.asn1.ASN1Sequence)",
+                "org.bouncycastle.asn1.x509.GeneralName:void <init>(int,java.lang.String)"
+            ],
+            "vul-called frequency": 5
+        }
+    }
+}

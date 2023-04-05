@@ -1,0 +1,29 @@
+{
+    "project name": "rpc-java",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.9.Final": {
+            "used-method num": 13,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.channel.epoll.Epoll:boolean isAvailable()",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf wrappedBuffer(byte[][])",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int,java.util.concurrent.ThreadFactory)",
+                "io.netty.handler.codec.MessageToMessageEncoder:void <init>()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <init>()",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.channel.epoll.EpollEventLoopGroup:void <init>(int,java.util.concurrent.ThreadFactory)",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf buffer(int)"
+            ],
+            "vul-called frequency": 18
+        },
+        "org.apache.logging.log4j:log4j-core:2.8.1": {
+            "used-method num": 0
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0
+        }
+    }
+}

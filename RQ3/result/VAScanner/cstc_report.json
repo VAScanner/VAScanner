@@ -1,0 +1,20 @@
+{
+    "project name": "cstc",
+    "vulnerable dependencies": {
+        "org.bouncycastle:bcprov-jdk15on:1.59": {
+            "used-method num": 11,
+            "CVE": [
+                "CVE-2018-1000613",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.util.encoders.Base64:byte[] encode(byte[])",
+                "org.bouncycastle.util.encoders.Base64:byte[] decode(byte[])",
+                "org.bouncycastle.util.encoders.Hex:byte[] encode(byte[])",
+                "org.bouncycastle.util.encoders.Hex:byte[] decode(java.lang.String)",
+                "org.bouncycastle.util.encoders.Hex:byte[] decode(byte[])"
+            ],
+            "vul-called frequency": 28
+        }
+    }
+}

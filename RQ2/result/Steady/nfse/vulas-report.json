@@ -1,0 +1,70 @@
+{
+	"vulasReport": {
+		"generatedAt": "15.03.2023 12:35 +0800",
+		"generatedFor": {
+			"space": "9CD9F5E854F9F138500FE4CF1D64EC74",
+			"groupId": "com.github.pablopdomingos",
+			"artifactId": "nfse",
+			"version": "1.0.1"
+		},
+		"isAggregated": true,
+	
+		"aggregatedModules": [
+				{
+					"groupId": "com.github.pablopdomingos",
+					"artifactId": "nfse-bh",
+					"version": "1.0.1"
+				}
+				,
+				{
+					"groupId": "com.github.pablopdomingos",
+					"artifactId": "nfse",
+					"version": "1.0.1"
+				}
+		],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-2.4.jar",
+			"sha1": "B1B6EA3B7E4AA4F492509A4952029CD8E48019AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.github.pablopdomingos",
+				"artifactId": "nfse-bh",
+				"version": "1.0.1",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.github.pablopdomingos/nfse-bh/1.0.1",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

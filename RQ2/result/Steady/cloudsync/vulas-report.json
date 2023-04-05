@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "22.03.2023 10:26 +0800",
+		"generatedFor": {
+			"space": "EEA3ABE2DF5E9207AE69D54E0763122B",
+			"groupId": "org.cloudsync",
+			"artifactId": "cloudsync",
+			"version": "v1.0-beta15"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-2.5.jar",
+			"sha1": "2852E6E05FBB95076FC091F6D1780F1F8FE35E0F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.cloudsync",
+				"artifactId": "cloudsync",
+				"version": "v1.0-beta15",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/org.cloudsync/cloudsync/v1.0-beta15",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-7692",
+				"cvssScore": "9.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "google-oauth-client-1.22.0.jar",
+			"sha1": "1D63F369AC78E4838A3197147012026E791008CB",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.cloudsync",
+				"artifactId": "cloudsync",
+				"version": "v1.0-beta15",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/org.cloudsync/cloudsync/v1.0-beta15",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-jdk5-17.0.jar",
+			"sha1": "463F8378FEBA44DF7BA7CD9272D01837DAD62B36",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.cloudsync",
+				"artifactId": "cloudsync",
+				"version": "v1.0-beta15",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/org.cloudsync/cloudsync/v1.0-beta15",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

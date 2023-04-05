@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "15.03.2023 13:30 +0800",
+		"generatedFor": {
+			"space": "9CD9F5E854F9F138500FE4CF1D64EC74",
+			"groupId": "com.nosuchfield",
+			"artifactId": "geisha",
+			"version": "1.0.0-RELEASE"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-19.0.jar",
+			"sha1": "6CE200F6B23222AF3D8ABB6B6459E6C44F4BB0E9",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.nosuchfield",
+				"artifactId": "geisha",
+				"version": "1.0.0-RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/9CD9F5E854F9F138500FE4CF1D64EC74/com.nosuchfield/geisha/1.0.0-RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

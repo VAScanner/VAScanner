@@ -1,0 +1,18 @@
+{
+    "project name": "kafka-connect-scylladb",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:2.4.0": {
+            "used-method num": 13,
+            "CVE": [
+                "CVE-2021-38153"
+            ],
+            "used vul-method": [
+                "org.apache.kafka.common.config.AbstractConfig:void <init>(org.apache.kafka.common.config.ConfigDef,java.util.Map)"
+            ],
+            "vul-called frequency": 1
+        },
+        "junit:junit:4.12": {
+            "used-method num": 6
+        }
+    }
+}

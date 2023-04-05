@@ -1,0 +1,31 @@
+{
+    "project name": "aws-dynamodb-session-tomcat",
+    "vulnerable dependencies": {
+        "org.apache.tomcat:tomcat-catalina:8.0.1": {
+            "used-method num": 7,
+            "CVE": [
+                "CVE-2016-6797"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.session.StandardSession:void writeObjectData(java.io.ObjectOutputStream)"
+            ],
+            "vul-called frequency": 1
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:8.0.1": {
+            "used-method num": 7,
+            "CVE": [
+                "CVE-2018-8014",
+                "CVE-2019-0221",
+                "CVE-2019-0232",
+                "CVE-2019-17563"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.session.StandardSession:void writeObjectData(java.io.ObjectOutputStream)"
+            ],
+            "vul-called frequency": 1
+        }
+    }
+}

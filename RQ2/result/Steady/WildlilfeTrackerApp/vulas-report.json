@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "22.03.2023 03:08 +0800",
+		"generatedFor": {
+			"space": "EEA3ABE2DF5E9207AE69D54E0763122B",
+			"groupId": "com.moringaschool",
+			"artifactId": "WildlifeTrackerApp",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-14.0.1.jar",
+			"sha1": "69E12F4C6AEAC392555F1EA86FAB82B5E5E31AD4",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.moringaschool",
+				"artifactId": "WildlifeTrackerApp",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/com.moringaschool/WildlifeTrackerApp/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-9177",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spark-core-2.2.jar",
+			"sha1": "3BE92680F07C1E96B5A28C5E2B121DF143963AE2",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.moringaschool",
+				"artifactId": "WildlifeTrackerApp",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/com.moringaschool/WildlifeTrackerApp/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-9159",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spark-core-2.2.jar",
+			"sha1": "3BE92680F07C1E96B5A28C5E2B121DF143963AE2",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.moringaschool",
+				"artifactId": "WildlifeTrackerApp",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/com.moringaschool/WildlifeTrackerApp/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

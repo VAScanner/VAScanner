@@ -1,0 +1,29 @@
+{
+    "project name": "Sample",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.59": {
+            "used-method num": 1
+        },
+        "io.netty:netty-all:4.1.39.Final": {
+            "used-method num": 20,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.util.concurrent.FastThreadLocal:void removeAll()",
+                "io.netty.channel.epoll.Epoll:boolean isAvailable()",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler:void <init>(java.lang.String,java.lang.String,boolean)",
+                "io.netty.util.concurrent.DefaultEventExecutorGroup:void <init>(int,java.util.concurrent.ThreadFactory)",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:void <init>(java.lang.String)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.channel.epoll.EpollEventLoopGroup:void <init>(int,java.util.concurrent.ThreadFactory)",
+                "io.netty.util.AttributeKey:io.netty.util.AttributeKey valueOf(java.lang.String)"
+            ],
+            "vul-called frequency": 23
+        }
+    }
+}

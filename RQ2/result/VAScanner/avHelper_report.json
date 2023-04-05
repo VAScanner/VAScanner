@@ -1,0 +1,24 @@
+{
+    "project name": "avHelper",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 5
+        },
+        "com.thoughtworks.xstream:xstream:1.4.16": {
+            "used-method num": 6,
+            "CVE": [
+                "CVE-2021-43859"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void toXML(java.lang.Object,java.io.Writer)",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.Reader)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.File)"
+            ],
+            "vul-called frequency": 10
+        },
+        "org.apache.httpcomponents:httpclient:4.5.6": {
+            "used-method num": 10
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "project name": "shareschain",
+    "vulnerable dependencies": {
+        "org.bouncycastle:bcprov-jdk15on:1.59": {
+            "used-method num": 21,
+            "CVE": [
+                "CVE-2018-1000613",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher:int processBytes(byte[],int,int,byte[],int)",
+                "org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher:void init(boolean,org.bouncycastle.crypto.CipherParameters)",
+                "org.bouncycastle.crypto.modes.GCMBlockCipher:int processBytes(byte[],int,int,byte[],int)",
+                "org.bouncycastle.crypto.modes.GCMBlockCipher:void init(boolean,org.bouncycastle.crypto.CipherParameters)",
+                "org.bouncycastle.crypto.paddings.PaddedBufferedBlockCipher:int doFinal(byte[],int)",
+                "org.bouncycastle.crypto.modes.GCMBlockCipher:int doFinal(byte[],int)"
+            ],
+            "vul-called frequency": 12
+        },
+        "org.eclipse.jetty:jetty-server:9.4.12.v20180830": {
+            "used-method num": 17
+        },
+        "org.apache.tika:tika-core:1.19": {
+            "used-method num": 7,
+            "CVE": [
+                "CVE-2018-11761"
+            ],
+            "used vul-method": [
+                "org.apache.tika.Tika:java.lang.String detect(byte[])",
+                "org.apache.tika.Tika:java.lang.String detect(byte[],java.lang.String)",
+                "org.apache.tika.Tika:void <init>()"
+            ],
+            "vul-called frequency": 4
+        },
+        "org.apache.tika:tika-parsers:1.19": {
+            "used-method num": 10
+        }
+    }
+}

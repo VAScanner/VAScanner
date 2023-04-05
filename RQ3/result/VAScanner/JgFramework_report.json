@@ -1,0 +1,49 @@
+{
+    "project name": "JgFramework",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.0.33.Final": {
+            "used-method num": 44,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf copiedBuffer(java.lang.CharSequence,java.nio.charset.Charset)",
+                "io.netty.handler.codec.MessageToMessageDecoder:void <init>()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:void <init>(java.lang.String)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf wrappedBuffer(byte[])",
+                "io.netty.channel.group.DefaultChannelGroup:void <init>(java.lang.String,io.netty.util.concurrent.EventExecutor)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus,io.netty.buffer.ByteBuf)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.handler.codec.DelimiterBasedFrameDecoder:void <init>(int,io.netty.buffer.ByteBuf[])",
+                "io.netty.handler.codec.string.StringDecoder:void <init>()",
+                "io.netty.util.AttributeKey:io.netty.util.AttributeKey valueOf(java.lang.String)",
+                "io.netty.handler.codec.string.StringEncoder:void <init>()",
+                "io.netty.handler.codec.http.HttpResponseEncoder:void <init>()",
+                "io.netty.handler.codec.MessageToMessageEncoder:void <init>()",
+                "io.netty.handler.codec.string.StringDecoder:void <init>(java.nio.charset.Charset)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.util.ReferenceCountUtil:boolean release(java.lang.Object)",
+                "io.netty.handler.codec.http.HttpRequestDecoder:void <init>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory:io.netty.channel.ChannelFuture sendUnsupportedVersionResponse(io.netty.channel.Channel)",
+                "io.netty.handler.codec.http.HttpHeaders:void setContentLength(io.netty.handler.codec.http.HttpMessage,long)",
+                "io.netty.handler.codec.http.websocketx.PingWebSocketFrame:void <init>()",
+                "io.netty.handler.codec.string.StringEncoder:void <init>(java.nio.charset.Charset)",
+                "io.netty.handler.codec.Delimiters:io.netty.buffer.ByteBuf[] lineDelimiter()",
+                "io.netty.util.ReferenceCountUtil:java.lang.Object retain(java.lang.Object)"
+            ],
+            "vul-called frequency": 50
+        },
+        "com.alibaba:fastjson:1.2.12": {
+            "used-method num": 9
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 6
+        },
+        "commons-collections:commons-collections:3.1": {
+            "used-method num": 6
+        }
+    }
+}

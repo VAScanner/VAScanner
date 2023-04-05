@@ -1,0 +1,29 @@
+{
+    "project name": "SampleTomcat",
+    "vulnerable dependencies": {
+        "org.apache.tomcat.embed:tomcat-embed-core:8.5.2": {
+            "used-method num": 2,
+            "CVE": [
+                "CVE-2018-1304",
+                "CVE-2018-1305",
+                "CVE-2018-8014",
+                "CVE-2019-0221",
+                "CVE-2019-0232",
+                "CVE-2019-17563",
+                "CVE-2020-11996",
+                "CVE-2020-13943",
+                "CVE-2021-24122",
+                "CVE-2021-33037",
+                "CVE-2021-41079",
+                "CVE-2022-42252"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.webresources.DirResourceSet:void <init>(org.apache.catalina.WebResourceRoot,java.lang.String,java.lang.String,java.lang.String)"
+            ],
+            "vul-called frequency": 1
+        },
+        "org.apache.tomcat:tomcat-jasper:8.5.2": {
+            "used-method num": 0
+        }
+    }
+}

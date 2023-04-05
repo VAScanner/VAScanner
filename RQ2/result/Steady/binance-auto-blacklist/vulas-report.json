@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "21.03.2023 15:36 +0800",
+		"generatedFor": {
+			"space": "EEA3ABE2DF5E9207AE69D54E0763122B",
+			"groupId": "com.github.bennettca.pt",
+			"artifactId": "ProfitTrailer-BinanceAutoBlacklist",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1953",
+				"cvssScore": "10.0" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-configuration2-2.2.jar",
+			"sha1": "5EE9A0C14AC47E8C78D7F573BEA1867F0D3B2894",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.github.bennettca.pt",
+				"artifactId": "ProfitTrailer-BinanceAutoBlacklist",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/com.github.bennettca.pt/ProfitTrailer-BinanceAutoBlacklist/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

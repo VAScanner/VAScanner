@@ -1,0 +1,33 @@
+{
+    "project name": "InflatableDonkey",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 13
+        },
+        "org.bouncycastle:bcprov-jdk15on:1.56": {
+            "used-method num": 74,
+            "CVE": [
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.util.encoders.Hex:java.lang.String toHexString(byte[])",
+                "org.bouncycastle.crypto.params.ECDomainParameters:void <init>(org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger,java.math.BigInteger,byte[])",
+                "org.bouncycastle.asn1.DERTaggedObject:void <init>(int,org.bouncycastle.asn1.ASN1Encodable)",
+                "org.bouncycastle.crypto.params.ECPublicKeyParameters:void <init>(org.bouncycastle.math.ec.ECPoint,org.bouncycastle.crypto.params.ECDomainParameters)",
+                "org.bouncycastle.asn1.DERUTF8String:void <init>(java.lang.String)",
+                "org.bouncycastle.asn1.ASN1InputStream:org.bouncycastle.asn1.ASN1Primitive readObject()",
+                "org.bouncycastle.math.ec.ECAlgorithms:org.bouncycastle.math.ec.ECPoint referenceMultiply(org.bouncycastle.math.ec.ECPoint,java.math.BigInteger)",
+                "org.bouncycastle.asn1.x9.ECNamedCurveTable:org.bouncycastle.asn1.x9.X9ECParameters getByName(java.lang.String)",
+                "org.bouncycastle.crypto.io.DigestOutputStream:byte[] getDigest()",
+                "org.bouncycastle.asn1.DERSet:void <init>(org.bouncycastle.asn1.ASN1EncodableVector)",
+                "org.bouncycastle.asn1.DERApplicationSpecific:void <init>(int,org.bouncycastle.asn1.ASN1Encodable)",
+                "org.bouncycastle.asn1.ASN1Object:byte[] getEncoded()",
+                "org.bouncycastle.util.encoders.Hex:byte[] decode(java.lang.String)"
+            ],
+            "vul-called frequency": 187
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0
+        }
+    }
+}

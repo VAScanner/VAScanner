@@ -1,0 +1,19 @@
+{
+    "project name": "bluetooth-gatt-parser",
+    "vulnerable dependencies": {
+        "com.thoughtworks.xstream:xstream:1.4.7": {
+            "used-method num": 7,
+            "CVE": [
+                "CVE-2017-7957",
+                "CVE-2021-43859"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.net.URL)",
+                "com.thoughtworks.xstream.XStream:void processAnnotations(java.lang.Class)",
+                "com.thoughtworks.xstream.XStream:void ignoreUnknownElements()"
+            ],
+            "vul-called frequency": 17
+        }
+    }
+}

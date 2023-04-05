@@ -1,0 +1,47 @@
+{
+    "project name": "cxf-spring-cloud-netflix-docker",
+    "modules": {
+        "de.jonashackt:eureka-serviceregistry": {
+            "vulnerable dependencies": {
+                "de.codecentric:spring-boot-admin-server:2.7.4": {
+                    "used-method num": 0
+                }
+            }
+        },
+        "de.jonashackt:spring-boot-admin": {
+            "vulnerable dependencies": {
+                "de.codecentric:spring-boot-admin-server:2.7.4": {
+                    "used-method num": 0
+                }
+            }
+        },
+        "de.jonashackt:zuul-edgeservice": {
+            "vulnerable dependencies": {
+                "de.codecentric:spring-boot-admin-server:2.7.4": {
+                    "used-method num": 1
+                }
+            }
+        },
+        "de.jonashackt.weatherbackend:weatherbackend": {
+            "vulnerable dependencies": {
+                "de.codecentric:spring-boot-admin-server:2.7.4": {
+                    "used-method num": 1
+                }
+            }
+        },
+        "de.jonashackt:weatherservice": {
+            "vulnerable dependencies": {
+                "de.codecentric:spring-boot-admin-server:2.7.4": {
+                    "used-method num": 1
+                }
+            }
+        },
+        "de.jonashackt:weatherclient": {
+            "vulnerable dependencies": {
+                "de.codecentric:spring-boot-admin-server:2.7.4": {
+                    "used-method num": 0
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "project name": "zx-jump",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.19.Final": {
+            "used-method num": 16,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.handler.codec.http.DefaultHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.handler.codec.http.HttpRequestDecoder:void <init>()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <init>()",
+                "io.netty.handler.codec.http.HttpResponseEncoder:void <init>()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)",
+                "io.netty.channel.ChannelOutboundHandlerAdapter:void close(io.netty.channel.ChannelHandlerContext,io.netty.channel.ChannelPromise)",
+                "io.netty.handler.codec.http.HttpClientCodec:void <init>()"
+            ],
+            "vul-called frequency": 19
+        }
+    }
+}

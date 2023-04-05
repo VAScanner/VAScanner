@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "21.03.2023 22:38 +0800",
+		"generatedFor": {
+			"space": "EEA3ABE2DF5E9207AE69D54E0763122B",
+			"groupId": "org.apache.maven",
+			"artifactId": "maven-ant-tasks",
+			"version": "2.1.4-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.8.0.jar",
+			"sha1": "7B456CA6B93900F96E58CC8371F03D90A9C1C8D1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apache.maven",
+				"artifactId": "maven-ant-tasks",
+				"version": "2.1.4-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/org.apache.maven/maven-ant-tasks/2.1.4-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2012-0881",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "xercesMinimal-1.9.6.2.jar",
+			"sha1": "0D1C5E063683A0E6F77CD5F051A9D4AF48346FA6",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apache.maven",
+				"artifactId": "maven-ant-tasks",
+				"version": "2.1.4-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/org.apache.maven/maven-ant-tasks/2.1.4-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

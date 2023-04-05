@@ -1,0 +1,28 @@
+{
+    "project name": "ZenQuery",
+    "vulnerable dependencies": {
+        "org.springframework:spring-oxm:4.1.4.RELEASE": {
+            "used-method num": 0
+        },
+        "org.springframework:spring-web:4.1.4.RELEASE": {
+            "used-method num": 5
+        },
+        "org.springframework.security:spring-security-web:3.2.5.RELEASE": {
+            "used-method num": 5
+        },
+        "junit:junit:4.12": {
+            "used-method num": 4
+        },
+        "com.thoughtworks.xstream:xstream:1.4.7": {
+            "used-method num": 5,
+            "CVE": [
+                "CVE-2017-7957",
+                "CVE-2021-43859"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>()"
+            ],
+            "vul-called frequency": 1
+        }
+    }
+}

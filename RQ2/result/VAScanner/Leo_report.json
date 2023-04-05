@@ -1,0 +1,22 @@
+{
+    "project name": "Leo",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.5": {
+            "used-method num": 14
+        },
+        "commons-collections:commons-collections:3.2.1": {
+            "used-method num": 4
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 5,
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)"
+            ],
+            "vul-called frequency": 2,
+            "root vul-called frequency": 2
+        }
+    }
+}

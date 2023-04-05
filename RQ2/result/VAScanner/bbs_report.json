@@ -1,0 +1,40 @@
+{
+    "project name": "bbs",
+    "vulnerable dependencies": {
+        "org.bouncycastle:bcprov-jdk15on:1.58": {
+            "used-method num": 8
+        },
+        "org.apache.commons:commons-compress:1.15": {
+            "used-method num": 16,
+            "CVE": [
+                "CVE-2018-11771",
+                "CVE-2019-12402"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.zip.ZipArchiveEntry getNextZipEntry()",
+                "org.apache.commons.compress.archivers.zip.ZipFile:java.io.InputStream getInputStream(org.apache.commons.compress.archivers.zip.ZipArchiveEntry)",
+                "org.apache.commons.compress.utils.IOUtils:long copy(java.io.InputStream,java.io.OutputStream)",
+                "org.apache.commons.compress.utils.IOUtils:void closeQuietly(java.io.Closeable)",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void closeArchiveEntry()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                "org.apache.commons.compress.archivers.zip.ZipFile:void <init>(java.io.File)"
+            ],
+            "vul-called frequency": 37
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 8
+        },
+        "org.hibernate:hibernate-core:5.2.12.Final": {
+            "used-method num": 12
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 12
+        },
+        "mysql:mysql-connector-java:8.0.11": {
+            "used-method num": 8
+        },
+        "org.springframework.security:spring-security-crypto:5.0.6.RELEASE": {
+            "used-method num": 2
+        }
+    }
+}

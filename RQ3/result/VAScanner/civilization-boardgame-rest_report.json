@@ -1,0 +1,20 @@
+{
+    "project name": "civilization-boardgame-rest",
+    "vulnerable dependencies": {
+        "org.mongodb:mongo-java-driver:3.12.7": {
+            "used-method num": 5,
+            "CVE": [
+                "CVE-2021-20328"
+            ],
+            "used vul-method": [
+                "com.mongodb.MongoClientURI:void <init>(java.lang.String)",
+                "com.mongodb.MongoClient:void <init>(com.mongodb.MongoClientURI)",
+                "com.mongodb.MongoClient:void <init>(java.lang.String,int)"
+            ],
+            "vul-called frequency": 3
+        },
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.5.1": {
+            "used-method num": 0
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "project name": "code-hidding-plugin",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.10": {
+            "used-method num": 5,
+            "CVE": [
+                "CVE-2018-11771"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.ArchiveStreamFactory:org.apache.commons.compress.archivers.ArchiveInputStream createArchiveInputStream(java.lang.String,java.io.InputStream)",
+                "org.apache.commons.compress.utils.IOUtils:long copy(java.io.InputStream,java.io.OutputStream)"
+            ],
+            "vul-called frequency": 3
+        },
+        "org.apache.ant:ant:1.9.3": {
+            "used-method num": 7
+        },
+        "junit:junit:4.11": {
+            "used-method num": 4
+        }
+    }
+}

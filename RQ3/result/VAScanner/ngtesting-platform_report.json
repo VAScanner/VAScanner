@@ -1,0 +1,30 @@
+{
+    "project name": "ngtesting-platform",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:42.2.2": {
+            "used-method num": 4
+        },
+        "com.alibaba:fastjson:1.2.47": {
+            "used-method num": 15,
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+            ],
+            "vul-called frequency": 85
+        },
+        "org.apache.httpcomponents:httpclient:4.4.1": {
+            "used-method num": 8
+        },
+        "org.apache.shiro:shiro-core:1.4.0": {
+            "used-method num": 22
+        },
+        "org.apache.shiro:shiro-spring:1.4.0": {
+            "used-method num": 10
+        }
+    }
+}

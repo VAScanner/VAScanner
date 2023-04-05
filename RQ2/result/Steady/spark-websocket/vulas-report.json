@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "22.03.2023 01:52 +0800",
+		"generatedFor": {
+			"space": "EEA3ABE2DF5E9207AE69D54E0763122B",
+			"groupId": "sparksocket",
+			"artifactId": "sparksocket",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-9159",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spark-core-2.6.0.jar",
+			"sha1": "A6CB0E70A18DD4F457CD7217222956DA6DB7CA23",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "sparksocket",
+				"artifactId": "sparksocket",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/EEA3ABE2DF5E9207AE69D54E0763122B/sparksocket/sparksocket/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

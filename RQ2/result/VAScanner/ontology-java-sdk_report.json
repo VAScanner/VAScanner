@@ -1,0 +1,28 @@
+{
+    "project name": "ontology-java-sdk",
+    "vulnerable dependencies": {
+        "org.bouncycastle:bcprov-jdk15on:1.59": {
+            "used-method num": 38,
+            "CVE": [
+                "CVE-2018-1000613",
+                "CVE-2020-26939"
+            ],
+            "used vul-method": [
+                "org.bouncycastle.util.encoders.Hex:byte[] decode(java.lang.String)",
+                "org.bouncycastle.asn1.x9.ECNamedCurveTable:org.bouncycastle.asn1.x9.X9ECParameters getByName(java.lang.String)",
+                "org.bouncycastle.jce.ECPointUtil:java.security.spec.ECPoint decodePoint(java.security.spec.EllipticCurve,byte[])",
+                "org.bouncycastle.asn1.ASN1Primitive:org.bouncycastle.asn1.ASN1Primitive fromByteArray(byte[])",
+                "org.bouncycastle.crypto.generators.SCrypt:byte[] generate(byte[],byte[],int,int,int,int)",
+                "org.bouncycastle.crypto.kems.ECIESKeyEncapsulation:org.bouncycastle.crypto.CipherParameters decrypt(byte[],int)",
+                "org.bouncycastle.crypto.kems.ECIESKeyEncapsulation:org.bouncycastle.crypto.CipherParameters encrypt(byte[],int)",
+                "org.bouncycastle.crypto.params.ECPublicKeyParameters:void <init>(org.bouncycastle.math.ec.ECPoint,org.bouncycastle.crypto.params.ECDomainParameters)",
+                "org.bouncycastle.asn1.ASN1Integer:org.bouncycastle.asn1.ASN1Integer getInstance(java.lang.Object)",
+                "org.bouncycastle.crypto.params.ECDomainParameters:void <init>(org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger)",
+                "org.bouncycastle.crypto.params.ECDomainParameters:void <init>(org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger,java.math.BigInteger,byte[])",
+                "org.bouncycastle.jce.ECNamedCurveTable:org.bouncycastle.jce.spec.ECNamedCurveParameterSpec getParameterSpec(java.lang.String)",
+                "org.bouncycastle.jce.spec.ECNamedCurveSpec:void <init>(java.lang.String,org.bouncycastle.math.ec.ECCurve,org.bouncycastle.math.ec.ECPoint,java.math.BigInteger)"
+            ],
+            "vul-called frequency": 33
+        }
+    }
+}

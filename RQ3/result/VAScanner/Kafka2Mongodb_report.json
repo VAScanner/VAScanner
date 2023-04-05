@@ -1,0 +1,22 @@
+{
+    "project name": "Kafka2Mongodb",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:1.0.0": {
+            "used-method num": 4
+        },
+        "org.mongodb:mongo-java-driver:3.11.0": {
+            "used-method num": 6,
+            "CVE": [
+                "CVE-2021-20328"
+            ],
+            "used vul-method": [
+                "com.mongodb.MongoCredential:com.mongodb.MongoCredential createCredential(java.lang.String,java.lang.String,char[])",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(com.mongodb.MongoClientSettings)",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(java.lang.String)",
+                "org.bson.Document:org.bson.Document parse(java.lang.String)",
+                "com.mongodb.MongoClientSettings:com.mongodb.MongoClientSettings$Builder builder()"
+            ],
+            "vul-called frequency": 5
+        }
+    }
+}

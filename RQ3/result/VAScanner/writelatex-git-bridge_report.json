@@ -1,0 +1,25 @@
+{
+    "project name": "writelatex-git-bridge",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0
+        },
+        "org.eclipse.jetty:jetty-server:9.3.9.v20160517": {
+            "used-method num": 9
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 0
+        },
+        "org.apache.commons:commons-compress:1.12": {
+            "used-method num": 6,
+            "CVE": [
+                "CVE-2018-11771"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.utils.IOUtils:long copy(java.io.InputStream,java.io.OutputStream)"
+            ],
+            "vul-called frequency": 3
+        }
+    }
+}

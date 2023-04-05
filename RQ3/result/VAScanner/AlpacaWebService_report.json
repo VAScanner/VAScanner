@@ -1,0 +1,29 @@
+{
+    "project name": "AlpacaWebService",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 4
+        },
+        "io.netty:netty-all:4.1.2.Final": {
+            "used-method num": 24,
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.handler.codec.http.DefaultHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.handler.codec.http.HttpRequestDecoder:void <init>()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus,io.netty.buffer.ByteBuf,io.netty.handler.codec.http.HttpHeaders,io.netty.handler.codec.http.HttpHeaders)",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.HttpUtil:void setKeepAlive(io.netty.handler.codec.http.HttpMessage,boolean)",
+                "io.netty.handler.codec.http.HttpResponseEncoder:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf copiedBuffer(java.lang.CharSequence,java.nio.charset.Charset)",
+                "io.netty.handler.codec.http.HttpUtil:boolean isKeepAlive(io.netty.handler.codec.http.HttpMessage)",
+                "io.netty.handler.codec.http.multipart.HttpPostRequestDecoder:void <init>(io.netty.handler.codec.http.HttpRequest)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:void <init>()"
+            ],
+            "vul-called frequency": 16
+        }
+    }
+}

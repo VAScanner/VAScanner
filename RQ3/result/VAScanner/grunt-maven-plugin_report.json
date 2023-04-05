@@ -1,0 +1,15 @@
+{
+    "project name": "grunt-maven-plugin",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.9": {
+            "used-method num": 2,
+            "CVE": [
+                "CVE-2018-11771"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+            ],
+            "vul-called frequency": 2
+        }
+    }
+}
