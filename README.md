@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**VAScanner/VAScanner** is the open source repository for our article ***“Does the Vulnerability Threaten Our Projects? Automated Vulnerable API Detection for Third-Party Libraries”***.  
+**VAScanner/VAScanner** is the open source repository for our paper ***“Does the Vulnerability Threaten Our Projects? Automated Vulnerable API Detection for Third-Party Libraries”***.  
 
 We proposed **VAScanner**, a vulnerable API detection system for third-party libraries, which can precisely find vulnerable APIs used by Java projects based on comprehensive and precise vulnerable root methods.
 
