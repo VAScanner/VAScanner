@@ -1,0 +1,57 @@
+{
+    "project name": "malike_sso-auth",
+    "modules": {
+        "st.malike:sso-auth-client": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.7.RELEASE": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager:void setTokenServices(org.springframework.security.oauth2.provider.token.ResourceServerTokenServices)",
+                        "org.springframework.security.oauth2.provider.token.RemoteTokenServices:void <init>()",
+                        "org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager:void <init>()"
+                    ]
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "st.malike:sso-auth-server": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.7.RELEASE": {
+                    "used-method num": 22,
+                    "used method": [
+                        "org.springframework.security.oauth2.provider.token.DefaultAuthenticationKeyGenerator:java.lang.String extractKey(org.springframework.security.oauth2.provider.OAuth2Authentication)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setClientSecret(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.ClientRegistrationException:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:java.lang.String toString()",
+                        "org.springframework.security.oauth2.common.exceptions.InvalidTokenException:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setResourceIds(java.util.Collection)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.lang.String getClientId()",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void <init>()",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setAccessTokenValiditySeconds(java.lang.Integer)",
+                        "org.springframework.security.oauth2.provider.token.DefaultAuthenticationKeyGenerator:void <init>()",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:void <init>(org.springframework.security.oauth2.provider.OAuth2Request,org.springframework.security.core.Authentication)",
+                        "org.springframework.security.oauth2.common.exceptions.OAuth2Exception:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.NoSuchClientException:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setRefreshTokenValiditySeconds(java.lang.Integer)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:boolean isScoped()",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setRegisteredRedirectUri(java.util.Set)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:void <init>(java.util.Map,java.lang.String,java.util.Collection,boolean,java.util.Set,java.util.Set,java.lang.String,java.util.Set,java.util.Map)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setAuthorizedGrantTypes(java.util.Collection)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:java.util.Map getAdditionalInformation()",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setScope(java.util.Collection)",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:org.springframework.security.oauth2.provider.OAuth2Request getOAuth2Request()"
+                    ]
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

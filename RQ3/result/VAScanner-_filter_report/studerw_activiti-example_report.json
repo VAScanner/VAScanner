@@ -1,0 +1,58 @@
+{
+    "project name": "studerw_activiti-example",
+    "vulnerable dependencies": {
+        "org.springframework:spring-expression:4.3.24.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-web:3.2.10.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-config:3.2.10.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-beanutils:commons-beanutils:1.9.3": {
+            "used-method num": 9,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:java.util.Iterator iterator()",
+                "org.apache.commons.beanutils.BeanUtils:void copyProperties(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.util.Set keySet()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set keySet()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:void copyProperties(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set keySet()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)"
+            ],
+            "vul-called frequency": 21,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.BeanUtils:void copyProperties(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set keySet()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "project name": "AlanLiang1998_geek_blog",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.68": {
+            "used-method num": 26,
+            "used method": [
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object[] toArray(java.lang.Object[])",
+                "com.alibaba.fastjson.parser.ParserConfig:void setAutoTypeSupport(boolean)",
+                "com.alibaba.fastjson.parser.ParserConfig:com.alibaba.fastjson.parser.ParserConfig getGlobalInstance()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.parser.ParserConfig:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+            ],
+            "vul-called frequency": 11,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+                ]
+            }
+        },
+        "org.apache.poi:poi-ooxml:3.17": {
+            "used-method num": 26,
+            "used method": [
+                "org.apache.poi.openxml4j.opc.internal.ContentType:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:boolean hasNext()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFTextParagraph:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.xssf.usermodel.XSSFTextRun:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                "org.apache.poi.xssf.usermodel.XSSFConditionalFormatting:java.lang.String toString()",
+                "org.apache.poi.openxml4j.opc.PackagePartName:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.openxml4j.opc.PackageRelationship:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFRichTextString:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFClientAnchor:java.lang.String toString()",
+                "org.apache.poi.xssf.eventusermodel.XSSFReader$SheetIterator:boolean hasNext()",
+                "org.apache.poi.POIXMLDocumentPart:java.lang.String toString()",
+                "org.apache.poi.openxml4j.opc.PackageRelationshipCollection:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$FilledCellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:java.lang.String toString()",
+                "org.apache.poi.xssf.eventusermodel.XSSFReader$SheetIterator:java.io.InputStream next()",
+                "org.apache.poi.openxml4j.util.ZipSecureFile$ThresholdInputStream:int read(byte[],int,int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.openxml4j.opc.PackagePart:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2019-12415"
+            ],
+            "used vul-method": [
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "project name": "absolutegalaber_jwt-oauth2-example",
+    "modules": {
+        "de.psm:auth-server": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.8.RELEASE": {
+                    "used-method num": 21,
+                    "used method": [
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void setRequestFactory(org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                        "org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory:java.security.KeyPair getKeyPair(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:java.lang.String getClientId()",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                        "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:void <init>(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:java.util.Set getScope()",
+                        "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory:void <init>(org.springframework.core.io.Resource,char[])",
+                        "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void <init>()",
+                        "org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService:org.springframework.security.oauth2.provider.ClientDetails loadClientByClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:org.springframework.security.oauth2.provider.AuthorizationRequest checkForPreApproval(org.springframework.security.oauth2.provider.AuthorizationRequest,org.springframework.security.core.Authentication)",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void setApprovalStore(org.springframework.security.oauth2.provider.approval.ApprovalStore)",
+                        "org.springframework.security.oauth2.provider.client.JdbcClientDetailsService:org.springframework.security.oauth2.provider.ClientDetails loadClientByClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setKeyPair(java.security.KeyPair)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:void setApproved(boolean)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:boolean isAutoApprove(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:boolean isApproved()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()"
+                    ]
+                }
+            }
+        },
+        "de.psm:resource-server": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.8.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()"
+                    ]
+                }
+            }
+        },
+        "de.psm:aggregation-server": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.8.RELEASE": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.client.OAuth2RestTemplate:void <init>(org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails,org.springframework.security.oauth2.client.OAuth2ClientContext)",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsResourceDetails:void <init>()",
+                        "org.springframework.security.oauth2.client.DefaultOAuth2ClientContext:void <init>(org.springframework.security.oauth2.common.OAuth2AccessToken)"
+                    ]
+                }
+            }
+        },
+        "de.psm:jwt-public-config": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.8.RELEASE": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setVerifierKey(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)"
+                    ]
+                }
+            }
+        }
+    }
+}

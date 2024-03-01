@@ -1,0 +1,59 @@
+{
+    "project name": "amazon-archives_aws-dynamodb-session-tomcat",
+    "vulnerable dependencies": {
+        "org.apache.tomcat:tomcat-catalina:8.0.1": {
+            "used-method num": 16,
+            "used method": [
+                "org.apache.catalina.session.StandardSession:java.lang.String getId()",
+                "org.apache.catalina.session.StandardSession:void readObjectData(java.io.ObjectInputStream)",
+                "org.apache.catalina.util.CustomObjectInputStream:void <init>(java.io.InputStream,java.lang.ClassLoader)",
+                "org.apache.catalina.session.StandardSession:int getMaxInactiveInterval()",
+                "org.apache.catalina.core.StandardContext:org.apache.catalina.Loader getLoader()",
+                "org.apache.catalina.loader.WebappLoader:java.lang.ClassLoader getClassLoader()",
+                "org.apache.catalina.session.PersistentManagerBase:void <init>()",
+                "org.apache.catalina.util.ResourceSet:boolean remove(java.lang.Object)",
+                "org.apache.catalina.startup.Catalina$CatalinaShutdownHook:void run()",
+                "org.apache.catalina.util.ResourceSet:boolean add(java.lang.Object)",
+                "org.apache.catalina.session.StoreBase:void <init>()",
+                "org.apache.catalina.session.StandardSession:java.lang.String getIdInternal()",
+                "org.apache.catalina.util.ResourceSet:void clear()",
+                "org.apache.catalina.session.StandardSession:void <clinit>()",
+                "org.apache.catalina.session.StandardSession:void writeObjectData(java.io.ObjectOutputStream)",
+                "org.apache.catalina.session.StandardSession:void <init>(org.apache.catalina.Manager)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:8.0.1": {
+            "used-method num": 20,
+            "used method": [
+                "org.apache.catalina.session.StandardSession:java.lang.String getId()",
+                "org.apache.catalina.session.StoreBase:void <clinit>()",
+                "org.apache.catalina.util.LifecycleMBeanBase:void <clinit>()",
+                "org.apache.catalina.session.StandardSession:void readObjectData(java.io.ObjectInputStream)",
+                "org.apache.catalina.util.CustomObjectInputStream:void <init>(java.io.InputStream,java.lang.ClassLoader)",
+                "org.apache.catalina.session.StandardSession:int getMaxInactiveInterval()",
+                "org.apache.catalina.core.StandardContext:org.apache.catalina.Loader getLoader()",
+                "org.apache.catalina.loader.WebappLoader:java.lang.ClassLoader getClassLoader()",
+                "org.apache.catalina.session.ManagerBase:void <clinit>()",
+                "org.apache.catalina.session.PersistentManagerBase:void <init>()",
+                "org.apache.catalina.util.ResourceSet:boolean remove(java.lang.Object)",
+                "org.apache.catalina.startup.Catalina$CatalinaShutdownHook:void run()",
+                "org.apache.catalina.util.ResourceSet:boolean add(java.lang.Object)",
+                "org.apache.catalina.session.StoreBase:void <init>()",
+                "org.apache.catalina.session.StandardSession:java.lang.String getIdInternal()",
+                "org.apache.catalina.util.ResourceSet:void clear()",
+                "org.apache.catalina.session.StandardSession:void <clinit>()",
+                "org.apache.catalina.util.LifecycleBase:void <clinit>()",
+                "org.apache.catalina.session.StandardSession:void writeObjectData(java.io.ObjectOutputStream)",
+                "org.apache.catalina.session.StandardSession:void <init>(org.apache.catalina.Manager)"
+            ]
+        },
+        "org.apache.tomcat.embed:tomcat-embed-jasper:8.0.1": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

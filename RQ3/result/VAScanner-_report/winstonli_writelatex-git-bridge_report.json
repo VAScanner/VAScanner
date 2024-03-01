@@ -1,0 +1,114 @@
+{
+    "project name": "winstonli_writelatex-git-bridge",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.eclipse.jetty:jetty-server:9.3.9.v20160517": {
+            "used-method num": 52,
+            "used method": [
+                "org.eclipse.jetty.server.session.HashSessionManager$Saver:void run()",
+                "org.eclipse.jetty.server.Request:void setHandled(boolean)",
+                "org.eclipse.jetty.server.Response:void setContentType(java.lang.String)",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void <init>()",
+                "org.eclipse.jetty.server.Request:java.lang.String getParameter(java.lang.String)",
+                "org.eclipse.jetty.server.Request:java.lang.String getRemoteAddr()",
+                "org.eclipse.jetty.server.Request:java.lang.Object getAttribute(java.lang.String)",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.HttpChannelState$3:void run()",
+                "org.eclipse.jetty.server.Request:java.lang.String getHeader(java.lang.String)",
+                "org.eclipse.jetty.server.ServerConnector:int getLocalPort()",
+                "org.eclipse.jetty.server.AsyncContextState$2:void run()",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void addHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.Server:org.eclipse.jetty.server.Connector[] getConnectors()",
+                "org.eclipse.jetty.server.HttpConnection:void run()",
+                "org.eclipse.jetty.server.Response:void setStatus(int)",
+                "org.eclipse.jetty.server.Request:java.io.BufferedReader getReader()",
+                "org.eclipse.jetty.server.Response:java.io.PrintWriter getWriter()",
+                "org.eclipse.jetty.server.handler.ResourceHandler:void handle(java.lang.String,org.eclipse.jetty.server.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                "org.eclipse.jetty.server.handler.ErrorHandler:void <init>()",
+                "org.eclipse.jetty.server.HttpOutput:void run()",
+                "org.eclipse.jetty.server.handler.ResourceHandler:void setResourceBase(java.lang.String)",
+                "org.eclipse.jetty.server.Request:java.lang.String getRequestURI()",
+                "org.eclipse.jetty.server.Request:java.lang.String getMethod()",
+                "org.eclipse.jetty.server.AsyncContextEvent:void run()",
+                "org.eclipse.jetty.server.handler.AbstractHandler:void <init>()",
+                "org.eclipse.jetty.server.HttpChannel:void run()",
+                "org.eclipse.jetty.server.session.HashSessionManager$Scavenger:void run()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setHeader(java.lang.String,java.lang.String)",
+                "org.eclipse.jetty.server.handler.ContextHandler:org.eclipse.jetty.server.handler.ContextHandler$Context getServletContext()",
+                "org.eclipse.jetty.server.handler.ResourceHandler:void <init>()",
+                "org.eclipse.jetty.server.handler.ScopedHandler:void <clinit>()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setStatus(int)",
+                "org.eclipse.jetty.server.HttpInput:void run()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void setContextPath(java.lang.String)",
+                "org.eclipse.jetty.server.handler.HandlerList:void <init>()",
+                "org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorRunnable:void run()",
+                "org.eclipse.jetty.server.handler.DefaultHandler:void <init>()",
+                "org.eclipse.jetty.server.Request:java.lang.String getLocalName()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <clinit>()",
+                "org.eclipse.jetty.server.ResponseWriter:void close()",
+                "org.eclipse.jetty.server.HttpChannelState$2:void run()",
+                "org.eclipse.jetty.server.Response:int getStatus()",
+                "org.eclipse.jetty.server.Request:org.eclipse.jetty.http.HttpURI getHttpURI()",
+                "org.eclipse.jetty.server.ResponseWriter:void println(java.lang.Object)",
+                "org.eclipse.jetty.server.ResponseWriter:void println()",
+                "org.eclipse.jetty.server.Response:void setHeader(java.lang.String,java.lang.String)",
+                "org.eclipse.jetty.server.ResponseWriter:void println(java.lang.String)",
+                "org.eclipse.jetty.server.HttpChannelState$1:void run()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <init>()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void setErrorHandler(org.eclipse.jetty.server.handler.ErrorHandler)",
+                "org.eclipse.jetty.server.Server:void <init>(int)"
+            ],
+            "CVE": [
+                "CVE-2019-10241"
+            ],
+            "used vul-method": [
+                "org.eclipse.jetty.server.handler.ResourceHandler:void handle(java.lang.String,org.eclipse.jetty.server.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2019-10241": [
+                    "org.eclipse.jetty.server.handler.ResourceHandler:void doDirectory(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.eclipse.jetty.util.resource.Resource)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10241": [
+                    "org.eclipse.jetty.server.handler.ResourceHandler:void handle(java.lang.String,org.eclipse.jetty.server.Request,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)"
+                ]
+            }
+        },
+        "ch.qos.logback:logback-classic:1.1.7": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.commons:commons-compress:1.12": {
+            "used-method num": 18,
+            "used method": [
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.util.Date getLastModifiedDate()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.utils.IOUtils:long copy(java.io.InputStream,java.io.OutputStream)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <clinit>()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:long getSize()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:org.apache.commons.compress.archivers.ArchiveEntry createArchiveEntry(java.io.File,java.lang.String)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <init>(java.io.OutputStream)",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream:void <init>(java.io.OutputStream)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void closeArchiveEntry()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void close()",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()"
+            ]
+        }
+    }
+}

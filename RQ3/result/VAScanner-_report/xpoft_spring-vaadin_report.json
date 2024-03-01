@@ -1,0 +1,25 @@
+{
+    "project name": "xpoft_spring-vaadin",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.2.0.RELEASE": {
+            "used-method num": 5,
+            "used method": [
+                "org.springframework.web.context.support.WebApplicationContextUtils:void <clinit>()",
+                "org.springframework.web.context.support.AbstractRefreshableWebApplicationContext:void setServletConfig(javax.servlet.ServletConfig)",
+                "org.springframework.web.context.support.XmlWebApplicationContext:void <init>()",
+                "org.springframework.web.context.support.WebApplicationContextUtils:org.springframework.web.context.WebApplicationContext getWebApplicationContext(javax.servlet.ServletContext)",
+                "org.springframework.web.context.support.AbstractRefreshableWebApplicationContext:void setServletContext(javax.servlet.ServletContext)"
+            ]
+        },
+        "org.apache.shiro:shiro-core:1.2.3": {
+            "used-method num": 5,
+            "used method": [
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.authz.annotation.Logical:void <clinit>()",
+                "org.apache.shiro.util.MapContext:boolean containsKey(java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)"
+            ]
+        }
+    }
+}

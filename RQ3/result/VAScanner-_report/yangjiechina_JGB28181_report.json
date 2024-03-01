@@ -1,0 +1,54 @@
+{
+    "project name": "yangjiechina_JGB28181",
+    "vulnerable dependencies": {
+        "org.apache.logging.log4j:log4j-core:2.7": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.alibaba:fastjson:1.2.66": {
+            "used-method num": 9,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:void clear()",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object remove(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)"
+                ]
+            }
+        },
+        "org.dom4j:dom4j:2.1.1": {
+            "used-method num": 7,
+            "used method": [
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                "org.dom4j.tree.AbstractElement:java.util.Iterator elementIterator()",
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.tree.DefaultElement:java.lang.String getStringValue()",
+                "org.dom4j.tree.DefaultElement:org.dom4j.Element element(java.lang.String)"
+            ]
+        }
+    }
+}

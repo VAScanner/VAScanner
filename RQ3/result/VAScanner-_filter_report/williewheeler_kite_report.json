@@ -1,0 +1,30 @@
+{
+    "project name": "williewheeler_kite",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.1.1.RELEASE": {
+            "used-method num": 8,
+            "used method": [
+                "org.springframework.core.NestedRuntimeException:void <init>(java.lang.String)",
+                "org.springframework.core.BridgeMethodResolver:java.lang.reflect.Method findBridgedMethod(java.lang.reflect.Method)",
+                "org.springframework.util.Assert:void notNull(java.lang.Object,java.lang.String)",
+                "org.springframework.util.ClassUtils:java.lang.reflect.Method getMostSpecificMethod(java.lang.reflect.Method,java.lang.Class)",
+                "org.springframework.core.NestedRuntimeException:void <clinit>()",
+                "org.springframework.util.ClassUtils:void <clinit>()",
+                "org.springframework.util.Assert:void isTrue(boolean,java.lang.String)",
+                "org.springframework.util.ObjectUtils:boolean nullSafeEquals(java.lang.Object,java.lang.Object)"
+            ]
+        },
+        "org.springframework.security:spring-security-config:3.1.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-core:3.1.0.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()"
+            ]
+        }
+    }
+}

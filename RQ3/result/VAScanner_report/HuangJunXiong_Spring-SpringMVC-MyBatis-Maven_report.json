@@ -1,0 +1,39 @@
+{
+    "project name": "HuangJunXiong_Spring-SpringMVC-MyBatis-Maven",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:4.3.3.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.cxf:cxf-rt-transports-http:3.1.5": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.2.2": {
+            "used-method num": 9,
+            "used method": [
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addRole(java.lang.String)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,char[],java.lang.String)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String getUsername()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()",
+                "org.apache.shiro.authc.UsernamePasswordToken:char[] getPassword()"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.quartz-scheduler:quartz:2.2.1": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

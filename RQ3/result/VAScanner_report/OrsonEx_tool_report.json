@@ -1,0 +1,245 @@
+{
+    "project name": "OrsonEx_tool",
+    "vulnerable dependencies": {
+        "commons-beanutils:commons-beanutils:1.9.3": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 78,
+            "used method": [
+                "org.apache.http.impl.execchain.ConnectionHolder:void close()",
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.lang.String toString()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void close()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.conn.scheme.SocketFactoryAdaptor:int hashCode()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.conn.EofSensorInputStream:int available()",
+                "org.apache.http.impl.conn.LoggingInputStream:int available()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:boolean equals(java.lang.Object)",
+                "org.apache.http.auth.UsernamePasswordCredentials:int hashCode()",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[],int,int)",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.auth.AuthScope:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.ietf.jgss.Oid:int hashCode()",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.ietf.jgss.Oid:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.impl.client.HttpClientBuilder$1:void close()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.conn.util.PublicSuffixMatcherLoader:org.apache.http.conn.util.PublicSuffixMatcher load(java.net.URL)",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.auth.BasicUserPrincipal:int hashCode()",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.conn.routing.HttpRoute:int hashCode()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read(byte[],int,int)",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.conn.scheme.SchemeSocketFactoryAdaptor:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.auth.BasicScheme:java.lang.String toString()",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[],int,int)",
+                "org.apache.http.conn.scheme.SocketFactoryAdaptor:boolean equals(java.lang.Object)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.conn.scheme.SchemeSocketFactoryAdaptor:int hashCode()",
+                "org.apache.http.impl.auth.HttpEntityDigester:void close()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int available()",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[],int,int)",
+                "org.apache.http.client.entity.DeflateInputStream:int available()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void close()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.client.HttpClientBuilder$2:void close()",
+                "org.apache.http.conn.ssl.DefaultHostnameVerifier:void <init>(org.apache.http.conn.util.PublicSuffixMatcher)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "com.thoughtworks.xstream:xstream:1.4.9": {
+            "used-method num": 69,
+            "used method": [
+                "com.thoughtworks.xstream.io.path.Path:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.io.path.Path:int hashCode()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:int hashCode()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:java.lang.Object[] toArray()",
+                "com.thoughtworks.xstream.core.util.FastField:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.mapper.ImplicitCollectionMapper$NamedItemType:int hashCode()",
+                "com.thoughtworks.xstream.security.AnyTypePermission:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:boolean isEmpty()",
+                "com.thoughtworks.xstream.core.util.WeakCache:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:int hashCode()",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.core.util.FastField:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader:java.lang.Class loadClass(java.lang.String)",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.ErrorWritingException:java.lang.String getMessage()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean isEmpty()",
+                "com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$FieldLocation:int hashCode()",
+                "com.thoughtworks.xstream.XStream:void <clinit>()",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.io.xml.DomDriver:void <init>(java.lang.String)",
+                "com.thoughtworks.xstream.io.xml.DomDriver:void <init>()",
+                "com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$FieldLocation:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.XStream:java.lang.String toXML(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set keySet()",
+                "com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                "com.thoughtworks.xstream.core.util.ClassLoaderReference:java.lang.Class loadClass(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int available()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.io.path.Path:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:void remove()",
+                "com.thoughtworks.xstream.core.util.DependencyInjectionFactory$TypedValue:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.mapper.ImplicitCollectionMapper$NamedItemType:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:int size()",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[],int,int)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$IdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CustomObjectOutputStream:void close()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean contains(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:void close()",
+                "com.thoughtworks.xstream.core.util.FastStack:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.FastField:int hashCode()",
+                "com.thoughtworks.xstream.XStream:void processAnnotations(java.lang.Class)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.WeakCache:int hashCode()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:java.lang.Object[] toArray(java.lang.Object[])",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:void remove()",
+                "com.thoughtworks.xstream.security.NoTypePermission:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.InputStream)"
+            ],
+            "CVE": [
+                "CVE-2021-29505",
+                "CVE-2020-26258",
+                "CVE-2020-26259",
+                "CVE-2021-43859",
+                "CVE-2017-7957"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[],int,int)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.InputStream)"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                    "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void setupConverters()",
+                    "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void <init>()",
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void <init>()",
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void <init>()",
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                    "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[],int,int)",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.InputStream)"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void <init>()",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                    "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[],int,int)",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.InputStream)"
+                ]
+            }
+        }
+    }
+}

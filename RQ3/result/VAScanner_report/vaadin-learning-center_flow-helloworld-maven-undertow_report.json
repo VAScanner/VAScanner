@@ -1,0 +1,39 @@
+{
+    "project name": "vaadin-learning-center_flow-helloworld-maven-undertow",
+    "vulnerable dependencies": {
+        "io.undertow:undertow-core:2.0.27.Final": {
+            "used-method num": 11,
+            "used method": [
+                "io.undertow.Undertow:java.util.List getListenerInfo()",
+                "io.undertow.Handlers:io.undertow.server.handlers.PathHandler path(io.undertow.server.HttpHandler)",
+                "io.undertow.server.handlers.resource.URLResource:void <init>(java.net.URL,java.lang.String)",
+                "io.undertow.Handlers:io.undertow.server.handlers.RedirectHandler redirect(java.lang.String)",
+                "io.undertow.Undertow:io.undertow.Undertow$Builder builder()",
+                "io.undertow.Undertow$Builder:io.undertow.Undertow$Builder addHttpListener(int,java.lang.String)",
+                "io.undertow.Undertow$Builder:io.undertow.Undertow build()",
+                "io.undertow.server.handlers.resource.ClassPathResourceManager:void <init>(java.lang.ClassLoader,java.lang.String)",
+                "io.undertow.Undertow$ListenerInfo:java.lang.String toString()",
+                "io.undertow.Undertow:void start()",
+                "io.undertow.server.handlers.PathHandler:io.undertow.server.handlers.PathHandler addPrefixPath(java.lang.String,io.undertow.server.HttpHandler)"
+            ],
+            "CVE": [
+                "CVE-2020-1745"
+            ],
+            "used vul-method": [
+                "io.undertow.Undertow:void start()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-1745": [
+                    "io.undertow.server.protocol.ajp.AjpOpenListener:void <init>(io.undertow.connector.ByteBufferPool,org.xnio.OptionMap)",
+                    "io.undertow.server.protocol.ajp.AjpRequestParser:void <init>(java.lang.String,boolean,int,int,boolean,boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-1745": [
+                    "io.undertow.Undertow:void start()"
+                ]
+            }
+        }
+    }
+}

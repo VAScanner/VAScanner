@@ -1,0 +1,102 @@
+{
+    "project name": "caelum_restfulie-java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.0.3": {
+            "used-method num": 16,
+            "used method": [
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>()",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpTrace:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.RequestWrapper:java.net.URI getURI()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpOptions:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.net.URI)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicCookieStore:void <init>()"
+            ]
+        },
+        "com.thoughtworks.xstream:xstream:1.3.1": {
+            "used-method num": 43,
+            "used method": [
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.io.xml.AbstractPullReader:java.lang.String getValue()",
+                "com.thoughtworks.xstream.XStream:void toXML(java.lang.Object,java.io.Writer)",
+                "com.thoughtworks.xstream.mapper.MapperWrapper:java.lang.String getFieldNameForItemTypeAndName(java.lang.Class,java.lang.Class,java.lang.String)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:int size()",
+                "com.thoughtworks.xstream.io.xml.XppReader:java.lang.String getAttribute(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.io.ReaderWrapper:java.lang.String getValue()",
+                "com.thoughtworks.xstream.XStream:void alias(java.lang.String,java.lang.Class)",
+                "com.thoughtworks.xstream.io.xml.XmlFriendlyReplacer:void <init>(java.lang.String,java.lang.String)",
+                "com.thoughtworks.xstream.io.xml.QNameMap:void registerMapping(javax.xml.namespace.QName,java.lang.Class)",
+                "com.thoughtworks.xstream.mapper.PackageAliasingMapper:java.lang.String serializedClass(java.lang.Class)",
+                "com.thoughtworks.xstream.io.xml.StaxDriver:void <init>(com.thoughtworks.xstream.io.xml.QNameMap,com.thoughtworks.xstream.io.xml.XmlFriendlyReplacer)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Collection values()",
+                "com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider:void <clinit>()",
+                "com.thoughtworks.xstream.converters.reflection.ReflectionProviderWrapper:java.lang.Object newInstance(java.lang.Class)",
+                "com.thoughtworks.xstream.XStream:void useAttributeFor(java.lang.Class,java.lang.String)",
+                "com.thoughtworks.xstream.mapper.ClassAliasingMapper:java.lang.String serializedClass(java.lang.Class)",
+                "com.thoughtworks.xstream.mapper.MapperWrapper:java.lang.String serializedClass(java.lang.Class)",
+                "com.thoughtworks.xstream.mapper.MapperWrapper:void <init>(com.thoughtworks.xstream.mapper.Mapper)",
+                "com.thoughtworks.xstream.XStream:void registerConverter(com.thoughtworks.xstream.converters.Converter)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.io.xml.QNameMap:void <init>()",
+                "com.thoughtworks.xstream.XStream:com.thoughtworks.xstream.mapper.Mapper getMapper()",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:void putAll(java.util.Map)",
+                "com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider:void <init>()",
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.converters.reflection.ReflectionProvider,com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                "com.thoughtworks.xstream.mapper.MapperWrapper:boolean shouldSerializeMember(java.lang.Class,java.lang.String)",
+                "com.thoughtworks.xstream.XStream:void processAnnotations(java.lang.Class)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.util.Collection values()",
+                "com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:void <init>()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:java.util.Iterator iterator()",
+                "com.thoughtworks.xstream.XStream:void addImplicitCollection(java.lang.Class,java.lang.String,java.lang.String,java.lang.Class)",
+                "com.thoughtworks.xstream.converters.reflection.ReflectionProviderWrapper:void <init>(com.thoughtworks.xstream.converters.reflection.ReflectionProvider)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.mapper.ArrayMapper:java.lang.String serializedClass(java.lang.Class)",
+                "com.thoughtworks.xstream.io.ReaderWrapper:java.lang.String getAttribute(java.lang.String)",
+                "com.thoughtworks.xstream.mapper.DynamicProxyMapper:java.lang.String serializedClass(java.lang.Class)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.mapper.DefaultMapper:java.lang.String serializedClass(java.lang.Class)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.mapper.DefaultImplementationsMapper:java.lang.String serializedClass(java.lang.Class)"
+            ],
+            "CVE": [
+                "CVE-2021-43859",
+                "CVE-2017-7957"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.converters.reflection.ReflectionProvider,com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                    "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void setupConverters()",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.converters.reflection.ReflectionProvider,com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                ]
+            }
+        }
+    }
+}

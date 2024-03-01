@@ -1,0 +1,37 @@
+{
+    "project name": "leiguorui_netty-resteasy-spring",
+    "vulnerable dependencies": {
+        "org.jboss.resteasy:resteasy-jaxrs:3.0-beta-5": {
+            "used-method num": 7,
+            "used method": [
+                "org.jboss.resteasy.spi.ResteasyDeployment:void <clinit>()",
+                "org.jboss.resteasy.core.interception.PreMatchContainerRequestContext:void setSecurityContext(javax.ws.rs.core.SecurityContext)",
+                "org.jboss.resteasy.plugins.server.embedded.SimplePrincipal:void <init>(java.lang.String)",
+                "org.jboss.resteasy.spi.ResteasyDeployment:void <init>()",
+                "org.jboss.resteasy.spi.ResteasyDeployment:org.jboss.resteasy.spi.ResteasyProviderFactory getProviderFactory()",
+                "org.jboss.resteasy.spi.ResteasyDeployment:org.jboss.resteasy.core.Dispatcher getDispatcher()",
+                "org.jboss.resteasy.spi.ResteasyDeployment:void start()"
+            ]
+        },
+        "io.netty:netty:3.6.5.Final": {
+            "used-method num": 11,
+            "used method": [
+                "org.jboss.netty.bootstrap.Bootstrap:void setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory)",
+                "org.jboss.netty.channel.group.DefaultChannelGroup:void <init>(java.lang.String)",
+                "org.jboss.netty.util.internal.ConcurrentIdentityWeakKeyHashMap:java.util.Collection values()",
+                "org.jboss.netty.channel.group.DefaultChannelGroup:boolean add(java.lang.Object)",
+                "org.jboss.netty.bootstrap.ServerBootstrap:org.jboss.netty.channel.Channel bind(java.net.SocketAddress)",
+                "org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory:void <init>(java.util.concurrent.Executor,java.util.concurrent.Executor,int)",
+                "org.jboss.netty.util.internal.ConcurrentHashMap:java.util.Collection values()",
+                "org.jboss.netty.channel.group.DefaultChannelGroup:void <clinit>()",
+                "org.jboss.netty.bootstrap.ServerBootstrap:void <init>(org.jboss.netty.channel.ChannelFactory)",
+                "org.jboss.netty.bootstrap.Bootstrap:void setOption(java.lang.String,java.lang.Object)",
+                "org.jboss.netty.util.internal.ConcurrentIdentityHashMap:java.util.Collection values()"
+            ]
+        },
+        "org.springframework:spring-webmvc:3.2.2.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

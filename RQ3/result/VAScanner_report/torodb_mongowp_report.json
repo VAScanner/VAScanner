@@ -1,0 +1,64 @@
+{
+    "project name": "torodb_mongowp",
+    "modules": {
+        "com.torodb.mongowp:mongowp-parent": {
+            "vulnerable dependencies": {
+                "org.apache.logging.log4j:log4j-core:2.8.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "io.netty:netty-common:4.0.42.Final": {
+                    "used-method num": 30,
+                    "used method": [
+                        "io.netty.util.DefaultAttributeMap$DefaultAttribute:java.lang.Object setIfAbsent(java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValueIterator:java.lang.Object next()",
+                        "io.netty.util.UniqueName:void <clinit>()",
+                        "io.netty.util.DefaultAttributeMap$DefaultAttribute:java.lang.Object getAndRemove()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.MpscArrayQueue:boolean isEmpty()",
+                        "io.netty.util.internal.ThreadLocalRandom$3:void run()",
+                        "io.netty.util.concurrent.FailedFuture:io.netty.util.concurrent.Future syncUninterruptibly()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.MpscAtomicArrayQueue:boolean isEmpty()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeyIterator:java.lang.Object next()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.ConcurrentCircularArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.util.DefaultAttributeMap:io.netty.util.Attribute attr(io.netty.util.AttributeKey)",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:boolean containsKey(java.lang.Object)",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.BaseLinkedAtomicQueue:boolean isEmpty()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$BaseIterator:boolean hasNext()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.BaseLinkedQueue:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$CollectionView:boolean isEmpty()",
+                        "io.netty.util.AttributeKey:void <clinit>()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.BaseLinkedAtomicQueue:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValuesView:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntrySetView:java.util.Iterator iterator()",
+                        "io.netty.util.concurrent.DefaultThreadFactory:java.lang.Thread newThread(java.lang.Runnable)",
+                        "io.netty.util.internal.shaded.org.jctools.queues.MpscChunkedArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.MpscAtomicArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ForkJoinWorkerThread:void run()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.BaseLinkedQueue:boolean isEmpty()",
+                        "io.netty.util.AttributeKey:io.netty.util.AttributeKey valueOf(java.lang.String)",
+                        "io.netty.util.concurrent.DefaultPromise:io.netty.util.concurrent.Promise syncUninterruptibly()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntryIterator:java.util.Map$Entry next()"
+                    ]
+                },
+                "io.netty:netty-codec:4.0.42.Final": {
+                    "used-method num": 7,
+                    "used method": [
+                        "io.netty.handler.codec.MessageToByteEncoder:void <init>()",
+                        "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                        "io.netty.handler.codec.LengthFieldPrepender:void encode(io.netty.channel.ChannelHandlerContext,io.netty.buffer.ByteBuf,io.netty.buffer.ByteBuf)",
+                        "io.netty.handler.codec.ByteToMessageDecoder:void <init>()",
+                        "io.netty.handler.codec.CodecOutputList:boolean add(java.lang.Object)",
+                        "io.netty.handler.codec.LengthFieldPrepender:void <init>(int,boolean)",
+                        "io.netty.handler.codec.LengthFieldBasedFrameDecoder:void <init>(java.nio.ByteOrder,int,int,int,int,int,boolean)"
+                    ]
+                }
+            }
+        }
+    }
+}

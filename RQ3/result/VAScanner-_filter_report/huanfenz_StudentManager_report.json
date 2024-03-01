@@ -1,0 +1,39 @@
+{
+    "project name": "huanfenz_StudentManager",
+    "vulnerable dependencies": {
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.4": {
+            "used-method num": 8,
+            "used method": [
+                "org.apache.commons.fileupload.disk.DiskFileItemFactory:void <init>()",
+                "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String getFieldName()",
+                "org.apache.commons.fileupload.disk.DiskFileItem:boolean isFormField()",
+                "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)",
+                "org.apache.commons.fileupload.disk.DiskFileItem:void write(java.io.File)",
+                "org.apache.commons.fileupload.servlet.ServletFileUpload:void <init>(org.apache.commons.fileupload.FileItemFactory)",
+                "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String getName()",
+                "org.apache.commons.fileupload.servlet.ServletFileUpload:boolean isMultipartContent(javax.servlet.http.HttpServletRequest)"
+            ],
+            "CVE": [
+                "CVE-2023-24998"
+            ],
+            "used vul-method": [
+                "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2023-24998": [
+                    "org.apache.commons.fileupload.FileUploadBase:java.util.List parseRequest(org.apache.commons.fileupload.RequestContext)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2023-24998": [
+                    "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)"
+                ]
+            }
+        }
+    }
+}

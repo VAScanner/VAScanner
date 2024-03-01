@@ -1,0 +1,60 @@
+{
+    "project name": "itning_cas-spring-boot-starter",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 24,
+            "used method": [
+                "org.dom4j.tree.AbstractAttribute:java.lang.String getName()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.DocumentException:java.lang.String getMessage()",
+                "org.dom4j.tree.FlyweightComment:java.lang.String getText()",
+                "org.dom4j.tree.AbstractNode:java.util.List selectNodes(java.lang.String)",
+                "org.dom4j.tree.AbstractNode:java.lang.String getName()",
+                "org.dom4j.tree.FlyweightProcessingInstruction:java.lang.String getText()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.tree.FlyweightEntity:java.lang.String getText()",
+                "org.dom4j.Namespace:java.lang.String getText()",
+                "org.dom4j.tree.DefaultDocument:java.lang.String getName()",
+                "org.dom4j.tree.AbstractProcessingInstruction:java.lang.String getName()",
+                "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)",
+                "org.dom4j.tree.AbstractNode:org.dom4j.Node selectSingleNode(java.lang.String)",
+                "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                "org.dom4j.tree.AbstractAttribute:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightText:java.lang.String getText()",
+                "org.dom4j.tree.AbstractElement:java.lang.String getName()",
+                "org.dom4j.tree.AbstractDocumentType:java.lang.String getText()",
+                "org.dom4j.tree.AbstractBranch:java.lang.String getText()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.dom4j.tree.AbstractDocumentType:java.lang.String getName()",
+                "org.dom4j.tree.FlyweightEntity:java.lang.String getName()",
+                "org.dom4j.tree.FlyweightCDATA:java.lang.String getText()"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)"
+            ],
+            "vul-called frequency": 1,
+            "root vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)"
+                ]
+            }
+        }
+    }
+}

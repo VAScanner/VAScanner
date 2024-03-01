@@ -1,0 +1,69 @@
+{
+    "project name": "castagna_jena-examples",
+    "vulnerable dependencies": {
+        "org.apache.poi:poi-ooxml:3.12": {
+            "used-method num": 28,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.Sheet createSheet()",
+                "org.apache.poi.openxml4j.opc.internal.ContentType:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.ss.usermodel.Row createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFTextParagraph:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.ss.usermodel.Cell createCell(int)",
+                "org.apache.poi.POIXMLDocumentPart:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.openxml4j.opc.PackageRelationshipCollection:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFRow$FilledCellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$FilledCellIterator:boolean hasNext()",
+                "org.apache.poi.openxml4j.opc.PackagePartName:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void <init>(int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.xssf.usermodel.XSSFRichTextString:java.lang.String toString()",
+                "org.apache.poi.openxml4j.opc.PackagePart:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:boolean hasNext()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:java.lang.String toString()",
+                "org.apache.poi.openxml4j.opc.PackageRelationship:java.lang.String toString()",
+                "org.apache.poi.openxml4j.opc.PackagePartCollection:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.poi.xssf.usermodel.XSSFTextRun:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFClientAnchor:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2019-12415"
+            ],
+            "used vul-method": [
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.ss.usermodel.Row createRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.ss.usermodel.Cell createCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()"
+            ],
+            "vul-called frequency": 7,
+            "related vul root method": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SheetDataWriter:void writeCell(int,org.apache.poi.ss.usermodel.Cell)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.ss.usermodel.Row createRow(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.ss.usermodel.Cell createCell(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 1,
+            "used method": [
+                "org.junit.Assert:void assertEquals(long,long)"
+            ]
+        }
+    }
+}

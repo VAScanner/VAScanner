@@ -1,0 +1,31 @@
+{
+    "project name": "apache_dubbo-rpc-jsonrpc",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.eclipse.jetty:jetty-server:9.3.7.v20160115": {
+            "used-method num": 17,
+            "used method": [
+                "org.eclipse.jetty.server.Server:void <init>(org.eclipse.jetty.util.thread.ThreadPool)",
+                "org.eclipse.jetty.server.Response:void setHeader(java.lang.String,java.lang.String)",
+                "org.eclipse.jetty.server.Server:void addConnector(org.eclipse.jetty.server.Connector)",
+                "org.eclipse.jetty.server.Request:java.lang.String getRequestURI()",
+                "org.eclipse.jetty.server.ServerConnector:void <init>(org.eclipse.jetty.server.Server)",
+                "org.eclipse.jetty.server.Response:void setStatus(int)",
+                "org.eclipse.jetty.server.Request:java.lang.String getMethod()",
+                "org.eclipse.jetty.server.Request:javax.servlet.ServletInputStream getInputStream()",
+                "org.eclipse.jetty.server.handler.ScopedHandler:void <clinit>()",
+                "org.eclipse.jetty.server.Request:java.lang.String getRemoteAddr()",
+                "org.eclipse.jetty.server.AbstractNetworkConnector:void setPort(int)",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void insertHandler(org.eclipse.jetty.server.handler.HandlerWrapper)",
+                "org.eclipse.jetty.server.Request:int getRemotePort()",
+                "org.eclipse.jetty.server.Response:javax.servlet.ServletOutputStream getOutputStream()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setHeader(java.lang.String,java.lang.String)",
+                "org.eclipse.jetty.server.AbstractNetworkConnector:void setHost(java.lang.String)",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setStatus(int)"
+            ]
+        }
+    }
+}

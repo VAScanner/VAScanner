@@ -1,0 +1,53 @@
+{
+    "project name": "yejq_quartz-spring-manager",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 32,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.DefaultComment:void setText(java.lang.String)",
+                "org.dom4j.tree.DefaultProcessingInstruction:void setText(java.lang.String)",
+                "org.dom4j.io.XMLWriter:void write(org.dom4j.Document)",
+                "org.dom4j.tree.DefaultText:void setText(java.lang.String)",
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.AbstractNode:org.dom4j.Node selectSingleNode(java.lang.String)",
+                "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                "org.dom4j.tree.AbstractAttribute:void setText(java.lang.String)",
+                "org.dom4j.tree.AbstractElement:void setText(java.lang.String)",
+                "org.dom4j.tree.AbstractAttribute:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightText:java.lang.String getText()",
+                "org.dom4j.tree.AbstractDocumentType:java.lang.String getText()",
+                "org.dom4j.tree.AbstractBranch:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightComment:java.lang.String getText()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.dom4j.tree.DefaultCDATA:void setText(java.lang.String)",
+                "org.dom4j.io.XMLWriter:void flush()",
+                "org.dom4j.io.XMLWriter:void <init>(java.io.OutputStream,org.dom4j.io.OutputFormat)",
+                "org.dom4j.io.OutputFormat:org.dom4j.io.OutputFormat createPrettyPrint()",
+                "org.dom4j.tree.AbstractNode:void setText(java.lang.String)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:boolean containsKey(java.lang.Object)",
+                "org.dom4j.io.OutputFormat:void setEncoding(java.lang.String)",
+                "org.dom4j.io.SAXReader:void setFeature(java.lang.String,boolean)",
+                "org.dom4j.tree.FlyweightProcessingInstruction:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightEntity:java.lang.String getText()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.FlyweightCDATA:java.lang.String getText()",
+                "org.dom4j.io.XMLWriter:void <clinit>()",
+                "org.dom4j.Namespace:java.lang.String getText()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object remove(java.lang.Object)"
+            ]
+        },
+        "org.springframework:spring-web:3.2.7.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:3.2.7.RELEASE": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String)",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)"
+            ]
+        }
+    }
+}

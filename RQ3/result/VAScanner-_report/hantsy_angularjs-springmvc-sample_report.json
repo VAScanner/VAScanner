@@ -1,0 +1,106 @@
+{
+    "project name": "hantsy_angularjs-springmvc-sample",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.3.11.RELEASE": {
+            "used-method num": 27,
+            "used method": [
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:org.springframework.http.converter.json.Jackson2ObjectMapperBuilder featuresToEnable(java.lang.Object[])",
+                "org.springframework.web.method.HandlerMethod$HandlerMethodParameter:org.springframework.web.method.HandlerMethod$HandlerMethodParameter clone()",
+                "org.springframework.http.MediaType:void <clinit>()",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:void <init>()",
+                "org.springframework.http.HttpHeaders:void <clinit>()",
+                "org.springframework.web.util.OpaqueUriComponents:java.net.URI toUri()",
+                "org.springframework.web.filter.CharacterEncodingFilter:void <init>()",
+                "org.springframework.http.ResponseEntity:void <init>(java.lang.Object,org.springframework.http.HttpStatus)",
+                "org.springframework.http.converter.AbstractHttpMessageConverter:void setSupportedMediaTypes(java.util.List)",
+                "org.springframework.http.ResponseEntity:void <init>(org.springframework.http.HttpStatus)",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:org.springframework.http.converter.json.Jackson2ObjectMapperBuilder featuresToDisable(java.lang.Object[])",
+                "org.springframework.web.util.HierarchicalUriComponents:java.net.URI toUri()",
+                "org.springframework.http.ResponseEntity:void <init>(java.lang.Object,org.springframework.util.MultiValueMap,org.springframework.http.HttpStatus)",
+                "org.springframework.web.util.UriComponentsBuilder:void <clinit>()",
+                "org.springframework.web.method.HandlerMethod$ReturnValueMethodParameter:org.springframework.web.method.HandlerMethod$ReturnValueMethodParameter clone()",
+                "org.springframework.web.util.UriComponentsBuilder:org.springframework.web.util.UriComponentsBuilder path(java.lang.String)",
+                "org.springframework.http.HttpEntity:void <clinit>()",
+                "org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter:void setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)",
+                "org.springframework.http.HttpStatus:void <clinit>()",
+                "org.springframework.web.util.UriComponentsBuilder:org.springframework.web.util.UriComponents buildAndExpand(java.lang.Object[])",
+                "org.springframework.web.util.UriComponentsBuilder:java.lang.Object clone()",
+                "org.springframework.http.HttpHeaders:void setLocation(java.net.URI)",
+                "org.springframework.http.converter.json.MappingJackson2HttpMessageConverter:void <init>()",
+                "org.springframework.web.bind.MethodArgumentNotValidException:java.lang.String getMessage()",
+                "org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter:void <clinit>()",
+                "org.springframework.http.HttpHeaders:void <init>()",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:com.fasterxml.jackson.databind.ObjectMapper build()"
+            ]
+        },
+        "org.springframework.security:spring-security-core:4.2.3.RELEASE": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()",
+                "org.springframework.security.authentication.encoding.PlaintextPasswordEncoder:void <init>()"
+            ]
+        },
+        "org.springframework.security:spring-security-web:4.2.3.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer:void <init>()"
+            ]
+        },
+        "org.springframework.data:spring-data-commons:1.13.7.RELEASE": {
+            "used-method num": 8,
+            "used method": [
+                "org.springframework.data.domain.PageRequest:void <init>(int,int,org.springframework.data.domain.Sort)",
+                "org.springframework.data.mapping.PropertyReferenceException:java.lang.String getMessage()",
+                "org.springframework.data.domain.PageImpl:int getNumber()",
+                "org.springframework.data.domain.PageImpl:org.springframework.data.domain.Sort getSort()",
+                "org.springframework.data.domain.PageImpl:java.util.List getContent()",
+                "org.springframework.data.web.config.SpringDataWebConfiguration:void <init>()",
+                "org.springframework.data.domain.PageImpl:int getSize()",
+                "org.springframework.data.domain.PageImpl:void <init>(java.util.List,org.springframework.data.domain.Pageable,long)"
+            ]
+        },
+        "org.hibernate:hibernate-core:5.0.12.Final": {
+            "used-method num": 30,
+            "used method": [
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean isEmpty()",
+                "org.hibernate.collection.internal.PersistentBag:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentList:boolean isEmpty()",
+                "org.hibernate.collection.internal.PersistentList:boolean addAll(java.util.Collection)",
+                "org.hibernate.collection.internal.PersistentBag:int size()",
+                "org.hibernate.collection.internal.PersistentBag:boolean addAll(java.util.Collection)",
+                "org.hibernate.InstantiationException:java.lang.String getMessage()",
+                "org.hibernate.PropertyAccessException:java.lang.String getMessage()",
+                "org.hibernate.UnresolvableObjectException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentList:int size()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                "org.hibernate.QueryException:java.lang.String getMessage()",
+                "org.hibernate.PropertyValueException:java.lang.String getMessage()",
+                "org.hibernate.NonUniqueObjectException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentList:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:boolean isEmpty()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:boolean addAll(java.util.Collection)",
+                "org.hibernate.boot.MappingException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean addAll(java.util.Collection)",
+                "org.hibernate.collection.internal.PersistentBag:boolean isEmpty()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                "org.hibernate.StaleObjectStateException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                "org.hibernate.mapping.Column:org.hibernate.mapping.Column clone()",
+                "org.hibernate.TransientPropertyValueException:java.lang.String getMessage()"
+            ]
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

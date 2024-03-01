@@ -1,0 +1,27 @@
+{
+    "project name": "tzolov_coap-shell",
+    "vulnerable dependencies": {
+        "org.eclipse.californium:scandium:2.6.3": {
+            "used-method num": 17,
+            "used method": [
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder setMaxConnections(int)",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder setIdentity(java.security.PrivateKey,java.security.cert.Certificate[],org.eclipse.californium.scandium.dtls.CertificateType[])",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig:java.lang.Object clone()",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:void <init>()",
+                "org.eclipse.californium.scandium.dtls.pskstore.AdvancedSinglePskStore:void <init>(java.lang.String,byte[])",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder setAdvancedPskStore(org.eclipse.californium.scandium.dtls.pskstore.AdvancedPskStore)",
+                "org.eclipse.californium.scandium.DTLSConnector:void <clinit>()",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder setConnectionThreadCount(int)",
+                "org.eclipse.californium.scandium.dtls.x509.StaticNewAdvancedCertificateVerifier$Builder:org.eclipse.californium.scandium.dtls.x509.NewAdvancedCertificateVerifier build()",
+                "org.eclipse.californium.scandium.dtls.x509.StaticNewAdvancedCertificateVerifier:org.eclipse.californium.scandium.dtls.x509.StaticNewAdvancedCertificateVerifier$Builder builder()",
+                "org.eclipse.californium.scandium.dtls.CertificateType:void <clinit>()",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig build()",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder setStaleConnectionThreshold(long)",
+                "org.eclipse.californium.scandium.DTLSConnector:void setRawDataReceiver(org.eclipse.californium.elements.RawDataChannel)",
+                "org.eclipse.californium.scandium.DTLSConnector:void <init>(org.eclipse.californium.scandium.config.DtlsConnectorConfig)",
+                "org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder:org.eclipse.californium.scandium.config.DtlsConnectorConfig$Builder setAdvancedCertificateVerifier(org.eclipse.californium.scandium.dtls.x509.NewAdvancedCertificateVerifier)",
+                "org.eclipse.californium.scandium.DTLSConnector:void destroy()"
+            ]
+        }
+    }
+}

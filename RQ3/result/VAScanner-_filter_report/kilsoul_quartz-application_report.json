@@ -1,0 +1,40 @@
+{
+    "project name": "kilsoul_quartz-application",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:4.3.7.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.quartz-scheduler:quartz:2.2.3": {
+            "used-method num": 22,
+            "used method": [
+                "org.quartz.impl.StdScheduler:java.util.Date rescheduleJob(org.quartz.TriggerKey,org.quartz.Trigger)",
+                "org.quartz.impl.StdScheduler:org.quartz.Trigger getTrigger(org.quartz.TriggerKey)",
+                "org.quartz.JobBuilder:org.quartz.JobDetail build()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.impl.triggers.AbstractTrigger:org.quartz.TriggerBuilder getTriggerBuilder()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder newTrigger()",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder newJob(java.lang.Class)",
+                "org.quartz.impl.StdScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.TriggerBuilder:org.quartz.Trigger build()",
+                "org.quartz.impl.RemoteScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withSchedule(org.quartz.ScheduleBuilder)",
+                "org.quartz.impl.JobDetailImpl:org.quartz.JobDataMap getJobDataMap()",
+                "org.quartz.TriggerKey:org.quartz.TriggerKey triggerKey(java.lang.String,java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.impl.RemoteScheduler:org.quartz.Trigger getTrigger(org.quartz.TriggerKey)",
+                "org.quartz.impl.RemoteScheduler:java.util.Date rescheduleJob(org.quartz.TriggerKey,org.quartz.Trigger)",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "org.quartz.CronScheduleBuilder:org.quartz.CronScheduleBuilder cronSchedule(java.lang.String)",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()"
+            ]
+        }
+    }
+}

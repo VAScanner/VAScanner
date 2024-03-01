@@ -1,0 +1,124 @@
+{
+    "project name": "spotify_docker-client",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.18": {
+            "used-method num": 20,
+            "used method": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setName(java.lang.String)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void write(byte[],int,int)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setSize(long)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void flush()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <clinit>()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <init>(java.io.OutputStream)",
+                "org.apache.commons.compress.utils.CountingOutputStream:void write(byte[],int,int)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()",
+                "org.apache.commons.compress.utils.CountingOutputStream:void write(byte[])",
+                "org.apache.commons.compress.utils.IOUtils:void closeQuietly(java.io.Closeable)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void flush()",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void write(byte[])",
+                "org.apache.commons.compress.utils.FixedLengthBlockOutputStream:void close()",
+                "org.apache.commons.compress.utils.FixedLengthBlockOutputStream:void write(byte[],int,int)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void <init>(java.io.OutputStream)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void closeArchiveEntry()",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void <init>(java.io.File)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void write(byte[],int,int)"
+            ],
+            "CVE": [
+                "CVE-2019-12402"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2019-12402": [
+                    "org.apache.commons.compress.archivers.zip.NioZipEncoding:java.nio.ByteBuffer encode(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12402": [
+                    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)"
+                ]
+            }
+        },
+        "org.apache.httpcomponents:httpclient:4.5": {
+            "used-method num": 51,
+            "used method": [
+                "org.apache.http.conn.ConnectTimeoutException:void <init>(java.io.IOException,org.apache.http.HttpHost,java.net.InetAddress[])",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.conn.EofSensorInputStream:int available()",
+                "org.apache.http.impl.conn.LoggingInputStream:int available()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,javax.net.ssl.HostnameVerifier)",
+                "org.apache.http.impl.conn.LoggingOutputStream:void write(byte[])",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:org.apache.http.conn.ssl.SSLConnectionSocketFactory getSocketFactory()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.conn.LoggingInputStream:void mark(int)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                "org.apache.http.impl.conn.LoggingInputStream:void reset()",
+                "org.apache.http.impl.auth.HttpEntityDigester:void write(byte[],int,int)",
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry)",
+                "org.apache.http.impl.auth.HttpEntityDigester:void close()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:org.apache.http.conn.socket.PlainConnectionSocketFactory getSocketFactory()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.entity.DecompressingEntity:java.io.InputStream getContent()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.entity.DeflateInputStream:void reset()",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void write(byte[],int,int)",
+                "org.apache.http.client.entity.DeflateInputStream:int available()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void flush()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder copy(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.entity.DeflateInputStream:void mark(int)",
+                "org.apache.http.impl.conn.BasicHttpClientConnectionManager:void <init>(org.apache.http.config.Lookup)",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int available()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

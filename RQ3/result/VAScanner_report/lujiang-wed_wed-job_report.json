@@ -1,0 +1,72 @@
+{
+    "project name": "lujiang-wed_wed-job",
+    "vulnerable dependencies": {
+        "org.apache.zookeeper:zookeeper:3.4.6": {
+            "used-method num": 39,
+            "used method": [
+                "org.apache.zookeeper.data.Stat:long getCtime()",
+                "org.apache.zookeeper.ZooKeeper:void <init>(java.lang.String,int,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat setData(java.lang.String,byte[],int)",
+                "org.apache.zookeeper.ZooKeeper:void delete(java.lang.String,int)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,boolean)",
+                "org.apache.zookeeper.server.auth.DigestAuthenticationProvider:void <clinit>()",
+                "org.apache.zookeeper.data.Stat:long getMtime()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.zookeeper.ZooKeeper:byte[] getData(java.lang.String,boolean,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.Shell$1:void run()",
+                "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                "org.apache.zookeeper.server.auth.DigestAuthenticationProvider:java.lang.String generateDigest(java.lang.String)",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.ZooKeeper$States getState()",
+                "org.apache.zookeeper.KeeperException:java.lang.String getMessage()",
+                "org.apache.zookeeper.ZooKeeper:java.lang.String create(java.lang.String,byte[],java.util.List,org.apache.zookeeper.CreateMode)",
+                "org.apache.zookeeper.WatchedEvent:org.apache.zookeeper.Watcher$Event$EventType getType()",
+                "org.apache.zookeeper.data.ACL:void <init>(int,org.apache.zookeeper.data.Id)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.zookeeper.ZooKeeper:void addAuthInfo(java.lang.String,byte[])",
+                "org.apache.zookeeper.WatchedEvent:org.apache.zookeeper.Watcher$Event$KeeperState getState()",
+                "org.apache.zookeeper.data.Stat:void <init>()",
+                "org.apache.zookeeper.ClientCnxn$EventThread:void run()",
+                "org.apache.zookeeper.Watcher$Event$KeeperState:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:void <clinit>()",
+                "org.apache.zookeeper.data.Stat:int getVersion()",
+                "org.apache.zookeeper.ZooKeeper:void close()",
+                "org.apache.zookeeper.KeeperException$Code:int intValue()",
+                "org.apache.zookeeper.ZooDefs$Ids:void <clinit>()",
+                "org.apache.zookeeper.data.Id:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,boolean)",
+                "org.apache.zookeeper.Watcher$Event$EventType:void <clinit>()",
+                "org.apache.zookeeper.KeeperException$Code:void <clinit>()",
+                "org.apache.zookeeper.WatchedEvent:java.lang.String getPath()",
+                "org.apache.zookeeper.WatchedEvent:java.lang.String toString()",
+                "org.apache.zookeeper.ZooKeeper$States:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.CreateMode:void <clinit>()",
+                "org.apache.zookeeper.KeeperException:org.apache.zookeeper.KeeperException$Code code()"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.1.7": {
+            "used-method num": 14,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void trace(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.spi.LoggerComparator:int compare(java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.Logger:boolean isInfoEnabled()",
+                "ch.qos.logback.classic.Logger:boolean isTraceEnabled()",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

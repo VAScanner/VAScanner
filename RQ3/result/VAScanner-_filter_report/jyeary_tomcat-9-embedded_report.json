@@ -1,0 +1,81 @@
+{
+    "project name": "jyeary_tomcat-9-embedded",
+    "vulnerable dependencies": {
+        "org.apache.tomcat.embed:tomcat-embed-core:9.0.36": {
+            "used-method num": 19,
+            "used method": [
+                "org.apache.catalina.startup.Tomcat:void <clinit>()",
+                "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                "org.apache.catalina.connector.Response:void setContentType(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.connector.Connector getConnector()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                "org.apache.catalina.connector.ResponseFacade:void setCharacterEncoding(java.lang.String)",
+                "org.apache.catalina.connector.Response:void setCharacterEncoding(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.connector.ResponseFacade:void setContentType(java.lang.String)",
+                "org.apache.catalina.Context:void addServletMappingDecoded(java.lang.String,java.lang.String)",
+                "org.apache.catalina.connector.CoyoteWriter:void close()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                "org.apache.catalina.connector.CoyoteWriter:void flush()",
+                "org.apache.catalina.core.StandardServer:void await()",
+                "org.apache.catalina.connector.ResponseFacade:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.connector.Response:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.core.ApplicationHttpResponse:void setContentType(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2021-24122",
+                "CVE-2021-33037",
+                "CVE-2022-42252"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.connector.Connector getConnector()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.connector.CoyoteWriter:void close()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                "org.apache.catalina.connector.CoyoteWriter:void flush()"
+            ],
+            "vul-called frequency": 11,
+            "related vul root method": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:java.io.File file(java.lang.String,boolean)",
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:boolean isInvalidWindowsFilename(java.lang.String)"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                    "org.apache.coyote.http11.Http11Processor:void prepareRequest()"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus parseHeader()",
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus skipLine()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.connector.Connector getConnector()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.connector.CoyoteWriter:void close()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                    "org.apache.catalina.connector.CoyoteWriter:void flush()"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void close()",
+                    "org.apache.catalina.connector.CoyoteWriter:void flush()"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void close()",
+                    "org.apache.catalina.connector.CoyoteWriter:void flush()"
+                ]
+            }
+        }
+    }
+}

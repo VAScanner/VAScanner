@@ -1,0 +1,70 @@
+{
+    "project name": "Ghost2097221_addMemShellsJSP",
+    "vulnerable dependencies": {
+        "org.apache.tomcat:tomcat-catalina:8.5.40": {
+            "used-method num": 25,
+            "used method": [
+                "org.ietf.jgss.Oid:boolean equals(java.lang.Object)",
+                "org.apache.catalina.loader.WebappClassLoaderBase:java.lang.Class loadClass(java.lang.String)",
+                "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.realm.RealmBase$AllRolesMode:boolean equals(java.lang.Object)",
+                "org.apache.catalina.connector.Request:java.io.BufferedReader getReader()",
+                "org.apache.naming.NamingEntry:boolean equals(java.lang.Object)",
+                "org.apache.catalina.valves.ValveBase:void <init>()",
+                "org.apache.catalina.util.ParameterMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.catalina.connector.CoyoteOutputStream:void close()",
+                "org.apache.catalina.core.StandardWrapperValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                "org.apache.catalina.core.StandardContextValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                "org.apache.catalina.connector.CoyoteReader:java.lang.String readLine()",
+                "org.apache.catalina.util.ParameterMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.catalina.core.ContainerBase:void addValve(org.apache.catalina.Valve)",
+                "org.apache.catalina.core.StandardHostValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                "org.apache.catalina.authenticator.SingleSignOnSessionKey:boolean equals(java.lang.Object)",
+                "org.apache.catalina.connector.CoyoteWriter:void println(java.lang.String)",
+                "org.apache.catalina.session.StandardSessionFacade:void putValue(java.lang.String,java.lang.Object)",
+                "org.apache.catalina.connector.Response:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.connector.CoyoteInputStream:int read(byte[])",
+                "org.apache.catalina.connector.Request:java.lang.String getMethod()",
+                "org.apache.catalina.connector.Request:java.lang.String getParameter(java.lang.String)",
+                "org.apache.catalina.webresources.AbstractArchiveResource$JarInputStreamWrapper:int read(byte[])",
+                "org.apache.catalina.util.ParameterMap:void clear()",
+                "org.apache.catalina.core.StandardEngineValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)"
+            ],
+            "CVE": [
+                "CVE-2021-24122",
+                "CVE-2023-24998"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.core.StandardWrapperValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                "org.apache.catalina.core.ContainerBase:void addValve(org.apache.catalina.Valve)",
+                "org.apache.catalina.core.StandardHostValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                "org.apache.catalina.connector.Request:java.lang.String getParameter(java.lang.String)",
+                "org.apache.catalina.core.StandardEngineValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)"
+            ],
+            "vul-called frequency": 13,
+            "related vul root method": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:java.io.File file(java.lang.String,boolean)",
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:boolean isInvalidWindowsFilename(java.lang.String)"
+                ],
+                "CVE-2023-24998": [
+                    "org.apache.catalina.connector.Request:void parseParts(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                    "org.apache.catalina.core.StandardWrapperValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                    "org.apache.catalina.core.ContainerBase:void addValve(org.apache.catalina.Valve)",
+                    "org.apache.catalina.core.StandardHostValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                    "org.apache.catalina.connector.Request:java.lang.String getParameter(java.lang.String)",
+                    "org.apache.catalina.core.StandardEngineValve:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)"
+                ],
+                "CVE-2023-24998": [
+                    "org.apache.catalina.connector.Request:java.lang.String getParameter(java.lang.String)"
+                ]
+            }
+        }
+    }
+}

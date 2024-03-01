@@ -1,0 +1,53 @@
+{
+    "project name": "T-baby_ICERest",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.eclipse.jetty:jetty-server:8.1.8.v20121106": {
+            "used-method num": 22,
+            "used method": [
+                "org.eclipse.jetty.server.Server:java.lang.String toString()",
+                "org.eclipse.jetty.server.Dispatcher$ForwardAttributes:java.lang.String toString()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setStatus(int)",
+                "org.eclipse.jetty.server.AbstractHttpConnection:java.lang.String toString()",
+                "org.eclipse.jetty.server.AbstractConnector:void setPort(int)",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.Server:void <init>()",
+                "org.eclipse.jetty.server.Server:void <clinit>()",
+                "org.eclipse.jetty.server.session.AbstractSession:java.lang.String toString()",
+                "org.eclipse.jetty.server.Server:void addConnector(org.eclipse.jetty.server.Connector)",
+                "org.eclipse.jetty.server.handler.ContextHandler$Context:java.lang.String getContextPath()",
+                "org.eclipse.jetty.server.Server:void join()",
+                "org.eclipse.jetty.server.Dispatcher$IncludeAttributes:java.lang.String toString()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void sendRedirect(java.lang.String)",
+                "org.eclipse.jetty.server.ServletRequestHttpWrapper:java.lang.String getQueryString()",
+                "org.eclipse.jetty.server.AbstractConnector:java.lang.String toString()",
+                "org.eclipse.jetty.server.AsyncContinuation:java.lang.String toString()",
+                "org.eclipse.jetty.server.Dispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.eclipse.jetty.server.handler.ContextHandler$Context:java.lang.String getRealPath(java.lang.String)",
+                "org.eclipse.jetty.server.nio.SelectChannelConnector:void <init>()",
+                "org.eclipse.jetty.server.handler.ContextHandler$Context:java.lang.String toString()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setHeader(java.lang.String,java.lang.String)"
+            ]
+        },
+        "org.eclipse.jetty:jetty-webapp:8.1.8.v20121106": {
+            "used-method num": 12,
+            "used method": [
+                "org.eclipse.jetty.webapp.WebAppClassLoader:void addClassPath(java.lang.String)",
+                "org.eclipse.jetty.webapp.WebAppContext:void <init>()",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:java.net.URL getResource(java.lang.String)",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:java.util.Enumeration getResources(java.lang.String)",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:java.lang.Class loadClass(java.lang.String)",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:void <init>(org.eclipse.jetty.webapp.WebAppClassLoader$Context)",
+                "org.eclipse.jetty.webapp.Descriptor:java.lang.String toString()",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:void addJars(org.eclipse.jetty.util.resource.Resource)",
+                "org.eclipse.jetty.webapp.WebAppContext:void setClassLoader(java.lang.ClassLoader)",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:java.lang.String toString()",
+                "org.eclipse.jetty.webapp.WebAppContext:java.lang.String toString()",
+                "org.eclipse.jetty.webapp.WebAppClassLoader:java.lang.Class loadClass(java.lang.String,boolean)"
+            ]
+        }
+    }
+}

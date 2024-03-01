@@ -1,0 +1,41 @@
+{
+    "project name": "megagao_production_ssm",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.2.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.2.3": {
+            "used-method num": 19,
+            "used method": [
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:java.lang.String toString()",
+                "org.apache.shiro.authz.permission.WildcardPermission:java.lang.String toString()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addStringPermissions(java.util.Collection)",
+                "org.apache.shiro.authz.permission.WildcardPermission:boolean equals(java.lang.Object)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.String toString()",
+                "org.apache.shiro.realm.AuthorizingRealm:void setName(java.lang.String)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:boolean equals(java.lang.Object)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:boolean equals(java.lang.Object)",
+                "org.apache.shiro.realm.CachingRealm:void clearCache(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toString()",
+                "org.apache.shiro.util.SimpleByteSource:boolean equals(java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String toString()",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.3": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

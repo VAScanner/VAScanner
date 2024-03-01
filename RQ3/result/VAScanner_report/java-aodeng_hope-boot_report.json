@@ -1,0 +1,84 @@
+{
+    "project name": "java-aodeng_hope-boot",
+    "modules": {
+        "com.hope:hope-admin": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 5,
+                    "used method": [
+                        "cn.hutool.core.convert.Convert:java.lang.Object convert(java.lang.Class,java.lang.Object)",
+                        "cn.hutool.core.date.DateUtil:cn.hutool.core.date.DateTime date()",
+                        "cn.hutool.core.util.ObjectUtil:boolean isNotNull(java.lang.Object)",
+                        "cn.hutool.core.util.ObjectUtil:boolean isNull(java.lang.Object)",
+                        "cn.hutool.core.util.RandomUtil:java.lang.String randomUUID()"
+                    ]
+                }
+            }
+        },
+        "com.hope:hope-core": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 16,
+                    "used method": [
+                        "cn.hutool.core.lang.Range:java.lang.Object next()",
+                        "cn.hutool.core.collection.BoundedPriorityQueue:java.util.Iterator iterator()",
+                        "cn.hutool.core.map.CustomKeyLinkedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "cn.hutool.core.map.CustomKeyMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "cn.hutool.core.collection.CopiedIter:boolean hasNext()",
+                        "cn.hutool.core.util.StrUtil:boolean isNotBlank(java.lang.CharSequence)",
+                        "cn.hutool.core.collection.ArrayIter:java.lang.Object next()",
+                        "cn.hutool.core.collection.EnumerationIter:boolean hasNext()",
+                        "cn.hutool.core.convert.Convert:java.lang.Object convert(java.lang.Class,java.lang.Object)",
+                        "cn.hutool.core.lang.Range:boolean hasNext()",
+                        "cn.hutool.core.map.MapUtil$1$1:java.lang.Object getValue()",
+                        "cn.hutool.core.collection.EnumerationIter:java.lang.Object next()",
+                        "cn.hutool.core.util.ObjectUtil:boolean isNull(java.lang.Object)",
+                        "cn.hutool.core.map.MapUtil$1$1:java.lang.Object getKey()",
+                        "cn.hutool.core.collection.CopiedIter:java.lang.Object next()",
+                        "cn.hutool.core.collection.ArrayIter:boolean hasNext()"
+                    ]
+                }
+            }
+        },
+        "com.hope:hope-framework": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.hope:hope-sso-server": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.hope:hope-generator": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.hope:hope-quartz": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.hope:hope-flyway": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.1.7": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

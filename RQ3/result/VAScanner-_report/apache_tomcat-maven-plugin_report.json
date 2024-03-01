@@ -1,0 +1,307 @@
+{
+    "project name": "apache_tomcat-maven-plugin",
+    "modules": {
+        "org.apache.tomcat.maven:tomcat-maven-plugin": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.3.5": {
+                    "used-method num": 24,
+                    "used method": [
+                        "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                        "org.apache.http.impl.client.SystemDefaultCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                        "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                        "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.Header getFirstHeader(java.lang.String)",
+                        "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                        "org.apache.http.auth.AuthScope:void <init>(java.lang.String,int)",
+                        "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                        "org.apache.http.auth.AuthScope:void <clinit>()",
+                        "org.apache.http.impl.client.BasicAuthCache:void <init>()",
+                        "org.apache.http.impl.client.BasicAuthCache:void put(org.apache.http.HttpHost,org.apache.http.auth.AuthScheme)",
+                        "org.apache.http.impl.auth.HttpEntityDigester:void write(byte[],int,int)",
+                        "org.apache.http.impl.conn.PoolingClientConnectionManager:void <init>()",
+                        "org.apache.http.impl.conn.LoggingOutputStream:void write(byte[],int,int)",
+                        "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                        "org.apache.http.impl.conn.PoolingClientConnectionManager:void setMaxTotal(int)",
+                        "org.apache.http.impl.client.BasicCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                        "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                        "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager)",
+                        "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                        "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                        "org.apache.http.impl.auth.BasicScheme:void <init>()",
+                        "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                        "org.apache.http.client.methods.HttpPut:void <init>(java.lang.String)",
+                        "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.CredentialsProvider getCredentialsProvider()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-13956"
+                    ],
+                    "used vul-method": [
+                        "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2020-13956": [
+                            "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-13956": [
+                            "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)"
+                        ]
+                    }
+                },
+                "org.apache.tomcat:tomcat-catalina:7.0.59": {
+                    "used-method num": 7,
+                    "used method": [
+                        "org.apache.catalina.loader.WebappLoader:void <init>()",
+                        "org.apache.catalina.loader.WebappLoader:boolean modified()",
+                        "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.util.ResourceSet:boolean add(java.lang.Object)",
+                        "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)",
+                        "org.apache.catalina.util.ParameterMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.catalina.loader.WebappLoader:void <init>(java.lang.ClassLoader)"
+                    ],
+                    "CVE": [
+                        "CVE-2016-6797",
+                        "CVE-2018-1305",
+                        "CVE-2017-12616"
+                    ],
+                    "used vul-method": [
+                        "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)",
+                        "org.apache.catalina.loader.WebappLoader:boolean modified()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2016-6797": [
+                            "org.apache.catalina.core.NamingContextListener:void lifecycleEvent(org.apache.catalina.LifecycleEvent)",
+                            "org.apache.catalina.core.NamingContextListener:void addResourceLink(org.apache.catalina.deploy.ContextResourceLink)",
+                            "org.apache.catalina.core.NamingContextListener:void removeResourceLink(java.lang.String)"
+                        ],
+                        "CVE-2018-1305": [
+                            "org.apache.catalina.core.StandardWrapper:void setServletSecurityAnnotationScanRequired(boolean)",
+                            "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                            "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                            "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)"
+                        ],
+                        "CVE-2017-12616": [
+                            "org.apache.naming.resources.FileDirContext:java.io.File file(java.lang.String)",
+                            "org.apache.naming.resources.FileDirContext:java.util.List doListBindings(java.lang.String)",
+                            "org.apache.naming.resources.FileDirContext:void rename(java.lang.String,java.lang.String)",
+                            "org.apache.naming.resources.FileDirContext:void unbind(java.lang.String)",
+                            "org.apache.naming.resources.VirtualDirContext:java.io.File file(java.lang.String)",
+                            "org.apache.naming.resources.FileDirContext:java.lang.Object doLookup(java.lang.String)",
+                            "org.apache.naming.resources.FileDirContext:javax.naming.directory.Attributes doGetAttributes(java.lang.String,java.lang.String[])"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2016-6797": [
+                            "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)"
+                        ],
+                        "CVE-2018-1305": [
+                            "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)"
+                        ],
+                        "CVE-2017-12616": [
+                            "org.apache.catalina.loader.WebappLoader:boolean modified()",
+                            "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.apache.tomcat.embed:tomcat-embed-core:7.0.59": {
+                    "used-method num": 16,
+                    "used method": [
+                        "org.apache.catalina.loader.WebappLoader:void <init>()",
+                        "org.apache.catalina.loader.WebappLoader:boolean modified()",
+                        "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println()",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void print(java.lang.Object)",
+                        "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void write(byte[],int,int)",
+                        "org.apache.catalina.util.ResourceSet:boolean add(java.lang.Object)",
+                        "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)",
+                        "org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.String)",
+                        "org.apache.coyote.http11.filters.FlushableGZIPOutputStream:void write(byte[],int,int)",
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.util.ParameterMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.tomcat.util.http.fileupload.ThresholdingOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.loader.WebappLoader:void <init>(java.lang.ClassLoader)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-1305",
+                        "CVE-2020-1938"
+                    ],
+                    "used vul-method": [
+                        "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)",
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                    ],
+                    "vul-called frequency": 7,
+                    "related vul root method": {
+                        "CVE-2018-1305": [
+                            "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                            "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                            "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                            "org.apache.catalina.core.StandardWrapper:void setServletSecurityAnnotationScanRequired(boolean)",
+                            "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                            "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                            "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)"
+                        ],
+                        "CVE-2020-1938": [
+                            "org.apache.coyote.ajp.AbstractAjpProcessor:void prepareRequest()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-1305": [
+                            "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                            "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                            "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)",
+                            "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                        ],
+                        "CVE-2020-1938": [
+                            "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                            "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                            "org.apache.catalina.loader.WebappLoader:void addRepository(java.lang.String)",
+                            "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                        ]
+                    }
+                },
+                "org.apache.tomcat:tomcat-coyote:7.0.59": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println()",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void print(java.lang.Object)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.String)",
+                        "org.apache.coyote.http11.filters.FlushableGZIPOutputStream:void write(byte[],int,int)",
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.http.fileupload.ThresholdingOutputStream:void write(byte[],int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-1938",
+                        "CVE-2016-6816"
+                    ],
+                    "used vul-method": [
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-1938": [
+                            "org.apache.coyote.ajp.AbstractAjpProcessor:void prepareRequest()"
+                        ],
+                        "CVE-2016-6816": [
+                            "org.apache.coyote.http11.InternalNioInputBuffer:boolean parseRequestLine(boolean)",
+                            "org.apache.coyote.http11.InternalAprInputBuffer:boolean parseRequestLine(boolean)",
+                            "org.apache.coyote.http11.InternalInputBuffer:boolean parseRequestLine(boolean)",
+                            "org.apache.coyote.http11.InternalNioInputBuffer:org.apache.coyote.http11.InternalNioInputBuffer$HeaderParseStatus parseHeader()",
+                            "org.apache.coyote.http11.InternalAprInputBuffer:boolean parseHeader()",
+                            "org.apache.coyote.http11.InternalInputBuffer:boolean parseHeader()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-1938": [
+                            "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                        ],
+                        "CVE-2016-6816": [
+                            "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                        ]
+                    }
+                },
+                "org.apache.tomcat:tomcat-jasper:7.0.59": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.commons:commons-compress:1.4.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.codehaus.plexus:plexus-utils:3.0.15": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.codehaus.plexus.util.StringUtils:boolean equals(java.lang.String,java.lang.String)"
+                    ]
+                },
+                "org.apache.logging.log4j:log4j-core:2.0.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.tomcat.embed:tomcat-embed-core:8.0.14": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.apache.catalina.loader.WebappLoader:void <init>()",
+                        "org.apache.catalina.loader.WebappLoader:boolean modified()",
+                        "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println()",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void print(java.lang.Object)",
+                        "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void write(byte[],int,int)",
+                        "org.apache.catalina.util.ResourceSet:boolean add(java.lang.Object)",
+                        "org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.String)",
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.util.ParameterMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.tomcat.util.http.fileupload.ThresholdingOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.loader.WebappLoader:void <init>(java.lang.ClassLoader)"
+                    ]
+                },
+                "org.apache.tomcat:tomcat-util:8.0.14": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.tomcat:tomcat-coyote:8.0.14": {
+                    "used-method num": 8,
+                    "used method": [
+                        "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println()",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void print(java.lang.Object)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.String)",
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)",
+                        "org.apache.tomcat.util.http.fileupload.ThresholdingOutputStream:void write(byte[],int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2016-6816"
+                    ],
+                    "used vul-method": [
+                        "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                        "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                    ],
+                    "vul-called frequency": 4,
+                    "related vul root method": {
+                        "CVE-2016-6816": [
+                            "org.apache.coyote.http11.InternalAprInputBuffer:boolean parseRequestLine(boolean)",
+                            "org.apache.coyote.http11.InternalInputBuffer:boolean parseRequestLine(boolean)",
+                            "org.apache.coyote.http11.AbstractNioInputBuffer:boolean parseRequestLine(boolean)",
+                            "org.apache.coyote.http11.InternalAprInputBuffer:boolean parseHeader()",
+                            "org.apache.coyote.http11.InternalInputBuffer:boolean parseHeader()",
+                            "org.apache.coyote.http11.AbstractNioInputBuffer:org.apache.coyote.http11.AbstractNioInputBuffer$HeaderParseStatus parseHeader()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2016-6816": [
+                            "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream:void write(byte[],int,int)",
+                            "org.apache.coyote.http11.upgrade.AbstractServletOutputStream:void write(byte[],int,int)"
+                        ]
+                    }
+                },
+                "org.apache.tomcat:tomcat-jasper:8.0.14": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.tomcat:tomcat-catalina:8.0.14": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.apache.catalina.loader.WebappLoader:void <init>()",
+                        "org.apache.catalina.loader.WebappLoader:boolean modified()",
+                        "org.apache.catalina.connector.CoyoteOutputStream:void write(byte[],int,int)",
+                        "org.apache.catalina.util.ResourceSet:boolean add(java.lang.Object)",
+                        "org.apache.catalina.util.ParameterMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.catalina.loader.WebappLoader:void <init>(java.lang.ClassLoader)"
+                    ]
+                }
+            }
+        }
+    }
+}

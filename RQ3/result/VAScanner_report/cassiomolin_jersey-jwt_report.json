@@ -1,0 +1,50 @@
+{
+    "project name": "cassiomolin_jersey-jwt",
+    "vulnerable dependencies": {
+        "io.undertow:undertow-core:2.0.13.Final": {
+            "used-method num": 10,
+            "used method": [
+                "io.undertow.Undertow$Builder:io.undertow.Undertow$Builder addHttpListener(int,java.lang.String)",
+                "io.undertow.Undertow$Builder:io.undertow.Undertow build()",
+                "io.undertow.Undertow:io.undertow.Undertow$Builder builder()",
+                "io.undertow.Undertow:void start()",
+                "io.undertow.server.handlers.PathHandler:io.undertow.server.handlers.PathHandler addPrefixPath(java.lang.String,io.undertow.server.HttpHandler)",
+                "io.undertow.Handlers:io.undertow.server.handlers.PathHandler path()",
+                "io.undertow.server.handlers.resource.ClassPathResourceManager:void <init>(java.lang.ClassLoader)",
+                "io.undertow.Undertow:void stop()",
+                "io.undertow.util.HeaderValues:java.lang.String get(int)",
+                "io.undertow.util.HeaderValues:boolean isEmpty()"
+            ],
+            "CVE": [
+                "CVE-2020-1745"
+            ],
+            "used vul-method": [
+                "io.undertow.Undertow:void start()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-1745": [
+                    "io.undertow.server.protocol.ajp.AjpOpenListener:void <init>(io.undertow.connector.ByteBufferPool,org.xnio.OptionMap)",
+                    "io.undertow.server.protocol.ajp.AjpRequestParser:void <init>(java.lang.String,boolean,int,int,boolean,boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-1745": [
+                    "io.undertow.Undertow:void start()"
+                ]
+            }
+        },
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.6": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.hibernate:hibernate-core:5.3.6.Final": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

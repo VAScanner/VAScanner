@@ -1,0 +1,81 @@
+{
+    "project name": "amazon-archives_aws-ant-tasks",
+    "vulnerable dependencies": {
+        "org.apache.ant:ant:1.9.4": {
+            "used-method num": 37,
+            "used method": [
+                "org.apache.tools.ant.taskdefs.Antlib:void execute()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection:java.util.Iterator iterator()",
+                "org.apache.tools.ant.Project:void addReference(java.lang.String,java.lang.Object)",
+                "org.apache.tools.ant.UnknownElement:void execute()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:boolean hasNext()",
+                "org.apache.tools.ant.Task:void <init>()",
+                "org.apache.tools.ant.ProjectComponent:java.lang.String getDescription()",
+                "org.apache.tools.ant.Project:void setProperty(java.lang.String,java.lang.String)",
+                "org.apache.tools.ant.UnknownElement:java.lang.String getTaskName()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.BuildException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.apache.tools.ant.BuildException:void <init>(java.lang.String)",
+                "org.apache.tools.ant.Project:java.lang.Object getReference(java.lang.String)",
+                "org.apache.tools.ant.UnknownElement:org.apache.tools.ant.Task getTask()",
+                "org.apache.tools.ant.Task:java.lang.String getTaskName()",
+                "org.apache.tools.ant.types.PropertySet$1:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.Project:void setNewProperty(java.lang.String,java.lang.String)",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.Resource$1:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.FileResourceIterator:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.FailFast:boolean hasNext()",
+                "org.apache.tools.ant.taskdefs.Definer:void execute()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:boolean hasNext()",
+                "org.apache.tools.ant.Project:java.lang.String getProperty(java.lang.String)",
+                "org.apache.tools.ant.Project$AntRefTable:java.lang.Object get(java.lang.Object)",
+                "org.apache.tools.ant.types.resources.FailFast:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:boolean hasNext()",
+                "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:boolean hasNext()",
+                "org.apache.tools.ant.util.VectorSet:boolean add(java.lang.Object)",
+                "org.apache.tools.ant.types.resources.FileResourceIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.Resource$1:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.UnknownElement:void maybeConfigure()",
+                "org.apache.tools.ant.Task:void maybeConfigure()",
+                "org.apache.tools.ant.types.AbstractFileSet:org.apache.tools.ant.DirectoryScanner getDirectoryScanner(org.apache.tools.ant.Project)",
+                "org.apache.tools.ant.types.resources.Resources$2:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:org.apache.tools.ant.ProjectHelper next()"
+            ],
+            "CVE": [
+                "CVE-2021-36374",
+                "CVE-2021-36373"
+            ],
+            "used vul-method": [
+                "org.apache.tools.ant.taskdefs.Definer:void execute()",
+                "org.apache.tools.ant.UnknownElement:void maybeConfigure()",
+                "org.apache.tools.ant.Task:void maybeConfigure()"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.ant.taskdefs.Definer:void execute()",
+                    "org.apache.tools.ant.UnknownElement:void maybeConfigure()",
+                    "org.apache.tools.ant.Task:void maybeConfigure()"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.ant.taskdefs.Definer:void execute()",
+                    "org.apache.tools.ant.UnknownElement:void maybeConfigure()",
+                    "org.apache.tools.ant.Task:void maybeConfigure()"
+                ]
+            }
+        }
+    }
+}

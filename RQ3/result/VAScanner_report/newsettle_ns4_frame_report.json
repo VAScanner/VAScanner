@@ -1,0 +1,57 @@
+{
+    "project name": "newsettle_ns4_frame",
+    "modules": {
+        "com.creditease.ns:ns_log": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.11": {
+                    "used-method num": 35,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.pattern.MessageConverter:void <init>()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                        "ch.qos.logback.classic.pattern.LineOfCallerConverter:void <init>()",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.pattern.MessageConverter:java.lang.String convert(ch.qos.logback.classic.spi.ILoggingEvent)",
+                        "ch.qos.logback.classic.Logger:void trace(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.pattern.ThrowableProxyConverter:void <init>()",
+                        "ch.qos.logback.classic.Logger:java.lang.String getName()",
+                        "ch.qos.logback.classic.spi.ThrowableProxy:ch.qos.logback.classic.spi.StackTraceElementProxy[] getStackTraceElementProxyArray()",
+                        "ch.qos.logback.classic.LoggerContext:java.util.List getLoggerList()",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.StackTraceElement[] getCallerData()",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                        "ch.qos.logback.classic.PatternLayout:void <clinit>()",
+                        "ch.qos.logback.classic.spi.ThrowableProxy:ch.qos.logback.classic.spi.IThrowableProxy getCause()",
+                        "ch.qos.logback.classic.Logger:boolean isInfoEnabled()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.encoder.PatternLayoutEncoder:void <init>()",
+                        "ch.qos.logback.classic.spi.ThrowableProxy:ch.qos.logback.classic.spi.IThrowableProxy[] getSuppressed()",
+                        "ch.qos.logback.classic.Logger:boolean isErrorEnabled()",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:boolean isWarnEnabled()",
+                        "ch.qos.logback.classic.Logger:boolean isTraceEnabled()",
+                        "ch.qos.logback.classic.LoggerContext:void stop()",
+                        "ch.qos.logback.classic.spi.ThrowableProxyUtil:void indent(java.lang.StringBuilder,int)",
+                        "ch.qos.logback.classic.LoggerContext:void reset()",
+                        "ch.qos.logback.classic.pattern.ClassOfCallerConverter:void <init>()",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                        "ch.qos.logback.classic.Logger:boolean isDebugEnabled()",
+                        "ch.qos.logback.classic.joran.JoranConfigurator:void <init>()",
+                        "ch.qos.logback.classic.LoggerContext:void start()"
+                    ]
+                }
+            }
+        },
+        "com.creditease.ns.framework:NS4_FRAME": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

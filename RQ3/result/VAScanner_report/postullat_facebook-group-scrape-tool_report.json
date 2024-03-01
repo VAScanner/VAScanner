@@ -1,0 +1,46 @@
+{
+    "project name": "postullat_facebook-group-scrape-tool",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.18": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.postgresql:postgresql:42.2.5": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:3.17": {
+            "used-method num": 28,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFFont createFont()",
+                "org.apache.poi.xssf.usermodel.XSSFDataFormat:short getFormat(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFont(org.apache.poi.ss.usermodel.Font)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.util.CTColComparator$1:int compare(java.lang.Object,java.lang.Object)",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellStyle(org.apache.poi.ss.usermodel.CellStyle)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet$1:int compare(java.lang.Object,java.lang.Object)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setHyperlink(org.apache.poi.ss.usermodel.Hyperlink)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFHyperlink:void setAddress(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setFontHeightInPoints(short)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>()",
+                "org.apache.poi.xssf.usermodel.XSSFCreationHelper:org.apache.poi.xssf.usermodel.XSSFHyperlink createHyperlink(org.apache.poi.common.usermodel.HyperlinkType)",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setUnderline(byte)",
+                "org.apache.poi.xssf.usermodel.XSSFCreationHelper:org.apache.poi.xssf.usermodel.XSSFDataFormat createDataFormat()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFCreationHelper getCreationHelper()",
+                "org.apache.poi.xssf.util.CTColComparator$2:int compare(java.lang.Object,java.lang.Object)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.POIXMLDocument:void close()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setDataFormat(short)",
+                "org.apache.poi.POIXMLDocument:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFCellStyle createCellStyle()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setColor(short)"
+            ]
+        }
+    }
+}

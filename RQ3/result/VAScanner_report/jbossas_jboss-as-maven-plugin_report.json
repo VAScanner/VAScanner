@@ -1,0 +1,83 @@
+{
+    "project name": "jbossas_jboss-as-maven-plugin",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.5": {
+            "used-method num": 40,
+            "used method": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.dump.TapeInputStream:void close()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void close()",
+                "org.apache.commons.compress.compressors.pack200.TempFileCachingStreamBridge$1:void close()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream:void close()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream:org.apache.commons.compress.archivers.dump.DumpArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void close()",
+                "org.apache.commons.compress.archivers.ArchiveStreamFactory:void <init>()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void close()",
+                "org.apache.commons.compress.compressors.pack200.Pack200CompressorOutputStream:void close()",
+                "org.apache.commons.compress.compressors.CompressorStreamFactory:void <init>()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream:void close()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.ArchiveStreamFactory:org.apache.commons.compress.archivers.ArchiveInputStream createArchiveInputStream(java.io.InputStream)",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveOutputStream:void close()",
+                "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream:int read(byte[])",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.compressors.CompressorStreamFactory:org.apache.commons.compress.compressors.CompressorInputStream createCompressorInputStream(java.io.InputStream)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:java.lang.Object clone()",
+                "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.zip.ZipLong:java.lang.Object clone()",
+                "org.apache.commons.compress.archivers.zip.ZipShort:java.lang.Object clone()",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream:void close()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:void close()"
+            ],
+            "CVE": [
+                "CVE-2018-11771"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2018-11771": [
+                    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:int readStored(byte[],int,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-11771": [
+                    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                    "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+                ]
+            }
+        },
+        "org.codehaus.plexus:plexus-utils:3.0.10": {
+            "used-method num": 5,
+            "used method": [
+                "org.codehaus.plexus.util.dag.CycleDetectedException:java.lang.String getMessage()",
+                "org.codehaus.plexus.util.dag.Vertex:java.lang.Object clone()",
+                "org.codehaus.plexus.util.xml.XmlReader:void close()",
+                "org.codehaus.plexus.util.dag.DAG:java.lang.Object clone()",
+                "org.codehaus.plexus.util.xml.XmlStreamWriter:void close()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

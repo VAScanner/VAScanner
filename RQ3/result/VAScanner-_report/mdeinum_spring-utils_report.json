@@ -1,0 +1,102 @@
+{
+    "project name": "mdeinum_spring-utils",
+    "vulnerable dependencies": {
+        "org.springframework:spring-messaging:4.2.7.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.messaging.MessageHeaders:java.lang.Object remove(java.lang.Object)",
+                "org.springframework.messaging.MessageHeaders:java.util.Set keySet()",
+                "org.springframework.messaging.MessageHeaders:java.lang.String toString()",
+                "org.springframework.messaging.MessageHeaders:java.util.Set entrySet()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.2.7.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.web.servlet.i18n.AbstractLocaleResolver:void <init>()"
+            ]
+        },
+        "org.springframework.batch:spring-batch-core:3.0.7.RELEASE": {
+            "used-method num": 18,
+            "used method": [
+                "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                "org.springframework.batch.core.JobParameter:java.lang.String toString()",
+                "org.springframework.batch.core.ExitStatus:java.lang.String toString()",
+                "org.springframework.batch.core.JobParameters:void <init>(java.util.Map)",
+                "org.springframework.batch.core.StepContribution:java.lang.String toString()",
+                "org.springframework.batch.core.JobParameters:java.lang.String toString()",
+                "org.springframework.batch.core.JobParameters:boolean isEmpty()",
+                "org.springframework.batch.core.JobParameter:java.lang.Object getValue()",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addParameter(java.lang.String,org.springframework.batch.core.JobParameter)",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addLong(java.lang.String,java.lang.Long,boolean)",
+                "org.springframework.batch.core.JobParameters:java.util.Map getParameters()",
+                "org.springframework.batch.core.StepExecution:java.lang.String toString()",
+                "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addDouble(java.lang.String,java.lang.Double,boolean)",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addDate(java.lang.String,java.util.Date,boolean)",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()",
+                "org.springframework.batch.core.JobParameters:void <init>()",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String,boolean)"
+            ]
+        },
+        "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.security.core.session.SessionInformation:void <init>(java.lang.Object,java.lang.String,java.util.Date)",
+                "org.springframework.security.core.session.SessionInformation:void refreshLastRequest()"
+            ]
+        },
+        "org.quartz-scheduler:quartz:2.2.3": {
+            "used-method num": 20,
+            "used method": [
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntrySet:java.util.Iterator iterator()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getValue()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:boolean remove(java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set entrySet()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getKey()",
+                "org.quartz.utils.Key:java.lang.String toString()",
+                "org.quartz.SchedulerException:java.lang.String toString()",
+                "org.quartz.JobDataMap:void <init>()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object remove(java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set keySet()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:java.util.Iterator iterator()",
+                "org.quartz.JobExecutionException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.quartz.utils.DirtyFlagMap:boolean isEmpty()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:int size()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.impl.JobDetailImpl:java.lang.String toString()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "org.quartz.impl.triggers.AbstractTrigger:java.lang.String toString()"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.1.7": {
+            "used-method num": 18,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void trace(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.joran.ReconfigureOnChangeTask:java.lang.String toString()",
+                "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:boolean isTraceEnabled()",
+                "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()",
+                "ch.qos.logback.classic.Logger:void trace(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:java.lang.String toString()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

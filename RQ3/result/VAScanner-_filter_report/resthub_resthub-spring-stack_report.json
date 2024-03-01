@@ -1,0 +1,33 @@
+{
+    "project name": "resthub_resthub-spring-stack",
+    "modules": {
+        "org.resthub:resthub-spring-stack": {
+            "vulnerable dependencies": {
+                "org.springframework.data:spring-data-commons:1.9.0.RELEASE": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.data.domain.Sort$Order:int hashCode()",
+                        "org.springframework.data.domain.Sort:java.util.Iterator iterator()",
+                        "org.springframework.data.domain.Sort:int hashCode()"
+                    ]
+                },
+                "ch.qos.logback:logback-classic:1.1.2": {
+                    "used-method num": 7,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.spi.ClassPackagingData:int hashCode()",
+                        "ch.qos.logback.classic.spi.LoggerContextVO:int hashCode()",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:int hashCode()"
+                    ]
+                },
+                "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.4.2": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

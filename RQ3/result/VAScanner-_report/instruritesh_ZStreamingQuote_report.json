@@ -1,0 +1,43 @@
+{
+    "project name": "instruritesh_ZStreamingQuote",
+    "vulnerable dependencies": {
+        "org.eclipse.jetty:jetty-server:9.3.3.v20150827": {
+            "used-method num": 18,
+            "used method": [
+                "org.eclipse.jetty.server.Request:void setHandled(boolean)",
+                "org.eclipse.jetty.server.ServletRequestHttpWrapper:java.lang.String getQueryString()",
+                "org.eclipse.jetty.server.ResponseWriter:void println(java.lang.String)",
+                "org.eclipse.jetty.server.Response:void setStatus(int)",
+                "org.eclipse.jetty.server.Request:java.lang.String getMethod()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <init>()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <clinit>()",
+                "org.eclipse.jetty.server.Response:void setContentType(java.lang.String)",
+                "org.eclipse.jetty.server.Response:java.io.PrintWriter getWriter()",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void <init>()",
+                "org.eclipse.jetty.server.handler.ScopedHandler:void <clinit>()",
+                "org.eclipse.jetty.server.Server:void <init>(int)",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void addHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setStatus(int)",
+                "org.eclipse.jetty.server.Server:void join()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void setContextPath(java.lang.String)",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.Request:java.lang.String getQueryString()"
+            ]
+        },
+        "org.eclipse.jetty:jetty-util:9.3.3.v20150827": {
+            "used-method num": 10,
+            "used method": [
+                "org.eclipse.jetty.util.BlockingArrayQueue:int size()",
+                "org.eclipse.jetty.util.UrlEncoded:java.lang.Object clone()",
+                "org.eclipse.jetty.util.BlockingArrayQueue:java.lang.Object get(int)",
+                "org.eclipse.jetty.util.component.AbstractLifeCycle:void <clinit>()",
+                "org.eclipse.jetty.util.thread.ShutdownThread:void run()",
+                "org.eclipse.jetty.util.component.ContainerLifeCycle:void <clinit>()",
+                "org.eclipse.jetty.util.ArrayQueue:java.lang.Object get(int)",
+                "org.eclipse.jetty.util.BlockingArrayQueue:void put(java.lang.Object)",
+                "org.eclipse.jetty.util.BlockingArrayQueue:java.lang.Object take()",
+                "org.eclipse.jetty.util.component.AbstractLifeCycle:void start()"
+            ]
+        }
+    }
+}

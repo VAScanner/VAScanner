@@ -1,0 +1,70 @@
+{
+    "project name": "Cruii_learning-spring",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 34,
+            "used method": [
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.AbstractProcessingInstruction:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.AbstractText:java.lang.String toString()",
+                "org.dom4j.xpath.DefaultXPath:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.AbstractDocument:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.dom4j.tree.AbstractComment:java.lang.String toString()",
+                "org.dom4j.dtd.ExternalEntityDecl:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.QName:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$Entry:java.lang.String toString()",
+                "org.dom4j.tree.AbstractAttribute:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.dtd.AttributeDecl:java.lang.String toString()",
+                "org.dom4j.dtd.ElementDecl:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set entrySet()",
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.Namespace:java.lang.String toString()",
+                "org.dom4j.DocumentException:java.lang.String getMessage()",
+                "org.dom4j.tree.AbstractCDATA:java.lang.String toString()",
+                "org.dom4j.tree.NamespaceStack:java.lang.String toString()",
+                "org.dom4j.tree.AbstractElement:java.lang.String attributeValue(java.lang.String)",
+                "org.dom4j.tree.AbstractNode:java.util.List selectNodes(java.lang.String)",
+                "org.dom4j.tree.AbstractEntity:java.lang.String toString()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                "org.dom4j.xpath.XPathPattern:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                "org.dom4j.dtd.InternalEntityDecl:java.lang.String toString()",
+                "org.dom4j.tree.AbstractElement:java.lang.String toString()",
+                "org.dom4j.tree.AbstractElement:java.util.List elements(java.lang.String)",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)",
+                "org.dom4j.tree.AbstractDocumentType:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                    "org.dom4j.io.SAXReader:void setXMLReader(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXHelper:org.xml.sax.XMLReader createXMLReader(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+                ]
+            }
+        }
+    }
+}

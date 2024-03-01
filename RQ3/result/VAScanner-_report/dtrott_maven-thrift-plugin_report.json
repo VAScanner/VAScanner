@@ -1,0 +1,48 @@
+{
+    "project name": "dtrott_maven-thrift-plugin",
+    "vulnerable dependencies": {
+        "org.codehaus.plexus:plexus-utils:3.0.8": {
+            "used-method num": 11,
+            "used method": [
+                "org.codehaus.plexus.util.cli.CommandLineUtils$StringStreamConsumer:void <init>()",
+                "org.codehaus.plexus.util.cli.CommandLineUtils$StringStreamConsumer:java.lang.String getOutput()",
+                "org.codehaus.plexus.util.FileUtils:java.util.List getFiles(java.io.File,java.lang.String,java.lang.String)",
+                "org.codehaus.plexus.util.FileUtils:void <clinit>()",
+                "org.codehaus.plexus.util.cli.Commandline:void <init>()",
+                "org.codehaus.plexus.util.FileUtils:void copyStreamToFile(org.codehaus.plexus.util.io.InputStreamFacade,java.io.File)",
+                "org.codehaus.plexus.util.cli.Commandline:void setExecutable(java.lang.String)",
+                "org.codehaus.plexus.util.cli.CommandLineUtils:int executeCommandLine(org.codehaus.plexus.util.cli.Commandline,java.io.InputStream,org.codehaus.plexus.util.cli.StreamConsumer,org.codehaus.plexus.util.cli.StreamConsumer)",
+                "org.codehaus.plexus.util.cli.Commandline:void addArguments(java.lang.String[])",
+                "org.codehaus.plexus.util.FileUtils:void cleanDirectory(java.io.File)",
+                "org.codehaus.plexus.util.io.RawInputStreamFacade:void <init>(java.io.InputStream)"
+            ],
+            "CVE": [
+                "CVE-2017-1000487"
+            ],
+            "used vul-method": [
+                "org.codehaus.plexus.util.cli.Commandline:void <init>()",
+                "org.codehaus.plexus.util.cli.CommandLineUtils:int executeCommandLine(org.codehaus.plexus.util.cli.Commandline,java.io.InputStream,org.codehaus.plexus.util.cli.StreamConsumer,org.codehaus.plexus.util.cli.StreamConsumer)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2017-1000487": [
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:void <init>(boolean)",
+                    "org.codehaus.plexus.util.cli.Commandline:java.lang.Process execute()",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:java.lang.String unifyQuotes(java.lang.String)",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:java.lang.String getExecutable()",
+                    "org.codehaus.plexus.util.cli.Commandline:void verifyShellState()",
+                    "org.codehaus.plexus.util.cli.shell.Shell:java.util.List getShellCommandLine(java.lang.String[])",
+                    "org.codehaus.plexus.util.cli.shell.Shell:java.util.List getRawCommandLine(java.lang.String,java.lang.String[])",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:java.lang.String getExecutionPreamble()",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:char[] getQuotingTriggerChars()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2017-1000487": [
+                    "org.codehaus.plexus.util.cli.Commandline:void <init>()",
+                    "org.codehaus.plexus.util.cli.CommandLineUtils:int executeCommandLine(org.codehaus.plexus.util.cli.Commandline,java.io.InputStream,org.codehaus.plexus.util.cli.StreamConsumer,org.codehaus.plexus.util.cli.StreamConsumer)"
+                ]
+            }
+        }
+    }
+}

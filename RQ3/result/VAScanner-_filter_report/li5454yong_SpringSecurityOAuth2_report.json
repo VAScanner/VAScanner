@@ -1,0 +1,68 @@
+{
+    "project name": "li5454yong_SpringSecurityOAuth2",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.3.1.RELEASE": {
+            "used-method num": 23,
+            "used method": [
+                "org.springframework.http.HttpHeaders:void add(java.lang.String,java.lang.String)",
+                "org.springframework.web.util.HierarchicalUriComponents:java.net.URI toUri()",
+                "org.springframework.http.HttpEntity:java.lang.Object getBody()",
+                "org.springframework.http.MediaType:void <clinit>()",
+                "org.springframework.web.util.UriComponentsBuilder:org.springframework.web.util.UriComponentsBuilder path(java.lang.String)",
+                "org.springframework.http.HttpHeaders:void setAccept(java.util.List)",
+                "org.springframework.http.HttpEntity:void <clinit>()",
+                "org.springframework.http.HttpEntity:void <init>(org.springframework.util.MultiValueMap)",
+                "org.springframework.http.HttpEntity:void <init>(java.lang.Object,org.springframework.util.MultiValueMap)",
+                "org.springframework.http.HttpStatus:void <clinit>()",
+                "org.springframework.http.HttpHeaders:void <clinit>()",
+                "org.springframework.web.client.RestTemplate:org.springframework.http.ResponseEntity exchange(java.lang.String,org.springframework.http.HttpMethod,org.springframework.http.HttpEntity,java.lang.Class,java.lang.Object[])",
+                "org.springframework.web.client.RestTemplate:void <init>()",
+                "org.springframework.web.util.OpaqueUriComponents:java.net.URI toUri()",
+                "org.springframework.web.util.UriComponentsBuilder:org.springframework.web.util.UriComponents buildAndExpand(java.lang.Object[])",
+                "org.springframework.http.HttpHeaders:void setLocation(java.net.URI)",
+                "org.springframework.http.ResponseEntity:void <init>(java.lang.Object,org.springframework.http.HttpStatus)",
+                "org.springframework.http.ResponseEntity:void <init>(org.springframework.util.MultiValueMap,org.springframework.http.HttpStatus)",
+                "org.springframework.http.HttpHeaders:void <init>()",
+                "org.springframework.http.HttpMethod:void <clinit>()",
+                "org.springframework.http.ResponseEntity:void <init>(org.springframework.http.HttpStatus)",
+                "org.springframework.web.client.RestTemplate:void <clinit>()",
+                "org.springframework.web.client.RestTemplate:java.net.URI postForLocation(java.lang.String,java.lang.Object,java.lang.Object[])"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.3.1.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer:void <init>()"
+            ]
+        },
+        "org.springframework.security:spring-security-web:4.1.4.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.security.web.FilterChainProxy$VirtualFilterChain:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer:void <init>()",
+                "org.springframework.security.web.FilterInvocation$1:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)"
+            ]
+        },
+        "org.springframework.security.oauth:spring-security-oauth2:2.0.12.RELEASE": {
+            "used-method num": 12,
+            "used method": [
+                "org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHandler:void <init>()",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:void <init>(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler:void <init>()",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void setRequestFactory(org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:void <init>()",
+                "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)"
+            ]
+        },
+        "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.7.5": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

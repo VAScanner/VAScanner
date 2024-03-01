@@ -1,0 +1,65 @@
+{
+    "project name": "cassiomolin_chat-websockets",
+    "vulnerable dependencies": {
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.8": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "io.undertow:undertow-core:1.4.18.Final": {
+            "used-method num": 13,
+            "used method": [
+                "io.undertow.Undertow$Builder:io.undertow.Undertow$Builder addHttpListener(int,java.lang.String)",
+                "io.undertow.Undertow$Builder:io.undertow.Undertow build()",
+                "io.undertow.Undertow:io.undertow.Undertow$Builder builder()",
+                "io.undertow.Undertow:void start()",
+                "io.undertow.util.CopyOnWriteMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "io.undertow.server.handlers.PathHandler:io.undertow.server.handlers.PathHandler addPrefixPath(java.lang.String,io.undertow.server.HttpHandler)",
+                "io.undertow.Handlers:io.undertow.server.handlers.PathHandler path()",
+                "io.undertow.server.handlers.resource.ClassPathResourceManager:void <init>(java.lang.ClassLoader)",
+                "io.undertow.util.CopyOnWriteMap:boolean containsKey(java.lang.Object)",
+                "io.undertow.Undertow:void stop()",
+                "io.undertow.server.DefaultByteBufferPool:void <clinit>()",
+                "io.undertow.util.CopyOnWriteMap:java.lang.Object get(java.lang.Object)",
+                "io.undertow.server.DefaultByteBufferPool:void <init>(boolean,int)"
+            ],
+            "CVE": [
+                "CVE-2020-1745",
+                "CVE-2018-1048"
+            ],
+            "used vul-method": [
+                "io.undertow.Undertow:void start()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-1745": [
+                    "io.undertow.server.protocol.ajp.AjpOpenListener:void <init>(io.undertow.connector.ByteBufferPool,org.xnio.OptionMap)"
+                ],
+                "CVE-2018-1048": [
+                    "io.undertow.server.protocol.ajp.AjpOpenListener:void <init>(io.undertow.connector.ByteBufferPool,org.xnio.OptionMap)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-1745": [
+                    "io.undertow.Undertow:void start()"
+                ],
+                "CVE-2018-1048": [
+                    "io.undertow.Undertow:void start()"
+                ]
+            }
+        },
+        "io.undertow:undertow-websockets-jsr:1.4.18.Final": {
+            "used-method num": 5,
+            "used method": [
+                "io.undertow.websockets.jsr.WebSocketDeploymentInfo:io.undertow.websockets.jsr.WebSocketDeploymentInfo setBuffers(io.undertow.connector.ByteBufferPool)",
+                "io.undertow.websockets.jsr.WebSocketSessionRemoteEndpoint$AsyncWebSocketSessionRemoteEndpoint:java.util.concurrent.Future sendObject(java.lang.Object)",
+                "io.undertow.websockets.jsr.WebSocketDeploymentInfo:void <init>()",
+                "io.undertow.websockets.jsr.UndertowSession:javax.websocket.RemoteEndpoint$Async getAsyncRemote()",
+                "io.undertow.websockets.jsr.WebSocketDeploymentInfo:io.undertow.websockets.jsr.WebSocketDeploymentInfo addEndpoint(java.lang.Class)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

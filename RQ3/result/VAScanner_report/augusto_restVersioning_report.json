@@ -1,0 +1,84 @@
+{
+    "project name": "augusto_restVersioning",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.1.1.RELEASE": {
+            "used-method num": 18,
+            "used method": [
+                "org.springframework.http.converter.xml.SourceHttpMessageConverter:void <clinit>()",
+                "org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter:void <init>()",
+                "org.springframework.http.MediaType:void <clinit>()",
+                "org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter:void <clinit>()",
+                "org.springframework.http.converter.ResourceHttpMessageConverter:void <clinit>()",
+                "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:org.springframework.web.accept.ContentNegotiationManager getObject()",
+                "org.springframework.http.converter.StringHttpMessageConverter:void <clinit>()",
+                "org.springframework.http.converter.ByteArrayHttpMessageConverter:void <init>()",
+                "org.springframework.http.converter.StringHttpMessageConverter:void setWriteAcceptCharset(boolean)",
+                "org.springframework.http.converter.json.MappingJackson2HttpMessageConverter:void <init>()",
+                "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void <init>()",
+                "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void addMediaTypes(java.util.Map)",
+                "org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter:void <clinit>()",
+                "org.springframework.http.converter.StringHttpMessageConverter:void <init>()",
+                "org.springframework.http.converter.xml.SourceHttpMessageConverter:void <init>()",
+                "org.springframework.web.bind.support.ConfigurableWebBindingInitializer:void <init>()",
+                "org.springframework.http.converter.ResourceHttpMessageConverter:void <init>()",
+                "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void afterPropertiesSet()"
+            ],
+            "CVE": [
+                "CVE-2015-5211"
+            ],
+            "used vul-method": [
+                "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void afterPropertiesSet()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2015-5211": [
+                    "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void afterPropertiesSet()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2015-5211": [
+                    "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void afterPropertiesSet()"
+                ]
+            }
+        },
+        "org.springframework:spring-webmvc:4.1.1.RELEASE": {
+            "used-method num": 17,
+            "used method": [
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:void <init>()",
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:void <clinit>()",
+                "org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:void <init>()",
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:void setContentNegotiationManager(org.springframework.web.accept.ContentNegotiationManager)",
+                "org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:void setContentNegotiationManager(org.springframework.web.accept.ContentNegotiationManager)",
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:void setContentNegotiationManager(org.springframework.web.accept.ContentNegotiationManager)",
+                "org.springframework.web.servlet.handler.MappedInterceptor:void <init>(java.lang.String[],org.springframework.web.servlet.HandlerInterceptor)",
+                "org.springframework.web.servlet.handler.AbstractHandlerMapping:void setOrder(int)",
+                "org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor:void <init>(org.springframework.core.convert.ConversionService)",
+                "org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:void <init>()",
+                "org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:void setMessageConverters(java.util.List)",
+                "org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:void setOrder(int)",
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:void setMessageConverters(java.util.List)",
+                "org.springframework.web.servlet.mvc.condition.AbstractRequestCondition:void <init>()",
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:void setWebBindingInitializer(org.springframework.web.bind.support.WebBindingInitializer)",
+                "org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver:void <init>()",
+                "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:void <init>()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.1.2": {
+            "used-method num": 4,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)"
+            ]
+        },
+        "org.apache.httpcomponents:httpclient:4.3.5": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

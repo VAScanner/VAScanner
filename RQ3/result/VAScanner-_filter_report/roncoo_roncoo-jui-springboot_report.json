@@ -1,0 +1,36 @@
+{
+    "project name": "roncoo_roncoo-jui-springboot",
+    "modules": {
+        "com.roncoo.os:roncoo-jui-springboot": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.poi:poi-ooxml:3.15": {
+                    "used-method num": 18,
+                    "used method": [
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFFont createFont()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFCellStyle createCellStyle()",
+                        "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                        "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                        "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                        "org.apache.poi.POIXMLDocument:void write(java.io.OutputStream)",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet createSheet(java.lang.String)",
+                        "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                        "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFillForegroundColor(short)",
+                        "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFont(org.apache.poi.ss.usermodel.Font)",
+                        "org.apache.poi.openxml4j.opc.PackagePartCollection:java.lang.Object clone()",
+                        "org.apache.poi.xssf.usermodel.XSSFFont:void setFontHeight(short)",
+                        "org.apache.poi.xssf.usermodel.XSSFCell:void setCellStyle(org.apache.poi.ss.usermodel.CellStyle)",
+                        "org.apache.poi.xssf.usermodel.XSSFFont:void setFontName(java.lang.String)",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()"
+                    ]
+                }
+            }
+        }
+    }
+}

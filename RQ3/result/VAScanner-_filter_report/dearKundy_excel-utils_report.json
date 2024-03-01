@@ -1,0 +1,119 @@
+{
+    "project name": "dearKundy_excel-utils",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.15": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:4.0.1": {
+            "used-method num": 42,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void flush()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int addMergedRegion(org.apache.poi.ss.util.CellRangeAddress)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:void setColumnWidth(int,int)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setAlignment(org.apache.poi.ss.usermodel.HorizontalAlignment)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Date)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.streaming.SXSSFRow$FilledCellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void <init>(int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.util.Date)",
+                "org.apache.poi.ooxml.POIXMLDocument:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:int addMergedRegion(org.apache.poi.ss.util.CellRangeAddress)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:int getColumnWidth(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void close()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:boolean hasNext()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.xssf.streaming.SXSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setDataFormat(short)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getColumnWidth(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellStyle(org.apache.poi.ss.usermodel.CellStyle)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.xssf.streaming.SXSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow getRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setWrapText(boolean)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFCellStyle createCellStyle()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:void setColumnWidth(int,int)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.CellStyle createCellStyle()"
+            ],
+            "CVE": [
+                "CVE-2019-12415"
+            ],
+            "used vul-method": [
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Date)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(double)"
+            ],
+            "vul-called frequency": 17,
+            "related vul root method": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SheetDataWriter:void writeCell(int,org.apache.poi.ss.usermodel.Cell)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Date)",
+                    "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(double)"
+                ]
+            }
+        },
+        "commons-beanutils:commons-beanutils:1.9.3": {
+            "used-method num": 8,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean containsKey(java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:java.lang.String getProperty(java.lang.Object,java.lang.String)",
+                "org.apache.commons.beanutils.WeakFastHashMap:boolean containsKey(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean containsKey(java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:java.lang.String getProperty(java.lang.Object,java.lang.String)"
+            ],
+            "vul-called frequency": 14,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:boolean containsKey(java.lang.Object)",
+                    "org.apache.commons.beanutils.BeanUtils:java.lang.String getProperty(java.lang.Object,java.lang.String)"
+                ]
+            }
+        }
+    }
+}

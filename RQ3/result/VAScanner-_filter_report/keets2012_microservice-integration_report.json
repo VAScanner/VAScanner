@@ -1,0 +1,57 @@
+{
+    "project name": "keets2012_microservice-integration",
+    "modules": {
+        "com.blueskykong.microservice:auth-gateway-backend": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.15": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.2.2.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.security.crypto.codec.Base64:byte[] encode(byte[])"
+                    ]
+                }
+            }
+        },
+        "org.springframework.boot:spring-boot-starter-parent": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.15": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.2.2.RELEASE": {
+                    "used-method num": 11,
+                    "used method": [
+                        "org.springframework.security.access.intercept.AbstractSecurityInterceptor:org.springframework.security.access.intercept.InterceptorStatusToken beforeInvocation(java.lang.Object)",
+                        "org.springframework.security.authentication.AbstractAuthenticationToken:void setAuthenticated(boolean)",
+                        "org.springframework.security.crypto.password.NoOpPasswordEncoder:void <clinit>()",
+                        "org.springframework.security.access.SecurityConfig:void <init>(java.lang.String)",
+                        "org.springframework.security.access.intercept.AbstractSecurityInterceptor:java.lang.Object afterInvocation(org.springframework.security.access.intercept.InterceptorStatusToken,java.lang.Object)",
+                        "org.springframework.security.authentication.BadCredentialsException:void <init>(java.lang.String)",
+                        "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.Object getDetails()",
+                        "org.springframework.security.authentication.AbstractAuthenticationToken:void <init>(java.util.Collection)",
+                        "org.springframework.security.access.AccessDeniedException:void <init>(java.lang.String)",
+                        "org.springframework.security.access.intercept.AbstractSecurityInterceptor:void <init>()",
+                        "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()"
+                    ]
+                }
+            }
+        },
+        "org.springframework.boot:gateway-enhanced": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.15": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.2.2.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.security.crypto.codec.Base64:byte[] encode(byte[])"
+                    ]
+                }
+            }
+        }
+    }
+}

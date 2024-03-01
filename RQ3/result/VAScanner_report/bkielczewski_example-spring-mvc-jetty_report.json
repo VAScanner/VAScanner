@@ -1,0 +1,43 @@
+{
+    "project name": "bkielczewski_example-spring-mvc-jetty",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.2.5.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.core.io.AbstractResource:java.net.URI getURI()",
+                "org.springframework.core.io.ClassPathResource:void <init>(java.lang.String)",
+                "org.springframework.core.env.AbstractEnvironment:void setDefaultProfiles(java.lang.String[])"
+            ],
+            "CVE": [
+                "CVE-2014-3578"
+            ],
+            "used vul-method": [
+                "org.springframework.core.io.ClassPathResource:void <init>(java.lang.String)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2014-3578": [
+                    "org.springframework.util.StringUtils:java.lang.String cleanPath(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2014-3578": [
+                    "org.springframework.core.io.ClassPathResource:void <init>(java.lang.String)"
+                ]
+            }
+        },
+        "org.springframework:spring-webmvc:3.2.5.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.FrameworkServlet:void <clinit>()",
+                "org.springframework.web.servlet.DispatcherServlet:void <init>(org.springframework.web.context.WebApplicationContext)",
+                "org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter:void <init>()",
+                "org.springframework.web.servlet.DispatcherServlet:void <clinit>()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

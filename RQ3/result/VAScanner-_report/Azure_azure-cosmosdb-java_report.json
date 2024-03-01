@@ -1,0 +1,119 @@
+{
+    "project name": "Azure_azure-cosmosdb-java",
+    "modules": {
+        "com.microsoft.azure:azure-cosmosdb-parent": {
+            "vulnerable dependencies": {
+                "io.netty:netty-codec-http:4.1.50.Final": {
+                    "used-method num": 28,
+                    "used method": [
+                        "io.netty.handler.codec.http.HttpMethod:int compareTo(java.lang.Object)",
+                        "io.netty.handler.codec.http.HttpMethod:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultHttpHeaders$3:java.lang.String next()",
+                        "io.netty.handler.codec.http.cookie.DefaultCookie:int compareTo(java.lang.Object)",
+                        "io.netty.handler.codec.http.websocketx.WebSocketFrame:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String toString()",
+                        "io.netty.handler.codec.http.websocketx.WebSocketDecoderConfig:java.lang.String toString()",
+                        "io.netty.handler.codec.http.websocketx.WebSocketCloseStatus:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:int compareTo(java.lang.Object)",
+                        "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpVersion:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultFullHttpResponse:java.lang.String toString()",
+                        "io.netty.handler.codec.http.websocketx.WebSocketCloseStatus:int compareTo(java.lang.Object)",
+                        "io.netty.handler.codec.http.HttpMethod:int hashCode()",
+                        "io.netty.handler.codec.http.QueryStringDecoder:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpVersion:int hashCode()",
+                        "io.netty.handler.codec.http.cookie.DefaultCookie:int hashCode()",
+                        "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpVersion:int compareTo(java.lang.Object)",
+                        "io.netty.handler.codec.http.DefaultHttpContent:java.lang.String toString()",
+                        "io.netty.handler.codec.http.cookie.DefaultCookie:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpServerUpgradeHandler$UpgradeEvent:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultLastHttpContent:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultFullHttpRequest:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:int hashCode()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpHeaders:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultHttpResponse:java.lang.String toString()"
+                    ]
+                },
+                "io.netty:netty-handler:4.1.50.Final": {
+                    "used-method num": 11,
+                    "used method": [
+                        "io.netty.handler.ssl.SslHandler:void <clinit>()",
+                        "io.netty.handler.ssl.SslHandler:void <init>(javax.net.ssl.SSLEngine)",
+                        "io.netty.handler.ssl.OpenSslX509Certificate:java.lang.String toString()",
+                        "io.netty.handler.ssl.OpenSslJavaxX509Certificate:java.lang.String toString()",
+                        "io.netty.handler.logging.LoggingHandler:void <init>(java.lang.String,io.netty.handler.logging.LogLevel)",
+                        "io.netty.handler.ssl.SslContext:io.netty.handler.ssl.SslProvider defaultClientProvider()",
+                        "io.netty.handler.ssl.SslContext:void <clinit>()",
+                        "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder forClient()",
+                        "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContext build()",
+                        "io.netty.handler.logging.LogLevel:void <clinit>()",
+                        "io.netty.handler.ssl.SslCompletionEvent:java.lang.String toString()"
+                    ]
+                }
+            }
+        },
+        "com.microsoft.azure:azure-cosmosdb-direct": {
+            "vulnerable dependencies": {
+                "io.netty:netty-codec-http:4.1.50.Final": {
+                    "used-method num": 28,
+                    "used method": [
+                        "io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker$5$1:void run()",
+                        "io.netty.handler.codec.http.DefaultHttpHeaders$3:java.lang.String next()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String reasonPhrase()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:int code()",
+                        "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:io.netty.handler.codec.http.HttpResponseStatus valueOf(int)",
+                        "io.netty.handler.codec.http.websocketx.WebSocketDecoderConfig:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpVersion:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultFullHttpResponse:java.lang.String toString()",
+                        "io.netty.handler.codec.http.DefaultHttpContent:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:void <clinit>()",
+                        "io.netty.handler.codec.http.cookie.DefaultCookie:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpMethod:void <init>(java.lang.String)",
+                        "io.netty.handler.codec.http.DefaultLastHttpContent:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpServerUpgradeHandler$UpgradeEvent:boolean release()",
+                        "io.netty.handler.codec.http.DefaultFullHttpRequest:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpMethod:void <clinit>()",
+                        "io.netty.handler.codec.http.DefaultHttpResponse:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpMethod:java.lang.String toString()",
+                        "io.netty.handler.codec.http.websocketx.WebSocketFrame:java.lang.String toString()",
+                        "io.netty.handler.codec.http.websocketx.WebSocketCloseStatus:java.lang.String toString()",
+                        "io.netty.handler.codec.http.QueryStringDecoder:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpResponseStatus:io.netty.handler.codec.http.HttpStatusClass codeClass()",
+                        "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpServerUpgradeHandler$UpgradeEvent:java.lang.String toString()",
+                        "io.netty.handler.codec.http.HttpHeaders:java.lang.String toString()"
+                    ]
+                },
+                "io.netty:netty-handler:4.1.50.Final": {
+                    "used-method num": 19,
+                    "used method": [
+                        "io.netty.handler.ssl.SslHandler:void <clinit>()",
+                        "io.netty.handler.ssl.SslHandler:void <init>(javax.net.ssl.SSLEngine)",
+                        "io.netty.handler.ssl.OpenSslX509Certificate:java.lang.String toString()",
+                        "io.netty.handler.ssl.OpenSslJavaxX509Certificate:java.lang.String toString()",
+                        "io.netty.handler.ssl.SslHandler$4:void run()",
+                        "io.netty.handler.ssl.DefaultOpenSslKeyMaterial:boolean release()",
+                        "io.netty.handler.ssl.SslHandler$5:void run()",
+                        "io.netty.handler.ssl.SslHandler$SslTasksRunner$2:void run()",
+                        "io.netty.handler.ssl.SslHandler$7:void run()",
+                        "io.netty.handler.ssl.SslHandler:io.netty.channel.ChannelFuture closeOutbound()",
+                        "io.netty.handler.logging.LoggingHandler:void <init>(io.netty.handler.logging.LogLevel)",
+                        "io.netty.handler.ssl.SslHandler$SslTasksRunner:void run()",
+                        "io.netty.handler.ssl.SslHandler$8$1:void run()",
+                        "io.netty.handler.ssl.ReferenceCountedOpenSslEngine$3:void run()",
+                        "io.netty.handler.ssl.SslHandler$SslTasksRunner$1:void run()",
+                        "io.netty.handler.timeout.IdleStateHandler:void <init>(long,long,long,java.util.concurrent.TimeUnit)",
+                        "io.netty.handler.logging.LogLevel:void <clinit>()",
+                        "io.netty.handler.ssl.SslHandler$1:void run()",
+                        "io.netty.handler.ssl.SslCompletionEvent:java.lang.String toString()"
+                    ]
+                }
+            }
+        }
+    }
+}

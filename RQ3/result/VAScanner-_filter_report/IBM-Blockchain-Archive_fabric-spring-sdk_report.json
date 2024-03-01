@@ -1,0 +1,50 @@
+{
+    "project name": "IBM-Blockchain-Archive_fabric-spring-sdk",
+    "modules": {
+        "org.springframework.data:spring-data-chaincode-parent": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-expression:5.1.3.RELEASE": {
+                    "used-method num": 8,
+                    "used method": [
+                        "org.springframework.expression.spel.ast.StringLiteral:java.lang.String toString()",
+                        "org.springframework.expression.spel.ast.NullLiteral:java.lang.String toString()",
+                        "org.springframework.expression.spel.ast.Literal:java.lang.String toString()",
+                        "org.springframework.expression.spel.standard.Token:java.lang.String toString()",
+                        "org.springframework.expression.spel.ast.OperatorMatches$MatcherInput:java.lang.String toString()",
+                        "org.springframework.expression.TypedValue:java.lang.String toString()",
+                        "org.springframework.expression.spel.standard.TokenKind:java.lang.String toString()",
+                        "org.springframework.expression.spel.support.ReflectivePropertyAccessor$PropertyCacheKey:java.lang.String toString()"
+                    ]
+                },
+                "ch.qos.logback:logback-classic:1.0.13": {
+                    "used-method num": 19,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                        "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                        "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()"
+                    ]
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "project name": "stormpath_spring-mvc-rest-exhandler",
+    "modules": {
+        "com.stormpath.blog:spring-mvc-rest-exhandler-root": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.1.1.RELEASE": {
+                    "used-method num": 23,
+                    "used method": [
+                        "org.springframework.http.HttpStatus:java.lang.String getReasonPhrase()",
+                        "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:boolean canWrite(java.lang.Class,org.springframework.http.MediaType)",
+                        "org.springframework.web.context.request.ServletRequestAttributes:javax.servlet.http.HttpServletRequest getRequest()",
+                        "org.springframework.http.server.ServletServerHttpRequest:void <init>(javax.servlet.http.HttpServletRequest)",
+                        "org.springframework.http.MediaType:void <clinit>()",
+                        "org.springframework.http.converter.AbstractHttpMessageConverter:void write(java.lang.Object,org.springframework.http.MediaType,org.springframework.http.HttpOutputMessage)",
+                        "org.springframework.http.HttpStatus:int value()",
+                        "org.springframework.web.context.request.ServletRequestAttributes:void <clinit>()",
+                        "org.springframework.http.server.ServletServerHttpResponse:void <init>(javax.servlet.http.HttpServletResponse)",
+                        "org.springframework.http.converter.FormHttpMessageConverter:boolean canWrite(java.lang.Class,org.springframework.http.MediaType)",
+                        "org.springframework.http.MediaType:void sortByQualityValue(java.util.List)",
+                        "org.springframework.http.HttpStatus:org.springframework.http.HttpStatus valueOf(int)",
+                        "org.springframework.http.converter.AbstractHttpMessageConverter:boolean canWrite(java.lang.Class,org.springframework.http.MediaType)",
+                        "org.springframework.web.context.request.ServletWebRequest:void <init>(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                        "org.springframework.http.HttpStatus:void <clinit>()",
+                        "org.springframework.http.converter.json.MappingJacksonHttpMessageConverter:boolean canWrite(java.lang.Class,org.springframework.http.MediaType)",
+                        "org.springframework.http.converter.FormHttpMessageConverter:void write(java.lang.Object,org.springframework.http.MediaType,org.springframework.http.HttpOutputMessage)",
+                        "org.springframework.web.context.request.ServletWebRequest:javax.servlet.http.HttpServletResponse getResponse()",
+                        "org.springframework.web.bind.MissingServletRequestParameterException:java.lang.String getMessage()",
+                        "org.springframework.web.bind.MethodArgumentNotValidException:java.lang.String getMessage()",
+                        "org.springframework.web.util.WebUtils:void <clinit>()",
+                        "org.springframework.http.server.ServletServerHttpRequest:org.springframework.http.HttpHeaders getHeaders()",
+                        "org.springframework.http.HttpHeaders:java.util.List getAccept()"
+                    ]
+                },
+                "org.springframework:spring-webmvc:3.1.1.RELEASE": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver:void <init>()",
+                        "org.springframework.web.servlet.ModelAndView:void <init>()",
+                        "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport:void addDefaultHttpMessageConverters(java.util.List)",
+                        "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

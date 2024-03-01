@@ -1,0 +1,28 @@
+{
+    "project name": "ozimov_spring-boot-email-tools",
+    "modules": {
+        "it.ozimov:spring-boot-email-build": {
+            "vulnerable dependencies": {
+                "org.apache.tika:tika-core:1.14": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.apache.tika.language.translate.DefaultTranslator$1:int compare(java.lang.Object,java.lang.Object)",
+                        "org.apache.tika.detect.MagicDetector:org.apache.tika.mime.MediaType detect(java.io.InputStream,org.apache.tika.metadata.Metadata)",
+                        "org.apache.tika.config.TikaConfig:org.apache.tika.detect.Detector getDetector()",
+                        "org.apache.tika.io.TikaInputStream:org.apache.tika.io.TikaInputStream get(java.io.InputStream)",
+                        "org.apache.tika.utils.ServiceLoaderUtils$1:int compare(java.lang.Object,java.lang.Object)",
+                        "org.apache.tika.metadata.Metadata:void <init>()",
+                        "org.apache.tika.mime.MimeTypes:org.apache.tika.mime.MediaType detect(java.io.InputStream,org.apache.tika.metadata.Metadata)",
+                        "org.apache.tika.detect.TextDetector:org.apache.tika.mime.MediaType detect(java.io.InputStream,org.apache.tika.metadata.Metadata)",
+                        "org.apache.tika.config.TikaConfig:org.apache.tika.config.TikaConfig getDefaultConfig()",
+                        "org.apache.tika.mime.MediaType:java.lang.String toString()",
+                        "org.apache.tika.metadata.Metadata:void <clinit>()",
+                        "org.apache.tika.mime.Patterns$LengthComparator:int compare(java.lang.Object,java.lang.Object)",
+                        "org.apache.tika.detect.CompositeDetector:org.apache.tika.mime.MediaType detect(java.io.InputStream,org.apache.tika.metadata.Metadata)",
+                        "org.apache.tika.metadata.Metadata:void add(java.lang.String,java.lang.String)"
+                    ]
+                }
+            }
+        }
+    }
+}

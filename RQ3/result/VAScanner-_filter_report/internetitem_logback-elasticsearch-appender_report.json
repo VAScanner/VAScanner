@@ -1,0 +1,24 @@
+{
+    "project name": "internetitem_logback-elasticsearch-appender",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.7": {
+            "used-method num": 10,
+            "used method": [
+                "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String getFormattedMessage()",
+                "ch.qos.logback.classic.PatternLayout:void <init>()",
+                "ch.qos.logback.classic.PatternLayout:java.lang.String doLayout(java.lang.Object)",
+                "ch.qos.logback.classic.spi.LoggingEvent:java.util.Map getMDCPropertyMap()",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.spi.LoggingEvent:java.lang.StackTraceElement[] getCallerData()",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.PatternLayout:void <clinit>()",
+                "ch.qos.logback.classic.spi.LoggingEvent:void prepareForDeferredProcessing()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

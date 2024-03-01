@@ -1,0 +1,96 @@
+{
+    "project name": "Netbreeze-GmbH_boilerpipe",
+    "vulnerable dependencies": {
+        "xerces:xercesImpl:2.9.1": {
+            "used-method num": 36,
+            "used method": [
+                "org.apache.xerces.util.XMLAttributesImpl:int getLength()",
+                "org.apache.xerces.util.ParserConfigurationSettings:java.lang.Object getProperty(java.lang.String)",
+                "org.apache.xerces.util.XMLAttributesImpl:void setSpecified(int,boolean)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void endCDATA(org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void xmlDecl(java.lang.String,java.lang.String,java.lang.String,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.xni.QName:java.lang.Object clone()",
+                "org.apache.xerces.parsers.AbstractSAXParser:void endElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.util.XMLAttributesImpl:void setNonNormalizedValue(int,java.lang.String)",
+                "org.apache.xerces.xni.QName:void <init>()",
+                "org.apache.xerces.xni.QName:void <init>(org.apache.xerces.xni.QName)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void startCDATA(org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void startElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                "org.apache.xerces.util.ParserConfigurationSettings:boolean getFeature(java.lang.String)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void endDocument(org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.util.XMLAttributesImpl:void getName(int,org.apache.xerces.xni.QName)",
+                "org.apache.xerces.util.XMLAttributesImpl:java.lang.String getType(int)",
+                "org.apache.xerces.util.XMLAttributesImpl:boolean isSpecified(int)",
+                "org.apache.xerces.util.XMLAttributesImpl:java.lang.String getNonNormalizedValue(int)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void <init>(org.apache.xerces.xni.parser.XMLParserConfiguration)",
+                "org.apache.xerces.util.XMLAttributesImpl:void <init>()",
+                "org.apache.xerces.parsers.AbstractXMLDocumentParser:void emptyElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractXMLDocumentParser:void textDecl(java.lang.String,java.lang.String,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void setContentHandler(org.xml.sax.ContentHandler)",
+                "org.apache.xerces.xni.QName:void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void endGeneralEntity(java.lang.String,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void processingInstruction(java.lang.String,org.apache.xerces.xni.XMLString,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.util.XMLAttributesImpl:void removeAllAttributes()",
+                "org.apache.xerces.parsers.AbstractSAXParser:void startGeneralEntity(java.lang.String,org.apache.xerces.xni.XMLResourceIdentifier,java.lang.String,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.xni.QName:void setValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+                "org.apache.xerces.xni.QName:boolean equals(java.lang.Object)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void characters(org.apache.xerces.xni.XMLString,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void comment(org.apache.xerces.xni.XMLString,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.util.XMLAttributesImpl:java.lang.String getValue(int)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void doctypeDecl(java.lang.String,java.lang.String,java.lang.String,org.apache.xerces.xni.Augmentations)"
+            ],
+            "CVE": [
+                "CVE-2012-0881",
+                "CVE-2009-2625"
+            ],
+            "used vul-method": [
+                "org.apache.xerces.parsers.AbstractSAXParser:void endElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void startElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                "org.apache.xerces.parsers.AbstractXMLDocumentParser:void emptyElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void doctypeDecl(java.lang.String,java.lang.String,java.lang.String,org.apache.xerces.xni.Augmentations)"
+            ],
+            "vul-called frequency": 9,
+            "related vul root method": {
+                "CVE-2012-0881": [
+                    "org.apache.xerces.util.SymbolTable:void rehash()",
+                    "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:int hash(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:int hash(char[],int,int)",
+                    "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(char[],int,int)",
+                    "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                    "org.apache.xerces.util.SymbolHash:void <init>()",
+                    "org.apache.xerces.util.SymbolHash:org.apache.xerces.util.SymbolHash makeClone()",
+                    "org.apache.xerces.util.SymbolHash:void clear()",
+                    "org.apache.xerces.util.SymbolHash:void put(java.lang.Object,java.lang.Object)",
+                    "org.apache.xerces.util.SoftReferenceSymbolTable:java.lang.String addSymbol(char[],int,int)",
+                    "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String)",
+                    "org.apache.xerces.util.XMLAttributesImpl:void prepareTableView()",
+                    "org.apache.xerces.util.SoftReferenceSymbolTable:java.lang.String addSymbol(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:void <init>(int,float)",
+                    "org.apache.xerces.util.XMLAttributesImpl:org.apache.xerces.xni.QName checkDuplicatesNS()",
+                    "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String,java.lang.String)"
+                ],
+                "CVE-2009-2625": [
+                    "org.apache.xerces.impl.XMLScanner:void scanExternalID(java.lang.String[],boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2012-0881": [
+                    "org.apache.xerces.parsers.AbstractSAXParser:void endElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.Augmentations)",
+                    "org.apache.xerces.parsers.AbstractSAXParser:void startElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)",
+                    "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                    "org.apache.xerces.parsers.AbstractXMLDocumentParser:void emptyElement(org.apache.xerces.xni.QName,org.apache.xerces.xni.XMLAttributes,org.apache.xerces.xni.Augmentations)",
+                    "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)",
+                    "org.apache.xerces.parsers.AbstractSAXParser:void doctypeDecl(java.lang.String,java.lang.String,java.lang.String,org.apache.xerces.xni.Augmentations)"
+                ],
+                "CVE-2009-2625": [
+                    "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)"
+                ]
+            }
+        }
+    }
+}

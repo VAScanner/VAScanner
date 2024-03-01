@@ -1,0 +1,28 @@
+{
+    "project name": "OpenFeign_feign-form",
+    "modules": {
+        "io.github.openfeign.form:feign-form": {
+            "vulnerable dependencies": {
+                "commons-fileupload:commons-fileupload:1.4": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "io.github.openfeign.form:feign-form-spring": {
+            "vulnerable dependencies": {
+                "commons-fileupload:commons-fileupload:1.4": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.apache.commons.fileupload.MultipartStream:boolean skipPreamble()",
+                        "org.apache.commons.fileupload.MultipartStream:java.lang.String readHeaders()",
+                        "org.apache.commons.fileupload.servlet.ServletRequestContext:java.lang.String toString()",
+                        "org.apache.commons.fileupload.MultipartStream:int readBodyData(java.io.OutputStream)",
+                        "org.apache.commons.fileupload.MultipartStream:boolean readBoundary()",
+                        "org.apache.commons.fileupload.MultipartStream:void <init>(java.io.InputStream,byte[],int,org.apache.commons.fileupload.MultipartStream$ProgressNotifier)"
+                    ]
+                }
+            }
+        }
+    }
+}

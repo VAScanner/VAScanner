@@ -1,0 +1,42 @@
+{
+    "project name": "itmrchen_SpringBatch-DataMigration",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.1.7.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.util.WebUtils:void removeWebAppRootSystemProperty(javax.servlet.ServletContext)",
+                "org.springframework.web.util.WebUtils:java.lang.String getRealPath(javax.servlet.ServletContext,java.lang.String)",
+                "org.springframework.web.util.WebUtils:void setWebAppRootSystemProperty(javax.servlet.ServletContext)",
+                "org.springframework.web.util.WebUtils:void <clinit>()"
+            ]
+        },
+        "org.springframework.batch:spring-batch-core:3.0.3.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String)",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()",
+                "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addLong(java.lang.String,java.lang.Long)"
+            ]
+        },
+        "org.quartz-scheduler:quartz:2.2.1": {
+            "used-method num": 6,
+            "used method": [
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder newTrigger()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder forJob(java.lang.String,java.lang.String)",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.TriggerBuilder:org.quartz.Trigger build()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withSchedule(org.quartz.ScheduleBuilder)",
+                "org.quartz.CronScheduleBuilder:org.quartz.CronScheduleBuilder cronSchedule(java.lang.String)"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.1.2": {
+            "used-method num": 3,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.joran.JoranConfigurator:void <init>()"
+            ]
+        }
+    }
+}

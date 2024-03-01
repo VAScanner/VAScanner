@@ -1,0 +1,159 @@
+{
+    "project name": "melin_super-diamond",
+    "modules": {
+        "com.github.diamond:super-diamond": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.0.24.Final": {
+                    "used-method num": 90,
+                    "used method": [
+                        "io.netty.channel.nio.SelectedSelectionKeySet:boolean add(java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView:boolean add(java.lang.Object)",
+                        "io.netty.util.concurrent.AbstractEventExecutor:java.util.Iterator iterator()",
+                        "io.netty.util.concurrent.DefaultPromise:boolean isDone()",
+                        "io.netty.buffer.Unpooled:void <clinit>()",
+                        "io.netty.util.concurrent.DefaultPromise:java.lang.String toString()",
+                        "io.netty.bootstrap.Bootstrap:io.netty.bootstrap.Bootstrap clone()",
+                        "io.netty.util.CharsetUtil:void <clinit>()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView:java.util.Iterator iterator()",
+                        "io.netty.channel.nio.SelectedSelectionKeySet:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValueIterator:java.lang.Object next()",
+                        "io.netty.util.internal.MpscLinkedQueue$1:boolean hasNext()",
+                        "io.netty.bootstrap.Bootstrap:void <clinit>()",
+                        "io.netty.buffer.CompositeByteBuf:java.lang.String toString()",
+                        "io.netty.channel.ChannelOption:void <clinit>()",
+                        "io.netty.util.UniqueName:void <clinit>()",
+                        "io.netty.bootstrap.Bootstrap:java.lang.String toString()",
+                        "io.netty.buffer.AbstractByteBufAllocator:java.lang.String toString()",
+                        "io.netty.util.ResourceLeakDetector$DefaultResourceLeak:java.lang.String toString()",
+                        "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf copiedBuffer(java.lang.CharSequence,java.nio.charset.Charset)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntrySetView:boolean remove(java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$CollectionView:void clear()",
+                        "io.netty.util.concurrent.DefaultPromise:boolean isCancelled()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValueIterator:java.lang.Object nextElement()",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future submit(java.lang.Runnable)",
+                        "io.netty.channel.ChannelInitializer:void <clinit>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                        "io.netty.util.concurrent.MultithreadEventExecutorGroup:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object get(java.lang.Object)",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                        "io.netty.util.internal.MpscLinkedQueue:boolean add(java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:void putAll(java.util.Map)",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap group(io.netty.channel.EventLoopGroup)",
+                        "io.netty.util.Signal:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntrySetView:boolean add(java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntrySetView:boolean addAll(java.util.Collection)",
+                        "io.netty.util.UniqueName:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValuesView:boolean addAll(java.util.Collection)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeyIterator:java.lang.Object next()",
+                        "io.netty.handler.codec.string.StringDecoder:void <init>(java.nio.charset.Charset)",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                        "io.netty.util.internal.MpscLinkedQueue:java.util.Iterator iterator()",
+                        "io.netty.util.internal.logging.AbstractInternalLogger:java.lang.String toString()",
+                        "io.netty.util.internal.MpscLinkedQueue:boolean remove(java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView:boolean remove(java.lang.Object)",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.util.concurrent.DefaultPromise:boolean cancel(boolean)",
+                        "io.netty.buffer.AbstractByteBuf:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView keySet()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object remove(java.lang.Object)",
+                        "io.netty.util.concurrent.AbstractEventExecutorGroup:io.netty.util.concurrent.Future submit(java.lang.Runnable)",
+                        "io.netty.channel.ChannelInitializer:void <init>()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$BaseIterator:boolean hasNext()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeyIterator:java.lang.Object nextElement()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                        "io.netty.util.concurrent.PromiseTask$RunnableAdapter:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValuesView:boolean remove(java.lang.Object)",
+                        "io.netty.util.internal.RecyclableArrayList:boolean addAll(java.util.Collection)",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView:boolean addAll(java.util.Collection)",
+                        "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                        "io.netty.buffer.WrappedByteBuf:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$MapEntry:java.lang.String toString()",
+                        "io.netty.util.internal.MpscLinkedQueue$1:java.lang.Object next()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "io.netty.bootstrap.Bootstrap:void <init>()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValuesView:java.util.Iterator iterator()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:void clear()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValuesView:boolean add(java.lang.Object)",
+                        "io.netty.buffer.PoolSubpage:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.String toString()",
+                        "io.netty.handler.codec.LengthFieldBasedFrameDecoder:void <init>(int,int,int,int,int)",
+                        "io.netty.util.internal.chmv8.ForkJoinPool:io.netty.util.internal.chmv8.ForkJoinTask submit(java.lang.Runnable)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntrySetView:java.util.Iterator iterator()",
+                        "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)",
+                        "io.netty.buffer.EmptyByteBuf:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$Node:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ForkJoinPool:java.lang.String toString()",
+                        "io.netty.util.ReferenceCountUtil$ReleasingTask:java.lang.String toString()",
+                        "io.netty.util.internal.MpscLinkedQueue:void clear()",
+                        "io.netty.buffer.SwappedByteBuf:java.lang.String toString()",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void <init>()",
+                        "io.netty.util.internal.MpscLinkedQueue:boolean addAll(java.util.Collection)",
+                        "io.netty.buffer.PoolChunk:java.lang.String toString()",
+                        "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                        "io.netty.buffer.PoolArena:java.lang.String toString()",
+                        "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$CollectionView:java.lang.String toString()",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntryIterator:java.util.Map$Entry next()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.util.concurrent.DefaultPromise:boolean cancel(boolean)",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                        "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)"
+                    ],
+                    "vul-called frequency": 4,
+                    "related vul root method": {
+                        "CVE-2019-16869": [
+                            "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-16869": [
+                            "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                            "io.netty.util.concurrent.DefaultPromise:boolean cancel(boolean)",
+                            "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                            "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)"
+                        ]
+                    }
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.1.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.eclipse.jetty:jetty-webapp:9.2.2.v20140723": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.eclipse.jetty:jetty-server:9.2.2.v20140723": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.2.12.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.2.12.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "com.alibaba:fastjson:1.2.54": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

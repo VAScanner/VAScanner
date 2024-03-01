@@ -1,0 +1,87 @@
+{
+    "project name": "gavincook_githubOfflineInstaller",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.3.3": {
+            "used-method num": 21,
+            "used method": [
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[])",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[])",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                "org.apache.http.impl.client.HttpClientBuilder:void <clinit>()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.dom4j:dom4j:2.0.0-RC1": {
+            "used-method num": 14,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.FlyweightAttribute:java.lang.String getValue()",
+                "org.dom4j.tree.DefaultElement:java.lang.Object clone()",
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.AbstractElement:java.lang.String attributeValue(java.lang.String)",
+                "org.dom4j.tree.DefaultDocument:java.lang.Object clone()",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.tree.AbstractElement:java.util.List elements(java.lang.String)",
+                "org.dom4j.tree.AbstractNode:java.lang.Object clone()",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)",
+                "org.dom4j.tree.DefaultElement:org.dom4j.Attribute attribute(java.lang.String)",
+                "org.dom4j.tree.DefaultElement:org.dom4j.Element element(java.lang.String)",
+                "org.dom4j.tree.ContentListFacade:int size()"
+            ],
+            "CVE": [
+                "CVE-2018-1000632"
+            ],
+            "used vul-method": [
+                "org.dom4j.tree.DefaultElement:java.lang.Object clone()",
+                "org.dom4j.tree.DefaultDocument:java.lang.Object clone()"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2018-1000632": [
+                    "org.dom4j.QName:void <init>(java.lang.String,org.dom4j.Namespace)",
+                    "org.dom4j.Namespace:void <init>(java.lang.String,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-1000632": [
+                    "org.dom4j.tree.DefaultElement:java.lang.Object clone()",
+                    "org.dom4j.tree.DefaultDocument:java.lang.Object clone()"
+                ]
+            }
+        }
+    }
+}

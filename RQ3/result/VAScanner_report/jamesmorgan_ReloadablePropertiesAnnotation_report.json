@@ -1,0 +1,57 @@
+{
+    "project name": "jamesmorgan_ReloadablePropertiesAnnotation",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 15,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()",
+                "ch.qos.logback.classic.Logger:java.lang.String toString()"
+            ]
+        },
+        "org.springframework:spring-core:3.2.5.RELEASE": {
+            "used-method num": 23,
+            "used method": [
+                "org.springframework.core.convert.support.GenericConversionService$ConverterAdapter:java.lang.String toString()",
+                "org.springframework.core.env.MutablePropertySources:java.lang.String toString()",
+                "org.springframework.util.ReflectionUtils:void doWithFields(java.lang.Class,org.springframework.util.ReflectionUtils$FieldCallback)",
+                "org.springframework.util.ReflectionUtils:void <clinit>()",
+                "org.springframework.core.convert.support.GenericConversionService$ConvertersForPair:java.lang.String toString()",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                "org.springframework.util.ConcurrentReferenceHashMap:boolean containsKey(java.lang.Object)",
+                "org.springframework.core.io.support.PropertiesLoaderUtils:java.util.Properties loadProperties(org.springframework.core.io.Resource)",
+                "org.springframework.core.convert.support.GenericConversionService$ConverterCacheKey:java.lang.String toString()",
+                "org.springframework.util.ConcurrentReferenceHashMap$Entry:java.lang.Object getValue()",
+                "org.springframework.core.NestedRuntimeException:java.lang.String getMessage()",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.core.convert.support.GenericConversionService$Converters:java.lang.String toString()",
+                "org.springframework.util.ConcurrentReferenceHashMap$Entry:java.lang.Object getKey()",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.springframework.util.ReflectionUtils:void makeAccessible(java.lang.reflect.Field)",
+                "org.springframework.core.env.PropertySource:java.lang.String toString()",
+                "org.springframework.core.convert.TypeDescriptor:java.lang.String toString()",
+                "org.springframework.util.ConcurrentReferenceHashMap$Entry:java.lang.String toString()",
+                "org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter:java.lang.String toString()",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.util.Set entrySet()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

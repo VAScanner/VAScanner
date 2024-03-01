@@ -1,0 +1,94 @@
+{
+    "project name": "apache_maven-ant-plugin",
+    "vulnerable dependencies": {
+        "org.apache.ant:ant:1.9.4": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "xalan:xalan:2.7.0": {
+            "used-method num": 45,
+            "used method": [
+                "org.apache.xpath.compiler.OpMap:java.lang.String toString()",
+                "org.apache.xml.utils.UnImplNode:java.lang.String getAttribute(java.lang.String)",
+                "org.apache.xalan.templates.ElemValueOf:java.lang.String getNodeName()",
+                "org.apache.xml.utils.FastStringBuffer:java.lang.String toString()",
+                "org.apache.xml.dtm.ref.DTMNodeList:int getLength()",
+                "org.apache.xalan.templates.ElemLiteralResult$Attribute:java.lang.String getNodeName()",
+                "org.apache.xalan.templates.ElemLiteralResult$Attribute:org.w3c.dom.NodeList getChildNodes()",
+                "org.apache.xpath.objects.XObject:org.w3c.dom.NodeList nodelist()",
+                "org.apache.xml.dtm.ref.DTMChildIterNodeList:org.w3c.dom.Node item(int)",
+                "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)",
+                "org.apache.xalan.templates.ElemLiteralResult$Attribute:java.lang.String getNodeValue()",
+                "org.apache.xalan.templates.ElemTemplateElement:org.w3c.dom.Node item(int)",
+                "org.apache.xml.serializer.utils.URI:java.lang.String toString()",
+                "org.apache.xpath.XPathException:java.lang.String getMessage()",
+                "org.apache.xml.dtm.ref.DTMNodeList:org.w3c.dom.Node item(int)",
+                "org.apache.xpath.objects.XNodeSet:org.w3c.dom.NodeList nodelist()",
+                "org.apache.xalan.templates.ElemTemplateElement:int getLength()",
+                "org.apache.xalan.templates.ElemTemplate:java.lang.String getNodeName()",
+                "org.apache.xalan.templates.ElemTemplateElement:short getNodeType()",
+                "org.apache.xalan.templates.ElemAttributeSet:java.lang.String getNodeName()",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTMdefaultNamespaceDeclarationNode:java.lang.String getNodeName()",
+                "org.apache.xpath.NodeSet:org.w3c.dom.Node item(int)",
+                "org.apache.xpath.objects.XNodeSetForDOM:org.w3c.dom.NodeList nodelist()",
+                "org.apache.xalan.templates.ElemApplyTemplates:java.lang.String getNodeName()",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTMdefaultNamespaceDeclarationNode:java.lang.String getTextContent()",
+                "org.apache.xalan.templates.ElemTextLiteral:java.lang.String getNodeName()",
+                "org.apache.xpath.patterns.StepPattern:java.lang.String toString()",
+                "org.apache.xalan.templates.ElemTemplateElement:org.w3c.dom.NodeList getChildNodes()",
+                "org.apache.xalan.templates.ElemTextLiteral:java.lang.String getNodeValue()",
+                "org.apache.xpath.NodeSet:int getLength()",
+                "org.apache.xalan.templates.ElemLiteralResult$Attribute:java.lang.String getTextContent()",
+                "org.apache.xml.dtm.ref.NodeLocator:java.lang.String toString()",
+                "org.apache.xalan.templates.ElemTemplateElement:java.lang.String getNodeName()",
+                "org.apache.xalan.templates.ElemLiteralResult:java.lang.String getAttribute(java.lang.String)",
+                "org.apache.xml.utils.UnImplNode:boolean hasAttribute(java.lang.String)",
+                "org.apache.xpath.objects.XObject:java.lang.String toString()",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTMdefaultNamespaceDeclarationNode:java.lang.String getNodeValue()",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTMdefaultNamespaceDeclarationNode:short getNodeType()",
+                "org.apache.xml.dtm.ref.DTMChildIterNodeList:int getLength()",
+                "org.apache.xpath.functions.FuncExtFunction:java.lang.String toString()",
+                "org.apache.xml.utils.QName:java.lang.String toString()",
+                "org.apache.xalan.templates.ElemLiteralResult:java.lang.String getNodeName()",
+                "org.apache.xml.utils.URI:java.lang.String toString()",
+                "org.apache.xml.utils.UnImplNode:java.lang.String getNodeValue()",
+                "org.apache.xml.utils.UnImplNode:java.lang.String getTextContent()"
+            ],
+            "CVE": [
+                "CVE-2014-0107"
+            ],
+            "used vul-method": [
+                "org.apache.xml.dtm.ref.DTMNodeList:int getLength()",
+                "org.apache.xml.dtm.ref.DTMChildIterNodeList:org.w3c.dom.Node item(int)",
+                "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)",
+                "org.apache.xml.dtm.ref.DTMNodeList:org.w3c.dom.Node item(int)",
+                "org.apache.xpath.objects.XNodeSet:org.w3c.dom.NodeList nodelist()",
+                "org.apache.xpath.objects.XNodeSetForDOM:org.w3c.dom.NodeList nodelist()",
+                "org.apache.xpath.objects.XObject:java.lang.String toString()",
+                "org.apache.xml.dtm.ref.DTMChildIterNodeList:int getLength()"
+            ],
+            "vul-called frequency": 42,
+            "related vul root method": {
+                "CVE-2014-0107": [
+                    "org.apache.xpath.functions.FuncSystemProperty:org.apache.xpath.objects.XObject execute(org.apache.xpath.XPathContext)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2014-0107": [
+                    "org.apache.xml.dtm.ref.DTMNodeList:int getLength()",
+                    "org.apache.xml.dtm.ref.DTMChildIterNodeList:org.w3c.dom.Node item(int)",
+                    "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)",
+                    "org.apache.xml.dtm.ref.DTMNodeList:org.w3c.dom.Node item(int)",
+                    "org.apache.xpath.objects.XNodeSet:org.w3c.dom.NodeList nodelist()",
+                    "org.apache.xpath.objects.XNodeSetForDOM:org.w3c.dom.NodeList nodelist()",
+                    "org.apache.xpath.objects.XObject:java.lang.String toString()",
+                    "org.apache.xml.dtm.ref.DTMChildIterNodeList:int getLength()"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

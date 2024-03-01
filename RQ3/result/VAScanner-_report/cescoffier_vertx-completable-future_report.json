@@ -1,0 +1,49 @@
+{
+    "project name": "cescoffier_vertx-completable-future",
+    "vulnerable dependencies": {
+        "io.vertx:vertx-core:3.7.1": {
+            "used-method num": 19,
+            "used method": [
+                "io.vertx.core.impl.WorkerExecutorImpl:void executeBlocking(io.vertx.core.Handler,boolean,io.vertx.core.Handler)",
+                "io.vertx.core.Future:void <clinit>()",
+                "io.vertx.core.Starter$1:void run()",
+                "io.vertx.core.Vertx:io.vertx.core.Context currentContext()",
+                "io.vertx.core.impl.VertxImpl$InternalTimerHandler:void run()",
+                "io.vertx.core.impl.ContextImpl:void runOnContext(io.vertx.core.Handler)",
+                "io.vertx.core.impl.ContextImpl:void executeBlocking(io.vertx.core.Handler,boolean,io.vertx.core.Handler)",
+                "io.vertx.core.impl.CompositeFutureImpl:void complete(java.lang.Object)",
+                "io.vertx.core.impl.VertxImpl:io.vertx.core.impl.ContextImpl getOrCreateContext()",
+                "io.vertx.core.impl.CompositeFutureImpl:java.lang.Throwable cause()",
+                "io.vertx.core.impl.CompositeFutureImpl:io.vertx.core.CompositeFuture setHandler(io.vertx.core.Handler)",
+                "io.vertx.core.Vertx:void <clinit>()",
+                "io.vertx.core.impl.EventLoopContext:void runOnContext(io.vertx.core.Handler)",
+                "io.vertx.core.impl.EventLoopContext:void executeBlocking(io.vertx.core.Handler,boolean,io.vertx.core.Handler)",
+                "io.vertx.core.impl.CompositeFutureImpl:void fail(java.lang.Throwable)",
+                "io.vertx.core.impl.CompositeFutureImpl:boolean succeeded()",
+                "io.vertx.core.impl.CompositeFutureImpl:io.vertx.core.CompositeFuture result()",
+                "io.vertx.core.impl.BlockedThreadChecker$1:void run()",
+                "io.vertx.core.Future:io.vertx.core.Future future()"
+            ],
+            "CVE": [
+                "CVE-2019-17640"
+            ],
+            "used vul-method": [
+                "io.vertx.core.impl.VertxImpl$InternalTimerHandler:void run()"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2019-17640": [
+                    "io.vertx.core.eventbus.impl.EventBusImpl:io.vertx.core.eventbus.ReplyException deliverMessageLocally(io.vertx.core.eventbus.impl.MessageImpl)",
+                    "io.vertx.core.eventbus.impl.MessageImpl:void setBus(io.vertx.core.eventbus.impl.EventBusImpl)",
+                    "io.vertx.core.eventbus.impl.MessageImpl:void <init>()",
+                    "io.vertx.core.eventbus.impl.clustered.ClusteredMessage:void <init>()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-17640": [
+                    "io.vertx.core.impl.VertxImpl$InternalTimerHandler:void run()"
+                ]
+            }
+        }
+    }
+}

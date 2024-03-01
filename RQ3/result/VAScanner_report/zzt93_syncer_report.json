@@ -1,0 +1,61 @@
+{
+    "project name": "zzt93_syncer",
+    "modules": {
+        "com.github.zzt93:syncer-data": {
+            "vulnerable dependencies": {
+                "org.apache.kafka:kafka-clients:2.0.0": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.mongodb:mongo-java-driver:3.12.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.github.zzt93:instrumentation": {
+            "vulnerable dependencies": {
+                "org.apache.kafka:kafka-clients:2.0.0": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.mongodb:mongo-java-driver:3.12.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.github.zzt93:config-sample": {
+            "vulnerable dependencies": {
+                "org.apache.kafka:kafka-clients:2.0.0": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.mongodb:mongo-java-driver:3.12.0": {
+                    "used-method num": 19,
+                    "used method": [
+                        "org.bson.BsonDocument:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.bson.BsonArray:boolean add(java.lang.Object)",
+                        "org.bson.RawBsonDocument:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.bson.RawBsonArray$RawBsonArrayList$Itr:boolean hasNext()",
+                        "org.bson.BsonArray:void clear()",
+                        "org.bson.BsonArray:org.bson.BsonValue get(int)",
+                        "org.bson.BsonDocument:org.bson.BsonValue get(java.lang.Object)",
+                        "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:boolean hasNext()",
+                        "org.bson.types.Decimal128:long longValue()",
+                        "org.bson.BsonDocumentWrapper:org.bson.BsonValue get(java.lang.Object)",
+                        "org.bson.RawBsonArray$RawBsonArrayList:java.util.Iterator iterator()",
+                        "org.bson.RawBsonArray$RawBsonArrayList:org.bson.BsonValue get(int)",
+                        "org.bson.BsonDocumentWrapper:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.bson.RawBsonArray$RawBsonArrayList$Itr:org.bson.BsonValue next()",
+                        "org.bson.BsonArray:java.util.Iterator iterator()",
+                        "org.bson.RawBsonArray:void clear()",
+                        "org.bson.RawBsonArray:boolean add(java.lang.Object)",
+                        "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:java.lang.Object next()",
+                        "org.bson.RawBsonDocument:org.bson.BsonValue get(java.lang.Object)"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "project name": "Doccrazy_keycloak-protocol-cas",
+    "vulnerable dependencies": {
+        "org.keycloak:keycloak-server-spi-private:7.0.0": {
+            "used-method num": 17,
+            "used method": [
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder client(java.lang.String)",
+                "org.keycloak.events.EventType:void <clinit>()",
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder clone()",
+                "org.keycloak.models.utils.ModelToRepresentation:java.lang.String buildGroupPath(org.keycloak.models.GroupModel)",
+                "org.keycloak.models.utils.FormMessage:java.lang.String toString()",
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder session(java.lang.String)",
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder session(org.keycloak.models.UserSessionModel)",
+                "org.keycloak.migration.ModelVersion:java.lang.String toString()",
+                "org.keycloak.events.Event:org.keycloak.events.Event clone()",
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder user(org.keycloak.models.UserModel)",
+                "org.keycloak.events.EventBuilder:void error(java.lang.String)",
+                "org.keycloak.models.utils.KeycloakModelUtils:java.util.Collection resolveAttribute(org.keycloak.models.UserModel,java.lang.String,boolean)",
+                "org.keycloak.broker.provider.BrokeredIdentityContext:java.lang.String toString()",
+                "org.keycloak.events.EventBuilder:void success()",
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder detail(java.lang.String,java.lang.String)",
+                "org.keycloak.protocol.AbstractLoginProtocolFactory:void <init>()",
+                "org.keycloak.events.EventBuilder:org.keycloak.events.EventBuilder event(org.keycloak.events.EventType)"
+            ]
+        },
+        "org.keycloak:keycloak-services:7.0.0": {
+            "used-method num": 39,
+            "used method": [
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void addJsonTypeConfig(java.util.List)",
+                "org.keycloak.services.util.DefaultClientSessionContext:java.util.Set getProtocolMappers()",
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void addTokenClaimNameConfig(java.util.List)",
+                "org.keycloak.services.Urls:java.lang.String realmIssuer(java.net.URI,java.lang.String)",
+                "org.keycloak.services.validation.Validation:boolean isEmailValid(java.lang.String)",
+                "org.keycloak.services.ErrorPageException:void <init>(org.keycloak.models.KeycloakSession,javax.ws.rs.core.Response$Status,java.lang.String,java.lang.Object[])",
+                "org.keycloak.protocol.AuthorizationEndpointBase:javax.ws.rs.core.Response handleBrowserAuthenticationRequest(org.keycloak.sessions.AuthenticationSessionModel,org.keycloak.protocol.LoginProtocol,boolean,boolean)",
+                "org.keycloak.protocol.oidc.utils.OIDCResponseType:java.lang.String toString()",
+                "org.keycloak.services.managers.AuthenticationManager:boolean isSessionValid(org.keycloak.models.RealmModel,org.keycloak.models.UserSessionModel)",
+                "org.keycloak.utils.RoleResolveUtil:java.util.Map getAllResolvedClientRoles(org.keycloak.models.KeycloakSession,org.keycloak.models.ClientSessionContext)",
+                "org.keycloak.protocol.ProtocolMapperUtils:java.lang.String getUserModelValue(org.keycloak.models.UserModel,java.lang.String)",
+                "org.keycloak.utils.RoleResolveUtil:org.keycloak.representations.AccessToken$Access getResolvedRealmRoles(org.keycloak.models.KeycloakSession,org.keycloak.models.ClientSessionContext,boolean)",
+                "org.keycloak.services.managers.ResourceAdminManager:void <init>(org.keycloak.models.KeycloakSession)",
+                "org.keycloak.protocol.AuthorizationEndpointBase:void <init>(org.keycloak.models.RealmModel,org.keycloak.events.EventBuilder)",
+                "org.keycloak.services.ErrorPage:javax.ws.rs.core.Response error(org.keycloak.models.KeycloakSession,org.keycloak.sessions.AuthenticationSessionModel,javax.ws.rs.core.Response$Status,java.lang.String,java.lang.Object[])",
+                "org.keycloak.protocol.oidc.utils.OAuth2CodeParser$ParseResult:boolean isIllegalCode()",
+                "org.keycloak.protocol.AuthorizationEndpointBase:void checkSsl()",
+                "org.keycloak.protocol.AuthorizationEndpointBase:org.keycloak.sessions.AuthenticationSessionModel createAuthenticationSession(org.keycloak.models.ClientModel,java.lang.String)",
+                "org.keycloak.protocol.oidc.utils.OAuth2CodeParser$ParseResult:boolean isExpiredCode()",
+                "org.keycloak.services.resources.RealmsResource:javax.ws.rs.core.UriBuilder protocolUrl(javax.ws.rs.core.UriBuilder)",
+                "org.keycloak.services.util.DefaultClientSessionContext:org.keycloak.services.util.DefaultClientSessionContext fromClientSessionAndScopeParameter(org.keycloak.models.AuthenticatedClientSessionModel,java.lang.String)",
+                "org.keycloak.protocol.oidc.utils.OAuth2CodeParser:void <clinit>()",
+                "org.keycloak.services.validation.Validation:void <clinit>()",
+                "org.keycloak.services.managers.ResourceAdminManager:boolean logoutClientSession(java.net.URI,org.keycloak.models.RealmModel,org.keycloak.models.ClientModel,org.keycloak.models.AuthenticatedClientSessionModel)",
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:java.lang.Object mapAttributeValue(org.keycloak.models.ProtocolMapperModel,java.lang.Object)",
+                "org.keycloak.protocol.oidc.utils.OAuth2CodeParser:org.keycloak.protocol.oidc.utils.OAuth2CodeParser$ParseResult parseCode(org.keycloak.models.KeycloakSession,java.lang.String,org.keycloak.models.RealmModel,org.keycloak.events.EventBuilder)",
+                "org.keycloak.protocol.oidc.utils.RedirectUtils:java.lang.String verifyRedirectUri(javax.ws.rs.core.UriInfo,java.lang.String,org.keycloak.models.RealmModel,org.keycloak.models.ClientModel)",
+                "org.keycloak.utils.RoleResolveUtil:org.keycloak.representations.AccessToken$Access getResolvedClientRoles(org.keycloak.models.KeycloakSession,org.keycloak.models.ClientSessionContext,java.lang.String,boolean)",
+                "org.keycloak.protocol.oidc.utils.OAuth2CodeParser$ParseResult:org.keycloak.models.AuthenticatedClientSessionModel getClientSession()",
+                "org.keycloak.services.managers.AuthenticationManager:org.keycloak.services.managers.AuthenticationManager$AuthResult authenticateIdentityCookie(org.keycloak.models.KeycloakSession,org.keycloak.models.RealmModel,boolean)",
+                "org.keycloak.protocol.AuthorizationEndpointBase:void checkRealm()",
+                "org.keycloak.protocol.oidc.utils.OAuth2CodeParser:java.lang.String persistCode(org.keycloak.models.KeycloakSession,org.keycloak.models.AuthenticatedClientSessionModel,org.keycloak.protocol.oidc.utils.OAuth2Code)",
+                "org.keycloak.services.util.DefaultClientSessionContext:org.keycloak.models.AuthenticatedClientSessionModel getClientSession()",
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void <clinit>()",
+                "org.keycloak.services.managers.AuthenticationManager$AuthResult:org.keycloak.models.UserSessionModel getSession()",
+                "org.keycloak.services.managers.AuthenticationManager:boolean isSSOAuthentication(org.keycloak.models.AuthenticatedClientSessionModel)",
+                "org.keycloak.services.managers.AuthenticationManager:javax.ws.rs.core.Response browserLogout(org.keycloak.models.KeycloakSession,org.keycloak.models.RealmModel,org.keycloak.models.UserSessionModel,javax.ws.rs.core.UriInfo,org.keycloak.common.ClientConnection,javax.ws.rs.core.HttpHeaders,java.lang.String)",
+                "org.keycloak.services.util.CacheControlUtil:void noBackButtonCacheControlHeader()",
+                "org.keycloak.protocol.oidc.utils.OAuth2Code:void <init>(java.util.UUID,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2020-1744"
+            ],
+            "used vul-method": [
+                "org.keycloak.protocol.AuthorizationEndpointBase:javax.ws.rs.core.Response handleBrowserAuthenticationRequest(org.keycloak.sessions.AuthenticationSessionModel,org.keycloak.protocol.LoginProtocol,boolean,boolean)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-1744": [
+                    "org.keycloak.authentication.AuthenticationProcessor:void logFailure()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-1744": [
+                    "org.keycloak.protocol.AuthorizationEndpointBase:javax.ws.rs.core.Response handleBrowserAuthenticationRequest(org.keycloak.sessions.AuthenticationSessionModel,org.keycloak.protocol.LoginProtocol,boolean,boolean)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

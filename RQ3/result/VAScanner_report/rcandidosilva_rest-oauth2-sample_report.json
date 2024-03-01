@@ -1,0 +1,102 @@
+{
+    "project name": "rcandidosilva_rest-oauth2-sample",
+    "modules": {
+        "demo:oauth2": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.4.RELEASE": {
+                    "used-method num": 36,
+                    "used method": [
+                        "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:java.util.Collection findTokensByClientIdAndUserName(java.lang.String,java.lang.String)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:java.lang.String getClientId()",
+                        "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:java.util.Collection getApprovals(java.lang.String,java.lang.String)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:java.util.Set getScope()",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.approval.Approval$ApprovalStatus:void <clinit>()",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:boolean isAutoApprove(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler:void <init>()",
+                        "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void setApprovalStore(org.springframework.security.oauth2.provider.approval.ApprovalStore)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.lang.String getClientId()",
+                        "org.springframework.security.oauth2.provider.approval.Approval:java.lang.String getScope()",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:void <init>(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                        "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:org.springframework.security.oauth2.provider.OAuth2Authentication readAuthentication(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:java.util.Collection findTokensByClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:java.util.Collection findTokensByClientIdAndUserName(java.lang.String,java.lang.String)",
+                        "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:void <init>(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                        "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:java.util.Collection findTokensByClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void <init>()",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:org.springframework.security.oauth2.provider.AuthorizationRequest checkForPreApproval(org.springframework.security.oauth2.provider.AuthorizationRequest,org.springframework.security.core.Authentication)",
+                        "org.springframework.security.oauth2.provider.client.JdbcClientDetailsService:org.springframework.security.oauth2.provider.ClientDetails loadClientByClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:boolean revokeToken(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:org.springframework.security.oauth2.provider.OAuth2Authentication readAuthentication(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void setRequestFactory(org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:boolean isClientOnly()",
+                        "org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                        "org.springframework.security.oauth2.provider.approval.TokenApprovalStore:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:void <init>()",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.util.Map getAdditionalInformation()",
+                        "org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService:org.springframework.security.oauth2.provider.ClientDetails loadClientByClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:void setApproved(boolean)",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:void setAdditionalInformation(java.util.Map)",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:org.springframework.security.oauth2.provider.OAuth2Request getOAuth2Request()",
+                        "org.springframework.security.oauth2.provider.approval.Approval:org.springframework.security.oauth2.provider.approval.Approval$ApprovalStatus getStatus()",
+                        "org.springframework.security.oauth2.provider.AuthorizationRequest:boolean isApproved()"
+                    ]
+                },
+                "org.springframework.security:spring-security-core:3.2.5.RELEASE": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.springframework.security.access.AccessDeniedException:void <init>(java.lang.String)",
+                        "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()"
+                    ]
+                },
+                "org.springframework.security:spring-security-web:3.2.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.security.web.util.matcher.AntPathRequestMatcher:void <init>(java.lang.String)"
+                    ]
+                },
+                "org.springframework.security:spring-security-config:3.2.5.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter:org.springframework.security.authentication.AuthenticationManager authenticationManagerBean()",
+                        "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object antMatchers(java.lang.String[])",
+                        "org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter:void <init>()",
+                        "org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration:void <init>()",
+                        "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object regexMatchers(org.springframework.http.HttpMethod,java.lang.String[])",
+                        "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object anyRequest()"
+                    ]
+                },
+                "org.springframework:spring-web:4.0.8.RELEASE": {
+                    "used-method num": 11,
+                    "used method": [
+                        "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void scan(java.lang.String[])",
+                        "org.springframework.http.MediaType:void <clinit>()",
+                        "org.springframework.web.filter.DelegatingFilterProxy:void <init>(java.lang.String)",
+                        "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void <init>()",
+                        "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void addMediaType(java.lang.String,org.springframework.http.MediaType)",
+                        "org.springframework.http.HttpMethod:void <clinit>()",
+                        "org.springframework.http.ResponseEntity:void <init>(org.springframework.http.HttpStatus)",
+                        "org.springframework.http.HttpEntity:void <clinit>()",
+                        "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:org.springframework.web.accept.ContentNegotiationManager getObject()",
+                        "org.springframework.http.HttpStatus:void <clinit>()",
+                        "org.springframework.web.accept.ContentNegotiationManagerFactoryBean:void <init>()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.3.3": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-expression:4.0.8.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

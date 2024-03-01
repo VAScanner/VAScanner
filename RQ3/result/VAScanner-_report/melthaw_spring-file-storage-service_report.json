@@ -1,0 +1,20 @@
+{
+    "project name": "melthaw_spring-file-storage-service",
+    "modules": {
+        "in.clouthink.daas:daas-fss": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.2.13.RELEASE": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.springframework.http.MediaType:boolean equals(java.lang.Object)",
+                        "org.springframework.http.HttpHeaders:boolean equals(java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-webmvc:3.2.13.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

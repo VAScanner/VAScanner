@@ -1,0 +1,24 @@
+{
+    "project name": "fearofcode_bateman",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.3": {
+            "used-method num": 8,
+            "used method": [
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.0.6": {
+            "used-method num": 1,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)"
+            ]
+        }
+    }
+}

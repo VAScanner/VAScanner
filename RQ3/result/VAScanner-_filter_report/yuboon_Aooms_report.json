@@ -1,0 +1,165 @@
+{
+    "project name": "yuboon_Aooms",
+    "modules": {
+        "net.aooms:aooms": {
+            "vulnerable dependencies": {
+                "cn.hutool:hutool-all:4.0.9": {
+                    "used-method num": 63,
+                    "used method": [
+                        "cn.hutool.core.util.StrUtil:boolean isEmpty(java.lang.CharSequence)",
+                        "cn.hutool.core.util.StrUtil:java.lang.String format(java.lang.CharSequence,java.lang.Object[])",
+                        "cn.hutool.http.HttpConnection:java.lang.String toString()",
+                        "cn.hutool.core.collection.BoundedPriorityQueue:java.util.Iterator iterator()",
+                        "cn.hutool.core.lang.WeightRandom$WeightObj:boolean equals(java.lang.Object)",
+                        "cn.hutool.core.collection.CopiedIterator:boolean hasNext()",
+                        "cn.hutool.core.map.CustomKeyMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "cn.hutool.core.bean.BeanUtil:java.util.Map beanToMap(java.lang.Object,java.util.Map,boolean,boolean)",
+                        "cn.hutool.core.date.format.FastDatePrinter$TimeZoneDisplayKey:boolean equals(java.lang.Object)",
+                        "cn.hutool.http.HttpUtil:void <clinit>()",
+                        "cn.hutool.core.io.FastByteArrayOutputStream:java.lang.String toString()",
+                        "cn.hutool.core.bean.DynaBean:java.lang.String toString()",
+                        "cn.hutool.core.io.FileUtil:void <clinit>()",
+                        "cn.hutool.core.map.MapUtil:java.util.Map toCamelCaseMap(java.util.Map)",
+                        "cn.hutool.core.date.DateBetween:java.lang.String toString()",
+                        "cn.hutool.core.map.CaseInsensitiveMap:void <init>()",
+                        "cn.hutool.core.date.DateUtil:cn.hutool.core.date.DateTime parseDate(java.lang.String)",
+                        "cn.hutool.core.map.CustomKeyMap:void putAll(java.util.Map)",
+                        "cn.hutool.core.lang.mutable.MutableObj:boolean equals(java.lang.Object)",
+                        "cn.hutool.core.collection.EnumerationIterator:boolean hasNext()",
+                        "cn.hutool.core.util.ReflectUtil:java.lang.Object invoke(java.lang.Object,java.lang.String,java.lang.Object[])",
+                        "cn.hutool.core.clone.CloneSupport:java.lang.Object clone()",
+                        "cn.hutool.core.map.CustomKeyMap:boolean containsKey(java.lang.Object)",
+                        "cn.hutool.core.map.CustomKeyLinkedMap:java.lang.Object get(java.lang.Object)",
+                        "cn.hutool.core.date.BetweenFormater:java.lang.String toString()",
+                        "cn.hutool.core.map.MapUtil$1$1:java.lang.Object getValue()",
+                        "cn.hutool.core.comparator.VersionComparator:boolean equals(java.lang.Object)",
+                        "cn.hutool.core.collection.EnumerationIterator:java.lang.Object next()",
+                        "cn.hutool.core.date.DateUtil:cn.hutool.core.date.DateTime parseDateTime(java.lang.String)",
+                        "cn.hutool.core.map.CustomKeyLinkedMap:void putAll(java.util.Map)",
+                        "cn.hutool.core.collection.CopiedIterator:java.lang.Object next()",
+                        "cn.hutool.core.lang.PatternPool$RegexWithFlag:boolean equals(java.lang.Object)",
+                        "cn.hutool.http.HttpUtil:java.lang.String post(java.lang.String,java.util.Map)",
+                        "cn.hutool.core.io.resource.UrlResource:java.lang.String toString()",
+                        "cn.hutool.core.map.CustomKeyMap:java.lang.Object get(java.lang.Object)",
+                        "cn.hutool.core.collection.CollUtil:java.util.HashMap newHashMap()",
+                        "cn.hutool.http.HttpResponse:java.lang.String toString()",
+                        "cn.hutool.core.lang.Assert:java.lang.Object notNull(java.lang.Object,java.lang.String,java.lang.Object[])",
+                        "cn.hutool.http.HttpBase:java.lang.String toString()",
+                        "cn.hutool.core.map.CustomKeyLinkedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "cn.hutool.core.bean.BeanUtil:java.lang.Object mapToBean(java.util.Map,java.lang.Class,boolean)",
+                        "cn.hutool.core.date.DateUtil:java.lang.String now()",
+                        "cn.hutool.core.lang.Dict:cn.hutool.core.lang.Dict clone()",
+                        "cn.hutool.core.io.resource.ClassPathResource:java.lang.String toString()",
+                        "cn.hutool.core.bean.DynaBean:boolean equals(java.lang.Object)",
+                        "cn.hutool.core.map.CustomKeyLinkedMap:boolean containsKey(java.lang.Object)",
+                        "cn.hutool.http.HttpUtil:java.lang.String get(java.lang.String,java.util.Map)",
+                        "cn.hutool.http.HttpUtil:java.lang.String get(java.lang.String)",
+                        "cn.hutool.core.date.DateTime:java.lang.String toString()",
+                        "cn.hutool.core.util.StrUtil:boolean isNotBlank(java.lang.CharSequence)",
+                        "cn.hutool.core.date.format.AbstractDateBasic:java.lang.String toString()",
+                        "cn.hutool.http.Header:java.lang.String toString()",
+                        "cn.hutool.core.date.format.AbstractDateBasic:boolean equals(java.lang.Object)",
+                        "cn.hutool.core.text.StrBuilder:java.lang.String toString()",
+                        "cn.hutool.core.util.ReflectUtil:void <clinit>()",
+                        "cn.hutool.core.date.format.FastDateFormat:boolean equals(java.lang.Object)",
+                        "cn.hutool.core.lang.mutable.MutableObj:java.lang.String toString()",
+                        "cn.hutool.core.collection.ArrayIterator:boolean hasNext()",
+                        "cn.hutool.core.io.FileUtil:byte[] readBytes(java.lang.String)",
+                        "cn.hutool.core.collection.ArrayIterator:java.lang.Object next()",
+                        "cn.hutool.core.util.StrUtil:boolean isBlank(java.lang.CharSequence)",
+                        "cn.hutool.core.map.MapUtil$1$1:java.lang.Object getKey()",
+                        "cn.hutool.core.date.format.FastDateFormat:java.lang.String toString()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-17297"
+                    ],
+                    "used vul-method": [
+                        "cn.hutool.core.io.FileUtil:byte[] readBytes(java.lang.String)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2018-17297": [
+                            "cn.hutool.core.io.FileUtil:java.io.File file(java.lang.String)",
+                            "cn.hutool.core.util.ZipUtil:void validateFiles(java.io.File,java.io.File[])",
+                            "cn.hutool.core.util.ZipUtil:java.io.File zip(java.io.File,java.nio.charset.Charset,boolean,java.io.File[])",
+                            "cn.hutool.core.io.FileUtil:java.io.File file(java.io.File,java.lang.String)",
+                            "cn.hutool.core.util.ZipUtil:java.io.File unzip(java.io.File,java.io.File,java.nio.charset.Charset)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-17297": [
+                            "cn.hutool.core.io.FileUtil:byte[] readBytes(java.lang.String)"
+                        ]
+                    }
+                },
+                "com.alibaba:fastjson:1.2.47": {
+                    "used-method num": 33,
+                    "used method": [
+                        "com.alibaba.fastjson.JSONObject:void clear()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONObject:java.util.Set keySet()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.String getString(java.lang.String)",
+                        "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                        "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONArray:boolean contains(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:void add(int,java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                        "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONArray:int size()",
+                        "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONObject getJSONObject(int)",
+                        "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                        "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)",
+                        "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:void putAll(java.util.Map)",
+                        "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                        "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                        "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                        "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                        "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object remove(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                        "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONObject getJSONObject(int)",
+                        "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                    ],
+                    "vul-called frequency": 19,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                            "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                            "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                            "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONObject getJSONObject(int)",
+                            "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                            "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

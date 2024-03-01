@@ -1,0 +1,44 @@
+{
+    "project name": "graylog-labs_log4j2-gelf",
+    "vulnerable dependencies": {
+        "org.apache.logging.log4j:log4j-core:2.4.1": {
+            "used-method num": 30,
+            "used method": [
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.Level getLevel()",
+                "org.apache.logging.log4j.core.net.Severity:void <clinit>()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.String getLoggerName()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.message.Message getMessage()",
+                "org.apache.logging.log4j.core.appender.AbstractAppender:java.lang.String getName()",
+                "org.apache.logging.log4j.core.layout.AbstractStringLayout:byte[] toByteArray(org.apache.logging.log4j.core.LogEvent)",
+                "org.apache.logging.log4j.core.filter.AbstractFilterable:void start()",
+                "org.apache.logging.log4j.core.appender.AbstractAppender:void <init>(java.lang.String,org.apache.logging.log4j.core.Filter,org.apache.logging.log4j.core.Layout,boolean)",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.String getLoggerName()",
+                "org.apache.logging.log4j.core.appender.AppenderLoggingException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.ThreadContext$ContextStack getContextStack()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.Level getLevel()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.Throwable getThrown()",
+                "org.apache.logging.log4j.core.net.Severity:int getCode()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.ThreadContext$ContextStack getContextStack()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.String getThreadName()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.Throwable getThrown()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:long getTimeMillis()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.String getThreadName()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:long getTimeMillis()",
+                "org.apache.logging.log4j.core.appender.AbstractAppender:org.apache.logging.log4j.core.Layout getLayout()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.StackTraceElement getSource()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.Marker getMarker()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.StackTraceElement getSource()",
+                "org.apache.logging.log4j.core.filter.AbstractFilterable:void stop()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.util.Map getContextMap()",
+                "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.message.Message getMessage()",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.Marker getMarker()",
+                "org.apache.logging.log4j.core.net.Severity:org.apache.logging.log4j.core.net.Severity getSeverity(org.apache.logging.log4j.Level)",
+                "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.util.Map getContextMap()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

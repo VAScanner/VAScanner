@@ -1,0 +1,72 @@
+{
+    "project name": "paoding-code_paoding-rose",
+    "modules": {
+        "net.paoding:paoding-rose-load": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.2.4.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.web.context.support.XmlWebApplicationContext:void <init>()"
+                    ]
+                }
+            }
+        },
+        "net.paoding:paoding-rose-jade": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.2.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "net.paoding:paoding-rose-web": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.2.4.RELEASE": {
+                    "used-method num": 32,
+                    "used method": [
+                        "org.springframework.web.multipart.commons.CommonsMultipartResolver:void cleanupMultipart(org.springframework.web.multipart.MultipartHttpServletRequest)",
+                        "org.springframework.web.util.NestedServletException:void <init>(java.lang.String,java.lang.Throwable)",
+                        "org.springframework.web.filter.GenericFilterBean:void <init>()",
+                        "org.springframework.web.bind.WebDataBinder:void doBind(org.springframework.beans.MutablePropertyValues)",
+                        "org.springframework.web.multipart.support.DefaultMultipartHttpServletRequest:java.lang.String[] getParameterValues(java.lang.String)",
+                        "org.springframework.web.bind.WebDataBinder:void <init>(java.lang.Object)",
+                        "org.springframework.web.util.WebUtils:void <clinit>()",
+                        "org.springframework.web.context.support.WebApplicationContextUtils:void <clinit>()",
+                        "org.springframework.web.multipart.commons.CommonsMultipartResolver:org.springframework.web.multipart.MultipartHttpServletRequest resolveMultipart(javax.servlet.http.HttpServletRequest)",
+                        "org.springframework.web.util.WebUtils:java.lang.Object getNativeRequest(javax.servlet.ServletRequest,java.lang.Class)",
+                        "org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest:org.springframework.util.MultiValueMap getMultiFileMap()",
+                        "org.springframework.web.multipart.commons.CommonsMultipartResolver:void <init>()",
+                        "org.springframework.web.context.support.WebApplicationContextUtils:org.springframework.web.context.WebApplicationContext getWebApplicationContext(javax.servlet.ServletContext)",
+                        "org.springframework.http.MediaType:java.lang.String toString()",
+                        "org.springframework.web.multipart.support.DefaultMultipartHttpServletRequest:java.lang.String getParameter(java.lang.String)",
+                        "org.springframework.web.context.WebApplicationContext:void <clinit>()",
+                        "org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest:org.springframework.web.multipart.MultipartFile getFile(java.lang.String)",
+                        "org.springframework.web.context.support.AbstractRefreshableWebApplicationContext:void setNamespace(java.lang.String)",
+                        "org.springframework.web.context.support.XmlWebApplicationContext:void loadBeanDefinitions(org.springframework.beans.factory.xml.XmlBeanDefinitionReader)",
+                        "org.springframework.web.context.request.ServletWebRequest:java.lang.String toString()",
+                        "org.springframework.web.util.WebUtils:void exposeErrorRequestAttributes(javax.servlet.http.HttpServletRequest,java.lang.Throwable,java.lang.String)",
+                        "org.springframework.web.util.WebUtils:java.util.Map getParametersStartingWith(javax.servlet.ServletRequest,java.lang.String)",
+                        "org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest:java.util.Iterator getFileNames()",
+                        "org.springframework.web.bind.WebDataBinder:void <init>(java.lang.Object,java.lang.String)",
+                        "org.springframework.web.bind.ServletRequestBindingException:void <init>(java.lang.String,java.lang.Throwable)",
+                        "org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest:javax.servlet.http.HttpServletRequest getRequest()",
+                        "org.springframework.web.context.support.XmlWebApplicationContext:void <init>()",
+                        "org.springframework.http.HttpHeaders:int hashCode()",
+                        "org.springframework.web.context.support.AbstractRefreshableWebApplicationContext:void setServletContext(javax.servlet.ServletContext)",
+                        "org.springframework.web.util.NestedServletException:void <clinit>()",
+                        "org.springframework.http.HttpHeaders:java.lang.String toString()",
+                        "org.springframework.web.bind.WebDataBinder:void bindMultipart(java.util.Map,org.springframework.beans.MutablePropertyValues)"
+                    ]
+                }
+            }
+        },
+        "net.paoding:paoding-rose-pipe": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.2.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

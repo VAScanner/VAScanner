@@ -1,0 +1,79 @@
+{
+    "project name": "johntostring_spring-boot-shiro",
+    "modules": {
+        "com.millinch:spring-boot-shiro-autoconfigure": {
+            "vulnerable dependencies": {
+                "org.apache.shiro:shiro-core:1.2.4": {
+                    "used-method num": 41,
+                    "used method": [
+                        "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                        "org.apache.shiro.session.mgt.AbstractNativeSessionManager:void setSessionListeners(java.util.Collection)",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void setHashAlgorithmName(java.lang.String)",
+                        "org.apache.shiro.realm.jdbc.JdbcRealm:void setSaltStyle(org.apache.shiro.realm.jdbc.JdbcRealm$SaltStyle)",
+                        "org.apache.shiro.realm.AuthenticatingRealm:void <clinit>()",
+                        "org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO:void <init>()",
+                        "org.apache.shiro.config.Ini:org.apache.shiro.config.Ini$Section get(java.lang.Object)",
+                        "org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler:void <init>(org.apache.shiro.session.mgt.ValidatingSessionManager)",
+                        "org.apache.shiro.realm.AuthenticatingRealm:void setCredentialsMatcher(org.apache.shiro.authc.credential.CredentialsMatcher)",
+                        "org.apache.shiro.cache.MapCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.mgt.AbstractRememberMeManager:void setDecryptionCipherKey(byte[])",
+                        "org.apache.shiro.realm.CachingRealm:void <clinit>()",
+                        "org.apache.shiro.cache.MapCache:java.lang.Object remove(java.lang.Object)",
+                        "org.apache.shiro.realm.AuthorizingRealm:void <clinit>()",
+                        "org.apache.shiro.session.mgt.eis.CachingSessionDAO:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                        "org.apache.shiro.session.mgt.DefaultSessionManager:void setSessionDAO(org.apache.shiro.session.mgt.eis.SessionDAO)",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:boolean doCredentialsMatch(org.apache.shiro.authc.AuthenticationToken,org.apache.shiro.authc.AuthenticationInfo)",
+                        "org.apache.shiro.session.mgt.AbstractValidatingSessionManager:void setSessionValidationScheduler(org.apache.shiro.session.mgt.SessionValidationScheduler)",
+                        "org.apache.shiro.util.SoftHashMap:java.util.Set keySet()",
+                        "org.apache.shiro.mgt.AbstractRememberMeManager:void <clinit>()",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void <init>()",
+                        "org.apache.shiro.cache.MapCache:java.lang.Object get(java.lang.Object)",
+                        "org.apache.shiro.subject.support.DelegatingSubject:boolean isAuthenticated()",
+                        "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                        "org.apache.shiro.config.Ini$Section:java.util.Set keySet()",
+                        "org.apache.shiro.session.mgt.DefaultSessionManager:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                        "org.apache.shiro.realm.jdbc.JdbcRealm:void <init>()",
+                        "org.apache.shiro.subject.support.DelegatingSubject:java.lang.Object getPrincipal()",
+                        "org.apache.shiro.cache.AbstractCacheManager:org.apache.shiro.cache.Cache getCache(java.lang.String)",
+                        "org.apache.shiro.mgt.AbstractRememberMeManager:void setEncryptionCipherKey(byte[])",
+                        "org.apache.shiro.util.SoftHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.apache.shiro.mgt.RealmSecurityManager:void setRealm(org.apache.shiro.realm.Realm)",
+                        "org.apache.shiro.config.Ini$Section:java.lang.String get(java.lang.Object)",
+                        "org.apache.shiro.authc.IncorrectCredentialsException:void <init>(java.lang.String)",
+                        "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                        "org.apache.shiro.config.Ini:java.util.Set keySet()",
+                        "org.apache.shiro.mgt.CachingSecurityManager:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                        "org.apache.shiro.util.JdbcUtils:void closeResultSet(java.sql.ResultSet)",
+                        "org.apache.shiro.cache.MemoryConstrainedCacheManager:void <init>()",
+                        "org.apache.shiro.authc.ExcessiveAttemptsException:void <init>(java.lang.String)",
+                        "org.apache.shiro.mgt.AbstractRememberMeManager:void setCipherKey(byte[])"
+                    ]
+                },
+                "org.apache.shiro:shiro-web:1.2.4": {
+                    "used-method num": 15,
+                    "used method": [
+                        "org.apache.shiro.web.servlet.SimpleCookie:void <init>()",
+                        "org.apache.shiro.web.mgt.DefaultWebSecurityManager:void setSessionManager(org.apache.shiro.session.mgt.SessionManager)",
+                        "org.apache.shiro.web.mgt.CookieRememberMeManager:void <init>()",
+                        "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:void <init>()",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void setMaxAge(int)",
+                        "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:java.lang.String getFailureKeyAttribute()",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void setVersion(int)",
+                        "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:boolean add(java.lang.Object)",
+                        "org.apache.shiro.web.filter.AccessControlFilter:void redirectToLogin(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void setName(java.lang.String)",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void setValue(java.lang.String)",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void setHttpOnly(boolean)",
+                        "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:void setLoginUrl(java.lang.String)",
+                        "org.apache.shiro.web.mgt.DefaultWebSecurityManager:void <init>()",
+                        "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void <init>()"
+                    ]
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

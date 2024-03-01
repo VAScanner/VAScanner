@@ -1,0 +1,157 @@
+{
+    "project name": "lewisd32_lint-maven-plugin",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.1.1.RELEASE": {
+            "used-method num": 17,
+            "used method": [
+                "org.springframework.core.convert.support.GenericConversionService$ConverterAdapter:java.lang.String toString()",
+                "org.springframework.core.MethodParameter:boolean equals(java.lang.Object)",
+                "org.springframework.core.convert.support.GenericConversionService$ConverterCacheKey:boolean equals(java.lang.Object)",
+                "org.springframework.core.NestedIOException:java.lang.String getMessage()",
+                "org.springframework.core.convert.support.GenericConversionService$ConverterCacheKey:java.lang.String toString()",
+                "org.springframework.core.env.PropertySource:boolean equals(java.lang.Object)",
+                "org.springframework.core.convert.support.GenericConversionService$MatchableConverters:java.lang.String toString()",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver$PatternVirtualFileVisitor:java.lang.String toString()",
+                "org.springframework.core.convert.converter.GenericConverter$ConvertiblePair:boolean equals(java.lang.Object)",
+                "org.springframework.core.convert.TypeDescriptor:boolean equals(java.lang.Object)",
+                "org.springframework.core.io.ClassPathResource:void <init>(java.lang.String,java.lang.ClassLoader)",
+                "org.springframework.core.io.UrlResource:boolean equals(java.lang.Object)",
+                "org.springframework.core.io.VfsResource:boolean equals(java.lang.Object)",
+                "org.springframework.core.env.PropertySource:java.lang.String toString()",
+                "org.springframework.core.convert.TypeDescriptor:java.lang.String toString()",
+                "org.springframework.core.io.ClassPathResource:boolean equals(java.lang.Object)",
+                "org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2014-3578"
+            ],
+            "used vul-method": [
+                "org.springframework.core.io.ClassPathResource:void <init>(java.lang.String,java.lang.ClassLoader)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2014-3578": [
+                    "org.springframework.util.StringUtils:java.lang.String cleanPath(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2014-3578": [
+                    "org.springframework.core.io.ClassPathResource:void <init>(java.lang.String,java.lang.ClassLoader)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.thoughtworks.xstream:xstream:1.4.8": {
+            "used-method num": 64,
+            "used method": [
+                "com.thoughtworks.xstream.io.path.Path:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.FastField:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.security.AnyTypePermission:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Collection values()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean addAll(java.util.Collection)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:boolean isEmpty()",
+                "com.thoughtworks.xstream.core.util.WeakCache:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object remove(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.core.util.FastField:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean isEmpty()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:void clear()",
+                "com.thoughtworks.xstream.XStream:void <clinit>()",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.io.StatefulWriter:void setValue(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object remove(java.lang.Object)",
+                "com.thoughtworks.xstream.io.StatefulWriter:void addAttribute(java.lang.String,java.lang.String)",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set keySet()",
+                "com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.util.Collection values()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object remove(java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:void toXML(java.lang.Object,java.io.Writer)",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.XStream:void alias(java.lang.String,java.lang.Class)",
+                "com.thoughtworks.xstream.io.path.Path:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean removeAll(java.util.Collection)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:void remove()",
+                "com.thoughtworks.xstream.core.util.DependencyInjectionFactory$TypedValue:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:boolean containsKey(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Collection values()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.mapper.ImplicitCollectionMapper$NamedItemType:boolean equals(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:void registerConverter(com.thoughtworks.xstream.converters.Converter)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:int size()",
+                "com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder:java.lang.Object clone()",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$IdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:boolean contains(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.FastStack:java.lang.String toString()",
+                "com.thoughtworks.xstream.io.StatefulWriter:void startNode(java.lang.String)",
+                "com.thoughtworks.xstream.core.TreeMarshaller:void convertAnother(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.io.StatefulWriter:void endNode()",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:void remove()",
+                "com.thoughtworks.xstream.security.NoTypePermission:boolean equals(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2021-29505",
+                "CVE-2020-26258",
+                "CVE-2020-26259",
+                "CVE-2017-7957"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void setupConverters()",
+                    "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ]
+            }
+        }
+    }
+}

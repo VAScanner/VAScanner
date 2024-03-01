@@ -1,0 +1,101 @@
+{
+    "project name": "imrenagi_microservice-skeleton",
+    "modules": {
+        "com.imrenagi:config": {
+            "vulnerable dependencies": {
+                "org.springframework.cloud:spring-cloud-config-server:1.1.0.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.imrenagi:registry": {
+            "vulnerable dependencies": {
+                "org.springframework.cloud:spring-cloud-config-server:1.1.0.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.imrenagi:gateway": {
+            "vulnerable dependencies": {
+                "org.springframework.cloud:spring-cloud-config-server:1.1.0.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.imrenagi:monitoring": {
+            "vulnerable dependencies": {
+                "org.springframework.cloud:spring-cloud-config-server:1.1.0.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.imrenagi:service-account": {
+            "vulnerable dependencies": {
+                "org.springframework.cloud:spring-cloud-config-server:1.1.0.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE": {
+                    "used-method num": 15,
+                    "used method": [
+                        "org.springframework.security.oauth2.client.DefaultOAuth2ClientContext:void setAccessToken(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                        "org.springframework.security.oauth2.common.exceptions.InvalidTokenException:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.client.DefaultOAuth2ClientContext:void <init>()",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:void setTokenType(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:void <init>(java.util.Map,java.lang.String,java.util.Collection,boolean,java.util.Set,java.util.Set,java.lang.String,java.util.Set,java.util.Map)",
+                        "org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsResourceDetails:void <init>()",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setClientId(java.lang.String)",
+                        "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void <init>()",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:void <init>(org.springframework.security.oauth2.provider.OAuth2Request,org.springframework.security.core.Authentication)",
+                        "org.springframework.security.oauth2.client.DefaultOAuth2ClientContext:org.springframework.security.oauth2.common.OAuth2AccessToken getAccessToken()",
+                        "org.springframework.security.oauth2.client.OAuth2RestTemplate:org.springframework.security.oauth2.client.OAuth2ClientContext getOAuth2ClientContext()",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String getValue()",
+                        "org.springframework.security.oauth2.client.OAuth2RestTemplate:void <init>(org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails)"
+                    ]
+                }
+            }
+        },
+        "com.imrenagi:service-auth": {
+            "vulnerable dependencies": {
+                "org.springframework.cloud:spring-cloud-config-server:1.1.0.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE": {
+                    "used-method num": 7,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setSupportRefreshToken(boolean)",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:boolean revokeToken(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void <init>(javax.sql.DataSource)",
+                        "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

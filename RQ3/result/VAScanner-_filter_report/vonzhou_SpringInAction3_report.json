@@ -1,0 +1,2544 @@
+{
+    "project name": "vonzhou_SpringInAction3",
+    "modules": {
+        "com.vonzhou.springinaction3:spitter-persistence-mybatis": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.expression.spel.InternalParseException:org.springframework.expression.spel.SpelParseException getCause()",
+                        "org.springframework.cglib.core.CodeGenerationException:java.lang.Throwable getCause()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-persistence-jdbc-conventional": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-persistence-jdbc-template": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 6,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-persistence-hibernate-contextual-session": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-persistence-jpa": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.spitter:spitter-web": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 29,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.event.internal.MergeContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.spitter:spitter-web-rest": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 29,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.event.internal.MergeContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 8,
+                    "used method": [
+                        "org.apache.http.impl.client.RedirectLocations:int size()",
+                        "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                        "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                        "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                        "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                        "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-13956"
+                    ],
+                    "used vul-method": [
+                        "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2020-13956": [
+                            "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-13956": [
+                            "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                        ]
+                    }
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.apache.log4j.Logger:org.apache.log4j.Logger getLogger(java.lang.Class)",
+                        "org.apache.log4j.Category:void <clinit>()",
+                        "org.apache.log4j.Logger:void <clinit>()",
+                        "org.apache.log4j.Category:void debug(java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.spitter:spitter-web-security": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 29,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.event.internal.MergeContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                        "org.springframework.web.servlet.ModelAndView:void <init>()",
+                        "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+                    ]
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                        "org.springframework.web.servlet.ModelAndView:void <init>()"
+                    ]
+                }
+            }
+        },
+        "com.vonzhou.springinaction:spitter-remoting-client": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 5,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.spitter:spitter-remoting-httpinvoker": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 29,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.event.internal.MergeContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-remoting-rmi": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 23,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 3,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction:springidol": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                        "org.springframework.util.LinkedMultiValueMap:java.util.List get(java.lang.Object)",
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.util.LinkedMultiValueMap:java.util.Set keySet()",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.springframework.util.LinkedMultiValueMap:java.util.List get(java.lang.Object)",
+                        "org.springframework.util.LinkedMultiValueMap:java.util.Set keySet()"
+                    ]
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction:springidol-aop": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 8,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction:springidol-aspectj": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction:springidol-autodiscovery": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.learn:CartApp": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.learn:hello-hessian": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.learn:hello-hessian-spring": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.learn:hello-hessian-spring-client": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction:messaging": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 30,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQQueueSession:javax.jms.TextMessage createTextMessage()",
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQQueueSession:void close()",
+                        "org.apache.activemq.ActiveMQTopicSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.command.ActiveMQDestination:void <clinit>()",
+                        "org.apache.activemq.ActiveMQTopicSession:void close()",
+                        "org.apache.activemq.ActiveMQTopicSession:javax.jms.ObjectMessage createObjectMessage(java.io.Serializable)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.ObjectMessage createObjectMessage(java.io.Serializable)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.apache.activemq.command.ActiveMQTextMessage:java.lang.String getText()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQQueueSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQTopicSession:javax.jms.TextMessage createTextMessage()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage()",
+                        "org.apache.activemq.ActiveMQQueueSession:javax.jms.ObjectMessage createObjectMessage(java.io.Serializable)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQQueueSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQTopicSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <clinit>()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:javax.jms.Message receive()",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQSession:void close()",
+                        "org.apache.activemq.command.ActiveMQTextMessage:void setText(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.command.ActiveMQQueue:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.apache.activemq.ActiveMQQueueSession:void close()",
+                        "org.apache.activemq.ActiveMQTopicSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQTopicSession:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQQueueSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQQueueSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQTopicSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:javax.jms.Message receive()",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQSession:void close()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ],
+                    "vul-called frequency": 43,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.apache.activemq.ActiveMQQueueSession:void close()",
+                            "org.apache.activemq.ActiveMQTopicSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQTopicSession:void close()",
+                            "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQQueueSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQConnection:void close()",
+                            "org.apache.activemq.ActiveMQQueueSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                            "org.apache.activemq.ActiveMQTopicSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQMessageConsumer:javax.jms.Message receive()",
+                            "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                            "org.apache.activemq.ActiveMQSession:void close()",
+                            "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction:knights": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 4,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-persistence-programmactic-tx": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 13,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ]
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.springinaction3:spitter-service-declarative-tx": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 23,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.AbstractApplicationContext:void <clinit>()",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                        "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.context.support.AbstractApplicationContext:java.lang.Object getBean(java.lang.String)",
+                            "org.springframework.context.support.ClassPathXmlApplicationContext:void <init>(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.learning:SpringPizza": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.springframework.webflow.core.collection.LocalAttributeMap:java.lang.Object get(java.lang.String)",
+                        "org.springframework.webflow.core.collection.CollectionUtils$EmptyIterator:java.lang.Object next()",
+                        "org.springframework.webflow.core.collection.LocalAttributeMap:java.lang.Object put(java.lang.String,java.lang.Object)",
+                        "org.springframework.webflow.execution.Event:void <init>(java.lang.Object,java.lang.String)"
+                    ]
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                        "org.apache.log4j.Logger:org.apache.log4j.Logger getLogger(java.lang.Class)",
+                        "org.apache.log4j.Category:void warn(java.lang.Object)",
+                        "org.apache.log4j.Category:void <clinit>()",
+                        "org.apache.log4j.Logger:void <clinit>()",
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.log4j.Category:void debug(java.lang.Object)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ],
+                    "vul-called frequency": 4,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.spitter:spitter-web-aop": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 44,
+                    "used method": [
+                        "org.hibernate.collection.internal.PersistentMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.PropertyValueException:java.lang.String getMessage()",
+                        "org.hibernate.NonUniqueObjectException:java.lang.String getMessage()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.List subList(int,int)",
+                        "org.hibernate.collection.internal.PersistentList:java.util.List subList(int,int)",
+                        "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.util.Set keySet()",
+                        "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                        "org.hibernate.event.internal.MergeContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.util.Set keySet()",
+                        "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                        "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                        "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.event.internal.MergeContext:java.util.Set keySet()",
+                        "org.hibernate.collection.internal.PersistentBag:int size()",
+                        "org.hibernate.collection.internal.PersistentBag:java.util.List subList(int,int)",
+                        "org.hibernate.boot.MappingException:java.lang.String getMessage()",
+                        "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.collection.internal.PersistentMap:java.util.Set keySet()",
+                        "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                        "org.hibernate.InstantiationException:java.lang.String getMessage()",
+                        "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                        "org.hibernate.PropertyAccessException:java.lang.String getMessage()",
+                        "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                        "org.hibernate.internal.util.collections.IdentityMap:java.util.Set keySet()",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                        "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                        "org.hibernate.UnresolvableObjectException:java.lang.String getMessage()",
+                        "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                        "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                        "org.hibernate.StaleObjectStateException:java.lang.String getMessage()",
+                        "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                        "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                        "org.hibernate.collection.internal.PersistentList:int size()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()",
+                        "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.util.Set keySet()",
+                        "org.hibernate.TransientPropertyValueException:java.lang.String getMessage()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                        "org.hibernate.QueryException:java.lang.String getMessage()",
+                        "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.List subList(int,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2020-25638"
+                    ],
+                    "used vul-method": [
+                        "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                        "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                            "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-25638": [
+                            "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                            "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.springframework.http.HttpHeaders:java.util.Set keySet()",
+                        "org.springframework.http.HttpHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 15,
+                    "used method": [
+                        "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String)",
+                        "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String,java.lang.Object[])",
+                        "org.slf4j.LoggerFactory:org.slf4j.Logger getLogger(java.lang.Class)",
+                        "org.apache.log4j.config.PropertySetterException:java.lang.String getMessage()",
+                        "org.springframework.util.LinkedMultiValueMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.slf4j.impl.Log4jLoggerAdapter:void error(java.lang.String)",
+                        "org.slf4j.helpers.SubstituteLogger:void error(java.lang.String)",
+                        "org.slf4j.helpers.NOPLogger:void info(java.lang.String)",
+                        "org.slf4j.helpers.SubstituteLogger:void info(java.lang.String)",
+                        "org.springframework.util.LinkedMultiValueMap:java.util.Set keySet()",
+                        "org.slf4j.helpers.NOPLogger:void error(java.lang.String)",
+                        "org.slf4j.LoggerFactory:void <clinit>()",
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.slf4j.helpers.NOPLogger:void info(java.lang.String,java.lang.Object[])",
+                        "org.slf4j.helpers.SubstituteLogger:void info(java.lang.String,java.lang.Object[])"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String,java.lang.Object[])"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String,java.lang.Object[])"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.util.LinkedMultiValueMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.springframework.util.LinkedMultiValueMap:java.util.Set keySet()",
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.http.HttpHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.spitter:spitter-web-aop2": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.http.HttpHeaders:java.util.Set keySet()"
+                    ]
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 13,
+                    "used method": [
+                        "org.slf4j.helpers.NOPLogger:void info(java.lang.String,java.lang.Object[])",
+                        "org.slf4j.LoggerFactory:void <clinit>()",
+                        "org.slf4j.impl.Log4jLoggerAdapter:void error(java.lang.String)",
+                        "org.slf4j.helpers.SubstituteLogger:void error(java.lang.String)",
+                        "org.slf4j.helpers.NOPLogger:void info(java.lang.String)",
+                        "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String)",
+                        "org.slf4j.LoggerFactory:org.slf4j.Logger getLogger(java.lang.Class)",
+                        "org.springframework.util.LinkedMultiValueMap:java.util.Set keySet()",
+                        "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String,java.lang.Object[])",
+                        "org.slf4j.helpers.SubstituteLogger:void info(java.lang.String,java.lang.Object[])",
+                        "org.slf4j.helpers.NOPLogger:void error(java.lang.String)",
+                        "org.apache.log4j.config.PropertySetterException:java.lang.String getMessage()",
+                        "org.slf4j.helpers.SubstituteLogger:void info(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String,java.lang.Object[])"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.slf4j.impl.Log4jLoggerAdapter:void info(java.lang.String,java.lang.Object[])"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.util.LinkedMultiValueMap:java.util.Set keySet()"
+                    ]
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.vonzhou.learning:spring-interceptor": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate:hibernate-core:5.0.7.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:4.2.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:4.2.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()"
+                    ]
+                },
+                "commons-fileupload:commons-fileupload:1.3.1": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-core:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.webflow:spring-webflow:2.4.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.activemq:activemq-all:5.13.2": {
+                    "used-method num": 8,
+                    "used method": [
+                        "org.apache.log4j.Logger:org.apache.log4j.Logger getLogger(java.lang.Class)",
+                        "org.apache.log4j.Logger:void <clinit>()",
+                        "org.springframework.util.ConcurrentReferenceHashMap$Entry:java.lang.String toString()",
+                        "org.apache.log4j.Category:void <clinit>()",
+                        "org.apache.log4j.Priority:java.lang.String toString()",
+                        "org.springframework.core.ResolvableType:java.lang.String toString()",
+                        "org.apache.log4j.Category:void info(java.lang.Object)",
+                        "org.apache.log4j.spi.VectorWriter:void println(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.core.ResolvableType:java.lang.String toString()"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11775": [
+                            "org.springframework.core.ResolvableType:java.lang.String toString()"
+                        ]
+                    }
+                },
+                "org.springframework:spring-core:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-web:3.0.5.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-webmvc:3.0.5.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

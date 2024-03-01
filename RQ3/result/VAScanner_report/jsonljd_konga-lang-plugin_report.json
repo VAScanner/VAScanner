@@ -1,0 +1,32 @@
+{
+    "project name": "jsonljd_konga-lang-plugin",
+    "vulnerable dependencies": {
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 11,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.tree.AbstractElement:java.util.List elements(java.lang.String)",
+                "org.dom4j.tree.AbstractBranch:java.lang.String getTextTrim()",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.tree.DefaultElement:org.dom4j.Element element(java.lang.String)",
+                "org.dom4j.tree.ContentListFacade:int size()"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.1.3": {
+            "used-method num": 2,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)"
+            ]
+        }
+    }
+}

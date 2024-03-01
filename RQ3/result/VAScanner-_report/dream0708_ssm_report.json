@@ -1,0 +1,126 @@
+{
+    "project name": "dream0708_ssm",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:4.0.0.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                "org.springframework.util.StringUtils:boolean isEmpty(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                "org.springframework.util.CollectionUtils:boolean isEmpty(java.util.Collection)"
+            ]
+        },
+        "org.hibernate:hibernate-core:4.2.0.Final": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:4.0.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:4.0.0.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String)",
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "org.springframework:spring-oxm:4.0.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.2.3": {
+            "used-method num": 47,
+            "used method": [
+                "org.apache.shiro.authc.AuthenticationException:void <init>()",
+                "org.apache.shiro.crypto.JcaCipherService:org.apache.shiro.util.ByteSource encrypt(byte[],byte[])",
+                "org.apache.shiro.realm.CachingRealm:void clearCache(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,char[],boolean,java.lang.String)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.crypto.SecureRandomNumberGenerator:org.apache.shiro.util.ByteSource nextBytes()",
+                "org.apache.shiro.codec.Base64:java.lang.String decodeToString(java.lang.String)",
+                "org.apache.shiro.realm.AuthorizingRealm:void clearCachedAuthorizationInfo(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.codec.Base64:java.lang.String encodeToString(byte[])",
+                "org.apache.shiro.codec.Hex:byte[] decode(java.lang.String)",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toHex()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void clearCachedAuthenticationInfo(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.util.ByteSource$Util:org.apache.shiro.util.ByteSource bytes(java.lang.String)",
+                "org.apache.shiro.crypto.AesCipherService:void <init>()",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toBase64()",
+                "org.apache.shiro.crypto.hash.SimpleHash:byte[] getBytes()",
+                "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.apache.shiro.crypto.JcaCipherService:org.apache.shiro.util.ByteSource decrypt(byte[],byte[])",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setRoles(java.util.Set)",
+                "org.apache.shiro.codec.Hex:java.lang.String encodeToString(byte[])",
+                "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:void <init>()",
+                "org.apache.shiro.authc.UnknownAccountException:void <init>()",
+                "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.Throwable)",
+                "org.apache.shiro.crypto.AbstractSymmetricCipherService:java.security.Key generateNewKey()",
+                "org.apache.shiro.authc.credential.HashedCredentialsMatcher:boolean doCredentialsMatch(org.apache.shiro.authc.AuthenticationToken,org.apache.shiro.authc.AuthenticationInfo)",
+                "org.apache.shiro.codec.Base64:void <clinit>()",
+                "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.String)",
+                "org.apache.shiro.crypto.SecureRandomNumberGenerator:void <init>()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,org.apache.shiro.util.ByteSource,java.lang.String)",
+                "org.apache.shiro.util.CollectionUtils:boolean isEmpty(java.util.Collection)",
+                "org.apache.shiro.codec.H64:void <clinit>()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String getUsername()",
+                "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void <init>()",
+                "org.apache.shiro.crypto.hash.Md5Hash:void <init>(java.lang.Object,java.lang.Object,int)",
+                "org.apache.shiro.util.SimpleByteSource:byte[] getBytes()",
+                "org.apache.shiro.crypto.hash.SimpleHash:void <init>(java.lang.String,java.lang.Object,java.lang.Object,int)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.codec.H64:java.lang.String encodeToString(byte[])",
+                "org.apache.shiro.authc.ExcessiveAttemptsException:void <init>()",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toHex()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setStringPermissions(java.util.Set)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.authc.LockedAccountException:void <init>()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()",
+                "org.apache.shiro.authc.UsernamePasswordToken:char[] getPassword()",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2019-12422"
+            ],
+            "used vul-method": [
+                "org.apache.shiro.crypto.JcaCipherService:org.apache.shiro.util.ByteSource encrypt(byte[],byte[])",
+                "org.apache.shiro.crypto.AesCipherService:void <init>()",
+                "org.apache.shiro.crypto.JcaCipherService:org.apache.shiro.util.ByteSource decrypt(byte[],byte[])"
+            ],
+            "vul-called frequency": 4,
+            "root vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2019-12422": [
+                    "org.apache.shiro.crypto.JcaCipherService:javax.crypto.Cipher initNewCipher(int,byte[],byte[],boolean)",
+                    "org.apache.shiro.crypto.AesCipherService:void <init>()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12422": [
+                    "org.apache.shiro.crypto.JcaCipherService:org.apache.shiro.util.ByteSource encrypt(byte[],byte[])",
+                    "org.apache.shiro.crypto.AesCipherService:void <init>()",
+                    "org.apache.shiro.crypto.JcaCipherService:org.apache.shiro.util.ByteSource decrypt(byte[],byte[])"
+                ]
+            }
+        },
+        "org.apache.shiro:shiro-web:1.2.3": {
+            "used-method num": 3,
+            "used method": [
+                "org.apache.shiro.web.util.WebUtils:java.lang.String getCleanParam(javax.servlet.ServletRequest,java.lang.String)",
+                "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:void <init>()",
+                "org.apache.shiro.web.util.WebUtils:void <clinit>()"
+            ]
+        },
+        "com.thoughtworks.xstream:xstream:1.4.3": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.2.1": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

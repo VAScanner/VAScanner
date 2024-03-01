@@ -1,0 +1,67 @@
+{
+    "project name": "hanglegehang_CRM",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.1.1": {
+            "used-method num": 7,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)"
+            ]
+        },
+        "org.springframework:spring-web:4.3.4.RELEASE": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.http.HttpStatus:int value()",
+                "org.springframework.http.HttpStatus:void <clinit>()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.3.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.quartz-scheduler:quartz:2.3.0": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.3.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.3.2": {
+            "used-method num": 16,
+            "used method": [
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.crypto.hash.Sha256Hash:void <init>(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setStringPermissions(java.util.Set)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.util.MapContext:void clear()",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toHex()",
+                "org.apache.shiro.util.MapContext:boolean containsKey(java.lang.Object)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.authc.IncorrectCredentialsException:void <init>(java.lang.String)",
+                "org.apache.shiro.authc.LockedAccountException:void <init>(java.lang.String)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.util.MapContext:boolean isEmpty()",
+                "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.3.2": {
+            "used-method num": 1,
+            "used method": [
+                "org.apache.shiro.web.filter.authc.AuthenticatingFilter:void <init>()"
+            ]
+        }
+    }
+}

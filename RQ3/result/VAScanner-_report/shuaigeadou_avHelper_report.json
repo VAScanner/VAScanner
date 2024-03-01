@@ -1,0 +1,178 @@
+{
+    "project name": "shuaigeadou_avHelper",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 27,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.AbstractElement:void setText(java.lang.String)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.dom4j.io.XMLWriter:void flush()",
+                "org.dom4j.tree.ContentListFacade:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.ContentListFacade:boolean contains(java.lang.Object)",
+                "org.dom4j.io.XMLWriter:void <clinit>()",
+                "org.dom4j.tree.AbstractElement:org.dom4j.Element addElement(java.lang.String)",
+                "org.dom4j.io.XMLWriter:void write(org.dom4j.Document)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set keySet()",
+                "org.dom4j.DocumentHelper:org.dom4j.Document createDocument()",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.tree.ContentListFacade:boolean remove(java.lang.Object)",
+                "org.dom4j.io.XMLWriter:void close()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.io.OutputFormat:org.dom4j.io.OutputFormat createPrettyPrint()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object remove(int)",
+                "org.dom4j.io.OutputFormat:void setEncoding(java.lang.String)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.tree.AbstractDocument:org.dom4j.Element addElement(java.lang.String)",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object get(int)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                "org.dom4j.io.XMLWriter:void <init>(java.io.OutputStream,org.dom4j.io.OutputFormat)",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                    "org.dom4j.io.SAXReader:void setXMLReader(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXHelper:org.xml.sax.XMLReader createXMLReader(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+                ]
+            }
+        },
+        "com.thoughtworks.xstream:xstream:1.4.16": {
+            "used-method num": 22,
+            "used method": [
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set keySet()",
+                "com.thoughtworks.xstream.converters.reflection.SerializableConverter$2$1:void run()",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:void close()",
+                "com.thoughtworks.xstream.XStream:void toXML(java.lang.Object,java.io.Writer)",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.Reader)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.File)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:void <clinit>()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.XStream:void setClassLoader(java.lang.ClassLoader)",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean addAll(java.util.Collection)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()"
+            ],
+            "CVE": [
+                "CVE-2021-29505",
+                "CVE-2021-43859"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.Reader)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.File)"
+            ],
+            "vul-called frequency": 10,
+            "related vul root method": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                    "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.Reader)",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.io.File)"
+                ]
+            }
+        },
+        "org.apache.httpcomponents:httpclient:4.5.6": {
+            "used-method num": 36,
+            "used method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read(byte[])",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <init>()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.client.IdleConnectionEvictor$1:void run()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.client.protocol.HttpClientContext:org.apache.http.client.protocol.HttpClientContext create()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[])",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,org.apache.http.conn.ssl.X509HostnameVerifier)",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.Object getAttribute(java.lang.String)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI remove(int)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry,org.apache.http.conn.DnsResolver)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:java.net.Socket connectSocket(int,java.net.Socket,org.apache.http.HttpHost,java.net.InetSocketAddress,java.net.InetSocketAddress,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[])",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:java.net.Socket connectSocket(int,java.net.Socket,org.apache.http.HttpHost,java.net.InetSocketAddress,java.net.InetSocketAddress,org.apache.http.protocol.HttpContext)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)"
+                ]
+            }
+        }
+    }
+}

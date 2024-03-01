@@ -1,0 +1,23 @@
+{
+    "project name": "crossoverJie_distributed-redis-tool",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 2,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)"
+            ]
+        },
+        "org.springframework:spring-web:4.2.1.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:4.2.1.RELEASE": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()",
+                "org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter:void <init>()"
+            ]
+        }
+    }
+}

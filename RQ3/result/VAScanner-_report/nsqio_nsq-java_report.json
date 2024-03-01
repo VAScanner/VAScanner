@@ -1,0 +1,60 @@
+{
+    "project name": "nsqio_nsq-java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.3": {
+            "used-method num": 17,
+            "used method": [
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager)",
+                "org.apache.http.conn.scheme.PlainSocketFactory:org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.conn.scheme.SchemeRegistry:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.conn.scheme.SchemeRegistry:org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme)",
+                "org.apache.http.impl.conn.PoolingClientConnectionManager:void <init>(org.apache.http.conn.scheme.SchemeRegistry)",
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.0.11": {
+            "used-method num": 7,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter$ReconfiguringThread:void run()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)"
+            ]
+        }
+    }
+}

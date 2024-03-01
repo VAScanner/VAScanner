@@ -1,0 +1,205 @@
+{
+    "project name": "fabriciocolombo_sonar-delphi",
+    "vulnerable dependencies": {
+        "com.thoughtworks.xstream:xstream:1.3.1": {
+            "used-method num": 40,
+            "used method": [
+                "com.thoughtworks.xstream.io.path.Path:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.lang.Object remove(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:java.lang.Object[] toArray(java.lang.Object[])",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:void clear()",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void aliasSystemAttribute(java.lang.String,java.lang.String)",
+                "com.thoughtworks.xstream.core.util.XmlHeaderAwareReader:int read()",
+                "com.thoughtworks.xstream.core.util.XmlHeaderAwareReader:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.core.util.XmlHeaderAwareReader:void reset()",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:boolean contains(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.util.Collection values()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:void clear()",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:boolean isEmpty()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.XStream:java.lang.String toXML(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:boolean remove(java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:void setClassLoader(java.lang.ClassLoader)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$IdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:java.util.Iterator iterator()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.core.util.XmlHeaderAwareReader:void mark(int)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Collection values()",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:boolean addAll(java.util.Collection)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:int size()",
+                "com.thoughtworks.xstream.core.util.FastField:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set keySet()",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object remove(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.ConversionException:java.lang.String getMessage()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.FastStack:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$PresortedSet:boolean isEmpty()",
+                "com.thoughtworks.xstream.XStream:void processAnnotations(java.lang.Class)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeMapConverter$PresortedMap:java.lang.Object get(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2021-43859",
+                "CVE-2017-7957"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.XStream:void <init>()"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                    "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void setupConverters()",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                ],
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void <init>()",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                ]
+            }
+        },
+        "xalan:xalan:2.7.1": {
+            "used-method num": 61,
+            "used method": [
+                "org.apache.xpath.axes.NodeSequence:java.lang.Object clone()",
+                "org.apache.xml.utils.BoolStack:java.lang.Object clone()",
+                "org.apache.xml.utils.UnImplNode:void setAttribute(java.lang.String,java.lang.String)",
+                "org.apache.xalan.templates.ElemLiteralResult$Attribute:java.lang.String getTextContent()",
+                "org.apache.xml.utils.URI:java.lang.String toString()",
+                "org.apache.xml.utils.ObjectVector:java.lang.Object clone()",
+                "org.apache.xml.utils.FastStringBuffer:java.lang.String toString()",
+                "org.apache.xpath.axes.PredicatedNodeTest:java.lang.Object clone()",
+                "org.apache.xpath.axes.DescendantIterator:int nextNode()",
+                "org.apache.xalan.templates.ElemTemplateElement:org.w3c.dom.Node appendChild(org.w3c.dom.Node)",
+                "org.apache.xpath.axes.WalkingIterator:int nextNode()",
+                "org.apache.xalan.templates.ElemLiteralResult:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xalan.templates.ElemLiteralResult$LiteralElementAttributes:org.w3c.dom.Node getNamedItem(java.lang.String)",
+                "org.apache.xpath.patterns.StepPattern:java.lang.String toString()",
+                "org.apache.xpath.NodeSetDTM:int nextNode()",
+                "org.apache.xpath.compiler.OpMap:java.lang.String toString()",
+                "org.apache.xml.utils.UnImplNode:void normalize()",
+                "org.apache.xpath.objects.XNodeSet:org.apache.xml.dtm.DTMIterator iter()",
+                "org.apache.xpath.axes.AxesWalker:java.lang.Object clone()",
+                "org.apache.xalan.transformer.TransformerIdentityImpl:void transform(javax.xml.transform.Source,javax.xml.transform.Result)",
+                "org.apache.xpath.axes.NodeSequence:org.apache.xml.dtm.DTM getDTM(int)",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTMdefaultNamespaceDeclarationNode:java.lang.String getTextContent()",
+                "org.apache.xml.dtm.ref.NodeLocator:java.lang.String toString()",
+                "org.apache.xpath.axes.UnionPathIterator:int nextNode()",
+                "org.apache.xpath.functions.FuncExtFunction:java.lang.String toString()",
+                "org.apache.xml.utils.IntVector:java.lang.Object clone()",
+                "org.apache.xalan.templates.TemplateSubPatternAssociation:java.lang.Object clone()",
+                "org.apache.xpath.axes.NodeSequence:int getCurrentNode()",
+                "org.apache.xml.dtm.DTMException:void printStackTrace()",
+                "org.apache.xml.utils.ObjectStack:java.lang.Object clone()",
+                "org.apache.xml.utils.UnImplNode:void setTextContent(java.lang.String)",
+                "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)",
+                "org.apache.xpath.VariableStack:java.lang.Object clone()",
+                "org.apache.xpath.axes.NodeSequence:int nextNode()",
+                "org.apache.xpath.objects.XObject:java.lang.String toString()",
+                "org.apache.xpath.axes.LocPathIterator:org.apache.xml.dtm.DTM getDTM(int)",
+                "org.apache.xpath.XPathException:java.lang.String getMessage()",
+                "org.apache.xml.dtm.ref.DTMNamedNodeMap:org.w3c.dom.Node getNamedItem(java.lang.String)",
+                "org.apache.xml.dtm.ref.DTMDefaultBase:org.w3c.dom.Node getNode(int)",
+                "org.apache.xpath.NodeSetDTM:org.apache.xml.dtm.DTM getDTM(int)",
+                "org.apache.xml.utils.UnImplNode:java.lang.String getTextContent()",
+                "org.apache.xml.utils.NodeVector:java.lang.Object clone()",
+                "org.apache.xpath.NodeSetDTM:int getCurrentNode()",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTMdefaultNamespaceDeclarationNode:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xpath.axes.FilterExprWalker:java.lang.Object clone()",
+                "org.apache.xpath.axes.BasicTestIterator:int nextNode()",
+                "org.apache.xml.utils.UnImplNode:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xml.utils.IntStack:java.lang.Object clone()",
+                "org.apache.xml.dtm.ref.dom2dtm.DOM2DTM:org.w3c.dom.Node getNode(int)",
+                "org.apache.xalan.transformer.TransformerImpl:void transform(javax.xml.transform.Source,javax.xml.transform.Result)",
+                "org.apache.xpath.NodeSet:java.lang.Object clone()",
+                "org.apache.xpath.axes.LocPathIterator:int getCurrentNode()",
+                "org.apache.xalan.templates.OutputProperties:java.lang.Object clone()",
+                "org.apache.xpath.NodeSetDTM:java.lang.Object clone()",
+                "org.apache.xml.utils.UnImplNode:org.w3c.dom.Element getDocumentElement()",
+                "org.apache.xml.utils.UnImplNode:org.w3c.dom.Element createElement(java.lang.String)",
+                "org.apache.xml.utils.AttList:java.lang.String getValue(java.lang.String)",
+                "org.apache.xpath.axes.OneStepIterator:java.lang.Object clone()",
+                "org.apache.xml.utils.QName:java.lang.String toString()",
+                "org.apache.xpath.axes.WalkingIterator:java.lang.Object clone()",
+                "org.apache.xpath.axes.UnionPathIterator:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2014-0107"
+            ],
+            "used vul-method": [
+                "org.apache.xpath.axes.DescendantIterator:int nextNode()",
+                "org.apache.xpath.axes.WalkingIterator:int nextNode()",
+                "org.apache.xpath.axes.UnionPathIterator:int nextNode()",
+                "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)",
+                "org.apache.xpath.axes.NodeSequence:int nextNode()",
+                "org.apache.xpath.objects.XObject:java.lang.String toString()",
+                "org.apache.xml.dtm.ref.DTMNamedNodeMap:org.w3c.dom.Node getNamedItem(java.lang.String)",
+                "org.apache.xpath.axes.BasicTestIterator:int nextNode()",
+                "org.apache.xalan.transformer.TransformerImpl:void transform(javax.xml.transform.Source,javax.xml.transform.Result)"
+            ],
+            "vul-called frequency": 19,
+            "related vul root method": {
+                "CVE-2014-0107": [
+                    "org.apache.xpath.functions.FuncSystemProperty:org.apache.xpath.objects.XObject execute(org.apache.xpath.XPathContext)",
+                    "org.apache.xalan.transformer.TransformerImpl:void setExtensionsTable(org.apache.xalan.templates.StylesheetRoot)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2014-0107": [
+                    "org.apache.xpath.axes.DescendantIterator:int nextNode()",
+                    "org.apache.xpath.axes.WalkingIterator:int nextNode()",
+                    "org.apache.xpath.axes.UnionPathIterator:int nextNode()",
+                    "org.apache.xpath.XPathAPI:org.apache.xpath.objects.XObject eval(org.w3c.dom.Node,java.lang.String)",
+                    "org.apache.xpath.axes.NodeSequence:int nextNode()",
+                    "org.apache.xpath.objects.XObject:java.lang.String toString()",
+                    "org.apache.xml.dtm.ref.DTMNamedNodeMap:org.w3c.dom.Node getNamedItem(java.lang.String)",
+                    "org.apache.xpath.axes.BasicTestIterator:int nextNode()",
+                    "org.apache.xalan.transformer.TransformerImpl:void transform(javax.xml.transform.Source,javax.xml.transform.Result)"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.1.2": {
+            "used-method num": 18,
+            "used method": [
+                "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()",
+                "ch.qos.logback.classic.Logger:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void trace(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)"
+            ]
+        }
+    }
+}

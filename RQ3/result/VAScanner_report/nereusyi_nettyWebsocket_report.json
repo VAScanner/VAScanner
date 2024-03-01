@@ -1,0 +1,96 @@
+{
+    "project name": "nereusyi_nettyWebsocket",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.0.24.Final": {
+            "used-method num": 55,
+            "used method": [
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:io.netty.handler.codec.http.FullHttpRequest retain()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.String,java.lang.Object)",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup)",
+                "io.netty.util.concurrent.ImmediateEventExecutor:void <clinit>()",
+                "io.netty.channel.group.DefaultChannelGroup:void <init>(io.netty.util.concurrent.EventExecutor)",
+                "io.netty.handler.codec.http.HttpResponseStatus:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler:void <clinit>()",
+                "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.group.ChannelGroupFuture writeAndFlush(java.lang.Object)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(java.net.SocketAddress)",
+                "io.netty.handler.codec.http.HttpHeaders:boolean is100ContinueExpected(io.netty.handler.codec.http.HttpMessage)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.channel.DefaultFileRegion:void <init>(java.nio.channels.FileChannel,long,long)",
+                "io.netty.handler.stream.ChunkedNioFile:void <init>(java.nio.channels.FileChannel)",
+                "io.netty.handler.codec.http.HttpHeaders:boolean isKeepAlive(io.netty.handler.codec.http.HttpMessage)",
+                "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String getUri()",
+                "io.netty.handler.codec.http.HttpVersion:void <clinit>()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.channel.group.DefaultChannelGroup:boolean add(java.lang.Object)",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler$ServerHandshakeStateEvent:void <clinit>()",
+                "io.netty.channel.group.DefaultChannelGroup:void <clinit>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext fireChannelRead(java.lang.Object)",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String getUri()",
+                "io.netty.handler.codec.http.LastHttpContent:void <clinit>()",
+                "io.netty.handler.stream.ChunkedWriteHandler:void <clinit>()",
+                "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:io.netty.handler.codec.http.websocketx.TextWebSocketFrame retain()",
+                "io.netty.channel.ChannelFutureListener:void <clinit>()",
+                "io.netty.util.AbstractReferenceCounted:void <clinit>()",
+                "io.netty.handler.codec.http.HttpHeaders:void <clinit>()",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:void <init>(java.lang.String)",
+                "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.group.ChannelGroupFuture close()",
+                "io.netty.channel.DefaultFileRegion:void <clinit>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler:void <init>(java.lang.String)",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.channel.ChannelInitializer:void <clinit>()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.handler.codec.http.HttpVersion getProtocolVersion()",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpVersion getProtocolVersion()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:io.netty.handler.codec.http.FullHttpRequest retain()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture write(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.handler.stream.ChunkedWriteHandler:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.group.ChannelGroupFuture writeAndFlush(java.lang.Object)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(java.net.SocketAddress)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext fireChannelRead(java.lang.Object)",
+                "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.group.ChannelGroupFuture close()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture write(java.lang.Object)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+            ],
+            "vul-called frequency": 13,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                    "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.group.ChannelGroupFuture writeAndFlush(java.lang.Object)",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(java.net.SocketAddress)",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext fireChannelRead(java.lang.Object)",
+                    "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.group.ChannelGroupFuture close()",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture write(java.lang.Object)",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+                ]
+            }
+        }
+    }
+}

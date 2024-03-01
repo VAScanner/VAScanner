@@ -1,0 +1,84 @@
+{
+    "project name": "Fruzenshtein_security-spr",
+    "vulnerable dependencies": {
+        "org.hibernate:hibernate-core:4.1.7.Final": {
+            "used-method num": 39,
+            "used method": [
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$HashIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$EntryIterator:java.util.Map$Entry next()",
+                "org.hibernate.collection.internal.PersistentList:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.EmptyIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:boolean hasNext()",
+                "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.internal.IteratorImpl:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentBag:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.SingletonIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$HashIterator:boolean hasNext()",
+                "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                "org.hibernate.collection.internal.PersistentBag:int size()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$EntryIterator:java.util.Map$Entry next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$ValueIterator:java.lang.Object next()",
+                "org.hibernate.internal.IteratorImpl:boolean hasNext()",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.EmptyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:boolean hasNext()",
+                "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:boolean hasNext()",
+                "org.hibernate.internal.util.collections.JoinedIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.JoinedIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:java.lang.Object next()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.Iterator iterator()",
+                "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                "org.hibernate.internal.util.collections.SingletonIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentList:int size()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.internal.SessionImpl:java.lang.Object load(java.lang.Class,java.io.Serializable)",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$ValueIterator:java.lang.Object next()"
+            ],
+            "CVE": [
+                "CVE-2020-25638"
+            ],
+            "used vul-method": [
+                "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-25638": [
+                    "org.hibernate.sql.Delete:java.lang.String toStatementString()",
+                    "org.hibernate.sql.InsertSelect:java.lang.String toStatementString()",
+                    "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                    "org.hibernate.sql.SimpleSelect:java.lang.String toStatementString()",
+                    "org.hibernate.sql.Update:java.lang.String toStatementString()",
+                    "org.hibernate.sql.Insert:java.lang.String toStatementString()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-25638": [
+                    "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                    "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)"
+                ]
+            }
+        },
+        "org.springframework:spring-webmvc:3.2.4.RELEASE": {
+            "used-method num": 6,
+            "used method": [
+                "org.springframework.web.servlet.view.UrlBasedViewResolver:void setViewClass(java.lang.Class)",
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String)",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.view.UrlBasedViewResolver:void <init>()",
+                "org.springframework.web.servlet.view.AbstractCachingViewResolver:void <clinit>()",
+                "org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer:void <init>()"
+            ]
+        }
+    }
+}

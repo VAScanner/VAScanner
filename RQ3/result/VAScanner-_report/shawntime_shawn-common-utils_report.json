@@ -1,0 +1,103 @@
+{
+    "project name": "shawntime_shawn-common-utils",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.3.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-expression:4.2.0.RELEASE": {
+            "used-method num": 18,
+            "used method": [
+                "org.springframework.expression.spel.ast.NullLiteral:java.lang.String toString()",
+                "org.springframework.expression.common.TemplateAwareExpressionParser:void <clinit>()",
+                "org.springframework.expression.spel.standard.Token:java.lang.String toString()",
+                "org.springframework.expression.common.TemplateAwareExpressionParser:org.springframework.expression.Expression parseExpression(java.lang.String)",
+                "org.springframework.expression.spel.support.StandardEvaluationContext:void <init>(java.lang.Object)",
+                "org.springframework.expression.EvaluationException:void <init>(java.lang.String)",
+                "org.springframework.expression.ExpressionException:java.lang.String getMessage()",
+                "org.springframework.expression.spel.support.StandardEvaluationContext:java.lang.Object lookupVariable(java.lang.String)",
+                "org.springframework.expression.spel.ast.StringLiteral:java.lang.String toString()",
+                "org.springframework.expression.spel.ast.Literal:java.lang.String toString()",
+                "org.springframework.expression.spel.standard.TokenKind:java.lang.String toString()",
+                "org.springframework.expression.spel.SpelParseException:java.lang.String getMessage()",
+                "org.springframework.expression.TypedValue:java.lang.String toString()",
+                "org.springframework.expression.spel.SpelEvaluationException:java.lang.String getMessage()",
+                "org.springframework.expression.spel.support.ReflectionHelper$ArgumentsMatchInfo:java.lang.String toString()",
+                "org.springframework.expression.spel.support.StandardEvaluationContext:void setVariable(java.lang.String,java.lang.Object)",
+                "org.springframework.expression.spel.standard.SpelExpression:java.lang.Object getValue(org.springframework.expression.EvaluationContext)",
+                "org.springframework.expression.spel.standard.SpelExpressionParser:void <init>()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.2.0.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.mvc.WebContentInterceptor:java.lang.Integer lookupCacheSeconds(java.lang.String)",
+                "org.springframework.web.servlet.mvc.WebContentInterceptor:boolean preHandle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Object)",
+                "org.springframework.web.servlet.mvc.WebContentInterceptor:void <init>()",
+                "org.springframework.web.servlet.mvc.WebContentInterceptor:void setCacheMappings(java.util.Properties)"
+            ]
+        },
+        "org.springframework:spring-web:4.2.0.RELEASE": {
+            "used-method num": 26,
+            "used method": [
+                "org.springframework.http.HttpHeaders:java.util.List remove(java.lang.Object)",
+                "org.springframework.http.HttpHeaders:void setContentType(org.springframework.http.MediaType)",
+                "org.springframework.http.MediaType:void <clinit>()",
+                "org.springframework.web.context.request.async.WebAsyncManager$2:void run()",
+                "org.springframework.web.context.request.async.WebAsyncManager$3:void run()",
+                "org.springframework.web.filter.GenericFilterBean:void initFilterBean()",
+                "org.springframework.http.HttpHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.web.context.request.async.WebAsyncManager$4:void run()",
+                "org.springframework.http.HttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.web.filter.OncePerRequestFilter:void <init>()",
+                "org.springframework.web.util.UriComponentsBuilder$CompositePathComponentBuilder:java.lang.Object clone()",
+                "org.springframework.web.util.UrlPathHelper:void <init>()",
+                "org.springframework.web.util.UriComponents:java.lang.String toString()",
+                "org.springframework.web.util.UriComponentsBuilder$PathSegmentComponentBuilder:java.lang.Object clone()",
+                "org.springframework.web.util.UrlPathHelper:java.lang.String getOriginatingRequestUri(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.web.context.request.async.WebAsyncManager$5:void run()",
+                "org.springframework.web.util.UriComponentsBuilder$FullPathComponentBuilder:java.lang.Object clone()",
+                "org.springframework.web.context.request.ServletWebRequest:java.lang.String toString()",
+                "org.springframework.http.server.ServletServerHttpResponse$ServletResponseHttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.http.HttpStatus:java.lang.String toString()",
+                "org.springframework.http.MediaType:void <init>(java.lang.String,java.lang.String)",
+                "org.springframework.web.util.UrlPathHelper:java.lang.String getOriginatingContextPath(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.web.util.UriComponentsBuilder:java.lang.Object clone()",
+                "org.springframework.web.context.request.async.WebAsyncManager$6:void run()",
+                "org.springframework.http.HttpHeaders:java.util.Set keySet()",
+                "org.springframework.http.HttpHeaders:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2015-5211"
+            ],
+            "used vul-method": [
+                "org.springframework.web.util.UrlPathHelper:java.lang.String getOriginatingRequestUri(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.web.util.UrlPathHelper:java.lang.String getOriginatingContextPath(javax.servlet.http.HttpServletRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2015-5211": [
+                    "org.springframework.web.util.UrlPathHelper:java.lang.String decodeRequestString(javax.servlet.http.HttpServletRequest,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2015-5211": [
+                    "org.springframework.web.util.UrlPathHelper:java.lang.String getOriginatingRequestUri(javax.servlet.http.HttpServletRequest)",
+                    "org.springframework.web.util.UrlPathHelper:java.lang.String getOriginatingContextPath(javax.servlet.http.HttpServletRequest)"
+                ]
+            }
+        },
+        "org.eclipse.jetty:jetty-server:8.2.0.v20160908": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

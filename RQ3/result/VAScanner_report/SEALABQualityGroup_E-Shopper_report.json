@@ -1,0 +1,20 @@
+{
+    "project name": "SEALABQualityGroup_E-Shopper",
+    "modules": {
+        "it.univaq.ing:microservice-demo": {
+            "vulnerable dependencies": {
+                "org.springframework.security:spring-security-web:4.2.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.3": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()"
+                    ]
+                }
+            }
+        }
+    }
+}

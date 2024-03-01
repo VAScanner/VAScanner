@@ -1,0 +1,90 @@
+{
+    "project name": "DC-ing_APITestFramework",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 34,
+            "used method": [
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setParameter(java.lang.String,java.lang.String)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.net.URI)",
+                "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.net.URI)",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.lang.String)",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setHost(java.lang.String)",
+                "org.apache.http.client.methods.HttpTrace:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.net.URI)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.client.utils.URIBuilder:void <init>()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpOptions:void <init>(java.net.URI)",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setPath(java.lang.String)",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.net.URI)",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setScheme(java.lang.String)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPatch:void <init>(java.net.URI)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.apache.logging.log4j:log4j-core:2.9.0": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:3.17": {
+            "used-method num": 20,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:int getNumberOfSheets()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:int getPhysicalNumberOfCells()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellType(org.apache.poi.ss.usermodel.CellType)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int,org.apache.poi.ss.usermodel.Row$MissingCellPolicy)",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getLastRowNum()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.POIXMLDocument:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheet(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:java.lang.String getSheetName(int)"
+            ]
+        }
+    }
+}

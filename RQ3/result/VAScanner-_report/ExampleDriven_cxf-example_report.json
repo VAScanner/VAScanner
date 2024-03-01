@@ -1,0 +1,33 @@
+{
+    "project name": "ExampleDriven_cxf-example",
+    "vulnerable dependencies": {
+        "org.springframework:spring-webmvc:3.1.1.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:3.1.1.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.cxf:cxf-rt-frontend-jaxrs:2.5.2": {
+            "used-method num": 3,
+            "used method": [
+                "org.apache.cxf.jaxrs.client.JAXRSClientFactory:java.lang.Object create(java.lang.String,java.lang.Class,java.util.List,boolean)",
+                "org.apache.cxf.jaxrs.impl.UriBuilderImpl:javax.ws.rs.core.UriBuilder clone()",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.ClientConfiguration getConfig(java.lang.Object)"
+            ]
+        },
+        "org.springframework.security:spring-security-core:3.1.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-web:3.1.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-config:3.1.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "project name": "selenium-webdriver-software-testing_kspl-selenium-helper",
+    "vulnerable dependencies": {
+        "com.thoughtworks.xstream:xstream:1.4.2": {
+            "used-method num": 22,
+            "used method": [
+                "com.thoughtworks.xstream.XStream:void toXML(java.lang.Object,java.io.OutputStream)",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.String toString()",
+                "com.thoughtworks.xstream.io.path.Path:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.converters.ConversionException:java.lang.String getMessage()",
+                "com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.core.util.FastField:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.FastStack:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.XStream:void setMode(int)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void alias(java.lang.String,java.lang.Class)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ArrayIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder:java.lang.Object clone()",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$IdWrapper:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2017-7957"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void setupConverters()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2017-7957": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ]
+            }
+        }
+    }
+}

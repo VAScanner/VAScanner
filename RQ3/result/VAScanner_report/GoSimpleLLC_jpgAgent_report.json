@@ -1,0 +1,79 @@
+{
+    "project name": "GoSimpleLLC_jpgAgent",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:42.2.12": {
+            "used-method num": 48,
+            "used method": [
+                "org.postgresql.jdbc.PgStatement:boolean execute(java.lang.String)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.postgresql.jdbc.PgResultSet:java.lang.String getString(int)",
+                "org.postgresql.jdbc.PgPreparedStatement:boolean execute()",
+                "org.postgresql.jdbc.PgResultSet:int getInt(java.lang.String)",
+                "org.postgresql.jdbc.PgConnection$AbortCommand:void run()",
+                "org.postgresql.jdbc.PgPreparedStatement:void setString(int,java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:java.sql.Statement createStatement()",
+                "org.postgresql.ds.common.BaseDataSource:void setPreparedStatementCacheQueries(int)",
+                "org.postgresql.jdbc.PgConnection:org.postgresql.PGNotification[] getNotifications()",
+                "org.postgresql.core.VisibleBufferedInputStream:void close()",
+                "org.postgresql.ds.common.BaseDataSource:void setUser(java.lang.String)",
+                "org.postgresql.ds.common.BaseDataSource:void setDatabaseName(java.lang.String)",
+                "org.postgresql.jdbc.PgStatement:void close()",
+                "org.postgresql.Driver$ConnectThread:void run()",
+                "org.postgresql.largeobject.BlobInputStream:void close()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.postgresql.geometric.PGbox:java.lang.Object clone()",
+                "org.postgresql.jdbc.PgConnection:boolean isValid(int)",
+                "org.postgresql.jdbc.PgStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                "org.postgresql.jdbc.PgPreparedStatement:java.sql.ResultSet executeQuery()",
+                "org.postgresql.ds.common.BaseDataSource:void setPassword(java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:void close()",
+                "org.postgresql.jdbc.PgPreparedStatement:void setInt(int,int)",
+                "org.postgresql.jdbc.PgResultSet:boolean next()",
+                "org.postgresql.jdbc.PgPreparedStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                "org.postgresql.ds.common.BaseDataSource:void <clinit>()",
+                "org.postgresql.jdbc.PgStatement$1:void run()",
+                "org.postgresql.util.PSQLWarning:java.lang.String getMessage()",
+                "org.postgresql.jdbc.PgResultSet:void close()",
+                "org.postgresql.jdbc.PgResultSet:java.lang.String getString(java.lang.String)",
+                "org.postgresql.hostchooser.MultiHostChooser$2:int size()",
+                "org.postgresql.jdbc.PgPreparedStatement:boolean execute(java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                "org.postgresql.hostchooser.MultiHostChooser$1:int size()",
+                "org.postgresql.ds.common.BaseDataSource:java.sql.Connection getConnection()",
+                "org.postgresql.ds.common.BaseDataSource:java.sql.Connection getConnection(java.lang.String,java.lang.String)",
+                "org.postgresql.util.StreamWrapper$1:void close()",
+                "org.postgresql.ds.common.BaseDataSource:void setApplicationName(java.lang.String)",
+                "org.postgresql.ds.common.BaseDataSource:void setServerNames(java.lang.String[])",
+                "org.postgresql.jdbc.PgStatement:void cancel()",
+                "org.postgresql.jdbc.PgConnection:java.lang.Object unwrap(java.lang.Class)",
+                "org.postgresql.geometric.PGpoint:java.lang.Object clone()",
+                "org.postgresql.hostchooser.MultiHostChooser$3:int size()",
+                "org.postgresql.util.PGobject:java.lang.Object clone()",
+                "org.postgresql.ds.common.BaseDataSource:void setPortNumbers(int[])",
+                "org.postgresql.ds.PGSimpleDataSource:void <init>()",
+                "org.postgresql.util.ExpressionProperties:java.lang.String getProperty(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2020-13692"
+            ],
+            "used vul-method": [
+                "org.postgresql.Driver$ConnectThread:void run()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13692": [
+                    "org.postgresql.jdbc.PgConnection:void <init>(org.postgresql.util.HostSpec[],java.lang.String,java.lang.String,java.util.Properties,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13692": [
+                    "org.postgresql.Driver$ConnectThread:void run()"
+                ]
+            }
+        },
+        "junit:junit:4.13": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

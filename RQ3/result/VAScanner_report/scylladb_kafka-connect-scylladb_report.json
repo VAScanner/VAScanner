@@ -1,0 +1,79 @@
+{
+    "project name": "scylladb_kafka-connect-scylladb",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:2.4.0": {
+            "used-method num": 50,
+            "used method": [
+                "org.apache.kafka.common.config.AbstractConfig$ResolvingMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.kafka.common.config.ConfigDef$CaseInsensitiveValidString:java.lang.String toString()",
+                "org.apache.kafka.common.TopicPartition:boolean equals(java.lang.Object)",
+                "org.apache.kafka.common.utils.AbstractIterator:java.lang.Object next()",
+                "org.apache.kafka.clients.consumer.OffsetAndMetadata:java.lang.String toString()",
+                "org.apache.kafka.common.config.AbstractConfig:org.apache.kafka.common.config.types.Password getPassword(java.lang.String)",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,java.lang.Object,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String)",
+                "org.apache.kafka.clients.consumer.OffsetAndMetadata:boolean equals(java.lang.Object)",
+                "org.apache.kafka.common.config.ConfigDef:void <init>()",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,java.lang.Object,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String,java.util.List,org.apache.kafka.common.config.ConfigDef$Recommender)",
+                "org.apache.kafka.common.config.ConfigDef:void <clinit>()",
+                "org.apache.kafka.common.config.ConfigDef$Type:void <clinit>()",
+                "org.apache.kafka.common.config.types.Password:java.lang.String toString()",
+                "org.apache.kafka.common.TopicPartition:java.lang.String toString()",
+                "org.apache.kafka.common.TopicPartition:void <init>(java.lang.String,int)",
+                "org.apache.kafka.common.config.AbstractConfig:java.lang.Boolean getBoolean(java.lang.String)",
+                "org.apache.kafka.common.config.AbstractConfig:boolean equals(java.lang.Object)",
+                "org.apache.kafka.common.config.AbstractConfig:java.lang.String getString(java.lang.String)",
+                "org.apache.kafka.clients.consumer.OffsetAndMetadata:void <init>(long)",
+                "org.apache.kafka.common.TopicPartition:java.lang.String topic()",
+                "org.apache.kafka.common.config.AbstractConfig:void <init>(org.apache.kafka.common.config.ConfigDef,java.util.Map)",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String)",
+                "org.apache.kafka.common.config.AbstractConfig:java.util.Map originalsStrings()",
+                "org.apache.kafka.common.config.ConfigDef$ValidString:java.lang.String toString()",
+                "org.apache.kafka.common.config.ConfigValue:java.lang.String toString()",
+                "org.apache.kafka.common.config.AbstractConfig:java.lang.Integer getInt(java.lang.String)",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,java.lang.Object,org.apache.kafka.common.config.ConfigDef$Validator,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String)",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,java.lang.Object,org.apache.kafka.common.config.ConfigDef$Validator,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String,java.util.List,org.apache.kafka.common.config.ConfigDef$Recommender)",
+                "org.apache.kafka.clients.consumer.OffsetAndMetadata:long offset()",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,java.lang.Object,org.apache.kafka.common.config.ConfigDef$Validator,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String,org.apache.kafka.common.config.ConfigDef$Recommender)",
+                "org.apache.kafka.common.config.ConfigDef$Importance:void <clinit>()",
+                "org.apache.kafka.common.config.AbstractConfig:java.lang.Long getLong(java.lang.String)",
+                "org.apache.kafka.common.config.ConfigDef$ValidList:java.lang.String toString()",
+                "org.apache.kafka.common.config.ConfigDef$1:java.lang.String toString()",
+                "org.apache.kafka.common.config.types.Password:boolean equals(java.lang.Object)",
+                "org.apache.kafka.common.config.ConfigValue:void addErrorMessage(java.lang.String)",
+                "org.apache.kafka.common.config.ConfigValue:boolean equals(java.lang.Object)",
+                "org.apache.kafka.common.config.ConfigDef:java.lang.String toEnrichedRst()",
+                "org.apache.kafka.common.config.ConfigTransformer$ConfigVariable:java.lang.String toString()",
+                "org.apache.kafka.common.config.ConfigDef$Width:void <clinit>()",
+                "org.apache.kafka.common.config.AbstractConfig:java.util.List getList(java.lang.String)",
+                "org.apache.kafka.common.config.AbstractConfig$RecordingMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.kafka.common.config.ConfigDef:org.apache.kafka.common.config.ConfigDef define(java.lang.String,org.apache.kafka.common.config.ConfigDef$Type,java.lang.Object,org.apache.kafka.common.config.ConfigDef$Importance,java.lang.String,java.lang.String,int,org.apache.kafka.common.config.ConfigDef$Width,java.lang.String,java.util.List)",
+                "org.apache.kafka.common.config.ConfigDef$Range:java.lang.String toString()",
+                "org.apache.kafka.common.config.ConfigDef$Range:org.apache.kafka.common.config.ConfigDef$Range atLeast(java.lang.Number)",
+                "org.apache.kafka.common.config.ConfigDef$CompositeValidator:java.lang.String toString()",
+                "org.apache.kafka.common.config.ConfigDef$ValidString:org.apache.kafka.common.config.ConfigDef$ValidString in(java.lang.String[])",
+                "org.apache.kafka.common.utils.AbstractIterator:boolean hasNext()",
+                "org.apache.kafka.common.TopicPartition:int partition()",
+                "org.apache.kafka.common.config.types.Password:java.lang.String value()"
+            ]
+        },
+        "io.netty:netty-handler:4.1.45.Final": {
+            "used-method num": 10,
+            "used method": [
+                "io.netty.handler.ssl.SslProvider:io.netty.handler.ssl.SslProvider[] values()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder ciphers(java.lang.Iterable)",
+                "io.netty.handler.ssl.OpenSslX509Certificate:java.lang.String toString()",
+                "io.netty.handler.ssl.OpenSslJavaxX509Certificate:java.lang.String toString()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder forClient()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContext build()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder keyManager(javax.net.ssl.KeyManagerFactory)",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder keyManager(java.io.InputStream,java.io.InputStream)",
+                "io.netty.handler.ssl.SslCompletionEvent:java.lang.String toString()",
+                "io.netty.handler.ssl.SslProvider:void <clinit>()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "project name": "xianrendzw_EasyReport",
+    "modules": {
+        "com.easytoolsoft:easyreport": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.47": {
+                    "used-method num": 9,
+                    "used method": [
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                        "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                        "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                        "com.alibaba.fastjson.JSONArray:boolean addAll(java.util.Collection)",
+                        "com.alibaba.fastjson.JSONArray:int size()",
+                        "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)"
+                        ]
+                    }
+                },
+                "org.hibernate.validator:hibernate-validator:6.0.10.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "com.mchange:c3p0:0.9.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.postgresql:postgresql:9.4.1209": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.shiro:shiro-core:1.3.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.shiro:shiro-web:1.3.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-fileupload:commons-fileupload:1.3.2": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

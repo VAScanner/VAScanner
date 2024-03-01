@@ -1,0 +1,54 @@
+{
+    "project name": "skate056_spring-security-oauth2-google",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.1": {
+            "used-method num": 3,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-config:3.2.5.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-web:3.2.5.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer:void <init>()"
+            ]
+        },
+        "org.springframework.security.oauth:spring-security-oauth2:2.0.3.RELEASE": {
+            "used-method num": 22,
+            "used method": [
+                "org.springframework.security.oauth2.client.OAuth2RestTemplate:org.springframework.security.oauth2.common.OAuth2AccessToken getAccessToken()",
+                "org.springframework.security.oauth2.client.token.grant.redirect.AbstractRedirectResourceDetails:void setPreEstablishedRedirectUri(java.lang.String)",
+                "org.springframework.security.oauth2.provider.token.DefaultUserAuthenticationConverter:org.springframework.security.core.Authentication extractAuthentication(java.util.Map)",
+                "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails:void <init>()",
+                "org.springframework.security.oauth2.common.exceptions.InvalidTokenException:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.client.OAuth2RestTemplate:void <init>(org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails,org.springframework.security.oauth2.client.OAuth2ClientContext)",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setScope(java.util.List)",
+                "org.springframework.security.oauth2.client.OAuth2RestTemplate:void setErrorHandler(org.springframework.web.client.ResponseErrorHandler)",
+                "org.springframework.security.oauth2.provider.token.DefaultUserAuthenticationConverter:void <init>()",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setClientId(java.lang.String)",
+                "org.springframework.security.oauth2.provider.OAuth2Request:void <init>(java.util.Map,java.lang.String,java.util.Collection,boolean,java.util.Set,java.util.Set,java.lang.String,java.util.Set,java.util.Map)",
+                "org.springframework.security.oauth2.client.http.OAuth2ErrorHandler$1:int getRawStatusCode()",
+                "org.springframework.security.oauth2.provider.token.DefaultAccessTokenConverter:void <init>()",
+                "org.springframework.security.oauth2.client.DefaultOAuth2ClientContext:void <init>(org.springframework.security.oauth2.client.token.AccessTokenRequest)",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setId(java.lang.String)",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setClientSecret(java.lang.String)",
+                "org.springframework.security.oauth2.provider.token.DefaultAccessTokenConverter:org.springframework.security.oauth2.provider.OAuth2Authentication extractAuthentication(java.util.Map)",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setAccessTokenUri(java.lang.String)",
+                "org.springframework.security.oauth2.common.AuthenticationScheme:void <clinit>()",
+                "org.springframework.security.oauth2.provider.token.RemoteTokenServices:void <init>()",
+                "org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest:void add(java.lang.Object,java.lang.Object)",
+                "org.springframework.security.oauth2.provider.OAuth2Authentication:void <init>(org.springframework.security.oauth2.provider.OAuth2Request,org.springframework.security.core.Authentication)"
+            ]
+        }
+    }
+}

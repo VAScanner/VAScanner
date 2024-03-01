@@ -1,0 +1,63 @@
+{
+    "project name": "wang153723482_testing_platform",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.4": {
+            "used-method num": 28,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.tree.ContentListFacade:boolean isEmpty()",
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.AbstractElement:void setText(java.lang.String)",
+                "org.jaxen.util.IdentityHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.io.XMLWriter:void <init>(java.io.Writer)",
+                "org.dom4j.tree.ContentListFacade:int size()",
+                "org.jaxen.FunctionCallException:void printStackTrace()",
+                "org.dom4j.tree.DefaultElement:java.util.Iterator elementIterator()",
+                "org.dom4j.io.XMLWriter:void <clinit>()",
+                "org.dom4j.io.XMLWriter:void write(org.dom4j.Document)",
+                "org.dom4j.tree.DefaultElement:java.util.List elements(java.lang.String)",
+                "org.dom4j.tree.FilterIterator:java.lang.Object next()",
+                "org.dom4j.tree.AbstractElement:java.lang.String attributeValue(java.lang.String)",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.io.XMLWriter:void close()",
+                "org.jaxen.util.StackedIterator:java.lang.Object next()",
+                "org.dom4j.tree.AbstractNode:java.util.List selectNodes(java.lang.String)",
+                "org.dom4j.tree.FilterIterator:boolean hasNext()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object get(int)",
+                "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                "org.dom4j.tree.DefaultElement:int nodeCount()",
+                "org.dom4j.tree.AbstractElement:java.lang.String getName()",
+                "org.jaxen.util.IdentityHashMap$EmptyHashIterator:java.lang.Object next()",
+                "org.jaxen.util.SingleObjectIterator:java.lang.Object next()",
+                "org.jaxen.util.StackedIterator:boolean hasNext()",
+                "org.jaxen.util.SingleObjectIterator:boolean hasNext()"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                    "org.dom4j.io.SAXHelper:org.xml.sax.XMLReader createXMLReader(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+                ]
+            }
+        }
+    }
+}

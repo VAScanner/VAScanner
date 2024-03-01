@@ -1,0 +1,210 @@
+{
+    "project name": "philjing_phil_wechat",
+    "vulnerable dependencies": {
+        "commons-fileupload:commons-fileupload:1.3.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.tika:tika-core:1.19.1": {
+            "used-method num": 24,
+            "used method": [
+                "org.apache.tika.mime.MimeTypes:org.apache.tika.mime.MimeTypes getDefaultMimeTypes()",
+                "org.apache.tika.detect.MagicDetector:java.lang.String toString()",
+                "org.apache.tika.mime.MagicMatch:java.lang.String toString()",
+                "org.apache.tika.mime.AndClause:java.lang.String toString()",
+                "org.apache.tika.metadata.Metadata:java.lang.String toString()",
+                "org.apache.tika.mime.MimeTypes:void <clinit>()",
+                "org.apache.tika.mime.OrClause:java.lang.String toString()",
+                "org.apache.tika.mime.MimeTypes:org.apache.tika.mime.MimeType forName(java.lang.String)",
+                "org.apache.tika.mime.MimeType:java.lang.String getExtension()",
+                "org.apache.tika.io.TikaInputStream:java.lang.String toString()",
+                "org.apache.tika.sax.ContentHandlerDecorator:java.lang.String toString()",
+                "org.apache.tika.io.ProxyInputStream:void close()",
+                "org.apache.tika.mime.MimeType:java.lang.String toString()",
+                "org.apache.tika.mime.MimeType$RootXML:java.lang.String toString()",
+                "org.apache.tika.sax.SafeContentHandler$StringOutput:java.lang.String toString()",
+                "org.apache.tika.io.CloseShieldInputStream:void close()",
+                "org.apache.tika.sax.ToTextContentHandler:java.lang.String toString()",
+                "org.apache.tika.io.TaggedInputStream:java.lang.String toString()",
+                "org.apache.tika.Tika:java.lang.String toString()",
+                "org.apache.tika.config.Param:java.lang.String toString()",
+                "org.apache.tika.mime.MediaType:java.lang.String toString()",
+                "org.apache.tika.io.TikaInputStream$1:void close()",
+                "org.apache.tika.config.ParamField:java.lang.String toString()",
+                "org.apache.tika.io.TikaInputStream:void close()"
+            ]
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 43,
+            "used method": [
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.AbstractDocument:java.lang.String toString()",
+                "org.dom4j.tree.AbstractAttribute:java.lang.String toString()",
+                "org.dom4j.tree.AbstractCDATA:java.lang.String toString()",
+                "org.dom4j.tree.NamespaceStack:java.lang.String toString()",
+                "org.dom4j.xpath.XPathPattern:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.AbstractElement:java.lang.String toString()",
+                "org.dom4j.tree.AbstractElement:java.lang.String getName()",
+                "org.dom4j.xpath.DefaultXPath:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.AbstractComment:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$Entry:java.lang.String toString()",
+                "org.dom4j.tree.AbstractElement:java.util.List elements()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:int size()",
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object remove(int)",
+                "org.dom4j.tree.AbstractDocumentType:java.lang.String toString()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object[] toArray(java.lang.Object[])",
+                "org.dom4j.tree.AbstractProcessingInstruction:java.lang.String toString()",
+                "org.dom4j.tree.AbstractText:java.lang.String toString()",
+                "org.dom4j.tree.ContentListFacade:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.QName:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:int size()",
+                "org.dom4j.DocumentException:java.lang.String getMessage()",
+                "org.dom4j.Namespace:java.lang.String toString()",
+                "org.dom4j.tree.ContentListFacade:boolean addAll(java.util.Collection)",
+                "org.dom4j.tree.AbstractEntity:java.lang.String toString()",
+                "org.dom4j.dtd.InternalEntityDecl:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:int size()",
+                "org.dom4j.dtd.ExternalEntityDecl:java.lang.String toString()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object get(int)",
+                "org.dom4j.dtd.AttributeDecl:java.lang.String toString()",
+                "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                "org.dom4j.dtd.ElementDecl:java.lang.String toString()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set entrySet()",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                    "org.dom4j.io.SAXReader:void setXMLReader(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXHelper:org.xml.sax.XMLReader createXMLReader(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)"
+                ]
+            }
+        },
+        "com.thoughtworks.xstream:xstream:1.4.11.1": {
+            "used-method num": 49,
+            "used method": [
+                "com.thoughtworks.xstream.io.path.Path:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.basic.StringConverter:void <init>()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:int size()",
+                "com.thoughtworks.xstream.core.util.CustomObjectOutputStream:void write(byte[])",
+                "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                "com.thoughtworks.xstream.security.AnyTypePermission:void <clinit>()",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean addAll(java.util.Collection)",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                "com.thoughtworks.xstream.mapper.MapperWrapper:void <init>(com.thoughtworks.xstream.mapper.Mapper)",
+                "com.thoughtworks.xstream.converters.basic.AbstractSingleValueConverter:java.lang.String toString(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void <clinit>()",
+                "com.thoughtworks.xstream.io.xml.DomDriver:void <init>(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                "com.thoughtworks.xstream.XStream:java.lang.String toXML(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.io.ReaderWrapper:java.lang.String getValue()",
+                "com.thoughtworks.xstream.XStream:void setClassLoader(java.lang.ClassLoader)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$IdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CustomObjectOutputStream:void flush()",
+                "com.thoughtworks.xstream.core.util.WeakCache:int size()",
+                "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.FastField:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void setupDefaultSecurity(com.thoughtworks.xstream.XStream)",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object get(java.lang.Object)",
+                "com.thoughtworks.xstream.converters.ErrorWritingException:java.lang.String getMessage()",
+                "com.thoughtworks.xstream.io.StatefulWriter:void setValue(java.lang.String)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.core.util.DependencyInjectionFactory$TypedValue:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set entrySet()",
+                "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.PresortedSet:int size()",
+                "com.thoughtworks.xstream.core.util.CustomObjectOutputStream:void close()",
+                "com.thoughtworks.xstream.io.xml.PrettyPrintWriter:void setValue(java.lang.String)",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:void close()",
+                "com.thoughtworks.xstream.core.util.FastStack:java.lang.String toString()",
+                "com.thoughtworks.xstream.mapper.MapperWrapper:boolean shouldSerializeMember(java.lang.Class,java.lang.String)",
+                "com.thoughtworks.xstream.XStream:void processAnnotations(java.lang.Class)",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.io.xml.DomReader:java.lang.String getValue()"
+            ],
+            "CVE": [
+                "CVE-2021-29505",
+                "CVE-2020-26258",
+                "CVE-2020-26259",
+                "CVE-2021-43859"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                    "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

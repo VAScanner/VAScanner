@@ -1,0 +1,131 @@
+{
+    "project name": "rafaelcastrorc_PDFCitationAnalyzer",
+    "vulnerable dependencies": {
+        "org.apache.pdfbox:pdfbox:2.0.6": {
+            "used-method num": 51,
+            "used method": [
+                "org.apache.pdfbox.text.PDFTextStripper:void writeString(java.lang.String)",
+                "org.apache.pdfbox.pdfparser.COSParser:org.apache.pdfbox.cos.COSDocument getDocument()",
+                "org.apache.pdfbox.pdfparser.PDFParser:void parse()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void setDocumentInformation(org.apache.pdfbox.pdmodel.PDDocumentInformation)",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocumentInformation getDocumentInformation()",
+                "org.apache.pdfbox.pdmodel.font.PDType1CFont:java.lang.String getName()",
+                "org.apache.pdfbox.pdmodel.PDPage:void <init>()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void <init>()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void save(java.io.File)",
+                "org.apache.pdfbox.io.RandomAccessBufferedFileInputStream:void close()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void save(java.lang.String)",
+                "org.apache.pdfbox.text.TextPosition:java.lang.String getUnicode()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:java.lang.String toString()",
+                "org.apache.pdfbox.pdmodel.common.PDPageLabels$LabelGenerator:java.lang.String next()",
+                "org.apache.pdfbox.text.PDFTextStripper:void setStartPage(int)",
+                "org.apache.pdfbox.pdmodel.PDDocument:void <clinit>()",
+                "org.apache.pdfbox.pdmodel.PDDocumentInformation:void setTitle(java.lang.String)",
+                "org.apache.pdfbox.pdmodel.PDDocument:void addPage(org.apache.pdfbox.pdmodel.PDPage)",
+                "org.apache.pdfbox.io.RandomAccessBufferedFileInputStream:void <init>(java.io.File)",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:java.lang.Object get(int)",
+                "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator:org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem next()",
+                "org.apache.pdfbox.pdmodel.PDDocumentInformation:void setCreationDate(java.util.Calendar)",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree$FieldIterator:org.apache.pdfbox.pdmodel.interactive.form.PDField next()",
+                "org.apache.pdfbox.text.PDFTextStripper:void <clinit>()",
+                "org.apache.pdfbox.pdmodel.PDDocument:int getNumberOfPages()",
+                "org.apache.pdfbox.text.PDFTextStripper:void setEndPage(int)",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:boolean add(java.lang.Object)",
+                "org.apache.pdfbox.text.TextPosition:float getYDirAdj()",
+                "org.apache.pdfbox.text.TextPosition:org.apache.pdfbox.pdmodel.font.PDFont getFont()",
+                "org.apache.pdfbox.pdfparser.BaseParser:void <clinit>()",
+                "org.apache.pdfbox.cos.COSDocument:void close()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void close()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:int size()",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree$FieldIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.font.PDType0Font:java.lang.String getName()",
+                "org.apache.pdfbox.pdmodel.font.PDTrueTypeFont:java.lang.String getName()",
+                "org.apache.pdfbox.pdmodel.font.PDType3Font:java.lang.String getName()",
+                "org.apache.pdfbox.pdmodel.font.PDType1Font:java.lang.String getName()",
+                "org.apache.pdfbox.pdmodel.PDPageTree$PageIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void <init>(org.apache.pdfbox.cos.COSDocument)",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:java.util.Iterator iterator()",
+                "org.apache.pdfbox.pdfparser.PDFParser:void <init>(org.apache.pdfbox.io.RandomAccessRead)",
+                "org.apache.pdfbox.text.PDFTextStripper:void <init>()",
+                "org.apache.pdfbox.pdmodel.PDDocumentInformation:java.lang.String getTitle()",
+                "org.apache.pdfbox.pdmodel.PDPageTree$PageIterator:org.apache.pdfbox.pdmodel.PDPage next()",
+                "org.apache.pdfbox.pdmodel.common.PDPageLabels$LabelGenerator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.PDDocumentInformation:void setAuthor(java.lang.String)",
+                "org.apache.pdfbox.pdmodel.PDDocumentInformation:java.util.Calendar getCreationDate()",
+                "org.apache.pdfbox.text.PDFTextStripper:java.lang.String getText(org.apache.pdfbox.pdmodel.PDDocument)",
+                "org.apache.pdfbox.pdmodel.PDDocumentInformation:java.lang.String getAuthor()"
+            ],
+            "CVE": [
+                "CVE-2021-27807",
+                "CVE-2021-31811",
+                "CVE-2021-31812"
+            ],
+            "used vul-method": [
+                "org.apache.pdfbox.pdfparser.PDFParser:void parse()",
+                "org.apache.pdfbox.text.PDFTextStripper:java.lang.String getText(org.apache.pdfbox.pdmodel.PDDocument)"
+            ],
+            "vul-called frequency": 11,
+            "related vul root method": {
+                "CVE-2021-27807": [
+                    "org.apache.pdfbox.io.RandomAccessBuffer:int readRemainingBytes(byte[],int,int)",
+                    "org.apache.pdfbox.io.RandomAccessBuffer:int read(byte[],int,int)",
+                    "org.apache.pdfbox.pdfparser.InputStreamSource:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.ScratchFileBuffer:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.RandomAccessBuffer:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.RandomAccessBufferedFileInputStream:byte[] readFully(int)"
+                ],
+                "CVE-2021-31811": [
+                    "org.apache.pdfbox.pdfparser.PDFObjectStreamParser:void parse()"
+                ],
+                "CVE-2021-31812": [
+                    "org.apache.pdfbox.pdfparser.BaseParser:void parseCOSDictionaryNameValuePair(org.apache.pdfbox.cos.COSDictionary)",
+                    "org.apache.pdfbox.pdfparser.BaseParser:org.apache.pdfbox.cos.COSArray parseCOSArray()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-27807": [
+                    "org.apache.pdfbox.pdfparser.PDFParser:void parse()",
+                    "org.apache.pdfbox.text.PDFTextStripper:java.lang.String getText(org.apache.pdfbox.pdmodel.PDDocument)"
+                ],
+                "CVE-2021-31811": [
+                    "org.apache.pdfbox.pdfparser.PDFParser:void parse()"
+                ],
+                "CVE-2021-31812": [
+                    "org.apache.pdfbox.pdfparser.PDFParser:void parse()",
+                    "org.apache.pdfbox.text.PDFTextStripper:java.lang.String getText(org.apache.pdfbox.pdmodel.PDDocument)"
+                ]
+            }
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:3.16": {
+            "used-method num": 21,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:java.util.Iterator cellIterator()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:java.util.Iterator iterator()",
+                "org.apache.poi.openxml4j.opc.PackagePartCollection:org.apache.poi.openxml4j.opc.PackagePart remove(java.lang.Object)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheetAt(int)",
+                "org.apache.poi.POIXMLDocument:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:double getNumericCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:int getRowNum()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.ss.usermodel.CellType getCellTypeEnum()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.POIXMLDocument:void close()",
+                "org.apache.poi.openxml4j.opc.PackagePartCollection:java.lang.Object put(java.lang.Object,java.lang.Object)"
+            ]
+        }
+    }
+}

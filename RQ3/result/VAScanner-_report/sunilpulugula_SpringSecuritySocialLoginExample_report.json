@@ -1,0 +1,56 @@
+{
+    "project name": "sunilpulugula_SpringSecuritySocialLoginExample",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.2.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:4.2.0.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:java.lang.String toString()",
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "org.springframework.security:spring-security-core:3.2.3.RELEASE": {
+            "used-method num": 20,
+            "used method": [
+                "org.springframework.security.core.userdetails.User:void <init>(java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.util.Collection)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.core.userdetails.User:java.lang.String getPassword()",
+                "org.springframework.security.core.context.SecurityContextImpl:java.lang.String toString()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.core.userdetails.User:boolean isAccountNonLocked()",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:void <init>(java.lang.String)",
+                "org.springframework.security.core.context.SecurityContextImpl:void setAuthentication(org.springframework.security.core.Authentication)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String toString()",
+                "org.springframework.security.core.userdetails.User:boolean isAccountNonExpired()",
+                "org.springframework.security.core.userdetails.User:boolean isCredentialsNonExpired()",
+                "org.springframework.security.core.userdetails.User:java.util.Collection getAuthorities()",
+                "org.springframework.security.core.userdetails.User:boolean isEnabled()",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:java.lang.String getAuthority()",
+                "org.springframework.security.core.userdetails.User:java.lang.String getUsername()",
+                "org.springframework.security.core.userdetails.User:java.lang.String toString()",
+                "org.springframework.security.core.AuthenticationException:void <init>(java.lang.String)",
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()"
+            ]
+        },
+        "org.springframework.security:spring-security-web:3.2.3.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.security.web.DefaultRedirectStrategy:void sendRedirect(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)",
+                "org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler:void <init>()",
+                "org.springframework.security.web.DefaultRedirectStrategy:void <init>()",
+                "org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint:void <init>(java.lang.String)"
+            ]
+        },
+        "org.springframework.security:spring-security-config:3.2.3.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "project name": "basis-technology-corp_Java-readability",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.0.3": {
+            "used-method num": 6,
+            "used method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.params.HttpParams)"
+            ]
+        },
+        "org.apache.tika:tika-parsers:0.8": {
+            "used-method num": 6,
+            "used method": [
+                "org.apache.tika.parser.txt.CharsetDetector:void <clinit>()",
+                "org.apache.tika.parser.txt.CharsetDetector:org.apache.tika.parser.txt.CharsetDetector setText(byte[])",
+                "org.apache.tika.parser.txt.CharsetDetector:void <init>()",
+                "org.apache.tika.parser.txt.CharsetMatch:java.lang.String getName()",
+                "org.apache.tika.parser.txt.CharsetDetector:org.apache.tika.parser.txt.CharsetDetector setDeclaredEncoding(java.lang.String)",
+                "org.apache.tika.parser.txt.CharsetDetector:org.apache.tika.parser.txt.CharsetMatch detect()"
+            ]
+        },
+        "xerces:xercesImpl:2.9.1": {
+            "used-method num": 4,
+            "used method": [
+                "org.apache.xerces.parsers.AbstractSAXParser:void setContentHandler(org.xml.sax.ContentHandler)",
+                "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)",
+                "org.apache.xerces.xni.QName:java.lang.Object clone()",
+                "org.apache.xerces.parsers.AbstractSAXParser:void setErrorHandler(org.xml.sax.ErrorHandler)"
+            ],
+            "CVE": [
+                "CVE-2012-0881",
+                "CVE-2009-2625"
+            ],
+            "used vul-method": [
+                "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2012-0881": [
+                    "org.apache.xerces.util.XMLAttributesImpl:org.apache.xerces.xni.QName checkDuplicatesNS()",
+                    "org.apache.xerces.util.XMLAttributesImpl:void prepareTableView()",
+                    "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String,java.lang.String)",
+                    "org.apache.xerces.util.SoftReferenceSymbolTable:java.lang.String addSymbol(char[],int,int)",
+                    "org.apache.xerces.util.SymbolTable:int hash(char[],int,int)",
+                    "org.apache.xerces.util.SymbolTable:void rehash()",
+                    "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:int hash(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(char[],int,int)",
+                    "org.apache.xerces.util.SoftReferenceSymbolTable:void rehash()",
+                    "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                    "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String)",
+                    "org.apache.xerces.util.SymbolHash:java.lang.Object get(java.lang.Object)",
+                    "org.apache.xerces.util.SymbolHash:void <init>()",
+                    "org.apache.xerces.util.SymbolHash:org.apache.xerces.util.SymbolHash makeClone()",
+                    "org.apache.xerces.util.SymbolHash:void clear()",
+                    "org.apache.xerces.util.SymbolHash:void put(java.lang.Object,java.lang.Object)",
+                    "org.apache.xerces.util.SoftReferenceSymbolTable:java.lang.String addSymbol(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:void <init>(int,float)"
+                ],
+                "CVE-2009-2625": [
+                    "org.apache.xerces.impl.XMLScanner:void scanExternalID(java.lang.String[],boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2012-0881": [
+                    "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)"
+                ],
+                "CVE-2009-2625": [
+                    "org.apache.xerces.parsers.AbstractSAXParser:void parse(org.xml.sax.InputSource)"
+                ]
+            }
+        }
+    }
+}

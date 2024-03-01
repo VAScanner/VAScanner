@@ -1,0 +1,163 @@
+{
+    "project name": "jackyhung_consumer-dispatcher",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 32,
+            "used method": [
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.FlyweightComment:java.lang.String getText()",
+                "org.dom4j.tree.ContentListFacade:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set keySet()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.VisitorSupport:void <init>()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object get(int)",
+                "org.dom4j.tree.AbstractElement:void accept(org.dom4j.Visitor)",
+                "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightText:java.lang.String getText()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set entrySet()",
+                "org.dom4j.tree.AbstractAttribute:java.lang.String getName()",
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.tree.ContentListFacade:boolean isEmpty()",
+                "org.dom4j.DocumentException:java.lang.String getMessage()",
+                "org.dom4j.tree.FlyweightProcessingInstruction:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightEntity:java.lang.String getText()",
+                "org.dom4j.Namespace:java.lang.String getText()",
+                "org.dom4j.tree.FlyweightAttribute:java.lang.String getValue()",
+                "org.dom4j.tree.AbstractAttribute:java.lang.String getText()",
+                "org.dom4j.tree.AbstractBranch:java.lang.String getText()",
+                "org.dom4j.tree.AbstractElement:java.lang.String attributeValue(java.lang.String)",
+                "org.dom4j.tree.AbstractNode:java.util.List selectNodes(java.lang.String)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.AbstractNode:org.dom4j.Node selectSingleNode(java.lang.String)",
+                "org.dom4j.tree.AbstractDocumentType:java.lang.String getText()",
+                "org.dom4j.tree.AbstractElement:java.lang.String getName()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                "org.dom4j.tree.FlyweightCDATA:java.lang.String getText()"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                    "org.dom4j.io.SAXReader:void setXMLReader(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXHelper:org.xml.sax.XMLReader createXMLReader(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)"
+                ]
+            }
+        },
+        "org.apache.httpcomponents:httpclient:4.1.3": {
+            "used-method num": 8,
+            "used method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:void abort()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.apache.zookeeper:zookeeper:3.3.5": {
+            "used-method num": 41,
+            "used method": [
+                "org.apache.zookeeper.server.quorum.QuorumPeer:void run()",
+                "org.apache.zookeeper.server.ZooKeeperServerMain:void runFromConfig(org.apache.zookeeper.server.ServerConfig)",
+                "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                "org.apache.zookeeper.ZooKeeper:void <init>(java.lang.String,int,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat setData(java.lang.String,byte[],int)",
+                "org.apache.zookeeper.ZooKeeper:void delete(java.lang.String,int)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,boolean)",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:void run()",
+                "org.apache.zookeeper.server.SessionTrackerImpl:void run()",
+                "org.apache.zookeeper.ZooKeeper:byte[] getData(java.lang.String,boolean,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker:void run()",
+                "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:void run()",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.server.NIOServerCnxn$CommandThread:void run()",
+                "org.apache.zookeeper.KeeperException:java.lang.String getMessage()",
+                "org.apache.zookeeper.server.ServerConfig:java.net.InetSocketAddress getClientPortAddress()",
+                "org.apache.zookeeper.ZooKeeper:java.lang.String create(java.lang.String,byte[],java.util.List,org.apache.zookeeper.CreateMode)",
+                "org.apache.zookeeper.WatchedEvent:org.apache.zookeeper.Watcher$Event$EventType getType()",
+                "org.apache.zookeeper.server.quorum.Leader$LearnerCnxAcceptor:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:void run()",
+                "org.apache.zookeeper.server.ZooKeeperServerMain:void <init>()",
+                "org.apache.zookeeper.server.SyncRequestProcessor$1:void run()",
+                "org.apache.zookeeper.ClientCnxn$EventThread:void run()",
+                "org.apache.zookeeper.server.quorum.LearnerHandler$1:void run()",
+                "org.apache.zookeeper.server.PrepRequestProcessor:void run()",
+                "org.apache.zookeeper.server.quorum.LearnerHandler:void run()",
+                "org.apache.zookeeper.ZooKeeper:void <clinit>()",
+                "org.apache.zookeeper.server.quorum.ObserverRequestProcessor:void run()",
+                "org.apache.zookeeper.ZooKeeper:byte[] getData(java.lang.String,org.apache.zookeeper.Watcher,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.ZooDefs$Ids:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,boolean)",
+                "org.apache.zookeeper.Watcher$Event$EventType:void <clinit>()",
+                "org.apache.zookeeper.server.SyncRequestProcessor:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer:void start()",
+                "org.apache.zookeeper.server.ServerConfig:void <init>()",
+                "org.apache.zookeeper.server.ServerConfig:void parse(java.lang.String)",
+                "org.apache.zookeeper.server.NIOServerCnxn$Factory:void start()",
+                "org.apache.zookeeper.server.NIOServerCnxn$Factory:void run()",
+                "org.apache.zookeeper.server.quorum.FollowerRequestProcessor:void run()",
+                "org.apache.zookeeper.CreateMode:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2019-0201"
+            ],
+            "used vul-method": [
+                "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                "org.apache.zookeeper.server.SyncRequestProcessor:void run()"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2019-0201": [
+                    "org.apache.zookeeper.server.FinalRequestProcessor:void processRequest(org.apache.zookeeper.server.Request)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-0201": [
+                    "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                    "org.apache.zookeeper.server.SyncRequestProcessor:void run()"
+                ]
+            }
+        }
+    }
+}

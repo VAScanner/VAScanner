@@ -1,0 +1,29 @@
+{
+    "project name": "jitwxs_express-ssm",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.4.0": {
+            "used-method num": 11,
+            "used method": [
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.authc.IncorrectCredentialsException:void <init>(java.lang.String)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getCredentials()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setRoles(java.util.Set)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.4.0": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "project name": "sunwu51_ihat_location",
+    "vulnerable dependencies": {
+        "org.dom4j:dom4j:2.0.0": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0": {
+            "used-method num": 31,
+            "used method": [
+                "org.eclipse.paho.client.mqttv3.MqttAsyncClient$ReconnectTask:void run()",
+                "org.eclipse.paho.client.mqttv3.MqttClient:void publish(java.lang.String,org.eclipse.paho.client.mqttv3.MqttMessage)",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttWireMessage:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.internal.ClientComms$DisconnectBG:void run()",
+                "org.eclipse.paho.client.mqttv3.internal.websocket.WebSocketReceiver:void run()",
+                "org.eclipse.paho.client.mqttv3.internal.CommsSender:void run()",
+                "org.eclipse.paho.client.mqttv3.MqttClient:void connect(org.eclipse.paho.client.mqttv3.MqttConnectOptions)",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttPublish:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.internal.Token:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.MqttConnectOptions:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttUnsubscribe:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttConnect:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.MqttConnectOptions:void <init>()",
+                "org.eclipse.paho.client.mqttv3.internal.DisconnectedMessageBuffer:void run()",
+                "org.eclipse.paho.client.mqttv3.MqttClient:void <init>(java.lang.String,java.lang.String,org.eclipse.paho.client.mqttv3.MqttClientPersistence)",
+                "org.eclipse.paho.client.mqttv3.MqttMessage:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.MqttException:java.lang.Throwable getCause()",
+                "org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG:void run()",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttAck:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.ScheduledExecutorPingSender$PingRunnable:void run()",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttPubRel:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.TimerPingSender$PingTask:void run()",
+                "org.eclipse.paho.client.mqttv3.persist.MemoryPersistence:void <init>()",
+                "org.eclipse.paho.client.mqttv3.MqttMessage:void <init>(byte[])",
+                "org.eclipse.paho.client.mqttv3.internal.CommsTokenStore:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.internal.CommsCallback:void run()",
+                "org.eclipse.paho.client.mqttv3.internal.CommsReceiver:void run()",
+                "org.eclipse.paho.client.mqttv3.MqttException:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.internal.wire.MqttSubscribe:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.MqttTopic:java.lang.String toString()",
+                "org.eclipse.paho.client.mqttv3.MqttException:java.lang.String getMessage()"
+            ],
+            "CVE": [
+                "CVE-2019-11777"
+            ],
+            "used vul-method": [
+                "org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG:void run()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2019-11777": [
+                    "org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule:void start()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-11777": [
+                    "org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG:void run()"
+                ]
+            }
+        }
+    }
+}

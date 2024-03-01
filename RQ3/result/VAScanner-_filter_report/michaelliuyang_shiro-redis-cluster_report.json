@@ -1,0 +1,36 @@
+{
+    "project name": "michaelliuyang_shiro-redis-cluster",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.1.1.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:3.1.1.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:3.1.1.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.2.0": {
+            "used-method num": 10,
+            "used method": [
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.util.Collection fromRealm(java.lang.String)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addStringPermissions(java.util.Collection)",
+                "org.apache.shiro.session.mgt.eis.AbstractSessionDAO:void <init>()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addRole(java.lang.String)",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toBase64()",
+                "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:void <init>()",
+                "org.apache.shiro.crypto.hash.Md5Hash:void <init>(java.lang.Object,java.lang.Object)"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.0": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

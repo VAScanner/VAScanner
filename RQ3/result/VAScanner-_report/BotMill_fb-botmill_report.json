@@ -1,0 +1,46 @@
+{
+    "project name": "BotMill_fb-botmill",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 17,
+            "used method": [
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read(byte[])",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[])",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[])",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 10,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void trace(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "project name": "mranye_PaperAnalysis",
+    "vulnerable dependencies": {
+        "com.mchange:c3p0:0.9.5.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.3.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:3.17": {
+            "used-method num": 35,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getPhysicalNumberOfRows()",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:int getPhysicalNumberOfCells()",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFont(org.apache.poi.ss.usermodel.Font)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellType(int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void <init>()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.Font createFont()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:int addMergedRegion(org.apache.poi.ss.util.CellRangeAddress)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellStyle(org.apache.poi.ss.usermodel.CellStyle)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow getRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:void setColumnWidth(int,int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:short getFirstCellNum()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setFontHeightInPoints(short)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setAlignment(org.apache.poi.ss.usermodel.HorizontalAlignment)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:int getPhysicalNumberOfCells()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellType(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:short getFirstCellNum()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.xssf.streaming.SXSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.xssf.streaming.SXSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:int getPhysicalNumberOfRows()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setColor(short)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.CellStyle createCellStyle()"
+            ],
+            "CVE": [
+                "CVE-2019-12415"
+            ],
+            "used vul-method": [
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell getCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellType(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()"
+            ],
+            "vul-called frequency": 24,
+            "related vul root method": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                    "org.apache.poi.xssf.streaming.SheetDataWriter:void writeCell(int,org.apache.poi.ss.usermodel.Cell)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell getCell(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellType(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()"
+                ]
+            }
+        }
+    }
+}

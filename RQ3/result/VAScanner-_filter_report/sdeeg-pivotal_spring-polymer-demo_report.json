@@ -1,0 +1,48 @@
+{
+    "project name": "sdeeg-pivotal_spring-polymer-demo",
+    "modules": {
+        "com.pivotal.demo:polymer-demo-ui": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.6.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.3.6": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.pivotal.demo:polymer-demo-resource": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.6.RELEASE": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void afterPropertiesSet()"
+                    ]
+                },
+                "org.apache.httpcomponents:httpclient:4.3.6": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.pivotal.demo:polymer-demo-authserver": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.6.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()"
+                    ]
+                },
+                "org.apache.httpcomponents:httpclient:4.3.6": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

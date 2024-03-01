@@ -1,0 +1,67 @@
+{
+    "project name": "bomberjin_BM-commons-Utils",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.1": {
+            "used-method num": 36,
+            "used method": [
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.conn.routing.HttpRoute:boolean equals(java.lang.Object)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <init>(javax.net.ssl.SSLContext)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>()",
+                "org.apache.http.auth.AuthScope:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.conn.scheme.Scheme:java.lang.String toString()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.auth.AuthOption:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.ietf.jgss.Oid:boolean equals(java.lang.Object)",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.apache.http.conn.HttpInetSocketAddress:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.conn.scheme.SchemeSocketFactoryAdaptor:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicAuthCache:java.lang.String toString()",
+                "org.apache.http.conn.scheme.SchemeRegistry:org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme)",
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.lang.String)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <clinit>()",
+                "org.apache.http.conn.scheme.SocketFactoryAdaptor:boolean equals(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 7,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.eclipse.jetty:jetty-util:9.3.7.v20160115": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

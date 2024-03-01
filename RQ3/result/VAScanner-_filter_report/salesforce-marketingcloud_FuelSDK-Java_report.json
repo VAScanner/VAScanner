@@ -1,0 +1,77 @@
+{
+    "project name": "salesforce-marketingcloud_FuelSDK-Java",
+    "vulnerable dependencies": {
+        "commons-beanutils:commons-beanutils:1.9.2": {
+            "used-method num": 23,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:void setProperty(java.lang.Object,java.lang.String,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtilsBean:org.apache.commons.beanutils.ConvertUtilsBean getConvertUtils()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.util.Set entrySet()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                "org.apache.commons.beanutils.ConvertUtilsBean:void register(org.apache.commons.beanutils.Converter,java.lang.Class)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.util.Set keySet()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)",
+                "org.apache.commons.beanutils.DynaProperty:java.lang.String toString()",
+                "org.apache.commons.beanutils.converters.ConverterFacade:java.lang.String toString()",
+                "org.apache.commons.beanutils.converters.DateTimeConverter:java.lang.String toString()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                "org.apache.commons.beanutils.converters.ArrayConverter:java.lang.String toString()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:java.util.Iterator iterator()",
+                "org.apache.commons.beanutils.converters.NumberConverter:java.lang.String toString()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.converters.AbstractConverter:java.lang.String toString()",
+                "org.apache.commons.beanutils.BeanUtilsBean:void <clinit>()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set keySet()",
+                "org.apache.commons.beanutils.ConversionException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.apache.commons.beanutils.BeanUtilsBean:org.apache.commons.beanutils.BeanUtilsBean getInstance()"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.BeanUtils:void setProperty(java.lang.Object,java.lang.String,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set keySet()",
+                "org.apache.commons.beanutils.BeanUtilsBean:org.apache.commons.beanutils.BeanUtilsBean getInstance()"
+            ],
+            "vul-called frequency": 28,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.BeanUtils:void setProperty(java.lang.Object,java.lang.String,java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                    "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set keySet()",
+                    "org.apache.commons.beanutils.BeanUtilsBean:org.apache.commons.beanutils.BeanUtilsBean getInstance()"
+                ]
+            }
+        },
+        "org.apache.cxf:cxf-rt-transports-http:3.1.2": {
+            "used-method num": 6,
+            "used method": [
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.cxf.transports.http.configuration.HTTPClientPolicy:void setReceiveTimeout(long)",
+                "org.apache.cxf.transports.http.configuration.HTTPClientPolicy:void setConnectionTimeout(long)",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.cxf.transports.http.configuration.HTTPClientPolicy:void <init>()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

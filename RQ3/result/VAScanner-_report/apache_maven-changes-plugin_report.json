@@ -1,0 +1,33 @@
+{
+    "project name": "apache_maven-changes-plugin",
+    "vulnerable dependencies": {
+        "org.apache.cxf:cxf-rt-frontend-jaxrs:2.6.3": {
+            "used-method num": 16,
+            "used method": [
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.WebClient type(javax.ws.rs.core.MediaType)",
+                "org.apache.cxf.jaxrs.client.WebClient:javax.ws.rs.core.Response post(java.lang.Object)",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.WebClient create(java.lang.String)",
+                "org.apache.cxf.jaxrs.client.WebClient:javax.ws.rs.core.Response get()",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.WebClient accept(javax.ws.rs.core.MediaType[])",
+                "org.apache.cxf.jaxrs.impl.MetadataMap:java.lang.String toString()",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.WebClient accept(java.lang.String[])",
+                "org.apache.cxf.jaxrs.ext.multipart.ContentDisposition:java.lang.String toString()",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.WebClient replacePath(java.lang.String)",
+                "org.apache.cxf.jaxrs.impl.UriBuilderImpl:javax.ws.rs.core.UriBuilder clone()",
+                "org.apache.cxf.jaxrs.client.ServerWebApplicationException:java.lang.String toString()",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.WebClient path(java.lang.String,java.lang.Object[])",
+                "org.apache.cxf.jaxrs.client.WebClient:org.apache.cxf.jaxrs.client.ClientConfiguration getConfig(java.lang.Object)",
+                "org.apache.cxf.jaxrs.impl.MetadataMap:java.lang.Object getFirst(java.lang.Object)",
+                "org.apache.cxf.jaxrs.ext.form.Form:java.lang.String toString()",
+                "org.apache.cxf.jaxrs.utils.ParameterizedCollectionType:java.lang.String toString()"
+            ]
+        },
+        "org.apache.httpcomponents:httpclient:4.2.3": {
+            "used-method num": 2,
+            "used method": [
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()"
+            ]
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "project name": "MccreeFei_EasyChat",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.logging.log4j:log4j-core:2.8.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:4.3.7.RELEASE": {
+            "used-method num": 7,
+            "used method": [
+                "org.springframework.http.HttpHeaders:boolean containsKey(java.lang.Object)",
+                "org.springframework.http.HttpHeaders:java.util.List remove(java.lang.Object)",
+                "org.springframework.http.server.ServletServerHttpResponse$ServletResponseHttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.http.server.ServletServerHttpResponse$ServletResponseHttpHeaders:boolean containsKey(java.lang.Object)",
+                "org.springframework.http.HttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.web.util.UriComponentsBuilder:java.lang.Object clone()",
+                "org.springframework.http.HttpHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)"
+            ]
+        },
+        "org.springframework:spring-messaging:4.3.7.RELEASE": {
+            "used-method num": 10,
+            "used method": [
+                "org.springframework.messaging.simp.stomp.StompHeaderAccessor:void <clinit>()",
+                "org.springframework.messaging.MessageHeaders:java.lang.Object remove(java.lang.Object)",
+                "org.springframework.messaging.simp.stomp.StompHeaderAccessor:org.springframework.messaging.simp.stomp.StompHeaderAccessor wrap(org.springframework.messaging.Message)",
+                "org.springframework.messaging.MessageHeaders:java.lang.Object get(java.lang.Object)",
+                "org.springframework.messaging.MessageHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.messaging.simp.SimpMessageHeaderAccessor:void <clinit>()",
+                "org.springframework.messaging.simp.SimpMessageHeaderAccessor:java.util.Map getSessionAttributes()",
+                "org.springframework.messaging.MessageHeaders:java.util.Collection values()",
+                "org.springframework.messaging.MessageHeaders:boolean containsKey(java.lang.Object)",
+                "org.springframework.messaging.support.MessageHeaderAccessor:void <clinit>()"
+            ]
+        },
+        "commons-fileupload:commons-fileupload:1.3.2": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

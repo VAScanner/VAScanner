@@ -1,0 +1,19 @@
+{
+    "project name": "PayU_Ratel",
+    "modules": {
+        "com.payu.ratel:ratel-project": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:4.1.3.RELEASE": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.springframework.remoting.caucho.HessianServiceExporter:void handleRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                        "org.springframework.remoting.caucho.HessianServiceExporter:void <init>()",
+                        "org.springframework.remoting.caucho.HessianClientInterceptor:java.lang.Object invoke(org.aopalliance.intercept.MethodInvocation)",
+                        "org.springframework.remoting.caucho.HessianProxyFactoryBean:void <init>()",
+                        "org.springframework.remoting.caucho.HessianExporter:void prepare()"
+                    ]
+                }
+            }
+        }
+    }
+}

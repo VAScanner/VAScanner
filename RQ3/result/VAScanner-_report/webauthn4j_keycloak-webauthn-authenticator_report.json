@@ -1,0 +1,28 @@
+{
+    "project name": "webauthn4j_keycloak-webauthn-authenticator",
+    "modules": {
+        "com.webauthn4j:keycloak-webauthn": {
+            "vulnerable dependencies": {
+                "org.keycloak:keycloak-server-spi-private:4.8.3.Final": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.keycloak.authentication.AuthenticationFlowException:void <init>(java.lang.String,org.keycloak.authentication.AuthenticationFlowError)",
+                        "org.keycloak.authentication.AuthenticationFlowError:void <clinit>()"
+                    ]
+                },
+                "org.keycloak:keycloak-services:4.8.3.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.keycloak:keycloak-model-jpa:4.8.3.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

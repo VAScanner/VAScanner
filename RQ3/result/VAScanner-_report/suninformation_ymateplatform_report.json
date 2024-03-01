@@ -1,0 +1,159 @@
+{
+    "project name": "suninformation_ymateplatform",
+    "modules": {
+        "net.ymate.platform:ymate-platform-parent": {
+            "vulnerable dependencies": {
+                "commons-fileupload:commons-fileupload:1.3": {
+                    "used-method num": 28,
+                    "used method": [
+                        "org.apache.commons.fileupload.disk.DiskFileItemFactory:void setSizeThreshold(int)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:void write(java.io.File)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:long getSize()",
+                        "org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl:boolean isFormField()",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:void delete()",
+                        "org.apache.commons.fileupload.disk.DiskFileItemFactory:void setRepository(java.io.File)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:boolean isFormField()",
+                        "org.apache.commons.fileupload.FileUploadBase$FileUploadIOException:java.lang.Throwable getCause()",
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:void <init>(org.apache.commons.fileupload.FileItemFactory)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String getString(java.lang.String)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.io.OutputStream getOutputStream()",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.io.InputStream getInputStream()",
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:org.apache.commons.fileupload.FileItemIterator getItemIterator(javax.servlet.http.HttpServletRequest)",
+                        "org.apache.commons.fileupload.servlet.ServletRequestContext:java.lang.String toString()",
+                        "org.apache.commons.fileupload.FileUploadBase:void setSizeMax(long)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String getFieldName()",
+                        "org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl:java.io.InputStream openStream()",
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:void <init>()",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String getName()",
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:boolean isMultipartContent(javax.servlet.http.HttpServletRequest)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String getContentType()",
+                        "org.apache.commons.fileupload.disk.DiskFileItemFactory:void <init>()",
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)",
+                        "org.apache.commons.fileupload.util.Streams:java.lang.String asString(java.io.InputStream,java.lang.String)",
+                        "org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl:java.lang.String getFieldName()",
+                        "org.apache.commons.fileupload.FileUploadException:void printStackTrace(java.io.PrintStream)",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:byte[] get()",
+                        "org.apache.commons.fileupload.disk.DiskFileItem:java.lang.String toString()"
+                    ],
+                    "CVE": [
+                        "CVE-2016-3092",
+                        "CVE-2023-24998"
+                    ],
+                    "used vul-method": [
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:org.apache.commons.fileupload.FileItemIterator getItemIterator(javax.servlet.http.HttpServletRequest)",
+                        "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2016-3092": [
+                            "org.apache.commons.fileupload.MultipartStream:void <init>(java.io.InputStream,byte[],int,org.apache.commons.fileupload.MultipartStream$ProgressNotifier)"
+                        ],
+                        "CVE-2023-24998": [
+                            "org.apache.commons.fileupload.FileUploadBase:java.util.List parseRequest(org.apache.commons.fileupload.RequestContext)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2016-3092": [
+                            "org.apache.commons.fileupload.servlet.ServletFileUpload:org.apache.commons.fileupload.FileItemIterator getItemIterator(javax.servlet.http.HttpServletRequest)",
+                            "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)"
+                        ],
+                        "CVE-2023-24998": [
+                            "org.apache.commons.fileupload.servlet.ServletFileUpload:java.util.List parseRequest(javax.servlet.http.HttpServletRequest)"
+                        ]
+                    }
+                },
+                "com.mchange:c3p0:0.9.2": {
+                    "used-method num": 86,
+                    "used method": [
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:int getUpdateCount()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:java.sql.ResultSet getGeneratedKeys()",
+                        "com.mchange.v2.c3p0.impl.DriverManagerDataSourceBase:java.lang.String toString()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.sql.ResultSet getGeneratedKeys()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:void rollback()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                        "com.mchange.v2.c3p0.WrapperConnectionPoolDataSource:java.lang.String toString()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:int[] executeBatch()",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:java.lang.Object getObject(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:boolean execute()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:void close()",
+                        "com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:java.sql.Connection getConnection()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:void clearBatch()",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:java.lang.Object getObject(int)",
+                        "com.mchange.v2.c3p0.stmt.SimpleStatementCacheKey:boolean equals(java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyCallableStatement:java.sql.ResultSet getGeneratedKeys()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:java.sql.ResultSet executeQuery()",
+                        "com.mchange.v2.c3p0.impl.NewProxyStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:boolean next()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void clearBatch()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:java.sql.ResultSetMetaData getMetaData()",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:java.lang.String getString(java.lang.String)",
+                        "com.mchange.v2.resourcepool.BasicResourcePool$5:void run()",
+                        "com.mchange.v2.c3p0.stmt.SimpleStatementCacheKey:int hashCode()",
+                        "com.mchange.v2.c3p0.impl.NewProxyDatabaseMetaData:java.sql.ResultSet getColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:boolean isClosed()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.DatabaseMetaData getMetaData()",
+                        "com.mchange.v2.c3p0.impl.NewProxyDatabaseMetaData:java.sql.ResultSet getPrimaryKeys(java.lang.String,java.lang.String,java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:void close()",
+                        "com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase:void <clinit>()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:void setObject(int,java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.PreparedStatement prepareStatement(java.lang.String,java.lang.String[])",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyPreparedStatement:java.sql.ResultSet getGeneratedKeys()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void close()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.sql.ResultSet executeQuery()",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:void <clinit>()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void setNull(int,int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void setObject(int,java.lang.Object,int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:void setNull(int,int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:int[] executeBatch()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void registerOutParameter(int,int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:void commit()",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:int executeUpdate()",
+                        "com.mchange.v2.c3p0.DriverManagerDataSource:java.sql.Connection getConnection()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.Statement createStatement(int,int)",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:void setPassword(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.Statement createStatement()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:boolean getMoreResults()",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:void <init>()",
+                        "com.mchange.v2.c3p0.stmt.MemoryCoalescedStatementCacheKey:int hashCode()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.lang.String getString(int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:void close()",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:void setUser(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:int getInt(int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:boolean getAutoCommit()",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:void setJdbcUrl(java.lang.String)",
+                        "com.mchange.v2.c3p0.stmt.StatementCacheKey:java.lang.String toString()",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:java.lang.String toString()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:void setTransactionIsolation(int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:java.lang.String getString(int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:int executeUpdate()",
+                        "com.mchange.v2.c3p0.stmt.MemoryCoalescedStatementCacheKey:boolean equals(java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                        "com.mchange.v2.c3p0.ComboPooledDataSource:void setDriverClass(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyDatabaseMetaData:java.lang.String getDatabaseProductName()",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyPreparedStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyStatement:java.sql.ResultSet getGeneratedKeys()",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyStatement:java.sql.ResultSet getGeneratedKeys()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.CallableStatement prepareCall(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:int getTransactionIsolation()",
+                        "com.mchange.v2.c3p0.impl.AbstractIdentityTokenized:boolean equals(java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$ProxyConnectionInvocationHandler:java.lang.String toString()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void addBatch()",
+                        "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyCallableStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                        "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:void addBatch()",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.PreparedStatement prepareStatement(java.lang.String,int)",
+                        "com.mchange.v2.c3p0.impl.DefaultConnectionTester:boolean equals(java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.NewProxyResultSet:void close()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.sql.ResultSet getResultSet()",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.lang.Object getObject(int)",
+                        "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:void setObject(int,java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.AuthMaskingProperties:java.lang.String toString()",
+                        "com.mchange.v2.c3p0.impl.DbAuth:boolean equals(java.lang.Object)",
+                        "com.mchange.v2.c3p0.impl.NewProxyConnection:void setAutoCommit(boolean)"
+                    ]
+                }
+            }
+        }
+    }
+}

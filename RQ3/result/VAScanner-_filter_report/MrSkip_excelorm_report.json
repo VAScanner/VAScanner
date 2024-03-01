@@ -1,0 +1,34 @@
+{
+    "project name": "MrSkip_excelorm",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.7": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:4.0.0": {
+            "used-method num": 20,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFWorkbook getWorkbook()",
+                "org.apache.poi.xssf.usermodel.XSSFCreationHelper:org.apache.poi.xssf.usermodel.XSSFFormulaEvaluator createFormulaEvaluator()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:boolean getBooleanCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.ss.usermodel.CellType getCachedFormulaResultType()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.xssf.usermodel.XSSFSheet getSheet()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.xssf.usermodel.XSSFRichTextString getRichStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.ss.usermodel.CellType getCellType()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:double getNumericCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.File)"
+            ]
+        }
+    }
+}

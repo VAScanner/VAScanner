@@ -1,0 +1,26 @@
+{
+    "project name": "joolu_ddd-sample",
+    "vulnerable dependencies": {
+        "org.springframework:spring-webmvc:2.5.6": {
+            "used-method num": 5,
+            "used method": [
+                "org.springframework.web.servlet.DispatcherServlet:void <init>()",
+                "org.springframework.web.servlet.support.RequestContextUtils:java.util.Locale getLocale(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.web.servlet.mvc.SimpleFormController:void <init>()",
+                "org.springframework.web.servlet.mvc.multiaction.MultiActionController:void initBinder(javax.servlet.http.HttpServletRequest,org.springframework.web.bind.ServletRequestDataBinder)",
+                "org.springframework.web.servlet.mvc.multiaction.MultiActionController:void <init>()"
+            ]
+        },
+        "org.springframework:spring-web:2.5.6": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.web.context.support.ServletContextResource:boolean equals(java.lang.Object)",
+                "org.springframework.web.context.support.WebApplicationContextUtils:org.springframework.web.context.WebApplicationContext getRequiredWebApplicationContext(javax.servlet.ServletContext)"
+            ]
+        },
+        "org.apache.activemq:activemq-core:5.2.0": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

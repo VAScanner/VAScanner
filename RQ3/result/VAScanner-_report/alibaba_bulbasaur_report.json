@@ -1,0 +1,69 @@
+{
+    "project name": "alibaba_bulbasaur",
+    "modules": {
+        "com.alibaba.pokemon.bulbasaur:bulbasaur-parent": {
+            "vulnerable dependencies": {
+                "dom4j:dom4j:1.6.1": {
+                    "used-method num": 29,
+                    "used method": [
+                        "org.dom4j.tree.AbstractAttribute:java.lang.String getName()",
+                        "org.dom4j.io.SAXReader:void <init>()",
+                        "org.dom4j.tree.ContentListFacade:boolean isEmpty()",
+                        "org.dom4j.DocumentException:java.lang.String getMessage()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object remove(java.lang.Object)",
+                        "org.dom4j.tree.FlyweightAttribute:java.lang.String getValue()",
+                        "org.dom4j.tree.ContentListFacade:boolean contains(java.lang.Object)",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set keySet()",
+                        "org.dom4j.tree.AbstractElement:java.lang.String attributeValue(java.lang.String)",
+                        "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                        "org.dom4j.tree.AbstractBranch:java.lang.String getTextTrim()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:boolean containsKey(java.lang.Object)",
+                        "org.dom4j.tree.AbstractNode:java.util.List selectNodes(java.lang.String)",
+                        "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:int size()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                        "org.dom4j.io.SAXReader:org.dom4j.Document read(java.net.URL)",
+                        "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:void putAll(java.util.Map)",
+                        "org.dom4j.tree.DefaultElement:java.lang.String getText()",
+                        "org.dom4j.tree.AbstractElement:java.lang.String getName()",
+                        "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)",
+                        "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set entrySet()",
+                        "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:int size()",
+                        "org.dom4j.tree.AbstractElement:java.util.Iterator elementIterator()",
+                        "org.dom4j.tree.DefaultElement:java.util.Iterator attributeIterator()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-10683"
+                    ],
+                    "used vul-method": [
+                        "org.dom4j.io.SAXReader:org.dom4j.Document read(java.net.URL)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2020-10683": [
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.net.URL)",
+                            "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                            "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                            "org.dom4j.io.SAXReader:void setXMLReader(org.xml.sax.XMLReader)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-10683": [
+                            "org.dom4j.io.SAXReader:org.dom4j.Document read(java.net.URL)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

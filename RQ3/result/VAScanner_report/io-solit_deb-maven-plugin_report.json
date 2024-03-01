@@ -1,0 +1,46 @@
+{
+    "project name": "io-solit_deb-maven-plugin",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.15": {
+            "used-method num": 19,
+            "used method": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <clinit>()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setIds(int,int)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setUserId(int)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void closeArchiveEntry()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setModTime(long)",
+                "org.apache.commons.compress.compressors.gzip.GzipParameters:void <init>()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:int getMode()",
+                "org.apache.commons.compress.compressors.gzip.GzipParameters:void setCompressionLevel(int)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setSize(long)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setGroupId(int)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void <init>(java.lang.String)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <init>(java.io.OutputStream,java.lang.String)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream:void <init>(java.io.OutputStream,org.apache.commons.compress.compressors.gzip.GzipParameters)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setLinkName(java.lang.String)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void <init>(java.lang.String,byte)"
+            ],
+            "CVE": [
+                "CVE-2019-12402"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2019-12402": [
+                    "org.apache.commons.compress.archivers.zip.NioZipEncoding:java.nio.ByteBuffer encode(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12402": [
+                    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)"
+                ]
+            }
+        }
+    }
+}

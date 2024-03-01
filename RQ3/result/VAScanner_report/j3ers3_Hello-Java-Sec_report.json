@@ -1,0 +1,101 @@
+{
+    "project name": "j3ers3_Hello-Java-Sec",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.22": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.thoughtworks.xstream:xstream:1.4.10": {
+            "used-method num": 19,
+            "used method": [
+                "com.thoughtworks.xstream.io.path.Path:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.ThreadSafeSimpleDateFormat:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                "com.thoughtworks.xstream.core.util.DependencyInjectionFactory$TypedValue:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.reflection.FieldKey:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$IdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CustomObjectOutputStream:void close()",
+                "com.thoughtworks.xstream.core.util.WeakCache:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:void close()",
+                "com.thoughtworks.xstream.core.util.FastField:java.lang.String toString()",
+                "com.thoughtworks.xstream.core.util.FastStack:java.lang.String toString()",
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.XStream:void setupDefaultSecurity(com.thoughtworks.xstream.XStream)",
+                "com.thoughtworks.xstream.core.util.ObjectIdDictionary$WeakIdWrapper:java.lang.String toString()",
+                "com.thoughtworks.xstream.converters.ErrorWritingException:java.lang.String getMessage()",
+                "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.thoughtworks.xstream.XStream:void <clinit>()",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2021-29505",
+                "CVE-2020-26258",
+                "CVE-2020-26259",
+                "CVE-2021-43859"
+            ],
+            "used vul-method": [
+                "com.thoughtworks.xstream.XStream:void <init>()",
+                "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+            ],
+            "vul-called frequency": 7,
+            "related vul root method": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                    "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-29505": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2020-26258": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2020-26259": [
+                    "com.thoughtworks.xstream.XStream:void <init>()"
+                ],
+                "CVE-2021-43859": [
+                    "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                    "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                ]
+            }
+        },
+        "org.jolokia:jolokia-core:1.4.0": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.xmlbeam:xmlprojector:1.4.14": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.owasp.esapi:esapi:2.2.0.0": {
+            "used-method num": 5,
+            "used method": [
+                "org.owasp.esapi.ESAPI:void <clinit>()",
+                "org.owasp.esapi.crypto.CipherText:java.lang.String toString()",
+                "org.owasp.esapi.codecs.OracleCodec:void <init>()",
+                "org.owasp.esapi.ESAPI:org.owasp.esapi.Encoder encoder()",
+                "org.owasp.esapi.crypto.CipherSpec:java.lang.String toString()"
+            ]
+        },
+        "org.apache.logging.log4j:log4j-core:2.8.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.dubbo:dubbo:2.7.3": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

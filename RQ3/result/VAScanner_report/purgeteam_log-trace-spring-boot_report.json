@@ -1,0 +1,33 @@
+{
+    "project name": "purgeteam_log-trace-spring-boot",
+    "modules": {
+        "com.purgeteam:log-trace-spring-boot": {
+            "vulnerable dependencies": {
+                "org.springframework.boot:spring-boot:2.1.8.RELEASE": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.boot.web.client.RestTemplateBuilder:org.springframework.web.client.RestTemplate build()",
+                        "org.springframework.boot.context.properties.source.SpringConfigurationPropertySources$SourcesIterator:boolean hasNext()",
+                        "org.springframework.boot.context.properties.source.SpringConfigurationPropertySources$SourcesIterator:org.springframework.boot.context.properties.source.ConfigurationPropertySource next()"
+                    ]
+                },
+                "org.apache.tomcat.embed:tomcat-embed-core:9.0.24": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.dubbo:dubbo:2.7.3": {
+                    "used-method num": 7,
+                    "used method": [
+                        "org.apache.dubbo.common.utils.ConcurrentHashSet:java.util.Iterator iterator()",
+                        "org.apache.dubbo.common.utils.LRUCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.dubbo.rpc.RpcContext:void <clinit>()",
+                        "org.apache.dubbo.rpc.RpcContext:org.apache.dubbo.rpc.RpcContext setAttachment(java.lang.String,java.lang.String)",
+                        "org.apache.dubbo.rpc.RpcContext:org.apache.dubbo.rpc.RpcContext getContext()",
+                        "org.apache.dubbo.common.utils.LRUCache:java.lang.Object get(java.lang.Object)",
+                        "org.apache.dubbo.common.utils.ConcurrentHashSet:boolean add(java.lang.Object)"
+                    ]
+                }
+            }
+        }
+    }
+}

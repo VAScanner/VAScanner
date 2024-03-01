@@ -1,0 +1,70 @@
+{
+    "project name": "citusdata_podyn",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:42.1.1": {
+            "used-method num": 39,
+            "used method": [
+                "org.postgresql.jdbc.PgResultSet:java.lang.String getString(int)",
+                "org.postgresql.jdbc.PgArray:java.lang.String toString()",
+                "org.postgresql.jdbc.PgConnection:java.sql.Statement createStatement()",
+                "org.postgresql.copy.CopyManager:void <init>(org.postgresql.core.BaseConnection)",
+                "org.postgresql.core.v3.SimpleQuery:java.lang.String toString()",
+                "org.postgresql.util.ServerErrorMessage:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.postgresql.core.v3.CompositeQuery:java.lang.String toString()",
+                "org.postgresql.jdbc.PgPreparedStatement:java.sql.ResultSet executeQuery()",
+                "org.postgresql.jdbc.PgResultSet:boolean getBoolean(java.lang.String)",
+                "org.postgresql.util.PGobject:java.lang.String toString()",
+                "org.postgresql.jdbc.PgResultSet:java.lang.String getString(java.lang.String)",
+                "org.postgresql.jdbc.PgPreparedStatement:boolean execute(java.lang.String)",
+                "org.postgresql.replication.LogSequenceNumber:java.lang.String toString()",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                "org.postgresql.geometric.PGpoint:java.lang.Object clone()",
+                "org.postgresql.copy.CopyManager:long copyIn(java.lang.String,java.io.Reader)",
+                "org.postgresql.util.PGobject:java.lang.Object clone()",
+                "org.postgresql.hostchooser.SingleHostChooser:java.util.Iterator iterator()",
+                "org.postgresql.jdbc.FieldMetadata:java.lang.String toString()",
+                "org.postgresql.jdbc.PgStatement:boolean execute(java.lang.String)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.postgresql.core.v3.BatchedQuery:java.lang.String toString()",
+                "org.postgresql.jdbc.FieldMetadata$Key:java.lang.String toString()",
+                "org.postgresql.jdbc.PgPreparedStatement:void setString(int,java.lang.String)",
+                "org.postgresql.core.v3.SimpleParameterList:java.lang.String toString()",
+                "org.postgresql.hostchooser.MultiHostChooser:java.util.Iterator iterator()",
+                "org.postgresql.geometric.PGbox:java.lang.Object clone()",
+                "org.postgresql.core.ServerVersion$1:java.lang.String toString()",
+                "org.postgresql.hostchooser.GlobalHostStatusTracker$HostSpecStatus:java.lang.String toString()",
+                "org.postgresql.util.StreamWrapper:java.lang.String toString()",
+                "org.postgresql.jdbc.PgPreparedStatement:java.lang.String toString()",
+                "org.postgresql.jdbc.PgConnection:void close()",
+                "org.postgresql.core.CachedQuery:java.lang.String toString()",
+                "org.postgresql.jdbc.PgResultSet:boolean next()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.postgresql.util.HostSpec:java.lang.String toString()",
+                "org.postgresql.util.PSQLWarning:java.lang.String getMessage()",
+                "org.postgresql.core.Field:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2018-10936"
+            ],
+            "used vul-method": [
+                "org.postgresql.copy.CopyManager:long copyIn(java.lang.String,java.io.Reader)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2018-10936": [
+                    "org.postgresql.core.PGStream:boolean hasMessagePending()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-10936": [
+                    "org.postgresql.copy.CopyManager:long copyIn(java.lang.String,java.io.Reader)"
+                ]
+            }
+        },
+        "org.apache.logging.log4j:log4j-core:2.15.0": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

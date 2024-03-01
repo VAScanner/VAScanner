@@ -1,0 +1,165 @@
+{
+    "project name": "jensalm_spring-rest-server",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:0.9.24": {
+            "used-method num": 5,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()"
+            ]
+        },
+        "org.springframework:spring-core:4.0.1.RELEASE": {
+            "used-method num": 12,
+            "used method": [
+                "org.springframework.core.NestedCheckedException:java.lang.String getMessage()",
+                "org.springframework.core.NestedIOException:java.lang.String getMessage()",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                "org.springframework.core.NestedRuntimeException:java.lang.String getMessage()",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.core.NestedRuntimeException:void <clinit>()",
+                "org.springframework.cglib.core.CodeGenerationException:java.lang.Throwable getCause()",
+                "org.springframework.core.env.AbstractEnvironment:java.lang.String getProperty(java.lang.String)",
+                "org.springframework.core.env.AbstractEnvironment:java.lang.String getRequiredProperty(java.lang.String)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:void remove()"
+            ]
+        },
+        "org.springframework:spring-expression:4.0.1.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.expression.spel.SpelParseException:java.lang.String getMessage()",
+                "org.springframework.expression.spel.SpelEvaluationException:java.lang.String getMessage()",
+                "org.springframework.expression.spel.InternalParseException:org.springframework.expression.spel.SpelParseException getCause()",
+                "org.springframework.expression.ExpressionException:java.lang.String getMessage()"
+            ]
+        },
+        "org.springframework:spring-web:4.0.1.RELEASE": {
+            "used-method num": 10,
+            "used method": [
+                "org.springframework.web.context.ContextLoaderListener:void <init>(org.springframework.web.context.WebApplicationContext)",
+                "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void <init>()",
+                "org.springframework.web.filter.GenericFilterBean:void <init>()",
+                "org.springframework.http.converter.json.MappingJackson2HttpMessageConverter:void <clinit>()",
+                "org.springframework.web.context.ContextLoader:void <clinit>()",
+                "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void register(java.lang.Class[])",
+                "org.springframework.http.converter.json.MappingJackson2HttpMessageConverter:void <init>()",
+                "org.springframework.web.filter.CharacterEncodingFilter:void <init>()",
+                "org.springframework.http.HttpMethod:void <clinit>()",
+                "org.springframework.web.filter.CommonsRequestLoggingFilter:void <init>()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.0.1.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.DispatcherServlet:void <init>(org.springframework.web.context.WebApplicationContext)",
+                "org.springframework.web.servlet.DispatcherServlet:void <clinit>()",
+                "org.springframework.web.servlet.FrameworkServlet:void <clinit>()",
+                "org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter:void <init>()"
+            ]
+        },
+        "org.springframework.security:spring-security-web:3.2.0.RELEASE": {
+            "used-method num": 7,
+            "used method": [
+                "org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer:void <init>()",
+                "org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler:void <init>()",
+                "org.springframework.security.web.FilterInvocation$1:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler:void clearAuthenticationAttributes(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.security.web.savedrequest.SavedRequestAwareWrapper:java.lang.String getHeader(java.lang.String)",
+                "org.springframework.security.web.FilterChainProxy$VirtualFilterChain:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.context.SaveContextOnUpdateOrErrorResponseWrapper:java.io.PrintWriter getWriter()"
+            ]
+        },
+        "org.springframework.security:spring-security-config:3.2.0.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.security.config.http.SessionCreationPolicy:void <clinit>()",
+                "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object antMatchers(org.springframework.http.HttpMethod,java.lang.String[])",
+                "org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter:void <init>()",
+                "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object anyRequest()"
+            ]
+        },
+        "org.hibernate:hibernate-core:4.2.6.Final": {
+            "used-method num": 74,
+            "used method": [
+                "org.hibernate.collection.internal.PersistentBag:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentBag:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$ValueIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListIteratorProxy:void remove()",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:java.lang.Object next()",
+                "org.hibernate.PropertyAccessException:java.lang.String getMessage()",
+                "org.hibernate.UnresolvableObjectException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.JoinedIterator:void remove()",
+                "org.hibernate.internal.util.collections.JoinedIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentMap$EntrySetProxy:java.util.Iterator iterator()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeySet:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.SingletonIterator:java.lang.Object next()",
+                "org.hibernate.hql.internal.ast.util.ASTIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.IdentitySet:boolean isEmpty()",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$ValueIterator:java.lang.Object next()",
+                "org.hibernate.QueryException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentList:java.util.Iterator iterator()",
+                "org.hibernate.collection.internal.PersistentSet:boolean add(java.lang.Object)",
+                "org.hibernate.internal.util.collections.EmptyIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:void remove()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$HashIterator:void remove()",
+                "org.hibernate.internal.util.collections.SingletonIterator:void remove()",
+                "org.hibernate.internal.util.collections.EmptyIterator:void remove()",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$EntrySet:boolean isEmpty()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeySet:boolean isEmpty()",
+                "org.hibernate.TransientPropertyValueException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:void remove()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$HashIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$EntryIterator:java.util.Map$Entry next()",
+                "org.hibernate.collection.internal.PersistentSet:boolean isEmpty()",
+                "org.hibernate.internal.IteratorImpl:void remove()",
+                "org.hibernate.hql.internal.ast.util.ASTIterator:void remove()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:boolean hasNext()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$HashIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.IdentitySet:java.util.Iterator iterator()",
+                "org.hibernate.InstantiationException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.EmptyIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$EntrySet:boolean isEmpty()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:boolean hasNext()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$Values:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.JoinedIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$SetProxy:java.util.Iterator iterator()",
+                "org.hibernate.WrongClassException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeySet:boolean isEmpty()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$Values:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.IdentitySet:boolean add(java.lang.Object)",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeySet:java.util.Iterator iterator()",
+                "org.hibernate.PropertyValueException:java.lang.String getMessage()",
+                "org.hibernate.NonUniqueObjectException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$SetProxy:boolean add(java.lang.Object)",
+                "org.hibernate.internal.IteratorImpl:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentList:boolean add(java.lang.Object)",
+                "org.hibernate.internal.util.collections.SingletonIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:void remove()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$EntryIterator:java.util.Map$Entry next()",
+                "org.hibernate.internal.IteratorImpl:boolean hasNext()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$HashIterator:void remove()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:boolean add(java.lang.Object)",
+                "org.hibernate.hql.internal.ast.util.ASTIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:void remove()",
+                "org.hibernate.StaleObjectStateException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentSet:java.util.Iterator iterator()"
+            ]
+        }
+    }
+}

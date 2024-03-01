@@ -1,0 +1,99 @@
+{
+    "project name": "proxyee-down-org_pdown-core",
+    "vulnerable dependencies": {
+        "io.netty:netty-codec:4.1.25.Final": {
+            "used-method num": 16,
+            "used method": [
+                "io.netty.handler.codec.DefaultHeaders$HeaderEntry:java.lang.Object getKey()",
+                "io.netty.handler.codec.HeadersUtils$StringEntry:java.lang.String getValue()",
+                "io.netty.handler.codec.HeadersUtils$StringEntry:java.lang.String getKey()",
+                "io.netty.handler.codec.DecoderResult:java.lang.String toString()",
+                "io.netty.handler.codec.HeadersUtils$DelegatingStringSet:java.util.Iterator iterator()",
+                "io.netty.handler.codec.HeadersUtils$StringEntryIterator:java.util.Map$Entry next()",
+                "io.netty.handler.codec.DefaultHeaders$ValueIterator:boolean hasNext()",
+                "io.netty.handler.codec.HeadersUtils$StringEntry:java.lang.String toString()",
+                "io.netty.handler.codec.DefaultHeaders:java.lang.String toString()",
+                "io.netty.handler.codec.DefaultHeaders$HeaderEntry:java.lang.String toString()",
+                "io.netty.handler.codec.DefaultHeaders$HeaderIterator:boolean hasNext()",
+                "io.netty.handler.codec.DefaultHeaders$HeaderEntry:java.lang.Object getValue()",
+                "io.netty.handler.codec.DefaultHeaders$HeaderIterator:java.util.Map$Entry next()",
+                "io.netty.handler.codec.CodecOutputList:java.lang.Object get(int)",
+                "io.netty.handler.codec.HeadersUtils$1:java.lang.String get(int)",
+                "io.netty.handler.codec.DefaultHeaders$ValueIterator:java.lang.Object next()"
+            ]
+        },
+        "io.netty:netty-codec-http:4.1.25.Final": {
+            "used-method num": 50,
+            "used method": [
+                "io.netty.handler.codec.http.HttpMethod:void <init>(java.lang.String)",
+                "io.netty.handler.codec.http.HttpMethod:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.DefaultLastHttpContent:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String uri()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpHeaders:io.netty.handler.codec.http.HttpHeaders add(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:java.lang.String get(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:boolean contains(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$3:java.lang.String next()",
+                "io.netty.handler.codec.http.HttpVersion:int minorVersion()",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpVersion protocolVersion()",
+                "io.netty.handler.codec.http.HttpVersion:void <clinit>()",
+                "io.netty.handler.codec.http.HttpResponseStatus:int code()",
+                "io.netty.handler.codec.http.HttpHeaders:java.util.List getAll(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String toString()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.HttpHeaders:boolean contains(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpHeaders:void <init>()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.HttpHeaders:java.lang.String get(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.EmptyHttpHeaders:java.util.Iterator iterator()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:io.netty.handler.codec.http.HttpMethod method()",
+                "io.netty.handler.codec.http.HttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpResponseStatus:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.DefaultHttpContent:java.lang.String toString()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String uri()",
+                "io.netty.handler.codec.http.HttpVersion:java.lang.String toString()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpClientCodec:void <init>()",
+                "io.netty.handler.codec.http.HttpMethod:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultLastHttpContent:void <init>()",
+                "io.netty.handler.codec.http.HttpHeaders:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpResponseStatus:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpResponse:io.netty.handler.codec.http.HttpResponseStatus status()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:java.util.Iterator iterator()",
+                "io.netty.handler.codec.http.HttpHeaders:io.netty.handler.codec.http.HttpHeaders remove(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.HttpHeaders:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpResponse:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpMethod:io.netty.handler.codec.http.HttpMethod valueOf(java.lang.String)",
+                "io.netty.handler.codec.http.DefaultHttpContent:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.handler.codec.http.HttpVersion protocolVersion()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:io.netty.handler.codec.http.HttpMethod method()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:java.util.List getAll(java.lang.CharSequence)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse:io.netty.handler.codec.http.HttpResponseStatus status()"
+            ]
+        },
+        "io.netty:netty-handler:4.1.25.Final": {
+            "used-method num": 9,
+            "used method": [
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder forClient()",
+                "io.netty.handler.ssl.OpenSslX509Certificate:java.lang.String toString()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContext build()",
+                "io.netty.handler.ssl.util.InsecureTrustManagerFactory:void <clinit>()",
+                "io.netty.handler.ssl.OpenSslJavaxX509Certificate:java.lang.String toString()",
+                "io.netty.handler.ssl.util.SimpleTrustManagerFactory:void <clinit>()",
+                "io.netty.handler.timeout.ReadTimeoutHandler:void <clinit>()",
+                "io.netty.handler.ssl.SslCompletionEvent:java.lang.String toString()",
+                "io.netty.handler.timeout.ReadTimeoutHandler:void <init>(int)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

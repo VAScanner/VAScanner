@@ -1,0 +1,15 @@
+{
+    "project name": "apache_maven-2",
+    "modules": {
+        "org.apache.maven:maven": {
+            "vulnerable dependencies": {
+                "org.codehaus.plexus:plexus-utils:1.5.15": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.codehaus.plexus.util.StringUtils:boolean isNotEmpty(java.lang.String)"
+                    ]
+                }
+            }
+        }
+    }
+}

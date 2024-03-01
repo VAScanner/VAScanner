@@ -1,0 +1,41 @@
+{
+    "project name": "ExpediaGroup_heat",
+    "modules": {
+        "com.hotels:heat-core": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.2": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.hotels:heat-core-utils": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.2": {
+                    "used-method num": 11,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                        "ch.qos.logback.classic.Level:void <clinit>()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void setLevel(ch.qos.logback.classic.Level)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()"
+                    ]
+                }
+            }
+        },
+        "com.hotels:heat-example-test-module": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.2": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

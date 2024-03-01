@@ -1,0 +1,117 @@
+{
+    "project name": "crossoverJie_cim",
+    "modules": {
+        "com.crossoverjie.netty:cim": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.0.13": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "io.netty:netty-all:4.1.21.Final": {
+                    "used-method num": 62,
+                    "used method": [
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise syncUninterruptibly()",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.Channel channel()",
+                        "io.netty.channel.nio.SelectedSelectionKeySet:java.util.Iterator iterator()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture sync()",
+                        "io.netty.channel.ChannelOption:void <clinit>()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                        "io.netty.handler.codec.protobuf.ProtobufDecoder:void <clinit>()",
+                        "io.netty.channel.SucceededChannelFuture:boolean isSuccess()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                        "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture syncUninterruptibly()",
+                        "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                        "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                        "io.netty.util.internal.ThreadLocalRandom$1:void run()",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise syncUninterruptibly()",
+                        "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture sync()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:io.netty.util.internal.PriorityQueueNode next()",
+                        "io.netty.handler.timeout.IdleStateEvent:io.netty.handler.timeout.IdleState state()",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.channel.ChannelInitializer:void <clinit>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.util.concurrent.FailedFuture:io.netty.util.concurrent.Future syncUninterruptibly()",
+                        "io.netty.handler.timeout.IdleStateHandler:void <init>(int,int,int)",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise sync()",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise sync()",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.Channel channel()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture syncUninterruptibly()",
+                        "io.netty.channel.VoidChannelPromise:boolean isSuccess()",
+                        "io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender:void <init>()",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.Channel channel()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.Channel channel()",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.handler.codec.protobuf.ProtobufDecoder:void <init>(com.google.protobuf.MessageLite)",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                        "io.netty.handler.timeout.IdleState:void <clinit>()",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.util.concurrent.DefaultPromise:boolean isSuccess()",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise syncUninterruptibly()",
+                        "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                        "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                        "io.netty.channel.ChannelInitializer:void <init>()",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise sync()",
+                        "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:boolean hasNext()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                        "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap localAddress(java.net.SocketAddress)",
+                        "io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder:void <init>()",
+                        "io.netty.handler.codec.protobuf.ProtobufEncoder:void <init>()",
+                        "io.netty.util.internal.ConcurrentSet:java.util.Iterator iterator()",
+                        "io.netty.util.concurrent.DefaultPromise:io.netty.util.concurrent.Promise syncUninterruptibly()",
+                        "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                        "io.netty.util.AbstractConstant:void <clinit>()",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                        "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.channel.ChannelInboundHandlerAdapter:void userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise addListeners(io.netty.util.concurrent.GenericFutureListener[])"
+                    ],
+                    "vul-called frequency": 13,
+                    "related vul root method": {
+                        "CVE-2019-16869": [
+                            "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-16869": [
+                            "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind()",
+                            "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                            "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture addListener(io.netty.util.concurrent.GenericFutureListener)",
+                            "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                            "io.netty.channel.ChannelInboundHandlerAdapter:void userEventTriggered(io.netty.channel.ChannelHandlerContext,java.lang.Object)",
+                            "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                            "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                            "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise addListeners(io.netty.util.concurrent.GenericFutureListener[])",
+                            "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                            "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise addListener(io.netty.util.concurrent.GenericFutureListener)",
+                            "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise addListeners(io.netty.util.concurrent.GenericFutureListener[])"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,313 @@
+{
+    "project name": "spring-attic_spring-batch-admin",
+    "modules": {
+        "org.springframework.batch:spring-batch-admin-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.batch:spring-batch-core:3.0.3.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.data:spring-data-commons:1.9.1.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-oxm:4.1.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.batch:spring-batch-admin-manager": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.batch:spring-batch-core:3.0.3.RELEASE": {
+                    "used-method num": 137,
+                    "used method": [
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitCode()",
+                        "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao:void <init>()",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getEndTime()",
+                        "org.springframework.batch.core.ExitStatus:org.springframework.batch.core.ExitStatus addExitDescription(java.lang.String)",
+                        "org.springframework.batch.core.JobParametersInvalidException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.StepExecution:void setWriteCount(int)",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:void <init>()",
+                        "org.springframework.batch.core.StepExecution:java.util.Date getEndTime()",
+                        "org.springframework.batch.core.ExitStatus:void <clinit>()",
+                        "org.springframework.batch.core.BatchStatus:boolean isUnsuccessful()",
+                        "org.springframework.batch.core.repository.dao.AbstractJdbcBatchMetadataDao:void setClobTypeToUse(int)",
+                        "org.springframework.batch.core.JobExecution:void setLastUpdated(java.util.Date)",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.JobInstance getJobInstance()",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void afterPropertiesSet()",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:void <clinit>()",
+                        "org.springframework.batch.core.JobExecution:void setCreateTime(java.util.Date)",
+                        "org.springframework.batch.core.StepExecution:int getCommitCount()",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator$2:void run()",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.ExitStatus getExitStatus()",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:void afterPropertiesSet()",
+                        "org.springframework.batch.core.StepExecution:void setProcessSkipCount(int)",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:void stop(long)",
+                        "org.springframework.batch.core.configuration.support.AbstractApplicationContextFactory:void setApplicationContext(org.springframework.context.ApplicationContext)",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator$1:void run()",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:org.springframework.batch.item.ExecutionContext getExecutionContext(org.springframework.batch.core.JobExecution)",
+                        "org.springframework.batch.core.StepExecution:void setFilterCount(int)",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:org.springframework.batch.core.JobParameters getJobParameters(java.util.Properties)",
+                        "org.springframework.batch.core.StepExecution:int getReadCount()",
+                        "org.springframework.batch.core.Entity:void setId(java.lang.Long)",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setLobHandler(org.springframework.jdbc.support.lob.LobHandler)",
+                        "org.springframework.batch.core.StepExecution:void <init>(java.lang.String,org.springframework.batch.core.JobExecution)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:org.springframework.batch.core.JobParameters getJobParameters(java.lang.Long)",
+                        "org.springframework.batch.core.BatchStatus:boolean isLessThan(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setShortContextLength(int)",
+                        "org.springframework.batch.core.launch.NoSuchJobInstanceException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.jsr.JsrJobParametersConverter:void <init>(javax.sql.DataSource)",
+                        "org.springframework.batch.core.JobInstance:void <init>(java.lang.Long,java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao:void setStepExecutionIncrementer(org.springframework.jdbc.support.incrementer.DataFieldMaxValueIncrementer)",
+                        "org.springframework.batch.core.JobParameters:void <init>(java.util.Map)",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:long restart(long,java.util.Properties)",
+                        "org.springframework.batch.core.StepExecution:java.lang.String getStepName()",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getCreateTime()",
+                        "org.springframework.batch.core.StepExecution:java.lang.Long getJobExecutionId()",
+                        "org.springframework.batch.core.launch.JobParametersNotFoundException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:void afterPropertiesSet()",
+                        "org.springframework.batch.core.JobExecution:void setStartTime(java.util.Date)",
+                        "org.springframework.batch.core.StepExecution:int getWriteCount()",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setSerializer(org.springframework.batch.core.repository.ExecutionContextSerializer)",
+                        "org.springframework.batch.core.repository.JobExecutionAlreadyRunningException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.AbstractJdbcBatchMetadataDao:void setTablePrefix(java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:java.util.List findJobExecutions(org.springframework.batch.core.JobInstance)",
+                        "org.springframework.batch.core.repository.dao.AbstractJdbcBatchMetadataDao:java.lang.String getQuery(java.lang.String)",
+                        "org.springframework.batch.core.JobExecutionException:void <init>(java.lang.String,java.lang.Throwable)",
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitDescription()",
+                        "org.springframework.batch.core.StepExecution:void setRollbackCount(int)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:void setJobExecutionIncrementer(org.springframework.jdbc.support.incrementer.DataFieldMaxValueIncrementer)",
+                        "org.springframework.batch.core.JobInstance:java.lang.String getJobName()",
+                        "org.springframework.batch.core.repository.dao.AbstractJdbcBatchMetadataDao:org.springframework.jdbc.core.JdbcOperations getJdbcTemplate()",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:org.springframework.batch.core.JobExecution getJobExecution(java.lang.Long)",
+                        "org.springframework.batch.core.JobExecution:void setStatus(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.JobExecutionException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.BatchStatus:boolean isGreaterThan(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.step.NoSuchStepException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.Entity:void setVersion(java.lang.Integer)",
+                        "org.springframework.batch.core.launch.NoSuchJobExecutionException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:long start(java.lang.String,java.util.Properties)",
+                        "org.springframework.batch.core.JobExecution:void <init>(java.lang.Long)",
+                        "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                        "org.springframework.batch.core.JobExecution:void stop()",
+                        "org.springframework.batch.core.JobExecution:java.util.Collection getStepExecutions()",
+                        "org.springframework.batch.core.JobExecution:void setExitStatus(org.springframework.batch.core.ExitStatus)",
+                        "org.springframework.batch.core.jsr.JsrJobParametersConverter:void afterPropertiesSet()",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:void afterPropertiesSet()",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:void <init>(org.springframework.batch.core.explore.JobExplorer,org.springframework.batch.core.repository.JobRepository,org.springframework.batch.core.converter.JobParametersConverter,org.springframework.transaction.PlatformTransactionManager)",
+                        "org.springframework.batch.core.StepExecution:void setStatus(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:void setExitMessageLength(int)",
+                        "org.springframework.batch.core.Entity:java.lang.Long getId()",
+                        "org.springframework.batch.core.StepExecution:void setExecutionContext(org.springframework.batch.item.ExecutionContext)",
+                        "org.springframework.batch.core.StepExecution:void setReadSkipCount(int)",
+                        "org.springframework.batch.core.StepExecution:void setReadCount(int)",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.core.JobExecution getJobExecution()",
+                        "org.springframework.batch.core.StepExecution:int getSkipCount()",
+                        "org.springframework.batch.core.JobExecution:void <init>(org.springframework.batch.core.JobInstance,org.springframework.batch.core.JobParameters)",
+                        "org.springframework.batch.core.JobExecution:void setExecutionContext(org.springframework.batch.item.ExecutionContext)",
+                        "org.springframework.batch.core.StepExecution:void setLastUpdated(java.util.Date)",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String)",
+                        "org.springframework.batch.core.StepExecution:void setExitStatus(org.springframework.batch.core.ExitStatus)",
+                        "org.springframework.batch.core.repository.dao.XStreamExecutionContextStringSerializer:void afterPropertiesSet()",
+                        "org.springframework.batch.core.repository.JobRestartException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:void <init>()",
+                        "org.springframework.batch.core.repository.dao.AbstractJdbcBatchMetadataDao:void setJdbcTemplate(org.springframework.jdbc.core.JdbcOperations)",
+                        "org.springframework.batch.core.StepExecution:void setStartTime(java.util.Date)",
+                        "org.springframework.batch.core.configuration.support.GenericApplicationContextFactory:void <init>(java.lang.Object[])",
+                        "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao:void <init>()",
+                        "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao:void afterPropertiesSet()",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.item.ExecutionContext getExecutionContext()",
+                        "org.springframework.batch.core.ExitStatus:void <init>(java.lang.String,java.lang.String)",
+                        "org.springframework.batch.core.JobParameters:java.util.Map getParameters()",
+                        "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                        "org.springframework.batch.core.StepExecution:int getRollbackCount()",
+                        "org.springframework.batch.core.JobExecution:void upgradeStatus(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.jsr.JsrJobParametersConverter:org.springframework.batch.core.JobParameters getJobParameters(java.util.Properties)",
+                        "org.springframework.batch.core.launch.NoSuchJobException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.core.BatchStatus getStatus()",
+                        "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao:org.springframework.batch.core.StepExecution getStepExecution(org.springframework.batch.core.JobExecution,java.lang.Long)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:void setJobIncrementer(org.springframework.jdbc.support.incrementer.DataFieldMaxValueIncrementer)",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.item.ExecutionContext getExecutionContext()",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.core.ExitStatus getExitStatus()",
+                        "org.springframework.batch.core.StepExecution:int getFilterCount()",
+                        "org.springframework.batch.core.StepExecution:void setWriteSkipCount(int)",
+                        "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao:void addStepExecutions(org.springframework.batch.core.JobExecution)",
+                        "org.springframework.batch.core.JobExecution:void setEndTime(java.util.Date)",
+                        "org.springframework.batch.core.repository.JobInstanceAlreadyCompleteException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.StepExecution:java.util.Date getStartTime()",
+                        "org.springframework.batch.core.JobExecution:void setJobInstance(org.springframework.batch.core.JobInstance)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:java.util.List getJobNames()",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:void <clinit>()",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:org.springframework.batch.core.JobInstance getJobInstance(java.lang.Long)",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.JobParameters getJobParameters()",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.BatchStatus getStatus()",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getStartTime()",
+                        "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao:void setExitMessageLength(int)",
+                        "org.springframework.batch.core.launch.JobExecutionNotRunningException:void <init>(java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:java.util.List getJobInstances(java.lang.String,int,int)",
+                        "org.springframework.batch.core.repository.dao.XStreamExecutionContextStringSerializer:void <init>()",
+                        "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao:org.springframework.batch.core.JobInstance getJobInstance(org.springframework.batch.core.JobExecution)",
+                        "org.springframework.batch.core.BatchStatus:org.springframework.batch.core.BatchStatus valueOf(java.lang.String)",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:org.springframework.batch.item.ExecutionContext getExecutionContext(org.springframework.batch.core.StepExecution)",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void <init>()",
+                        "org.springframework.batch.core.jsr.launch.JsrJobOperator:void abandon(long)",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.StepExecution createStepExecution(java.lang.String)",
+                        "org.springframework.batch.core.StepExecution:void setEndTime(java.util.Date)",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()",
+                        "org.springframework.batch.core.ExitStatus:org.springframework.batch.core.ExitStatus and(org.springframework.batch.core.ExitStatus)",
+                        "org.springframework.batch.core.JobParameters:void <init>()",
+                        "org.springframework.batch.core.StepExecution:void setCommitCount(int)",
+                        "org.springframework.batch.core.JobParameters:java.util.Properties toProperties()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-3774"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void afterPropertiesSet()",
+                        "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setSerializer(org.springframework.batch.core.repository.ExecutionContextSerializer)"
+                    ],
+                    "vul-called frequency": 2,
+                    "root vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2019-3774": [
+                            "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void afterPropertiesSet()",
+                            "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setSerializer(org.springframework.batch.core.repository.ExecutionContextSerializer)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-3774": [
+                            "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void afterPropertiesSet()",
+                            "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setSerializer(org.springframework.batch.core.repository.ExecutionContextSerializer)"
+                        ]
+                    }
+                },
+                "org.springframework.data:spring-data-commons:1.9.1.RELEASE": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.springframework.data.domain.AbstractPageRequest:int getPageNumber()",
+                        "org.springframework.data.domain.AbstractPageRequest:int getPageSize()",
+                        "org.springframework.data.domain.PageImpl:void <init>(java.util.List,org.springframework.data.domain.Pageable,long)"
+                    ]
+                },
+                "org.springframework:spring-oxm:4.1.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.batch:spring-batch-admin-domain": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.batch:spring-batch-core:3.0.3.RELEASE": {
+                    "used-method num": 49,
+                    "used method": [
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitCode()",
+                        "org.springframework.batch.core.StepExecution:void <init>(java.lang.String,org.springframework.batch.core.JobExecution)",
+                        "org.springframework.batch.core.Entity:java.lang.Integer getVersion()",
+                        "org.springframework.batch.core.BatchStatus:boolean isLessThan(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getEndTime()",
+                        "org.springframework.batch.core.JobExecution:void <init>(java.lang.Long)",
+                        "org.springframework.batch.core.JobParameter:void <init>(java.lang.Long,boolean)",
+                        "org.springframework.batch.core.StepExecution:java.util.Date getStartTime()",
+                        "org.springframework.batch.core.JobExecution:java.util.Collection getStepExecutions()",
+                        "org.springframework.batch.core.StepExecution:boolean isTerminateOnly()",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:void <init>()",
+                        "org.springframework.batch.core.JobParameter:void <init>(java.util.Date,boolean)",
+                        "org.springframework.batch.core.StepExecution:java.util.Date getEndTime()",
+                        "org.springframework.batch.core.Entity:java.lang.Long getId()",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.JobParameters getJobParameters()",
+                        "org.springframework.batch.core.StepExecution:int getReadSkipCount()",
+                        "org.springframework.batch.core.JobParameter:void <init>(java.lang.String,boolean)",
+                        "org.springframework.batch.core.StepExecution:java.util.Date getLastUpdated()",
+                        "org.springframework.batch.core.StepExecution:java.lang.String getStepName()",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.core.JobExecution getJobExecution()",
+                        "org.springframework.batch.core.JobParameter:void <init>(java.lang.Double,boolean)",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getCreateTime()",
+                        "org.springframework.batch.core.StepExecution:java.util.List getFailureExceptions()",
+                        "org.springframework.batch.core.StepExecution:java.lang.Long getJobExecutionId()",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.BatchStatus getStatus()",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getLastUpdated()",
+                        "org.springframework.batch.core.JobExecution:java.util.Date getStartTime()",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.JobInstance getJobInstance()",
+                        "org.springframework.batch.core.StepExecution:int getWriteCount()",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:java.util.Properties getProperties(org.springframework.batch.core.JobParameters)",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:void <clinit>()",
+                        "org.springframework.batch.core.JobParameter:java.lang.Object getValue()",
+                        "org.springframework.batch.core.StepExecution:int getWriteSkipCount()",
+                        "org.springframework.batch.core.StepExecution:int getCommitCount()",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.core.ExitStatus getExitStatus()",
+                        "org.springframework.batch.core.JobExecution:java.util.List getFailureExceptions()",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.item.ExecutionContext getExecutionContext()",
+                        "org.springframework.batch.core.StepExecution:int getProcessSkipCount()",
+                        "org.springframework.batch.core.JobExecution:java.lang.Long getJobId()",
+                        "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                        "org.springframework.batch.core.StepExecution:int getRollbackCount()",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.core.BatchStatus getStatus()",
+                        "org.springframework.batch.core.converter.DefaultJobParametersConverter:org.springframework.batch.core.JobParameters getJobParameters(java.util.Properties)",
+                        "org.springframework.batch.core.JobExecution:org.springframework.batch.item.ExecutionContext getExecutionContext()",
+                        "org.springframework.batch.core.JobExecution:java.lang.String getJobConfigurationName()",
+                        "org.springframework.batch.core.StepExecution:int getReadCount()",
+                        "org.springframework.batch.core.BatchStatus:boolean isGreaterThan(org.springframework.batch.core.BatchStatus)",
+                        "org.springframework.batch.core.StepExecution:org.springframework.batch.core.ExitStatus getExitStatus()",
+                        "org.springframework.batch.core.StepExecution:int getFilterCount()"
+                    ]
+                },
+                "org.springframework.data:spring-data-commons:1.9.1.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-oxm:4.1.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.batch:spring-batch-admin-sample": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.batch:spring-batch-core:3.0.3.RELEASE": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.springframework.batch.core.job.SimpleJob:org.springframework.batch.core.Step getStep(java.lang.String)",
+                        "org.springframework.batch.core.step.builder.SimpleStepBuilder:org.springframework.batch.core.step.tasklet.TaskletStep build()",
+                        "org.springframework.batch.core.job.flow.FlowJob:org.springframework.batch.core.Step getStep(java.lang.String)",
+                        "org.springframework.batch.core.step.AbstractStep:void execute(org.springframework.batch.core.StepExecution)",
+                        "org.springframework.batch.core.job.builder.SimpleJobBuilder:org.springframework.batch.core.Job build()",
+                        "org.springframework.batch.core.step.builder.FaultTolerantStepBuilder:org.springframework.batch.core.step.tasklet.TaskletStep build()",
+                        "org.springframework.batch.core.step.builder.SimpleStepBuilder:org.springframework.batch.core.step.builder.SimpleStepBuilder writer(org.springframework.batch.item.ItemWriter)",
+                        "org.springframework.batch.core.step.builder.StepBuilder:org.springframework.batch.core.step.builder.SimpleStepBuilder chunk(int)",
+                        "org.springframework.batch.core.job.builder.JobBuilder:org.springframework.batch.core.job.builder.SimpleJobBuilder start(org.springframework.batch.core.Step)",
+                        "org.springframework.batch.core.JobParameters:java.lang.Long getLong(java.lang.String,long)",
+                        "org.springframework.batch.core.step.builder.SimpleStepBuilder:org.springframework.batch.core.step.builder.SimpleStepBuilder reader(org.springframework.batch.item.ItemReader)",
+                        "org.springframework.batch.core.JobParameters:void <init>(java.util.Map)",
+                        "org.springframework.batch.core.JobParameter:void <init>(java.lang.Long)",
+                        "org.springframework.batch.core.JobParameters:java.util.Map getParameters()"
+                    ]
+                },
+                "org.springframework.data:spring-data-commons:1.9.1.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework:spring-oxm:4.1.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

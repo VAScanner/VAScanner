@@ -1,0 +1,65 @@
+{
+    "project name": "reckcn_SPPanAdmin",
+    "vulnerable dependencies": {
+        "org.apache.shiro:shiro-core:1.2.4": {
+            "used-method num": 45,
+            "used method": [
+                "org.apache.shiro.session.mgt.SimpleSession:java.lang.String toString()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String toString()",
+                "org.apache.shiro.subject.support.DelegatingSubject:boolean isPermitted(java.lang.String)",
+                "org.apache.shiro.config.Ini$Section:java.lang.String toString()",
+                "org.apache.shiro.authc.credential.AllowAllCredentialsMatcher:void <init>()",
+                "org.apache.shiro.realm.CachingRealm:java.lang.String getName()",
+                "org.apache.shiro.cache.MapCache:java.lang.String toString()",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>(org.apache.shiro.authc.credential.CredentialsMatcher)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.util.SoftHashMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.mgt.RealmSecurityManager:void setRealm(org.apache.shiro.realm.Realm)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.authc.IncorrectCredentialsException:void <init>(java.lang.String)",
+                "org.apache.shiro.mgt.CachingSecurityManager:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                "org.apache.shiro.subject.support.DelegatingSubject:boolean hasRole(java.lang.String)",
+                "org.apache.shiro.authc.LockedAccountException:void <init>(java.lang.String)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object oneByType(java.lang.Class)",
+                "org.apache.shiro.realm.AuthenticatingRealm:void <clinit>()",
+                "org.apache.shiro.config.Ini:org.apache.shiro.config.Ini$Section get(java.lang.Object)",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toString()",
+                "org.apache.shiro.realm.CachingRealm:void <clinit>()",
+                "org.apache.shiro.authc.UnknownAccountException:void <init>(java.lang.String)",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:java.lang.String toString()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getCredentials()",
+                "org.apache.shiro.realm.AuthorizingRealm:void <clinit>()",
+                "org.apache.shiro.config.Ini:java.lang.String toString()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setRoles(java.util.Set)",
+                "org.apache.shiro.authz.permission.WildcardPermission:java.lang.String toString()",
+                "org.apache.shiro.subject.support.DelegatingSubject:void logout()",
+                "org.apache.shiro.cache.AbstractCacheManager:java.lang.String toString()",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.subject.support.DelegatingSubject:boolean isAuthenticated()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.String toString()",
+                "org.apache.shiro.subject.support.DelegatingSubject:void login(org.apache.shiro.authc.AuthenticationToken)",
+                "org.apache.shiro.subject.support.DelegatingSubject:java.lang.Object getPrincipal()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void setAuthenticationTokenClass(java.lang.Class)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setStringPermissions(java.util.Set)",
+                "org.apache.shiro.subject.support.DelegatingSubject:org.apache.shiro.subject.PrincipalCollection getPrincipals()",
+                "org.apache.shiro.config.Ini$Section:java.lang.String get(java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()",
+                "org.apache.shiro.realm.CachingRealm:void setCachingEnabled(boolean)",
+                "org.apache.shiro.cache.MemoryConstrainedCacheManager:void <init>()"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.4": {
+            "used-method num": 5,
+            "used method": [
+                "org.apache.shiro.web.servlet.ShiroHttpServletRequest$ObjectPrincipal:java.lang.String toString()",
+                "org.apache.shiro.web.servlet.ServletContextSupport:java.lang.String toString()",
+                "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:java.util.Iterator iterator()",
+                "org.apache.shiro.web.mgt.DefaultWebSecurityManager:void <init>()",
+                "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:boolean add(java.lang.Object)"
+            ]
+        }
+    }
+}

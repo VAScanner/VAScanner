@@ -1,0 +1,291 @@
+{
+    "project name": "windwant_spring-boot-service",
+    "modules": {
+        "org.windwant.spring:spring-boot-server": {
+            "vulnerable dependencies": {
+                "org.codehaus.plexus:plexus-utils:3.0.8": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.codehaus.plexus.util.StringUtils:boolean isBlank(java.lang.String)",
+                        "org.codehaus.plexus.util.StringUtils:boolean isNotBlank(java.lang.String)"
+                    ]
+                },
+                "io.netty:netty-all:4.1.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.1.3": {
+                    "used-method num": 19,
+                    "used method": [
+                        "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                        "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                        "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object[])"
+                    ]
+                },
+                "org.apache.shiro:shiro-core:1.3.2": {
+                    "used-method num": 69,
+                    "used method": [
+                        "org.apache.shiro.session.mgt.SimpleSession:java.lang.String toString()",
+                        "org.apache.shiro.authc.DisabledAccountException:void <init>()",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:java.lang.Object getCredentials(org.apache.shiro.authc.AuthenticationInfo)",
+                        "org.apache.shiro.util.MapContext:java.util.Set entrySet()",
+                        "org.apache.shiro.codec.Base64:byte[] decode(java.lang.String)",
+                        "org.apache.shiro.util.MapContext:java.util.Collection values()",
+                        "org.apache.shiro.session.mgt.SimpleSession:void stop()",
+                        "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void setHashAlgorithmName(java.lang.String)",
+                        "org.apache.shiro.config.Ini:org.apache.shiro.config.Ini$Section get(java.lang.Object)",
+                        "org.apache.shiro.util.SimpleByteSource:java.lang.String toString()",
+                        "org.apache.shiro.config.Ini:java.lang.String toString()",
+                        "org.apache.shiro.session.ProxiedSession:java.lang.Object getAttribute(java.lang.Object)",
+                        "org.apache.shiro.subject.support.DelegatingSubject:void logout()",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void <init>()",
+                        "org.apache.shiro.realm.CachingRealm:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                        "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.String toString()",
+                        "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                        "org.apache.shiro.mgt.AbstractRememberMeManager:void setCipherKey(byte[])",
+                        "org.apache.shiro.session.mgt.DelegatingSession:java.lang.Object getAttribute(java.lang.Object)",
+                        "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                        "org.apache.shiro.realm.AuthenticatingRealm:void setCredentialsMatcher(org.apache.shiro.authc.credential.CredentialsMatcher)",
+                        "org.apache.shiro.config.Ini:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.subject.support.DefaultSubjectContext:void <clinit>()",
+                        "org.apache.shiro.session.ProxiedSession:void setAttribute(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:boolean equals(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.mgt.RealmSecurityManager:void setRealm(org.apache.shiro.realm.Realm)",
+                        "org.apache.shiro.authc.UsernamePasswordToken:char[] getPassword()",
+                        "org.apache.shiro.authc.SimpleAuthenticationInfo:java.lang.String toString()",
+                        "org.apache.shiro.realm.AuthorizingRealm:void <clinit>()",
+                        "org.apache.shiro.authz.permission.WildcardPermission:java.lang.String toString()",
+                        "org.apache.shiro.subject.support.DelegatingSubject$StoppingAwareProxiedSession:void stop()",
+                        "org.apache.shiro.subject.support.DelegatingSubject:boolean isAuthenticated()",
+                        "org.apache.shiro.config.Ini$Section:java.util.Collection values()",
+                        "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String toString()",
+                        "org.apache.shiro.subject.support.DelegatingSubject:org.apache.shiro.session.Session getSession()",
+                        "org.apache.shiro.session.mgt.SimpleSession:void setAttribute(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.config.Ini$Section:java.lang.String toString()",
+                        "org.apache.shiro.authz.SimpleAuthorizationInfo:void addStringPermissions(java.util.Collection)",
+                        "org.apache.shiro.config.Ini$Section:java.util.Set entrySet()",
+                        "org.apache.shiro.session.mgt.DelegatingSession:void setAttribute(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.mgt.SessionsSecurityManager:org.apache.shiro.session.mgt.SessionManager getSessionManager()",
+                        "org.apache.shiro.authc.credential.HashedCredentialsMatcher:java.lang.Object hashProvidedCredentials(org.apache.shiro.authc.AuthenticationToken,org.apache.shiro.authc.AuthenticationInfo)",
+                        "org.apache.shiro.realm.CachingRealm:void <clinit>()",
+                        "org.apache.shiro.subject.support.DelegatingSubject:void login(org.apache.shiro.authc.AuthenticationToken)",
+                        "org.apache.shiro.subject.support.DelegatingSubject:java.lang.Object getPrincipal()",
+                        "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()",
+                        "org.apache.shiro.realm.CachingRealm:void setCachingEnabled(boolean)",
+                        "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toString()",
+                        "org.apache.shiro.config.Ini:java.util.Set entrySet()",
+                        "org.apache.shiro.realm.CachingRealm:java.lang.String getName()",
+                        "org.apache.shiro.authc.UnknownAccountException:void <init>()",
+                        "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String,boolean)",
+                        "org.apache.shiro.session.mgt.DelegatingSession:void stop()",
+                        "org.apache.shiro.session.mgt.eis.MemorySessionDAO:java.util.Collection getActiveSessions()",
+                        "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                        "org.apache.shiro.mgt.CachingSecurityManager:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                        "org.apache.shiro.config.Ini$Section:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.config.Ini:java.util.Collection values()",
+                        "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                        "org.apache.shiro.realm.AuthenticatingRealm:void <clinit>()",
+                        "org.apache.shiro.session.mgt.SimpleSession:java.lang.Object getAttribute(java.lang.Object)",
+                        "org.apache.shiro.codec.Base64:void <clinit>()",
+                        "org.apache.shiro.session.mgt.eis.MemorySessionDAO:void update(org.apache.shiro.session.Session)",
+                        "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                        "org.apache.shiro.authz.AuthorizationException:void <init>()",
+                        "org.apache.shiro.config.Ini$Section:java.lang.String get(java.lang.Object)",
+                        "org.apache.shiro.SecurityUtils:org.apache.shiro.mgt.SecurityManager getSecurityManager()"
+                    ]
+                },
+                "org.apache.shiro:shiro-web:1.3.2": {
+                    "used-method num": 19,
+                    "used method": [
+                        "org.apache.shiro.web.mgt.CookieRememberMeManager:void <init>()",
+                        "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:int size()",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void <init>(java.lang.String)",
+                        "org.apache.shiro.web.mgt.DefaultWebSecurityManager:void setSessionManager(org.apache.shiro.session.mgt.SessionManager)",
+                        "org.apache.shiro.web.servlet.SimpleCookie:void setMaxAge(int)",
+                        "org.apache.shiro.web.session.HttpServletSession:void setAttribute(java.lang.Object,java.lang.Object)",
+                        "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:boolean isEmpty()",
+                        "org.apache.shiro.web.servlet.ServletContextSupport:java.lang.String toString()",
+                        "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:java.util.Iterator iterator()",
+                        "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:boolean onAccessDenied(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                        "org.apache.shiro.web.mgt.DefaultWebSecurityManager:void <init>()",
+                        "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:void <init>()",
+                        "org.apache.shiro.web.servlet.ProxiedFilterChain:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                        "org.apache.shiro.web.session.HttpServletSession:java.lang.Object getAttribute(java.lang.Object)",
+                        "org.apache.shiro.web.servlet.ShiroHttpServletRequest$ObjectPrincipal:java.lang.String toString()",
+                        "org.apache.shiro.web.filter.mgt.SimpleNamedFilterList:javax.servlet.Filter get(int)",
+                        "org.apache.shiro.web.filter.authc.AuthenticatingFilter:boolean isAccessAllowed(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.Object)",
+                        "org.apache.shiro.web.filter.AccessControlFilter:org.apache.shiro.subject.Subject getSubject(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                        "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void <init>()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-1957",
+                        "CVE-2020-11989"
+                    ],
+                    "used vul-method": [
+                        "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:boolean onAccessDenied(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                        "org.apache.shiro.web.filter.authc.AuthenticatingFilter:boolean isAccessAllowed(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.Object)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-1957": [
+                            "org.apache.shiro.web.util.WebUtils:java.lang.String getRequestUri(javax.servlet.http.HttpServletRequest)"
+                        ],
+                        "CVE-2020-11989": [
+                            "org.apache.shiro.web.util.WebUtils:java.lang.String decodeAndCleanUriString(javax.servlet.http.HttpServletRequest,java.lang.String)",
+                            "org.apache.shiro.web.util.WebUtils:java.lang.String getRequestUri(javax.servlet.http.HttpServletRequest)",
+                            "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-1957": [
+                            "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:boolean onAccessDenied(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                            "org.apache.shiro.web.filter.authc.AuthenticatingFilter:boolean isAccessAllowed(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.Object)"
+                        ],
+                        "CVE-2020-11989": [
+                            "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:boolean onAccessDenied(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                            "org.apache.shiro.web.filter.authc.AuthenticatingFilter:boolean isAccessAllowed(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.Object)"
+                        ]
+                    }
+                },
+                "com.alibaba:fastjson:1.2.45": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.poi:poi-ooxml:3.16": {
+                    "used-method num": 54,
+                    "used method": [
+                        "org.apache.poi.openxml4j.opc.internal.ContentType:java.lang.String toString()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFFont createFont()",
+                        "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                        "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:boolean hasNext()",
+                        "org.apache.poi.xssf.usermodel.XSSFRow:java.lang.String toString()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                        "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void write(byte[],int,int)",
+                        "org.apache.poi.xssf.streaming.SXSSFSheet:void autoSizeColumn(int)",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFCellStyle createCellStyle()",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                        "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                        "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                        "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                        "org.apache.poi.xssf.usermodel.XSSFTextParagraph:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook:void <init>(int)",
+                        "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void close()",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:boolean hasNext()",
+                        "org.apache.poi.xssf.usermodel.XSSFTextRun:java.lang.String toString()",
+                        "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                        "org.apache.poi.xssf.usermodel.XSSFConditionalFormatting:java.lang.String toString()",
+                        "org.apache.poi.openxml4j.opc.PackagePartName:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                        "org.apache.poi.POIXMLDocument:void close()",
+                        "org.apache.poi.openxml4j.opc.PackageRelationship:java.lang.String toString()",
+                        "org.apache.poi.openxml4j.opc.PackagePartCollection:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFont(org.apache.poi.ss.usermodel.Font)",
+                        "org.apache.poi.openxml4j.opc.PackagePartCollection:java.lang.Object clone()",
+                        "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                        "org.apache.poi.xssf.usermodel.XSSFSheet:void autoSizeColumn(int)",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.Font createFont()",
+                        "org.apache.poi.xssf.usermodel.XSSFRichTextString:java.lang.String toString()",
+                        "org.apache.poi.xssf.usermodel.XSSFCell:void setCellStyle(org.apache.poi.ss.usermodel.CellStyle)",
+                        "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook:void write(java.io.OutputStream)",
+                        "org.apache.poi.POIXMLDocument:void write(java.io.OutputStream)",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook:void close()",
+                        "org.apache.poi.xssf.usermodel.XSSFClientAnchor:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFSheet:void trackAllColumnsForAutoSizing()",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet createSheet(java.lang.String)",
+                        "org.apache.poi.POIXMLDocumentPart:java.lang.String toString()",
+                        "org.apache.poi.openxml4j.opc.PackageRelationshipCollection:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFRow$FilledCellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                        "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                        "org.apache.poi.xssf.usermodel.XSSFFont:java.lang.String toString()",
+                        "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void flush()",
+                        "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setAlignment(org.apache.poi.ss.usermodel.HorizontalAlignment)",
+                        "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                        "org.apache.poi.xssf.usermodel.XSSFFont:void setBold(boolean)",
+                        "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                        "org.apache.poi.openxml4j.opc.PackagePart:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.xssf.streaming.SXSSFSheet createSheet(java.lang.String)",
+                        "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.CellStyle createCellStyle()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-12415"
+                    ],
+                    "used vul-method": [
+                        "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                        "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                        "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                        "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                    ],
+                    "vul-called frequency": 13,
+                    "related vul root method": {
+                        "CVE-2019-12415": [
+                            "org.apache.poi.xssf.streaming.SheetDataWriter:void writeCell(int,org.apache.poi.ss.usermodel.Cell)",
+                            "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                            "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-12415": [
+                            "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                            "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                            "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                            "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                        ]
+                    }
+                }
+            }
+        },
+        "org.springframework.boot:spring-boot-starter-parent": {
+            "vulnerable dependencies": {
+                "org.codehaus.plexus:plexus-utils:3.0.8": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "io.netty:netty-all:4.1.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.1.3": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.shiro:shiro-core:1.3.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.shiro:shiro-web:1.3.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "com.alibaba:fastjson:1.2.45": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.poi:poi-ooxml:3.16": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

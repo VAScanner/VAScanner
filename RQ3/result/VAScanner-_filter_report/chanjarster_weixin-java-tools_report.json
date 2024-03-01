@@ -1,0 +1,129 @@
+{
+    "project name": "chanjarster_weixin-java-tools",
+    "modules": {
+        "me.chanjar:weixin-java-parent": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.2": {
+                    "used-method num": 3,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.Logger:boolean isDebugEnabled()"
+                    ]
+                },
+                "com.thoughtworks.xstream:xstream:1.4.7": {
+                    "used-method num": 45,
+                    "used method": [
+                        "com.thoughtworks.xstream.core.util.WeakCache:int size()",
+                        "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.util.Set keySet()",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.util.Collection values()",
+                        "com.thoughtworks.xstream.converters.basic.StringConverter:void <init>()",
+                        "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                        "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                        "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                        "com.thoughtworks.xstream.security.PrimitiveTypePermission:void <clinit>()",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object remove(java.lang.Object)",
+                        "com.thoughtworks.xstream.io.AbstractDriver:com.thoughtworks.xstream.io.naming.NameCoder getNameCoder()",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:int size()",
+                        "com.thoughtworks.xstream.security.NullPermission:void <clinit>()",
+                        "com.thoughtworks.xstream.io.xml.PrettyPrintWriter:void <clinit>()",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.thoughtworks.xstream.XStream:void setMode(int)",
+                        "com.thoughtworks.xstream.core.util.QuickWriter:void write(java.lang.String)",
+                        "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.util.Collection values()",
+                        "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Collection values()",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.util.Set keySet()",
+                        "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                        "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                        "com.thoughtworks.xstream.converters.basic.AbstractSingleValueConverter:java.lang.String toString(java.lang.Object)",
+                        "com.thoughtworks.xstream.io.xml.PrettyPrintWriter:void writeText(com.thoughtworks.xstream.core.util.QuickWriter,java.lang.String)",
+                        "com.thoughtworks.xstream.core.util.WeakCache:boolean equals(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.CustomObjectInputStream:void close()",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object remove(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.ArrayIterator:boolean hasNext()",
+                        "com.thoughtworks.xstream.io.xml.PrettyPrintWriter:void <init>(java.io.Writer,com.thoughtworks.xstream.io.naming.NameCoder)",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:boolean remove(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set keySet()",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object get(java.lang.Object)",
+                        "com.thoughtworks.xstream.XStream:void ignoreUnknownElements()",
+                        "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.WeakCache:int hashCode()",
+                        "com.thoughtworks.xstream.XStream:void <clinit>()",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:java.lang.Object[] toArray(java.lang.Object[])",
+                        "com.thoughtworks.xstream.core.util.ArrayIterator:java.lang.Object next()",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object get(java.lang.Object)",
+                        "com.thoughtworks.xstream.io.xml.XppDriver:void <init>()",
+                        "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                        "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object remove(java.lang.Object)"
+                    ],
+                    "CVE": [
+                        "CVE-2021-29505",
+                        "CVE-2020-26258",
+                        "CVE-2020-26259",
+                        "CVE-2021-43859",
+                        "CVE-2017-7957"
+                    ],
+                    "used vul-method": [
+                        "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                        "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                        "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)"
+                    ],
+                    "vul-called frequency": 4,
+                    "root vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2021-29505": [
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ],
+                        "CVE-2020-26258": [
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ],
+                        "CVE-2020-26259": [
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ],
+                        "CVE-2021-43859": [
+                            "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                            "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                        ],
+                        "CVE-2017-7957": [
+                            "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                            "com.thoughtworks.xstream.XStream:void setupConverters()",
+                            "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2021-29505": [
+                            "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                        ],
+                        "CVE-2020-26258": [
+                            "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                        ],
+                        "CVE-2020-26259": [
+                            "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                        ],
+                        "CVE-2021-43859": [
+                            "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])"
+                        ],
+                        "CVE-2017-7957": [
+                            "com.thoughtworks.xstream.core.util.CustomObjectInputStream:int read(byte[])",
+                            "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)",
+                            "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)"
+                        ]
+                    }
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.eclipse.jetty:jetty-server:9.3.0.M0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

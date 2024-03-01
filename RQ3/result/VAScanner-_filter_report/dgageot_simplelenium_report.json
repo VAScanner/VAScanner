@@ -1,0 +1,25 @@
+{
+    "project name": "dgageot_simplelenium",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.12": {
+            "used-method num": 6,
+            "used method": [
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void <init>(java.io.InputStream)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream:void <clinit>()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 4,
+            "used method": [
+                "org.junit.rules.TestWatcher:org.junit.runners.model.Statement apply(org.junit.runners.model.Statement,org.junit.runner.Description)",
+                "org.junit.runner.Description:java.lang.String getMethodName()",
+                "org.junit.rules.TestWatcher:void <init>()",
+                "org.junit.runner.Description:java.lang.Class getTestClass()"
+            ]
+        }
+    }
+}

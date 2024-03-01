@@ -1,0 +1,128 @@
+{
+    "project name": "orientechnologies_spring-data-orientdb",
+    "modules": {
+        "org.springframework.data:spring-data-orientdb-parent": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.3": {
+                    "used-method num": 9,
+                    "used method": [
+                        "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()",
+                        "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                        "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-expression:4.2.4.RELEASE": {
+                    "used-method num": 7,
+                    "used method": [
+                        "org.springframework.expression.spel.ast.StringLiteral:java.lang.String toString()",
+                        "org.springframework.expression.spel.ast.NullLiteral:java.lang.String toString()",
+                        "org.springframework.expression.spel.ast.Literal:java.lang.String toString()",
+                        "org.springframework.expression.spel.standard.Token:java.lang.String toString()",
+                        "org.springframework.expression.spel.standard.TokenKind:java.lang.String toString()",
+                        "org.springframework.expression.TypedValue:java.lang.String toString()",
+                        "org.springframework.expression.spel.support.ReflectionHelper$ArgumentsMatchInfo:java.lang.String toString()"
+                    ]
+                },
+                "org.springframework:spring-webmvc:4.2.4.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:java.lang.String toString()",
+                        "org.springframework.web.servlet.support.BindStatus:java.lang.String toString()",
+                        "org.springframework.web.servlet.view.AbstractUrlBasedView:java.lang.String toString()",
+                        "org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter:void <init>()",
+                        "org.springframework.web.servlet.ModelAndView:java.lang.String toString()",
+                        "org.springframework.web.servlet.FlashMap:java.lang.String toString()"
+                    ]
+                },
+                "org.springframework.data:spring-data-commons:1.11.2.RELEASE": {
+                    "used-method num": 60,
+                    "used method": [
+                        "org.springframework.data.repository.query.ParametersParameterAccessor:org.springframework.data.repository.query.ParametersParameterAccessor$BindableParameterIterator iterator()",
+                        "org.springframework.data.domain.PageImpl:java.lang.String toString()",
+                        "org.springframework.data.mapping.PropertyPath:java.lang.String toString()",
+                        "org.springframework.data.repository.query.parser.Part$Type:void <clinit>()",
+                        "org.springframework.data.repository.core.support.TransactionalRepositoryFactoryBeanSupport:void <init>()",
+                        "org.springframework.data.repository.query.parser.Part$IgnoreCaseType:void <clinit>()",
+                        "org.springframework.data.repository.query.ParametersParameterAccessor:org.springframework.data.domain.Sort getSort()",
+                        "org.springframework.data.repository.query.QueryLookupStrategy$Key:org.springframework.data.repository.query.QueryLookupStrategy$Key[] values()",
+                        "org.springframework.data.repository.query.Parameter:boolean isBindable()",
+                        "org.springframework.data.domain.Sort$Order:java.lang.String toString()",
+                        "org.springframework.data.repository.query.Parameter:java.lang.String toString()",
+                        "org.springframework.data.mapping.PropertyPath$1:org.springframework.data.mapping.PropertyPath next()",
+                        "org.springframework.data.repository.query.parser.AbstractQueryCreator:java.lang.Object createQuery()",
+                        "org.springframework.data.repository.query.QueryMethod:void <init>(java.lang.reflect.Method,org.springframework.data.repository.core.RepositoryMetadata)",
+                        "org.springframework.data.repository.query.parser.PartTree:void <clinit>()",
+                        "org.springframework.data.util.ClassTypeInformation:java.lang.String toString()",
+                        "org.springframework.data.domain.Sort:java.util.Iterator iterator()",
+                        "org.springframework.data.repository.query.Parameter:void <clinit>()",
+                        "org.springframework.data.repository.query.Parameter:void <init>(org.springframework.core.MethodParameter)",
+                        "org.springframework.data.util.GenericArrayTypeInformation:java.lang.String toString()",
+                        "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:void <init>()",
+                        "org.springframework.data.repository.query.parser.AbstractQueryCreator:void <init>(org.springframework.data.repository.query.parser.PartTree,org.springframework.data.repository.query.ParameterAccessor)",
+                        "org.springframework.data.domain.Sort$Order:org.springframework.data.domain.Sort$Direction getDirection()",
+                        "org.springframework.data.repository.query.parser.PartTree:java.lang.String toString()",
+                        "org.springframework.data.domain.PageImpl:java.util.Iterator iterator()",
+                        "org.springframework.data.repository.query.Parameters:void <init>(java.lang.reflect.Method)",
+                        "org.springframework.data.repository.query.Parameter:boolean isSpecialParameter()",
+                        "org.springframework.data.repository.query.parser.PartTree:java.lang.Boolean isCountProjection()",
+                        "org.springframework.data.repository.core.support.AbstractEntityInformation:void <init>(java.lang.Class)",
+                        "org.springframework.data.repository.core.support.RepositoryFactorySupport:void <clinit>()",
+                        "org.springframework.data.repository.query.parser.Part$Type:java.lang.String toString()",
+                        "org.springframework.data.repository.query.QueryMethod$1:java.lang.Class getJavaType()",
+                        "org.springframework.data.repository.query.parser.OrderBySource:java.lang.String toString()",
+                        "org.springframework.data.repository.query.Parameters:java.util.Iterator iterator()",
+                        "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupport:void <init>()",
+                        "org.springframework.data.repository.core.support.RepositoryFactorySupport:void <init>()",
+                        "org.springframework.data.repository.query.parser.Part:java.lang.String toString()",
+                        "org.springframework.data.repository.query.Parameters:void <init>(java.util.List)",
+                        "org.springframework.data.mapping.PropertyPath:java.util.Iterator iterator()",
+                        "org.springframework.data.repository.query.parser.PartTree:java.util.Iterator iterator()",
+                        "org.springframework.data.repository.query.ParametersParameterAccessor$BindableParameterIterator:boolean hasNext()",
+                        "org.springframework.data.repository.query.Parameters:void <clinit>()",
+                        "org.springframework.data.repository.query.QueryLookupStrategy$Key:void <clinit>()",
+                        "org.springframework.data.domain.Sort$Direction:void <clinit>()",
+                        "org.springframework.data.mapping.PropertyPath:java.lang.String toDotPath()",
+                        "org.springframework.data.repository.query.ParametersParameterAccessor$BindableParameterIterator:java.lang.Object next()",
+                        "org.springframework.data.repository.query.ParametersParameterAccessor:void <init>(org.springframework.data.repository.query.Parameters,java.lang.Object[])",
+                        "org.springframework.data.domain.PageImpl:void <init>(java.util.List)",
+                        "org.springframework.data.domain.Sort$Order:java.lang.String getProperty()",
+                        "org.springframework.data.repository.query.parser.PartTree:boolean isDistinct()",
+                        "org.springframework.data.domain.PageImpl:void <init>(java.util.List,org.springframework.data.domain.Pageable,long)",
+                        "org.springframework.data.repository.query.parser.Part$IgnoreCaseType:org.springframework.data.repository.query.parser.Part$IgnoreCaseType[] values()",
+                        "org.springframework.data.domain.Sort:java.lang.String toString()",
+                        "org.springframework.data.repository.query.parser.Part$Type:org.springframework.data.repository.query.parser.Part$Type[] values()",
+                        "org.springframework.data.util.ParameterizedTypeInformation:java.lang.String toString()",
+                        "org.springframework.data.repository.query.parser.PartTree$OrPart:java.util.Iterator iterator()",
+                        "org.springframework.data.auditing.config.AuditingBeanDefinitionRegistrarSupport:void <init>()",
+                        "org.springframework.data.repository.query.ParametersParameterAccessor:org.springframework.data.domain.Pageable getPageable()",
+                        "org.springframework.data.repository.query.Parameter:java.lang.Class getType()",
+                        "org.springframework.data.repository.query.parser.PartTree:void <init>(java.lang.String,java.lang.Class)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-1274"
+                    ],
+                    "used vul-method": [
+                        "org.springframework.data.repository.query.parser.PartTree:void <init>(java.lang.String,java.lang.Class)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2018-1274": [
+                            "org.springframework.data.mapping.PropertyPath:org.springframework.data.mapping.PropertyPath create(java.lang.String,org.springframework.data.util.TypeInformation,java.lang.String,java.util.List)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-1274": [
+                            "org.springframework.data.repository.query.parser.PartTree:void <init>(java.lang.String,java.lang.Class)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "project name": "groupe-sii_keycloak-json-remote-claim",
+    "vulnerable dependencies": {
+        "org.keycloak:keycloak-server-spi-private:8.0.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.keycloak:keycloak-services:8.0.1": {
+            "used-method num": 5,
+            "used method": [
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void addTokenClaimNameConfig(java.util.List)",
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void mapClaim(org.keycloak.representations.IDToken,org.keycloak.models.ProtocolMapperModel,java.lang.Object)",
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void <clinit>()",
+                "org.keycloak.protocol.oidc.mappers.OIDCAttributeMapperHelper:void addIncludeInTokensConfig(java.util.List,java.lang.Class)",
+                "org.keycloak.protocol.oidc.mappers.AbstractOIDCProtocolMapper:void <init>()"
+            ]
+        }
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "project name": "virjarRatel_ratel-server",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.13": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.alibaba:fastjson:1.2.46": {
+            "used-method num": 23,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object toJavaObject(java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:void <init>()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSONArray:boolean addAll(java.util.Collection)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.JSONObject:int hashCode()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object[] toArray(java.lang.Object[])",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:int hashCode()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object remove(int)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object toJavaObject(java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()"
+            ],
+            "vul-called frequency": 13,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJavaObject(java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString()"
+                ]
+            }
+        },
+        "org.apache.httpcomponents:httpclient:4.4.1": {
+            "used-method num": 24,
+            "used method": [
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read(byte[])",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.conn.scheme.SocketFactoryAdaptor:int hashCode()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI remove(int)",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[])",
+                "org.apache.http.conn.routing.HttpRoute:boolean equals(java.lang.Object)",
+                "org.apache.http.auth.UsernamePasswordCredentials:int hashCode()",
+                "org.apache.http.auth.AuthScope:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.ietf.jgss.Oid:int hashCode()",
+                "org.ietf.jgss.Oid:boolean equals(java.lang.Object)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.auth.BasicUserPrincipal:int hashCode()",
+                "org.apache.http.conn.routing.HttpRoute:int hashCode()",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.conn.scheme.SchemeSocketFactoryAdaptor:boolean equals(java.lang.Object)",
+                "org.apache.http.conn.scheme.SocketFactoryAdaptor:boolean equals(java.lang.Object)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.conn.scheme.SchemeSocketFactoryAdaptor:int hashCode()",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[])",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])"
+            ]
+        },
+        "io.netty:netty-codec:4.0.44.Final": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "io.netty:netty-handler:4.0.44.Final": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.1.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.ant:ant:1.9.7": {
+            "used-method num": 16,
+            "used method": [
+                "org.apache.tools.zip.ZipEntry:boolean isDirectory()",
+                "org.apache.tools.zip.ZipEntry:java.lang.String getName()",
+                "org.apache.tools.zip.GeneralPurposeBit:boolean equals(java.lang.Object)",
+                "org.apache.tools.zip.ZipFile:org.apache.tools.zip.ZipEntry getEntry(java.lang.String)",
+                "org.apache.tools.zip.ZipShort:boolean equals(java.lang.Object)",
+                "org.apache.tools.zip.ZipEightByteInteger:boolean equals(java.lang.Object)",
+                "org.apache.tools.zip.ZipFile$1:void close()",
+                "org.apache.tools.zip.ZipFile$Entry:int hashCode()",
+                "org.apache.tools.zip.ZipFile:void close()",
+                "org.apache.tools.zip.ZipFile$Entry:boolean equals(java.lang.Object)",
+                "org.apache.tools.zip.ZipFile:java.util.Enumeration getEntries()",
+                "org.apache.tools.zip.ZipFile:void <clinit>()",
+                "org.apache.tools.zip.ZipFile:void <init>(java.io.File)",
+                "org.apache.tools.zip.ZipEightByteInteger:int hashCode()",
+                "org.apache.tools.zip.ZipLong:boolean equals(java.lang.Object)",
+                "org.apache.tools.zip.ZipFile:java.io.InputStream getInputStream(org.apache.tools.zip.ZipEntry)"
+            ],
+            "CVE": [
+                "CVE-2021-36374",
+                "CVE-2021-36373"
+            ],
+            "used vul-method": [
+                "org.apache.tools.zip.ZipFile:void <init>(java.io.File)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void <init>(java.io.File)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void <init>(java.io.File)"
+                ]
+            }
+        }
+    }
+}

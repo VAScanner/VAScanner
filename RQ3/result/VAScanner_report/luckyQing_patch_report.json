@@ -1,0 +1,79 @@
+{
+    "project name": "luckyQing_patch",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.15": {
+            "used-method num": 42,
+            "used method": [
+                "org.apache.commons.compress.archivers.dump.TapeInputStream:void close()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.arj.ArjArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.arj.ArjArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream:org.apache.commons.compress.archivers.dump.DumpArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.sevenz.BoundedSeekableByteChannelInputStream:void close()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.utils.ServiceLoaderIterator:java.lang.Object next()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:java.lang.Object clone()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.zip.ZipLong:java.lang.Object clone()",
+                "org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.zip.ZipShort:java.lang.Object clone()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.tar.TarArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.utils.ServiceLoaderIterator:boolean hasNext()",
+                "org.apache.commons.compress.archivers.ar.ArArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream:void close()",
+                "org.apache.commons.compress.utils.ChecksumVerifyingInputStream:void close()",
+                "org.apache.commons.compress.archivers.ArchiveStreamFactory:void <clinit>()",
+                "org.apache.commons.compress.archivers.sevenz.Coders$DeflateDecoder$DeflateDecoderInputStream:void close()",
+                "org.apache.commons.compress.utils.CloseShieldFilterInputStream:void close()",
+                "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.arj.ArjArchiveInputStream:org.apache.commons.compress.archivers.arj.ArjArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void close()",
+                "org.apache.commons.compress.archivers.ArchiveStreamFactory:void <init>()",
+                "org.apache.commons.compress.compressors.lzw.LZWInputStream:void close()",
+                "org.apache.commons.compress.archivers.zip.GeneralPurposeBit:java.lang.Object clone()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveEntry:boolean isDirectory()",
+                "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream:void close()",
+                "org.apache.commons.compress.utils.BoundedInputStream:void close()",
+                "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:java.lang.String getName()",
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:void close()",
+                "org.apache.commons.compress.archivers.ArchiveStreamFactory:org.apache.commons.compress.archivers.ArchiveInputStream createArchiveInputStream(java.lang.String,java.io.InputStream)"
+            ],
+            "CVE": [
+                "CVE-2018-11771"
+            ],
+            "used vul-method": [
+                "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2018-11771": [
+                    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:int readStored(byte[],int,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-11771": [
+                    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                    "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+                ]
+            }
+        },
+        "org.apache.logging.log4j:log4j-core:2.9.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

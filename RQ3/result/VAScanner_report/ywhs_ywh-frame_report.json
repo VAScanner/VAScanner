@@ -1,0 +1,48 @@
+{
+    "project name": "ywhs_ywh-frame",
+    "modules": {
+        "com.ywh:springcloud": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.53": {
+                    "used-method num": 7,
+                    "used method": [
+                        "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                        "com.alibaba.fastjson.parser.ParserConfig:void addAccept(java.lang.String)",
+                        "com.alibaba.fastjson.parser.ParserConfig:void <clinit>()",
+                        "com.alibaba.fastjson.parser.ParserConfig:com.alibaba.fastjson.parser.ParserConfig getGlobalInstance()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                        "com.alibaba.fastjson.JSON:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+                        ]
+                    }
+                },
+                "commons-fileupload:commons-fileupload:1.3.3": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "mysql:mysql-connector-java:8.0.16": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

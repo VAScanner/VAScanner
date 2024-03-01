@@ -1,0 +1,213 @@
+{
+    "project name": "seagull1985_LuckyFrameClient",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.commons:commons-compress:1.19": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.10": {
+            "used-method num": 81,
+            "used method": [
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read(byte[])",
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void <init>()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.conn.ssl.TrustSelfSignedStrategy:void <clinit>()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.impl.conn.LoggingInputStream:int available()",
+                "org.apache.http.conn.EofSensorInputStream:int available()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.conn.ssl.TrustSelfSignedStrategy:void <init>()",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.client.methods.RequestBuilder:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.lang.String)",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,javax.net.ssl.HostnameVerifier)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.impl.client.RedirectLocations:java.lang.Object set(int,java.lang.Object)",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[])",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.client.entity.DeflateInputStream:int read()",
+                "org.apache.http.client.entity.DeflateInputStream:int available()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.impl.conn.LoggingOutputStream:void write(byte[])",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.impl.conn.LoggingInputStream:int read()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void flush()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[])",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.client.methods.HttpPatch:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.client.methods.HttpRequestBase:void setURI(java.net.URI)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry)",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.conn.EofSensorInputStream:int read()",
+                "org.apache.http.impl.auth.BasicScheme:java.lang.String toString()",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.auth.HttpEntityDigester:void close()",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int available()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void close()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 14,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "com.alibaba:fastjson:1.2.70": {
+            "used-method num": 43,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:void clear()",
+                "com.alibaba.fastjson.TypeReference:void <clinit>()",
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.util.Collection values()",
+                "com.alibaba.fastjson.JSONObject:void <init>(java.util.Map)",
+                "com.alibaba.fastjson.JSONObject:void <init>()",
+                "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Integer getInteger(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object set(int,java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                "com.alibaba.fastjson.parser.Feature:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,com.alibaba.fastjson.TypeReference,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.lang.String getString(java.lang.String)",
+                "com.alibaba.fastjson.JSONObject:com.alibaba.fastjson.JSONArray getJSONArray(java.lang.String)",
+                "com.alibaba.fastjson.JSONObject:int size()",
+                "com.alibaba.fastjson.TypeReference:void <init>()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONObject getJSONObject(int)",
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(byte[],java.lang.reflect.Type,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.String getString(int)",
+                "com.alibaba.fastjson.JSONObject:void putAll(java.util.Map)",
+                "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,com.alibaba.fastjson.TypeReference,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:com.alibaba.fastjson.JSONArray getJSONArray(java.lang.String)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONObject getJSONObject(int)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(byte[],java.lang.reflect.Type,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSONArray:java.lang.String getString(int)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()"
+            ],
+            "vul-called frequency": 203,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,com.alibaba.fastjson.TypeReference,com.alibaba.fastjson.parser.Feature[])",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSONObject:com.alibaba.fastjson.JSONArray getJSONArray(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])",
+                    "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONObject getJSONObject(int)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String,com.alibaba.fastjson.parser.Feature[])",
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(byte[],java.lang.reflect.Type,com.alibaba.fastjson.parser.Feature[])",
+                    "com.alibaba.fastjson.JSONArray:java.lang.String getString(int)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString()"
+                ]
+            }
+        },
+        "mysql:mysql-connector-java:8.0.19": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

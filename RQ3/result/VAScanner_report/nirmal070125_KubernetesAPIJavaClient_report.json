@@ -1,0 +1,23 @@
+{
+    "project name": "nirmal070125_KubernetesAPIJavaClient",
+    "vulnerable dependencies": {
+        "org.jboss.resteasy:resteasy-client:3.0.9.Final": {
+            "used-method num": 9,
+            "used method": [
+                "org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine:void <clinit>()",
+                "org.jboss.resteasy.client.jaxrs.ProxyBuilder:java.lang.Object build()",
+                "org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder:void <init>()",
+                "org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine:void <init>(org.apache.http.client.HttpClient,org.apache.http.protocol.HttpContext)",
+                "org.jboss.resteasy.client.jaxrs.ResteasyClient:org.jboss.resteasy.client.jaxrs.ResteasyClient register(java.lang.Class)",
+                "org.jboss.resteasy.client.jaxrs.internal.ClientWebTarget:org.jboss.resteasy.client.jaxrs.ProxyBuilder proxyBuilder(java.lang.Class)",
+                "org.jboss.resteasy.client.jaxrs.ResteasyClient:org.jboss.resteasy.client.jaxrs.ResteasyWebTarget target(java.net.URI)",
+                "org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder:org.jboss.resteasy.client.jaxrs.ResteasyClient build()",
+                "org.jboss.resteasy.client.jaxrs.internal.ClientWebTarget:org.jboss.resteasy.client.jaxrs.ResteasyWebTarget clone()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "project name": "bin392328206_six-finger-web",
+    "vulnerable dependencies": {
+        "commons-beanutils:commons-beanutils:1.9.3": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 38,
+            "used method": [
+                "org.dom4j.tree.DefaultElement:java.lang.Object clone()",
+                "org.dom4j.DocumentException:void printStackTrace()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.ContentListFacade:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object remove(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set keySet()",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object get(int)",
+                "org.dom4j.Namespace:int hashCode()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set entrySet()",
+                "org.dom4j.tree.AbstractElement:java.util.Iterator elementIterator()",
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.tree.ContentListFacade:boolean isEmpty()",
+                "org.dom4j.QName:int hashCode()",
+                "org.dom4j.DocumentException:java.lang.String getMessage()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$Entry:int hashCode()",
+                "org.dom4j.tree.DefaultNamespace:int hashCode()",
+                "org.dom4j.tree.ContentListFacade:boolean addAll(java.util.Collection)",
+                "org.dom4j.tree.AbstractNode:java.lang.Object clone()",
+                "org.dom4j.tree.DefaultNamespace:boolean equals(java.lang.Object)",
+                "org.dom4j.QName:boolean equals(java.lang.Object)",
+                "org.dom4j.tree.DefaultElement:java.lang.String getStringValue()",
+                "org.dom4j.tree.AbstractElement:java.lang.String attributeValue(java.lang.String)",
+                "org.dom4j.tree.DefaultDocument:java.lang.Object clone()",
+                "org.dom4j.Namespace:boolean equals(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:boolean containsKey(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$Entry:boolean equals(java.lang.Object)",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.AbstractElement:java.lang.String getName()",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.tree.DefaultElement:java.lang.Object clone()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.DefaultDocument:java.lang.Object clone()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.io.SAXReader:org.xml.sax.XMLReader installXMLFilter(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(org.xml.sax.InputSource)",
+                    "org.dom4j.io.SAXReader:void configureReader(org.xml.sax.XMLReader,org.xml.sax.helpers.DefaultHandler)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.lang.String)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.Reader,java.lang.String)",
+                    "org.dom4j.io.SAXReader:void setXMLReader(org.xml.sax.XMLReader)",
+                    "org.dom4j.io.SAXHelper:org.xml.sax.XMLReader createXMLReader(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.tree.DefaultElement:java.lang.Object clone()",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                    "org.dom4j.tree.DefaultDocument:java.lang.Object clone()",
+                    "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)"
+                ]
+            }
+        }
+    }
+}
