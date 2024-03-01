@@ -1,0 +1,38 @@
+{
+    "project name": "mhkarimi_spring-boot-security-oauth2-jwt-example",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE": {
+            "used-method num": 28,
+            "used method": [
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setAuthorities(java.util.Collection)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHandler:void <init>()",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:void <init>(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setClientSecret(java.lang.String)",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:org.springframework.security.oauth2.provider.OAuth2Request createOAuth2Request(org.springframework.security.oauth2.provider.ClientDetails,org.springframework.security.oauth2.provider.TokenRequest)",
+                "org.springframework.security.oauth2.provider.TokenRequest:java.util.Map getRequestParameters()",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setRefreshTokenValiditySeconds(java.lang.Integer)",
+                "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setSigningKey(java.lang.String)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setClientId(java.lang.String)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                "org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter:void <init>(org.springframework.security.authentication.AuthenticationManager,org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory,java.lang.String)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore:void <init>(org.springframework.data.redis.connection.RedisConnectionFactory)",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setResourceIds(java.util.Collection)",
+                "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setAuthorizedGrantTypes(java.util.Collection)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void <init>()",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenEnhancer(org.springframework.security.oauth2.provider.token.TokenEnhancer)",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setScope(java.util.Collection)",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void <init>()",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:void setAccessTokenValiditySeconds(java.lang.Integer)",
+                "org.springframework.security.oauth2.common.exceptions.InvalidGrantException:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter:void <init>(org.springframework.security.authentication.AuthenticationManager,org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.OAuth2Authentication:void <init>(org.springframework.security.oauth2.provider.OAuth2Request,org.springframework.security.core.Authentication)",
+                "org.springframework.security.oauth2.provider.token.AbstractTokenGranter:org.springframework.security.oauth2.provider.OAuth2RequestFactory getRequestFactory()",
+                "org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationManager:org.springframework.security.core.Authentication authenticate(org.springframework.security.core.Authentication)"
+            ]
+        }
+    }
+}

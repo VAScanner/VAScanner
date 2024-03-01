@@ -1,0 +1,60 @@
+{
+    "project name": "shuleisanshi_myblog",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.2.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:4.2.0.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.2.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.alibaba:fastjson:1.2.47": {
+            "used-method num": 12,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.JSONObject:int hashCode()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:int hashCode()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                ]
+            }
+        }
+    }
+}

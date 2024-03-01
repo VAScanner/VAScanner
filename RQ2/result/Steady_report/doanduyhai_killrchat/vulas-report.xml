@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of Eclipse Steady.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-FileCopyrightText: Copyright (c) 2018-2020 SAP SE or an SAP affiliate company and Eclipse Steady contributors
+
+-->
+<vulas-report>
+
+	<!-- Metadata -->
+	<generatedAt>08.01.2024 03:14 +0800</generatedAt>
+	<generatedFor>
+		<space>5BB7592E24354F20143D405D1B106088</space>
+		<groupId>com.datastax.demo</groupId>
+		<artifactId>killrchat</artifactId>
+		<version>1.0</version>
+	</generatedFor>
+	
+	<!-- Aggregation info -->
+	<isAggregated>false</isAggregated>
+	
+		<aggregatedModules></aggregatedModules>
+	
+	<!-- Configuration -->
+	<configurations>
+		<configuration>
+			<name>exceptionThreshold</name>
+			<value>noException</value>
+		</configuration>
+		<configuration>
+			<name>exemptScopes</name>
+			<value>TEST, PROVIDED</value>
+		</configuration>
+		<configuration>
+			<name>exemptBugs</name>
+			<value></value>
+		</configuration>
+	</configurations>
+	
+	<!-- Vulnerabilities -->
+	<vulnerabilities>
+		
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-0225</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>cassandra-all-2.1.5.jar</filename>
+			<sha1>11570CE2D2FB0C6439949A6B9E9EFE9D30852D74</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-13946</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>cassandra-all-2.1.5.jar</filename>
+			<sha1>11570CE2D2FB0C6439949A6B9E9EFE9D30852D74</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-29425</id>
+				<cvssScore>4.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-io-2.4.jar</filename>
+			<sha1>B1B6EA3B7E4AA4F492509A4952029CD8E48019AD</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-10237</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>guava-16.0.jar</filename>
+			<sha1>ACA09D2E5E8416BF91550E72281958E35460BE52</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-17485</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-7525</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11307</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-12022</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-12023</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-5968</id>
+				<cvssScore>8.1</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-7489</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-14540</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-16335</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-36518</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.3.3.jar</filename>
+			<sha1>63B77400B5F1CF83A81823562C48D3120EF5518E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0193</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-2156</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-4970</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-16869</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-20445</id>
+				<cvssScore>9.1</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-11612</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-7238</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-all-4.1.42.Final.jar</filename>
+			<sha1>1F3B748883200198D5CED0202C8BF771860AE136</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-11612</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-codec-4.0.27.Final.jar</filename>
+			<sha1>08ED3790B480D4370D22AD1B74A79A54663619B3</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-4970</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-handler-4.0.27.Final.jar</filename>
+			<sha1>91D5C8E25150759BDFCE680F318E7B3E8A493B1F</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2022-22965</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-beans-4.1.3.RELEASE.jar</filename>
+			<sha1>6F5D51F73ECBF6EC9F13999F53D45AF4371C6C8A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6429</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.1.3.RELEASE.jar</filename>
+			<sha1>BDFDC2249AFCC8A3F589E94EC99EEF24E7818A5E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1272</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.1.3.RELEASE.jar</filename>
+			<sha1>BDFDC2249AFCC8A3F589E94EC99EEF24E7818A5E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1270</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-expression-4.1.3.RELEASE.jar</filename>
+			<sha1>053695581A8A1860C4C23B1E712007749C41FF7F</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1275</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-expression-4.1.3.RELEASE.jar</filename>
+			<sha1>053695581A8A1860C4C23B1E712007749C41FF7F</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1257</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-messaging-4.1.3.RELEASE.jar</filename>
+			<sha1>5E06C2782BF01AFE10D2AE229566CFD065C04C9E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1270</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-messaging-4.1.3.RELEASE.jar</filename>
+			<sha1>5E06C2782BF01AFE10D2AE229566CFD065C04C9E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-11272</id>
+				<cvssScore>7.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-security-core-3.2.5.RELEASE.jar</filename>
+			<sha1>D5DB43E696A02186AB7E18F8C9D99AFBDE94BD77</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-3795</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-security-core-3.2.5.RELEASE.jar</filename>
+			<sha1>D5DB43E696A02186AB7E18F8C9D99AFBDE94BD77</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5408</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-security-core-3.2.5.RELEASE.jar</filename>
+			<sha1>D5DB43E696A02186AB7E18F8C9D99AFBDE94BD77</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-9879</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-security-web-3.2.5.RELEASE.jar</filename>
+			<sha1>47624CE0BCA40BAC9A64276ED36D67BE11F133B8</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-4152</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6429</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6430</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-7315</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0054</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0225</id>
+				<cvssScore>8.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3578</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-3192</id>
+				<cvssScore>5.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11039</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.1.3.RELEASE.jar</filename>
+			<sha1>8E3652E8C3675A940B65460C79E9E699F530C14B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-1904</id>
+				<cvssScore>4.3</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3625</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-5007</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-9878</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1271</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5397</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.1.3.RELEASE.jar</filename>
+			<sha1>B988D7F4C79EE833962BE011F3EE00B79C2CBDAC</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-0201</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-websocket-4.1.3.RELEASE.jar</filename>
+			<sha1>02B88688C2F901EAAC68FA5B4BAF5BBB10E98787</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11040</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-websocket-4.1.3.RELEASE.jar</filename>
+			<sha1>02B88688C2F901EAAC68FA5B4BAF5BBB10E98787</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1257</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-websocket-4.1.3.RELEASE.jar</filename>
+			<sha1>02B88688C2F901EAAC68FA5B4BAF5BBB10E98787</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.datastax.demo</groupId>
+				<artifactId>killrchat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.datastax.demo/killrchat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+	</vulnerabilities>
+</vulas-report>

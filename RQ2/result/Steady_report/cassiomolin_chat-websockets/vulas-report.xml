@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of Eclipse Steady.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-FileCopyrightText: Copyright (c) 2018-2020 SAP SE or an SAP affiliate company and Eclipse Steady contributors
+
+-->
+<vulas-report>
+
+	<!-- Metadata -->
+	<generatedAt>07.07.2023 22:41 +0800</generatedAt>
+	<generatedFor>
+		<space>5BB7592E24354F20143D405D1B106088</space>
+		<groupId>com.cassiomolin.example</groupId>
+		<artifactId>chat</artifactId>
+		<version>1.0</version>
+	</generatedFor>
+	
+	<!-- Aggregation info -->
+	<isAggregated>false</isAggregated>
+	
+		<aggregatedModules></aggregatedModules>
+	
+	<!-- Configuration -->
+	<configurations>
+		<configuration>
+			<name>exceptionThreshold</name>
+			<value>noException</value>
+		</configuration>
+		<configuration>
+			<name>exemptScopes</name>
+			<value>PROVIDED, TEST</value>
+		</configuration>
+		<configuration>
+			<name>exemptBugs</name>
+			<value></value>
+		</configuration>
+	</configurations>
+	
+	<!-- Vulnerabilities -->
+	<vulnerabilities>
+		
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-10237</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>guava-22.0.jar</filename>
+			<sha1>3564EF3803DE51FB0530A8377EC6100B33B0D073</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-17485</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-7525</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11307</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-12022</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-12023</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-5968</id>
+				<cvssScore>8.1</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-7489</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-14540</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-16335</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-36518</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.8.8.jar</filename>
+			<sha1>BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1000873</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-datatype-jsr310-2.8.8.jar</filename>
+			<sha1>C84E77D8E21625EFA6129B8116BF0B0B3AAE7D9B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-12196</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-2670</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1067</id>
+				<cvssScore>6.1</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1114</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-14642</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-3888</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-10705</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-10719</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1745</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-core-1.4.18.Final.jar</filename>
+			<sha1>42201E7BE4B824BEE6221EF87F47A7B49D2B988C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-10184</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>undertow-servlet-1.4.18.Final.jar</filename>
+			<sha1>11AC729595695C97ABA3BF774A711D71782BA46B</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>com.cassiomolin.example</groupId>
+				<artifactId>chat</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cassiomolin.example/chat/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+	</vulnerabilities>
+</vulas-report>

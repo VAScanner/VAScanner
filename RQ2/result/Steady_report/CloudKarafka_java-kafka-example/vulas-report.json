@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "09.07.2023 03:53 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "cloudkarafka.example",
+			"artifactId": "kafka",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2017-12610",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "kafka-clients-1.0.0.jar",
+			"sha1": "98A12CFFF3A5B7CA77E68ABA7ADCCFD817B2D846",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "cloudkarafka.example",
+				"artifactId": "kafka",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/cloudkarafka.example/kafka/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-17196",
+				"cvssScore": "8.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "kafka-clients-1.0.0.jar",
+			"sha1": "98A12CFFF3A5B7CA77E68ABA7ADCCFD817B2D846",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "cloudkarafka.example",
+				"artifactId": "kafka",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/cloudkarafka.example/kafka/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

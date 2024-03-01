@@ -1,0 +1,77 @@
+{
+    "project name": "fabric8io_shootout-docker-maven",
+    "vulnerable dependencies": {
+        "org.apache.tomcat.embed:tomcat-embed-core:7.0.91": {
+            "used-method num": 18,
+            "used method": [
+                "org.apache.catalina.connector.Response:void setContentType(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.connector.ResponseFacade:void setContentType(java.lang.String)",
+                "org.apache.catalina.connector.CoyoteWriter:void println(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                "org.apache.catalina.connector.RequestFacade:java.lang.String getRequestURI()",
+                "org.apache.catalina.core.StandardContext:void addServletMapping(java.lang.String,java.lang.String)",
+                "org.apache.catalina.connector.Response:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.core.ApplicationHttpRequest:java.lang.String getRequestURI()",
+                "org.apache.catalina.connector.Request:java.lang.String getRequestURI()",
+                "org.apache.catalina.connector.Request:java.lang.String getRemoteAddr()",
+                "org.apache.catalina.core.StandardServer:void await()",
+                "org.apache.catalina.connector.ResponseFacade:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.connector.RequestFacade:java.lang.String getRemoteAddr()",
+                "org.apache.catalina.startup.Tomcat:void <init>()",
+                "org.apache.catalina.core.ApplicationHttpResponse:void setContentType(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2021-30640",
+                "CVE-2020-1938"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.connector.CoyoteWriter:void println(java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                "org.apache.catalina.connector.Request:java.lang.String getRemoteAddr()",
+                "org.apache.catalina.connector.RequestFacade:java.lang.String getRemoteAddr()"
+            ],
+            "vul-called frequency": 7,
+            "related vul root method": {
+                "CVE-2021-30640": [
+                    "org.apache.catalina.realm.JNDIRealm:java.util.List getRoles(javax.naming.directory.DirContext,org.apache.catalina.realm.JNDIRealm$User)",
+                    "org.apache.catalina.realm.JNDIRealm:org.apache.catalina.realm.JNDIRealm$User getUserByPattern(javax.naming.directory.DirContext,java.lang.String,java.lang.String,java.lang.String[],int)"
+                ],
+                "CVE-2020-1938": [
+                    "org.apache.coyote.ajp.AbstractAjpProcessor:void prepareRequest()",
+                    "org.apache.coyote.ajp.AjpProtocol:void <init>()",
+                    "org.apache.coyote.ajp.AjpAprProtocol:void <init>()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-30640": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.connector.CoyoteWriter:void println(java.lang.String)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                    "org.apache.catalina.connector.Request:java.lang.String getRemoteAddr()",
+                    "org.apache.catalina.connector.RequestFacade:java.lang.String getRemoteAddr()"
+                ],
+                "CVE-2020-1938": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.connector.CoyoteWriter:void println(java.lang.String)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                    "org.apache.catalina.connector.Request:java.lang.String getRemoteAddr()",
+                    "org.apache.catalina.connector.RequestFacade:java.lang.String getRemoteAddr()"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "project name": "chenjunwen_SpringBootFrame",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.2.3": {
+            "used-method num": 27,
+            "used method": [
+                "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:java.lang.Object getCredentials(org.apache.shiro.authc.AuthenticationInfo)",
+                "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:void <init>()",
+                "org.apache.shiro.config.Ini:org.apache.shiro.config.Ini$Section get(java.lang.Object)",
+                "org.apache.shiro.realm.CachingRealm:void <clinit>()",
+                "org.apache.shiro.config.Ini$Section:boolean isEmpty()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String getUsername()",
+                "org.apache.shiro.realm.CachingRealm:void setCacheManager(org.apache.shiro.cache.CacheManager)",
+                "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void setCredentialsMatcher(org.apache.shiro.authc.credential.CredentialsMatcher)",
+                "org.apache.shiro.config.Ini:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.realm.CachingRealm:java.lang.String getName()",
+                "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:boolean equals(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.config.Ini$Section:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:char[] getPassword()",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void <clinit>()",
+                "org.apache.shiro.realm.AuthorizingRealm:void <clinit>()",
+                "org.apache.shiro.config.Ini:boolean isEmpty()",
+                "org.apache.shiro.util.MapContext:boolean isEmpty()",
+                "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                "org.apache.shiro.config.Ini$Section:java.util.Set keySet()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                "org.apache.shiro.config.Ini$Section:java.lang.String get(java.lang.Object)",
+                "org.apache.shiro.config.Ini:java.util.Set keySet()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

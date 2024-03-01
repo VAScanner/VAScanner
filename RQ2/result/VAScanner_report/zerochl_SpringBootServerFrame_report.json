@@ -1,0 +1,48 @@
+{
+    "project name": "zerochl_SpringBootServerFrame",
+    "vulnerable dependencies": {
+        "com.squareup.retrofit2:retrofit:2.1.0": {
+            "used-method num": 21,
+            "used method": [
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder client(okhttp3.OkHttpClient)",
+                "retrofit2.Utils$GenericArrayTypeImpl:java.lang.String toString()",
+                "retrofit2.Retrofit$Builder:void <init>()",
+                "retrofit2.Utils$GenericArrayTypeImpl:boolean equals(java.lang.Object)",
+                "retrofit2.Utils$WildcardTypeImpl:boolean equals(java.lang.Object)",
+                "retrofit2.Utils$ParameterizedTypeImpl:java.lang.String toString()",
+                "retrofit2.Platform$IOS$MainThreadExecutor:void execute(java.lang.Runnable)",
+                "retrofit2.Utils$ParameterizedTypeImpl:int hashCode()",
+                "retrofit2.Utils$WildcardTypeImpl:java.lang.String toString()",
+                "retrofit2.Utils$GenericArrayTypeImpl:int hashCode()",
+                "retrofit2.Retrofit:java.lang.Object create(java.lang.Class)",
+                "retrofit2.Utils$ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall$1$1:void run()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder baseUrl(java.lang.String)",
+                "retrofit2.Platform$Android$MainThreadExecutor:void execute(java.lang.Runnable)",
+                "retrofit2.OkHttpCall:retrofit2.OkHttpCall clone()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit build()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder addConverterFactory(retrofit2.Converter$Factory)",
+                "retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall:retrofit2.Call clone()",
+                "retrofit2.OkHttpCall:retrofit2.Response execute()",
+                "retrofit2.Utils$WildcardTypeImpl:int hashCode()"
+            ],
+            "CVE": [
+                "CVE-2018-1000850"
+            ],
+            "used vul-method": [
+                "retrofit2.OkHttpCall:retrofit2.Response execute()"
+            ],
+            "vul-called frequency": 10,
+            "related vul root method": {
+                "CVE-2018-1000850": [
+                    "retrofit2.RequestBuilder:void addPathParam(java.lang.String,java.lang.String,boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-1000850": [
+                    "retrofit2.OkHttpCall:retrofit2.Response execute()"
+                ]
+            }
+        }
+    }
+}

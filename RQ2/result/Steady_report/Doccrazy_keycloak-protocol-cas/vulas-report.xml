@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of Eclipse Steady.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-FileCopyrightText: Copyright (c) 2018-2020 SAP SE or an SAP affiliate company and Eclipse Steady contributors
+
+-->
+<vulas-report>
+
+	<!-- Metadata -->
+	<generatedAt>07.01.2024 13:52 +0800</generatedAt>
+	<generatedFor>
+		<space>5BB7592E24354F20143D405D1B106088</space>
+		<groupId>org.keycloak</groupId>
+		<artifactId>keycloak-protocol-cas</artifactId>
+		<version>7.0.0</version>
+	</generatedFor>
+	
+	<!-- Aggregation info -->
+	<isAggregated>false</isAggregated>
+	
+		<aggregatedModules></aggregatedModules>
+	
+	<!-- Configuration -->
+	<configurations>
+		<configuration>
+			<name>exceptionThreshold</name>
+			<value>noException</value>
+		</configuration>
+		<configuration>
+			<name>exemptScopes</name>
+			<value>PROVIDED, TEST</value>
+		</configuration>
+		<configuration>
+			<name>exemptBugs</name>
+			<value></value>
+		</configuration>
+	</configurations>
+	
+	<!-- Vulnerabilities -->
+	<vulnerabilities>
+		
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11771</id>
+				<cvssScore>5.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-compress-1.8.1.jar</filename>
+			<sha1>A698750C16740FD5B3871425F4CB3BBAA87F529D</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-12402</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-compress-1.8.1.jar</filename>
+			<sha1>A698750C16740FD5B3871425F4CB3BBAA87F529D</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-29425</id>
+				<cvssScore>4.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-io-2.1.jar</filename>
+			<sha1>FD51F906669F49A4FFD06650666C3B8147A6106E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-10237</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>guava-19.0.jar</filename>
+			<sha1>6CE200F6B23222AF3D8ABB6B6459E6C44F4BB0E9</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-4366</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>httpclient-4.5.4.jar</filename>
+			<sha1>2F8A3C0C53550B237D8F7A98A417397395AF8B80</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-17485</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-7525</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11307</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-12022</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-12023</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-5968</id>
+				<cvssScore>8.1</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-7489</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-14540</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-16335</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-36518</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jackson-databind-2.9.9.jar</filename>
+			<sha1>D6EB9817D9C7289A91F043AC5EE02A6B3CC86238</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1727</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-common-7.0.0.jar</filename>
+			<sha1>E7B55219D03693C82F5F57F48BB9099A852879CB</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1727</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-server-spi-7.0.0.jar</filename>
+			<sha1>B718CB8943544A4EC014FC472AB595D9C4AF228E</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1697</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-server-spi-private-7.0.0.jar</filename>
+			<sha1>3B207D1D6FA7EA7BB167C0DC935653C9B6443013</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1727</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-server-spi-private-7.0.0.jar</filename>
+			<sha1>3B207D1D6FA7EA7BB167C0DC935653C9B6443013</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-8629</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-12159</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-14637</id>
+				<cvssScore>8.1</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-14658</id>
+				<cvssScore>6.1</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-3875</id>
+				<cvssScore>4.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-10686</id>
+				<cvssScore>4.7</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1697</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1727</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1744</id>
+				<cvssScore>5.6</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1758</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>keycloak-services-7.0.0.jar</filename>
+			<sha1>7CDA630776FBEBF650941FCC931EA74EE642B360</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-2402</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>okhttp-3.3.1.jar</filename>
+			<sha1>19047BDB6A4FC00A44124F64CA98E88FC204E7E3</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-7561</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>resteasy-jaxrs-3.7.0.Final.jar</filename>
+			<sha1>323EAB99D2359285E25EF97CA4F1882A3180050D</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1695</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>resteasy-jaxrs-3.7.0.Final.jar</filename>
+			<sha1>323EAB99D2359285E25EF97CA4F1882A3180050D</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>org.keycloak</groupId>
+				<artifactId>keycloak-protocol-cas</artifactId>
+				<version>7.0.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.keycloak/keycloak-protocol-cas/7.0.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>PROVIDED</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+	</vulnerabilities>
+</vulas-report>

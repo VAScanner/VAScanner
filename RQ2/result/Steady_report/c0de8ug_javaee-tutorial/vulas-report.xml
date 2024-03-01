@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of Eclipse Steady.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-FileCopyrightText: Copyright (c) 2018-2020 SAP SE or an SAP affiliate company and Eclipse Steady contributors
+
+-->
+<vulas-report>
+
+	<!-- Metadata -->
+	<generatedAt>07.01.2024 22:22 +0800</generatedAt>
+	<generatedFor>
+		<space>5BB7592E24354F20143D405D1B106088</space>
+		<groupId>core</groupId>
+		<artifactId>com.giit.www.orderbook</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</generatedFor>
+	
+	<!-- Aggregation info -->
+	<isAggregated>false</isAggregated>
+	
+		<aggregatedModules></aggregatedModules>
+	
+	<!-- Configuration -->
+	<configurations>
+		<configuration>
+			<name>exceptionThreshold</name>
+			<value>noException</value>
+		</configuration>
+		<configuration>
+			<name>exemptScopes</name>
+			<value>TEST, PROVIDED</value>
+		</configuration>
+		<configuration>
+			<name>exemptBugs</name>
+			<value></value>
+		</configuration>
+	</configurations>
+	
+	<!-- Vulnerabilities -->
+	<vulnerabilities>
+		
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1945</id>
+				<cvssScore>6.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>ant-1.9.4.jar</filename>
+			<sha1>6D473E8653D952045F550F4EF225A9591B79094A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0114</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-beanutils-1.9.3.jar</filename>
+			<sha1>C845703DE334DDC6B4B3CD26835458CB1CBA1F3D</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-10086</id>
+				<cvssScore>7.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-beanutils-1.9.3.jar</filename>
+			<sha1>C845703DE334DDC6B4B3CD26835458CB1CBA1F3D</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-29425</id>
+				<cvssScore>4.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-io-2.2.jar</filename>
+			<sha1>83B5B8A7BA1C08F9E8C8FF2373724E33D3C1E22A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-45105</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-api-2.3.jar</filename>
+			<sha1>8D85EF2675D1B45FE78ADAD021F809BDF12F2EEB</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-5645</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-core-2.3.jar</filename>
+			<sha1>58A3E964DB5307E30650817C5DAAC1E8C8EDE648</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-9488</id>
+				<cvssScore>3.7</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-core-2.3.jar</filename>
+			<sha1>58A3E964DB5307E30650817C5DAAC1E8C8EDE648</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-44228</id>
+				<cvssScore>10.0</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-core-2.3.jar</filename>
+			<sha1>58A3E964DB5307E30650817C5DAAC1E8C8EDE648</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-44832</id>
+				<cvssScore>6.6</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-core-2.3.jar</filename>
+			<sha1>58A3E964DB5307E30650817C5DAAC1E8C8EDE648</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-45046</id>
+				<cvssScore>9.0</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-core-2.3.jar</filename>
+			<sha1>58A3E964DB5307E30650817C5DAAC1E8C8EDE648</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-45105</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>log4j-core-2.3.jar</filename>
+			<sha1>58A3E964DB5307E30650817C5DAAC1E8C8EDE648</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-3523</id>
+				<cvssScore>8.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>mysql-connector-java-5.1.38.jar</filename>
+			<sha1>DBBD7CD309CE167EC8367DE4E41C63C2C8593CC5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-3586</id>
+				<cvssScore>6.4</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>mysql-connector-java-5.1.38.jar</filename>
+			<sha1>DBBD7CD309CE167EC8367DE4E41C63C2C8593CC5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1957</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>shiro-core-1.4.2.jar</filename>
+			<sha1>9129C0CC8C640B9EF0EF7A3B1F898FF69F041749</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-6802</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>shiro-web-1.2.4.jar</filename>
+			<sha1>B8BC8646DE7D7AA495CF6BC65F0E97DA030C46F5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-11989</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>shiro-web-1.2.4.jar</filename>
+			<sha1>B8BC8646DE7D7AA495CF6BC65F0E97DA030C46F5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-13933</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>shiro-web-1.2.4.jar</filename>
+			<sha1>B8BC8646DE7D7AA495CF6BC65F0E97DA030C46F5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-1957</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>shiro-web-1.2.4.jar</filename>
+			<sha1>B8BC8646DE7D7AA495CF6BC65F0E97DA030C46F5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2022-22965</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-beans-4.2.4.RELEASE.jar</filename>
+			<sha1>DC8E0874B53435F3E277D9DA5AEBD8B93CC7CF64</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6429</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.2.4.RELEASE.jar</filename>
+			<sha1>160CCD89230753D4F49477A967F5876B034D9745</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-0201</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.2.4.RELEASE.jar</filename>
+			<sha1>160CCD89230753D4F49477A967F5876B034D9745</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1272</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.2.4.RELEASE.jar</filename>
+			<sha1>160CCD89230753D4F49477A967F5876B034D9745</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1270</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-expression-4.2.4.RELEASE.jar</filename>
+			<sha1>015B6F6D61BC68FE2CC6CBD63E2329601AFB8B39</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1275</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-expression-4.2.4.RELEASE.jar</filename>
+			<sha1>015B6F6D61BC68FE2CC6CBD63E2329601AFB8B39</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-test-4.2.4.RELEASE.jar</filename>
+			<sha1>6EFB87ACF8050FC83334FFAC305EB91371787283</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>TEST</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-1904</id>
+				<cvssScore>4.3</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-tx-4.2.4.RELEASE.jar</filename>
+			<sha1>66E1A131263F5F9BA95943061B22FF2666930CA6</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-4152</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6429</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6430</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-7315</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0054</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0225</id>
+				<cvssScore>8.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3578</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-3192</id>
+				<cvssScore>5.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11039</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-15756</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5397</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.4.RELEASE.jar</filename>
+			<sha1>D4BCC6F4D8B64D7AF9B67BC17F0D5106DCE97926</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-1904</id>
+				<cvssScore>4.3</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3625</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-5007</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-9878</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1271</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5397</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.4.RELEASE.jar</filename>
+			<sha1>CF4317BE9C83B4C1C65CE2D3BB96673AC546030A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>core</groupId>
+				<artifactId>com.giit.www.orderbook</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/core/com.giit.www.orderbook/1.0-SNAPSHOT</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+	</vulnerabilities>
+</vulas-report>

@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.01.2024 00:29 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "heftydb",
+			"artifactId": "heftydb",
+			"version": "0.1-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-16.0.jar",
+			"sha1": "ACA09D2E5E8416BF91550E72281958E35460BE52",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "heftydb",
+				"artifactId": "heftydb",
+				"version": "0.1-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/heftydb/heftydb/0.1-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

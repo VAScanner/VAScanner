@@ -1,0 +1,114 @@
+{
+    "project name": "poutsma_web-function-sample",
+    "vulnerable dependencies": {
+        "org.apache.tomcat.embed:tomcat-embed-core:8.5.4": {
+            "used-method num": 15,
+            "used method": [
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.String)",
+                "org.apache.catalina.webresources.AbstractArchiveResource$JarInputStreamWrapper:int read()",
+                "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.Object)",
+                "org.apache.catalina.util.ParameterMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                "org.apache.catalina.startup.Tomcat:void <init>()",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                "org.apache.catalina.core.StandardContext:void addServletMapping(java.lang.String,java.lang.String)",
+                "org.apache.tomcat.util.http.fileupload.util.LimitedInputStream:int read()",
+                "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                "org.apache.catalina.connector.CoyoteInputStream:int read()"
+            ],
+            "CVE": [
+                "CVE-2021-24122",
+                "CVE-2021-33037",
+                "CVE-2018-1305",
+                "CVE-2020-11996",
+                "CVE-2022-42252"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                "org.apache.catalina.connector.CoyoteInputStream:int read()"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:java.io.File file(java.lang.String,boolean)"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                    "org.apache.coyote.http11.Http11Processor:void prepareRequest()"
+                ],
+                "CVE-2018-1305": [
+                    "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                    "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                    "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                    "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                    "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)"
+                ],
+                "CVE-2020-11996": [
+                    "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus parseHeader()",
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus skipLine()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                    "org.apache.catalina.connector.CoyoteInputStream:int read()"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                    "org.apache.catalina.connector.CoyoteInputStream:int read()"
+                ],
+                "CVE-2018-1305": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                    "org.apache.catalina.connector.CoyoteInputStream:int read()"
+                ],
+                "CVE-2020-11996": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                    "org.apache.catalina.connector.CoyoteInputStream:int read()"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Wrapper addServlet(org.apache.catalina.Context,java.lang.String,javax.servlet.Servlet)",
+                    "org.apache.coyote.http11.upgrade.UpgradeServletInputStream:int read()",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addContext(java.lang.String,java.lang.String)",
+                    "org.apache.tomcat.util.http.fileupload.MultipartStream$ItemInputStream:int read()",
+                    "org.apache.catalina.connector.CoyoteInputStream:int read()"
+                ]
+            }
+        },
+        "org.apache.logging.log4j:log4j-core:2.9.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

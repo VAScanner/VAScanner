@@ -1,0 +1,91 @@
+{
+    "project name": "codethereforam_niochat",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.31.Final": {
+            "used-method num": 58,
+            "used method": [
+                "io.netty.channel.nio.SelectedSelectionKeySet:boolean add(java.lang.Object)",
+                "io.netty.util.concurrent.AbstractEventExecutor:void <clinit>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.Channel channel()",
+                "io.netty.channel.nio.SelectedSelectionKeySet:java.util.Iterator iterator()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.channel.nio.SelectedSelectionKeySet$1:boolean hasNext()",
+                "io.netty.bootstrap.Bootstrap:void <clinit>()",
+                "io.netty.handler.codec.LineBasedFrameDecoder:void <init>(int)",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                "io.netty.channel.ChannelOption:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.bootstrap.Bootstrap:void <init>()",
+                "io.netty.util.concurrent.GlobalEventExecutor:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.channel.group.DefaultChannelGroup:void <clinit>()",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.channel.nio.SelectedSelectionKeySetSelector:java.util.Set selectedKeys()",
+                "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:io.netty.util.internal.PriorityQueueNode next()",
+                "io.netty.channel.ChannelInitializer:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.channel.group.DefaultChannelGroup:boolean remove(java.lang.Object)",
+                "io.netty.channel.nio.SelectedSelectionKeySetSelector:int select(long)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap group(io.netty.channel.EventLoopGroup)",
+                "io.netty.channel.group.DefaultChannelGroup:java.util.Iterator iterator()",
+                "io.netty.channel.group.CombinedIterator:void remove()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise sync()",
+                "io.netty.channel.group.DefaultChannelGroup:boolean add(java.lang.Object)",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise sync()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.Channel channel()",
+                "io.netty.channel.nio.SelectedSelectionKeySet$1:void remove()",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void <init>()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.Channel channel()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.Channel channel()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:void remove()",
+                "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:void remove()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.group.DefaultChannelGroup:void <init>(io.netty.util.concurrent.EventExecutor)",
+                "io.netty.channel.group.DefaultChannelGroup:boolean isEmpty()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.util.concurrent.AbstractScheduledEventExecutor:void <clinit>()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise sync()",
+                "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:boolean hasNext()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.channel.nio.SelectedSelectionKeySet$1:java.nio.channels.SelectionKey next()",
+                "io.netty.handler.codec.string.StringDecoder:void <init>()",
+                "io.netty.channel.nio.SelectedSelectionKeySetSelector:void close()",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.util.AbstractConstant:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()",
+                "io.netty.handler.codec.string.StringEncoder:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+            ],
+            "vul-called frequency": 8,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                    "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+                ]
+            }
+        }
+    }
+}

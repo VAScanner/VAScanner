@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of Eclipse Steady.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-FileCopyrightText: Copyright (c) 2018-2020 SAP SE or an SAP affiliate company and Eclipse Steady contributors
+
+-->
+<vulas-report>
+
+	<!-- Metadata -->
+	<generatedAt>07.07.2023 14:26 +0800</generatedAt>
+	<generatedFor>
+		<space>5BB7592E24354F20143D405D1B106088</space>
+		<groupId>net.aimeizi</groupId>
+		<artifactId>solrj-example</artifactId>
+		<version>1.0</version>
+	</generatedFor>
+	
+	<!-- Aggregation info -->
+	<isAggregated>false</isAggregated>
+	
+		<aggregatedModules></aggregatedModules>
+	
+	<!-- Configuration -->
+	<configurations>
+		<configuration>
+			<name>exceptionThreshold</name>
+			<value>noException</value>
+		</configuration>
+		<configuration>
+			<name>exemptScopes</name>
+			<value>TEST, PROVIDED</value>
+		</configuration>
+		<configuration>
+			<name>exemptBugs</name>
+			<value></value>
+		</configuration>
+	</configurations>
+	
+	<!-- Vulnerabilities -->
+	<vulnerabilities>
+		
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2021-29425</id>
+				<cvssScore>4.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>commons-io-1.3.2.jar</filename>
+			<sha1>B6DDE38349BA9BB5E6EA6320531EAE969985DAE5</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-10237</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>guava-15.0.jar</filename>
+			<sha1>ED727A8D9F247E2050281CB083F1C77B09DCB5CD</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-4366</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>httpclient-4.3.3.jar</filename>
+			<sha1>18F4247FF4572A074444572CEE34647C43E7C9C7</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-6748</id>
+				<cvssScore>6.1</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>jsoup-1.7.2.jar</filename>
+			<sha1>D7E275BA05AA380CA254F72D0C0FFEBAEDC3ADCF</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-3523</id>
+				<cvssScore>8.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>mysql-connector-java-5.1.31.jar</filename>
+			<sha1>95BAA522C5AE4DBFF61E8EBD1B2578665D6853A0</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-3586</id>
+				<cvssScore>6.4</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>mysql-connector-java-5.1.31.jar</filename>
+			<sha1>95BAA522C5AE4DBFF61E8EBD1B2578665D6853A0</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3488</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-3.5.2.Final.jar</filename>
+			<sha1>E6FB74A0699ABE108969B2EC1F269391169A0426</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-2156</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>netty-3.5.2.Final.jar</filename>
+			<sha1>E6FB74A0699ABE108969B2EC1F269391169A0426</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2022-22965</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-beans-4.2.1.RELEASE.jar</filename>
+			<sha1>6D39786B9F7B2A79897A0A83495F30002D9F8DE3</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6429</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.2.1.RELEASE.jar</filename>
+			<sha1>97A7FF5EC8A070722D0809098A9964347130466C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-0201</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.2.1.RELEASE.jar</filename>
+			<sha1>97A7FF5EC8A070722D0809098A9964347130466C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1272</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-core-4.2.1.RELEASE.jar</filename>
+			<sha1>97A7FF5EC8A070722D0809098A9964347130466C</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1270</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-expression-4.2.1.RELEASE.jar</filename>
+			<sha1>F6F34581B94A03BF39C5C88D1286BEE76AFE90A7</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1275</id>
+				<cvssScore>9.8</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-expression-4.2.1.RELEASE.jar</filename>
+			<sha1>F6F34581B94A03BF39C5C88D1286BEE76AFE90A7</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-test-4.2.1.RELEASE.jar</filename>
+			<sha1>7D0413AD3A5C3F647678AB7DE0C038642D1E24D6</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-1904</id>
+				<cvssScore>4.3</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-tx-4.2.1.RELEASE.jar</filename>
+			<sha1>F05B4465BE1AAB3493E83CB529F191CB7834B222</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-4152</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6429</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-6430</id>
+				<cvssScore>5.4</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-7315</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0054</id>
+				<cvssScore>6.8</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-0225</id>
+				<cvssScore>8.8</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3578</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2015-3192</id>
+				<cvssScore>5.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-11039</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-15756</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5397</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-web-4.2.1.RELEASE.jar</filename>
+			<sha1>E37E34274768989BAE9470B6EAFFE51E09BD1E44</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-1904</id>
+				<cvssScore>4.3</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2014-3625</id>
+				<cvssScore>5.0</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-5007</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2016-9878</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-1271</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5397</id>
+				<cvssScore>5.3</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2020-5421</id>
+				<cvssScore>6.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>spring-webmvc-4.2.1.RELEASE.jar</filename>
+			<sha1>6F8DB100285E16EFF3E413D2FBA4F3557C09A07A</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>false</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>unknown</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2012-0881</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>xercesImpl-2.10.0.jar</filename>
+			<sha1>9161654D2AFE7F9063455F02CCCA8E4EC2787222</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2013-4002</id>
+				<cvssScore>7.1</cvssScore>
+				<cvssVersion>2.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>xercesImpl-2.10.0.jar</filename>
+			<sha1>9161654D2AFE7F9063455F02CCCA8E4EC2787222</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>noLibraryCodeAtAll</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2017-5637</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.0</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>zookeeper-3.4.6.jar</filename>
+			<sha1>01B2502E29DA1EBAADE2357CD1DE35A855FA3755</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2018-8012</id>
+				<cvssScore>7.5</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>zookeeper-3.4.6.jar</filename>
+			<sha1>01B2502E29DA1EBAADE2357CD1DE35A855FA3755</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>vulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+		<vulnerability>
+				
+			<bug>
+				<id>CVE-2019-0201</id>
+				<cvssScore>5.9</cvssScore>
+				<cvssVersion>3.1</cvssVersion>
+			</bug>			
+			
+			
+			<!-- The library containing vulnerable code -->
+			<filename>zookeeper-3.4.6.jar</filename>
+			<sha1>01B2502E29DA1EBAADE2357CD1DE35A855FA3755</sha1>
+						
+			<module>
+			
+				<!-- The application under analysis (module in case of aggregated reports) -->
+				<groupId>net.aimeizi</groupId>
+				<artifactId>solrj-example</artifactId>
+				<version>1.0</version>
+				
+				<!-- Link to the frontend with detailled analysis results -->
+				<href>http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.aimeizi/solrj-example/1.0</href>
+				
+				<!-- Details regarding the dependency of the app/module on the library containing vulnerable code -->
+				<scope>COMPILE</scope>
+				<isTransitive>true</isTransitive>
+				
+				<!-- The result of the containment check, which checks whether the given library contains vulnerable code or not (possible values: true, historical, unknown) -->
+					<containsVulnerableCode>true</containsVulnerableCode>
+				
+				<!-- The result of the static analysis, which determines whether vulnerable code can be potentially executed (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<potentiallyExecutesVulnerableCode>nonVulnerableLibraryCode</potentiallyExecutesVulnerableCode>
+				
+				<!-- The result of the dynamic analysis, which observes the execution of vulnerable code (possible values: vulnerableLibraryCode, nonVulnerableLibraryCode, noLibraryCodeAtAll, notApplicable) -->
+						<actuallyExecutesVulnerableCode>noLibraryCodeAtAll</actuallyExecutesVulnerableCode>
+				
+			</module>
+		</vulnerability>
+	</vulnerabilities>
+</vulas-report>

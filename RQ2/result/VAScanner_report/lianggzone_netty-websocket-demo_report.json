@@ -1,0 +1,103 @@
+{
+    "project name": "lianggzone_netty-websocket-demo",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.3.Final": {
+            "used-method num": 64,
+            "used method": [
+                "io.netty.buffer.Unpooled:void <clinit>()",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.Channel channel()",
+                "io.netty.handler.logging.LoggingHandler:void <init>(io.netty.handler.logging.LogLevel)",
+                "io.netty.channel.CombinedChannelDuplexHandler:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture syncUninterruptibly()",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.handler.codec.MessageToMessageDecoder:void <init>()",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void channelInactive(io.netty.channel.ChannelHandlerContext)",
+                "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object get(java.lang.Object)",
+                "io.netty.buffer.SwappedByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.buffer.AbstractDerivedByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.buffer.WrappedByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.handler.codec.MessageToMessageEncoder:void <init>()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise sync()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.Channel channel()",
+                "io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise syncUninterruptibly()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.handler.stream.ChunkedWriteHandler:void <clinit>()",
+                "io.netty.handler.logging.LogLevel:void <clinit>()",
+                "io.netty.buffer.AdvancedLeakAwareByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                "io.netty.buffer.DefaultByteBufHolder:io.netty.buffer.ByteBuf content()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise syncUninterruptibly()",
+                "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                "io.netty.handler.codec.CodecOutputList:boolean add(java.lang.Object)",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf wrappedBuffer(byte[])",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler:void <init>(java.lang.String,java.lang.String,boolean,int)",
+                "io.netty.handler.codec.protobuf.ProtobufDecoder:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "io.netty.handler.codec.ReplayingDecoderByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise syncUninterruptibly()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler:void <clinit>()",
+                "io.netty.buffer.UnreleasableByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.channel.DefaultChannelPipeline:io.netty.channel.ChannelPipeline addLast(io.netty.channel.ChannelHandler[])",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise sync()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture syncUninterruptibly()",
+                "io.netty.handler.codec.CodecOutputList:java.lang.Object get(int)",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.Channel channel()",
+                "io.netty.handler.stream.ChunkedWriteHandler:void <init>()",
+                "io.netty.handler.codec.protobuf.ProtobufDecoder:void <init>(com.google.protobuf.MessageLite)",
+                "io.netty.handler.codec.HeadersUtils$1:java.lang.String get(int)",
+                "io.netty.buffer.AbstractReferenceCountedByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                "io.netty.buffer.CompositeByteBuf:io.netty.buffer.CompositeByteBuf retain()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise sync()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void channelActive(io.netty.channel.ChannelHandlerContext)",
+                "io.netty.buffer.EmptyByteBuf:io.netty.buffer.ByteBuf retain()",
+                "io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame:void <init>(io.netty.buffer.ByteBuf)"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.channel.ChannelInboundHandlerAdapter:void channelInactive(io.netty.channel.ChannelHandlerContext)",
+                "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.channel.DefaultChannelPipeline:io.netty.channel.ChannelPipeline addLast(io.netty.channel.ChannelHandler[])",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void channelActive(io.netty.channel.ChannelHandlerContext)"
+            ],
+            "vul-called frequency": 17,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.channel.ChannelInboundHandlerAdapter:void channelInactive(io.netty.channel.ChannelHandlerContext)",
+                    "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                    "io.netty.channel.DefaultChannelPipeline:io.netty.channel.ChannelPipeline addLast(io.netty.channel.ChannelHandler[])",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                    "io.netty.channel.ChannelInboundHandlerAdapter:void channelActive(io.netty.channel.ChannelHandlerContext)"
+                ]
+            }
+        }
+    }
+}

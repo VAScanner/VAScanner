@@ -1,0 +1,85 @@
+{
+    "project name": "graphaware_neo4j-nlp",
+    "vulnerable dependencies": {
+        "org.apache.tika:tika-core:1.19.1": {
+            "used-method num": 34,
+            "used method": [
+                "org.apache.tika.mime.Magic:int compareTo(java.lang.Object)",
+                "org.apache.tika.metadata.Metadata:void <init>()",
+                "org.apache.tika.mime.OrClause:java.lang.String toString()",
+                "org.apache.tika.io.TikaInputStream:java.lang.String toString()",
+                "org.apache.tika.sax.ContentHandlerDecorator:java.lang.String toString()",
+                "org.apache.tika.sax.ToXMLContentHandler:void <init>()",
+                "org.apache.tika.parser.external.ExternalParser$1:void run()",
+                "org.apache.tika.config.ServiceLoader$RankedService:int compareTo(java.lang.Object)",
+                "org.apache.tika.mime.Magic:boolean equals(java.lang.Object)",
+                "org.apache.tika.mime.MediaType:int compareTo(java.lang.Object)",
+                "org.apache.tika.parser.ParsingReader$ParsingTask:void run()",
+                "org.apache.tika.config.Param:java.lang.String toString()",
+                "org.apache.tika.metadata.Property:boolean equals(java.lang.Object)",
+                "org.apache.tika.mime.MediaType:java.lang.String toString()",
+                "org.apache.tika.metadata.Metadata:void <clinit>()",
+                "org.apache.tika.parser.ParseContext:void <init>()",
+                "org.apache.tika.parser.external.ExternalParser$3:void run()",
+                "org.apache.tika.config.ParamField:java.lang.String toString()",
+                "org.apache.tika.mime.MediaType:boolean equals(java.lang.Object)",
+                "org.apache.tika.detect.MagicDetector:java.lang.String toString()",
+                "org.apache.tika.mime.MagicMatch:java.lang.String toString()",
+                "org.apache.tika.mime.AndClause:java.lang.String toString()",
+                "org.apache.tika.metadata.Metadata:java.lang.String toString()",
+                "org.apache.tika.mime.MimeType:boolean equals(java.lang.Object)",
+                "org.apache.tika.metadata.Property:int compareTo(java.lang.Object)",
+                "org.apache.tika.mime.MimeType:java.lang.String toString()",
+                "org.apache.tika.mime.MimeType$RootXML:java.lang.String toString()",
+                "org.apache.tika.metadata.Metadata:boolean equals(java.lang.Object)",
+                "org.apache.tika.sax.SafeContentHandler$StringOutput:java.lang.String toString()",
+                "org.apache.tika.sax.ToTextContentHandler:java.lang.String toString()",
+                "org.apache.tika.io.TaggedInputStream:java.lang.String toString()",
+                "org.apache.tika.Tika:java.lang.String toString()",
+                "org.apache.tika.mime.MimeType:int compareTo(java.lang.Object)",
+                "org.apache.tika.parser.external.ExternalParser$2:void run()"
+            ]
+        },
+        "org.apache.tika:tika-parsers:1.19.1": {
+            "used-method num": 9,
+            "used method": [
+                "org.apache.tika.parser.ocr.TesseractOCRParser$2:void run()",
+                "org.apache.tika.parser.pdf.PDFParser:void setSortByPosition(boolean)",
+                "org.apache.tika.parser.pdf.PDFParser:void <clinit>()",
+                "org.apache.tika.parser.pdf.XFAExtractor$XFAField:java.lang.String toString()",
+                "org.apache.tika.parser.pdf.AccessChecker:boolean equals(java.lang.Object)",
+                "org.apache.tika.parser.pdf.PDFParser:void <init>()",
+                "org.apache.tika.parser.pdf.PDFParserConfig:java.lang.String toString()",
+                "org.apache.tika.parser.pdf.PDFParser:void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)",
+                "org.apache.tika.parser.pdf.PDFParserConfig:boolean equals(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2020-9489"
+            ],
+            "used vul-method": [
+                "org.apache.tika.parser.pdf.PDFParser:void <init>()",
+                "org.apache.tika.parser.pdf.PDFParser:void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)",
+                "org.apache.tika.parser.pdf.PDFParserConfig:boolean equals(java.lang.Object)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2020-9489": [
+                    "org.apache.tika.parser.pdf.PDFParserConfig:void init(java.io.InputStream)",
+                    "org.apache.tika.parser.pdf.PDFParserConfig:void configure(org.apache.tika.parser.pdf.PDF2XHTML)",
+                    "org.apache.tika.parser.pdf.PDFParserConfig:boolean equals(java.lang.Object)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-9489": [
+                    "org.apache.tika.parser.pdf.PDFParser:void <init>()",
+                    "org.apache.tika.parser.pdf.PDFParser:void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)",
+                    "org.apache.tika.parser.pdf.PDFParserConfig:boolean equals(java.lang.Object)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

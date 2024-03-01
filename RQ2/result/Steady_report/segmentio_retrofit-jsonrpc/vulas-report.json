@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 20:22 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.segment.retrofit.jsonrpc",
+			"artifactId": "jsonrpc",
+			"version": "1.0.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-18.0.jar",
+			"sha1": "CCE0823396AA693798F8882E64213B1772032B09",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.segment.retrofit.jsonrpc",
+				"artifactId": "jsonrpc",
+				"version": "1.0.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.segment.retrofit.jsonrpc/jsonrpc/1.0.0-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-2402",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "okhttp-3.11.0.jar",
+			"sha1": "75966E05A49046CA2AE734E5626F28837A8D1E82",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.segment.retrofit.jsonrpc",
+				"artifactId": "jsonrpc",
+				"version": "1.0.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.segment.retrofit.jsonrpc/jsonrpc/1.0.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1000850",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "retrofit-2.4.0.jar",
+			"sha1": "FC4AA382632BFAA7BE7B41579EFBA41D5A71ECF3",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.segment.retrofit.jsonrpc",
+				"artifactId": "jsonrpc",
+				"version": "1.0.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.segment.retrofit.jsonrpc/jsonrpc/1.0.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

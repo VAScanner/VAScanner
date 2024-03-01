@@ -1,0 +1,43 @@
+{
+    "project name": "ysc_HtmlExtractor",
+    "modules": {
+        "org.apdplat:html-extractor": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:0.9.28": {
+                    "used-method num": 10,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                        "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                        "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()",
+                        "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter$ReconfiguringThread:void run()"
+                    ]
+                }
+            }
+        },
+        "org.apdplat:html-extractor-web": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:0.9.28": {
+                    "used-method num": 2,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String)"
+                    ]
+                }
+            }
+        }
+    }
+}

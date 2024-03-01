@@ -1,0 +1,28 @@
+{
+    "project name": "b_kafka-websocket",
+    "vulnerable dependencies": {
+        "org.eclipse.jetty:jetty-server:9.1.5.v20140505": {
+            "used-method num": 14,
+            "used method": [
+                "org.eclipse.jetty.server.HttpConnectionFactory:void <init>(org.eclipse.jetty.server.HttpConfiguration)",
+                "org.eclipse.jetty.server.Server:void addConnector(org.eclipse.jetty.server.Connector)",
+                "org.eclipse.jetty.server.ServerConnector:void <init>(org.eclipse.jetty.server.Server)",
+                "org.eclipse.jetty.server.SecureRequestCustomizer:void <clinit>()",
+                "org.eclipse.jetty.server.HttpConfiguration:void <init>()",
+                "org.eclipse.jetty.server.HttpConfiguration:void <clinit>()",
+                "org.eclipse.jetty.server.HttpConfiguration:void addCustomizer(org.eclipse.jetty.server.HttpConfiguration$Customizer)",
+                "org.eclipse.jetty.server.SslConnectionFactory:void <init>(org.eclipse.jetty.util.ssl.SslContextFactory,java.lang.String)",
+                "org.eclipse.jetty.server.Server:void join()",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.ServerConnector:void <init>(org.eclipse.jetty.server.Server,org.eclipse.jetty.server.ConnectionFactory[])",
+                "org.eclipse.jetty.server.Server:void <init>()",
+                "org.eclipse.jetty.server.AbstractNetworkConnector:void setPort(int)",
+                "org.eclipse.jetty.server.SecureRequestCustomizer:void <init>()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.07.2023 01:27 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.meesho.epmapper",
+			"artifactId": "epmapper",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.10.3.jar",
+			"sha1": "88BECDEB77CDD2457757B7268E1A10666C03D382",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.meesho.epmapper",
+				"artifactId": "epmapper",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.meesho.epmapper/epmapper/1.0-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-12402",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-compress-1.18.jar",
+			"sha1": "1191F9F2BC0C47A8CCE69193FEB1FF0A8BCB37D5",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.meesho.epmapper",
+				"artifactId": "epmapper",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.meesho.epmapper/epmapper/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-25.1-android.jar",
+			"sha1": "BDAAB946CA5AD20253502D873BA0C3313D141036",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.meesho.epmapper",
+				"artifactId": "epmapper",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.meesho.epmapper/epmapper/1.0-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

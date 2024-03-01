@@ -1,0 +1,3894 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.07.2023 01:46 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.didispace",
+			"artifactId": "didi-eureka-server",
+			"version": "1.0.0"
+		},
+		"isAggregated": true,
+	
+		"aggregatedModules": [
+				{
+					"groupId": "org.springframework.cloud",
+					"artifactId": "spring-cloud-netflix-eureka-server",
+					"version": "1.3.1.RELEASE"
+				}
+				,
+				{
+					"groupId": "com.didispace",
+					"artifactId": "didi-eureka-server",
+					"version": "1.0.0"
+				}
+				,
+				{
+					"groupId": "com.didispace",
+					"artifactId": "eureka-server",
+					"version": "1.0.0"
+				}
+		],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-18.0.jar",
+			"sha1": "CCE0823396AA693798F8882E64213B1772032B09",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.5.3.jar",
+			"sha1": "D1577AE15F01EF5438C5AFC62162457C00A34713",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2017-17485",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2017-7525",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11307",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-12022",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-12023",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-5968",
+				"cvssScore": "8.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-7489",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-14540",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-16335",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-36518",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-databind-2.8.8.jar",
+			"sha1": "BF88C7B27E95CBADCE4E7C316A56C3EFFFDA8026",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-3720",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-dataformat-xml-2.8.8.jar",
+			"sha1": "3F5E135FD48AF6C7FB432166C5B658E9133114EA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-7051",
+				"cvssScore": "8.6" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "jackson-dataformat-xml-2.8.8.jar",
+			"sha1": "3F5E135FD48AF6C7FB432166C5B658E9133114EA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-11612",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-4.0.27.Final.jar",
+			"sha1": "08ED3790B480D4370D22AD1B74A79A54663619B3",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0193",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "netty-codec-http-4.0.27.Final.jar",
+			"sha1": "59B04B31B58942615C0035C61DB1167D118EE218",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-2156",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "netty-codec-http-4.0.27.Final.jar",
+			"sha1": "59B04B31B58942615C0035C61DB1167D118EE218",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-16869",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-http-4.0.27.Final.jar",
+			"sha1": "59B04B31B58942615C0035C61DB1167D118EE218",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-20445",
+				"cvssScore": "9.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-http-4.0.27.Final.jar",
+			"sha1": "59B04B31B58942615C0035C61DB1167D118EE218",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-7238",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-codec-http-4.0.27.Final.jar",
+			"sha1": "59B04B31B58942615C0035C61DB1167D118EE218",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-4970",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "netty-handler-4.0.27.Final.jar",
+			"sha1": "91D5C8E25150759BDFCE680F318E7B3E8A493B1F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2022-22965",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-beans-4.3.8.RELEASE.jar",
+			"sha1": "9D39133BB80E13D643BFEFD731FE86CAB3AA2BD7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2022-22965",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-beans-4.3.9.RELEASE.jar",
+			"sha1": "DAA5ABF3779C8CAD1A2910E1EA08E4272489D8AE",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6429",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-core-4.3.8.RELEASE.jar",
+			"sha1": "CCE6C251249E48F0A86AA578C2A0E262EFA5A1E0",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-0201",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-core-4.3.8.RELEASE.jar",
+			"sha1": "CCE6C251249E48F0A86AA578C2A0E262EFA5A1E0",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1272",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-core-4.3.8.RELEASE.jar",
+			"sha1": "CCE6C251249E48F0A86AA578C2A0E262EFA5A1E0",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6429",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-core-4.3.9.RELEASE.jar",
+			"sha1": "430B7298BFB85D66FB61E19CA8F06231B911E9F5",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-0201",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-core-4.3.9.RELEASE.jar",
+			"sha1": "430B7298BFB85D66FB61E19CA8F06231B911E9F5",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1272",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-core-4.3.9.RELEASE.jar",
+			"sha1": "430B7298BFB85D66FB61E19CA8F06231B911E9F5",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1270",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.3.8.RELEASE.jar",
+			"sha1": "0204F7E241F42F46B16BAA3D190752703EFD7797",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1275",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.3.8.RELEASE.jar",
+			"sha1": "0204F7E241F42F46B16BAA3D190752703EFD7797",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1270",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.3.9.RELEASE.jar",
+			"sha1": "4EDCA6913DA9E62A6586714E053E01A61952A153",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1275",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.3.9.RELEASE.jar",
+			"sha1": "4EDCA6913DA9E62A6586714E053E01A61952A153",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5408",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-security-crypto-4.2.2.RELEASE.jar",
+			"sha1": "713AE22BCEF55AE21CA1967D7CB217A1EFAB5DBF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5408",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-security-crypto-4.2.3.RELEASE.jar",
+			"sha1": "A5C850ACC91BFF1970FE751D7407DF81C4BCE3CC",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-test-4.3.8.RELEASE.jar",
+			"sha1": "37E3896FB1D3FA08235224B1A7528F806DE717CC",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "TEST",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4152",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6429",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6430",
+				"cvssScore": "5.4" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-7315",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0054",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0225",
+				"cvssScore": "8.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-3578",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-3192",
+				"cvssScore": "5.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11039",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-15756",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5397",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.8.RELEASE.jar",
+			"sha1": "EC1B675C2E234B0C776D36ED56C691520030026F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4152",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6429",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6430",
+				"cvssScore": "5.4" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-7315",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0054",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0225",
+				"cvssScore": "8.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-3578",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-3192",
+				"cvssScore": "5.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11039",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-15756",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5397",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-web-4.3.9.RELEASE.jar",
+			"sha1": "91DAE64C4280093AD5FB4736A10913C9233479C1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-1904",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-3625",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-5007",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-9878",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1271",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5397",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-webmvc-4.3.8.RELEASE.jar",
+			"sha1": "7A00452C350DE0FB80ECBCECFB8CE0145C46141E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-1904",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-3625",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-5007",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-9878",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1271",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5397",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-webmvc-4.3.9.RELEASE.jar",
+			"sha1": "CA80B4A00ABC388D8046BF372099F35564371C47",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11784",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1304",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1305",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1336",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-8014",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-8037",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-0199",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-0221",
+				"cvssScore": "6.1" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-0232",
+				"cvssScore": "8.1" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-10072",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-17563",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-17569",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-11996",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-13934",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1935",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1938",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-33037",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.14.jar",
+			"sha1": "7CE577AF04CADD7AB4B36F71503FC688D5D52CCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11784",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1304",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1305",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1336",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-8014",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-8037",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-0199",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-0221",
+				"cvssScore": "6.1" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-0232",
+				"cvssScore": "8.1" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-10072",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-17563",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-17569",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-11996",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-13934",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1935",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1938",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-33037",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-core-8.5.15.jar",
+			"sha1": "F197A93AE66212767B004FD93D7A1A8EA62BC3FA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-8034",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-websocket-8.5.14.jar",
+			"sha1": "254667B21D391DAC7B1BC241C24BE271D772CAF7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-13935",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-websocket-8.5.14.jar",
+			"sha1": "254667B21D391DAC7B1BC241C24BE271D772CAF7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.cloud",
+				"artifactId": "spring-cloud-netflix-eureka-server",
+				"version": "1.3.1.RELEASE",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.1.RELEASE",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-8034",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "tomcat-embed-websocket-8.5.15.jar",
+			"sha1": "A92B066B0EA9EE1CB05B7D5E4BFED4AD8898F741",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-13935",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "tomcat-embed-websocket-8.5.15.jar",
+			"sha1": "A92B066B0EA9EE1CB05B7D5E4BFED4AD8898F741",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.didispace",
+				"artifactId": "eureka-server",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.didispace/eureka-server/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+{
+    "project name": "cor-right_weibo1.0-API",
+    "vulnerable dependencies": {
+        "org.quartz-scheduler:quartz:2.2.1": {
+            "used-method num": 27,
+            "used method": [
+                "org.quartz.JobBuilder:org.quartz.JobBuilder newJob(java.lang.Class)",
+                "org.quartz.utils.Key:int hashCode()",
+                "org.quartz.impl.RemoteScheduler:void start()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder simpleSchedule()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.impl.JobDetailImpl:int hashCode()",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.impl.triggers.AbstractTrigger:int hashCode()",
+                "org.quartz.impl.matchers.StringMatcher:int hashCode()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.impl.StdScheduler:void start()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:int hashCode()",
+                "org.quartz.CronScheduleBuilder:org.quartz.CronScheduleBuilder cronSchedule(java.lang.String)",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder repeatForever()",
+                "org.quartz.JobBuilder:org.quartz.JobDetail build()",
+                "org.quartz.impl.RemoteScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.impl.StdScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder newTrigger()",
+                "org.quartz.impl.matchers.EverythingMatcher:int hashCode()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.TriggerBuilder:org.quartz.Trigger build()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withSchedule(org.quartz.ScheduleBuilder)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder withIntervalInSeconds(int)",
+                "org.quartz.impl.StdSchedulerFactory:org.quartz.Scheduler getDefaultScheduler()"
+            ]
+        }
+    }
+}

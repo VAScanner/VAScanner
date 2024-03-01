@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.07.2023 13:29 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "main.java.burp",
+			"artifactId": "CRLFSCAN",
+			"version": "1.4"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2017-18349",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "fastjson-1.2.74.jar",
+			"sha1": "9A0DA3F1DC8DDA9AA35CBF2F494E2D6FC42CFDE8",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "main.java.burp",
+				"artifactId": "CRLFSCAN",
+				"version": "1.4",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/main.java.burp/CRLFSCAN/1.4",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

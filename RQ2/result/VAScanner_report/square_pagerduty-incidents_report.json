@@ -1,0 +1,30 @@
+{
+    "project name": "square_pagerduty-incidents",
+    "vulnerable dependencies": {
+        "com.squareup.retrofit2:retrofit:2.0.0": {
+            "used-method num": 3,
+            "used method": [
+                "retrofit2.Retrofit:java.lang.Object create(java.lang.Class)",
+                "retrofit2.Retrofit$Builder:void <init>()",
+                "retrofit2.OkHttpCall:retrofit2.Response execute()"
+            ],
+            "CVE": [
+                "CVE-2018-1000850"
+            ],
+            "used vul-method": [
+                "retrofit2.OkHttpCall:retrofit2.Response execute()"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2018-1000850": [
+                    "retrofit2.RequestBuilder:void addPathParam(java.lang.String,java.lang.String,boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-1000850": [
+                    "retrofit2.OkHttpCall:retrofit2.Response execute()"
+                ]
+            }
+        }
+    }
+}

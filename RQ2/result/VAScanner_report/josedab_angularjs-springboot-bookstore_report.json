@@ -1,0 +1,24 @@
+{
+    "project name": "josedab_angularjs-springboot-bookstore",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.0.1.RELEASE": {
+            "used-method num": 14,
+            "used method": [
+                "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:org.springframework.security.oauth2.common.OAuth2AccessToken readAccessToken(java.lang.String)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:java.lang.String toString()",
+                "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void removeAccessToken(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                "org.springframework.security.oauth2.common.exceptions.OAuth2Exception:java.lang.String toString()",
+                "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:org.springframework.security.oauth2.common.OAuth2AccessToken readAccessToken(java.lang.String)",
+                "org.springframework.security.oauth2.provider.approval.Approval:java.lang.String toString()",
+                "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void <init>(javax.sql.DataSource)",
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String toString()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:void removeAccessToken(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void removeAccessToken(org.springframework.security.oauth2.common.OAuth2AccessToken)",
+                "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:org.springframework.security.oauth2.common.OAuth2AccessToken readAccessToken(java.lang.String)",
+                "org.springframework.security.oauth2.common.DefaultOAuth2RefreshToken:java.lang.String toString()"
+            ]
+        }
+    }
+}

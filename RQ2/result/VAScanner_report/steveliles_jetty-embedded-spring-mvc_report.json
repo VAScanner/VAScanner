@@ -1,0 +1,50 @@
+{
+    "project name": "steveliles_jetty-embedded-spring-mvc",
+    "vulnerable dependencies": {
+        "org.springframework:spring-webmvc:4.0.4.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String)"
+            ]
+        },
+        "org.eclipse.jetty:jetty-server:9.1.4.v20140401": {
+            "used-method num": 18,
+            "used method": [
+                "org.eclipse.jetty.server.Server:void <init>(org.eclipse.jetty.util.thread.ThreadPool)",
+                "org.eclipse.jetty.server.AbstractNCSARequestLog:void setExtended(boolean)",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <clinit>()",
+                "org.eclipse.jetty.server.Server:void addConnector(org.eclipse.jetty.server.Connector)",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void <init>()",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void setHandlers(org.eclipse.jetty.server.Handler[])",
+                "org.eclipse.jetty.server.handler.ScopedHandler:void <clinit>()",
+                "org.eclipse.jetty.server.NetworkTrafficServerConnector:void <init>(org.eclipse.jetty.server.Server)",
+                "org.eclipse.jetty.server.Server:void join()",
+                "org.eclipse.jetty.server.NCSARequestLog:void setFilename(java.lang.String)",
+                "org.eclipse.jetty.server.handler.ContextHandler:void setContextPath(java.lang.String)",
+                "org.eclipse.jetty.server.AbstractNetworkConnector:void setPort(int)",
+                "org.eclipse.jetty.server.handler.RequestLogHandler:void <init>()",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.handler.HandlerList:void <init>()",
+                "org.eclipse.jetty.server.AbstractNCSARequestLog:void <clinit>()",
+                "org.eclipse.jetty.server.NCSARequestLog:void <init>()",
+                "org.eclipse.jetty.server.AbstractNetworkConnector:void setHost(java.lang.String)"
+            ]
+        },
+        "org.eclipse.jetty:jetty-webapp:9.1.4.v20140401": {
+            "used-method num": 3,
+            "used method": [
+                "org.eclipse.jetty.webapp.WebAppClassLoader:java.net.URL getResource(java.lang.String)",
+                "org.eclipse.jetty.webapp.WebAppContext:void setWar(java.lang.String)",
+                "org.eclipse.jetty.webapp.WebAppContext:void <init>()"
+            ]
+        },
+        "org.eclipse.jetty:jetty-servlets:9.1.4.v20140401": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

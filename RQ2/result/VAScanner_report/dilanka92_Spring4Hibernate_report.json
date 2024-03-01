@@ -1,0 +1,51 @@
+{
+    "project name": "dilanka92_Spring4Hibernate",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.3.7.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.hibernate:hibernate-core:4.3.6.Final": {
+            "used-method num": 13,
+            "used method": [
+                "org.hibernate.internal.SessionImpl:void persist(java.lang.Object)",
+                "org.hibernate.internal.CriteriaImpl$Subcriteria:java.lang.Object uniqueResult()",
+                "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                "org.hibernate.internal.CriteriaImpl:org.hibernate.Criteria add(org.hibernate.criterion.Criterion)",
+                "org.hibernate.criterion.Restrictions:org.hibernate.criterion.SimpleExpression eq(java.lang.String,java.lang.Object)",
+                "org.hibernate.internal.CriteriaImpl$Subcriteria:org.hibernate.Criteria add(org.hibernate.criterion.Criterion)",
+                "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                "org.hibernate.internal.CriteriaImpl:java.lang.Object uniqueResult()",
+                "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                "org.hibernate.internal.SessionImpl:org.hibernate.SQLQuery createSQLQuery(java.lang.String)",
+                "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)",
+                "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+            ],
+            "CVE": [
+                "CVE-2020-25638"
+            ],
+            "used vul-method": [
+                "org.hibernate.internal.CriteriaImpl$Subcriteria:java.lang.Object uniqueResult()",
+                "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                "org.hibernate.internal.CriteriaImpl:java.lang.Object uniqueResult()",
+                "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2020-25638": [
+                    "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                    "org.hibernate.loader.plan.exec.query.internal.SelectStatementBuilder:java.lang.String toStatementString()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-25638": [
+                    "org.hibernate.internal.CriteriaImpl$Subcriteria:java.lang.Object uniqueResult()",
+                    "org.hibernate.internal.CriteriaImpl$Subcriteria:java.util.List list()",
+                    "org.hibernate.internal.CriteriaImpl:java.lang.Object uniqueResult()",
+                    "org.hibernate.internal.CriteriaImpl:java.util.List list()"
+                ]
+            }
+        }
+    }
+}

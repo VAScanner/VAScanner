@@ -1,0 +1,191 @@
+{
+    "project name": "734839030_seezoon-framework-all",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.3.8.RELEASE": {
+            "used-method num": 7,
+            "used method": [
+                "org.springframework.http.HttpHeaders:boolean isEmpty()",
+                "org.springframework.http.HttpHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.http.HttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.web.bind.annotation.RequestMethod:void <clinit>()",
+                "org.springframework.http.HttpHeaders:java.util.Set entrySet()",
+                "org.springframework.http.HttpStatus:java.lang.String toString()",
+                "org.springframework.http.HttpHeaders:java.lang.String toString()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 80,
+            "used method": [
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.conn.EofSensorInputStream:int available()",
+                "org.apache.http.impl.conn.LoggingInputStream:int available()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:org.apache.http.conn.socket.PlainConnectionSocketFactory getSocketFactory()",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultSocketConfig(org.apache.http.config.SocketConfig)",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.impl.client.DefaultHttpRequestRetryHandler:void <clinit>()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setParameters(java.util.List)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,javax.net.ssl.HostnameVerifier)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.client.entity.DeflateInputStream:int available()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void shutdown()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:void abort()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.String toString()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void closeExpiredConnections()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry)",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.impl.auth.BasicScheme:java.lang.String toString()",
+                "org.apache.http.impl.client.DefaultHttpRequestRetryHandler:void <init>(int,boolean)",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int available()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void closeIdleConnections(long,java.util.concurrent.TimeUnit)",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.impl.client.BasicAuthCache:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "commons-beanutils:commons-beanutils:1.9.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "mysql:mysql-connector-java:8.0.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.3.3": {
+            "used-method num": 4,
+            "used method": [
+                "org.apache.commons.fileupload.util.LimitedInputStream:void close()",
+                "org.apache.commons.fileupload.MultipartStream$ItemInputStream:int available()",
+                "org.apache.commons.fileupload.MultipartStream$ItemInputStream:void close()",
+                "org.apache.commons.fileupload.servlet.ServletRequestContext:java.lang.String toString()"
+            ]
+        },
+        "org.apache.poi:poi-ooxml:3.17": {
+            "used-method num": 44,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getPhysicalNumberOfRows()",
+                "org.apache.poi.openxml4j.opc.internal.ContentType:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:int getPhysicalNumberOfCells()",
+                "org.apache.poi.xssf.usermodel.XSSFDataFormat:short getFormat(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFDialogsheet:org.apache.poi.xssf.usermodel.XSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFDataFormat createDataFormat()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFCellStyle createCellStyle()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell createCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFTextParagraph:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFTextRun:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.ss.usermodel.CellType getCellTypeEnum()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getCellFormula()",
+                "org.apache.poi.xssf.usermodel.XSSFConditionalFormatting:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.openxml4j.opc.PackagePartName:java.lang.String toString()",
+                "org.apache.poi.POIXMLDocument:void close()",
+                "org.apache.poi.openxml4j.opc.PackageRelationship:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFRichTextString:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellStyle(org.apache.poi.ss.usermodel.CellStyle)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String toString()",
+                "org.apache.poi.openxml4j.util.ZipSecureFile$ThresholdInputStream:int available()",
+                "org.apache.poi.POIXMLDocument:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:double getNumericCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFClientAnchor:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:boolean getBooleanCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:int getNumberOfSheets()",
+                "org.apache.poi.POIXMLDocumentPart:java.lang.String toString()",
+                "org.apache.poi.openxml4j.opc.PackageRelationshipCollection:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFFont:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.util.Date getDateCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellValue(java.util.Date)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.openxml4j.opc.PackagePart:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setDataFormat(short)"
+            ]
+        }
+    }
+}

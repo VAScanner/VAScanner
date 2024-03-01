@@ -1,0 +1,38 @@
+{
+    "project name": "ak1132_TVDb-Rest-Client",
+    "vulnerable dependencies": {
+        "com.squareup.retrofit2:retrofit:2.3.0": {
+            "used-method num": 7,
+            "used method": [
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder baseUrl(java.lang.String)",
+                "retrofit2.Retrofit:java.lang.Object create(java.lang.Class)",
+                "retrofit2.OkHttpCall:retrofit2.Response execute()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder client(okhttp3.OkHttpClient)",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit build()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder addConverterFactory(retrofit2.Converter$Factory)",
+                "retrofit2.Retrofit$Builder:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2018-1000850"
+            ],
+            "used vul-method": [
+                "retrofit2.OkHttpCall:retrofit2.Response execute()"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2018-1000850": [
+                    "retrofit2.RequestBuilder:void addPathParam(java.lang.String,java.lang.String,boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-1000850": [
+                    "retrofit2.OkHttpCall:retrofit2.Response execute()"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

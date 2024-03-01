@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.07.2023 00:15 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.jiujie",
+			"artifactId": "Code-Hidding-Plugin",
+			"version": "1.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.9.3.jar",
+			"sha1": "311AC248030FF4F9F27E55561FADF3E99C646ABB",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.jiujie",
+				"artifactId": "Code-Hidding-Plugin",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.jiujie/Code-Hidding-Plugin/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-11771",
+				"cvssScore": "5.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-compress-1.10.jar",
+			"sha1": "5EEB27C57EECE1FAF2D837868AECCC94D84DCC9A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.jiujie",
+				"artifactId": "Code-Hidding-Plugin",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.jiujie/Code-Hidding-Plugin/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-2.4.jar",
+			"sha1": "B1B6EA3B7E4AA4F492509A4952029CD8E48019AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.jiujie",
+				"artifactId": "Code-Hidding-Plugin",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.jiujie/Code-Hidding-Plugin/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

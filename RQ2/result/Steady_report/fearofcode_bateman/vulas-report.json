@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 18:19 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.wkh",
+			"artifactId": "bateman",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-14.0.1.jar",
+			"sha1": "69E12F4C6AEAC392555F1EA86FAB82B5E5E31AD4",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.wkh",
+				"artifactId": "bateman",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.wkh/bateman/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

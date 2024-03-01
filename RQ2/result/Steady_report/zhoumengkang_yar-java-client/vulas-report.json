@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.01.2024 01:17 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "net.mengkang.yar",
+			"artifactId": "yar-java-client",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.3.5.jar",
+			"sha1": "9783D89B8EEA20A517A4AFC5F979BD2882B54C44",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "net.mengkang.yar",
+				"artifactId": "yar-java-client",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.mengkang.yar/yar-java-client/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

@@ -1,0 +1,72 @@
+{
+    "project name": "mboudreau_Alternator",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.0.7.RELEASE": {
+            "used-method num": 8,
+            "used method": [
+                "org.springframework.util.LinkedCaseInsensitiveMap:boolean containsKey(java.lang.Object)",
+                "org.springframework.util.StringUtils:java.lang.String collectionToCommaDelimitedString(java.util.Collection)",
+                "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object remove(java.lang.Object)",
+                "org.springframework.util.LinkedCaseInsensitiveMap:void clear()",
+                "org.springframework.core.NestedIOException:java.lang.String getMessage()",
+                "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.util.Assert:void notNull(java.lang.Object,java.lang.String)",
+                "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object get(java.lang.Object)"
+            ]
+        },
+        "org.springframework:spring-web:3.0.7.RELEASE": {
+            "used-method num": 17,
+            "used method": [
+                "org.springframework.http.HttpHeaders:java.util.List remove(java.lang.Object)",
+                "org.springframework.http.ResponseEntity:void <init>(java.lang.Object,org.springframework.util.MultiValueMap,org.springframework.http.HttpStatus)",
+                "org.springframework.http.HttpHeaders:void <init>()",
+                "org.springframework.web.context.ContextLoader:void <clinit>()",
+                "org.springframework.http.HttpHeaders:boolean isEmpty()",
+                "org.springframework.http.HttpHeaders:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.http.HttpHeaders:boolean equals(java.lang.Object)",
+                "org.springframework.http.HttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.http.HttpStatus:void <clinit>()",
+                "org.springframework.http.HttpHeaders:void add(java.lang.String,java.lang.String)",
+                "org.springframework.http.HttpEntity:void <clinit>()",
+                "org.springframework.http.HttpHeaders:java.util.Set entrySet()",
+                "org.springframework.web.context.ContextLoaderListener:void <init>()",
+                "org.springframework.http.HttpStatus:org.springframework.http.HttpStatus valueOf(int)",
+                "org.springframework.http.HttpHeaders:void <clinit>()",
+                "org.springframework.http.HttpHeaders:int hashCode()",
+                "org.springframework.http.HttpHeaders:java.lang.String toString()"
+            ]
+        },
+        "org.springframework:spring-webmvc:3.0.7.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.web.servlet.DispatcherServlet:void <init>()",
+                "org.springframework.web.servlet.FrameworkServlet:void <clinit>()",
+                "org.springframework.web.servlet.DispatcherServlet:void <clinit>()"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.0.7": {
+            "used-method num": 2,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)"
+            ]
+        },
+        "org.eclipse.jetty:jetty-server:9.2.0.v20140526": {
+            "used-method num": 12,
+            "used method": [
+                "org.eclipse.jetty.server.handler.ContextHandler:java.lang.String setInitParameter(java.lang.String,java.lang.String)",
+                "org.eclipse.jetty.server.Request:java.lang.String getHeader(java.lang.String)",
+                "org.eclipse.jetty.server.handler.ContextHandler$Context:java.lang.String getInitParameter(java.lang.String)",
+                "org.eclipse.jetty.server.Request:java.io.BufferedReader getReader()",
+                "org.eclipse.jetty.server.Request:java.lang.String getMethod()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void addEventListener(java.util.EventListener)",
+                "org.eclipse.jetty.server.handler.ScopedHandler:void <clinit>()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void setContextPath(java.lang.String)",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <clinit>()",
+                "org.eclipse.jetty.server.Server:void join()",
+                "org.eclipse.jetty.server.Request:void setCharacterEncoding(java.lang.String)",
+                "org.eclipse.jetty.server.Server:void <init>(int)"
+            ]
+        }
+    }
+}

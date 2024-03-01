@@ -1,0 +1,76 @@
+{
+    "project name": "xpleaf_ispider",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 15,
+            "used method": [
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.apache.zookeeper:zookeeper:3.4.6": {
+            "used-method num": 1,
+            "used method": [
+                "org.apache.zookeeper.CreateMode:void <clinit>()"
+            ]
+        },
+        "org.quartz-scheduler:quartz:1.8.4": {
+            "used-method num": 19,
+            "used method": [
+                "org.quartz.JobDetail:void <init>(java.lang.String,java.lang.String,java.lang.Class)",
+                "org.quartz.impl.RemoteScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.CronTrigger:void <init>(java.lang.String,java.lang.String,java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntrySet:java.lang.Object[] toArray(java.lang.Object[])",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntrySet:java.util.Iterator iterator()",
+                "org.quartz.impl.StdScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:java.lang.Object[] toArray(java.lang.Object[])",
+                "org.quartz.impl.RemoteScheduler:void start()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:java.lang.Object next()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:int size()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set keySet()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:java.util.Iterator iterator()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:int size()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.impl.StdScheduler:void start()",
+                "org.quartz.impl.StdSchedulerFactory:org.quartz.Scheduler getDefaultScheduler()"
+            ]
+        }
+    }
+}

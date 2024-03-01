@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.07.2023 22:07 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "githubOfflineInstaller",
+			"artifactId": "com.github.installer",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.3.3.jar",
+			"sha1": "18F4247FF4572A074444572CEE34647C43E7C9C7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "githubOfflineInstaller",
+				"artifactId": "com.github.installer",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/githubOfflineInstaller/com.github.installer/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.01.2024 02:10 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.sap.hana.cloud.samples.benefits",
+			"artifactId": "com.sap.hana.cloud.samples.benefits",
+			"version": "2.0.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2019-12406",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "cxf-api-2.7.13.jar",
+			"sha1": "05DA36A0582EFB088124E0C3073E215AAC3151C8",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.sap.hana.cloud.samples.benefits",
+				"artifactId": "com.sap.hana.cloud.samples.benefits",
+				"version": "2.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.sap.hana.cloud.samples.benefits/com.sap.hana.cloud.samples.benefits/2.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-0110",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "cxf-rt-transports-http-2.7.13.jar",
+			"sha1": "ED07ED861312940D40E998A7F4B407DBA689F7FE",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.sap.hana.cloud.samples.benefits",
+				"artifactId": "com.sap.hana.cloud.samples.benefits",
+				"version": "2.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.sap.hana.cloud.samples.benefits/com.sap.hana.cloud.samples.benefits/2.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-17573",
+				"cvssScore": "6.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "cxf-rt-transports-http-2.7.13.jar",
+			"sha1": "ED07ED861312940D40E998A7F4B407DBA689F7FE",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.sap.hana.cloud.samples.benefits",
+				"artifactId": "com.sap.hana.cloud.samples.benefits",
+				"version": "2.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.sap.hana.cloud.samples.benefits/com.sap.hana.cloud.samples.benefits/2.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

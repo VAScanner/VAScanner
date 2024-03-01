@@ -1,0 +1,123 @@
+{
+    "project name": "amplafi_htmlcleaner",
+    "vulnerable dependencies": {
+        "org.apache.ant:ant:1.9.0": {
+            "used-method num": 60,
+            "used method": [
+                "org.apache.tools.ant.types.resources.AbstractResourceCollectionWrapper:java.lang.String toString()",
+                "org.apache.tools.ant.types.Resource:java.lang.String toString()",
+                "org.apache.tools.ant.types.AbstractFileSet:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.resources.PropertyResource:java.lang.String toString()",
+                "org.apache.tools.ant.BuildException:void <init>(java.lang.String)",
+                "org.apache.tools.ant.types.selectors.modifiedselector.DigestAlgorithm:java.lang.String toString()",
+                "org.apache.tools.ant.types.PropertySet$1:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.util.VectorSet:java.lang.Object clone()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection:int size()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:boolean hasNext()",
+                "org.apache.tools.ant.Location:java.lang.String toString()",
+                "org.apache.tools.ant.Project$AntRefTable:java.lang.Object get(java.lang.Object)",
+                "org.apache.tools.ant.types.resources.BaseResourceCollectionContainer:java.lang.Object clone()",
+                "org.apache.tools.ant.types.PatternSet:java.lang.Object clone()",
+                "org.apache.tools.ant.types.resources.FailFast:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.DataType:java.lang.Object clone()",
+                "org.apache.tools.ant.BuildException:void <init>(java.lang.Throwable)",
+                "org.apache.tools.ant.util.VectorSet:boolean add(java.lang.Object)",
+                "org.apache.tools.ant.util.VectorSet:java.lang.Object set(int,java.lang.Object)",
+                "org.apache.tools.ant.util.KeepAliveInputStream:void close()",
+                "org.apache.tools.ant.types.resources.FileResourceIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.Resource$1:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.PropertySet$PropertyRef:java.lang.String toString()",
+                "org.apache.tools.ant.util.VectorSet:void clear()",
+                "org.apache.tools.ant.types.resources.Resources$2:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.util.VectorSet:boolean remove(java.lang.Object)",
+                "org.apache.tools.ant.util.IdentityStack:boolean contains(java.lang.Object)",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection:java.util.Iterator iterator()",
+                "org.apache.tools.ant.types.resources.URLResource:java.lang.String toString()",
+                "org.apache.tools.ant.types.DataType:java.lang.String toString()",
+                "org.apache.tools.ant.util.VectorSet:void add(int,java.lang.Object)",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:boolean hasNext()",
+                "org.apache.tools.ant.Task:void <init>()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.AntClassLoader:java.lang.String toString()",
+                "org.apache.tools.ant.types.selectors.modifiedselector.ChecksumAlgorithm:java.lang.String toString()",
+                "org.apache.tools.ant.types.FileSet:java.lang.Object clone()",
+                "org.apache.tools.ant.types.FilterSet:java.lang.Object clone()",
+                "org.apache.tools.ant.types.selectors.modifiedselector.PropertiesfileCache:java.lang.String toString()",
+                "org.apache.tools.ant.types.Path:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:org.apache.tools.ant.types.Resource next()",
+                "org.apache.tools.ant.types.Resource$1:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.FileResource:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.FileResourceIterator:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.FailFast:boolean hasNext()",
+                "org.apache.tools.ant.types.Resource:java.lang.Object clone()",
+                "org.apache.tools.ant.types.selectors.TokenizedPath:java.lang.String toString()",
+                "org.apache.tools.ant.ProjectComponent:java.lang.Object clone()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:boolean hasNext()",
+                "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.Restrict:java.lang.String toString()",
+                "org.apache.tools.ant.types.PatternSet:java.lang.String toString()",
+                "org.apache.tools.ant.types.EnumeratedAttribute:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.BaseResourceCollectionContainer:java.lang.String toString()",
+                "org.apache.tools.ant.types.Path:java.lang.Object clone()",
+                "org.apache.tools.ant.types.PatternSet$NameEntry:java.lang.String toString()",
+                "org.apache.tools.ant.BuildException:java.lang.String toString()",
+                "org.apache.tools.ant.util.VectorSet:boolean contains(java.lang.Object)",
+                "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:org.apache.tools.ant.ProjectHelper next()"
+            ],
+            "CVE": [
+                "CVE-2021-36374",
+                "CVE-2021-36373"
+            ],
+            "used vul-method": [
+                "org.apache.tools.ant.types.resources.AbstractResourceCollectionWrapper:java.lang.String toString()",
+                "org.apache.tools.ant.types.Resource:java.lang.String toString()",
+                "org.apache.tools.ant.types.AbstractFileSet:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.URLResource:java.lang.String toString()",
+                "org.apache.tools.ant.types.Path:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.FileResource:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.Restrict:java.lang.String toString()",
+                "org.apache.tools.ant.types.resources.BaseResourceCollectionContainer:java.lang.String toString()"
+            ],
+            "vul-called frequency": 104,
+            "related vul root method": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.ant.types.resources.AbstractResourceCollectionWrapper:java.lang.String toString()",
+                    "org.apache.tools.ant.types.Resource:java.lang.String toString()",
+                    "org.apache.tools.ant.types.AbstractFileSet:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.URLResource:java.lang.String toString()",
+                    "org.apache.tools.ant.types.Path:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.FileResource:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.Restrict:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.BaseResourceCollectionContainer:java.lang.String toString()"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.ant.types.resources.AbstractResourceCollectionWrapper:java.lang.String toString()",
+                    "org.apache.tools.ant.types.Resource:java.lang.String toString()",
+                    "org.apache.tools.ant.types.AbstractFileSet:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.URLResource:java.lang.String toString()",
+                    "org.apache.tools.ant.types.Path:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.FileResource:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.Restrict:java.lang.String toString()",
+                    "org.apache.tools.ant.types.resources.BaseResourceCollectionContainer:java.lang.String toString()"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

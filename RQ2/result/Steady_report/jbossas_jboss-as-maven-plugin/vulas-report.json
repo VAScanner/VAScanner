@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.01.2024 03:42 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.jboss.as.plugins",
+			"artifactId": "jboss-as-maven-plugin",
+			"version": "7.10.Final-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2019-12402",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-compress-1.5.jar",
+			"sha1": "D2BD2C0BD328F1DABDF33E10B6D223EBCBE93343",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.jboss.as.plugins",
+				"artifactId": "jboss-as-maven-plugin",
+				"version": "7.10.Final-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.jboss.as.plugins/jboss-as-maven-plugin/7.10.Final-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-2035",
+				"cvssScore": "4.4" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "jansi-1.8.jar",
+			"sha1": "81DA0C3980E30744184BEC4706CF6F4508D3D7EA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.jboss.as.plugins",
+				"artifactId": "jboss-as-maven-plugin",
+				"version": "7.10.Final-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.jboss.as.plugins/jboss-as-maven-plugin/7.10.Final-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

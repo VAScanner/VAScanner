@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 14:52 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "edu.ustc",
+			"artifactId": "speech-mfcc",
+			"version": "0.0.1-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-2.4.jar",
+			"sha1": "B1B6EA3B7E4AA4F492509A4952029CD8E48019AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "edu.ustc",
+				"artifactId": "speech-mfcc",
+				"version": "0.0.1-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/edu.ustc/speech-mfcc/0.0.1-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-18.0.jar",
+			"sha1": "CCE0823396AA693798F8882E64213B1772032B09",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "edu.ustc",
+				"artifactId": "speech-mfcc",
+				"version": "0.0.1-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/edu.ustc/speech-mfcc/0.0.1-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

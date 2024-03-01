@@ -1,0 +1,31 @@
+{
+    "project name": "longshilin_HDFS-Netdisc",
+    "vulnerable dependencies": {
+        "org.apache.struts:struts2-core:2.3.15.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.hadoop:hadoop-common:2.4.1": {
+            "used-method num": 17,
+            "used method": [
+                "org.apache.hadoop.fs.RawLocalFileSystem:void close()",
+                "org.apache.hadoop.fs.FileSystem:boolean exists(org.apache.hadoop.fs.Path)",
+                "org.apache.hadoop.conf.Configuration$IntegerRanges$RangeNumberIterator:java.lang.Integer next()",
+                "org.apache.hadoop.fs.FileSystem:org.apache.hadoop.fs.FileSystem get(java.net.URI,org.apache.hadoop.conf.Configuration)",
+                "org.apache.hadoop.fs.FileStatus:org.apache.hadoop.fs.Path getPath()",
+                "org.apache.hadoop.fs.RawLocalFileSystem:boolean mkdirs(org.apache.hadoop.fs.Path)",
+                "org.apache.hadoop.fs.RawLocalFileSystem:org.apache.hadoop.fs.FileStatus[] listStatus(org.apache.hadoop.fs.Path)",
+                "org.apache.hadoop.fs.FileStatus:long getLen()",
+                "org.apache.hadoop.fs.Path:java.lang.String getName()",
+                "org.apache.hadoop.fs.FileSystem:void copyToLocalFile(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path)",
+                "org.apache.hadoop.fs.FileSystem:boolean deleteOnExit(org.apache.hadoop.fs.Path)",
+                "org.apache.hadoop.fs.FileSystem:void <clinit>()",
+                "org.apache.hadoop.fs.FileSystem:void copyFromLocalFile(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path)",
+                "org.apache.hadoop.conf.Configuration$IntegerRanges$RangeNumberIterator:boolean hasNext()",
+                "org.apache.hadoop.fs.FileStatus:boolean isDirectory()",
+                "org.apache.hadoop.fs.Path:void <clinit>()",
+                "org.apache.hadoop.fs.Path:void <init>(java.lang.String)"
+            ]
+        }
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "project name": "neoremind_navi-pbrpc",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.0.28.Final": {
+            "used-method num": 73,
+            "used method": [
+                "io.netty.util.internal.ReadOnlyIterator:java.lang.Object next()",
+                "io.netty.buffer.SwappedByteBuf:io.netty.buffer.ByteBuf markReaderIndex()",
+                "io.netty.buffer.Unpooled:void <clinit>()",
+                "io.netty.buffer.PooledByteBufAllocator:void <clinit>()",
+                "io.netty.buffer.EmptyByteBuf:int readableBytes()",
+                "io.netty.buffer.SwappedByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.bootstrap.Bootstrap:io.netty.bootstrap.Bootstrap clone()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValueIterator:java.lang.Object next()",
+                "io.netty.bootstrap.Bootstrap:void <clinit>()",
+                "io.netty.buffer.PooledDirectByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.channel.ChannelOption:void <clinit>()",
+                "io.netty.util.UniqueName:void <clinit>()",
+                "io.netty.buffer.WrappedByteBuf:io.netty.buffer.ByteBuf resetReaderIndex()",
+                "io.netty.channel.ChannelDuplexHandler:void <init>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap clone()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                "io.netty.channel.ChannelInitializer:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.buffer.UnpooledDirectByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object get(java.lang.Object)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap group(io.netty.channel.EventLoopGroup)",
+                "io.netty.buffer.CompositeByteBuf:io.netty.buffer.CompositeByteBuf resetReaderIndex()",
+                "io.netty.buffer.CompositeByteBuf:io.netty.buffer.CompositeByteBuf readBytes(byte[],int,int)",
+                "io.netty.handler.codec.MessageToMessageEncoder:void <init>()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeyIterator:java.lang.Object next()",
+                "io.netty.buffer.AbstractByteBuf:io.netty.buffer.ByteBuf markReaderIndex()",
+                "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:boolean containsKey(java.lang.Object)",
+                "io.netty.buffer.Unpooled:io.netty.buffer.ByteBuf copiedBuffer(byte[][])",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.buffer.EmptyByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.buffer.AbstractByteBuf:int readableBytes()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object remove(java.lang.Object)",
+                "io.netty.util.concurrent.AbstractFuture:java.lang.Object get()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$BaseIterator:boolean hasNext()",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext fireChannelRead(java.lang.Object)",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <init>()",
+                "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                "io.netty.buffer.CompositeByteBuf:io.netty.buffer.CompositeByteBuf markReaderIndex()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "io.netty.buffer.WrappedByteBuf:int readableBytes()",
+                "io.netty.util.internal.chmv8.ForkJoinTask:java.lang.Object get()",
+                "io.netty.bootstrap.Bootstrap:void <init>()",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)",
+                "io.netty.buffer.SwappedByteBuf:int readableBytes()",
+                "io.netty.buffer.EmptyByteBuf:io.netty.buffer.ByteBuf markReaderIndex()",
+                "io.netty.handler.timeout.IdleStateHandler:void <init>(int,int,int)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object)",
+                "io.netty.util.internal.ReadOnlyIterator:boolean hasNext()",
+                "io.netty.handler.timeout.IdleState:void <clinit>()",
+                "io.netty.buffer.EmptyByteBuf:io.netty.buffer.ByteBuf resetReaderIndex()",
+                "io.netty.buffer.SwappedByteBuf:io.netty.buffer.ByteBuf resetReaderIndex()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.buffer.AbstractByteBuf:io.netty.buffer.ByteBuf resetReaderIndex()",
+                "io.netty.buffer.AdvancedLeakAwareByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.buffer.WrappedByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntryIterator:java.util.Map$Entry next()",
+                "io.netty.buffer.AbstractByteBuf:io.netty.buffer.ByteBuf readBytes(byte[],int,int)",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()",
+                "io.netty.buffer.WrappedByteBuf:io.netty.buffer.ByteBuf markReaderIndex()"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext fireChannelRead(java.lang.Object)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)"
+            ],
+            "vul-called frequency": 8,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext fireChannelRead(java.lang.Object)",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                    "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.net.SocketAddress)"
+                ]
+            }
+        }
+    }
+}

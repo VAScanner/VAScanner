@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 12:19 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.grouplens.grapht",
+			"artifactId": "grapht",
+			"version": "0.11.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-24.1-jre.jar",
+			"sha1": "96C528475465AEB22CCE60605D230A7E67CEBD7B",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.grouplens.grapht",
+				"artifactId": "grapht",
+				"version": "0.11.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.grouplens.grapht/grapht/0.11.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

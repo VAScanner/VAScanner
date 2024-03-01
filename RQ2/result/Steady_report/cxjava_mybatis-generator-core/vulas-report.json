@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.07.2023 08:40 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.mybatis",
+			"artifactId": "mybatis-generator-core",
+			"version": "1.3.1"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.8.2.jar",
+			"sha1": "FC33BF7CD8C5309DD7B81228E8626515EE42EFD9",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.mybatis",
+				"artifactId": "mybatis-generator-core",
+				"version": "1.3.1",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.mybatis/mybatis-generator-core/1.3.1",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

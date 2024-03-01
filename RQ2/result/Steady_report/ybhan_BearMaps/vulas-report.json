@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "09.07.2023 16:14 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "io.github.ybhan",
+			"artifactId": "bearmaps",
+			"version": "1.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2016-9177",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spark-core-2.4.jar",
+			"sha1": "72BC518C557BA4E3AE0676EED3E587B3074CA0A3",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "io.github.ybhan",
+				"artifactId": "bearmaps",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/io.github.ybhan/bearmaps/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-9159",
+				"cvssScore": "5.3" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spark-core-2.4.jar",
+			"sha1": "72BC518C557BA4E3AE0676EED3E587B3074CA0A3",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "io.github.ybhan",
+				"artifactId": "bearmaps",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/io.github.ybhan/bearmaps/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

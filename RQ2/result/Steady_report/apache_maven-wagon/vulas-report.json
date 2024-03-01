@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 15:12 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.apache.maven.wagon",
+			"artifactId": "wagon-webdav-jackrabbit",
+			"version": "3.5.4-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.5.14.jar",
+			"sha1": "1194890E6F56EC29177673F2F12D0B8E627DEC98",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apache.maven.wagon",
+				"artifactId": "wagon-webdav-jackrabbit",
+				"version": "3.5.4-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.apache.maven.wagon/wagon-webdav-jackrabbit/3.5.4-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

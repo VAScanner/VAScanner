@@ -1,0 +1,2064 @@
+<!--
+
+    This file is part of Eclipse Steady.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    SPDX-License-Identifier: Apache-2.0
+    SPDX-FileCopyrightText: Copyright (c) 2018-2020 SAP SE or an SAP affiliate company and Eclipse Steady contributors
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Eclipse Steady - Analysis Report</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic,300italic,300">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<style type="text/css">
+		html {
+			box-sizing: border-box;
+		}
+
+		a {
+			color: #4062bb;
+		}
+
+		a:hover {
+			color: #96a9d9;
+		}
+
+		body {
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #393e41;
+			padding-bottom: 2em;
+		}
+
+		summary {
+			font-size: 1.2em;
+		}
+
+		.configurations {
+			width: 100%;
+			cellspacing: 0;
+			cellpadding: 0;
+		}
+
+		.configurations td {
+			padding: 10px;
+		}
+
+		#backToTop {
+			border: none;
+			position: fixed;
+			bottom: 50px;
+			float: right;
+			right: 5%;
+			left: 95%;
+			max-width: 40px;
+			width: 100%;
+			font-size: 15px;
+			background-color: #393e41;
+			padding: .5px;
+		}
+
+		#backToTop svg {
+			fill: white;
+			stroke: black;
+			stroke-linecap: butt;
+			overflow: visible;
+			stroke-width: 0.6px;
+		}
+
+		#backToTop svg:hover {
+			opacity: 50%;
+		}
+
+		details>summary::-webkit-details-marker {
+			display: inline;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		.container {
+			padding: 0 0;
+		}
+
+		.report {
+			margin: 18px auto;
+			max-width: 85%;
+		}
+
+		.report-card {
+			background: #ffffff;
+			padding: 2em;
+		}
+
+		.header {
+			background: #393e41;
+			color: #ffffff;
+			margin: 0 0px 0px 0px;
+			padding: 16px 20px;
+			position: relative;
+		}
+
+		.header img {
+			float: left;
+			height: 80px;
+		}
+
+		.header h1 {
+			float: right;
+			top: 18px;
+			left: 10px;
+		}
+
+		.summary {
+			padding: 40px;
+			color: #393e41;
+			background: #ffffff;
+			border-bottom: solid 1px #ECEFF1;
+		}
+
+		.target-summary {
+			padding-left: 20px;
+			padding-bottom: -5px;
+		}
+
+		.target-summary h3 {
+			display: inline;
+		}
+
+		table {
+			border: none;
+		}
+
+		.vulnerabilities {
+			padding-right: 30px;
+		}
+
+		.vulnerabilities>ul {
+			list-style: none;
+			padding-bottom: 0;
+		}
+
+		.vulnerabilities li {
+			margin-bottom: 20px;
+		}
+
+		.vulnerability {
+			padding-left: 3%;
+			margin-bottom: 3px;
+		}
+
+		.vulnerability_summary {
+			display: inline-block;
+		}
+
+		.vulnerability_title {
+			padding-bottom: 30px;
+			line-height: 75%;
+		}
+
+		.vulnerability_title h2 {
+			display: inline;
+		}
+
+		.vulnerability_title a {
+			display: inline;
+		}
+
+		.vulnerability_sha {
+			color: grey;
+			font-style: italic;
+		}
+
+		#vulnerability_score_high {
+			color: #393e41;
+		}
+
+		#vulnerability_score_high:hover {
+			color: lightgrey;
+		}
+
+		#vulnerability_score_medium {
+			color: #393e41;
+		}
+
+		#vulnerability_score_medium:hover {
+			color: lightgrey;
+		}
+
+		.vulnerability_score_high h4 {
+			color: #e94f37;
+		}
+
+		.vulnerability_score_medium h4 {
+			color: #d89e29;
+		}
+
+		.apps>ol {
+			text-align: left;
+		}
+
+		.vulnerable_apps {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		.vulnerable_apps tr {
+			border-bottom: solid 1px #393e41;
+		}
+
+		.vulnerable_apps td {
+			border-right: solid 1px #393e41;
+			border-left: solid 1px #393e41;
+		}
+
+		.vulnerable_apps th {
+			border-right: solid 1px #393e41;
+			border-left: solid 1px #393e41;
+			border-bottom: solid 1px #393e41;
+			border-top: solid 1px #393e41;
+			text-align: left;
+			padding: 5px;
+			padding-left: 20px;
+		}
+
+		/* Tooltip from http://www.menucool.com/tooltip/css-tooltip# */
+		.tooltip {
+		    display:inline-block;
+		    position:relative;
+		    border-bottom:1px dotted #666;
+		    text-align:left;
+		}
+
+		.tooltip .top {
+		    min-width:350px;
+		    top:-20px;
+		    left:50%;
+		    transform:translate(-50%, -100%);
+		    padding:10px 20px;
+		    color:#444444;
+		    background-color:#ffffff;
+		    font-weight:normal;
+		    font-size:15px;
+		    border-radius:8px;
+		    position:absolute;
+		    z-index:99999999;
+		    box-sizing:border-box;
+		    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+		    visibility:hidden; opacity:0; transition:opacity 0.8s;
+		}
+
+		.tooltip:hover .top {
+		    visibility:visible; opacity:1;
+		}
+
+		.tooltip .top i {
+		    position:absolute;
+		    top:100%;
+		    left:50%;
+		    margin-left:-12px;
+		    width:24px;
+		    height:12px;
+		    overflow:hidden;
+		}
+
+		.tooltip .top i::after {
+		    content:'';
+		    position:absolute;
+		    width:12px;
+		    height:12px;
+		    left:50%;
+		    transform:translate(-50%,-50%) rotate(45deg);
+		    background-color:#EEEEEE;
+		    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+		}
+
+		.callout {
+			z-index: 20;
+			position: absolute;
+			top: 30px;
+			border: 0;
+			left: -12px;
+		}
+
+		/* Other styles */
+		td.descr {
+			background-color: #DDDDDD;
+			color: black;
+			font-size: 75%;
+		}
+
+		td.above_threshold {
+			background-color: #FF9999;
+		}
+
+		td.apps {
+			padding: 0px;
+			text-align: left;
+		}
+
+		h2.build_exception {
+			color: #e94f37;
+		}
+
+		h2.build_ok {
+			color: #9cec5b;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript">
+	//<![CDATA[
+	function toggle(_btn, _div) {
+		var elem = document.getElementById(_div);
+
+		if(elem.style.display === 'none') {
+			elem.style.display = 'block'
+			_btn.innerHTML = "-";
+		}
+		else {
+			elem.style.display = 'none'
+			_btn.innerHTML = "+";
+		}
+	}
+	//]]>
+	</script>
+</head>
+
+<body>
+	<a name="top"></a>
+	<div class="container">
+		<div class="header">
+			<img alt="Eclipse Steady" src="data:image/png;base64,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"/>
+			<h2>Eclipse Steady - Analysis Report</h2>
+		</div>
+		<div class="summary">
+			<table class="configurations">
+				<tr>
+					<td valign="top" width="25%">
+						<h2>Generated: </h2>
+						<div class="target-summary">
+							<span>at: </span><h3>07.01.2024 23:28 +0800</h3><br>
+							<span>with: </span><h3>3.2.4</h3><br>
+							<!--
+								Version:         3.2.4
+								Build timestamp: 2022-04-21T13:30:57+00:00
+								Build number:    80d6bae2e067ab77ee0bf01123e29fdf9806f3bd
+								Build branch:    UNKNOWN
+							-->
+						</div>
+
+						<h2>Target: </h2>
+						<div class="target-summary">
+							<span>Workspace: </span><h3>5BB7592E24354F20143D405D1B106088</h3><br>
+							<span>Group: </span><h3>com.maweiming.wechat</h3><br>
+							<span>Artifact: </span><h3>weixin-bot</h3><br>
+							<span>Version: </span><h3>1.0-SNAPSHOT</h3><br>
+						</div>
+
+
+						<h2>Links: </h2>
+						<div class="target-summary">
+							<span><a href="https://eclipse.github.io/steady/user/manuals" target="_blank">Docs - User Manual</a></span><br>
+							<span><a href="https://eclipse.github.io/steady/user/manuals/assess_and_mitigate" target="_blank">Docs - Assess and Mitigate</a></span><br>
+							<span><a href="https://eclipse.github.io/steady/user/support" target="_blank">Docs - Getting Help</a></span><br>
+							<span><a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088" target="_blank">Web Frontend</a></span><br>
+						</div>
+					</td>
+					<td valign="top" width="75%">
+						<h2 class="build_ok">Analysis Result: Success</h2>
+						<details>
+							<br />
+							<summary>
+								No vulnerabilities, thus, no build exception is thrown
+							</summary>
+							The findings presented below represent archives containing code that is subject to a specific vulnerability.
+							Expand to see the vulnerability description and the CVSS score (if any).
+							While the first table column indicates that vulnerable code is contained, the other two columns
+							show whether that vulnerable code is reachable according to the static and dynamic analyses (if performed using the respective analysis goals).
+								Hover over the table cells to see more details about the dependency.
+						</details>
+						
+						<h2>Used Configuration Settings</h2>
+						<details>
+							<summary>exceptionThreshold: noException</summary>
+							<br />
+							Specifies if and when the plugin will throw a build exception.<br /><br />
+							Possible values (default: dependsOn):
+							<ul>
+								<li>noException - no build exception will be thrown, regardless of the analysis results
+								<li>dependsOn - an exception will be thrown if at least one application project depends on an archive with known vulnerabilities (typically by declaring a dependency in the POM file)
+								<li>potentiallyExecutes - an exception will be thrown if at least one application project can potentially execute vulnerable code (according to static source code analysis).
+								<li>actuallyExecutes - an exception will be thrown if at least one application project actually executes vulnerable code during application tests.
+							</ul>
+						</details>
+						<br />
+
+						<details>
+							<br />
+							<summary>Exempted scopes: PROVIDED, TEST</summary>
+							List of scopes that will be ignored (exempted) when deciding whether to throw a build exception.
+							<br /><br />Example: vulas.report.exemptScope = test, provided
+							<br />Possible values: compile, provided, runtime, test, system
+							<br />Default: [test, provided]
+						</details>
+						<br />
+
+						<details>
+							<br />
+							<summary>Exempted bugs: </summary>
+							List of security vulnerabilities that will be ignored (exempted) when deciding whether to throw a build exception.
+							<br /><br />Example: vulas.report.exemptBug.CVE-2014-0050.reason = Lorem ipsum
+							<br />Default: none
+						</details>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<section class="report">
+			<div>
+				<div class="report-card">
+					<div id="result" style="display: block;">
+						<div class="vulnerabilities">
+							<details>
+								<summary>
+									<h2 style="display: inline-block;">Vulnerabilities (0)</h2>
+								</summary>
+							</details>
+						</div>
+						<div class="vulnerabilities">
+							<details>
+								<summary>
+									<h2 style="display: inline-block;">Exempted Vulnerabilities (14)</h2>
+								</summary>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														fastjson-1.2.51.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-18349" target="_blank">CVE-2017-18349</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 01F974E3F64393903A419950C0D4E708A23B4EB3
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												9.8 (v3.0)
+											</span>
+										</div>
+										<br />
+										<div>
+												parseObject in Fastjson before 1.2.25, as used in FastjsonEngine in Pippo 1.11.0 and other products, allows remote attackers to execute arbitrary code via a crafted JSON request, as demonstrated by a crafted rmi:// URI in the dataSourceName field of HTTP POST data to the Pippo /json URI, which is mishandled in AjaxApplication.java.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>false
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+																<img width="15" alt="Reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>false
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>false
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														httpclient-4.5.6.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-4366" target="_blank">CVE-2013-4366</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 1AFE5621985EFE90A92D0FBC9BE86271EFBE796F
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												9.8 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												http/impl/client/HttpClientBuilder.java in Apache HttpClient 4.3.x before 4.3.1 does not ensure that X509HostnameVerifier is not null, which allows attackers to have unspecified impact via vectors involving hostname verification.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gcfDSYM77LXrAAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAFsUlEQVRYhd2ZfWjVVRjHP8+5v927zXavL1PQlCZGEwlNk9SKzASpDDSasUUgWCLL3ET/CCRpIL2RUZuKLKP/gukUDNLQEIpepmbizEKrqTTbUOfLvbqXe3fv7+mPc+fmvC+/XS2kLxzu7zm/8zvne57nPM95zrmiquQC3SZTiDMLZRbKVJQShJB9SRjhLMJxhEM4HJLl+lsu48iQCG6ViQrLEMrEMBk/4ALxZHGT7QzgJIsBYqAuJ1F2CnxGpZ65owS1VsYQYB3wqhQwjGhy0H5KmQcBgx8IgHbTCXxKlHekWi/cNkHdIuU4fCj5jKMLNI6LeKGVqjMQB0MhaA9txFkrK7UhZ4K6VWolnyp6QaO3QSwV0QCGPNAe6qRSq4dGsF4cTdAoRSwmAureQXIDSRoMQdBr7BYfS1ih8cHNTMpv4+yUIhYTBtV/gRyAJPsOgxSxWOPsTNXsFoJaJ3USZJGGcVM6gWJrcykpjKXgahhXgizSOqm7ZR4DTax1skSC7KAzObt0yC10kskSIhiGgUZ4Uaq08RaCullGYjglDsVpHSIGTHwK5m7OPuJNSM7o65eh7SjkpW4iAYzG6cClVF7Xy2BDqYVLjQQp1nCGNecCgeEwYrJHYoOQV5Q+coqNFBKiWK9SA1T1E6yVCfhZrp1ZHEIATdjn6GX4bjUkEukVqYC/EJ7YBL580CxxXUA7ccljObXyAdXa6gCosEIKydeIB4/tvmh/ffnwewNE4qlNBnZJjCmGJ+ut3NORJm4MQBwkSL72skLgTcN6EYRyT4HYATqOQ88lcAphxhtWe/lpig+YuQ7EQOQ0XPnD1mWC3NgUylkvYnQspRJgEr1ZPiQ54LXr8EvSSR55C+5/FLpTtO0CpjwL01Zbuflj6I5n1yBADCTAJB1LqUGZcyMr8YIAcPBduPgzGAeeaYTQGGvOPkSBMRNhwedWPncAjm6233qBAn5AmWNQZg9pKzNAbwz2vADRK1A4FhZut6Z2gQSQ54eFu8Afgs5zsLfcDupFe2DN7OKizDa4TOOWHTALAsDFv2BfhZXHzYV5G60W48CCeih+yHr83jKIXErvSOlg88tpBqFkyAQBCoGT++HgOitPWwOj74Px06F0qa379jU4cxgKcug/DgglBiHkef0NRgHQ9B50NFt57ONWmwB/fwNHttmJ5AIXEEJeV0V6KP3BW8QWBtTdJgxK2PPiHYxuYNYaGD3Dyu0/Qtv39nn8fJi+1Iab3JiBEjYoZwfsyN7RBZTOh8c2WvnEFrhwGlp/gj+TWfy8T6BkJvTk0L8DKGcNhuYhE4xiHeLp7VZu/wEOVFtP9QH7lsHlE2Dy4NldUDQKTxvBYIKGZoNwUAzGc46XAPx+eG4XBEZCVzvsKQPXteQcINoDXz4PsTDcMwEW7rDbnVdn7DsOCAcNQhMxvAfRGDBnPRTPALfXxrmr523k70MAON8C+1+y8r3z4OFVVvNeIMlxhCYj7ZzSKC2eAmkCKCqCByutfLgGWppSx7lC4Nev4NhHVp5aBQWONy36QaO0SDunDBtUURok4MHMcWD0VGvaeCccfd+Gme40JQEceduGnOBEGPmArcuEviOp0sAGVQdAlHrtYi0O/qwd5Bfb30QMprwCCTdLwloAbhx8PgiMyq5BB7SLHlHqkyJQra3UyTYZzqqMKb8CkkzoAiP6E1GvkCwLXUGGYfQq26jW1n6CAIYavU6FBDIcmgw2We04NjRifYhF0jtj36HpOh0Yavqqh37s7DsX5wJD2uWQ7th503ykShs1wiaCHgbKpWRCEDTCpoHkIM3djG6R3RJkEWHvV2y5QsAQAo3whazUxYPfp5yXOJTpNXYTSqo+15uETNBk36Hk5ZFDWUoud/v1W8aVIZVarV1UqNImQYz4blObCuLDSBCjSpt2UZGJHPwfroBvwt16iZ4K/9XfEP8Ajm59+nuOQEkAAAAASUVORK5CYII="
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>false
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+																<img width="15" alt="Reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>false
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>false
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#fba04b"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														log4j-api-2.10.0.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="https://issues.apache.org/jira/browse/LOG4J2-3230" target="_blank">CVE-2021-45105</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: FEC5797A55B786184A537ABD39C3FA1449D752D6
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#fba04b;font-weight:bold"
+ >
+												5.9 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Apache Log4j2 versions 2.0-alpha1 through 2.16.0 (excluding 2.12.3 and 2.3.1) did not protect from uncontrolled recursion from self-referential lookups. This allows an attacker with control over Thread Context Map data to cause a denial of service when a crafted string is interpreted. This issue was fixed in Log4j 2.17.0, 2.12.3, and 2.3.1.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+																<img width="15" alt="Reachable"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwQCToUf9s6NwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAJ2UlEQVRYhb2ZaYxU1RKAvzr39t6zdDMiSySAwbYh0Yg+legPZXWJK5rgD2NEfLjBiyFG814wJBpNJEbFJRL0RYyKWyKoUVx+uCaoTwyacRgUcWORWXp6pve+fer9uDMjzfSMCsT61zd16nynTp1zqqpFVTkSyaXTM8uqZwFnWTgFmKrQAiCQBX408DXwWUjks3hHx7dHMo/8FcDsSSdNU8dZqnCVK3JyRIQaULaWCmAHbRkRgkDIGBygqIqnulPgVanV/tuya9eeYwr4w/Tp45Oh0L+BZc2OE8uVyxT6+7GqVoJBJB4fc7wBE1YlBgyI5BF5qrdcvm/6Dz8cPGrArnR6SUjkwbgxkzLWUsnlrEkmiSxejEkkqHz6KeUPP0RiMXCckQZU0WwWaWpColGcTMYkgkHyodC+srWrjuvoePGIAbvT6UdajFlZVKVgraVcRhIJkps24Z500rBeYcMG+tes8T1pzO8GPA8tFoleey3Ra6/FtLVR3bGD7N13Ez5wwETjcbK12rq2jo5//SXA/82e7U4rFF4Z57qXd3keNbAC2L4+Wh9/nPCVV44YM3DvveQffRSTTKJDnuvvp/n++4led12dbvXrr+m54goc1zXjg0F6PG/znmj06jO2b/cOt2sO/wAwJZ9/dZzrXn5gEA5Ay2WcadMIX3xxw5XGV63COfFEtFxGRLCZDNFly0bAAQROOYXwggXUcjl7wPMY57qXT8nnX21kdwTg/lRq3fhA4LIDnmcZhBsCDMycCaFQQ0CJRIhceSU2n0fLZdwpU2i6446GugDBs89GPQ/AHvA8Oz4QuGx/KrVuTMC9qdTVba674qA3wtNorYYZP37UCQFC55+PhMPYgQHCixcjTU2j6poJE+oO1UHPo811V+xNpa5uCLg3lUqGRJ4oWos9xHN/RZypUzHJJBIIEF64cGzlahUOiX8LtmgtIZEn9qZSyRGAwJqk67YVVBvCieNgu7vHnHPoKjHjxuGeeOKYurVffwVbP1VB1SZdtw1YUwe4b9asE8LG3Jip1X4foQq12vAqJRjE++47aLD9dWM8D5NIjLm9ANXt2xHXHfE9U6vZsDE37ps164RhQON5yxPGhKuqiAg6MADlMhiDDgyg+TwSCuHt3k11x47R+bJZbF8fuC6IjKpnu7upfPYZEo2OBFclYUzYeN5yH1BEVGRJTtUigs1mCS1cSPLll2l76y1a168nOHu2P3G1SmHjxtG90t6OzWSw2Sza3z+qXuHZZ6kdOOAvpIHkVK2KLEFEpHvGjJODrttRsNbaXI7gnDkkX365fkStRv9dd5HfuBEJhUhs3Eho7twRhvtuuIHS22+DCMnnnyd43nkjdLzOTnouvXQ4hDSf918fayEcxkSjoErUGFPxvLSpGjMnKoKqgrXEbr555JIch+a1awkvWIAWi2RXrqTy0Uf1Xnn6aUpbtyLNzWAMuXXr6k4pQG3PHvpuuAEtFtF8HtPaSvz220k8/TTNa9fizpiBHRhARYiKUDVmjuxPpdYnHGdZplxGIhHa3n9/1Puutns33Rde6L8Wrkto0SLc6dPxOjoovfceEg6D4/gvSTZLaN48YjfdhGlpofzJJ+SffBLb0wOeR/Ccc2h95BHMpEnD9rWvj57Fi/F27yYZj5Op1Z6SfanUtpjIPwqVCiaZpO2995CWloaAAH233EJpyxYkHkdzOf9UBwJ+onDIwRAR7MAAGIO4LlooILEYWqkQSKdJvvZaw0NSev11+pYvJ5ZIkFf9whjVqRXwT2wuh81mR4UDCM+f718/xiDNzUgy6V8pQ3CD26qqSDyORCLgukhrq/9yGEPzAw80hAMInn46Jpmk4nkY1alGRVqsKjgONpOh2t4+JqAzfTpEIvXxVauhfX1oNovm82gm4we/78rhFExzOcILFxI49dRR7Usk4j+X1qIiLfXnXITSli2EL7xwdAOhkO8JVRAZTkYjS5YQmjcP09qKt2sXxc2bqX7+ub/1waCvby3hiy4a0wE2n0dLJWRwUa6oZo0xx1lVpKmJ0tatVL/6isBppzU20NUFpRLEYtieHsLz59O0ejVuOj2sEzz3XKLXX0/hmWcYuO8+/8RGIhCP486cOSagt3MnNpMh0NKCqmaNFfkxOOSdwfsou2oVOkoslrZuRSsVbF8f8RUrSLzwQh3c764WotdfT3LTJkwyie3vR8JhTCw2JmDpjTdAlaAxWJEfjcCO0FCMACYex9u5k95rrsH7tr5SLL/7LsVNm8Bamlevpmn16jEnAwiccQbJF17AJBLY3l7sUGw2EK+jg9KbbyLNzYREENjhAttc+CdDmbMqprWV6jff0LN4MeF583CmTaP200+U3noLm8kQv/NOYrfd9odwQ+Km07Ru2EDPBRdQ+fjjunpmSLRU8neuWkVCIVw/T9hW99TV3fsiftGTy6G1mn+XVSpELruM1qee+tNwh0r+scfIPfQQbR98gHPCCcPfa3v3kr39dioff4xJJOqeOlGQ/anUdzFjphXs6HmqFos4xx9P2zvv+HfaEUrPpZfiff898VtvxZk4kWp7O8XXXsP+9hvGPxhEjSFv7Z6JnZ0zXFRVUqkX4yL/KYyWSatCuUzzPfccFRxAy9q1dM+d65epgym/xOPDcABxEVNQfRFVNQDWdddnrC0FGuRwAmh/P+ELLiD0R2n8nxA3lSJ6zTWI4yCJBJJIQCAwDBcQIWNtybruehhMWCe1t/9SsnZDwnFGVHmqCq5LbOXKo4YbkujSpf4T2CCkEo5jStZumNTe/ssw4KCs6fW87qhIHaTm8wTnzBn14j4ScWfOJHDaaWixWA8uYno9r5vDaxKAyZ2dvWXVWyLGYA75rpUK4UWLjhnckATPPBMtl4d/GzARYyir3jK5s7N3BOAg5Cvdnvfo+KFUXNW/k2bNOuaAZvLkuoRjvOvS7XmPTu7sfKVO7/CBEzs7Vx6sVrdMcF0DGFSRYPBwtaOW2s8/D2U5ZoLrmoPV6paJnZ0jAr1hb+bnWOyqHs/bPCEQwFhrCi+99KcmtV1dVLZto/rFF2ihMKpe5ZNPKDz3HG5zs5nguvR43uafY7GrGun+qfZbob+f2kUX2fjSpbjpNBKNouUytqsL7/vvqW7fTuXLL/E6O/3iXgRnyhTCixYRvuQSv6cTDGK7uii+9BIDDz9MVNVEo9Eja78dKl3p9JKQ6oOxfH5SxnGwEyZYicXQUgnt7fVLTM9DgkE/VxyK30rFr6djMZypU5FolNr+/Zh9+8y41lZyxuwrqx5dA3NIhlvA1i5rsjaW8zxKIqjjWIwZs0jHWqRSMWEgHgoxYEweOHYt4ENl1Ca6KhXV+ia6CCGRv6eJ3kj+rr8h/g/FTbF8zB7cYQAAAABJRU5ErkJggg=="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:grey"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														log4j-core-2.10.0.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-9488" target="_blank">CVE-2020-9488</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: C90B597163CD28AB6D9687EDD53DB601B6EA75A1
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:grey;font-weight:bold"
+ >
+												3.7 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender. Fixed in Apache Log4j 2.12.3 and 2.13.1
+												1 descriptions from different sources:[0] Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														log4j-core-2.10.0.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="https://github.com/apache/logging-log4j2/pull/608" target="_blank">CVE-2021-44228</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: C90B597163CD28AB6D9687EDD53DB601B6EA75A1
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												10.0 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects.
+												1 descriptions from different sources:[0] Apache Log4j <=2.14.1 JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#fb9537"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														log4j-core-2.10.0.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="https://issues.apache.org/jira/browse/LOG4J2-3293" target="_blank">CVE-2021-44832</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: C90B597163CD28AB6D9687EDD53DB601B6EA75A1
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#fb9537;font-weight:bold"
+ >
+												6.6 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Apache Log4j2 versions 2.0-beta7 through 2.17.0 (excluding security fix releases 2.3.2 and 2.12.4) are vulnerable to a remote code execution (RCE) attack when a configuration uses a JDBC Appender with a JNDI LDAP data source URI when an attacker has control of the target LDAP server. This issue is fixed by limiting JNDI data source names to the java protocol in Log4j2 versions 2.17.1, 2.12.4, and 2.3.2.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														log4j-core-2.10.0.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="https://github.com/apache/logging-log4j2/pull/623" target="_blank">CVE-2021-45046</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: C90B597163CD28AB6D9687EDD53DB601B6EA75A1
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												9.0 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												It was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in an information leak and remote code execution in some environments and local code execution in all environments. Log4j 2.16.0 (Java 8) and 2.12.2 (Java 7) fix this issue by removing support for message lookup patterns and disabling JNDI functionality by default.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#fba04b"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														log4j-core-2.10.0.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="https://issues.apache.org/jira/browse/LOG4J2-3230" target="_blank">CVE-2021-45105</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: C90B597163CD28AB6D9687EDD53DB601B6EA75A1
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#fba04b;font-weight:bold"
+ >
+												5.9 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Apache Log4j2 versions 2.0-alpha1 through 2.16.0 (excluding 2.12.3 and 2.3.1) did not protect from uncontrolled recursion from self-referential lookups. This allows an attacker with control over Thread Context Map data to cause a denial of service when a crafted string is interpreted. This issue was fixed in Log4j 2.17.0, 2.12.3, and 2.3.1.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														spring-beans-5.0.4.RELEASE.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="https://github.com/spring-projects/spring-framework/issues/28261" target="_blank">CVE-2022-22965</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 7A8C3D48D4C33621E64D1399721D8E067450FCBD
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												9.8 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+																<img width="15" alt="Reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#fb9537"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														spring-core-5.0.4.RELEASE.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6429" target="_blank">CVE-2013-6429</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 2221A957B5561A34F044350BA4E30EF5870254A3
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#fb9537;font-weight:bold"
+ >
+												6.8 (v2.0)
+											</span>
+										</div>
+										<br />
+										<div>
+												The SourceHttpMessageConverter in Spring MVC in Spring Framework before 3.2.5 and 4.0.0.M1 through 4.0.0.RC1 does not disable external entity resolution, which allows remote attackers to read arbitrary files, cause a denial of service, and conduct CSRF attacks via crafted XML, aka an XML External Entity (XXE) issue, and a different vulnerability than CVE-2013-4152 and CVE-2013-7315.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Not reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#fba04b"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														spring-core-5.0.4.RELEASE.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-0201" target="_blank">CVE-2015-0201</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 2221A957B5561A34F044350BA4E30EF5870254A3
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#fba04b;font-weight:bold"
+ >
+												5.0 (v2.0)
+											</span>
+										</div>
+										<br />
+										<div>
+												The Java SockJS client in Pivotal Spring Framework 4.1.x before 4.1.5 generates predictable session ids, which allows remote attackers to send messages to other sessions via unspecified vectors.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Not reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#fb8b24"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														spring-core-5.0.4.RELEASE.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-1272" target="_blank">CVE-2018-1272</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 2221A957B5561A34F044350BA4E30EF5870254A3
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#fb8b24;font-weight:bold"
+ >
+												7.5 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, provide client-side support for multipart requests. When Spring MVC or Spring WebFlux server application (server A) receives input from a remote client, and then uses that input to make a multipart request to another server (server B), it can be exposed to an attack, where an extra multipart is inserted in the content of the request from server A, causing server B to use the wrong value for a part it expects. This could to lead privilege escalation, for example, if the part content represents a username or user roles.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+															<img width="15" alt="Not reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														spring-expression-5.0.4.RELEASE.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-1270" target="_blank">CVE-2018-1270</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 4BDA161F2E34C1486F2527A23EB47293567F473C
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												9.8 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack.
+												1 descriptions from different sources:[0] Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+																<img width="15" alt="Reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+								<div class="vulnerability"
+ style="border-left-style:solid;border-left-width:15px;border-left-color:#e94f37"
+ >
+									<details>
+										<summary>
+											<div class="vulnerability_summary">
+												<div class="vulnerability_title">
+													<h2>
+														spring-expression-5.0.4.RELEASE.jar
+													</h2>
+													affected by
+													<h2>
+														<a class="vulnerability_score_high" href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-1275" target="_blank">CVE-2018-1275</a>
+													</h2>
+												</div>
+											</div>
+										</summary>
+										<div>
+											Archive Digest: 4BDA161F2E34C1486F2527A23EB47293567F473C
+										</div>
+										<div>
+											CVSS Score:
+											<span
+ style="color:#e94f37;font-weight:bold"
+ >
+												9.8 (v3.1)
+											</span>
+										</div>
+										<br />
+										<div>
+												Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.16 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack. This CVE addresses the partial fix for CVE-2018-1270 in the 4.3.x branch of the Spring Framework.
+										</div>
+										<br />
+										<table class="vulnerable_apps">
+											<tr>
+												<th>Includes vulnerable code</th>
+												<th>Potentially executes vulnerable code</th>
+												<th>Executes vulnerable code</th>
+											</tr>
+											<tr>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+																<img width="15" alt="Unknown"
+																	src="data:image/png;base64,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"
+																/>
+																<div class="top">
+																	<strong>Group: </strong>com.maweiming.wechat<br/>
+																	<strong>Artifact: </strong> weixin-bot<br/>
+																	<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																	<strong>Scope: </strong>COMPILE<br />
+																	<strong>Transitive dependency: </strong>true
+																</div>
+															</div>
+															</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+															<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																weixin-bot
+															</a>
+																<img width="15" alt="Reachable"
+																src="data:image/png;base64,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"
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+												<td class="apps">
+													<ol>
+														<li>
+															<div class="tooltip">
+																<a href="http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.maweiming.wechat/weixin-bot/1.0-SNAPSHOT"
+ style="color: #393e41; font-weight: bold"
+ target="_blank">
+																	weixin-bot
+																</a>
+															<img width="15" alt="Unknown"
+																src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH4AwbCSsg2rdqkwAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAF0lEQVQYlWP8//8/AzGAiShVowqpphAA1RIDET0/PewAAAAASUVORK5CYII="
+															/>
+															<div class="top">
+																<strong>Group: </strong>com.maweiming.wechat<br/>
+																<strong>Artifact: </strong> weixin-bot<br/>
+																<strong>Version: </strong>1.0-SNAPSHOT<br/>
+																<strong>Scope: </strong>COMPILE<br />
+																<strong>Transitive dependency: </strong>true
+															</div>
+														</div>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</details>
+									<br />
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+{
+    "project name": "killbilling_recurly-java-library",
+    "vulnerable dependencies": {
+        "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.5.0": {
+            "used-method num": 16,
+            "used method": [
+                "com.fasterxml.jackson.dataformat.xml.XmlMapper:void <clinit>()",
+                "com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext:java.lang.String toString()",
+                "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:void <init>(com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider,com.fasterxml.jackson.databind.SerializationConfig,com.fasterxml.jackson.databind.ser.SerializerFactory)",
+                "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:void <init>(com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup)",
+                "com.fasterxml.jackson.dataformat.xml.ser.UnwrappingXmlBeanSerializer:java.lang.String toString()",
+                "com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializer:java.lang.String toString()",
+                "com.fasterxml.jackson.dataformat.xml.util.XmlRootNameLookup:void <init>()",
+                "com.fasterxml.jackson.dataformat.xml.deser.ElementWrapper:java.lang.String toString()",
+                "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator:void writeFieldName(java.lang.String)",
+                "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator:void writeEndArray()",
+                "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator:void writeStartArray()",
+                "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream:java.lang.String toString()",
+                "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator:void setNextName(javax.xml.namespace.QName)",
+                "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator:void writeStartObject()",
+                "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:void <clinit>()",
+                "com.fasterxml.jackson.dataformat.xml.XmlMapper:void <init>(javax.xml.stream.XMLInputFactory)"
+            ],
+            "CVE": [
+                "CVE-2016-7051",
+                "CVE-2016-3720"
+            ],
+            "used vul-method": [
+                "com.fasterxml.jackson.dataformat.xml.XmlMapper:void <init>(javax.xml.stream.XMLInputFactory)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2016-7051": [
+                    "com.fasterxml.jackson.dataformat.xml.XmlFactory:void <init>(com.fasterxml.jackson.core.ObjectCodec,int,int,javax.xml.stream.XMLInputFactory,javax.xml.stream.XMLOutputFactory,java.lang.String)"
+                ],
+                "CVE-2016-3720": [
+                    "com.fasterxml.jackson.dataformat.xml.XmlFactory:void <init>(com.fasterxml.jackson.core.ObjectCodec,int,int,javax.xml.stream.XMLInputFactory,javax.xml.stream.XMLOutputFactory,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2016-7051": [
+                    "com.fasterxml.jackson.dataformat.xml.XmlMapper:void <init>(javax.xml.stream.XMLInputFactory)"
+                ],
+                "CVE-2016-3720": [
+                    "com.fasterxml.jackson.dataformat.xml.XmlMapper:void <init>(javax.xml.stream.XMLInputFactory)"
+                ]
+            }
+        },
+        "org.apache.httpcomponents:httpclient:4.5.12": {
+            "used-method num": 63,
+            "used method": [
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:int hashCode()",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.client.methods.RequestBuilder:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.client.utils.URLEncodedUtils:java.lang.String format(java.lang.Iterable,java.nio.charset.Charset)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.lang.String)",
+                "org.apache.http.client.utils.URLEncodedUtils:void <clinit>()",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.conn.routing.HttpRoute:int hashCode()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder setSSLContext(javax.net.ssl.SSLContext)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.Header getFirstHeader(java.lang.String)",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.conn.scheme.SchemeSocketFactoryAdaptor:int hashCode()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.lang.String)",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.conn.scheme.SocketFactoryAdaptor:int hashCode()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.ietf.jgss.Oid:int hashCode()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.String toString()",
+                "org.apache.http.auth.BasicUserPrincipal:int hashCode()",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.impl.auth.BasicScheme:java.lang.String toString()",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.apache.pdfbox:pdfbox:2.0.15": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "project name": "Chanran_addressBook",
+    "vulnerable dependencies": {
+        "commons-beanutils:commons-beanutils:1.9.2": {
+            "used-method num": 10,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap:java.util.Collection values()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:java.lang.Object cloneBean(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Collection values()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:java.util.Iterator iterator()",
+                "org.apache.commons.beanutils.WeakFastHashMap:int size()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object remove(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object remove(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:java.lang.Object cloneBean(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Collection values()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object remove(java.lang.Object)"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.BeanUtils:java.lang.Object cloneBean(java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Collection values()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object remove(java.lang.Object)"
+                ]
+            }
+        }
+    }
+}

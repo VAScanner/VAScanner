@@ -1,0 +1,1152 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 20:40 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.springframework.batchintegration.samples",
+			"artifactId": "payment-import-root",
+			"version": "1.0.0.BUILD-SNAPSHOT"
+		},
+		"isAggregated": true,
+	
+		"aggregatedModules": [
+				{
+					"groupId": "org.springframework.batchintegration.samples",
+					"artifactId": "payment-import-root",
+					"version": "1.0.0.BUILD-SNAPSHOT"
+				}
+				,
+				{
+					"groupId": "org.springframework.batchintegration.samples",
+					"artifactId": "payment-import",
+					"version": "1.0.0.BUILD-SNAPSHOT"
+				}
+				,
+				{
+					"groupId": "org.springframework.batchintegration.samples",
+					"artifactId": "payment-import-concurrent-step",
+					"version": "1.0.0.BUILD-SNAPSHOT"
+				}
+				,
+				{
+					"groupId": "org.springframework.batchintegration.samples",
+					"artifactId": "payment-import-async-processor",
+					"version": "1.0.0.BUILD-SNAPSHOT"
+				}
+				,
+				{
+					"groupId": "org.springframework.batchintegration.samples",
+					"artifactId": "payment-import-remote-chunking",
+					"version": "1.0.0.BUILD-SNAPSHOT"
+				}
+		],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-2.4.jar",
+			"sha1": "B1B6EA3B7E4AA4F492509A4952029CD8E48019AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-3774",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "spring-batch-infrastructure-3.0.1.RELEASE.jar",
+			"sha1": "6C94E125534570B091526B224644237A52BEDE4B",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2022-22965",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-beans-4.0.6.RELEASE.jar",
+			"sha1": "587879B58ACEBEB5B0A63C01E822F9B44D9A4C77",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2022-22965",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-beans-4.1.0.RC2.jar",
+			"sha1": "F3BE38FFCCFAE4E713A29FE8C2311F94701DD644",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6429",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-core-4.0.6.RELEASE.jar",
+			"sha1": "D880BEAC77D42C5798AA2B632DDD0E4AE47C79AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1272",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-core-4.0.6.RELEASE.jar",
+			"sha1": "D880BEAC77D42C5798AA2B632DDD0E4AE47C79AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-6429",
+				"cvssScore": "6.8" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-core-4.1.0.RC2.jar",
+			"sha1": "F4B5852A710A8C6294AFA793AF02BE0E2E6FE4FC",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1272",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-core-4.1.0.RC2.jar",
+			"sha1": "F4B5852A710A8C6294AFA793AF02BE0E2E6FE4FC",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1270",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.0.6.RELEASE.jar",
+			"sha1": "5F0A135B8CF290AA244097DC6264AD0989D25C56",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1275",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.0.6.RELEASE.jar",
+			"sha1": "5F0A135B8CF290AA244097DC6264AD0989D25C56",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1270",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.1.0.RC2.jar",
+			"sha1": "195D592DF063F20F7F35EF0653FEE54ADB48A96F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1275",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-expression-4.1.0.RC2.jar",
+			"sha1": "195D592DF063F20F7F35EF0653FEE54ADB48A96F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1257",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-messaging-4.0.5.RELEASE.jar",
+			"sha1": "49336ADE00D24088142E3699B9C4F53FAB69EA74",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1270",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-messaging-4.0.5.RELEASE.jar",
+			"sha1": "49336ADE00D24088142E3699B9C4F53FAB69EA74",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1257",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-messaging-4.0.6.RELEASE.jar",
+			"sha1": "B6A1E5876F1C80AFD9B826EC231B42D414F1F48C",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1270",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-messaging-4.0.6.RELEASE.jar",
+			"sha1": "B6A1E5876F1C80AFD9B826EC231B42D414F1F48C",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-test-4.0.6.RELEASE.jar",
+			"sha1": "B2F65445F300F1317FE694E6530CCE39D7090FF6",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2020-5421",
+				"cvssScore": "6.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "spring-test-4.1.0.RC2.jar",
+			"sha1": "208D955A02A863C67D80A390444325A0CFCC7352",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-1904",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-tx-4.0.5.RELEASE.jar",
+			"sha1": "BC94807FFCF9A6934428EB7ECDF9C37C41DD95A1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-async-processor",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-async-processor/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-concurrent-step",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-concurrent-step/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+				,
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import-remote-chunking",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import-remote-chunking/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2014-1904",
+				"cvssScore": "4.3" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "spring-tx-4.0.6.RELEASE.jar",
+			"sha1": "6B4ED868E07D58F2CF15BCD7958ACD86FD4F3DA4",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.springframework.batchintegration.samples",
+				"artifactId": "payment-import",
+				"version": "1.0.0.BUILD-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.springframework.batchintegration.samples/payment-import/1.0.0.BUILD-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

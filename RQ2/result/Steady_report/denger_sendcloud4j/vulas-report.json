@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 22:23 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "io.jstack",
+			"artifactId": "sendcloud4j",
+			"version": "0.0.6-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.5.1.jar",
+			"sha1": "7E3CECC566DF91338C6C67883B89DDD05A17DB43",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "io.jstack",
+				"artifactId": "sendcloud4j",
+				"version": "0.0.6-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/io.jstack/sendcloud4j/0.0.6-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

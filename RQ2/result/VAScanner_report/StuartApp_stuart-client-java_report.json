@@ -1,0 +1,20 @@
+{
+    "project name": "StuartApp_stuart-client-java",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.2.1.RELEASE": {
+            "used-method num": 10,
+            "used method": [
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String getValue()",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setClientSecret(java.lang.String)",
+                "org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsResourceDetails:void <init>()",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setAccessTokenUri(java.lang.String)",
+                "org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest:void <init>()",
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:boolean isExpired()",
+                "org.springframework.security.oauth2.client.token.OAuth2AccessTokenSupport:void <clinit>()",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:void setClientId(java.lang.String)",
+                "org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsAccessTokenProvider:void <init>()",
+                "org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsAccessTokenProvider:org.springframework.security.oauth2.common.OAuth2AccessToken obtainAccessToken(org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails,org.springframework.security.oauth2.client.token.AccessTokenRequest)"
+            ]
+        }
+    }
+}

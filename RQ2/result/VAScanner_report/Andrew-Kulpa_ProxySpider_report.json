@@ -1,0 +1,40 @@
+{
+    "project name": "Andrew-Kulpa_ProxySpider",
+    "vulnerable dependencies": {
+        "org.apache.commons:commons-compress:1.18": {
+            "used-method num": 22,
+            "used method": [
+                "org.apache.commons.compress.utils.ChecksumCalculatingInputStream:int read(byte[])",
+                "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream:int read(byte[])",
+                "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.zstandard.ZstdCompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.utils.ServiceLoaderIterator:boolean hasNext()",
+                "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.utils.CountingInputStream:int read(byte[])",
+                "org.apache.commons.compress.utils.ServiceLoaderIterator:java.lang.Object next()",
+                "org.apache.commons.compress.compressors.lzw.LZWInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.CompressorStreamFactory:void <clinit>()",
+                "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.CompressorStreamFactory:void <init>()",
+                "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.deflate64.Deflate64CompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.CompressorStreamFactory:org.apache.commons.compress.compressors.CompressorInputStream createCompressorInputStream(java.lang.String,java.io.InputStream)",
+                "org.apache.commons.compress.compressors.xz.XZCompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.brotli.BrotliCompressorInputStream:int read(byte[],int,int)",
+                "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream:int read(byte[],int,int)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 18:41 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.mulesoft.quartz",
+			"artifactId": "quartz-mongodb",
+			"version": "1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-20433",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "c3p0-0.9.1.1.jar",
+			"sha1": "302704F30C6E7ABB7A0457F7771739E03C973E80",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.mulesoft.quartz",
+				"artifactId": "quartz-mongodb",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.mulesoft.quartz/quartz-mongodb/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-5427",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "c3p0-0.9.1.1.jar",
+			"sha1": "302704F30C6E7ABB7A0457F7771739E03C973E80",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.mulesoft.quartz",
+				"artifactId": "quartz-mongodb",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.mulesoft.quartz/quartz-mongodb/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2019-13990",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "quartz-2.1.0.jar",
+			"sha1": "EC15591EEBFDFB2650B78FEFFEDB18F851CFD894",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.mulesoft.quartz",
+				"artifactId": "quartz-mongodb",
+				"version": "1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.mulesoft.quartz/quartz-mongodb/1.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

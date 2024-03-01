@@ -1,0 +1,41 @@
+{
+    "project name": "telzhou618_layui-boot",
+    "vulnerable dependencies": {
+        "commons-beanutils:commons-beanutils:1.9.3": {
+            "used-method num": 10,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.DynaProperty:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                "org.apache.commons.beanutils.WeakFastHashMap:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:boolean addAll(java.util.Collection)",
+                "org.apache.commons.beanutils.PropertyUtils:void setProperty(java.lang.Object,java.lang.String,java.lang.Object)",
+                "org.apache.commons.beanutils.MethodUtils$MethodDescriptor:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)",
+                "org.apache.commons.beanutils.WrapDynaClass$CacheKey:boolean equals(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.PropertyUtils:void setProperty(java.lang.Object,java.lang.String,java.lang.Object)",
+                "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:boolean equals(java.lang.Object)",
+                    "org.apache.commons.beanutils.PropertyUtils:void setProperty(java.lang.Object,java.lang.String,java.lang.Object)",
+                    "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)"
+                ]
+            }
+        }
+    }
+}

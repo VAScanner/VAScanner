@@ -1,0 +1,20 @@
+{
+    "project name": "only2dhir_role-based-oauth2",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.1.0.RELEASE": {
+            "used-method num": 6,
+            "used method": [
+                "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                "org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHandler:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setSigningKey(java.lang.String)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()"
+            ]
+        },
+        "mysql:mysql-connector-java:8.0.13": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

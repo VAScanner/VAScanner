@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 18:19 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.cgbystrom",
+			"artifactId": "sockjs-netty",
+			"version": "0.1.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2014-3488",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "netty-3.6.5.Final.jar",
+			"sha1": "C3385A7138F5A3E91439E358547FEBC5028A4589",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.cgbystrom",
+				"artifactId": "sockjs-netty",
+				"version": "0.1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cgbystrom/sockjs-netty/0.1.0-SNAPSHOT",
+				
+				"scope": "PROVIDED",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-2156",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "netty-3.6.5.Final.jar",
+			"sha1": "C3385A7138F5A3E91439E358547FEBC5028A4589",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.cgbystrom",
+				"artifactId": "sockjs-netty",
+				"version": "0.1.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.cgbystrom/sockjs-netty/0.1.0-SNAPSHOT",
+				
+				"scope": "PROVIDED",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

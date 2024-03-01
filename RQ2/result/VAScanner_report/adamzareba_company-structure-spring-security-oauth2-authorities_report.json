@@ -1,0 +1,18 @@
+{
+    "project name": "adamzareba_company-structure-spring-security-oauth2-authorities",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:42.1.4": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security.oauth:spring-security-oauth2:2.2.1.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHandler:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void <init>(javax.sql.DataSource)"
+            ]
+        }
+    }
+}

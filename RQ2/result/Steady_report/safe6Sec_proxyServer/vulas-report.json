@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.01.2024 01:40 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.caspar",
+			"artifactId": "proxyServer",
+			"version": "1.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2017-18349",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "fastjson-1.2.68.jar",
+			"sha1": "9E3D29F05BCFAB1C15A1357EBF2DD513C1D42F49",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.caspar",
+				"artifactId": "proxyServer",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.caspar/proxyServer/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.5.6.jar",
+			"sha1": "1AFE5621985EFE90A92D0FBC9BE86271EFBE796F",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.caspar",
+				"artifactId": "proxyServer",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.caspar/proxyServer/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

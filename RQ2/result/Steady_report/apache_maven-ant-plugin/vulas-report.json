@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "09.07.2023 13:07 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.apache.maven.plugins",
+			"artifactId": "maven-ant-plugin",
+			"version": "2.5-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.9.4.jar",
+			"sha1": "6D473E8653D952045F550F4EF225A9591B79094A",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apache.maven.plugins",
+				"artifactId": "maven-ant-plugin",
+				"version": "2.5-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.apache.maven.plugins/maven-ant-plugin/2.5-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2012-0881",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "xercesMinimal-1.9.6.2.jar",
+			"sha1": "0D1C5E063683A0E6F77CD5F051A9D4AF48346FA6",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apache.maven.plugins",
+				"artifactId": "maven-ant-plugin",
+				"version": "2.5-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.apache.maven.plugins/maven-ant-plugin/2.5-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

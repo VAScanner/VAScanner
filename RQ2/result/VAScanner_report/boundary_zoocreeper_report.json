@@ -1,0 +1,52 @@
+{
+    "project name": "boundary_zoocreeper",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.2": {
+            "used-method num": 8,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void setLevel(ch.qos.logback.classic.Level)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Level:void <clinit>()"
+            ]
+        },
+        "org.apache.zookeeper:zookeeper:3.4.6": {
+            "used-method num": 29,
+            "used method": [
+                "org.apache.zookeeper.common.PathUtils:void validatePath(java.lang.String)",
+                "org.apache.zookeeper.data.Stat:long getCtime()",
+                "org.apache.zookeeper.data.Stat:long getCzxid()",
+                "org.apache.zookeeper.ZooKeeper:void <init>(java.lang.String,int,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.WatchedEvent:org.apache.zookeeper.Watcher$Event$KeeperState getState()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat setData(java.lang.String,byte[],int)",
+                "org.apache.zookeeper.data.Stat:void <init>()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,boolean)",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,boolean,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.data.Stat:long getMzxid()",
+                "org.apache.zookeeper.data.Stat:long getMtime()",
+                "org.apache.zookeeper.Watcher$Event$KeeperState:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getACL(java.lang.String,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.ZooKeeper:byte[] getData(java.lang.String,boolean,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.data.Stat:int getCversion()",
+                "org.apache.zookeeper.ZooKeeper:void <clinit>()",
+                "org.apache.zookeeper.data.Stat:int getVersion()",
+                "org.apache.zookeeper.ZooKeeper:void close()",
+                "org.apache.zookeeper.ZooDefs$Ids:void <clinit>()",
+                "org.apache.zookeeper.data.Id:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.zookeeper.data.Stat:int getAversion()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat setACL(java.lang.String,java.util.List,int)",
+                "org.apache.zookeeper.data.Stat:long getEphemeralOwner()",
+                "org.apache.zookeeper.data.Stat:int getNumChildren()",
+                "org.apache.zookeeper.ZooKeeper:java.lang.String create(java.lang.String,byte[],java.util.List,org.apache.zookeeper.CreateMode)",
+                "org.apache.zookeeper.data.Stat:long getPzxid()",
+                "org.apache.zookeeper.data.Stat:int compareTo(java.lang.Object)",
+                "org.apache.zookeeper.data.ACL:void <init>(int,org.apache.zookeeper.data.Id)",
+                "org.apache.zookeeper.CreateMode:void <clinit>()"
+            ]
+        }
+    }
+}

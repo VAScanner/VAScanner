@@ -1,0 +1,96 @@
+{
+    "project name": "uncodecn_uncode-schedule",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:4.0.0.RELEASE": {
+            "used-method num": 22,
+            "used method": [
+                "org.springframework.util.ConcurrentReferenceHashMap$Entry:java.lang.Object getKey()",
+                "org.springframework.util.MethodInvoker:java.lang.Class getTargetClass()",
+                "org.springframework.util.ClassUtils:java.lang.Class forName(java.lang.String,java.lang.ClassLoader)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.springframework.util.ReflectionUtils:java.lang.Object invokeMethod(java.lang.reflect.Method,java.lang.Object,java.lang.Object[])",
+                "org.springframework.util.ReflectionUtils:void <clinit>()",
+                "org.springframework.util.ReflectionUtils:java.lang.reflect.Method findMethod(java.lang.Class,java.lang.String)",
+                "org.springframework.core.NestedIOException:java.lang.String getMessage()",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                "org.springframework.util.ConcurrentReferenceHashMap:boolean containsKey(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object remove(java.lang.Object)",
+                "org.springframework.util.ClassUtils:java.lang.ClassLoader getDefaultClassLoader()",
+                "org.springframework.util.ConcurrentReferenceHashMap$Entry:java.lang.Object getValue()",
+                "org.springframework.core.NestedRuntimeException:java.lang.String getMessage()",
+                "org.springframework.core.NestedRuntimeException:void <clinit>()",
+                "org.springframework.util.Assert:void state(boolean,java.lang.String)",
+                "org.springframework.util.MethodInvoker:java.lang.Object getTargetObject()",
+                "org.springframework.util.ClassUtils:void <clinit>()",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.util.Set entrySet()",
+                "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+            ]
+        },
+        "org.springframework:spring-web:4.0.0.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.zookeeper:zookeeper:3.4.6": {
+            "used-method num": 31,
+            "used method": [
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.zookeeper.data.Stat:long getCtime()",
+                "org.apache.zookeeper.ZooKeeper:void addAuthInfo(java.lang.String,byte[])",
+                "org.apache.zookeeper.ZooKeeper:void <init>(java.lang.String,int,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.WatchedEvent:org.apache.zookeeper.Watcher$Event$KeeperState getState()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat setData(java.lang.String,byte[],int)",
+                "org.apache.zookeeper.data.Stat:void <init>()",
+                "org.apache.zookeeper.ZooKeeper:void delete(java.lang.String,int)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,boolean)",
+                "org.apache.zookeeper.ClientCnxn$EventThread:void run()",
+                "org.apache.zookeeper.server.auth.DigestAuthenticationProvider:void <clinit>()",
+                "org.apache.zookeeper.data.Stat:long getMtime()",
+                "org.apache.zookeeper.Watcher$Event$KeeperState:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:byte[] getData(java.lang.String,boolean,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.ZooKeeper:void <clinit>()",
+                "org.apache.zookeeper.data.Stat:int getVersion()",
+                "org.apache.zookeeper.Shell$1:void run()",
+                "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                "org.apache.zookeeper.server.auth.DigestAuthenticationProvider:java.lang.String generateDigest(java.lang.String)",
+                "org.apache.zookeeper.ZooKeeper:byte[] getData(java.lang.String,org.apache.zookeeper.Watcher,org.apache.zookeeper.data.Stat)",
+                "org.apache.zookeeper.ZooKeeper:void close()",
+                "org.apache.zookeeper.ZooDefs$Ids:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.ZooKeeper$States getState()",
+                "org.apache.zookeeper.data.Id:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,boolean)",
+                "org.apache.zookeeper.KeeperException:java.lang.String getMessage()",
+                "org.apache.zookeeper.Login$1:void run()",
+                "org.apache.zookeeper.ZooKeeper:java.lang.String create(java.lang.String,byte[],java.util.List,org.apache.zookeeper.CreateMode)",
+                "org.apache.zookeeper.ZooKeeper$States:void <clinit>()",
+                "org.apache.zookeeper.data.ACL:void <init>(int,org.apache.zookeeper.data.Id)",
+                "org.apache.zookeeper.CreateMode:void <clinit>()"
+            ]
+        },
+        "org.quartz-scheduler:quartz:2.2.1": {
+            "used-method num": 19,
+            "used method": [
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntrySet:java.util.Iterator iterator()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getValue()",
+                "org.quartz.utils.Key:java.lang.String getName()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getKey()",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set entrySet()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object clone()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object remove(java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set keySet()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:java.util.Iterator iterator()",
+                "org.quartz.impl.triggers.AbstractTrigger:java.lang.Object clone()",
+                "org.quartz.impl.JobDetailImpl:java.lang.Object clone()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.utils.DirtyFlagMap:boolean containsKey(java.lang.Object)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "org.quartz.impl.JobDetailImpl:org.quartz.JobKey getKey()"
+            ]
+        }
+    }
+}

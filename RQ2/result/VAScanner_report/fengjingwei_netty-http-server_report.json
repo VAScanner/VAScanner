@@ -1,0 +1,62 @@
+{
+    "project name": "fengjingwei_netty-http-server",
+    "vulnerable dependencies": {
+        "io.netty:netty-handler:4.1.32.Final": {
+            "used-method num": 3,
+            "used method": [
+                "io.netty.handler.logging.LoggingHandler:void <init>(io.netty.handler.logging.LogLevel)",
+                "io.netty.handler.stream.ChunkedWriteHandler:void <init>()",
+                "io.netty.handler.logging.LogLevel:void <clinit>()"
+            ]
+        },
+        "io.netty:netty-codec-http:4.1.32.Final": {
+            "used-method num": 44,
+            "used method": [
+                "io.netty.handler.codec.http.HttpContentEncoder:void <clinit>()",
+                "io.netty.handler.codec.http.HttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpObject:int hashCode()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.HttpResponseStatus:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String uri()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String uri()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:int hashCode()",
+                "io.netty.handler.codec.http.HttpUtil:boolean isKeepAlive(io.netty.handler.codec.http.HttpMessage)",
+                "io.netty.handler.codec.http.HttpMethod:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$3:java.lang.String next()",
+                "io.netty.handler.codec.http.HttpResponseStatus:void <clinit>()",
+                "io.netty.handler.codec.http.HttpVersion:void <clinit>()",
+                "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String reasonPhrase()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus,io.netty.buffer.ByteBuf)",
+                "io.netty.handler.codec.http.HttpResponseStatus:int code()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.handler.codec.http.HttpMethod:int hashCode()",
+                "io.netty.handler.codec.http.HttpResponseStatus:int hashCode()",
+                "io.netty.handler.codec.http.HttpUtil:void <clinit>()",
+                "io.netty.handler.codec.http.HttpContentCompressor:void <init>()",
+                "io.netty.handler.codec.http.HttpVersion:int hashCode()",
+                "io.netty.handler.codec.http.QueryStringDecoder:void <init>(java.lang.String)",
+                "io.netty.handler.codec.http.HttpMethod:io.netty.handler.codec.http.HttpMethod valueOf(java.lang.String)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:int hashCode()",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.HttpVersion:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.HttpMethod:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:int hashCode()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:int hashCode()",
+                "io.netty.handler.codec.http.DefaultHttpObject:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:io.netty.handler.codec.http.HttpMethod method()",
+                "io.netty.handler.codec.http.QueryStringDecoder:java.util.Map parameters()",
+                "io.netty.handler.codec.http.EmptyHttpHeaders:io.netty.handler.codec.http.HttpHeaders setInt(java.lang.CharSequence,int)",
+                "io.netty.handler.codec.http.DefaultHttpRequest:io.netty.handler.codec.http.HttpMethod method()"
+            ]
+        }
+    }
+}

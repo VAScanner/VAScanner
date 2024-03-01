@@ -1,0 +1,23 @@
+{
+    "project name": "chocotan_lolibox",
+    "modules": {
+        "io.loli:lolibox": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.12.RELEASE": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:java.lang.String toString()",
+                        "org.springframework.security.oauth2.common.exceptions.OAuth2Exception:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.approval.Approval:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void <init>(javax.sql.DataSource)",
+                        "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer$1:java.lang.String encode(java.lang.CharSequence)",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String toString()",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2RefreshToken:java.lang.String toString()"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 17:42 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.microsoft.ews-java-api",
+			"artifactId": "ews-java-api",
+			"version": "2.1-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-2.4.jar",
+			"sha1": "B1B6EA3B7E4AA4F492509A4952029CD8E48019AD",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.microsoft.ews-java-api",
+				"artifactId": "ews-java-api",
+				"version": "2.1-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.microsoft.ews-java-api/ews-java-api/2.1-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4366",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "httpclient-4.4.1.jar",
+			"sha1": "016D0BC512222F1253EE6B64D389C84E22F697F0",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.microsoft.ews-java-api",
+				"artifactId": "ews-java-api",
+				"version": "2.1-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.microsoft.ews-java-api/ews-java-api/2.1-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+    "project name": "jasrodis_dataviewer",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.eclipse.jetty:jetty-server:9.2.5.v20141112": {
+            "used-method num": 15,
+            "used method": [
+                "org.eclipse.jetty.server.Request:java.lang.StringBuffer getRequestURL()",
+                "org.eclipse.jetty.server.Response:void setStatus(int)",
+                "org.eclipse.jetty.server.handler.ResourceHandler:void <init>()",
+                "org.eclipse.jetty.server.Response:void setContentType(java.lang.String)",
+                "org.eclipse.jetty.server.Response:java.io.PrintWriter getWriter()",
+                "org.eclipse.jetty.server.handler.ScopedHandler:void <clinit>()",
+                "org.eclipse.jetty.server.ServletResponseHttpWrapper:void setStatus(int)",
+                "org.eclipse.jetty.server.handler.HandlerCollection:void setHandlers(org.eclipse.jetty.server.Handler[])",
+                "org.eclipse.jetty.server.handler.ContextHandler:void setContextPath(java.lang.String)",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.handler.HandlerList:void <init>()",
+                "org.eclipse.jetty.server.Request:java.lang.String getRequestURI()",
+                "org.eclipse.jetty.server.handler.ContextHandler:void <clinit>()",
+                "org.eclipse.jetty.server.Server:void <init>(int)",
+                "org.eclipse.jetty.server.handler.ResourceHandler:void setBaseResource(org.eclipse.jetty.util.resource.Resource)"
+            ]
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 23:49 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "net.sourceforge.htmlcleaner",
+			"artifactId": "htmlcleaner",
+			"version": "2.6.2"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.9.0.jar",
+			"sha1": "D667BC2C030A338720BFCF794D2189EA5C663B9E",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "net.sourceforge.htmlcleaner",
+				"artifactId": "htmlcleaner",
+				"version": "2.6.2",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/net.sourceforge.htmlcleaner/htmlcleaner/2.6.2",
+				
+				"scope": "PROVIDED",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

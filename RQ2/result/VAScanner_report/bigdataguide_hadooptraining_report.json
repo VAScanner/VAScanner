@@ -1,0 +1,51 @@
+{
+    "project name": "bigdataguide_hadooptraining",
+    "modules": {
+        "cn.chinahadoop:hadoop-example": {
+            "vulnerable dependencies": {
+                "org.apache.hadoop:hadoop-common:2.7.3": {
+                    "used-method num": 37,
+                    "used method": [
+                        "org.apache.hadoop.conf.Configuration$IntegerRanges$RangeNumberIterator:java.lang.Integer next()",
+                        "org.apache.hadoop.conf.Configuration:java.util.Iterator iterator()",
+                        "org.apache.hadoop.conf.Configuration:void set(java.lang.String,java.lang.String)",
+                        "org.apache.hadoop.fs.Path:java.lang.String getName()",
+                        "org.apache.hadoop.io.Text:void <clinit>()",
+                        "org.apache.hadoop.io.IntWritable:int get()",
+                        "org.apache.hadoop.fs.RawLocalFileSystem:boolean delete(org.apache.hadoop.fs.Path,boolean)",
+                        "org.apache.hadoop.fs.FileSystem:void <clinit>()",
+                        "org.apache.hadoop.util.GenericOptionsParser:void <init>(org.apache.hadoop.conf.Configuration,java.lang.String[])",
+                        "org.apache.hadoop.conf.Configuration$IntegerRanges$RangeNumberIterator:boolean hasNext()",
+                        "org.apache.hadoop.io.Text:void set(java.lang.String)",
+                        "org.apache.hadoop.conf.Configured:org.apache.hadoop.conf.Configuration getConf()",
+                        "org.apache.hadoop.fs.Path:void <clinit>()",
+                        "org.apache.hadoop.fs.Path:void <init>(java.lang.String)",
+                        "org.apache.hadoop.io.IntWritable:void <clinit>()",
+                        "org.apache.hadoop.fs.RawLocalFileSystem:void close()",
+                        "org.apache.hadoop.conf.Configured:void <init>()",
+                        "org.apache.hadoop.conf.Configuration:void <init>()",
+                        "org.apache.hadoop.io.Text:java.lang.String toString()",
+                        "org.apache.hadoop.fs.RawLocalFileSystem:boolean mkdirs(org.apache.hadoop.fs.Path)",
+                        "org.apache.hadoop.io.IntWritable:void <init>(int)",
+                        "org.apache.hadoop.metrics2.impl.MetricsConfig$1:java.util.Iterator iterator()",
+                        "org.apache.hadoop.metrics2.impl.MetricsRecordFiltered$1:java.util.Iterator iterator()",
+                        "org.apache.hadoop.metrics2.impl.MetricsBuffer:java.util.Iterator iterator()",
+                        "org.apache.hadoop.io.Text:void <init>()",
+                        "org.apache.hadoop.util.ToolRunner:void printGenericCommandUsage(java.io.PrintStream)",
+                        "org.apache.hadoop.fs.Path:org.apache.hadoop.fs.FileSystem getFileSystem(org.apache.hadoop.conf.Configuration)",
+                        "org.apache.hadoop.io.IntWritable:void set(int)",
+                        "org.apache.hadoop.io.Text:void <init>(java.lang.String)",
+                        "org.apache.hadoop.conf.Configuration:void <clinit>()",
+                        "org.apache.hadoop.conf.Configuration$IntegerRanges:java.util.Iterator iterator()",
+                        "org.apache.hadoop.fs.FileSystem:org.apache.hadoop.fs.FileSystem get(org.apache.hadoop.conf.Configuration)",
+                        "org.apache.hadoop.io.IntWritable:void <init>()",
+                        "org.apache.hadoop.util.ToolRunner:int run(org.apache.hadoop.conf.Configuration,org.apache.hadoop.util.Tool,java.lang.String[])",
+                        "org.apache.hadoop.util.GenericOptionsParser:java.lang.String[] getRemainingArgs()",
+                        "org.apache.hadoop.fs.LocalDirAllocator$AllocatorPerContext$PathIterator:org.apache.hadoop.fs.Path next()",
+                        "org.apache.hadoop.metrics2.impl.MetricsCollectorImpl:java.util.Iterator iterator()"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "project name": "leiguorui_Netty-SpringMVC",
+    "vulnerable dependencies": {
+        "io.netty:netty-handler:4.0.23.Final": {
+            "used-method num": 2,
+            "used method": [
+                "io.netty.handler.stream.ChunkedStream:void <init>(java.io.InputStream)",
+                "io.netty.handler.stream.ChunkedWriteHandler:void <init>()"
+            ]
+        },
+        "io.netty:netty-codec-http:4.0.23.Final": {
+            "used-method num": 27,
+            "used method": [
+                "io.netty.handler.codec.http.DefaultHttpHeaders:java.lang.String get(java.lang.String)",
+                "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpResponseStatus:io.netty.handler.codec.http.HttpResponseStatus valueOf(int)",
+                "io.netty.handler.codec.http.HttpResponseStatus:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderIterator:java.util.Map$Entry next()",
+                "io.netty.handler.codec.http.HttpObjectDecoder:void <clinit>()",
+                "io.netty.handler.codec.http.HttpRequestDecoder:void <init>()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:java.util.Set names()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String getUri()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.HttpVersion:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpObject:io.netty.handler.codec.DecoderResult getDecoderResult()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus,io.netty.buffer.ByteBuf)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String getUri()",
+                "io.netty.handler.codec.http.HttpResponseEncoder:void <init>()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:io.netty.handler.codec.http.HttpHeaders add(java.lang.String,java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderEntry:java.lang.String getKey()",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:io.netty.handler.codec.http.HttpMethod getMethod()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:io.netty.handler.codec.http.HttpMethod getMethod()",
+                "io.netty.handler.codec.http.HttpMethod:java.lang.String name()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderEntry:java.lang.String getValue()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderIterator:boolean hasNext()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.1.1.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.DispatcherServlet:void <clinit>()",
+                "org.springframework.web.servlet.FrameworkServlet:void <clinit>()",
+                "org.springframework.web.servlet.HttpServletBean:javax.servlet.ServletContext getServletContext()",
+                "org.springframework.web.servlet.DispatcherServlet:void <init>(org.springframework.web.context.WebApplicationContext)"
+            ]
+        },
+        "ch.qos.logback:logback-classic:1.1.2": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

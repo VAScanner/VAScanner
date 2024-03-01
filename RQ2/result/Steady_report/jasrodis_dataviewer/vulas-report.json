@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.07.2023 14:25 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.charts",
+			"artifactId": "dataviewer",
+			"version": "1.0.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-29425",
+				"cvssScore": "4.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-io-1.3.2.jar",
+			"sha1": "B6DDE38349BA9BB5E6EA6320531EAE969985DAE5",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.charts",
+				"artifactId": "dataviewer",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.charts/dataviewer/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-19.0.jar",
+			"sha1": "6CE200F6B23222AF3D8ABB6B6459E6C44F4BB0E9",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.charts",
+				"artifactId": "dataviewer",
+				"version": "1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.charts/dataviewer/1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

@@ -1,0 +1,63 @@
+{
+    "project name": "startSnow_SpringCloud-security-oauth2",
+    "modules": {
+        "com.example:springcloud-security-oauth2": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE": {
+                    "used-method num": 33,
+                    "used method": [
+                        "org.springframework.security.oauth2.common.DefaultOAuth2RefreshToken:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String getValue()",
+                        "org.springframework.security.oauth2.common.exceptions.OAuth2Exception:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:org.springframework.security.oauth2.common.OAuth2AccessToken enhance(org.springframework.security.oauth2.common.OAuth2AccessToken,org.springframework.security.oauth2.provider.OAuth2Authentication)",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setSupportRefreshToken(boolean)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.util.Set getResponseTypes()",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.util.Map getExtensions()",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.util.Set getScope()",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void <init>()",
+                        "org.springframework.security.oauth2.provider.approval.Approval:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void <init>(javax.sql.DataSource)",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:org.springframework.security.core.Authentication getUserAuthentication()",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenEnhancer(org.springframework.security.oauth2.provider.token.TokenEnhancer)",
+                        "org.springframework.security.oauth2.provider.client.BaseClientDetails:java.lang.String toString()",
+                        "org.springframework.security.oauth2.common.exceptions.InvalidTokenException:void <init>(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:org.springframework.security.oauth2.common.OAuth2AccessToken createAccessToken(org.springframework.security.oauth2.provider.OAuth2Authentication)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.util.Collection getAuthorities()",
+                        "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                        "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:org.springframework.security.oauth2.provider.OAuth2Authentication readAuthentication(java.lang.String)",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String toString()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:org.springframework.security.oauth2.provider.OAuth2Authentication readAuthentication(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:org.springframework.security.oauth2.provider.OAuth2Authentication readAuthentication(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:boolean isApproved()",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.lang.String getRedirectUri()",
+                        "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:void setAdditionalInformation(java.util.Map)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.util.Map getRequestParameters()",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:org.springframework.security.oauth2.provider.OAuth2Request getOAuth2Request()",
+                        "org.springframework.security.oauth2.provider.OAuth2Authentication:void <init>(org.springframework.security.oauth2.provider.OAuth2Request,org.springframework.security.core.Authentication)",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:java.util.Set getResourceIds()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()",
+                        "org.springframework.security.oauth2.provider.OAuth2Request:void <init>(java.util.Map,java.lang.String,java.util.Collection,boolean,java.util.Set,java.util.Set,java.lang.String,java.util.Set,java.util.Map)"
+                    ]
+                },
+                "org.apache.httpcomponents:httpclient:4.5.5": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.example:springcloud-oauth2-client": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.httpcomponents:httpclient:4.5.5": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

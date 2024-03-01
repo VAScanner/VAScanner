@@ -1,0 +1,108 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 13:53 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.apifest",
+			"artifactId": "apifest-oauth20-parent",
+			"version": "0.3.1"
+		},
+		"isAggregated": true,
+	
+		"aggregatedModules": [
+				{
+					"groupId": "com.apifest",
+					"artifactId": "apifest-oauth20",
+					"version": "0.3.1"
+				}
+				,
+				{
+					"groupId": "com.apifest",
+					"artifactId": "apifest-oauth20-api",
+					"version": "0.2.1"
+				}
+				,
+				{
+					"groupId": "com.apifest",
+					"artifactId": "apifest-oauth20-parent",
+					"version": "0.3.1"
+				}
+		],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2014-3488",
+				"cvssScore": "5.0" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "netty-3.9.0.Final.jar",
+			"sha1": "BEAD2F4609B302C43859F156DF8911E50DF0610B",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.apifest",
+				"artifactId": "apifest-oauth20-api",
+				"version": "0.2.1",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.apifest/apifest-oauth20-api/0.2.1",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2015-2156",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "netty-3.9.0.Final.jar",
+			"sha1": "BEAD2F4609B302C43859F156DF8911E50DF0610B",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.apifest",
+				"artifactId": "apifest-oauth20-api",
+				"version": "0.2.1",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.apifest/apifest-oauth20-api/0.2.1",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

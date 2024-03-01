@@ -1,0 +1,139 @@
+{
+    "project name": "orctom_was-maven-plugin",
+    "vulnerable dependencies": {
+        "org.codehaus.plexus:plexus-utils:3.0.10": {
+            "used-method num": 27,
+            "used method": [
+                "org.codehaus.plexus.util.xml.SerializerXMLWriter:void endElement()",
+                "org.codehaus.plexus.util.cli.CommandLineUtils:int executeCommandLine(org.codehaus.plexus.util.cli.Commandline,org.codehaus.plexus.util.cli.StreamConsumer,org.codehaus.plexus.util.cli.StreamConsumer,int)",
+                "org.codehaus.plexus.util.StringUtils:boolean isNotBlank(java.lang.String)",
+                "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter:void addAttribute(java.lang.String,java.lang.String)",
+                "org.codehaus.plexus.util.FileUtils:void fileWrite(java.lang.String,java.lang.String,java.lang.String)",
+                "org.codehaus.plexus.util.xml.SerializerXMLWriter:void addAttribute(java.lang.String,java.lang.String)",
+                "org.codehaus.plexus.util.cli.Commandline:void <init>()",
+                "org.codehaus.plexus.util.cli.Commandline:void setWorkingDirectory(java.lang.String)",
+                "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter:void startElement(java.lang.String)",
+                "org.codehaus.plexus.util.xml.SerializerXMLWriter:void writeText(java.lang.String)",
+                "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter:void <clinit>()",
+                "org.codehaus.plexus.util.dag.CycleDetectedException:java.lang.String getMessage()",
+                "org.codehaus.plexus.util.xml.SerializerXMLWriter:void startElement(java.lang.String)",
+                "org.codehaus.plexus.util.StringUtils:boolean isNotEmpty(java.lang.String)",
+                "org.codehaus.plexus.util.StringUtils:boolean isEmpty(java.lang.String)",
+                "org.codehaus.plexus.util.StringUtils:java.lang.String[] split(java.lang.String,java.lang.String)",
+                "org.codehaus.plexus.util.FileUtils:void <clinit>()",
+                "org.codehaus.plexus.util.cli.Commandline:org.codehaus.plexus.util.cli.Arg createArg()",
+                "org.codehaus.plexus.util.StringUtils:java.lang.String join(java.lang.Object[],java.lang.String)",
+                "org.codehaus.plexus.util.cli.Commandline:void setExecutable(java.lang.String)",
+                "org.codehaus.plexus.util.StringUtils:java.lang.String join(java.util.Iterator,java.lang.String)",
+                "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter:void endElement()",
+                "org.codehaus.plexus.util.cli.Commandline$Argument:void setLine(java.lang.String)",
+                "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter:void writeText(java.lang.String)",
+                "org.codehaus.plexus.util.cli.Commandline:java.lang.String[] getShellCommandline()",
+                "org.codehaus.plexus.util.xml.PrettyPrintXMLWriter:void <init>(java.io.Writer)",
+                "org.codehaus.plexus.util.FileUtils:void fileWrite(java.io.File,java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2017-1000487"
+            ],
+            "used vul-method": [
+                "org.codehaus.plexus.util.cli.CommandLineUtils:int executeCommandLine(org.codehaus.plexus.util.cli.Commandline,org.codehaus.plexus.util.cli.StreamConsumer,org.codehaus.plexus.util.cli.StreamConsumer,int)",
+                "org.codehaus.plexus.util.cli.Commandline:void <init>()",
+                "org.codehaus.plexus.util.cli.Commandline:java.lang.String[] getShellCommandline()"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2017-1000487": [
+                    "org.codehaus.plexus.util.cli.Commandline:java.lang.Process execute()",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:java.lang.String unifyQuotes(java.lang.String)",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:java.lang.String getExecutable()",
+                    "org.codehaus.plexus.util.cli.Commandline:void verifyShellState()",
+                    "org.codehaus.plexus.util.cli.shell.Shell:java.util.List getShellCommandLine(java.lang.String[])",
+                    "org.codehaus.plexus.util.cli.shell.Shell:java.util.List getRawCommandLine(java.lang.String,java.lang.String[])",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:java.lang.String getExecutionPreamble()",
+                    "org.codehaus.plexus.util.cli.shell.BourneShell:void <init>(boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2017-1000487": [
+                    "org.codehaus.plexus.util.cli.CommandLineUtils:int executeCommandLine(org.codehaus.plexus.util.cli.Commandline,org.codehaus.plexus.util.cli.StreamConsumer,org.codehaus.plexus.util.cli.StreamConsumer,int)",
+                    "org.codehaus.plexus.util.cli.Commandline:void <init>()",
+                    "org.codehaus.plexus.util.cli.Commandline:java.lang.String[] getShellCommandline()"
+                ]
+            }
+        },
+        "org.apache.ant:ant:1.8.3": {
+            "used-method num": 42,
+            "used method": [
+                "org.apache.tools.ant.types.Path:void <clinit>()",
+                "org.apache.tools.ant.Project:void setBaseDir(java.io.File)",
+                "org.apache.tools.ant.DefaultLogger:void setErrorPrintStream(java.io.PrintStream)",
+                "org.apache.tools.ant.ProjectHelper:void configureProject(org.apache.tools.ant.Project,java.io.File)",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:boolean hasNext()",
+                "org.apache.tools.ant.DefaultLogger:void setMessageOutputLevel(int)",
+                "org.apache.tools.ant.taskdefs.Typedef:void <init>()",
+                "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:boolean hasNext()",
+                "org.apache.tools.ant.Project:void init()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection:java.util.Iterator iterator()",
+                "org.apache.tools.ant.types.PropertySet$1:java.lang.Object next()",
+                "org.apache.tools.ant.types.resources.FailFast:java.lang.Object next()",
+                "org.apache.tools.ant.taskdefs.Definer:void setResource(java.lang.String)",
+                "org.apache.tools.ant.types.Resource$1:boolean hasNext()",
+                "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:java.lang.Object next()",
+                "org.apache.tools.ant.Project:void setProperty(java.lang.String,java.lang.String)",
+                "org.apache.tools.ant.taskdefs.Definer:void <clinit>()",
+                "org.apache.tools.ant.types.Resource$1:java.lang.Object next()",
+                "org.apache.tools.ant.types.resources.FileResourceIterator:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.FailFast:boolean hasNext()",
+                "org.apache.tools.ant.types.resources.FileResourceIterator:java.lang.Object next()",
+                "org.apache.tools.ant.types.resources.Resources$2:java.lang.Object next()",
+                "org.apache.tools.ant.Project:void <clinit>()",
+                "org.apache.tools.ant.taskdefs.Definer:void execute()",
+                "org.apache.tools.ant.Project:void <init>()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection:int size()",
+                "org.apache.tools.ant.Project:void addReference(java.lang.String,java.lang.Object)",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:boolean hasNext()",
+                "org.apache.tools.ant.ProjectComponent:void setProject(org.apache.tools.ant.Project)",
+                "org.apache.tools.ant.Project:void executeTarget(java.lang.String)",
+                "org.apache.tools.ant.types.Path:void setPath(java.lang.String)",
+                "org.apache.tools.ant.DefaultLogger:void setOutputPrintStream(java.io.PrintStream)",
+                "org.apache.tools.ant.Project:void addBuildListener(org.apache.tools.ant.BuildListener)",
+                "org.apache.tools.ant.Project$AntRefTable:java.lang.Object get(java.lang.Object)",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:java.lang.Object next()",
+                "org.apache.tools.ant.ComponentHelper$AntTypeTable:java.lang.Object get(java.lang.Object)",
+                "org.apache.tools.ant.types.Path:void <init>(org.apache.tools.ant.Project)",
+                "org.apache.tools.ant.DefaultLogger:void <init>()",
+                "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:java.lang.Object next()",
+                "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:java.lang.Object next()",
+                "org.apache.tools.ant.ProjectHelper:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2021-36374",
+                "CVE-2021-36373"
+            ],
+            "used vul-method": [
+                "org.apache.tools.ant.ProjectHelper:void configureProject(org.apache.tools.ant.Project,java.io.File)",
+                "org.apache.tools.ant.taskdefs.Definer:void execute()"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.ant.ProjectHelper:void configureProject(org.apache.tools.ant.Project,java.io.File)",
+                    "org.apache.tools.ant.taskdefs.Definer:void execute()"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.ant.ProjectHelper:void configureProject(org.apache.tools.ant.Project,java.io.File)",
+                    "org.apache.tools.ant.taskdefs.Definer:void execute()"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "09.07.2023 18:54 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.github.matrixseven",
+			"artifactId": "ExcelReads",
+			"version": "1.0.4"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2019-12402",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-compress-1.18.jar",
+			"sha1": "1191F9F2BC0C47A8CCE69193FEB1FF0A8BCB37D5",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.github.matrixseven",
+				"artifactId": "ExcelReads",
+				"version": "1.0.4",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.github.matrixseven/ExcelReads/1.0.4",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

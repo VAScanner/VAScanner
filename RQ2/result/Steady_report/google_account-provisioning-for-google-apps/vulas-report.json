@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 21:40 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "apps.provisioning",
+			"artifactId": "appsProvisioning",
+			"version": "0.0.1"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-7692",
+				"cvssScore": "9.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "google-oauth-client-1.20.0.jar",
+			"sha1": "1D086AC5756475DDF451AF2E2DF6E288D18608CA",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "apps.provisioning",
+				"artifactId": "appsProvisioning",
+				"version": "0.0.1",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/apps.provisioning/appsProvisioning/0.0.1",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-jdk5-13.0.jar",
+			"sha1": "381AE6C8ADD7C98E9BCDDB1E0B898400CD6FC3F7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "apps.provisioning",
+				"artifactId": "appsProvisioning",
+				"version": "0.0.1",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/apps.provisioning/appsProvisioning/0.0.1",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

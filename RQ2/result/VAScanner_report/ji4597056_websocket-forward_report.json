@@ -1,0 +1,42 @@
+{
+    "project name": "ji4597056_websocket-forward",
+    "vulnerable dependencies": {
+        "io.netty:netty-handler:4.1.17.Final": {
+            "used-method num": 4,
+            "used method": [
+                "io.netty.handler.ssl.util.SimpleTrustManagerFactory:void <clinit>()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder forClient()",
+                "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContext build()",
+                "io.netty.handler.ssl.util.InsecureTrustManagerFactory:void <clinit>()"
+            ]
+        },
+        "io.netty:netty-common:4.1.17.Final": {
+            "used-method num": 1,
+            "used method": [
+                "io.netty.util.CharsetUtil:void <clinit>()"
+            ]
+        },
+        "io.netty:netty-codec-http:4.1.17.Final": {
+            "used-method num": 17,
+            "used method": [
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:void <clinit>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker:boolean isHandshakeComplete()",
+                "io.netty.handler.codec.http.HttpClientCodec:void <init>()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:void <init>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker:void finishHandshake(io.netty.channel.Channel,io.netty.handler.codec.http.FullHttpResponse)",
+                "io.netty.handler.codec.http.DefaultHttpResponse:io.netty.handler.codec.http.HttpResponseStatus status()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.HttpHeaders:void <clinit>()",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:void <init>(java.lang.String)",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketVersion:void <clinit>()",
+                "io.netty.handler.codec.http.websocketx.WebSocketClientHandshakerFactory:io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker newHandshaker(java.net.URI,io.netty.handler.codec.http.websocketx.WebSocketVersion,java.lang.String,boolean,io.netty.handler.codec.http.HttpHeaders)",
+                "io.netty.handler.codec.http.websocketx.WebSocketClientHandshaker:io.netty.channel.ChannelFuture handshake(io.netty.channel.Channel)",
+                "io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketClientCompressionHandler:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse:io.netty.handler.codec.http.HttpResponseStatus status()"
+            ]
+        }
+    }
+}

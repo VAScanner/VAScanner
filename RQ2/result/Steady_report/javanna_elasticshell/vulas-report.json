@@ -1,0 +1,154 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 22:40 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.elasticsearch",
+			"artifactId": "elasticshell",
+			"version": "0.90.0-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2016-2510",
+				"cvssScore": "8.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "bsh-2.0b4.jar",
+			"sha1": "A05F0A0FEEFA8D8467AC80E16E7DE071489F0D9C",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.elasticsearch",
+				"artifactId": "elasticshell",
+				"version": "0.90.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.elasticsearch/elasticshell/0.90.0-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-2035",
+				"cvssScore": "4.4" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "jansi-1.10.jar",
+			"sha1": "3C944AC681F64D52F163EAC2AB87AB6CB83D6930",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.elasticsearch",
+				"artifactId": "elasticshell",
+				"version": "0.90.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.elasticsearch/elasticshell/0.90.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-2035",
+				"cvssScore": "4.4" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "jline-2.9.jar",
+			"sha1": "84693D4D75AA2A3AF8447873CAC8C0AED25CE863",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.elasticsearch",
+				"artifactId": "elasticshell",
+				"version": "0.90.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.elasticsearch/elasticshell/0.90.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2017-12629",
+				"cvssScore": "9.8" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "lucene-queryparser-4.2.1.jar",
+			"sha1": "C080C77619699E7F88770451B91A70C6EB7914E7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.elasticsearch",
+				"artifactId": "elasticshell",
+				"version": "0.90.0-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.elasticsearch/elasticshell/0.90.0-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

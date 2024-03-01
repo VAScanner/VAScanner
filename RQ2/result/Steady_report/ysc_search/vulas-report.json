@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.01.2024 03:30 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "org.apdplat.search",
+			"artifactId": "search",
+			"version": "1.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2015-6748",
+				"cvssScore": "6.1" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "jsoup-1.7.2.jar",
+			"sha1": "D7E275BA05AA380CA254F72D0C0FFEBAEDC3ADCF",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apdplat.search",
+				"artifactId": "search",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.apdplat.search/search/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2012-0881",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "xercesImpl-2.10.0.jar",
+			"sha1": "9161654D2AFE7F9063455F02CCCA8E4EC2787222",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apdplat.search",
+				"artifactId": "search",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.apdplat.search/search/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4002",
+				"cvssScore": "7.1" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "xercesImpl-2.10.0.jar",
+			"sha1": "9161654D2AFE7F9063455F02CCCA8E4EC2787222",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "org.apdplat.search",
+				"artifactId": "search",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/org.apdplat.search/search/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

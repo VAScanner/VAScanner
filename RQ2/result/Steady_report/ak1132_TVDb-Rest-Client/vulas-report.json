@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.07.2023 05:06 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.tvdb.rest.client",
+			"artifactId": "tvdbRestClient",
+			"version": "1.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-23.0.jar",
+			"sha1": "C947004BB13D18182BE60077ADE044099E4F26F1",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.tvdb.rest.client",
+				"artifactId": "tvdbRestClient",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.tvdb.rest.client/tvdbRestClient/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-2402",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "okhttp-3.8.0.jar",
+			"sha1": "5A11F020CCE2D11EB71BA916700600E18C4547E7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.tvdb.rest.client",
+				"artifactId": "tvdbRestClient",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.tvdb.rest.client/tvdbRestClient/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-1000850",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "retrofit-2.3.0.jar",
+			"sha1": "BCACDE6A8CCEDCC56C127403D26B76072FE6214D",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.tvdb.rest.client",
+				"artifactId": "tvdbRestClient",
+				"version": "1.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.tvdb.rest.client/tvdbRestClient/1.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

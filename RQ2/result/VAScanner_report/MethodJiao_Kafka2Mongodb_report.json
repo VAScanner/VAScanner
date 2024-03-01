@@ -1,0 +1,133 @@
+{
+    "project name": "MethodJiao_Kafka2Mongodb",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:1.0.0": {
+            "used-method num": 18,
+            "used method": [
+                "org.apache.kafka.clients.consumer.ConsumerRecords:int count()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void close()",
+                "org.apache.kafka.common.utils.AbstractIterator:java.lang.Object next()",
+                "org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread:void run()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                "org.apache.kafka.common.header.internals.RecordHeaders$2:org.apache.kafka.common.header.Header next()",
+                "org.apache.kafka.common.header.internals.RecordHeaders$2:boolean hasNext()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <clinit>()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void subscribe(java.util.Collection)",
+                "org.apache.kafka.common.utils.AbstractIterator:boolean hasNext()",
+                "org.apache.kafka.clients.consumer.ConsumerRecord:long offset()",
+                "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:org.apache.kafka.common.record.Record next()",
+                "org.apache.kafka.common.utils.LogContext$KafkaLogger:void error(java.lang.String,java.lang.Object)",
+                "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.Iterator iterator()",
+                "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:boolean hasNext()",
+                "org.apache.kafka.common.utils.LogContext$KafkaLogger:void info(java.lang.String,java.lang.Object,java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2018-17196"
+            ],
+            "used vul-method": [
+                "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void close()",
+                "org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread:void run()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void subscribe(java.util.Collection)"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2018-17196": [
+                    "org.apache.kafka.common.requests.ProduceRequest:void validateRecords(short,org.apache.kafka.common.record.MemoryRecords)",
+                    "org.apache.kafka.common.requests.ProduceRequest:void <init>(org.apache.kafka.common.protocol.types.Struct,short)",
+                    "org.apache.kafka.common.requests.ProduceRequest:void <init>(short,short,int,java.util.Map,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-17196": [
+                    "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                    "org.apache.kafka.clients.consumer.KafkaConsumer:void close()",
+                    "org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread:void run()",
+                    "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                    "org.apache.kafka.clients.consumer.KafkaConsumer:void subscribe(java.util.Collection)"
+                ]
+            }
+        },
+        "org.mongodb:mongo-java-driver:3.11.0": {
+            "used-method num": 36,
+            "used method": [
+                "org.bson.RawBsonArray$RawBsonArrayList$Itr:boolean hasNext()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "com.mongodb.MongoClientSettings$Builder:com.mongodb.MongoClientSettings$Builder credential(com.mongodb.MongoCredential)",
+                "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:boolean hasNext()",
+                "com.mongodb.MongoClientSettings$Builder:com.mongodb.MongoClientSettings$Builder applyToClusterSettings(com.mongodb.Block)",
+                "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                "com.mongodb.MongoCredential:com.mongodb.MongoCredential createCredential(java.lang.String,java.lang.String,char[])",
+                "com.mongodb.connection.ClusterSettings$Builder:com.mongodb.connection.ClusterSettings$Builder hosts(java.util.List)",
+                "com.mongodb.MongoClientSettings$Builder:com.mongodb.MongoClientSettings build()",
+                "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                "com.mongodb.MongoClientSettings:void <clinit>()",
+                "com.mongodb.client.internal.MongoClientImpl:com.mongodb.client.MongoDatabase getDatabase(java.lang.String)",
+                "org.bson.types.StringRangeSet$1:java.lang.String next()",
+                "com.mongodb.internal.connection.ConcurrentLinkedDeque$CLDIterator:java.lang.Object next()",
+                "org.bson.RawBsonArray$RawBsonArrayList$Itr:org.bson.BsonValue next()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(java.lang.String)",
+                "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:java.lang.Object next()",
+                "org.bson.Document:org.bson.Document parse(java.lang.String)",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                "org.bson.types.StringRangeSet$1:boolean hasNext()",
+                "com.mongodb.internal.connection.ConcurrentLinkedDeque$CLDIterator:boolean hasNext()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                "com.mongodb.MongoCredential:void <clinit>()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                "com.mongodb.MongoClientSettings$Builder:com.mongodb.MongoClientSettings$Builder applyToSslSettings(com.mongodb.Block)",
+                "com.mongodb.connection.SslSettings$Builder:com.mongodb.connection.SslSettings$Builder enabled(boolean)",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                "com.mongodb.ServerAddress:void <init>(java.lang.String,int)",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(com.mongodb.MongoClientSettings)",
+                "com.mongodb.client.internal.MongoDatabaseImpl:com.mongodb.client.MongoCollection getCollection(java.lang.String)",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()",
+                "com.mongodb.client.internal.MongoCollectionImpl:void insertMany(java.util.List)",
+                "com.mongodb.MongoClientSettings:com.mongodb.MongoClientSettings$Builder builder()"
+            ],
+            "CVE": [
+                "CVE-2021-20328"
+            ],
+            "used vul-method": [
+                "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()",
+                "com.mongodb.client.internal.MongoCollectionImpl:void insertMany(java.util.List)"
+            ],
+            "vul-called frequency": 11,
+            "related vul root method": {
+                "CVE-2021-20328": [
+                    "com.mongodb.client.internal.KeyManagementService:java.io.InputStream stream(java.lang.String,java.nio.ByteBuffer)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-20328": [
+                    "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                    "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                    "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                    "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                    "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                    "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                    "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                    "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                    "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                    "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()",
+                    "com.mongodb.client.internal.MongoCollectionImpl:void insertMany(java.util.List)"
+                ]
+            }
+        }
+    }
+}

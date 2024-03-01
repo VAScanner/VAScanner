@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "09.07.2023 16:00 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.ravc",
+			"artifactId": "SimpleImport",
+			"version": "1.1.0.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1953",
+				"cvssScore": "10.0" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "commons-configuration2-2.6.jar",
+			"sha1": "D2641F980C21CBE67E54C127D8AE8F4E7E037464",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.ravc",
+				"artifactId": "SimpleImport",
+				"version": "1.1.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.ravc/SimpleImport/1.1.0.0",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

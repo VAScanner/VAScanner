@@ -1,0 +1,85 @@
+{
+    "project name": "eclipse-iofog_Connector",
+    "modules": {
+        "org.eclipse.iofog:iofog-connector": {
+            "vulnerable dependencies": {
+                "io.netty:netty-all:4.1.34.Final": {
+                    "used-method num": 50,
+                    "used method": [
+                        "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.Channel channel()",
+                        "io.netty.util.ResourceLeakDetector$Record:java.lang.String toString()",
+                        "io.netty.channel.nio.SelectedSelectionKeySet:java.util.Iterator iterator()",
+                        "io.netty.handler.codec.CodecOutputList:boolean add(java.lang.Object)",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture sync()",
+                        "io.netty.channel.nio.SelectedSelectionKeySet$1:boolean hasNext()",
+                        "io.netty.handler.codec.bytes.ByteArrayEncoder:void <init>()",
+                        "io.netty.channel.DelegatingChannelPromiseNotifier:io.netty.channel.ChannelPromise sync()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                        "io.netty.handler.codec.bytes.ByteArrayDecoder:void <init>()",
+                        "io.netty.util.internal.StringUtil:void <clinit>()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.BaseLinkedAtomicQueue:java.util.Iterator iterator()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap clone()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                        "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                        "io.netty.util.internal.ThreadLocalRandom$1:void run()",
+                        "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture sync()",
+                        "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:io.netty.util.internal.PriorityQueueNode next()",
+                        "io.netty.channel.ChannelInitializer:void <clinit>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise sync()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.ConcurrentCircularArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                        "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise sync()",
+                        "io.netty.channel.DefaultChannelPromise:io.netty.channel.Channel channel()",
+                        "io.netty.channel.DelegatingChannelPromiseNotifier:io.netty.channel.Channel channel()",
+                        "io.netty.util.internal.StringUtil:boolean isNullOrEmpty(java.lang.String)",
+                        "io.netty.handler.codec.CodecOutputList:java.lang.Object get(int)",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.Channel channel()",
+                        "io.netty.channel.CompleteChannelFuture:io.netty.channel.Channel channel()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.MpscAtomicArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContext build()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.atomic.BaseMpscLinkedAtomicArrayQueue:java.util.Iterator iterator()",
+                        "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                        "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                        "io.netty.channel.ChannelInitializer:void <init>()",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                        "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise sync()",
+                        "io.netty.handler.codec.CodecOutputList:int size()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                        "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:boolean hasNext()",
+                        "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                        "io.netty.channel.nio.SelectedSelectionKeySet$1:java.nio.channels.SelectionKey next()",
+                        "io.netty.util.internal.shaded.org.jctools.queues.BaseLinkedQueue:java.util.Iterator iterator()",
+                        "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                        "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()",
+                        "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder forServer(java.io.File,java.io.File)"
+                    ],
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                        "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)"
+                    ],
+                    "vul-called frequency": 6,
+                    "related vul root method": {
+                        "CVE-2019-16869": [
+                            "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-16869": [
+                            "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                            "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                            "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

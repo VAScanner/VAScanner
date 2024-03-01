@@ -1,0 +1,58 @@
+{
+	"vulasReport": {
+		"generatedAt": "08.07.2023 23:53 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.github.bbottema",
+			"artifactId": "java-socks-proxy-server",
+			"version": "2.0.0"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "PROVIDED, TEST" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2021-44832",
+				"cvssScore": "6.6" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "log4j-core-2.12.3.jar",
+			"sha1": "4994B64F7A6C165780DD83D1C633CEEFE78F5FA7",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.github.bbottema",
+				"artifactId": "java-socks-proxy-server",
+				"version": "2.0.0",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.github.bbottema/java-socks-proxy-server/2.0.0",
+				
+				"scope": "RUNTIME",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

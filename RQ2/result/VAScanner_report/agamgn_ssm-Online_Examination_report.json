@@ -1,0 +1,55 @@
+{
+    "project name": "agamgn_ssm-Online_Examination",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.2.4.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.web.method.HandlerMethod:java.lang.reflect.Method getMethod()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.2.4.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "com.alibaba:fastjson:1.2.47": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.1.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.struts:struts2-core:2.5.13": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:3.14": {
+            "used-method num": 15,
+            "used method": [
+                "org.apache.poi.xssf.usermodel.XSSFRow:short getLastCellNum()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getLastRowNum()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:short getFirstCellNum()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:double getNumericCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:boolean getBooleanCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:int getNumberOfSheets()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getFirstRowNum()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:int getCellType()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.openxml4j.opc.PackagePartCollection:java.lang.Object put(java.lang.Object,java.lang.Object)"
+            ]
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

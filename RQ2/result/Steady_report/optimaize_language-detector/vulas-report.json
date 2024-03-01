@@ -1,0 +1,122 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 20:57 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "com.optimaize.languagedetector",
+			"artifactId": "language-detector",
+			"version": "0.7-SNAPSHOT"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2020-1945",
+				"cvssScore": "6.3" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "ant-1.7.0.jar",
+			"sha1": "9746AF1A485E50CF18DCB232489032A847067066",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.optimaize.languagedetector",
+				"artifactId": "language-detector",
+				"version": "0.7-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.optimaize.languagedetector/language-detector/0.7-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2016-2510",
+				"cvssScore": "8.1" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "bsh-2.0b4.jar",
+			"sha1": "A05F0A0FEEFA8D8467AC80E16E7DE071489F0D9C",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.optimaize.languagedetector",
+				"artifactId": "language-detector",
+				"version": "0.7-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.optimaize.languagedetector/language-detector/0.7-SNAPSHOT",
+				
+				"scope": "TEST",
+				"isTransitive": true,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "noLibraryCodeAtAll",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2018-10237",
+				"cvssScore": "5.9" ,
+				"cvssVersion": "3.1" 
+			},
+			"filename": "guava-19.0.jar",
+			"sha1": "6CE200F6B23222AF3D8ABB6B6459E6C44F4BB0E9",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "com.optimaize.languagedetector",
+				"artifactId": "language-detector",
+				"version": "0.7-SNAPSHOT",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/com.optimaize.languagedetector/language-detector/0.7-SNAPSHOT",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "unknown",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}

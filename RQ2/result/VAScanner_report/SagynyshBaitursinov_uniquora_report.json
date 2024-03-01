@@ -1,0 +1,67 @@
+{
+    "project name": "SagynyshBaitursinov_uniquora",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:9.4.1212": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.hibernate:hibernate-core:5.2.5.Final": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-web:4.2.0.RELEASE": {
+            "used-method num": 26,
+            "used method": [
+                "org.springframework.security.web.authentication.WebAuthenticationDetailsSource:org.springframework.security.web.authentication.WebAuthenticationDetails buildDetails(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.NegatedRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.authentication.preauth.PreAuthenticatedGrantedAuthoritiesWebAuthenticationDetails:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.MediaTypeRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.header.writers.ContentSecurityPolicyHeaderWriter:java.lang.String toString()",
+                "org.springframework.security.web.header.writers.XXssProtectionHeaderWriter:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.RequestHeaderRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:void <init>(java.lang.String,java.lang.String)",
+                "org.springframework.security.web.FilterInvocation$1:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.AndRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.OrRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.DefaultSecurityFilterChain:java.lang.String toString()",
+                "org.springframework.security.web.FilterChainProxy:java.lang.String toString()",
+                "org.springframework.security.web.header.Header:java.lang.String toString()",
+                "org.springframework.security.web.authentication.WebAuthenticationDetails:java.lang.String toString()",
+                "org.springframework.security.web.FilterInvocation:java.lang.String toString()",
+                "org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter:void <init>(org.springframework.security.web.util.matcher.RequestMatcher)",
+                "org.springframework.security.web.savedrequest.DefaultSavedRequest:java.lang.String toString()",
+                "org.springframework.security.web.FilterChainProxy$VirtualFilterChain:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.authentication.WebAuthenticationDetailsSource:void <init>()",
+                "org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper:java.lang.String toString()",
+                "org.springframework.security.web.header.writers.StaticHeadersWriter:java.lang.String toString()",
+                "org.springframework.security.web.firewall.FirewalledRequest:java.lang.String toString()",
+                "org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken:java.lang.String toString()"
+            ]
+        },
+        "org.springframework.security:spring-security-core:4.2.0.RELEASE": {
+            "used-method num": 18,
+            "used method": [
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:java.lang.Object getCredentials()",
+                "org.springframework.security.authentication.ProviderManager:org.springframework.security.core.Authentication authenticate(org.springframework.security.core.Authentication)",
+                "org.springframework.security.authentication.AuthenticationServiceException:void <init>(java.lang.String)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String toString()",
+                "org.springframework.security.core.context.SecurityContextImpl:void setAuthentication(org.springframework.security.core.Authentication)",
+                "org.springframework.security.core.userdetails.User:java.lang.String toString()",
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object)",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.core.context.SecurityContextImpl:java.lang.String toString()",
+                "org.springframework.security.concurrent.DelegatingSecurityContextRunnable:java.lang.String toString()",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:void setDetails(java.lang.Object)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getCredentials()",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()"
+            ]
+        }
+    }
+}

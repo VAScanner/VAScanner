@@ -1,0 +1,18 @@
+{
+    "project name": "bitsofinfo_s3-bucket-loader",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.1.4.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.util.StringUtils:java.lang.String replace(java.lang.String,java.lang.String,java.lang.String)"
+            ]
+        },
+        "org.apache.httpcomponents:httpclient:4.3.3": {
+            "used-method num": 2,
+            "used method": [
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()"
+            ]
+        }
+    }
+}

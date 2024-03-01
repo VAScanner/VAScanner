@@ -1,0 +1,90 @@
+{
+	"vulasReport": {
+		"generatedAt": "07.01.2024 23:49 +0800",
+		"generatedFor": {
+			"space": "5BB7592E24354F20143D405D1B106088",
+			"groupId": "de.l3s.boilerpipe",
+			"artifactId": "boilerpipe-core",
+			"version": "1.2.2"
+		},
+		"isAggregated": false,
+	
+		"aggregatedModules": [],
+	
+		"configuration": [
+			{ "name": "exceptionThreshold",
+			  "value": "noException" },
+			{ "name": "exemptScopes",
+			  "value": "TEST, PROVIDED" },
+			{ "name": "exemptBugs",
+			  "value": "" }
+		],
+	
+		"vulnerabilities": [
+		
+			{
+		
+			"bug":{
+				"id":"CVE-2012-0881",
+				"cvssScore": "7.5" ,
+				"cvssVersion": "3.0" 
+			},
+			"filename": "xercesImpl-2.9.1.jar",
+			"sha1": "7BC7E49DDFE4FB5F193ED37ECC96C12292C8CEB6",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "de.l3s.boilerpipe",
+				"artifactId": "boilerpipe-core",
+				"version": "1.2.2",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/de.l3s.boilerpipe/boilerpipe-core/1.2.2",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "vulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+			,
+			{
+		
+			"bug":{
+				"id":"CVE-2013-4002",
+				"cvssScore": "7.1" ,
+				"cvssVersion": "2.0" 
+			},
+			"filename": "xercesImpl-2.9.1.jar",
+			"sha1": "7BC7E49DDFE4FB5F193ED37ECC96C12292C8CEB6",
+			
+			"modules": [
+			
+				{
+			
+				"groupId": "de.l3s.boilerpipe",
+				"artifactId": "boilerpipe-core",
+				"version": "1.2.2",
+				
+				"href": "http://localhost:8033/backend/../apps/#/5BB7592E24354F20143D405D1B106088/de.l3s.boilerpipe/boilerpipe-core/1.2.2",
+				
+				"scope": "COMPILE",
+				"isTransitive": false,
+				
+					"containsVulnerableCode": "true",
+				
+						"potentiallyExecutesVulnerableCode": "nonVulnerableLibraryCode",
+				
+						"actuallyExecutesVulnerableCode": "noLibraryCodeAtAll"
+				}
+			]
+		}
+		]
+	}
+}
