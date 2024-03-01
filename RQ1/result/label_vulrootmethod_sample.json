@@ -1,0 +1,3053 @@
+{
+    "CVE-2021-33037": {
+        "org.apache.tomcat:tomcat-coyote": {
+            "patchV": {
+                "10.0.7": [
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.0.48": [
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.5.68": [
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/19d11556d0db99df291df33605f137976d152475",
+                "https://github.com/apache/tomcat/commit/506134f957a4be2c5b4a9334f7b3435fc954dbc1",
+                "https://github.com/apache/tomcat/commit/eee0d024c1b3171560c92eaba79dd6eb8eb11bcd"
+            ]
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core": {
+            "patchV": {
+                "10.0.7": [
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.0.48": [
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.5.68": [
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http11.Http11Processor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/19d11556d0db99df291df33605f137976d152475",
+                "https://github.com/apache/tomcat/commit/506134f957a4be2c5b4a9334f7b3435fc954dbc1",
+                "https://github.com/apache/tomcat/commit/eee0d024c1b3171560c92eaba79dd6eb8eb11bcd"
+            ]
+        }
+    },
+    "CVE-2017-12196": {
+        "io.undertow:undertow-core": {
+            "patchV": {
+                "2.0.2.Final": [
+                    {
+                        "VulRoot": "io.undertow.security.impl.DigestAuthenticationMechanism:io.undertow.security.api.AuthenticationMechanism$AuthenticationMechanismOutcome handleDigestHeader(io.undertow.server.HttpServerExchange,io.undertow.security.api.SecurityContext)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "1.4.24.Final": [
+                    {
+                        "VulRoot": "io.undertow.security.impl.DigestAuthenticationMechanism:io.undertow.security.api.AuthenticationMechanism$AuthenticationMechanismOutcome handleDigestHeader(io.undertow.server.HttpServerExchange,io.undertow.security.api.SecurityContext)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/undertow-io/undertow/commit/facb33a5cedaf4b7b96d3840a08210370a806870"
+            ]
+        }
+    },
+    "CVE-2017-7957": {
+        "com.thoughtworks.xstream:xstream": {
+            "patchV": {
+                "1.4.10": [
+                    {
+                        "VulRoot": "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                        "label": false,
+                        "reason": "No change old code data/control flow."
+                    },
+                    {
+                        "VulRoot": "com.thoughtworks.xstream.XStream:void setupConverters()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "com.thoughtworks.xstream.XStream:void setupSecurity()",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "com.thoughtworks.xstream.security.PrimitiveTypePermission:boolean allows(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "com.thoughtworks.xstream.converters.reflection.SunLimitedUnsafeReflectionProvider:java.lang.Object newInstance(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/x-stream/xstream/commit/6e546ec366419158b1e393211be6d78ab9604ab",
+                "https://github.com/x-stream/xstream/commit/8542d02d9ac5d384c85f4b33d6c1888c53bd55d",
+                "https://github.com/x-stream/xstream/commit/b3570be2f39234e61f99f9a20640756ea71b1b4"
+            ]
+        }
+    },
+    "CVE-2019-10086": {
+        "commons-beanutils:commons-beanutils": {
+            "patchV": {
+                "1.9.4": [
+                    {
+                        "VulRoot": "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/commons-beanutils/commit/62e82ad92cf4818709d6044aaf257b73d42659a4"
+            ]
+        }
+    },
+    "CVE-2019-12402": {
+        "org.apache.commons:commons-compress": {
+            "patchV": {
+                "1.19": [
+                    {
+                        "VulRoot": "org.apache.commons.compress.archivers.zip.NioZipEncoding:java.nio.ByteBuffer encode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/commons-compress/commit/4ad5d80a6272e007f64a6ac66829ca189a8093b9"
+            ]
+        }
+    },
+    "CVE-2018-1000632": {
+        "org.dom4j:dom4j": {
+            "patchV": {
+                "2.0.3": [
+                    {
+                        "VulRoot": "org.dom4j.tree.QNameCache:org.dom4j.QName get(java.lang.String,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.dom4j.Namespace:void <init>(java.lang.String,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.dom4j.QName:void <init>(java.lang.String,org.dom4j.Namespace,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.dom4j.QName:void <init>(java.lang.String,org.dom4j.Namespace)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.1.1": [
+                    {
+                        "VulRoot": "org.dom4j.tree.QNameCache:org.dom4j.QName get(java.lang.String,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.dom4j.Namespace:void <init>(java.lang.String,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.dom4j.QName:void <init>(java.lang.String,org.dom4j.Namespace,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.dom4j.QName:void <init>(java.lang.String,org.dom4j.Namespace)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/dom4j/dom4j/commit/e598eb43d418744c4dbf62f647dd2381c9ce9387",
+                "https://github.com/dom4j/dom4j/issues/48"
+            ]
+        }
+    },
+    "CVE-2018-1000850": {
+        "com.squareup.retrofit2:retrofit": {
+            "patchV": {
+                "2.5.0": [
+                    {
+                        "VulRoot": "retrofit2.RequestBuilder:void addPathParam(java.lang.String,java.lang.String,boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/square/retrofit/commit/b9a7f6ad72073ddd40254c0058710e87a073047d#diff-943ec7ed35e68201824904d1dc0ec982",
+                "https://github.com/advisories/GHSA-8p8g-f9vg-r7xr",
+                "https://github.com/square/retrofit/blob/master/CHANGELOG.md",
+                "https://github.com/square/retrofit/commit/b9a7f6ad72073ddd40254c0058710e87a073047d"
+            ]
+        }
+    },
+    "CVE-2018-1114": {
+        "io.undertow:undertow-core": {
+            "patchV": {
+                "1.4.25.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.handlers.resource.URLResource:void openConnection()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.0.5.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.handlers.resource.URLResource:void openConnection()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/undertow-io/undertow/commit/882d5884f2614944a0c2ae69bafd9d13bfc5b64a"
+            ]
+        }
+    },
+    "CVE-2018-11771": {
+        "org.apache.commons:commons-compress": {
+            "patchV": {
+                "1.18": [
+                    {
+                        "VulRoot": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:int readStored(byte[],int,int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/commons-compress/commit/a41ce6892cb0590b2e658704434ac0dbcb6834c8"
+            ]
+        }
+    },
+    "CVE-2018-12542": {
+        "io.vertx:vertx-web": {
+            "patchV": {
+                "3.5.4": [
+                    {
+                        "VulRoot": "io.vertx.ext.web.handler.impl.StaticHandlerImpl:void handle(io.vertx.ext.web.RoutingContext)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/vert-x3/vertx-web/issues/1025",
+                "https://github.com/advisories/GHSA-h39x-m55c-v55h",
+                "https://github.com/vert-x3/vertx-web/commit/57a65dce6f4c5aa5e3ce7288685e7f3447eb8f3b"
+            ]
+        }
+    },
+    "CVE-2018-17196": {
+        "org.apache.kafka:kafka-clients": {
+            "patchV": {
+                "2.1.1": [
+                    {
+                        "VulRoot": "org.apache.kafka.common.requests.ProduceRequest:void validateRecords(short,org.apache.kafka.common.record.MemoryRecords)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.kafka.common.requests.ProduceRequest:void <init>(org.apache.kafka.common.protocol.types.Struct,short)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.kafka.common.requests.ProduceRequest:void <init>(short,short,int,java.util.Map,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/kafka/commit/7c7961a8869745b0910e9a4eb478a811e215418f",
+                "https://github.com/apache/kafka/pull/5925"
+            ]
+        }
+    },
+    "CVE-2018-9159": {
+        "com.sparkjava:spark-core": {
+            "patchV": {
+                "2.7.2": [
+                    {
+                        "VulRoot": "spark.resource.ClassPathResource:void <init>(java.lang.String,java.lang.ClassLoader)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/perwendel/spark/issues/981",
+                "https://github.com/perwendel/spark/commit/030e9d00125cbd1ad759668f85488aba1019c668",
+                "https://github.com/perwendel/spark/commit/a221a864db28eb736d36041df2fa6eb8839fc5cd",
+                "https://github.com/perwendel/spark/commit/ce9e11517eca69e58ed4378d1e47a02bd06863cc",
+                "https://github.com/advisories/GHSA-76qr-mmh8-cp8f"
+            ]
+        }
+    },
+    "CVE-2019-0201": {
+        "org.apache.zookeeper:zookeeper": {
+            "patchV": {
+                "3.4.14": [
+                    {
+                        "VulRoot": "org.apache.zookeeper.server.FinalRequestProcessor:void processRequest(org.apache.zookeeper.server.Request)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "3.5.5": [
+                    {
+                        "VulRoot": "org.apache.zookeeper.server.FinalRequestProcessor:void processRequest(org.apache.zookeeper.server.Request)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/zookeeper/commit/af741cb319d4760cfab1cd3b560635adacd8deca"
+            ]
+        }
+    },
+    "CVE-2019-16869": {
+        "io.netty:netty-all": {
+            "patchV": {
+                "4.1.42.Final": [
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/netty/netty/compare/netty-4.1.41.Final...netty-4.1.42.Final",
+                "https://github.com/netty/netty/issues/9571",
+                "https://github.com/netty/netty/commit/017a9658c97ff1a1355c31a6a1f8bd1ea6f21c8d",
+                "https://github.com/netty/netty/pull/9585"
+            ]
+        },
+        "io.netty:netty-codec-http": {
+            "patchV": {
+                "4.1.42.Final": [
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/netty/netty/commit/017a9658c97ff1a1355c31a6a1f8bd1ea6f21c8d",
+                "https://github.com/netty/netty/pull/9585",
+                "https://github.com/netty/netty/issues/9571"
+            ]
+        }
+    },
+    "CVE-2020-11989": {
+        "org.apache.shiro:shiro-web": {
+            "patchV": {
+                "1.5.3": [
+                    {
+                        "VulRoot": "org.apache.shiro.web.util.WebUtils:java.lang.String decodeAndCleanUriString(javax.servlet.http.HttpServletRequest,java.lang.String)",
+                        "label": false,
+                        "reason": "Method refactor."
+                    },
+                    {
+                        "VulRoot": "org.apache.shiro.web.util.WebUtils:java.lang.String getRequestUri(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/shiro/commit/b90f91875e5e18c4805013c2fa0567b1700f5a96"
+            ]
+        }
+    },
+    "CVE-2020-11996": {
+        "org.apache.tomcat:tomcat-coyote": {
+            "patchV": {
+                "8.5.56": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.0.36": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "10.0.0-M6": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/9434a44d3449d620b1be70206819f8275b4a7509",
+                "https://github.com/rusakovichma/tomcat-embed-core-9.0.31-CVE-2020-11996/blob/master/test/org/apache/coyote/http2/TestHttp2Section_5_1.java"
+            ]
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core": {
+            "patchV": {
+                "8.5.56": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.0.36": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "10.0.0-M6": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/9434a44d3449d620b1be70206819f8275b4a7509",
+                "https://github.com/rusakovichma/tomcat-embed-core-9.0.31-CVE-2020-11996/blob/master/test/org/apache/coyote/http2/TestHttp2Section_5_1.java"
+            ]
+        }
+    },
+    "CVE-2020-1957": {
+        "org.apache.shiro:shiro-web": {
+            "patchV": {
+                "1.5.2": [
+                    {
+                        "VulRoot": "org.apache.shiro.web.util.WebUtils:java.lang.String getRequestUri(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/shiro/commit/3708d7907016bf2fa12691dff6ff0def1249b8ce#diff-98f7bc5c0391389e56531f8b3754081aL139"
+            ]
+        }
+    },
+    "CVE-2020-10705": {
+        "io.undertow:undertow-core": {
+            "patchV": {
+                "2.1.1.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.protocol.ajp.AjpServerConnection:void terminateRequestChannel(io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.handlers.HttpContinueReadHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.protocol.http.HttpServerConnection:void terminateRequestChannel(io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.protocol.http.HttpTransferEncoding:org.xnio.conduits.StreamSinkConduit createSinkConduit(io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.protocol.http.HttpReadListener:void exchangeComplete(io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.HttpServerExchange$6:org.xnio.conduits.StreamSinkConduit wrap(io.undertow.util.ConduitFactory,io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.HttpServerExchange:void invokeExchangeCompleteListeners()",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.HttpServerExchange$ExchangeCompleteNextListener:void proceed()",
+                        "label": true,
+                        "reason": "addedVul"
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/undertow-io/undertow/commit/b53d4589c586e8bbdcc89ed60f32cd7977e9a4f4",
+                "https://github.com/undertow-io/undertow/commit/aa5e1fe11fec75032f14f0ae23e586f4cf3a3365",
+                "https://github.com/undertow-io/undertow/commit/64bbaeb7cdf67799e1962475534f889f958edea3"
+            ]
+        }
+    },
+    "CVE-2020-10719": {
+        "io.undertow:undertow-core": {
+            "patchV": {
+                "2.1.1.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.handlers.HttpContinueReadHandler:void handleRequest(io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.HttpServerExchange$6:org.xnio.conduits.StreamSinkConduit wrap(io.undertow.util.ConduitFactory,io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.HttpServerExchange:void invokeExchangeCompleteListeners()",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.HttpServerExchange$ExchangeCompleteNextListener:void proceed()",
+                        "label": true,
+                        "reason": "addedVul"
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/undertow-io/undertow/commit/aa5e1fe11fec75032f14f0ae23e586f4cf3a3365"
+            ]
+        }
+    },
+    "CVE-2019-17563": {
+        "org.apache.tomcat.embed:tomcat-embed-core": {
+            "patchV": {
+                "7.0.99": [
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean matchRequest(org.apache.catalina.connector.Request)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean restoreRequest(org.apache.catalina.connector.Request,org.apache.catalina.Session)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.5.50": [
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean matchRequest(org.apache.catalina.connector.Request)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean doAuthenticate(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean restoreRequest(org.apache.catalina.connector.Request,org.apache.catalina.Session)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.0.30": [
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean matchRequest(org.apache.catalina.connector.Request)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean doAuthenticate(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean restoreRequest(org.apache.catalina.connector.Request,org.apache.catalina.Session)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/e19a202"
+            ]
+        },
+        "org.apache.tomcat:tomcat-catalina": {
+            "patchV": {
+                "9.0.30": [
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean matchRequest(org.apache.catalina.connector.Request)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean doAuthenticate(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean restoreRequest(org.apache.catalina.connector.Request,org.apache.catalina.Session)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.5.50": [
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean matchRequest(org.apache.catalina.connector.Request)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean doAuthenticate(org.apache.catalina.connector.Request,javax.servlet.http.HttpServletResponse)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean restoreRequest(org.apache.catalina.connector.Request,org.apache.catalina.Session)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "7.0.99": [
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean matchRequest(org.apache.catalina.connector.Request)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.FormAuthenticator:boolean restoreRequest(org.apache.catalina.connector.Request,org.apache.catalina.Session)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/e19a202"
+            ]
+        }
+    },
+    "CVE-2019-0231": {
+        "org.apache.mina:mina-core": {
+            "patchV": {
+                "2.0.21": [
+                    {
+                        "VulRoot": "org.apache.mina.proxy.handlers.http.AbstractHttpLogicHandler:org.apache.mina.proxy.handlers.http.HttpProxyResponse decodeResponse(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.proxy.handlers.http.HttpSmartProxyHandler:void autoSelectAuthHandler(org.apache.mina.proxy.handlers.http.HttpProxyResponse)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.proxy.AbstractProxyLogicHandler:void flushPendingWriteRequests()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.proxy.AbstractProxyLogicHandler:void setHandshakeComplete()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.core.service.AbstractIoService:void dispose(boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.codec.statemachine.DecodingStateMachine:void cleanup()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.codec.statemachine.DecodingStateMachine:org.apache.mina.filter.codec.statemachine.DecodingState finishDecode(org.apache.mina.filter.codec.ProtocolDecoderOutput)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.ssl.SslHandler:void init()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.ssl.SslHandler:void checkStatus(javax.net.ssl.SSLEngineResult)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.ssl.SslHandler:void destroy()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.proxy.handlers.socks.Socks5LogicHandler:org.apache.mina.core.buffer.IoBuffer encodeGSSAPIAuthenticationPacket(org.apache.mina.proxy.handlers.socks.SocksProxyRequest)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.proxy.handlers.http.HttpProxyRequest:java.lang.String getHost()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.firewall.ConnectionThrottleFilter:boolean isConnectionOk(org.apache.mina.core.session.IoSession)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.executor.OrderedThreadPoolExecutor:void print(java.util.Queue,org.apache.mina.core.session.IoEvent)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.filter.firewall.BlacklistFilter:void setBlacklist(java.net.InetAddress[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.mina.core.filterchain.DefaultIoFilterChainBuilder:boolean isOrderedMap(java.util.Map)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/mina/commit/294b8ce638df6e237e819537b333e02853bb612c",
+                "https://github.com/apache/mina/commit/73e881ad935e5aa6080b90585ac8dc8ddfc377e1"
+            ]
+        }
+    },
+    "CVE-2020-5408": {
+        "org.springframework.security:spring-security-core": {
+            "patchV": {
+                "5.3.2.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "5.2.4.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "5.1.10.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "5.0.16.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.2.16.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-security/commit/d1909ec9c8844cfa6b63bab5c2591f14d714ef6b",
+                "https://github.com/spring-projects/spring-security/issues/8317"
+            ]
+        },
+        "org.springframework.security:spring-security-crypto": {
+            "patchV": {
+                "5.3.2.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "5.2.4.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "5.1.10.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "5.0.16.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.2.16.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-security/commit/d1909ec9c8844cfa6b63bab5c2591f14d714ef6b",
+                "https://github.com/spring-projects/spring-security/issues/8317"
+            ]
+        }
+    },
+    "CVE-2013-6429": {
+        "org.springframework:spring-web": {
+            "patchV": {
+                "3.2.5.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.Source readFromSource(java.lang.Class,org.springframework.http.HttpHeaders,javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:java.io.ByteArrayInputStream transformToByteArrayInputStream(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:java.lang.Long getContentLength(javax.xml.transform.Source,org.springframework.http.MediaType)",
+                        "label": true,
+                        "reason": "addedVul"
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/issues/15704",
+                "https://github.com/spring-projects/spring-framework/commit/2ae6a6a3415eebc57babcb9d3e5505887eda6d8a"
+            ]
+        }
+    },
+    "CVE-2014-0225": {
+        "org.springframework:spring-oxm": {
+            "patchV": {
+                "3.2.9.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.oxm.jaxb.Jaxb2Marshaller:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:org.xml.sax.XMLReader createXmlReader()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.0.5.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.oxm.jaxb.Jaxb2Marshaller:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:org.xml.sax.XMLReader createXmlReader()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/commit/8e096aeef55287dc829484996c9330cf755891a1",
+                "https://github.com/spring-projects/spring-framework/commit/c6503ebbf7c9e21ff022c58706dbac5417b2b5eb",
+                "https://github.com/spring-projects/spring-framework/issues/16390"
+            ]
+        },
+        "org.springframework:spring-web": {
+            "patchV": {
+                "3.2.9.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.dom.DOMSource readDOMSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.sax.SAXSource readSAXSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter:javax.xml.stream.XMLInputFactory createXmlInputFactory()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.0.5.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.Source readStAXSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.dom.DOMSource readDOMSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.sax.SAXSource readSAXSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter:javax.xml.stream.XMLInputFactory createXmlInputFactory()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/commit/8e096aeef55287dc829484996c9330cf755891a1",
+                "https://github.com/spring-projects/spring-framework/commit/c6503ebbf7c9e21ff022c58706dbac5417b2b5eb",
+                "https://github.com/spring-projects/spring-framework/issues/16390"
+            ]
+        }
+    },
+    "CVE-2014-0229": {
+        "org.apache.hadoop:hadoop-hdfs": {
+            "patchV": {
+                "0.23.11": [
+                    {
+                        "VulRoot": "org.apache.hadoop.hdfs.server.datanode.DataNode:void deleteBlockPool(java.lang.String,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.hdfs.server.datanode.DataNode:void refreshNamenodes()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.4.1": [
+                    {
+                        "VulRoot": "org.apache.hadoop.hdfs.server.datanode.DataNode:void deleteBlockPool(java.lang.String,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.hdfs.server.datanode.DataNode:void refreshNamenodes()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.hdfs.server.datanode.DataNode:void shutdownDatanode(boolean)",
+                        "label": true,
+                        "reason": "addedVul"
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/hadoop/commit/957c56dbe5b1490490c09ddfbca9a4204c7c9d00"
+            ]
+        }
+    },
+    "CVE-2014-3578": {
+        "org.springframework:spring-core": {
+            "patchV": {
+                "3.2.9.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.util.StringUtils:java.lang.String cleanPath(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.0.5.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.util.StringUtils:java.lang.String cleanPath(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/commit/e3e71ba92a8b82dadf474eda76cd2741f65a77a8",
+                "https://github.com/spring-projects/spring-framework/commit/f6fddeb6eb7da625fd711ab371ff16512f431e8d",
+                "https://github.com/spring-projects/spring-framework/issues/16414"
+            ]
+        }
+    },
+    "CVE-2014-3600": {
+        "org.apache.activemq:activemq-client": {
+            "patchV": {
+                "5.10.1": [
+                    {
+                        "VulRoot": "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some function parameters"
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.XPathExpression:java.lang.reflect.Constructor getXPathEvaluatorConstructor(java.lang.String)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some function parameters"
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.XPathExpression:void <clinit>()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/activemq/commit/b9696ac80bb496b52d05c3884f81b0746d9af9e2"
+            ]
+        },
+        "org.apache.activemq:activemq-broker": {
+            "patchV": {
+                "5.10.1": [
+                    {
+                        "VulRoot": "org.apache.activemq.filter.XalanXPathEvaluator:void <init>(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.XalanXPathEvaluator:boolean evaluate(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.XalanXPathEvaluator:boolean evaluate(byte[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.JAXPXPathEvaluator:void <init>(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.JAXPXPathEvaluator:boolean evaluate(byte[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.filter.JAXPXPathEvaluator:boolean evaluate(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/activemq/commit/b9696ac80bb496b52d05c3884f81b0746d9af9e2"
+            ]
+        }
+    },
+    "CVE-2014-3625": {
+        "org.springframework:spring-webmvc": {
+            "patchV": {
+                "3.2.12.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:org.springframework.core.io.Resource getResource(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:boolean isInvalidPath(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.0.8.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:org.springframework.core.io.Resource getResource(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:boolean isInvalidPath(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.1.2.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:org.springframework.core.io.Resource getResource(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:boolean isInvalidPath(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.web.servlet.resource.PathResourceResolver:org.springframework.core.io.Resource getResource(java.lang.String,org.springframework.core.io.Resource)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/commit/3f68cd633f03370d33c2603a6496e81273782601",
+                "https://github.com/spring-projects/spring-framework/commit/9beae9ae4226c45cd428035dae81214439324676",
+                "https://github.com/spring-projects/spring-framework/commit/9cef8e3001ddd61c734281a7556efd84b6cc2755"
+            ]
+        }
+    },
+    "CVE-2015-3192": {
+        "org.springframework:spring-oxm": {
+            "patchV": {
+                "3.2.14.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.oxm.jaxb.Jaxb2Marshaller:java.lang.Object unmarshal(javax.xml.transform.Source,org.springframework.oxm.mime.MimeContainer)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.jaxb.Jaxb2Marshaller:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:java.lang.Object unmarshalStreamSource(javax.xml.transform.stream.StreamSource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:org.xml.sax.XMLReader createXmlReader()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:java.lang.Object unmarshalDomSource(javax.xml.transform.dom.DOMSource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:java.lang.Object unmarshalSaxSource(javax.xml.transform.sax.SAXSource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:javax.xml.parsers.DocumentBuilder createDocumentBuilder(javax.xml.parsers.DocumentBuilderFactory)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:javax.xml.parsers.DocumentBuilderFactory createDocumentBuilderFactory()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.1.7.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.oxm.jaxb.Jaxb2Marshaller:java.lang.Object unmarshal(javax.xml.transform.Source,org.springframework.oxm.mime.MimeContainer)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.jaxb.Jaxb2Marshaller:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:java.lang.Object unmarshalStreamSource(javax.xml.transform.stream.StreamSource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:org.xml.sax.XMLReader createXmlReader()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:java.lang.Object unmarshalDomSource(javax.xml.transform.dom.DOMSource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:java.lang.Object unmarshalSaxSource(javax.xml.transform.sax.SAXSource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:javax.xml.parsers.DocumentBuilder createDocumentBuilder(javax.xml.parsers.DocumentBuilderFactory)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.oxm.support.AbstractMarshaller:javax.xml.parsers.DocumentBuilderFactory createDocumentBuilderFactory()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/commit/5a711c05ec750f069235597173084c2ee796242",
+                "https://github.com/spring-projects/spring-framework/issues/17727"
+            ]
+        },
+        "org.springframework:spring-web": {
+            "patchV": {
+                "3.2.14.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:java.lang.Object readFromSource(java.lang.Class,org.springframework.http.HttpHeaders,javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.sax.SAXSource readSAXSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.dom.DOMSource readDOMSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter:javax.xml.stream.XMLInputFactory createXmlInputFactory()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.1.7.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:javax.xml.transform.Source processSource(javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter:java.lang.Object readFromSource(java.lang.Class,org.springframework.http.HttpHeaders,javax.xml.transform.Source)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.sax.SAXSource readSAXSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.SourceHttpMessageConverter:javax.xml.transform.dom.DOMSource readDOMSource(java.io.InputStream)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter:javax.xml.stream.XMLInputFactory createXmlInputFactory()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-framework/commit/5a711c05ec750f069235597173084c2ee796242",
+                "https://github.com/spring-projects/spring-framework/issues/17727"
+            ]
+        }
+    },
+    "CVE-2018-1000873": {
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310": {
+            "patchV": {
+                "2.9.8": [
+                    {
+                        "VulRoot": "com.fasterxml.jackson.datatype.jsr310.deser.DurationDeserializer:java.time.Duration deserialize(com.fasterxml.jackson.core.JsonParser,com.fasterxml.jackson.databind.DeserializationContext)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "com.fasterxml.jackson.datatype.jsr310.deser.InstantDeserializer:java.time.temporal.Temporal _fromDecimal(com.fasterxml.jackson.databind.DeserializationContext,java.math.BigDecimal)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-h4x4-5qp2-wp46",
+                "https://github.com/FasterXML/jackson-modules-java8/issues/90",
+                "https://github.com/FasterXML/jackson-modules-java8/pull/87",
+                "https://github.com/FasterXML/jackson-modules-java8/commit/f29e03e21eb6ca0c11cda34cf511d245711a70ec"
+            ]
+        }
+    },
+    "CVE-2016-3720": {
+        "com.fasterxml.jackson.dataformat:jackson-dataformat-xml": {
+            "patchV": {
+                "2.7.4": [
+                    {
+                        "VulRoot": "com.fasterxml.jackson.dataformat.xml.XmlFactory:void <init>(com.fasterxml.jackson.core.ObjectCodec,int,int,javax.xml.stream.XMLInputFactory,javax.xml.stream.XMLOutputFactory,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-hmq6-frv3-4727",
+                "https://github.com/FasterXML/jackson-dataformat-xml/commit/f0f19a4c924d9db9a1e2830434061c8640092cc0",
+                "https://github.com/FasterXML/jackson-dataformat-xml/issues/190"
+            ]
+        }
+    },
+    "CVE-2016-7051": {
+        "com.fasterxml.jackson.dataformat:jackson-dataformat-xml": {
+            "patchV": {
+                "2.7.8": [
+                    {
+                        "VulRoot": "com.fasterxml.jackson.dataformat.xml.XmlFactory:void <init>(com.fasterxml.jackson.core.ObjectCodec,int,int,javax.xml.stream.XMLInputFactory,javax.xml.stream.XMLOutputFactory,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.8.4": [
+                    {
+                        "VulRoot": "com.fasterxml.jackson.dataformat.xml.XmlFactory:void <init>(com.fasterxml.jackson.core.ObjectCodec,int,int,javax.xml.stream.XMLInputFactory,javax.xml.stream.XMLOutputFactory,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/FasterXML/jackson-dataformat-xml/issues/211",
+                "https://github.com/advisories/GHSA-7c2r-3jqf-c9rw",
+                "https://github.com/FasterXML/jackson-dataformat-xml/commit/eeff2c312e9d4caa8c9f27b8f740c7529d00524a"
+            ]
+        }
+    },
+    "CVE-2016-9879": {
+        "org.springframework.security:spring-security-web": {
+            "patchV": {
+                "3.2.10.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.web.firewall.DefaultHttpFirewall:org.springframework.security.web.firewall.FirewalledRequest getFirewalledRequest(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.1.4.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.web.firewall.DefaultHttpFirewall:org.springframework.security.web.firewall.FirewalledRequest getFirewalledRequest(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.2.1.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.web.firewall.DefaultHttpFirewall:org.springframework.security.web.firewall.FirewalledRequest getFirewalledRequest(javax.servlet.http.HttpServletRequest)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-security/commit/666e356ebc479194ba51e43bb99fc42f849b6175",
+                "https://github.com/spring-projects/spring-security/issues/4169"
+            ]
+        }
+    },
+    "CVE-2019-11272": {
+        "org.springframework.security:spring-security-core": {
+            "patchV": {
+                "4.2.13.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.security.authentication.encoding.PlaintextPasswordEncoder:boolean isPasswordValid(java.lang.String,java.lang.String,java.lang.Object)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/spring-projects/spring-security/commit/b2d4fec3617c497c5a8eb9c7e5270e0c7db293ee"
+            ]
+        }
+    },
+    "CVE-2019-11777": {
+        "org.eclipse.paho:org.eclipse.paho.client.mqttv3": {
+            "patchV": {
+                "1.2.1": [
+                    {
+                        "VulRoot": "org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule:void start()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/eclipse/paho.mqtt.java/commit/a0bbf1e7da158ae191582f032343c6171e6a0b44"
+            ]
+        }
+    },
+    "CVE-2019-12422": {
+        "org.apache.shiro:shiro-core": {
+            "patchV": {
+                "1.4.2": [
+                    {
+                        "VulRoot": "org.apache.shiro.crypto.AesCipherService:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.shiro.crypto.JcaCipherService:javax.crypto.Cipher initNewCipher(int,byte[],byte[],boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/shiro/commit/a8018783373ff5e5210225069c9919e071597d5e"
+            ]
+        },
+        "org.apache.shiro:shiro-crypto-cipher": {
+            "patchV": {
+                "1.4.2": [
+                    {
+                        "VulRoot": "org.apache.shiro.crypto.AesCipherService:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.shiro.crypto.JcaCipherService:javax.crypto.Cipher initNewCipher(int,byte[],byte[],boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/shiro/commit/a8018783373ff5e5210225069c9919e071597d5e"
+            ]
+        }
+    },
+    "CVE-2018-1067": {
+        "io.undertow:undertow-core": {
+            "patchV": {
+                "1.4.25.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.protocol.http.HttpResponseConduit:void writeString(java.nio.ByteBuffer,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.0.5.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.protocol.http.HttpResponseConduit:void writeString(java.nio.ByteBuffer,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/undertow-io/undertow/commit/85d4478e598105fe94ac152d3e11e388374e8b86",
+                "https://github.com/undertow-io/undertow/commit/f404cb68448c188f4d51b085b7fe4ac32bde26e0"
+            ]
+        }
+    },
+    "CVE-2019-10072": {
+        "org.apache.tomcat.embed:tomcat-embed-core": {
+            "patchV": {
+                "9.0.20": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:int reserveWindowSize(org.apache.coyote.http2.Stream,int,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void close()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/7f748eb",
+                "https://github.com/apache/tomcat/commit/ada725a"
+            ]
+        },
+        "org.apache.tomcat:tomcat-coyote": {
+            "patchV": {
+                "9.0.20": [
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:int reserveWindowSize(org.apache.coyote.http2.Stream,int,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.http2.Http2UpgradeHandler:void close()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/7f748eb",
+                "https://github.com/apache/tomcat/commit/ada725a"
+            ]
+        }
+    },
+    "CVE-2012-0881": {
+        "xerces:xercesImpl": {
+            "patchV": {
+                "2.12.0": [
+                    {
+                        "VulRoot": "org.apache.xerces.util.SoftReferenceSymbolTable:java.lang.String addSymbol(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SoftReferenceSymbolTable:java.lang.String addSymbol(char[],int,int)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolTable:void rehash()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolTable:int hash(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolTable:int hash(char[],int,int)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(char[],int,int)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolTable:void <init>(int,float)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolHash:void <init>()",
+                        "label": false,
+                        "reason": "Method refactor."
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolHash:org.apache.xerces.util.SymbolHash makeClone()",
+                        "label": false,
+                        "reason": "Modifications that require adaptation patches but are unrelated to vulnerable root methods."
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolHash:void clear()",
+                        "label": false,
+                        "reason": "Modifications that require adaptation patches but are unrelated to vulnerable root methods."
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolHash:void put(java.lang.Object,java.lang.Object)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.XMLAttributesImpl:org.apache.xerces.xni.QName checkDuplicatesNS()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.XMLAttributesImpl:void prepareTableView()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SoftReferenceSymbolTable:void rehash()",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "org.apache.xerces.util.SymbolHash:java.lang.Object get(java.lang.Object)",
+                        "label": true,
+                        "reason": "addedVul"
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/xerces2-j/commit/992b5d9c24102ad20330d36c0a71162753a37449"
+            ]
+        }
+    },
+    "CVE-2020-13920": {
+        "org.apache.activemq:activemq-broker": {
+            "patchV": {
+                "5.15.12": [
+                    {
+                        "VulRoot": "org.apache.activemq.broker.jmx.ManagementContext:void createConnector(javax.management.MBeanServer)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/activemq/commit/58382283330f7c7b110c7afd8ef4ca2648786532"
+            ]
+        }
+    },
+    "CVE-2019-12415": {
+        "org.apache.poi:poi-ooxml": {
+            "patchV": {
+                "4.1.0": [
+                    {
+                        "VulRoot": "org.apache.poi.xssf.streaming.SheetDataWriter:void writeCell(int,org.apache.poi.ss.usermodel.Cell)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(org.apache.poi.ss.usermodel.RichTextString)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.poi.xssf.streaming.SXSSFCell:void ensureRichTextStringType()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/poi/commit/2b8200f7d701ea6ff9638f629f0bd81d2e48410c",
+                "https://github.com/apache/poi/compare/REL_4_0_1...REL_4_1_0"
+            ]
+        }
+    },
+    "CVE-2018-10936": {
+        "org.postgresql:postgresql": {
+            "patchV": {
+                "42.2.5": [
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LazyKeyManager:java.security.cert.X509Certificate[] getCertificateChain(java.lang.String)",
+                        "label": false,
+                        "reason": "FileMove"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LazyKeyManager:java.security.PrivateKey getPrivateKey(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LazyKeyManager:java.lang.String[] getClientAliases(java.lang.String,java.security.Principal[])",
+                        "label": false,
+                        "reason": "FileMove"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LazyKeyManager:void throwKeyManagerException()",
+                        "label": false,
+                        "reason": "FileMove"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LazyKeyManager:java.lang.String chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)",
+                        "label": false,
+                        "reason": "FileMove"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.MakeSSL:void convert(org.postgresql.core.PGStream,java.util.Properties)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.core.PGStream:boolean hasMessagePending()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LibPQFactory:void <init>(java.util.Properties)",
+                        "label": false,
+                        "reason": "RefactorAcrossProject"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LibPQFactory:void throwKeyManagerException()",
+                        "label": false,
+                        "reason": "RefactorAcrossProject"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LibPQFactory:boolean verifyHostName(java.lang.String,java.lang.String)",
+                        "label": false,
+                        "reason": "RefactorAcrossProject"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.ssl.jdbc4.LibPQFactory:boolean verify(java.lang.String,javax.net.ssl.SSLSession)",
+                        "label": false,
+                        "reason": "RefactorAcrossProject"
+                    },
+                    {
+                        "VulRoot": "org.postgresql.core.v3.ConnectionFactoryImpl:void doAuthentication(org.postgresql.core.PGStream,java.lang.String,java.lang.String,java.util.Properties)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.core.v3.ConnectionFactoryImpl:org.postgresql.core.QueryExecutor openConnectionImpl(org.postgresql.util.HostSpec[],java.lang.String,java.lang.String,java.util.Properties)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.core.v3.ConnectionFactoryImpl:org.postgresql.core.PGStream enableSSL(org.postgresql.core.PGStream,boolean,java.util.Properties,int)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/pgjdbc/pgjdbc/commit/cdeeaca47dc3bc6f727c79a582c9e4123099526e"
+            ]
+        }
+    },
+    "CVE-2018-11775": {
+        "org.apache.activemq:activemq-client": {
+            "patchV": {
+                "5.15.6": [
+                    {
+                        "VulRoot": "org.apache.activemq.transport.tcp.TcpTransportServer:void configureServerSocket(java.net.ServerSocket)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-m9w8-v359-9ffr",
+                "https://github.com/apache/activemq/commit/bde7097fb8173cf871827df7811b3865679b963d"
+            ]
+        },
+        "org.apache.activemq:activemq-all": {
+            "patchV": {
+                "5.15.6": [
+                    {
+                        "VulRoot": "org.apache.activemq.transport.tcp.TcpTransportServer:void configureServerSocket(java.net.ServerSocket)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.activemq.transport.tcp.TcpTransport:void connect()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/activemq/commit/bde7097fb8173cf871827df7811b3865679b963d"
+            ]
+        },
+        "org.apache.activemq:activemq-broker": {
+            "patchV": {
+                "5.15.6": [
+                    {
+                        "VulRoot": "org.apache.activemq.transport.nio.AutoInitNioSSLTransport:void initializeStreams()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/activemq/commit/bde7097fb8173cf871827df7811b3865679b963d"
+            ]
+        }
+    },
+    "CVE-2018-1305": {
+        "org.apache.tomcat.embed:tomcat-embed-core": {
+            "patchV": {
+                "9.0.5": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet,java.util.Map)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.5.28": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet,java.util.Map)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "7.0.85": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-jx6h-3fjx-cgv5",
+                "https://github.com/apache/tomcat/commit/3e54b2a6314eda11617ff7a7b899c251e222b1a1",
+                "https://github.com/apache/tomcat/commit/4d637bc3986e5d09b9363e2144b8ba74fa6eac3a"
+            ]
+        },
+        "org.apache.tomcat:tomcat-catalina": {
+            "patchV": {
+                "9.0.5": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet,java.util.Map)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.5.28": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet,java.util.Map)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "8.0.50": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "7.0.85": [
+                    {
+                        "VulRoot": "org.apache.catalina.startup.ContextConfig:void authenticatorConfig()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.authenticator.AuthenticatorBase:void invoke(org.apache.catalina.connector.Request,org.apache.catalina.connector.Response)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationServletRegistration:java.util.Set addMapping(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.startup.WebAnnotationSet:void loadApplicationServletAnnotations(org.apache.catalina.Context)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/3e54b2a6314eda11617ff7a7b899c251e222b1a1",
+                "https://github.com/apache/tomcat/commit/4d637bc3986e5d09b9363e2144b8ba74fa6eac3a"
+            ]
+        }
+    },
+    "CVE-2020-1745": {
+        "io.undertow:undertow-core": {
+            "patchV": {
+                "2.0.30.Final": [
+                    {
+                        "VulRoot": "io.undertow.server.protocol.ajp.AjpOpenListener:void <init>(io.undertow.connector.ByteBufferPool,org.xnio.OptionMap)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.protocol.ajp.AjpRequestParser:void <init>(java.lang.String,boolean,int,int,boolean,boolean)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "io.undertow.server.protocol.ajp.AjpRequestParser:void parse(java.nio.ByteBuffer,io.undertow.server.protocol.ajp.AjpRequestParseState,io.undertow.server.HttpServerExchange)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/undertow-io/undertow/commit/e60e04f4e9bab49f406c8c57770c4a1bbbc37067"
+            ]
+        }
+    },
+    "CVE-2020-1938": {
+        "org.apache.tomcat.embed:tomcat-embed-core": {
+            "patchV": {
+                "7.0.100": [
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AjpNioProtocol:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AjpProtocol:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AjpAprProtocol:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AbstractAjpProcessor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/0f725b323a74b64cdb35fce04b54427582ad6063",
+                "https://github.com/apache/tomcat/commit/0d633e72ebc7b3c242d0081c23bba5e4dacd9b72",
+                "https://github.com/apache/tomcat/commit/b99fba5bd796d876ea536e83299603443842feba",
+                "https://github.com/apache/tomcat/commit/15cd78c528425c693f1d2b51057f32d3d63d360a",
+                "https://github.com/YDHCUI/CNVD-2020-10487-Tomcat-Ajp-lfi"
+            ]
+        },
+        "org.apache.tomcat:tomcat-coyote": {
+            "patchV": {
+                "7.0.100": [
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AjpNioProtocol:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AjpProtocol:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AjpAprProtocol:void <init>()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.coyote.ajp.AbstractAjpProcessor:void prepareRequest()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tomcat/commit/0f725b323a74b64cdb35fce04b54427582ad6063",
+                "https://github.com/apache/tomcat/commit/0d633e72ebc7b3c242d0081c23bba5e4dacd9b72",
+                "https://github.com/apache/tomcat/commit/b99fba5bd796d876ea536e83299603443842feba",
+                "https://github.com/apache/tomcat/commit/15cd78c528425c693f1d2b51057f32d3d63d360a",
+                "https://github.com/YDHCUI/CNVD-2020-10487-Tomcat-Ajp-lfi"
+            ]
+        }
+    },
+    "CVE-2020-1945": {
+        "org.apache.ant:ant": {
+            "patchV": {
+                "1.9.15": [
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Replace:void processFile(java.io.File)",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.optional.Cab:void execute()",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.optional.Cab:java.io.File createListFile(java.util.Vector)",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.types.selectors.modifiedselector.ModifiedSelector:boolean isSelected(org.apache.tools.ant.types.Resource)",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Zip:java.io.File renameFile()",
+                        "label": true,
+                        "reason": "addedVul"
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.util.JavaEnvUtils:java.io.File createVmsJavaOptionFile(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Javadoc:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.cvslib.CvsTagDiff:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.TempFile:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.FixCRLF:void processFile(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.optional.ReplaceRegExp:void doReplace(java.io.File,int)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Jikes:void compile(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.util.FileUtils:java.io.File createTempFile(java.lang.String,java.lang.String,java.io.File,boolean,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.util.SymbolicLinkUtils:void deleteSymbolicLink(java.io.File,org.apache.tools.ant.Task)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter:int executeExternalCompile(java.lang.String[],int,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Javadoc:void writeExternalArgs(org.apache.tools.ant.types.Commandline)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "1.10.8": [
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Replace:void processFile(java.io.File)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.optional.Cab:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.optional.Cab:java.io.File createListFile(java.util.Vector)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.types.selectors.modifiedselector.ModifiedSelector:boolean isSelected(org.apache.tools.ant.types.Resource)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Zip:java.io.File renameFile()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.util.JavaEnvUtils:java.io.File createVmsJavaOptionFile(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Javadoc:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.TempFile:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.cvslib.CvsTagDiff:void execute()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.FixCRLF:void processFile(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.optional.ReplaceRegExp:void doReplace(java.io.File,int)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Jikes:void compile(java.lang.String[])",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.util.FileUtils:java.io.File createTempFile(java.lang.String,java.lang.String,java.io.File,boolean,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.util.SymbolicLinkUtils:void deleteSymbolicLink(java.io.File,org.apache.tools.ant.Task)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.Javadoc:void writeExternalArgs(org.apache.tools.ant.types.Commandline)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter:int executeExternalCompile(java.lang.String[],int,boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/ant/commit/a8645a151bc706259fb1789ef587d05482d98612"
+            ]
+        }
+    },
+    "CVE-2020-10683": {
+        "dom4j:dom4j": {
+            "patchV": {
+                "20040902.021138": [
+                    {
+                        "VulRoot": "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/dom4j/dom4j/commit/a8228522a99a02146106672a34c104adbda5c658",
+                "https://github.com/dom4j/dom4j/releases/tag/version-2.1.3",
+                "https://github.com/dom4j/dom4j/commit/1707bf3d898a8ada3b213acb0e3b38f16eaae73d",
+                "https://github.com/dom4j/dom4j/issues/87",
+                "https://github.com/dom4j/dom4j/commits/version-2.0.3",
+                "https://github.com/dom4j/dom4j/commit/a822852"
+            ]
+        },
+        "org.dom4j:dom4j": {
+            "patchV": {
+                "2.1.3": [
+                    {
+                        "VulRoot": "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.0.3": [
+                    {
+                        "VulRoot": "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/dom4j/dom4j/commit/a822852"
+            ]
+        }
+    },
+    "CVE-2020-9489": {
+        "org.apache.tika:tika-parsers": {
+            "patchV": {
+                "1.24.1": [
+                    {
+                        "VulRoot": "org.apache.tika.parser.image.ICNSParser:void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.parser.mp3.ID3v2Frame:byte[] readFully(java.io.InputStream,int,boolean)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.parser.pdf.PDFParserConfig:void configure(org.apache.tika.parser.pdf.PDF2XHTML)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.parser.pdf.PDFParserConfig:int hashCode()",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.parser.pdf.PDFParserConfig:void init(java.io.InputStream)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.parser.pdf.PDFParserConfig:boolean equals(java.lang.Object)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.parser.mp4.MP4Parser:void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/tika/commit/f9607f976b2135745dec811b01fbf978836807a9",
+                "https://github.com/apache/tika/commit/57193f5191368311e0334766e366f6f77b4d15a8",
+                "https://github.com/apache/tika/commit/333d9906153f0a5e69883e78bc5a780da6bf8df0",
+                "https://github.com/apache/tika/commit/b8266877e8eb652e12d767f36b3e902f6a0ea366",
+                "https://github.com/apache/tika/commit/f51ae0aef10a052308d6830fcefad77347bc5ebd"
+            ]
+        }
+    },
+    "CVE-2015-2156": {
+        "io.netty:netty-all": {
+            "patchV": {
+                "4.0.28.Final": [
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.ServerCookieEncoder:java.lang.String encode(io.netty.handler.codec.http.Cookie)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.CookieDecoder:java.util.Set decode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.1.0.Beta5": [
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.ServerCookieEncoder:java.lang.String encode(io.netty.handler.codec.http.Cookie)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.CookieDecoder:java.util.Set decode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/netty/netty/commit/2caa38a2795fe1f1ae6ceda4d69e826ed7c55e55",
+                "https://github.com/netty/netty/commit/31815598a2af37f0b71ea94eada70d6659c23752",
+                "https://github.com/netty/netty/pull/3748/commits/4ac519f534493bb0ca7a77e1c779138a54faa7b9",
+                "https://github.com/netty/netty/pull/3748",
+                "https://github.com/netty/netty/pull/3754"
+            ]
+        },
+        "io.netty:netty-codec-http": {
+            "patchV": {
+                "4.0.28.Final": [
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.ServerCookieEncoder:java.lang.String encode(io.netty.handler.codec.http.Cookie)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.CookieDecoder:java.util.Set decode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.1.0.Beta5": [
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.ServerCookieEncoder:java.lang.String encode(io.netty.handler.codec.http.Cookie)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "io.netty.handler.codec.http.CookieDecoder:java.util.Set decode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/netty/netty/commit/2caa38a2795fe1f1ae6ceda4d69e826ed7c55e55",
+                "https://github.com/netty/netty/commit/31815598a2af37f0b71ea94eada70d6659c23752",
+                "https://github.com/netty/netty/pull/3748/commits/4ac519f534493bb0ca7a77e1c779138a54faa7b9",
+                "https://github.com/netty/netty/pull/3748",
+                "https://github.com/netty/netty/pull/3754"
+            ]
+        },
+        "io.netty:netty": {
+            "patchV": {
+                "3.9.8.Final": [
+                    {
+                        "VulRoot": "org.jboss.netty.handler.codec.http.cookie.ServerCookieEncoder:java.lang.String encode(org.jboss.netty.handler.codec.http.cookie.Cookie)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.jboss.netty.handler.codec.http.CookieDecoder:java.util.Set decode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "3.10.3.Final": [
+                    {
+                        "VulRoot": "org.jboss.netty.handler.codec.http.cookie.ServerCookieEncoder:java.lang.String encode(org.jboss.netty.handler.codec.http.cookie.Cookie)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.jboss.netty.handler.codec.http.CookieDecoder:java.util.Set decode(java.lang.String)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/netty/netty/commit/2caa38a2795fe1f1ae6ceda4d69e826ed7c55e55",
+                "https://github.com/netty/netty/commit/31815598a2af37f0b71ea94eada70d6659c23752",
+                "https://github.com/netty/netty/pull/3748/commits/4ac519f534493bb0ca7a77e1c779138a54faa7b9",
+                "https://github.com/netty/netty/pull/3748",
+                "https://github.com/netty/netty/pull/3754"
+            ]
+        }
+    },
+    "CVE-2018-11761": {
+        "org.apache.tika:tika-core": {
+            "patchV": {
+                "1.19.1": [
+                    {
+                        "VulRoot": "org.apache.tika.utils.XMLReaderUtils:void trySetXercesSecurityManager(javax.xml.parsers.SAXParser)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.tika.utils.XMLReaderUtils:int determineMaxEntityExpansions()",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-6jq2-789q-fff2",
+                "https://github.com/apache/tika/commit/4e67928412ad56333d400f3728ecdb59d07d9d63",
+                "https://github.com/apache/tika/commit/bd9d75d8b0a85af2937047bfad04288c3044b2a6"
+            ]
+        }
+    },
+    "CVE-2019-3774": {
+        "org.springframework.batch:spring-batch-core": {
+            "patchV": {
+                "3.0.10.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void afterPropertiesSet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setSerializer(org.springframework.batch.core.repository.ExecutionContextSerializer)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "4.0.2.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void afterPropertiesSet()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao:void setSerializer(org.springframework.batch.core.repository.ExecutionContextSerializer)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-3wc8-659g-r88q",
+                "https://github.com/spring-projects/spring-batch/commit/50d141d0d3c1256c997e390d9f510eadc5cc91e4#diff-a12071afda5a20e7adb2746628bc76b2"
+            ]
+        }
+    },
+    "CVE-2020-1744": {
+        "org.keycloak:keycloak-services": {
+            "patchV": {
+                "9.0.2": [
+                    {
+                        "VulRoot": "org.keycloak.authentication.AuthenticationProcessor:void logFailure()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.keycloak.services.managers.AuthenticationManager:javax.ws.rs.core.Response redirectAfterSuccessfulFlow(org.keycloak.models.KeycloakSession,org.keycloak.models.RealmModel,org.keycloak.models.UserSessionModel,org.keycloak.models.ClientSessionContext,org.jboss.resteasy.spi.HttpRequest,javax.ws.rs.core.UriInfo,org.keycloak.common.ClientConnection,org.keycloak.events.EventBuilder,org.keycloak.sessions.AuthenticationSessionModel,org.keycloak.protocol.LoginProtocol)",
+                        "label": true,
+                        "reason": "addedVul"
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/keycloak/keycloak/commit/9474dd6208c01166b6144bea3ac2b6fe9f5c30f4"
+            ]
+        }
+    },
+    "CVE-2015-1776": {
+        "org.apache.hadoop:hadoop-mapreduce-client-app": {
+            "patchV": {
+                "2.7.1": [
+                    {
+                        "VulRoot": "org.apache.hadoop.mapred.TaskAttemptListenerImpl:org.apache.hadoop.mapred.JvmTask getTask(org.apache.hadoop.mapred.JvmContext)",
+                        "label": false,
+                        "reason": "Modifications that require adaptation patches but are unrelated to vulnerable root methods."
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapreduce.v2.app.MRAppMaster:void initJobCredentialsAndUGI(org.apache.hadoop.conf.Configuration)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter:void serviceStart()",
+                        "label": false,
+                        "reason": "Modifications that require adaptation patches but are unrelated to vulnerable root methods."
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapred.LocalContainerLauncher$EventHandler:void runSubtask(org.apache.hadoop.mapred.Task,org.apache.hadoop.mapreduce.v2.api.records.TaskType,org.apache.hadoop.mapreduce.v2.api.records.TaskAttemptId,int,boolean,java.util.Map)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/hadoop/commit/6b710a42e00acca405e085724c89cda016cf7442"
+            ]
+        },
+        "org.apache.hadoop:hadoop-mapreduce-client-core": {
+            "patchV": {
+                "2.7.1": [
+                    {
+                        "VulRoot": "org.apache.hadoop.mapreduce.JobSubmitter:org.apache.hadoop.mapreduce.JobStatus submitJobInternal(org.apache.hadoop.mapreduce.Job,org.apache.hadoop.mapreduce.Cluster)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapreduce.CryptoUtils:byte[] getEncryptionKey()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapreduce.task.reduce.LocalFetcher:boolean copyMapOutput(org.apache.hadoop.mapreduce.TaskAttemptID)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapred.Task:void readFields(java.io.DataInput)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.apache.hadoop.mapred.Task:void write(java.io.DataOutput)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/hadoop/commit/6b710a42e00acca405e085724c89cda016cf7442"
+            ]
+        }
+    },
+    "CVE-2020-13692": {
+        "org.postgresql:postgresql": {
+            "patchV": {
+                "42.2.13": [
+                    {
+                        "VulRoot": "org.postgresql.jdbc.PgSQLXML:javax.xml.transform.Source getSource(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.jdbc.PgSQLXML:javax.xml.transform.Result setResult(java.lang.Class)",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.jdbc.PgSQLXML:void ensureInitialized()",
+                        "label": true,
+                        "reason": ""
+                    },
+                    {
+                        "VulRoot": "org.postgresql.jdbc.PgConnection:void <init>(org.postgresql.util.HostSpec[],java.lang.String,java.lang.String,java.util.Properties,java.lang.String)",
+                        "label": false,
+                        "reason": "The addition of variables resulted in the need to modify some initial functions."
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/pgjdbc/pgjdbc/commit/14b62aca4764d496813f55a43d050b017e01eb65"
+            ]
+        }
+    },
+    "CVE-2019-10241": {
+        "org.eclipse.jetty:jetty-server": {
+            "patchV": {
+                "9.2.27.v20190403": [
+                    {
+                        "VulRoot": "org.eclipse.jetty.server.handler.ResourceHandler:void doDirectory(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.eclipse.jetty.util.resource.Resource)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.3.26.v20190403": [
+                    {
+                        "VulRoot": "org.eclipse.jetty.server.handler.ResourceHandler:void doDirectory(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.eclipse.jetty.util.resource.Resource)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/eclipse/jetty.project/commit/ca77bd384a2970cabbbdab25cf6251c6fb76cd21"
+            ]
+        },
+        "org.eclipse.jetty:jetty-util": {
+            "patchV": {
+                "9.2.27.v20190403": [
+                    {
+                        "VulRoot": "org.eclipse.jetty.util.resource.Resource:java.lang.String getListHTML(java.lang.String,boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.3.26.v20190403": [
+                    {
+                        "VulRoot": "org.eclipse.jetty.util.resource.Resource:java.lang.String getListHTML(java.lang.String,boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "9.4.16.v20190411": [
+                    {
+                        "VulRoot": "org.eclipse.jetty.util.resource.Resource:java.lang.String getListHTML(java.lang.String,boolean)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/eclipse/jetty.project/commit/ca77bd384a2970cabbbdab25cf6251c6fb76cd21"
+            ]
+        }
+    },
+    "CVE-2020-13933": {
+        "org.apache.shiro:shiro-web": {
+            "patchV": {
+                "1.6.0": [
+                    {
+                        "VulRoot": "org.apache.shiro.web.mgt.CookieRememberMeManager:byte[] getRememberedSerializedIdentity(org.apache.shiro.subject.SubjectContext)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/apache/shiro/commit/fdddd7cb982d9be69ea6b74bbe183fa47a22e5ee",
+                "https://github.com/lyy289065406/CVE-2020-13933"
+            ]
+        }
+    },
+    "CVE-2018-1274": {
+        "org.springframework.data:spring-data-commons": {
+            "patchV": {
+                "1.13.11.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.data.mapping.PropertyPath:org.springframework.data.mapping.PropertyPath create(java.lang.String,org.springframework.data.util.TypeInformation,java.lang.String,java.util.List)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ],
+                "2.0.6.RELEASE": [
+                    {
+                        "VulRoot": "org.springframework.data.mapping.PropertyPath:org.springframework.data.mapping.PropertyPath create(java.lang.String,org.springframework.data.util.TypeInformation,java.lang.String,java.util.List)",
+                        "label": true,
+                        "reason": ""
+                    }
+                ]
+            },
+            "ref": [
+                "https://github.com/advisories/GHSA-5q8m-mqmx-pxp9",
+                "https://github.com/spring-projects/spring-data-commons/commit/371f6590c509c72f8e600f3d05e110941607fbad"
+            ]
+        }
+    }
+}

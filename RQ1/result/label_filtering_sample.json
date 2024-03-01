@@ -1,0 +1,4256 @@
+{
+    "CVE-2010-2245": {
+        "patchMethod": {
+            "wink-client_src_main_java_org_apache_wink_client_ClientConfig": [
+                {
+                    "method": "ClientConfig:isSupportDTDExpansion()",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:supportDTDExpansion(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:getProperties()",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:setProperties(Properties)",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:getReadTimeout()",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:connectTimeout(int)",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:getConnectTimeout()",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:readTimeout(int)",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:ClientConfig()",
+                    "label": true
+                },
+                {
+                    "method": "ClientConfig:clone()",
+                    "label": true
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_xml_JAXBXmlProvider": [
+                {
+                    "method": "JAXBXmlProvider:readFrom(Class,Type,Annotation,MediaType,MultivaluedMap,InputStream)",
+                    "label": false
+                }
+            ],
+            "wink-server_src_main_java_org_apache_wink_server_internal_handlers_ServerMessageContext": [
+                {
+                    "method": "ServerMessageContext:ServerMessageContext(HttpServletRequest,HttpServletResponse,DeploymentConfiguration)",
+                    "label": false
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_xml_JAXBElementXmlProvider": [
+                {
+                    "method": "JAXBElementXmlProvider:readFrom(Class,Type,Annotation,MediaType,MultivaluedMap,InputStream)",
+                    "label": false
+                }
+            ],
+            "wink-client_src_main_java_org_apache_wink_client_internal_ResourceImpl": [
+                {
+                    "method": "ResourceImpl:createClientRequest(String,Class,Type,Object)",
+                    "label": false
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_xml_AbstractJAXBCollectionProvider": [
+                {
+                    "method": "AbstractJAXBCollectionProvider:read(Class,Type,Annotation,MediaType,MultivaluedMap,InputStream)",
+                    "label": false
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_properties_WinkSystemProperties": [
+                {
+                    "method": "WinkSystemProperties:getSystemProperty(String)",
+                    "label": false
+                },
+                {
+                    "method": "WinkSystemProperties:run()",
+                    "label": false
+                },
+                {
+                    "method": "WinkSystemProperties:loadSystemProperties(Properties)",
+                    "label": false
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_xml_AbstractJAXBProvider": [
+                {
+                    "method": "AbstractJAXBProvider:checkForDTD(XMLStreamReader)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractJAXBProvider:getXMLInputFactory()",
+                    "label": true
+                },
+                {
+                    "method": "AbstractJAXBProvider:getXMLStreamReader(InputStream)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractJAXBProvider:getXMLStreamReader(InputStreamReader)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractJAXBProvider:closeXMLStreamReader(XMLStreamReader)",
+                    "label": true
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_SourceProvider": [
+                {
+                    "method": "SourceProvider$DOMSourceProvider:setupDocumentBuilderToFilterDTD(DocumentBuilder)",
+                    "label": true
+                },
+                {
+                    "method": "SourceProvider$DOMSourceProvider:resolveEntity(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "SourceProvider$DOMSourceProvider:readFrom(Class,Type,Annotation,MediaType,MultivaluedMap,InputStream)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "wink-client-apache-httpclient_src_main_java_org_apache_wink_client_internal_handlers_ApacheHttpClientConnectionHandler": [
+                {
+                    "method": "ApacheHttpClientConnectionHandler:openConnection(ClientRequest)",
+                    "label": false
+                }
+            ],
+            "wink-server_src_main_java_org_apache_wink_server_internal_handlers_ServerMessageContext": [
+                {
+                    "method": "ServerMessageContext:getDeploymentConfiguration()",
+                    "label": false
+                }
+            ],
+            "wink-server_src_main_java_org_apache_wink_server_internal_contexts_HttpHeadersImpl": [
+                {
+                    "method": "HttpHeadersImpl:getAcceptHeader()",
+                    "label": false
+                }
+            ],
+            "wink-server_src_main_java_org_apache_wink_server_internal_contexts_ServerMediaTypeCharsetAdjuster": [
+                {
+                    "method": "ServerMediaTypeCharsetAdjuster:setDefaultCharsetOnMediaTypeHeader(MultivaluedMap,MediaType)",
+                    "label": false
+                }
+            ],
+            "wink-server_src_main_java_org_apache_wink_server_internal_servlet_RestServlet": [
+                {
+                    "method": "RestServlet:getProperties()",
+                    "label": false
+                },
+                {
+                    "method": "RestServlet:loadProperties(String,Properties)",
+                    "label": false
+                }
+            ],
+            "wink-client_src_main_java_org_apache_wink_client_internal_handlers_HttpURLConnectionHandler": [
+                {
+                    "method": "HttpURLConnectionHandler:openConnection(ClientRequest)",
+                    "label": false
+                }
+            ],
+            "wink-common_src_main_java_org_apache_wink_common_internal_providers_entity_SourceProvider": [
+                {
+                    "method": "SourceProvider:asIOExcpetion(Exception)",
+                    "label": false
+                },
+                {
+                    "method": "SourceProvider:writeTo(Source,Class,Type,Annotation,MediaType,MultivaluedMap,OutputStream)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2011-1184": {
+        "patchMethod": {
+            "container_catalina_src_share_org_apache_catalina_authenticator_DigestAuthenticator": [
+                {
+                    "method": "DigestAuthenticator:generateNOnce(Request)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:setAuthenticateHeader(Request,Response,LoginConfig,String)",
+                    "label": true
+                },
+                {
+                    "method": "DigestAuthenticator:generateNonce(Request)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:setAuthenticateHeader(Request,Response,LoginConfig,String,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "DigestAuthenticator:start()",
+                    "label": true
+                },
+                {
+                    "method": "DigestAuthenticator:removeEldestEntry(Map.Entry)",
+                    "label": true
+                },
+                {
+                    "method": "DigestAuthenticator$DigestInfo:authenticate(Realm)",
+                    "label": true
+                },
+                {
+                    "method": "DigestAuthenticator:authenticate(Request,Response,LoginConfig)",
+                    "label": true
+                },
+                {
+                    "method": "DigestAuthenticator:findPrincipal(Request,String,Realm)",
+                    "label": true
+                }
+            ],
+            "container_catalina_src_share_org_apache_catalina_realm_RealmBase": [
+                {
+                    "method": "RealmBase:authenticate(String,String,String,String,String,String,String,String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "container_catalina_src_share_org_apache_catalina_authenticator_DigestAuthenticator": [
+                {
+                    "method": "DigestAuthenticator:setKey(String)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator$NonceInfo:getCount()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator$NonceInfo:getTimestamp()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator$DigestInfo:DigestInfo(String,long,String,Map,boolean)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:getNonceValidity()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:getKey()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:setNonceValidity(long)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator$DigestInfo:isNonceStale()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:isValidateUri()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:getCnonceCacheSize()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:getOpaque()",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator$NonceInfo:setCount(long)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:setCnonceCacheSize(int)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:setValidateUri(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator$NonceInfo:setTimestamp(long)",
+                    "label": false
+                },
+                {
+                    "method": "DigestAuthenticator:setOpaque(String)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2011-4905": {
+        "patchMethod": {
+            "activemq-core_src_main_java_org_apache_activemq_broker_TransportConnection": [
+                {
+                    "method": "TransportConnection:run()",
+                    "label": true
+                },
+                {
+                    "method": "TransportConnection:delayedStop(int)",
+                    "label": true
+                },
+                {
+                    "method": "TransportConnection:service(Command)",
+                    "label": true
+                }
+            ],
+            "activemq-core_src_main_java_org_apache_activemq_ActiveMQConnection": [
+                {
+                    "method": "ActiveMQConnection:finalize()",
+                    "label": true
+                },
+                {
+                    "method": "ActiveMQConnection:onControlCommand(ControlCommand)",
+                    "label": true
+                },
+                {
+                    "method": "ActiveMQConnection:syncSendPacket(Command)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "activemq-core_src_main_java_org_apache_activemq_broker_TransportConnection": [
+                {
+                    "method": "TransportConnection:setBlocked(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:serviceExceptionAsync(IOException)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:setConnected(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:setActive(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:setBlockedCandidate(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:setSlow(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:TransportConnection(TransportConnector,Transport,Broker,TaskRunnerFactory)",
+                    "label": false
+                },
+                {
+                    "method": "TransportConnection:setMarkedCandidate(boolean)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2012-0818": {
+        "patchMethod": {
+            "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_server_tjws_TJWSServletServer": [
+                {
+                    "method": "TJWSServletServer$FileMappingServe:getInitParameter(String)",
+                    "label": false
+                },
+                {
+                    "method": "TJWSServletServer:addServlet(String,HttpServlet,Hashtable,Hashtable)",
+                    "label": true
+                }
+            ],
+            "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_server_tjws_TJWSEmbeddedJaxrsServer": [
+                {
+                    "method": "TJWSEmbeddedJaxrsServer:start()",
+                    "label": true
+                }
+            ],
+            "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_providers_DocumentProvider": [
+                {
+                    "method": "DocumentProvider:readFrom(Class,Type,Annotation,MediaType,MultivaluedMap,InputStream)",
+                    "label": true
+                },
+                {
+                    "method": "DocumentProvider:DocumentProvider()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_server_tjws_TJWSServletServer": [
+                {
+                    "method": "TJWSServletServer$FileMappingServe:getInitParams()",
+                    "label": false
+                },
+                {
+                    "method": "TJWSServletServer$FileMappingServe:setInitParams(Hashtable)",
+                    "label": false
+                }
+            ],
+            "resteasy-jaxrs_src_main_java_org_jboss_resteasy_plugins_server_tjws_TJWSEmbeddedJaxrsServer": [
+                {
+                    "method": "TJWSEmbeddedJaxrsServer:setContextParameters(Hashtable)",
+                    "label": false
+                },
+                {
+                    "method": "TJWSEmbeddedJaxrsServer:setInitParameters(Hashtable)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2012-4387": {
+        "patchMethod": {
+            "xwork-core_src_main_java_com_opensymphony_xwork2_interceptor_ParametersInterceptor": [
+                {
+                    "method": "ParametersInterceptor:isWithinLengthLimit(String)",
+                    "label": true
+                },
+                {
+                    "method": "ParametersInterceptor:acceptableName(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "xwork-core_src_main_java_com_opensymphony_xwork2_interceptor_ParametersInterceptor": [
+                {
+                    "method": "ParametersInterceptor:setParamNameMaxLength(int)",
+                    "label": false
+                },
+                {
+                    "method": "ParametersInterceptor:setAcceptParamNames(String)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2013-2160": {
+        "patchMethod": {
+            "wstx_branches_4.1_src_java_com_ctc_wstx_api_ReaderConfig": [
+                {
+                    "method": "ReaderConfig:createNonShared(SymbolTable)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:setProperty(String,int,Object)",
+                    "label": true
+                },
+                {
+                    "method": "ReaderConfig:ReaderConfig(ReaderConfig,boolean,SymbolTable,int,int,int,int)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:getProperty(int)",
+                    "label": true
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_sr_Element": [
+                {
+                    "method": "Element:reset(Element,int,String,String)",
+                    "label": false
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_sr_BasicStreamReader": [
+                {
+                    "method": "BasicStreamReader:nextFromProlog(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "BasicStreamReader:skipToken()",
+                    "label": true
+                },
+                {
+                    "method": "BasicStreamReader:nextFromTree()",
+                    "label": true
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_sr_AttributeCollector": [
+                {
+                    "method": "AttributeCollector:getAttrBuilder(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "AttributeCollector:getNsBuilder(String)",
+                    "label": true
+                },
+                {
+                    "method": "AttributeCollector:AttributeCollector(ReaderConfig,boolean)",
+                    "label": false
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_sr_InputElementStack": [
+                {
+                    "method": "InputElementStack:push(String,String)",
+                    "label": true
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_util_DataUtil": [
+                {
+                    "method": "DataUtil:Long(long)",
+                    "label": true
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_util_ArgUtil": [
+                {
+                    "method": "ArgUtil:convertToLong(String,Object,long)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "wstx_branches_4.1_src_java_com_ctc_wstx_api_ReaderConfig": [
+                {
+                    "method": "ReaderConfig:setMaxCharacters(long)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:setMaxChildrenPerElement(int)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:getMaxCharacters()",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:getMaxAttributesPerElement()",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:setMaxAttributesPerElement(int)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:setMaxElementDepth(int)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:getMaxElementDepth()",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:getMaxElementCount()",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:setMaxElementCount(long)",
+                    "label": false
+                },
+                {
+                    "method": "ReaderConfig:getMaxChildrenPerElement()",
+                    "label": false
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_sr_AttributeCollector": [
+                {
+                    "method": "AttributeCollector:getMaxAttributesPerElement()",
+                    "label": false
+                },
+                {
+                    "method": "AttributeCollector:setMaxAttributesPerElement(int)",
+                    "label": false
+                },
+                {
+                    "method": "AttributeCollector:getDefaultNsBuilder()",
+                    "label": false
+                },
+                {
+                    "method": "AttributeCollector:addDefaultAttribute(String,String,String,String)",
+                    "label": false
+                }
+            ],
+            "wstx_branches_4.1_src_java_com_ctc_wstx_sr_InputElementStack": [
+                {
+                    "method": "InputElementStack:addDefaultAttribute(String,String,String,String)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2013-4322": {
+        "patchMethod": {
+            "java_org_apache_coyote_http11_filters_ChunkedInputFilter": [
+                {
+                    "method": "ChunkedInputFilter:parseChunkHeader()",
+                    "label": true
+                },
+                {
+                    "method": "ChunkedInputFilter:parseHeader()",
+                    "label": true
+                },
+                {
+                    "method": "ChunkedInputFilter:recycle()",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_Http11AprProcessor": [
+                {
+                    "method": "Http11AprProcessor:Http11AprProcessor(int,AprEndpoint,int)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_AbstractHttp11Processor": [
+                {
+                    "method": "AbstractHttp11Processor:initializeFilters(int)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_Http11NioProcessor": [
+                {
+                    "method": "Http11NioProcessor:Http11NioProcessor(int,NioEndpoint,int)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_Http11Protocol": [
+                {
+                    "method": "Http11Protocol$Http11ConnectionHandler:createProcessor()",
+                    "label": true
+                }
+            ],
+            "test_org_apache_coyote_http11_filters_TestChunkedInputFilter": [
+                {
+                    "method": "TestChunkedInputFilter:doTestExtensionSizeLimit(int,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "TestChunkedInputFilter:testExtensionSizeLimitExact()",
+                    "label": true
+                },
+                {
+                    "method": "TestChunkedInputFilter:testExtensionSizeLimitOneOver()",
+                    "label": true
+                },
+                {
+                    "method": "TestChunkedInputFilter:testExtensionSizeLimitOneBelow()",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_Http11Processor": [
+                {
+                    "method": "Http11Processor:Http11Processor(int,JIoEndpoint,int)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_Http11AprProtocol": [
+                {
+                    "method": "Http11AprProtocol$Http11ConnectionHandler:createProcessor()",
+                    "label": true
+                }
+            ],
+            "java_org_apache_coyote_http11_Http11NioProtocol": [
+                {
+                    "method": "Http11NioProtocol$Http11ConnectionHandler:createProcessor()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "java_org_apache_coyote_http11_filters_ChunkedInputFilter": [
+                {
+                    "method": "ChunkedInputFilter:ChunkedInputFilter(int,int)",
+                    "label": false
+                },
+                {
+                    "method": "ChunkedInputFilter:ChunkedInputFilter(int)",
+                    "label": false
+                }
+            ],
+            "java_org_apache_coyote_http11_AbstractHttp11Protocol": [
+                {
+                    "method": "AbstractHttp11Protocol:setMaxExtensionSize(int)",
+                    "label": false
+                },
+                {
+                    "method": "AbstractHttp11Protocol:getMaxExtensionSize()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2014-0193": {
+        "patchMethod": {
+            "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_ContinuationWebSocketFrame": [
+                {
+                    "method": "ContinuationWebSocketFrame:ContinuationWebSocketFrame()",
+                    "label": false
+                },
+                {
+                    "method": "ContinuationWebSocketFrame:ContinuationWebSocketFrame(boolean,int,String)",
+                    "label": true
+                },
+                {
+                    "method": "ContinuationWebSocketFrame:duplicate()",
+                    "label": true
+                },
+                {
+                    "method": "ContinuationWebSocketFrame:copy()",
+                    "label": true
+                }
+            ],
+            "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_UTF8Output": [
+                {
+                    "method": "UTF8Output:write(ByteBuf)",
+                    "label": false
+                },
+                {
+                    "method": "UTF8Output:write(byte)",
+                    "label": false
+                },
+                {
+                    "method": "UTF8Output:UTF8Output(ByteBuf)",
+                    "label": false
+                },
+                {
+                    "method": "UTF8Output:write(int)",
+                    "label": false
+                }
+            ],
+            "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_WebSocket08FrameDecoder": [
+                {
+                    "method": "WebSocket08FrameDecoder:protocolViolation(ChannelHandlerContext,String)",
+                    "label": false
+                },
+                {
+                    "method": "WebSocket08FrameDecoder:checkUTF8String(ChannelHandlerContext,ByteBuf)",
+                    "label": true
+                },
+                {
+                    "method": "WebSocket08FrameDecoder:decode(ChannelHandlerContext,ByteBuf,List)",
+                    "label": true
+                },
+                {
+                    "method": "WebSocket08FrameDecoder:checkCloseFrameBody(ChannelHandlerContext,ByteBuf)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_UTF8Exception": [
+                {
+                    "method": "UTF8Exception:UTF8Exception(String)",
+                    "label": false
+                }
+            ],
+            "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_ContinuationWebSocketFrame": [
+                {
+                    "method": "ContinuationWebSocketFrame:aggregatedText()",
+                    "label": false
+                },
+                {
+                    "method": "ContinuationWebSocketFrame:ContinuationWebSocketFrame(boolean,int,ByteBuf,String)",
+                    "label": false
+                }
+            ],
+            "codec-http_src_main_java_io_netty_handler_codec_http_websocketx_UTF8Output": [
+                {
+                    "method": "UTF8Output:toString()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2015-2156": {
+        "patchMethod": {
+            "src_main_java_org_jboss_netty_handler_codec_http_cookie_ServerCookieEncoder": [
+                {
+                    "method": "ServerCookieEncoder:encode(Cookie)",
+                    "label": true
+                }
+            ],
+            "src_main_java_org_jboss_netty_handler_codec_http_cookie_ClientCookieDecoder": [
+                {
+                    "method": "ClientCookieDecoder$CookieBuilder:mergeMaxAgeAndExpire(long,String)",
+                    "label": true
+                },
+                {
+                    "method": "ClientCookieDecoder$CookieBuilder:setMaxAge(String)",
+                    "label": true
+                }
+            ],
+            "src_main_java_org_jboss_netty_handler_codec_http_CookieDecoder": [
+                {
+                    "method": "CookieDecoder:decode(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "src_main_java_org_jboss_netty_handler_codec_http_DefaultCookie": [
+                {
+                    "method": "DefaultCookie:getMaxAge()",
+                    "label": false
+                }
+            ],
+            "src_main_java_org_jboss_netty_handler_codec_http_cookie_DefaultCookie": [
+                {
+                    "method": "DefaultCookie:setMaxAge(long)",
+                    "label": false
+                },
+                {
+                    "method": "DefaultCookie:maxAge()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2015-5344": {
+        "patchMethod": {
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_XStreamDataFormat": [
+                {
+                    "method": "XStreamDataFormat:configureDataFormat(DataFormat,CamelContext)",
+                    "label": true
+                },
+                {
+                    "method": "XStreamDataFormat:setPermissions(Class)",
+                    "label": true
+                }
+            ],
+            "components_camel-xstream_src_main_java_org_apache_camel_dataformat_xstream_AbstractXStreamWrapper": [
+                {
+                    "method": "AbstractXStreamWrapper:addPermissions(XStream,String)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractXStreamWrapper:addDefaultPermissions(XStream)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractXStreamWrapper:createXStream(ClassResolver,ClassLoader)",
+                    "label": true
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_JsonDataFormat": [
+                {
+                    "method": "JsonDataFormat:setPermissions(Class)",
+                    "label": true
+                },
+                {
+                    "method": "JsonDataFormat:configureDataFormat(DataFormat,CamelContext)",
+                    "label": true
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_builder_DataFormatClause": [
+                {
+                    "method": "DataFormatClause:xstream(Class)",
+                    "label": true
+                },
+                {
+                    "method": "DataFormatClause:xstream(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "DataFormatClause:xstream(String,Class)",
+                    "label": true
+                },
+                {
+                    "method": "DataFormatClause:xstream(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_XStreamDataFormat": [
+                {
+                    "method": "XStreamDataFormat:getPermissions()",
+                    "label": false
+                },
+                {
+                    "method": "XStreamDataFormat:setPermissions(String)",
+                    "label": false
+                }
+            ],
+            "components_camel-xstream_src_main_java_org_apache_camel_dataformat_xstream_AbstractXStreamWrapper": [
+                {
+                    "method": "AbstractXStreamWrapper:getPermissions()",
+                    "label": false
+                },
+                {
+                    "method": "AbstractXStreamWrapper:setPermissions(String)",
+                    "label": false
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_JsonDataFormat": [
+                {
+                    "method": "JsonDataFormat:getPermissions()",
+                    "label": false
+                },
+                {
+                    "method": "JsonDataFormat:setPermissions(String)",
+                    "label": false
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_builder_DataFormatClause": [
+                {
+                    "method": "DataFormatClause:xstream()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2015-1776": {
+        "patchMethod": {
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-app_src_main_java_org_apache_hadoop_mapred_TaskAttemptListenerImpl": [
+                {
+                    "method": "TaskAttemptListenerImpl:getTask(JvmContext)",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapreduce_JobSubmitter": [
+                {
+                    "method": "JobSubmitter:submitJobInternal(Job,Cluster)",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapreduce_CryptoUtils": [
+                {
+                    "method": "CryptoUtils:getEncryptionKey()",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapreduce_task_reduce_LocalFetcher": [
+                {
+                    "method": "LocalFetcher:copyMapOutput(TaskAttemptID)",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapreduce_security_TokenCache": [
+                {
+                    "method": "TokenCache:setEncryptedSpillKey(byte,Credentials)",
+                    "label": true
+                },
+                {
+                    "method": "TokenCache:getEncryptedSpillKey(Credentials)",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-app_src_main_java_org_apache_hadoop_mapred_LocalContainerLauncher": [
+                {
+                    "method": "LocalContainerLauncher:setEncryptedSpillKey(byte)",
+                    "label": true
+                },
+                {
+                    "method": "LocalContainerLauncher$EventHandler:runSubtask(org.apache.hadoop.mapred.Task,TaskType,TaskAttemptId,int,boolean,Map)",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-app_src_main_java_org_apache_hadoop_mapreduce_v2_app_MRAppMaster": [
+                {
+                    "method": "MRAppMaster:initJobCredentialsAndUGI(Configuration)",
+                    "label": true
+                },
+                {
+                    "method": "MRAppMaster:createTaskAttemptListener(AppContext,AMPreemptionPolicy)",
+                    "label": false
+                },
+                {
+                    "method": "MRAppMaster$ContainerLauncherRouter:serviceStart()",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapred_Task": [
+                {
+                    "method": "Task:setEncryptedSpillKey(byte)",
+                    "label": true
+                },
+                {
+                    "method": "Task:readFields(DataInput)",
+                    "label": true
+                },
+                {
+                    "method": "Task:write(DataOutput)",
+                    "label": true
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-app_src_main_java_org_apache_hadoop_mapred_YarnChild": [
+                {
+                    "method": "YarnChild:setEncryptedSpillKeyIfRequired(Task)",
+                    "label": true
+                },
+                {
+                    "method": "YarnChild:run()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-app_src_main_java_org_apache_hadoop_mapred_TaskAttemptListenerImpl": [
+                {
+                    "method": "TaskAttemptListenerImpl:TaskAttemptListenerImpl(AppContext,JobTokenSecretManager,RMHeartbeatHandler,AMPreemptionPolicy)",
+                    "label": false
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapreduce_CryptoUtils": [
+                {
+                    "method": "CryptoUtils:isShuffleEncrypted(Configuration)",
+                    "label": false
+                },
+                {
+                    "method": "CryptoUtils:wrapIfNecessary(Configuration,FSDataOutputStream)",
+                    "label": false
+                },
+                {
+                    "method": "CryptoUtils:cryptoPadding(Configuration)",
+                    "label": false
+                },
+                {
+                    "method": "CryptoUtils:wrapIfNecessary(Configuration,InputStream,long)",
+                    "label": false
+                },
+                {
+                    "method": "CryptoUtils:createIV(Configuration)",
+                    "label": false
+                },
+                {
+                    "method": "CryptoUtils:wrapIfNecessary(Configuration,FSDataInputStream)",
+                    "label": false
+                }
+            ],
+            "hadoop-mapreduce-project_hadoop-mapreduce-client_hadoop-mapreduce-client-core_src_main_java_org_apache_hadoop_mapred_Task": [
+                {
+                    "method": "Task:getEncryptedSpillKey()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2016-3081": {
+        "patchMethod": {
+            "core_src_main_java_com_opensymphony_xwork2_ognl_OgnlUtil": [
+                {
+                    "method": "OgnlUtil:isEvalExpression(Object,Map)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "core_src_main_java_com_opensymphony_xwork2_ognl_OgnlUtil": [
+                {
+                    "method": "OgnlUtil:checkEnableEvalExpression(Object,Map)",
+                    "label": false
+                },
+                {
+                    "method": "OgnlUtil:execute(Object)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2016-6652": {
+        "patchMethod": {
+            "src_main_java_org_springframework_data_jpa_domain_JpaSort": [
+                {
+                    "method": "JpaSort:unsafe(Direction,String)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort:andUnsafe(Direction,String)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:with(Direction)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:with(NullHandling)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:nullsLast()",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:ignoreCase()",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort:unsafe(String)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:nullsNative()",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:withUnsafe(String)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:nullsFirst()",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort:unsafe(Direction,List)",
+                    "label": true
+                },
+                {
+                    "method": "JpaSort$JpaOrder:isIgnoreCase()",
+                    "label": true
+                }
+            ],
+            "src_main_java_org_springframework_data_jpa_repository_query_QueryUtils": [
+                {
+                    "method": "QueryUtils:checkSortExpression(Order)",
+                    "label": true
+                },
+                {
+                    "method": "QueryUtils:getFunctionAliases(String)",
+                    "label": true
+                },
+                {
+                    "method": "QueryUtils:applySorting(String,Sort,String)",
+                    "label": true
+                },
+                {
+                    "method": "QueryUtils:getOrderClause(Set,String,Order)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "src_main_java_org_springframework_data_jpa_domain_JpaSort": [
+                {
+                    "method": "JpaSort$JpaOrder:JpaOrder(Direction,String,NullHandling)",
+                    "label": false
+                },
+                {
+                    "method": "JpaSort$JpaOrder:JpaOrder(Direction,String)",
+                    "label": false
+                },
+                {
+                    "method": "JpaSort$JpaOrder:isUnsafe()",
+                    "label": false
+                },
+                {
+                    "method": "JpaSort:JpaSort(List)",
+                    "label": false
+                },
+                {
+                    "method": "JpaSort$JpaOrder:JpaOrder(Direction,String,NullHandling,boolean,boolean)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2016-9879": {
+        "patchMethod": {
+            "web_src_main_java_org_springframework_security_web_firewall_DefaultHttpFirewall": [
+                {
+                    "method": "DefaultHttpFirewall:containsInvalidUrlEncodedSlash(String)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultHttpFirewall:getFirewalledRequest(HttpServletRequest)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "web_src_main_java_org_springframework_security_web_firewall_DefaultHttpFirewall": [
+                {
+                    "method": "DefaultHttpFirewall:setAllowUrlEncodedSlash(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "DefaultHttpFirewall:isNormalized(String)",
+                    "label": false
+                },
+                {
+                    "method": "DefaultHttpFirewall:getFirewalledResponse(HttpServletResponse)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2017-12616": {
+        "patchMethod": {
+            "java_org_apache_naming_resources_VirtualDirContext": [
+                {
+                    "method": "VirtualDirContext:file(String)",
+                    "label": true
+                },
+                {
+                    "method": "VirtualDirContext:getAttributes(String)",
+                    "label": true
+                },
+                {
+                    "method": "VirtualDirContext:allocate()",
+                    "label": true
+                },
+                {
+                    "method": "VirtualDirContext:doLookup(String)",
+                    "label": true
+                },
+                {
+                    "method": "VirtualDirContext:list(File)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_naming_resources_FileDirContext": [
+                {
+                    "method": "FileDirContext:file(String)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:file(String,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:rebind(String,Object,Attributes)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:doListBindings(String)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:doLookup(String)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:rename(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:unbind(String)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:doGetAttributes(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:bind(String,Object,Attributes)",
+                    "label": true
+                },
+                {
+                    "method": "FileDirContext:createSubcontext(String,Attributes)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "java_org_apache_naming_resources_VirtualDirContext": [
+                {
+                    "method": "VirtualDirContext:setExtraResourcePaths(String)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2017-12624": {
+        "patchMethod": {
+            "rt_frontend_jaxrs_src_main_java_org_apache_cxf_jaxrs_ext_MessageContextImpl": [
+                {
+                    "method": "MessageContextImpl:createAttachments(String)",
+                    "label": true
+                },
+                {
+                    "method": "MessageContextImpl:get(Object)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_apache_cxf_attachment_AttachmentDeserializer": [
+                {
+                    "method": "AttachmentDeserializer:readLine(InputStream,StringBuilder)",
+                    "label": true
+                },
+                {
+                    "method": "AttachmentDeserializer:AttachmentDeserializer(Message,List)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_apache_cxf_message_MessageUtils": [
+                {
+                    "method": "MessageUtils:getContextualInteger(Message,String,int)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "rt_frontend_jaxrs_src_main_java_org_apache_cxf_jaxrs_ext_multipart_Attachment": [
+                {
+                    "method": "Attachment:Attachment(MultivaluedMap,DataHandler,Object)",
+                    "label": false
+                }
+            ],
+            "core_src_main_java_org_apache_cxf_attachment_HeaderSizeExceededException": [
+                {
+                    "method": "HeaderSizeExceededException:HeaderSizeExceededException(String)",
+                    "label": false
+                },
+                {
+                    "method": "HeaderSizeExceededException:HeaderSizeExceededException()",
+                    "label": false
+                },
+                {
+                    "method": "HeaderSizeExceededException:HeaderSizeExceededException(Throwable)",
+                    "label": false
+                },
+                {
+                    "method": "HeaderSizeExceededException:HeaderSizeExceededException(String,Throwable)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2017-3159": {
+        "patchMethod": {
+            "components_camel-snakeyaml_src_main_java_org_apache_camel_component_snakeyaml_SnakeYAMLDataFormat": [
+                {
+                    "method": "SnakeYAMLDataFormat:SnakeYAMLDataFormat(Class)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:addTypeFilters(TypeFilter)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:typeFilterConstructor(Collection)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:getClassForName(String)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:addTypeFilters(Collection)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:setTypeFilterDefinitions(List)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:typeFilterConstructor(ClassLoader,Collection)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:addTypeDescriptions(Collection)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:setClassTags(Map)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:marshal(Exchange,Object,OutputStream)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:addTypeDescriptions(TypeDescription)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:SnakeYAMLDataFormat()",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:getYaml(CamelContext)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:unmarshal(Exchange,InputStream)",
+                    "label": true
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:setUnmarshalType(Class)",
+                    "label": true
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_YAMLDataFormat": [
+                {
+                    "method": "YAMLDataFormat:configureSnakeDataFormat(DataFormat,CamelContext)",
+                    "label": true
+                }
+            ],
+            "components_camel-snakeyaml_src_main_java_org_apache_camel_component_snakeyaml_TypeFilters": [
+                {
+                    "method": "TypeFilters:allowAll()",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters$RegExp:test(String)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:typeNames(Collection)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:types(Class)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters$TypeName:test(String)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:regexp(Collection)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:types(Collection)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:regexp(String)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:typeNames(String)",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:allowNone()",
+                    "label": true
+                },
+                {
+                    "method": "TypeFilters:valueOf(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "components-starter_camel-snakeyaml-starter_src_main_java_org_apache_camel_component_snakeyaml_springboot_SnakeYAMLDataFormatConfiguration": [
+                {
+                    "method": "SnakeYAMLDataFormatConfiguration:setTypeFilter(List)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormatConfiguration:setAllowAnyType(Boolean)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormatConfiguration:getTypeFilter()",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormatConfiguration:getAllowAnyType()",
+                    "label": false
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_YAMLDataFormat": [
+                {
+                    "method": "YAMLDataFormat:setTypeFilters(List)",
+                    "label": false
+                },
+                {
+                    "method": "YAMLDataFormat:getTypeFilters()",
+                    "label": false
+                },
+                {
+                    "method": "YAMLDataFormat:isAllowAnyType()",
+                    "label": false
+                },
+                {
+                    "method": "YAMLDataFormat:setAllowAnyType(boolean)",
+                    "label": false
+                }
+            ],
+            "camel-core_src_main_java_org_apache_camel_model_dataformat_YAMLTypeFilterDefinition": [
+                {
+                    "method": "YAMLTypeFilterDefinition:getValue()",
+                    "label": false
+                },
+                {
+                    "method": "YAMLTypeFilterDefinition:getType()",
+                    "label": false
+                },
+                {
+                    "method": "YAMLTypeFilterDefinition:setType(YAMLTypeFilterType)",
+                    "label": false
+                },
+                {
+                    "method": "YAMLTypeFilterDefinition:setValue(String)",
+                    "label": false
+                }
+            ],
+            "components_camel-snakeyaml_src_main_java_org_apache_camel_component_snakeyaml_SnakeYAMLDataFormat": [
+                {
+                    "method": "SnakeYAMLDataFormat:setAllowAnyType(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:isAllowAnyType()",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:setTypeFilters(List)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:getTypeFilters()",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:setTypeDescriptions(List)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:addTypeDescription(Class,Tag)",
+                    "label": false
+                },
+                {
+                    "method": "SnakeYAMLDataFormat:addClassTags(Class,Tag)",
+                    "label": false
+                }
+            ],
+            "components_camel-snakeyaml_src_main_java_org_apache_camel_component_snakeyaml_TypeFilters": [
+                {
+                    "method": "TypeFilters$RegExp:RegExp(Collection)",
+                    "label": false
+                },
+                {
+                    "method": "TypeFilters$TypeName:TypeName(Collection)",
+                    "label": false
+                },
+                {
+                    "method": "TypeFilters$TypeName:TypeName(String)",
+                    "label": false
+                },
+                {
+                    "method": "TypeFilters$RegExp:RegExp(String)",
+                    "label": false
+                },
+                {
+                    "method": "TypeFilters:TypeFilters()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2017-4973": {
+        "patchMethod": {
+            "common_src_main_java_org_cloudfoundry_identity_uaa_oauth_approval_ApprovalsAdminEndpoints": [
+                {
+                    "method": "ApprovalsAdminEndpoints:handleException(NoSuchClientException)",
+                    "label": true
+                },
+                {
+                    "method": "ApprovalsAdminEndpoints:updateClientApprovals(String,Approval)",
+                    "label": true
+                },
+                {
+                    "method": "ApprovalsAdminEndpoints:revokeApprovals(String)",
+                    "label": true
+                }
+            ],
+            "login_src_main_java_org_cloudfoundry_identity_uaa_login_ProfileController": [
+                {
+                    "method": "ProfileController:handleException(NoSuchClientException)",
+                    "label": true
+                }
+            ],
+            "server_src_main_java_org_cloudfoundry_identity_uaa_account_ProfileController": [
+                {
+                    "method": "ProfileController:handleException(NoSuchClientException)",
+                    "label": true
+                }
+            ],
+            "server_src_main_java_org_cloudfoundry_identity_uaa_approval_ApprovalsAdminEndpoints": [
+                {
+                    "method": "ApprovalsAdminEndpoints:handleException(NoSuchClientException)",
+                    "label": true
+                },
+                {
+                    "method": "ApprovalsAdminEndpoints:revokeApprovals(String)",
+                    "label": true
+                },
+                {
+                    "method": "ApprovalsAdminEndpoints:updateClientApprovals(String,Approval)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "server_src_main_java_org_cloudfoundry_identity_uaa_scim_endpoints_ScimGroupEndpoints": [
+                {
+                    "method": "ScimGroupEndpoints:patchGroup(ScimGroup,String,String,HttpServletResponse)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2017-5641": {
+        "patchMethod": {
+            "core_src_main_java_flex_messaging_config_ServerConfigurationParser": [
+                {
+                    "method": "ServerConfigurationParser:defaultValidator()",
+                    "label": true
+                },
+                {
+                    "method": "ServerConfigurationParser:validators(Node)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "core_src_main_java_flex_messaging_validators_ClassDeserializationValidator": [
+                {
+                    "method": "ClassDeserializationValidator:ClassDeserializationValidator()",
+                    "label": false
+                },
+                {
+                    "method": "ClassDeserializationValidator:validateAssignment(Object,int,Object)",
+                    "label": false
+                },
+                {
+                    "method": "ClassDeserializationValidator:validateAssignment(Object,String,Object)",
+                    "label": false
+                },
+                {
+                    "method": "ClassDeserializationValidator:initialize(String,ConfigMap)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2017-5929": {
+        "patchMethod": {
+            "logback-classic_src_main_java_ch_qos_logback_classic_net_server_HardenedLoggingEventInputStream": [
+                {
+                    "method": "HardenedLoggingEventInputStream:HardenedLoggingEventInputStream(InputStream,List)",
+                    "label": true
+                },
+                {
+                    "method": "HardenedLoggingEventInputStream:getWhilelist()",
+                    "label": true
+                }
+            ],
+            "logback-classic_src_main_java_ch_qos_logback_classic_net_server_LogbackClassicSerializationHelper": [
+                {
+                    "method": "LogbackClassicSerializationHelper:getWhilelist()",
+                    "label": true
+                }
+            ],
+            "logback-classic_src_main_java_ch_qos_logback_classic_net_server_RemoteAppenderStreamClient": [
+                {
+                    "method": "RemoteAppenderStreamClient:createObjectInputStream()",
+                    "label": true
+                }
+            ],
+            "logback-access_src_main_java_ch_qos_logback_access_net_SocketNode": [
+                {
+                    "method": "SocketNode:SocketNode(Socket,AccessContext)",
+                    "label": true
+                },
+                {
+                    "method": "SocketNode:run()",
+                    "label": true
+                }
+            ],
+            "logback-classic_src_main_java_ch_qos_logback_classic_net_SocketNode": [
+                {
+                    "method": "SocketNode:run()",
+                    "label": true
+                },
+                {
+                    "method": "SocketNode:close()",
+                    "label": true
+                }
+            ],
+            "logback-core_src_main_java_ch_qos_logback_core_net_HardenedObjectInputStream": [
+                {
+                    "method": "HardenedObjectInputStream:addToWhitelist(List)",
+                    "label": true
+                },
+                {
+                    "method": "HardenedObjectInputStream:HardenedObjectInputStream(InputStream,String)",
+                    "label": true
+                },
+                {
+                    "method": "HardenedObjectInputStream:isWhitelisted(String)",
+                    "label": true
+                },
+                {
+                    "method": "HardenedObjectInputStream:HardenedObjectInputStream(InputStream,List)",
+                    "label": true
+                },
+                {
+                    "method": "HardenedObjectInputStream:resolveClass(ObjectStreamClass)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "logback-classic_src_main_java_ch_qos_logback_classic_net_server_HardenedLoggingEventInputStream": [
+                {
+                    "method": "HardenedLoggingEventInputStream:HardenedLoggingEventInputStream(InputStream)",
+                    "label": false
+                }
+            ],
+            "logback-classic_src_main_java_ch_qos_logback_classic_net_server_RemoteAppenderStreamClient": [
+                {
+                    "method": "RemoteAppenderStreamClient:run()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2018-11761": {
+        "patchMethod": {
+            "tika-core_src_main_java_org_apache_tika_utils_XMLReaderUtils": [
+                {
+                    "method": "XMLReaderUtils:trySetXercesSecurityManager(SAXParser)",
+                    "label": true
+                },
+                {
+                    "method": "XMLReaderUtils:trySetStaxSecurityManager(XMLInputFactory)",
+                    "label": true
+                },
+                {
+                    "method": "XMLReaderUtils:trySetXercesSecurityManager(DocumentBuilderFactory)",
+                    "label": true
+                },
+                {
+                    "method": "XMLReaderUtils:getXMLInputFactory()",
+                    "label": true
+                },
+                {
+                    "method": "XMLReaderUtils:getDocumentBuilderFactory()",
+                    "label": true
+                },
+                {
+                    "method": "XMLReaderUtils:getSAXParser()",
+                    "label": true
+                },
+                {
+                    "method": "XMLReaderUtils:determineMaxEntityExpansions()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "tika-core_src_main_java_org_apache_tika_utils_XMLReaderUtils": [
+                {
+                    "method": "XMLReaderUtils:tryToSetStaxProperty(XMLInputFactory,String,boolean)",
+                    "label": false
+                },
+                {
+                    "method": "XMLReaderUtils:setMaxEntityExpansions(int)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2018-11775": {
+        "patchMethod": {
+            "activemq-client_src_main_java_org_apache_activemq_transport_tcp_TcpTransportServer": [
+                {
+                    "method": "TcpTransportServer:configureServerSocket(ServerSocket)",
+                    "label": true
+                }
+            ],
+            "activemq-broker_src_main_java_org_apache_activemq_transport_nio_AutoInitNioSSLTransport": [
+                {
+                    "method": "AutoInitNioSSLTransport:initializeStreams()",
+                    "label": true
+                }
+            ],
+            "activemq-client_src_main_java_org_apache_activemq_transport_nio_NIOSSLTransport": [
+                {
+                    "method": "NIOSSLTransport:initializeStreams()",
+                    "label": true
+                }
+            ],
+            "activemq-client_src_main_java_org_apache_activemq_transport_tcp_SslTransport": [
+                {
+                    "method": "SslTransport:initialiseSocket(Socket)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "activemq-client_src_main_java_org_apache_activemq_transport_tcp_SslTransportServer": [
+                {
+                    "method": "SslTransportServer:createTransport(Socket,WireFormat)",
+                    "label": false
+                },
+                {
+                    "method": "SslTransportServer:bind()",
+                    "label": false
+                }
+            ],
+            "activemq-client_src_main_java_org_apache_activemq_transport_nio_NIOSSLTransport": [
+                {
+                    "method": "NIOSSLTransport:setVerifyHostName(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "NIOSSLTransport:isVerifyHostName()",
+                    "label": false
+                }
+            ],
+            "activemq-client_src_main_java_org_apache_activemq_transport_tcp_TcpTransport": [
+                {
+                    "method": "TcpTransport:getWireFormat()",
+                    "label": false
+                }
+            ],
+            "activemq-client_src_main_java_org_apache_activemq_transport_tcp_SslTransport": [
+                {
+                    "method": "SslTransport:setVerifyHostName(Boolean)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2018-1199": {
+        "patchMethod": {
+            "web_src_main_java_org_springframework_security_web_firewall_StrictHttpFirewall": [
+                {
+                    "method": "StrictHttpFirewall:isNormalized(HttpServletRequest)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:StrictHttpFirewall()",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:getFirewalledRequest(HttpServletRequest)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:setAllowSemicolon(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:setAllowUrlEncodedPercent(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:setAllowUrlEncodedPeriod(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:valueContains(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:isNormalized(String)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:rejectedBlacklistedUrls(HttpServletRequest)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:urlBlacklistsRemoveAll(Collection)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:encodedUrlContains(HttpServletRequest,String)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:setAllowUrlEncodedSlash(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:setAllowBackSlash(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:containsOnlyPrintableAsciiCharacters(String)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:getFirewalledResponse(HttpServletResponse)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:decodedUrlContains(HttpServletRequest,String)",
+                    "label": true
+                },
+                {
+                    "method": "StrictHttpFirewall:urlBlacklistsAddAll(Collection)",
+                    "label": true
+                }
+            ],
+            "itest_context_src_integration-test_java_org_springframework_security_integration_HttpPathParameterStrippingTests": [
+                {
+                    "method": "HttpPathParameterStrippingTests:adminFilePatternCannotBeBypassedByAddingPathParameters()",
+                    "label": true
+                },
+                {
+                    "method": "HttpPathParameterStrippingTests:securedFilterChainCannotBeBypassedByAddingPathParameters()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "config_src_main_java_org_springframework_security_config_annotation_web_builders_WebSecurity": [
+                {
+                    "method": "WebSecurity:httpFirewall(HttpFirewall)",
+                    "label": false
+                }
+            ],
+            "web_src_main_java_org_springframework_security_web_firewall_StrictHttpFirewall": [
+                {
+                    "method": "StrictHttpFirewall:reset()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2018-1305": {
+        "patchMethod": {
+            "java_org_apache_catalina_startup_ContextConfig": [
+                {
+                    "method": "ContextConfig:authenticatorConfig()",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_startup_Tomcat": [
+                {
+                    "method": "Tomcat$FixContextListener:lifecycleEvent(LifecycleEvent)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_authenticator_AuthenticatorBase": [
+                {
+                    "method": "AuthenticatorBase:invoke(Request,Response)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_core_StandardWrapper": [
+                {
+                    "method": "StandardWrapper:processServletSecurityAnnotation(Class)",
+                    "label": true
+                },
+                {
+                    "method": "StandardWrapper:loadServlet()",
+                    "label": true
+                },
+                {
+                    "method": "StandardWrapper:servletSecurityAnnotationScan()",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_core_ApplicationServletRegistration": [
+                {
+                    "method": "ApplicationServletRegistration:addMapping(String)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_startup_WebAnnotationSet": [
+                {
+                    "method": "WebAnnotationSet:loadApplicationServletAnnotations(Context)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_core_StandardContext": [
+                {
+                    "method": "StandardContext:wasCreatedDynamicServlet(Servlet)",
+                    "label": true
+                },
+                {
+                    "method": "StandardContext:addServletSecurity(ServletRegistration.Dynamic,ServletSecurityElement)",
+                    "label": true
+                },
+                {
+                    "method": "StandardContext:dynamicServletAdded(Wrapper)",
+                    "label": true
+                }
+            ],
+            "java_org_apache_catalina_core_ApplicationContext": [
+                {
+                    "method": "ApplicationContext:addServlet(String,String,Servlet,Map)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "java_org_apache_catalina_core_StandardWrapper": [
+                {
+                    "method": "StandardWrapper:setServletSecurityAnnotationScanRequired(boolean)",
+                    "label": false
+                }
+            ],
+            "java_org_apache_catalina_core_ApplicationServletRegistration": [
+                {
+                    "method": "ApplicationServletRegistration:setServletSecurity(ServletSecurityElement)",
+                    "label": false
+                }
+            ],
+            "java_org_apache_catalina_core_StandardContext": [
+                {
+                    "method": "StandardContext:dynamicServletCreated(Servlet)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2018-17297": {
+        "patchMethod": {
+            "hutool-core_src_main_java_cn_hutool_core_collection_IterUtil": [
+                {
+                    "method": "IterUtil:toMap(Iterator,Iterator)",
+                    "label": false
+                },
+                {
+                    "method": "IterUtil:toMap(Iterable,Iterable)",
+                    "label": false
+                }
+            ],
+            "hutool-core_src_main_java_cn_hutool_core_util_ZipUtil": [
+                {
+                    "method": "ZipUtil:validateFiles(File,File)",
+                    "label": true
+                },
+                {
+                    "method": "ZipUtil:zip(File,Charset,boolean,File)",
+                    "label": true
+                },
+                {
+                    "method": "ZipUtil:unzip(File,File,Charset)",
+                    "label": true
+                }
+            ],
+            "hutool-poi_src_main_java_cn_hutool_poi_excel_ExcelReader": [
+                {
+                    "method": "ExcelReader:read(int,int,int)",
+                    "label": false
+                }
+            ],
+            "hutool-core_src_main_java_cn_hutool_core_io_FileUtil": [
+                {
+                    "method": "FileUtil:checkSlip(File,File)",
+                    "label": true
+                },
+                {
+                    "method": "FileUtil:getParent(File,int)",
+                    "label": true
+                },
+                {
+                    "method": "FileUtil:getParent(String,int)",
+                    "label": true
+                },
+                {
+                    "method": "FileUtil:file(File,String)",
+                    "label": true
+                },
+                {
+                    "method": "FileUtil:file(String)",
+                    "label": true
+                },
+                {
+                    "method": "FileUtil:file(String,String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "hutool-core_src_main_java_cn_hutool_core_util_ZipUtil": [
+                {
+                    "method": "ZipUtil:zip(File,String,ZipOutputStream)",
+                    "label": false
+                },
+                {
+                    "method": "ZipUtil:zip(File,boolean,File)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-0231": {
+        "patchMethod": {
+            "mina-statemachine_src_main_java_org_apache_mina_statemachine_StateMachineProxyBuilder": [
+                {
+                    "method": "StateMachineProxyBuilder$MethodInvocationHandler:invoke(Object,Method,Object)",
+                    "label": true
+                }
+            ],
+            "mina-http_src_main_java_org_apache_mina_http_HttpClientDecoder": [
+                {
+                    "method": "HttpClientDecoder:decode(IoSession,IoBuffer,ProtocolDecoderOutput)",
+                    "label": true
+                }
+            ],
+            "mina-http_src_main_java_org_apache_mina_http_HttpServerDecoder": [
+                {
+                    "method": "HttpServerDecoder:decode(IoSession,IoBuffer,ProtocolDecoderOutput)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_AbstractHttpLogicHandler": [
+                {
+                    "method": "AbstractHttpLogicHandler:initializeSession(IoSession,ConnectFuture)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractHttpLogicHandler:writeRequest0(NextFilter,HttpProxyRequest)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractHttpLogicHandler:decodeResponse(String)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractHttpLogicHandler:messageReceived(NextFilter,IoBuffer)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractHttpLogicHandler:reconnect(NextFilter,HttpProxyRequest)",
+                    "label": true
+                }
+            ],
+            "mina-http_src_main_java_org_apache_mina_http_HttpServerEncoder": [
+                {
+                    "method": "HttpServerEncoder:encode(IoSession,Object,ProtocolEncoderOutput)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_HttpSmartProxyHandler": [
+                {
+                    "method": "HttpSmartProxyHandler:autoSelectAuthHandler(HttpProxyResponse)",
+                    "label": true
+                },
+                {
+                    "method": "HttpSmartProxyHandler:doHandshake(NextFilter)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_AbstractAuthLogicHandler": [
+                {
+                    "method": "AbstractAuthLogicHandler:writeRequest(NextFilter,HttpProxyRequest)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_AbstractProxyLogicHandler": [
+                {
+                    "method": "AbstractProxyLogicHandler:flushPendingWriteRequests()",
+                    "label": true
+                },
+                {
+                    "method": "AbstractProxyLogicHandler:setHandshakeComplete()",
+                    "label": true
+                },
+                {
+                    "method": "AbstractProxyLogicHandler:writeData(NextFilter,IoBuffer)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_core_service_AbstractIoService": [
+                {
+                    "method": "AbstractIoService:dispose(boolean)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_digest_HttpDigestAuthLogicHandler": [
+                {
+                    "method": "HttpDigestAuthLogicHandler:doHandshake(NextFilter)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_codec_statemachine_DecodingStateMachine": [
+                {
+                    "method": "DecodingStateMachine:cleanup()",
+                    "label": true
+                },
+                {
+                    "method": "DecodingStateMachine:finishDecode(ProtocolDecoderOutput)",
+                    "label": true
+                }
+            ],
+            "mina-filter-compression_src_main_java_org_apache_mina_filter_compression_Zlib": [
+                {
+                    "method": "Zlib:inflate(IoBuffer)",
+                    "label": true
+                },
+                {
+                    "method": "Zlib:deflate(IoBuffer)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_socks_Socks4LogicHandler": [
+                {
+                    "method": "Socks4LogicHandler:doHandshake(NextFilter)",
+                    "label": true
+                },
+                {
+                    "method": "Socks4LogicHandler:writeRequest(NextFilter,SocksProxyRequest)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_codec_ProtocolCodecFilter": [
+                {
+                    "method": "ProtocolCodecFilter:messageReceived(NextFilter,IoSession,Object)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_AbstractProxyIoHandler": [
+                {
+                    "method": "AbstractProxyIoHandler:sessionOpened(IoSession)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_ssl_SslHandler": [
+                {
+                    "method": "SslHandler:init()",
+                    "label": true
+                },
+                {
+                    "method": "SslHandler:checkStatus(SSLEngineResult)",
+                    "label": true
+                },
+                {
+                    "method": "SslHandler:destroy()",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_socks_Socks5LogicHandler": [
+                {
+                    "method": "Socks5LogicHandler:handleResponse(NextFilter,IoBuffer,int)",
+                    "label": true
+                },
+                {
+                    "method": "Socks5LogicHandler:doHandshake(NextFilter)",
+                    "label": true
+                },
+                {
+                    "method": "Socks5LogicHandler:encodeGSSAPIAuthenticationPacket(SocksProxyRequest)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_HttpProxyRequest": [
+                {
+                    "method": "HttpProxyRequest:getHost()",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_ssl_SslFilter": [
+                {
+                    "method": "SslFilter:onPreAdd(IoFilterChain,String,NextFilter)",
+                    "label": true
+                },
+                {
+                    "method": "SslFilter:initiateHandshake(NextFilter,IoSession)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_basic_HttpBasicAuthLogicHandler": [
+                {
+                    "method": "HttpBasicAuthLogicHandler:doHandshake(NextFilter)",
+                    "label": true
+                }
+            ],
+            "mina-transport-serial_src_main_java_org_apache_mina_transport_serial_SerialConnector": [
+                {
+                    "method": "SerialConnector:connect0(SocketAddress,SocketAddress,IoSessionInitializer)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_firewall_ConnectionThrottleFilter": [
+                {
+                    "method": "ConnectionThrottleFilter:isConnectionOk(IoSession)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_buffer_BufferedWriteFilter": [
+                {
+                    "method": "BufferedWriteFilter:internalFlush(NextFilter,IoSession,IoBuffer)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_basic_HttpNoAuthLogicHandler": [
+                {
+                    "method": "HttpNoAuthLogicHandler:doHandshake(NextFilter)",
+                    "label": true
+                }
+            ],
+            "mina-integration-jmx_src_main_java_org_apache_mina_integration_jmx_ObjectMBean": [
+                {
+                    "method": "ObjectMBean:expandAttribute(List,Object,String,PropertyDescriptor)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_executor_OrderedThreadPoolExecutor": [
+                {
+                    "method": "OrderedThreadPoolExecutor:print(Queue,IoEvent)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_filter_ProxyFilter": [
+                {
+                    "method": "ProxyFilter:messageReceived(NextFilter,IoSession,Object)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyFilter:writeData(NextFilter,IoSession,WriteRequest,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyFilter:sessionCreated(NextFilter,IoSession)",
+                    "label": true
+                }
+            ],
+            "mina-http_src_main_java_org_apache_mina_http_HttpClientEncoder": [
+                {
+                    "method": "HttpClientEncoder:encode(IoSession,Object,ProtocolEncoderOutput)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_firewall_BlacklistFilter": [
+                {
+                    "method": "BlacklistFilter:setBlacklist(InetAddress)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_core_filterchain_DefaultIoFilterChainBuilder": [
+                {
+                    "method": "DefaultIoFilterChainBuilder:isOrderedMap(Map)",
+                    "label": true
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_proxy_handlers_http_ntlm_HttpNTLMAuthLogicHandler": [
+                {
+                    "method": "HttpNTLMAuthLogicHandler:doHandshake(NextFilter)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "mina-transport-serial_src_main_java_org_apache_mina_transport_serial_SerialConnector": [
+                {
+                    "method": "SerialConnector:SerialConnector(Executor)",
+                    "label": false
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_logging_LoggingFilter": [
+                {
+                    "method": "LoggingFilter:exceptionCaught(NextFilter,IoSession,Throwable)",
+                    "label": false
+                },
+                {
+                    "method": "LoggingFilter:sessionCreated(NextFilter,IoSession)",
+                    "label": false
+                },
+                {
+                    "method": "LoggingFilter:sessionOpened(NextFilter,IoSession)",
+                    "label": false
+                },
+                {
+                    "method": "LoggingFilter:sessionIdle(NextFilter,IoSession,IdleStatus)",
+                    "label": false
+                },
+                {
+                    "method": "LoggingFilter:messageReceived(NextFilter,IoSession,Object)",
+                    "label": false
+                },
+                {
+                    "method": "LoggingFilter:sessionClosed(NextFilter,IoSession)",
+                    "label": false
+                },
+                {
+                    "method": "LoggingFilter:messageSent(NextFilter,IoSession,WriteRequest)",
+                    "label": false
+                }
+            ],
+            "mina-core_src_main_java_org_apache_mina_filter_firewall_BlacklistFilter": [
+                {
+                    "method": "BlacklistFilter:sessionClosed(NextFilter,IoSession)",
+                    "label": false
+                },
+                {
+                    "method": "BlacklistFilter:messageReceived(NextFilter,IoSession,Object)",
+                    "label": false
+                },
+                {
+                    "method": "BlacklistFilter:messageSent(NextFilter,IoSession,WriteRequest)",
+                    "label": false
+                },
+                {
+                    "method": "BlacklistFilter:sessionOpened(NextFilter,IoSession)",
+                    "label": false
+                },
+                {
+                    "method": "BlacklistFilter:sessionIdle(NextFilter,IoSession,IdleStatus)",
+                    "label": false
+                },
+                {
+                    "method": "BlacklistFilter:sessionCreated(NextFilter,IoSession)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-10072": {
+        "patchMethod": {
+            "java_org_apache_coyote_http2_Http2UpgradeHandler": [
+                {
+                    "method": "Http2UpgradeHandler:reserveWindowSize(Stream,int,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "Http2UpgradeHandler:close()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "java_org_apache_coyote_http2_Stream": [
+                {
+                    "method": "Stream:doWriteTimeout()",
+                    "label": false
+                },
+                {
+                    "method": "Stream:reserveWindowSize(int,boolean)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-10093": {
+        "patchMethod": {
+            "tika-parsers_src_main_java_org_apache_tika_parser_microsoft_xml_AbstractXML2003Parser": [
+                {
+                    "method": "AbstractXML2003Parser:parse(InputStream,ContentHandler,Metadata,ParseContext)",
+                    "label": true
+                }
+            ],
+            "tika-parsers_src_main_java_org_apache_tika_parser_pkg_StreamingZipContainerDetector": [
+                {
+                    "method": "StreamingZipContainerDetector:parseOOXMLContentTypes(InputStream)",
+                    "label": true
+                }
+            ],
+            "tika-parsers_src_main_java_org_apache_tika_parser_microsoft_ooxml_xwpf_ml2006_Word2006MLParser": [
+                {
+                    "method": "Word2006MLParser:parse(InputStream,ContentHandler,Metadata,ParseContext)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "tika-core_src_main_java_org_apache_tika_utils_XMLReaderUtils": [
+                {
+                    "method": "XMLReaderUtils:acquireSAXParser()",
+                    "label": false
+                },
+                {
+                    "method": "XMLReaderUtils:acquireDOMBuilder()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-10174": {
+        "patchMethod": {
+            "commons_src_main_java_org_infinispan_commons_util_ReflectionUtil": [
+                {
+                    "method": "ReflectionUtil:invokeMethod(Object,Method,Object)",
+                    "label": true
+                },
+                {
+                    "method": "ReflectionUtil:invokeAccessibly(Object,Method,Object)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_infinispan_factories_impl_BasicComponentRegistryImpl": [
+                {
+                    "method": "BasicComponentRegistryImpl:performStop(ComponentWrapper)",
+                    "label": true
+                },
+                {
+                    "method": "BasicComponentRegistryImpl:setInjectionField(Object,ComponentMetadata.InjectFieldMetadata,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "BasicComponentRegistryImpl:startWrapper(ComponentWrapper)",
+                    "label": true
+                },
+                {
+                    "method": "BasicComponentRegistryImpl:invokeInjectionMethod(Object,ComponentMetadata.InjectMethodMetadata,boolean)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_infinispan_factories_impl_SecurityActions": [
+                {
+                    "method": "SecurityActions:setAccessible(AccessibleObject)",
+                    "label": true
+                },
+                {
+                    "method": "SecurityActions:doPrivileged(PrivilegedAction)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_infinispan_distribution_group_impl_GroupManagerImpl": [
+                {
+                    "method": "GroupManagerImpl$GroupMetadataImpl:getGroup(Object)",
+                    "label": true
+                }
+            ],
+            "commons_src_main_java_org_infinispan_commons_util_SecurityActions": [
+                {
+                    "method": "SecurityActions:invokeAccessibly(Object,Method,Object)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_infinispan_factories_AbstractComponentRegistry": [
+                {
+                    "method": "AbstractComponentRegistry:invokeAccessibly(Object,Method,Object)",
+                    "label": true
+                },
+                {
+                    "method": "AbstractComponentRegistry:invokeInjectionMethod(Object,ComponentMetadata.InjectMetadata)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_infinispan_factories_SecurityActions": [
+                {
+                    "method": "SecurityActions:doPrivileged(PrivilegedAction)",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_org_infinispan_distribution_group_GroupManagerImpl": [
+                {
+                    "method": "GroupManagerImpl$GroupMetadataImpl:getGroup(Object)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "commons_src_main_java_org_infinispan_commons_util_ReflectionUtil": [
+                {
+                    "method": "ReflectionUtil:setAccessibly(Object,Field,Object)",
+                    "label": false
+                },
+                {
+                    "method": "ReflectionUtil:getAnnotation(Class,Class)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-19899": {
+        "patchMethod": {
+            "pebble_src_main_java_com_mitchellbosecke_pebble_attributes_UnsafeMethods": [
+                {
+                    "method": "UnsafeMethods:createPrimitiveClassesMap()",
+                    "label": true
+                },
+                {
+                    "method": "UnsafeMethods:parseMethodSpec(String,Map)",
+                    "label": true
+                },
+                {
+                    "method": "UnsafeMethods:createUnsafeMethodsSet()",
+                    "label": true
+                },
+                {
+                    "method": "UnsafeMethods:loadProperties(String)",
+                    "label": true
+                },
+                {
+                    "method": "UnsafeMethods:isUnsafeMethod(Method)",
+                    "label": true
+                }
+            ],
+            "pebble_src_main_java_com_mitchellbosecke_pebble_attributes_MemberCacheUtils": [
+                {
+                    "method": "MemberCacheUtils:verifyUnsafeMethod(String,int,EvaluationOptions,Method)",
+                    "label": true
+                },
+                {
+                    "method": "MemberCacheUtils:findMethod(Class,String,Class,String,int,EvaluationOptions)",
+                    "label": true
+                }
+            ],
+            "pebble_src_main_java_com_mitchellbosecke_pebble_PebbleEngine": [
+                {
+                    "method": "PebbleEngine$Builder:buildExtensionRegistry()",
+                    "label": false
+                },
+                {
+                    "method": "PebbleEngine$Builder:build()",
+                    "label": false
+                }
+            ]
+        },
+        "invalidMethod": {
+            "pebble_src_main_java_com_mitchellbosecke_pebble_template_EvaluationOptions": [
+                {
+                    "method": "EvaluationOptions:isGreedyMatchMethod()",
+                    "label": false
+                },
+                {
+                    "method": "EvaluationOptions:setAllowGetClass(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "EvaluationOptions:isAllowGetClass()",
+                    "label": false
+                }
+            ],
+            "pebble_src_main_java_com_mitchellbosecke_pebble_attributes_UnsafeMethods": [
+                {
+                    "method": "UnsafeMethods:UnsafeMethods()",
+                    "label": false
+                }
+            ],
+            "pebble_src_main_java_com_mitchellbosecke_pebble_PebbleEngine": [
+                {
+                    "method": "PebbleEngine$Builder:allowGetClass(boolean)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-12415": {
+        "patchMethod": {
+            "src_ooxml_java_org_apache_poi_xssf_streaming_SheetDataWriter": [
+                {
+                    "method": "SheetDataWriter:writeCell(int,Cell)",
+                    "label": true
+                }
+            ],
+            "src_ooxml_java_org_apache_poi_xssf_streaming_SXSSFCell": [
+                {
+                    "method": "SXSSFCell$RichTextStringFormulaValue:getFormulaType()",
+                    "label": false
+                },
+                {
+                    "method": "SXSSFCell:getStringCellValue()",
+                    "label": true
+                },
+                {
+                    "method": "SXSSFCell:setCellValue(RichTextString)",
+                    "label": true
+                },
+                {
+                    "method": "SXSSFCell:ensureRichTextStringType()",
+                    "label": true
+                },
+                {
+                    "method": "SXSSFCell:setCellValue(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "src_ooxml_java_org_apache_poi_xssf_streaming_SXSSFCell": [
+                {
+                    "method": "SXSSFCell$RichTextStringFormulaValue:setPreEvaluatedValue(RichTextString)",
+                    "label": false
+                },
+                {
+                    "method": "SXSSFCell$RichTextStringFormulaValue:getPreEvaluatedValue()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-12423": {
+        "patchMethod": {
+            "rt_rs_security_sso_oidc_src_main_java_org_apache_cxf_rs_security_oidc_idp_OidcKeysService": [
+                {
+                    "method": "OidcKeysService:getPublicVerificationKeys()",
+                    "label": true
+                },
+                {
+                    "method": "OidcKeysService:getFromLocalStore()",
+                    "label": true
+                }
+            ],
+            "rt_rs_security_jose-parent_jose_src_main_java_org_apache_cxf_rs_security_jose_jwk_JwkUtils": [
+                {
+                    "method": "JwkUtils:loadJsonWebKeys(Message,Properties,KeyOperation)",
+                    "label": false
+                },
+                {
+                    "method": "JwkUtils:stripPrivateParameters(List)",
+                    "label": true
+                }
+            ],
+            "rt_rs_security_jose-parent_jose_src_main_java_org_apache_cxf_rs_security_jose_jws_JwsUtils": [
+                {
+                    "method": "JwsUtils:loadPublicVerificationKeys(Message,Properties)",
+                    "label": true
+                }
+            ],
+            "rt_rs_security_jose-parent_jose_src_main_java_org_apache_cxf_rs_security_jose_jwk_JsonWebKeys": [
+                {
+                    "method": "JsonWebKeys:JsonWebKeys(List)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "rt_rs_security_sso_oidc_src_main_java_org_apache_cxf_rs_security_oidc_idp_OidcKeysService": [
+                {
+                    "method": "OidcKeysService:setStripPrivateParameters(boolean)",
+                    "label": false
+                },
+                {
+                    "method": "OidcKeysService:isStripPrivateParameters()",
+                    "label": false
+                }
+            ],
+            "rt_rs_security_jose-parent_jose_src_main_java_org_apache_cxf_rs_security_jose_jwk_JsonWebKeys": [
+                {
+                    "method": "JsonWebKeys:JsonWebKeys(JsonWebKey)",
+                    "label": false
+                },
+                {
+                    "method": "JsonWebKeys:setInitKey(JsonWebKey)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2019-14888": {
+        "patchMethod": {
+            "core_src_main_java_io_undertow_protocols_http2_Http2Channel": [
+                {
+                    "method": "Http2Channel:lastDataRead()",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_io_undertow_server_protocol_framed_AbstractFramedChannel": [
+                {
+                    "method": "AbstractFramedChannel:receive()",
+                    "label": true
+                },
+                {
+                    "method": "AbstractFramedChannel:close()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "core_src_main_java_io_undertow_protocols_ajp_AjpClientChannel": [
+                {
+                    "method": "AjpClientChannel:lastDataRead()",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_io_undertow_server_protocol_framed_AbstractFramedStreamSinkChannel": [
+                {
+                    "method": "AbstractFramedStreamSinkChannel:close()",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_io_undertow_websockets_core_WebSocketChannel": [
+                {
+                    "method": "WebSocketChannel:lastDataRead()",
+                    "label": true
+                }
+            ],
+            "core_src_main_java_io_undertow_server_protocol_framed_AbstractFramedStreamSourceChannel": [
+                {
+                    "method": "AbstractFramedStreamSourceChannel:close()",
+                    "label": true
+                }
+            ]
+        }
+    },
+    "CVE-2019-17563": {
+        "patchMethod": {
+            "java_org_apache_catalina_authenticator_FormAuthenticator": [
+                {
+                    "method": "FormAuthenticator:matchRequest(Request)",
+                    "label": true
+                },
+                {
+                    "method": "FormAuthenticator:doAuthenticate(Request,HttpServletResponse)",
+                    "label": true
+                },
+                {
+                    "method": "FormAuthenticator:restoreRequest(Request,Session)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "java_org_apache_catalina_authenticator_AuthenticatorBase": [
+                {
+                    "method": "AuthenticatorBase:register(Request,HttpServletResponse,Principal,String,String,String,boolean,boolean)",
+                    "label": true
+                }
+            ]
+        }
+    },
+    "CVE-2019-17572": {
+        "patchMethod": {
+            "broker_src_main_java_org_apache_rocketmq_broker_topic_TopicConfigManager": [
+                {
+                    "method": "TopicConfigManager:isTopicCanSendMessage(String)",
+                    "label": true
+                }
+            ],
+            "broker_src_main_java_org_apache_rocketmq_broker_topic_TopicValidator": [
+                {
+                    "method": "TopicValidator:regularExpressionMatcher(String,Pattern)",
+                    "label": true
+                },
+                {
+                    "method": "TopicValidator:validateTopic(String,RemotingCommand)",
+                    "label": true
+                }
+            ],
+            "broker_src_main_java_org_apache_rocketmq_broker_processor_AdminBrokerProcessor": [
+                {
+                    "method": "AdminBrokerProcessor:updateAndCreateTopic(ChannelHandlerContext,RemotingCommand)",
+                    "label": true
+                }
+            ],
+            "broker_src_main_java_org_apache_rocketmq_broker_processor_AbstractSendMessageProcessor": [
+                {
+                    "method": "AbstractSendMessageProcessor:msgCheck(ChannelHandlerContext,SendMessageRequestHeader,RemotingCommand)",
+                    "label": true
+                }
+            ],
+            "client_src_main_java_org_apache_rocketmq_client_impl_MQAdminImpl": [
+                {
+                    "method": "MQAdminImpl:createTopic(String,String,int,int)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "client_src_main_java_org_apache_rocketmq_client_impl_MQClientAPIImpl": [
+                {
+                    "method": "MQClientAPIImpl:createPlainAccessConfig(String,PlainAccessConfig,long)",
+                    "label": false
+                }
+            ],
+            "common_src_main_java_org_apache_rocketmq_common_UtilAll": [
+                {
+                    "method": "UtilAll:String2List(String,String)",
+                    "label": false
+                },
+                {
+                    "method": "UtilAll:List2String(List,String)",
+                    "label": false
+                }
+            ],
+            "client_src_main_java_org_apache_rocketmq_client_Validators": [
+                {
+                    "method": "Validators:checkMessage(Message,DefaultMQProducer)",
+                    "label": false
+                },
+                {
+                    "method": "Validators:checkTopic(String)",
+                    "label": false
+                }
+            ],
+            "broker_src_main_java_org_apache_rocketmq_broker_processor_AdminBrokerProcessor": [
+                {
+                    "method": "AdminBrokerProcessor:updateGlobalWhiteAddrsConfig(ChannelHandlerContext,RemotingCommand)",
+                    "label": false
+                },
+                {
+                    "method": "AdminBrokerProcessor:updateAndCreateAccessConfig(ChannelHandlerContext,RemotingCommand)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2020-11002": {
+        "patchMethod": {
+            "dropwizard-validation_src_main_java_io_dropwizard_validation_selfvalidating_SelfValidatingValidator": [
+                {
+                    "method": "SelfValidatingValidator:isValid(Object,ConstraintValidatorContext)",
+                    "label": true
+                },
+                {
+                    "method": "SelfValidatingValidator:initialize(SelfValidating)",
+                    "label": true
+                }
+            ],
+            "dropwizard-validation_src_main_java_io_dropwizard_validation_InterpolationHelper": [
+                {
+                    "method": "InterpolationHelper:escapeMessageParameter(String)",
+                    "label": true
+                }
+            ],
+            "dropwizard-validation_src_main_java_io_dropwizard_validation_selfvalidating_ViolationCollector": [
+                {
+                    "method": "ViolationCollector:escapeEl(String)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:getContextWithMessageParameters(Map)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:addViolation(String,String)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:addViolation(String,Integer,String,Map)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:addViolation(String)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:sanitizeTemplate(String)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:addViolation(String,String,String)",
+                    "label": true
+                },
+                {
+                    "method": "ViolationCollector:addViolation(String,Integer,String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "dropwizard-validation_src_main_java_io_dropwizard_validation_InterpolationHelper": [
+                {
+                    "method": "InterpolationHelper:InterpolationHelper()",
+                    "label": false
+                }
+            ],
+            "dropwizard-validation_src_main_java_io_dropwizard_validation_selfvalidating_ViolationCollector": [
+                {
+                    "method": "ViolationCollector:ViolationCollector(ConstraintValidatorContext)",
+                    "label": false
+                },
+                {
+                    "method": "ViolationCollector:getContext()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2020-13940": {
+        "patchMethod": {
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-framework-core_src_main_java_org_apache_nifi_fingerprint_FingerprintFactory": [
+                {
+                    "method": "FingerprintFactory:FingerprintFactory(StringEncryptor,ExtensionManager)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-file-authorizer_src_main_java_org_apache_nifi_authorization_FileAccessPolicyProvider": [
+                {
+                    "method": "FileAccessPolicyProvider:parsePolicies(String)",
+                    "label": true
+                }
+            ],
+            "nifi-toolkit_nifi-toolkit-flowanalyzer_src_main_java_org_apache_nifi_toolkit_flowanalyzer_FlowAnalyzerDriver": [
+                {
+                    "method": "FlowAnalyzerDriver:main(String)",
+                    "label": true
+                },
+                {
+                    "method": "FlowAnalyzerDriver:helpRequested(String)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_util_DocumentReaderCallback": [
+                {
+                    "method": "DocumentReaderCallback:process(InputStream)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_EvaluateXQuery": [
+                {
+                    "method": "EvaluateXQuery:writeformattedItem(XdmItem,ProcessContext,OutputStream)",
+                    "label": false
+                },
+                {
+                    "method": "EvaluateXQuery:process(InputStream)",
+                    "label": true
+                }
+            ],
+            "nifi-commons_nifi-security-utils_src_main_java_org_apache_nifi_security_xml_XmlUtils": [
+                {
+                    "method": "XmlUtils:createSafeDocumentBuilder(Schema,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "XmlUtils:createSafeDocumentBuilder(Schema)",
+                    "label": true
+                },
+                {
+                    "method": "XmlUtils:createSafeDocumentBuilder(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "XmlUtils:createSafeSaxReader(SAXParserFactory,ContentHandler)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-framework-core_src_main_java_org_apache_nifi_controller_state_config_StateManagerConfiguration": [
+                {
+                    "method": "StateManagerConfiguration:parse(File)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-framework-core_src_main_java_org_apache_nifi_controller_service_ControllerServiceLoader": [
+                {
+                    "method": "ControllerServiceLoader:loadControllerServices(FlowController,InputStream,ProcessGroup,StringEncryptor,BulletinRepository,boolean,FlowEncodingVersion)",
+                    "label": true
+                }
+            ],
+            "nifi-bootstrap_src_main_java_org_apache_nifi_bootstrap_NotificationServiceManager": [
+                {
+                    "method": "NotificationServiceManager:createSafeDocumentBuilder()",
+                    "label": true
+                },
+                {
+                    "method": "NotificationServiceManager:loadNotificationServices(File)",
+                    "label": true
+                }
+            ],
+            "nifi-framework-api_src_main_java_org_apache_nifi_authorization_AbstractPolicyBasedAuthorizer": [
+                {
+                    "method": "AbstractPolicyBasedAuthorizer:parsePoliciesUsersAndGroups(String)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-framework-core_src_main_java_org_apache_nifi_controller_serialization_StandardFlowSerializer": [
+                {
+                    "method": "StandardFlowSerializer:transform(FlowController,ScheduledStateLookup)",
+                    "label": true
+                },
+                {
+                    "method": "StandardFlowSerializer:addTemplate(Element,Template)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-framework-cluster-protocol_src_main_java_org_apache_nifi_cluster_protocol_StandardDataFlow": [
+                {
+                    "method": "StandardDataFlow:parseFlowBytes(byte)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-file-authorizer_src_main_java_org_apache_nifi_authorization_FlowParser": [
+                {
+                    "method": "FlowParser:parse(File)",
+                    "label": true
+                },
+                {
+                    "method": "FlowParser:FlowParser()",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-framework-authorization_src_main_java_org_apache_nifi_authorization_StandardManagedAuthorizer": [
+                {
+                    "method": "StandardManagedAuthorizer:parseFingerprint(String)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-framework-bundle_nifi-framework_nifi-file-authorizer_src_main_java_org_apache_nifi_authorization_FileUserGroupProvider": [
+                {
+                    "method": "FileUserGroupProvider:parseUsersAndGroups(String)",
+                    "label": true
+                }
+            ],
+            "nifi-nar-bundles_nifi-ranger-bundle_nifi-ranger-plugin_src_main_java_org_apache_nifi_ranger_authorization_ManagedRangerAuthorizer": [
+                {
+                    "method": "ManagedRangerAuthorizer:getFingerprint()",
+                    "label": true
+                },
+                {
+                    "method": "ManagedRangerAuthorizer:parseFingerprint(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_util_DocumentReaderCallback": [
+                {
+                    "method": "DocumentReaderCallback:DocumentReaderCallback(boolean)",
+                    "label": false
+                }
+            ],
+            "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_EvaluateXQuery": [
+                {
+                    "method": "EvaluateXQuery:onTrigger(ProcessContext,ProcessSession)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2020-13942": {
+        "patchMethod": {
+            "common_src_main_java_org_apache_unomi_common_SecureFilteringClassLoader": [
+                {
+                    "method": "SecureFilteringClassLoader:classNameMatches(Set,String)",
+                    "label": false
+                },
+                {
+                    "method": "SecureFilteringClassLoader:loadClass(String)",
+                    "label": true
+                }
+            ],
+            "scripting_src_main_java_org_apache_unomi_scripting_MvelScriptExecutor": [
+                {
+                    "method": "MvelScriptExecutor:execute(String,Map)",
+                    "label": true
+                }
+            ],
+            "wab_src_main_java_org_apache_unomi_web_ContextServlet": [
+                {
+                    "method": "ContextServlet:sanitizePersonalizedContentObjects(List)",
+                    "label": true
+                },
+                {
+                    "method": "ContextServlet:sanitizeCondition(Condition)",
+                    "label": true
+                },
+                {
+                    "method": "ContextServlet:sanitizePersonalizations(List)",
+                    "label": true
+                },
+                {
+                    "method": "ContextServlet:sanitizeValue(Object)",
+                    "label": true
+                },
+                {
+                    "method": "ContextServlet:handleRequest(ContextRequest,Session,Profile,ContextResponse,ServletRequest,ServletResponse,Date)",
+                    "label": true
+                }
+            ],
+            "scripting_src_main_java_org_apache_unomi_scripting_ExpressionFilter": [
+                {
+                    "method": "ExpressionFilter:expressionMatches(String,Set)",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilter:filter(String)",
+                    "label": true
+                }
+            ],
+            "services_src_main_java_org_apache_unomi_services_actions_ActionExecutorDispatcher": [
+                {
+                    "method": "ActionExecutorDispatcher:executeScript(String,Event)",
+                    "label": true
+                }
+            ],
+            "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PastEventConditionESQueryBuilder": [
+                {
+                    "method": "PastEventConditionESQueryBuilder:getEventCondition(Condition,Map)",
+                    "label": true
+                }
+            ],
+            "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PastEventConditionEvaluator": [
+                {
+                    "method": "PastEventConditionEvaluator:eval(Condition,Item,Map,ConditionEvaluatorDispatcher)",
+                    "label": true
+                }
+            ],
+            "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PropertyConditionEvaluator": [
+                {
+                    "method": "PropertyConditionEvaluator:getPropertyValue(Item,String)",
+                    "label": true
+                },
+                {
+                    "method": "PropertyConditionEvaluator:getHardcodedPropertyValue(Item,String)",
+                    "label": true
+                },
+                {
+                    "method": "PropertyConditionEvaluator:getOGNLPropertyValue(Item,String)",
+                    "label": true
+                },
+                {
+                    "method": "PropertyConditionEvaluator:isAccessible(Map,Object,Member,String)",
+                    "label": true
+                }
+            ],
+            "scripting_src_main_java_org_apache_unomi_scripting_internal_ExpressionFilterFactoryImpl": [
+                {
+                    "method": "ExpressionFilterFactoryImpl:bundleChanged(BundleEvent)",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:init()",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:loadPredefinedAllowedPatterns(BundleContext)",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:processBundleStop(BundleContext)",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:removePredefinedAllowedPatterns(BundleContext)",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:destroy()",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:getExpressionFilter(String)",
+                    "label": true
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:processBundleStartup(BundleContext)",
+                    "label": true
+                }
+            ],
+            "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionContextHelper": [
+                {
+                    "method": "ConditionContextHelper:executeScript(Map,String)",
+                    "label": true
+                },
+                {
+                    "method": "ConditionContextHelper:parseParameter(Map,Object)",
+                    "label": true
+                },
+                {
+                    "method": "ConditionContextHelper:getContextualCondition(Condition,Map)",
+                    "label": true
+                }
+            ],
+            "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionESQueryBuilderDispatcher": [
+                {
+                    "method": "ConditionESQueryBuilderDispatcher:buildFilter(Condition,Map)",
+                    "label": true
+                },
+                {
+                    "method": "ConditionESQueryBuilderDispatcher:count(Condition,Map)",
+                    "label": true
+                }
+            ],
+            "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionEvaluatorDispatcher": [
+                {
+                    "method": "ConditionEvaluatorDispatcher:execute(Object)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "common_src_main_java_org_apache_unomi_common_SecureFilteringClassLoader": [
+                {
+                    "method": "SecureFilteringClassLoader:SecureFilteringClassLoader(ClassLoader)",
+                    "label": false
+                },
+                {
+                    "method": "SecureFilteringClassLoader:SecureFilteringClassLoader(Set,Set,ClassLoader)",
+                    "label": false
+                }
+            ],
+            "scripting_src_main_java_org_apache_unomi_scripting_MvelScriptExecutor": [
+                {
+                    "method": "MvelScriptExecutor:setExpressionFilterFactory(ExpressionFilterFactory)",
+                    "label": false
+                }
+            ],
+            "scripting_src_main_java_org_apache_unomi_scripting_ExpressionFilter": [
+                {
+                    "method": "ExpressionFilter:ExpressionFilter(Set,Set)",
+                    "label": false
+                }
+            ],
+            "services_src_main_java_org_apache_unomi_services_actions_ActionExecutorDispatcher": [
+                {
+                    "method": "ActionExecutorDispatcher:setScriptExecutor(ScriptExecutor)",
+                    "label": false
+                }
+            ],
+            "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PastEventConditionESQueryBuilder": [
+                {
+                    "method": "PastEventConditionESQueryBuilder:setScriptExecutor(ScriptExecutor)",
+                    "label": false
+                }
+            ],
+            "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PastEventConditionEvaluator": [
+                {
+                    "method": "PastEventConditionEvaluator:setScriptExecutor(ScriptExecutor)",
+                    "label": false
+                }
+            ],
+            "plugins_baseplugin_src_main_java_org_apache_unomi_plugins_baseplugin_conditions_PropertyConditionEvaluator": [
+                {
+                    "method": "PropertyConditionEvaluator:setExpressionFilterFactory(ExpressionFilterFactory)",
+                    "label": false
+                }
+            ],
+            "scripting_src_main_java_org_apache_unomi_scripting_internal_ExpressionFilterFactoryImpl": [
+                {
+                    "method": "ExpressionFilterFactoryImpl:ExpressionFilterFactoryImpl()",
+                    "label": false
+                },
+                {
+                    "method": "ExpressionFilterFactoryImpl:setBundleContext(BundleContext)",
+                    "label": false
+                }
+            ],
+            "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionESQueryBuilderDispatcher": [
+                {
+                    "method": "ConditionESQueryBuilderDispatcher:setScriptExecutor(ScriptExecutor)",
+                    "label": false
+                }
+            ],
+            "persistence-elasticsearch_core_src_main_java_org_apache_unomi_persistence_elasticsearch_conditions_ConditionEvaluatorDispatcher": [
+                {
+                    "method": "ConditionEvaluatorDispatcher:setScriptExecutor(ScriptExecutor)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2020-1729": {
+        "patchMethod": {
+            "implementation_src_main_java_io_smallrye_config_SecuritySupport": [
+                {
+                    "method": "SecuritySupport:getContextClassLoader()",
+                    "label": true
+                }
+            ],
+            "implementation_src_main_java_io_smallrye_config_inject_SecuritySupport": [
+                {
+                    "method": "SecuritySupport:getContextClassLoader()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "implementation_src_main_java_io_smallrye_config_inject_SecuritySupport": [
+                {
+                    "method": "SecuritySupport:SecuritySupport()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2020-1945": {
+        "patchMethod": {
+            "src_main_org_apache_tools_ant_util_FileUtils": [
+                {
+                    "method": "FileUtils:createTempFile(Project,String,String,File,boolean,boolean)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "src_main_org_apache_tools_ant_util_FileUtils": [
+                {
+                    "method": "FileUtils:createTempFile(String,String,File)",
+                    "label": false
+                },
+                {
+                    "method": "FileUtils:createTempFile(String,String,File,boolean)",
+                    "label": false
+                },
+                {
+                    "method": "FileUtils:createTempFile(String,String,File,boolean,boolean)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2021-29485": {
+        "patchMethod": {
+            "ratpack-session_src_main_java_ratpack_session_internal_InsecureSessionSerializerWarning": [
+                {
+                    "method": "InsecureSessionSerializerWarning:log(Class)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_AllowListSessionTypeFilterPlugin": [
+                {
+                    "method": "AllowListSessionTypeFilterPlugin:AllowListSessionTypeFilterPlugin(Collection)",
+                    "label": false
+                },
+                {
+                    "method": "AllowListSessionTypeFilterPlugin:ofClasses(Class)",
+                    "label": false
+                },
+                {
+                    "method": "AllowListSessionTypeFilterPlugin:allow(String)",
+                    "label": false
+                }
+            ],
+            "ratpack-core_src_main_java_ratpack_http_internal_DefaultResponse": [
+                {
+                    "method": "DefaultResponse:sendStream(Publisher)",
+                    "label": false
+                },
+                {
+                    "method": "DefaultResponse:finalizeResponse(Runnable)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultResponse:finalizeResponse(Iterator,Runnable)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultResponse:commit(ByteBuf)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultResponse:sendFile(Path)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_CompositeSessionTypeFilter": [
+                {
+                    "method": "CompositeSessionTypeFilter:allow(String)",
+                    "label": true
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_DefaultSession": [
+                {
+                    "method": "DefaultSession$Data:get(SessionKey,SessionSerializer)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultSession:hydrate(ByteBuf)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultSession$Data:set(SessionKey,T,SessionSerializer)",
+                    "label": true
+                },
+                {
+                    "method": "DefaultSession:serialize()",
+                    "label": true
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_JavaBuiltinSessionSerializer": [
+                {
+                    "method": "JavaBuiltinSessionSerializer$TypeFilteringObjectInputStream:resolveClass(ObjectStreamClass)",
+                    "label": true
+                },
+                {
+                    "method": "JavaBuiltinSessionSerializer$TypeFilteringObjectOutputStream:writeClassDescriptor(ObjectStreamClass)",
+                    "label": true
+                },
+                {
+                    "method": "JavaBuiltinSessionSerializer:deserialize(Class,InputStream)",
+                    "label": true
+                },
+                {
+                    "method": "JavaBuiltinSessionSerializer:serialize(Class,T,OutputStream)",
+                    "label": true
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_UnsafeAllowAllSessionTypeFilter": [
+                {
+                    "method": "UnsafeAllowAllSessionTypeFilter:allow(String)",
+                    "label": true
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_SessionModule": [
+                {
+                    "method": "SessionModule:sessionTypeFilter(Set)",
+                    "label": true
+                },
+                {
+                    "method": "SessionModule:bindSessionTypeFilterPlugin(Binder)",
+                    "label": true
+                },
+                {
+                    "method": "SessionModule:allowTypes(Binder,Class)",
+                    "label": true
+                },
+                {
+                    "method": "SessionModule:configure()",
+                    "label": true
+                },
+                {
+                    "method": "SessionModule:sessionAdapter(SessionId,SessionStore,Response,ByteBufAllocator,SessionSerializer,JavaSessionSerializer)",
+                    "label": true
+                }
+            ],
+            "ratpack-pac4j_src_main_java_ratpack_pac4j_Pac4jSessionModule": [
+                {
+                    "method": "Pac4jSessionModule:configure()",
+                    "label": true
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_DefaultSessionKey": [
+                {
+                    "method": "DefaultSessionKey:equals(Object)",
+                    "label": false
+                },
+                {
+                    "method": "DefaultSessionKey:DefaultSessionKey(String,Class)",
+                    "label": false
+                }
+            ]
+        },
+        "invalidMethod": {
+            "ratpack-session_src_main_java_ratpack_session_internal_InsecureSessionSerializerWarning": [
+                {
+                    "method": "InsecureSessionSerializerWarning:InsecureSessionSerializerWarning()",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_CompositeSessionTypeFilter": [
+                {
+                    "method": "CompositeSessionTypeFilter:CompositeSessionTypeFilter(Iterable)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_DefaultSession": [
+                {
+                    "method": "DefaultSession:DefaultSession(SessionId,ByteBufAllocator,SessionStore,Response,SessionSerializer,JavaSessionSerializer)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_JdkSessionTypeFilterPlugin": [
+                {
+                    "method": "JdkSessionTypeFilterPlugin:JdkSessionTypeFilterPlugin()",
+                    "label": false
+                }
+            ],
+            "ratpack-pac4j_src_main_java_ratpack_pac4j_RatpackPac4j": [
+                {
+                    "method": "RatpackPac4j:login(Context,Class)",
+                    "label": false
+                },
+                {
+                    "method": "RatpackPac4j:userProfile(Context)",
+                    "label": false
+                },
+                {
+                    "method": "RatpackPac4j:logout(Context)",
+                    "label": false
+                },
+                {
+                    "method": "RatpackPac4j:requireAuth(Class,Authorizer)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_JavaBuiltinSessionSerializer": [
+                {
+                    "method": "JavaBuiltinSessionSerializer$TypeFilteringObjectOutputStream:TypeFilteringObjectOutputStream(OutputStream,SessionTypeFilter)",
+                    "label": false
+                },
+                {
+                    "method": "JavaBuiltinSessionSerializer$TypeFilteringObjectInputStream:TypeFilteringObjectInputStream(InputStream,SessionTypeFilter)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_RatpackSessionTypeFilterPlugin": [
+                {
+                    "method": "RatpackSessionTypeFilterPlugin:RatpackSessionTypeFilterPlugin()",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_NonAllowedSessionTypeException": [
+                {
+                    "method": "NonAllowedSessionTypeException:NonAllowedSessionTypeException(String)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_SessionModule": [
+                {
+                    "method": "SessionModule:memoryStore(Consumer)",
+                    "label": false
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_internal_DefaultSessionKey": [
+                {
+                    "method": "DefaultSessionKey:toString()",
+                    "label": false
+                },
+                {
+                    "method": "DefaultSessionKey:getType()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2021-29451": {
+        "patchMethod": {
+            "dispatcher_src_main_java_com_manydesigns_portofino_dispatcher_security_jwt_JWTRealm": [
+                {
+                    "method": "JWTRealm:doGetAuthenticationInfo(AuthenticationToken)",
+                    "label": true
+                }
+            ],
+            "portofino-core_src_main_java_com_manydesigns_portofino_shiro_AbstractPortofinoRealm": [
+                {
+                    "method": "AbstractPortofinoRealm:loadAuthenticationInfo(JSONWebToken)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "dispatcher_src_main_java_com_manydesigns_portofino_dispatcher_security_jwt_JWTRealm": [
+                {
+                    "method": "JWTRealm:getPrincipal(Jwt)",
+                    "label": false
+                }
+            ],
+            "portofino-core_src_main_java_com_manydesigns_portofino_shiro_AbstractPortofinoRealm": [
+                {
+                    "method": "AbstractPortofinoRealm:extractPrincipalFromWebToken(Jwt)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2021-29481": {
+        "patchMethod": {
+            "ratpack-session_src_main_java_ratpack_session_clientside_ClientSideSessionModule": [
+                {
+                    "method": "ClientSideSessionModule:signer(ClientSideSessionConfig)",
+                    "label": true
+                },
+                {
+                    "method": "ClientSideSessionModule:crypto(ClientSideSessionConfig)",
+                    "label": true
+                }
+            ],
+            "ratpack-session_src_main_java_ratpack_session_clientside_ClientSideSessionConfig": [
+                {
+                    "method": "ClientSideSessionConfig:randomString(int)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "ratpack-session_src_main_java_ratpack_session_clientside_ClientSideSessionConfig": [
+                {
+                    "method": "ClientSideSessionConfig:getSecretToken()",
+                    "label": false
+                },
+                {
+                    "method": "ClientSideSessionConfig:setSecretKey(String)",
+                    "label": false
+                },
+                {
+                    "method": "ClientSideSessionConfig:getCipherAlgorithm()",
+                    "label": false
+                },
+                {
+                    "method": "ClientSideSessionConfig:setCipherAlgorithm(String)",
+                    "label": false
+                },
+                {
+                    "method": "ClientSideSessionConfig:getSecretKey()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2021-36162": {
+        "patchMethod": {
+            "dubbo-cluster_src_main_java_org_apache_dubbo_rpc_cluster_router_mesh_route_MeshRuleManager": [
+                {
+                    "method": "MeshRuleManager:subscribeAppRule(String)",
+                    "label": true
+                }
+            ],
+            "dubbo-registry_dubbo-registry-kubernetes_src_main_java_org_apache_dubbo_registry_kubernetes_KubernetesServiceDiscovery": [
+                {
+                    "method": "KubernetesServiceDiscovery:doInitialize(URL)",
+                    "label": true
+                }
+            ],
+            "dubbo-registry_dubbo-registry-kubernetes_src_main_java_org_apache_dubbo_registry_kubernetes_MeshConstant": [
+                {
+                    "method": "MeshConstant:getDrDefinition()",
+                    "label": true
+                },
+                {
+                    "method": "MeshConstant:getVsDefinition()",
+                    "label": true
+                }
+            ],
+            "dubbo-config_dubbo-config-api_src_main_java_org_apache_dubbo_config_utils_ConfigValidationUtils": [
+                {
+                    "method": "ConfigValidationUtils:checkProperty(String,String,int,Pattern)",
+                    "label": false
+                }
+            ],
+            "dubbo-registry_dubbo-registry-kubernetes_src_main_java_org_apache_dubbo_registry_kubernetes_KubernetesMeshEnvListener": [
+                {
+                    "method": "KubernetesMeshEnvListener:notifyOnce(String)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:subscribeVs(String)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:onUnSubscribe(String)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:onSubscribe(String,MeshAppRuleListener)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:eventReceived(Action,String)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:notifyListener(String,String,String)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:subscribeDr(String)",
+                    "label": true
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:injectKubernetesEnv(KubernetesClient,String)",
+                    "label": true
+                }
+            ],
+            "dubbo-common_src_main_java_org_apache_dubbo_common_utils_PojoUtils": [
+                {
+                    "method": "PojoUtils:convertParameterizedType(Object,ParameterizedType)",
+                    "label": true
+                },
+                {
+                    "method": "PojoUtils:getFieldObject(Object,Type)",
+                    "label": true
+                },
+                {
+                    "method": "PojoUtils:mapToPojo(Map,Class)",
+                    "label": true
+                },
+                {
+                    "method": "PojoUtils:convertClassType(Object,Class)",
+                    "label": true
+                }
+            ],
+            "dubbo-cluster_src_main_java_org_apache_dubbo_rpc_cluster_router_mesh_route_MeshAppRuleListener": [
+                {
+                    "method": "MeshAppRuleListener:receiveConfigInfo(String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "dubbo-registry_dubbo-registry-kubernetes_src_main_java_org_apache_dubbo_registry_kubernetes_KubernetesMeshEnvListener": [
+                {
+                    "method": "KubernetesMeshEnvListener:onClose(WatcherException)",
+                    "label": false
+                },
+                {
+                    "method": "KubernetesMeshEnvListener:isEnable()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2021-44145": {
+        "patchMethod": {
+            "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_TransformXml": [
+                {
+                    "method": "TransformXml$XsltValidator:validate(String,String,ValidationContext)",
+                    "label": true
+                },
+                {
+                    "method": "TransformXml:onTrigger(ProcessContext,ProcessSession)",
+                    "label": true
+                },
+                {
+                    "method": "TransformXml:getTemplateSource(LookupService,String,boolean)",
+                    "label": true
+                },
+                {
+                    "method": "TransformXml:getTransformerFactory(boolean)",
+                    "label": true
+                },
+                {
+                    "method": "TransformXml:getSecureSource(StreamSource)",
+                    "label": true
+                },
+                {
+                    "method": "TransformXml:process(InputStream,OutputStream)",
+                    "label": true
+                },
+                {
+                    "method": "TransformXml:newTemplates(ProcessContext,String)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "nifi-nar-bundles_nifi-standard-bundle_nifi-standard-processors_src_main_java_org_apache_nifi_processors_standard_TransformXml": [
+                {
+                    "method": "TransformXml:onScheduled(ProcessContext)",
+                    "label": false
+                },
+                {
+                    "method": "TransformXml:load(String)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2021-33668": {
+        "patchMethod": {
+            "scimono-client_src_main_java_com_sap_scimono_client_ClientJacksonResolver": [
+                {
+                    "method": "ClientJacksonResolver:getContext(Class)",
+                    "label": true
+                }
+            ],
+            "scimono-server_src_main_java_com_sap_scimono_entity_User": [
+                {
+                    "method": "User:User(String,String,Meta,Set,String,Name,String,String,String,String,String,String,String,String,Boolean,List,List,List,List,List,List,List,List,List)",
+                    "label": true
+                }
+            ],
+            "scimono-client_src_main_java_com_sap_scimono_client_SCIMClientService": [
+                {
+                    "method": "SCIMClientService$Builder:getDefaultResolvers()",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "scimono-server_src_main_java_com_sap_scimono_entity_User": [
+                {
+                    "method": "User:getPassword()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2022-24280": {
+        "patchMethod": {
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+                {
+                    "method": "ServiceChannelInitializer:initChannel(SocketChannel)",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ProxyService": [
+                {
+                    "method": "ProxyService:ProxyService(ProxyConfiguration,AuthenticationService)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyService:close()",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:handleConnected(CommandConnected)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler:DirectProxyHandler(ProxyService,ProxyConnection,String,int,Supplier)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler:initChannel(SocketChannel)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:verifyTlsHostName(String,ChannelHandlerContext)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:handleAuthChallenge(CommandAuthChallenge)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:channelActive(ChannelHandlerContext)",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_BrokerDiscoveryProvider": [
+                {
+                    "method": "BrokerDiscoveryProvider:getAvailableBrokers()",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_BrokerProxyValidator": [
+                {
+                    "method": "BrokerProxyValidator:isHostAllowed(String)",
+                    "label": true
+                },
+                {
+                    "method": "BrokerProxyValidator:parseCommaSeparatedConfigValue(String)",
+                    "label": true
+                },
+                {
+                    "method": "BrokerProxyValidator:resolveAndCheckTargetAddress(String)",
+                    "label": true
+                },
+                {
+                    "method": "BrokerProxyValidator:parseWildcardPattern(String)",
+                    "label": true
+                },
+                {
+                    "method": "BrokerProxyValidator:isPortAllowed(int)",
+                    "label": true
+                },
+                {
+                    "method": "BrokerProxyValidator:BrokerProxyValidator(AddressResolver,String,String,String)",
+                    "label": true
+                },
+                {
+                    "method": "BrokerProxyValidator:isIPAddressAllowed(InetSocketAddress)",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+                {
+                    "method": "ProxyConnection:isBrokerActive(String)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:matchesHostAndPort(String,String,String)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:getAvailableBrokers()",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:handleConnect(CommandConnect)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:completeConnect(AuthData)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:exceptionCaught(ChannelHandlerContext,Throwable)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:channelRegistered(ChannelHandlerContext)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+                {
+                    "method": "ServiceChannelInitializer:ServiceChannelInitializer(ProxyService,ProxyConfiguration,boolean)",
+                    "label": false
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:operationComplete(Future)",
+                    "label": false
+                }
+            ],
+            "pulsar-common_src_main_java_org_apache_pulsar_common_protocol_PulsarHandler": [
+                {
+                    "method": "PulsarHandler:cancelKeepAliveTask()",
+                    "label": false
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_TargetAddressDeniedException": [
+                {
+                    "method": "TargetAddressDeniedException:TargetAddressDeniedException(String)",
+                    "label": false
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+                {
+                    "method": "ProxyConnection:operationComplete(Future)",
+                    "label": false
+                },
+                {
+                    "method": "ProxyConnection:ProxyConnection(ProxyService,Supplier)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2022-33681": {
+        "patchMethod": {
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ServiceChannelInitializer": [
+                {
+                    "method": "ServiceChannelInitializer:get()",
+                    "label": true
+                },
+                {
+                    "method": "ServiceChannelInitializer:initChannel(SocketChannel)",
+                    "label": true
+                },
+                {
+                    "method": "ServiceChannelInitializer:ServiceChannelInitializer(ProxyService,ProxyConfiguration,boolean)",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:verifyTlsHostName(String,ChannelHandlerContext)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler:DirectProxyHandler(ProxyService,ProxyConnection)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler:initChannel(SocketChannel)",
+                    "label": true
+                },
+                {
+                    "method": "DirectProxyHandler$ProxyBackendHandler:handleConnected(CommandConnected)",
+                    "label": true
+                }
+            ],
+            "pulsar-client_src_main_java_org_apache_pulsar_client_impl_HttpClient": [
+                {
+                    "method": "HttpClient:HttpClient(ClientConfigurationData,EventLoopGroup)",
+                    "label": true
+                }
+            ],
+            "pulsar-client-admin_src_main_java_org_apache_pulsar_client_admin_internal_http_AsyncHttpConnector": [
+                {
+                    "method": "AsyncHttpConnector:AsyncHttpConnector(int,int,int,ClientConfigurationData)",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_AdminProxyHandler": [
+                {
+                    "method": "AdminProxyHandler:newHttpClient()",
+                    "label": true
+                }
+            ],
+            "pulsar-client_src_main_java_org_apache_pulsar_client_impl_PulsarChannelInitializer": [
+                {
+                    "method": "PulsarChannelInitializer:initTls(Channel,InetSocketAddress)",
+                    "label": true
+                }
+            ],
+            "pulsar-client_src_main_java_org_apache_pulsar_client_impl_ClientCnx": [
+                {
+                    "method": "ClientCnx:verifyTlsHostName(String,ChannelHandlerContext)",
+                    "label": true
+                },
+                {
+                    "method": "ClientCnx:handleConnected(CommandConnected)",
+                    "label": true
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+                {
+                    "method": "ProxyConnection:connectToBroker(InetSocketAddress)",
+                    "label": true
+                },
+                {
+                    "method": "ProxyConnection:createClientConfiguration()",
+                    "label": true
+                }
+            ],
+            "pulsar-common_src_main_java_org_apache_pulsar_common_util_SecurityUtility": [
+                {
+                    "method": "SecurityUtility:configureSSLHandler(SslHandler)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "pulsar-common_src_main_java_org_apache_pulsar_common_util_NettyClientSslContextRefresher": [
+                {
+                    "method": "NettyClientSslContextRefresher:NettyClientSslContextRefresher(boolean,String,AuthenticationDataProvider,long)",
+                    "label": false
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_DirectProxyHandler": [
+                {
+                    "method": "DirectProxyHandler:connect(String,InetSocketAddress,int,Supplier)",
+                    "label": false
+                }
+            ],
+            "pulsar-client_src_main_java_org_apache_pulsar_client_impl_PulsarChannelInitializer": [
+                {
+                    "method": "PulsarChannelInitializer:PulsarChannelInitializer(ClientConfigurationData,Supplier)",
+                    "label": false
+                }
+            ],
+            "pulsar-client_src_main_java_org_apache_pulsar_client_impl_ClientCnx": [
+                {
+                    "method": "ClientCnx:ClientCnx(ClientConfigurationData,EventLoopGroup,int)",
+                    "label": false
+                }
+            ],
+            "pulsar-proxy_src_main_java_org_apache_pulsar_proxy_server_ProxyConnection": [
+                {
+                    "method": "ProxyConnection:ProxyConnection(ProxyService,Supplier,DnsAddressResolverGroup)",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2022-43766": {
+        "patchMethod": {
+            "server_src_main_java_org_apache_iotdb_db_conf_IoTDBDescriptor": [
+                {
+                    "method": "IoTDBDescriptor:loadProperties(Properties)",
+                    "label": true
+                }
+            ],
+            "tsfile_src_main_java_org_apache_iotdb_tsfile_read_filter_operator_Regexp": [
+                {
+                    "method": "Regexp$MatcherInput:length()",
+                    "label": false
+                },
+                {
+                    "method": "Regexp$MatcherInput:subSequence(int,int)",
+                    "label": true
+                },
+                {
+                    "method": "Regexp$AccessCount:check()",
+                    "label": true
+                },
+                {
+                    "method": "Regexp$MatcherInput:charAt(int)",
+                    "label": true
+                },
+                {
+                    "method": "Regexp:satisfy(long,Object)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "server_src_main_java_org_apache_iotdb_db_conf_IoTDBConfig": [
+                {
+                    "method": "IoTDBConfig:getPatternMatchingThreshold()",
+                    "label": false
+                },
+                {
+                    "method": "IoTDBConfig:setPatternMatchingThreshold(int)",
+                    "label": false
+                }
+            ],
+            "tsfile_src_main_java_org_apache_iotdb_tsfile_read_filter_operator_Regexp": [
+                {
+                    "method": "Regexp$MatcherInput:toString()",
+                    "label": false
+                },
+                {
+                    "method": "Regexp$MatcherInput:MatcherInput(CharSequence,AccessCount)",
+                    "label": false
+                }
+            ],
+            "tsfile_src_main_java_org_apache_iotdb_tsfile_common_conf_TSFileConfig": [
+                {
+                    "method": "TSFileConfig:setPatternMatchingThreshold(int)",
+                    "label": false
+                },
+                {
+                    "method": "TSFileConfig:getPatternMatchingThreshold()",
+                    "label": false
+                }
+            ]
+        }
+    },
+    "CVE-2022-46166": {
+        "patchMethod": {
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_TelegramNotifier": [
+                {
+                    "method": "TelegramNotifier:getText(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_LetsChatNotifier": [
+                {
+                    "method": "LetsChatNotifier:getText(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_MicrosoftTeamsNotifier": [
+                {
+                    "method": "MicrosoftTeamsNotifier:createEvaluationContext(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_PagerdutyNotifier": [
+                {
+                    "method": "PagerdutyNotifier:getDescription(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_HipchatNotifier": [
+                {
+                    "method": "HipchatNotifier:getMessage(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_DingTalkNotifier": [
+                {
+                    "method": "DingTalkNotifier:getText(InstanceEvent,Instance)",
+                    "label": true
+                },
+                {
+                    "method": "DingTalkNotifier:getSign(Long)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_OpsGenieNotifier": [
+                {
+                    "method": "OpsGenieNotifier:getMessage(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_DiscordNotifier": [
+                {
+                    "method": "DiscordNotifier:createContent(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_SlackNotifier": [
+                {
+                    "method": "SlackNotifier:getText(InstanceEvent,Instance)",
+                    "label": true
+                }
+            ]
+        },
+        "invalidMethod": {
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_MicrosoftTeamsNotifier": [
+                {
+                    "method": "MicrosoftTeamsNotifier:getStatusChangedMessage(Instance,StandardEvaluationContext)",
+                    "label": false
+                },
+                {
+                    "method": "MicrosoftTeamsNotifier:getRegisteredMessage(Instance,StandardEvaluationContext)",
+                    "label": false
+                },
+                {
+                    "method": "MicrosoftTeamsNotifier:createMessage(Instance,String,String,StandardEvaluationContext)",
+                    "label": false
+                },
+                {
+                    "method": "MicrosoftTeamsNotifier:doNotify(InstanceEvent,Instance)",
+                    "label": false
+                },
+                {
+                    "method": "MicrosoftTeamsNotifier:evaluateExpression(StandardEvaluationContext,Expression)",
+                    "label": false
+                },
+                {
+                    "method": "MicrosoftTeamsNotifier:getDeregisteredMessage(Instance,StandardEvaluationContext)",
+                    "label": false
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_HipchatNotifier": [
+                {
+                    "method": "HipchatNotifier:buildUrl()",
+                    "label": false
+                }
+            ],
+            "spring-boot-admin-server_src_main_java_de_codecentric_boot_admin_server_notify_OpsGenieNotifier": [
+                {
+                    "method": "OpsGenieNotifier:buildUrl(InstanceEvent,Instance)",
+                    "label": false
+                }
+            ]
+        }
+    }
+}
