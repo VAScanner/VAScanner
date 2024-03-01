@@ -1,0 +1,207 @@
+{
+    "project name": "threedr3am_dubbo-exp",
+    "vulnerable dependencies": {
+        "org.apache.dubbo:dubbo:2.7.5": {
+            "used-method num": 5,
+            "used method": [
+                "org.apache.dubbo.common.io.Bytes:void <clinit>()",
+                "org.apache.dubbo.common.io.Bytes:void long2bytes(long,byte[],int)",
+                "org.apache.dubbo.common.io.UnsafeByteArrayOutputStream:void close()",
+                "org.apache.dubbo.common.io.Bytes:void short2bytes(short,byte[])",
+                "org.apache.dubbo.common.io.Bytes:void int2bytes(int,byte[],int)"
+            ]
+        },
+        "commons-beanutils:commons-beanutils:1.9.2": {
+            "used-method num": 22,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int hashCode()",
+                "org.apache.commons.beanutils.BeanComparator:int hashCode()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean isEmpty()",
+                "org.apache.commons.beanutils.WrapDynaClass$CacheKey:int hashCode()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.util.Set entrySet()",
+                "org.apache.commons.beanutils.WeakFastHashMap:boolean isEmpty()",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:java.util.Iterator iterator()",
+                "org.apache.commons.beanutils.WeakFastHashMap:int size()",
+                "org.apache.commons.beanutils.DynaProperty:int hashCode()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object remove(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                "org.apache.commons.beanutils.WeakFastHashMap:int hashCode()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanComparator:void <init>(java.lang.String,java.util.Comparator)",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:int hashCode()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                "org.apache.commons.beanutils.BeanComparator:void <init>(java.lang.String)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object remove(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:int hashCode()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean isEmpty()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object remove(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int size()"
+            ],
+            "vul-called frequency": 22,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:int hashCode()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:boolean isEmpty()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object remove(java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:int size()"
+                ]
+            }
+        },
+        "com.mchange:c3p0:0.9.5.2": {
+            "used-method num": 19,
+            "used method": [
+                "com.mchange.v2.resourcepool.BasicResourcePool$3:void run()",
+                "com.mchange.v2.c3p0.stmt.GooGooStatementCache$CautiousStatementDestructionManager$1TrackedStatementCloseTask:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$CheckIdleResourcesTask:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask:void run()",
+                "com.mchange.v2.c3p0.stmt.MemoryCoalescedStatementCacheKey:int hashCode()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$RemoveTask:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask:void run()",
+                "com.mchange.v2.c3p0.stmt.GooGooStatementCache$CautiousStatementDestructionManager$1TrackedDestroyAllStatementsTask:void run()",
+                "com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager$1ContextClassLoaderPoolsInitThread:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$4:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$2:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$5:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$CullTask:void run()",
+                "com.mchange.v2.c3p0.stmt.SimpleStatementCacheKey:int hashCode()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$1:void run()",
+                "com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask$1:void run()"
+            ]
+        },
+        "org.apache.zookeeper:zookeeper:3.4.13": {
+            "used-method num": 84,
+            "used method": [
+                "org.apache.zookeeper.server.quorum.QuorumPeer:void run()",
+                "org.apache.zookeeper.MultiResponse:int hashCode()",
+                "org.apache.zookeeper.server.quorum.AuthFastLeaderElection$Messenger$WorkerReceiver:void run()",
+                "org.apache.zookeeper.common.AtomicFileOutputStream:void close()",
+                "org.apache.zookeeper.proto.GetACLRequest:int hashCode()",
+                "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                "org.apache.zookeeper.proto.ConnectRequest:int hashCode()",
+                "org.apache.zookeeper.proto.SetDataRequest:int hashCode()",
+                "org.apache.zookeeper.proto.DeleteRequest:int hashCode()",
+                "org.apache.zookeeper.proto.GetSASLRequest:int hashCode()",
+                "org.apache.zookeeper.OpResult$ErrorResult:int hashCode()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:void run()",
+                "org.apache.zookeeper.proto.ConnectResponse:int hashCode()",
+                "org.apache.zookeeper.server.SessionTrackerImpl:void run()",
+                "org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerReceiver:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$QuorumConnectionReceiverThread:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPacket:int hashCode()",
+                "org.apache.zookeeper.txn.CreateTxnV0:int hashCode()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker:void run()",
+                "org.apache.zookeeper.server.persistence.FileTxnLog$PositionInputStream:int read(byte[])",
+                "org.apache.zookeeper.txn.MultiTxn:int hashCode()",
+                "org.apache.zookeeper.proto.SetACLResponse:int hashCode()",
+                "org.apache.zookeeper.proto.AuthPacket:int hashCode()",
+                "org.apache.zookeeper.Shell$1:void run()",
+                "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                "org.apache.zookeeper.Op$Create:int hashCode()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:void run()",
+                "org.apache.zookeeper.server.ByteBufferInputStream:int read(byte[])",
+                "org.apache.zookeeper.MultiTransactionRecord:int hashCode()",
+                "org.apache.zookeeper.Op$Check:int hashCode()",
+                "org.apache.zookeeper.OpResult$DeleteResult:int hashCode()",
+                "org.apache.zookeeper.Op$SetData:int hashCode()",
+                "org.apache.zookeeper.txn.Txn:int hashCode()",
+                "org.apache.zookeeper.data.ACL:int hashCode()",
+                "org.apache.zookeeper.server.quorum.Leader$LearnerCnxAcceptor:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:void run()",
+                "org.apache.zookeeper.proto.SyncResponse:int hashCode()",
+                "org.apache.zookeeper.server.quorum.AuthFastLeaderElection$Messenger$WorkerSender:void run()",
+                "org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender:void run()",
+                "org.apache.zookeeper.proto.CheckVersionRequest:int hashCode()",
+                "org.apache.zookeeper.server.SyncRequestProcessor$1:void run()",
+                "org.apache.zookeeper.proto.GetChildren2Response:int hashCode()",
+                "org.apache.zookeeper.proto.CreateRequest:int hashCode()",
+                "org.apache.zookeeper.proto.GetDataRequest:int hashCode()",
+                "org.apache.zookeeper.ClientCnxn$EventThread:void run()",
+                "org.apache.zookeeper.proto.ExistsRequest:int hashCode()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$QuorumConnectionReqThread:void run()",
+                "org.apache.zookeeper.server.quorum.LearnerHandler$1:void run()",
+                "org.apache.zookeeper.server.PrepRequestProcessor:void run()",
+                "org.apache.zookeeper.server.quorum.LearnerHandler:void run()",
+                "org.apache.zookeeper.proto.GetACLResponse:int hashCode()",
+                "org.ietf.jgss.Oid:int hashCode()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer$1:void run()",
+                "org.apache.zookeeper.txn.DeleteTxn:int hashCode()",
+                "org.apache.zookeeper.proto.GetChildren2Request:int hashCode()",
+                "org.apache.zookeeper.OpResult$SetDataResult:int hashCode()",
+                "org.apache.zookeeper.server.quorum.ObserverRequestProcessor:void run()",
+                "org.apache.zookeeper.proto.GetChildrenResponse:int hashCode()",
+                "org.apache.zookeeper.proto.WatcherEvent:int hashCode()",
+                "org.apache.zookeeper.proto.CreateResponse:int hashCode()",
+                "org.apache.zookeeper.server.ReferenceCountedACLCache$AtomicLongWithEquals:int hashCode()",
+                "org.apache.zookeeper.proto.GetChildrenRequest:int hashCode()",
+                "org.apache.zookeeper.server.quorum.QuorumAuthPacket:int hashCode()",
+                "org.apache.zookeeper.proto.SetDataResponse:int hashCode()",
+                "org.apache.zookeeper.data.Stat:int hashCode()",
+                "org.apache.zookeeper.txn.CreateTxn:int hashCode()",
+                "org.apache.zookeeper.txn.CheckVersionTxn:int hashCode()",
+                "org.apache.zookeeper.proto.SetSASLResponse:int hashCode()",
+                "org.apache.zookeeper.Op$Delete:int hashCode()",
+                "org.apache.zookeeper.proto.ExistsResponse:int hashCode()",
+                "org.apache.zookeeper.Login$1:void run()",
+                "org.apache.zookeeper.server.SyncRequestProcessor:void run()",
+                "org.apache.zookeeper.txn.SetACLTxn:int hashCode()",
+                "org.apache.zookeeper.OpResult$CreateResult:int hashCode()",
+                "org.apache.zookeeper.proto.GetDataResponse:int hashCode()",
+                "org.apache.zookeeper.server.quorum.ReadOnlyRequestProcessor:void run()",
+                "org.apache.zookeeper.txn.SetDataTxn:int hashCode()",
+                "org.apache.zookeeper.server.quorum.FollowerRequestProcessor:void run()",
+                "org.apache.zookeeper.proto.SetWatches:int hashCode()",
+                "org.apache.zookeeper.data.Id:int hashCode()",
+                "org.apache.zookeeper.proto.SyncRequest:int hashCode()",
+                "org.apache.zookeeper.CreateMode:void <clinit>()",
+                "org.apache.zookeeper.OpResult$CheckResult:int hashCode()",
+                "org.apache.zookeeper.proto.SetACLRequest:int hashCode()"
+            ],
+            "CVE": [
+                "CVE-2019-0201"
+            ],
+            "used vul-method": [
+                "org.apache.zookeeper.server.quorum.QuorumPeer:void run()",
+                "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                "org.apache.zookeeper.server.PrepRequestProcessor:void run()",
+                "org.apache.zookeeper.server.SyncRequestProcessor:void run()"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2019-0201": [
+                    "org.apache.zookeeper.server.FinalRequestProcessor:void processRequest(org.apache.zookeeper.server.Request)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-0201": [
+                    "org.apache.zookeeper.server.quorum.QuorumPeer:void run()",
+                    "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                    "org.apache.zookeeper.server.PrepRequestProcessor:void run()",
+                    "org.apache.zookeeper.server.SyncRequestProcessor:void run()"
+                ]
+            }
+        }
+    }
+}

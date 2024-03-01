@@ -1,0 +1,122 @@
+{
+    "project name": "Dreampie_jfinal-shiro",
+    "vulnerable dependencies": {
+        "org.apache.shiro:shiro-core:1.2.3": {
+            "used-method num": 39,
+            "used method": [
+                "org.apache.shiro.authc.credential.PasswordMatcher:void <init>()",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String,boolean,java.lang.String)",
+                "org.apache.shiro.session.mgt.DelegatingSession:java.lang.Object getAttribute(java.lang.Object)",
+                "org.apache.shiro.session.mgt.DelegatingSession:void <init>(org.apache.shiro.session.mgt.NativeSessionManager,org.apache.shiro.session.mgt.SessionKey)",
+                "org.apache.shiro.authc.credential.DefaultPasswordService:void <init>()",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toString()",
+                "org.apache.shiro.authz.annotation.Logical:void <clinit>()",
+                "org.apache.shiro.session.mgt.SimpleSession:java.lang.String toString()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String toString()",
+                "org.apache.shiro.session.mgt.DelegatingSession:java.lang.Object removeAttribute(java.lang.Object)",
+                "org.apache.shiro.authc.credential.DefaultPasswordService:boolean passwordsMatch(java.lang.Object,java.lang.String)",
+                "org.apache.shiro.session.mgt.DelegatingSession:java.io.Serializable getId()",
+                "org.apache.shiro.session.mgt.SimpleSession:void setAttribute(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authc.credential.PasswordMatcher:java.lang.Object getStoredPassword(org.apache.shiro.authc.AuthenticationInfo)",
+                "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.Throwable)",
+                "org.apache.shiro.session.mgt.SimpleSession:java.io.Serializable getId()",
+                "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.String)",
+                "org.apache.shiro.authc.credential.DefaultPasswordService:java.lang.String encryptPassword(java.lang.Object)",
+                "org.apache.shiro.authc.credential.PasswordMatcher:java.lang.Object getSubmittedPassword(org.apache.shiro.authc.AuthenticationToken)",
+                "org.apache.shiro.session.mgt.DelegatingSession:void setAttribute(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.util.Collection values()",
+                "org.apache.shiro.util.MapContext:void clear()",
+                "org.apache.shiro.session.UnknownSessionException:void <init>(java.lang.String)",
+                "org.apache.shiro.authc.AuthenticationException:void <init>()",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toString()",
+                "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.apache.shiro.session.mgt.SimpleSession:java.lang.Object removeAttribute(java.lang.Object)",
+                "org.apache.shiro.session.mgt.SimpleSession:java.lang.Object getAttribute(java.lang.Object)",
+                "org.apache.shiro.util.AntPathMatcher:boolean match(java.lang.String,java.lang.String)",
+                "org.apache.shiro.util.MapContext:boolean containsKey(java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                "org.apache.shiro.authc.credential.PasswordMatcher:boolean doCredentialsMatch(org.apache.shiro.authc.AuthenticationToken,org.apache.shiro.authc.AuthenticationInfo)",
+                "org.apache.shiro.authz.UnauthenticatedException:void <init>(java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.lang.Object remove(java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.util.AntPathMatcher:void <init>()"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.3": {
+            "used-method num": 37,
+            "used method": [
+                "org.apache.shiro.web.util.WebUtils:boolean isHttp(java.lang.Object)",
+                "org.apache.shiro.web.filter.PathMatchingFilter:void <init>()",
+                "org.apache.shiro.web.servlet.ShiroHttpServletRequest$ObjectPrincipal:java.lang.String toString()",
+                "org.apache.shiro.web.servlet.SimpleCookie:java.lang.String getName()",
+                "org.apache.shiro.web.util.WebUtils:boolean isWeb(java.lang.Object)",
+                "org.apache.shiro.web.servlet.ShiroHttpServletRequest:void <clinit>()",
+                "org.apache.shiro.web.util.WebUtils:void <clinit>()",
+                "org.apache.shiro.web.util.WebUtils:javax.servlet.ServletRequest getRequest(java.lang.Object)",
+                "org.apache.shiro.web.servlet.SimpleCookie:void removeFrom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                "org.apache.shiro.web.util.WebUtils:void issueRedirect(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.String)",
+                "org.apache.shiro.web.util.WebUtils:javax.servlet.http.HttpServletResponse toHttp(javax.servlet.ServletResponse)",
+                "org.apache.shiro.web.servlet.AdviceFilter:void cleanup(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.Exception)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:org.apache.shiro.session.Session createExposedSession(org.apache.shiro.session.Session,org.apache.shiro.session.mgt.SessionKey)",
+                "org.apache.shiro.web.servlet.SimpleCookie:void saveTo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                "org.apache.shiro.web.session.mgt.WebSessionKey:void <init>(java.io.Serializable,javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.apache.shiro.web.util.WebUtils:java.lang.String getCleanParam(javax.servlet.ServletRequest,java.lang.String)",
+                "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)",
+                "org.apache.shiro.web.util.WebUtils:javax.servlet.http.HttpServletRequest getHttpRequest(java.lang.Object)",
+                "org.apache.shiro.web.util.WebUtils:javax.servlet.http.HttpServletRequest toHttp(javax.servlet.ServletRequest)",
+                "org.apache.shiro.web.util.WebUtils:void redirectToSavedRequest(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.String)",
+                "org.apache.shiro.web.servlet.AdviceFilter:void <init>()",
+                "org.apache.shiro.web.servlet.SimpleCookie:java.lang.String readValue(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                "org.apache.shiro.web.util.WebUtils:javax.servlet.http.HttpServletResponse getHttpResponse(java.lang.Object)",
+                "org.apache.shiro.web.servlet.SimpleCookie:void <init>(java.lang.String)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:org.apache.shiro.session.Session createExposedSession(org.apache.shiro.session.Session,org.apache.shiro.session.mgt.SessionContext)",
+                "org.apache.shiro.web.servlet.SimpleCookie:void setValue(java.lang.String)",
+                "org.apache.shiro.web.servlet.SimpleCookie:void setHttpOnly(boolean)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void onStart(org.apache.shiro.session.Session,org.apache.shiro.session.mgt.SessionContext)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void onInvalidation(org.apache.shiro.session.Session,org.apache.shiro.session.InvalidSessionException,org.apache.shiro.session.mgt.SessionKey)",
+                "org.apache.shiro.web.servlet.SimpleCookie:void <init>(org.apache.shiro.web.servlet.Cookie)",
+                "org.apache.shiro.web.util.WebUtils:void saveRequest(javax.servlet.ServletRequest)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:java.io.Serializable getSessionId(org.apache.shiro.session.mgt.SessionKey)",
+                "org.apache.shiro.web.util.WebUtils:boolean isTrue(javax.servlet.ServletRequest,java.lang.String)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void onStop(org.apache.shiro.session.Session,org.apache.shiro.session.mgt.SessionKey)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void <init>()",
+                "org.apache.shiro.web.util.WebUtils:javax.servlet.ServletResponse getResponse(java.lang.Object)",
+                "org.apache.shiro.web.session.mgt.DefaultWebSessionManager:void onExpiration(org.apache.shiro.session.Session,org.apache.shiro.session.ExpiredSessionException,org.apache.shiro.session.mgt.SessionKey)"
+            ],
+            "CVE": [
+                "CVE-2020-1957",
+                "CVE-2020-11989"
+            ],
+            "used vul-method": [
+                "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)"
+            ],
+            "vul-called frequency": 1,
+            "root vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-1957": [
+                    "org.apache.shiro.web.util.WebUtils:java.lang.String getRequestUri(javax.servlet.http.HttpServletRequest)"
+                ],
+                "CVE-2020-11989": [
+                    "org.apache.shiro.web.util.WebUtils:java.lang.String decodeAndCleanUriString(javax.servlet.http.HttpServletRequest,java.lang.String)",
+                    "org.apache.shiro.web.util.WebUtils:java.lang.String getRequestUri(javax.servlet.http.HttpServletRequest)",
+                    "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-1957": [
+                    "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)"
+                ],
+                "CVE-2020-11989": [
+                    "org.apache.shiro.web.util.WebUtils:java.lang.String getPathWithinApplication(javax.servlet.http.HttpServletRequest)"
+                ]
+            }
+        },
+        "commons-beanutils:commons-beanutils:1.9.2": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

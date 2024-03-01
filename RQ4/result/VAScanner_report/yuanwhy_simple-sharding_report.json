@@ -1,0 +1,40 @@
+{
+    "project name": "yuanwhy_simple-sharding",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.mchange:c3p0:0.9.5.2": {
+            "used-method num": 26,
+            "used method": [
+                "com.mchange.v2.c3p0.ComboPooledDataSource:void <init>()",
+                "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyStatement:java.sql.ResultSet getResultSet()",
+                "com.mchange.v2.c3p0.impl.NewProxyStatement:boolean execute(java.lang.String)",
+                "com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:java.lang.String getDataSourceName()",
+                "com.mchange.v2.c3p0.stmt.MemoryCoalescedStatementCacheKey:int hashCode()",
+                "com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase:void <clinit>()",
+                "com.mchange.v2.c3p0.impl.NewProxyConnection:void rollback()",
+                "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyCallableStatement:java.sql.ResultSet getResultSet()",
+                "com.mchange.v2.c3p0.impl.NewProxyConnection:void commit()",
+                "com.mchange.v2.c3p0.AbstractComboPooledDataSource:void setUser(java.lang.String)",
+                "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:java.sql.ResultSet getResultSet()",
+                "com.mchange.v2.c3p0.impl.NewProxyConnection:void close()",
+                "com.mchange.v2.c3p0.AbstractComboPooledDataSource:void setPassword(java.lang.String)",
+                "com.mchange.v2.c3p0.impl.PoolBackedDataSourceBase:void setDataSourceName(java.lang.String)",
+                "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:boolean execute(java.lang.String)",
+                "com.mchange.v2.c3p0.AbstractComboPooledDataSource:void setJdbcUrl(java.lang.String)",
+                "com.mchange.v2.c3p0.AbstractComboPooledDataSource:void <clinit>()",
+                "com.mchange.v2.c3p0.impl.NewProxyCallableStatement:boolean execute(java.lang.String)",
+                "com.mchange.v2.c3p0.AbstractComboPooledDataSource:void setDriverClass(java.lang.String)",
+                "com.mchange.v2.c3p0.impl.NewProxyStatement:java.sql.ResultSet getResultSet()",
+                "com.mchange.v2.c3p0.impl.C3P0PooledConnection$1ProxyPreparedStatement:java.sql.ResultSet getResultSet()",
+                "com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:java.sql.Connection getConnection()",
+                "com.mchange.v2.c3p0.impl.NewProxyConnection:void setAutoCommit(boolean)",
+                "com.mchange.v2.c3p0.stmt.SimpleStatementCacheKey:int hashCode()",
+                "com.mchange.v2.c3p0.impl.NewProxyPreparedStatement:java.sql.ResultSet getResultSet()",
+                "com.mchange.v2.c3p0.impl.NewProxyConnection:java.sql.Statement createStatement()"
+            ]
+        }
+    }
+}

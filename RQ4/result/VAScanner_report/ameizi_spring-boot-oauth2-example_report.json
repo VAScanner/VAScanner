@@ -1,0 +1,33 @@
+{
+    "project name": "ameizi_spring-boot-oauth2-example",
+    "modules": {
+        "com.example:OAuth2Server": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.11.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory:java.security.KeyPair getKeyPair(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setKeyPair(java.security.KeyPair)",
+                        "org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory:void <init>(org.springframework.core.io.Resource,char[])",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()"
+                    ]
+                }
+            }
+        },
+        "com.example:OAuth2Client": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.11.RELEASE": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setVerifierKey(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

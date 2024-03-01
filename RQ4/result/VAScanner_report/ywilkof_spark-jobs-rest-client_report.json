@@ -1,0 +1,52 @@
+{
+    "project name": "ywilkof_spark-jobs-rest-client",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.1": {
+            "used-method num": 21,
+            "used method": [
+                "org.apache.http.impl.client.BasicResponseHandler:java.lang.String handleResponse(org.apache.http.HttpResponse)",
+                "org.apache.http.impl.client.CloseableHttpClient:java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicResponseHandler:void <init>()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.impl.conn.BasicHttpClientConnectionManager:void <init>()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:java.lang.Object execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.client.ResponseHandler)"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

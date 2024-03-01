@@ -1,0 +1,37 @@
+{
+    "project name": "ZhangZiSheng001_serialize-tool-demo",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.74": {
+            "used-method num": 8,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(byte[],java.lang.reflect.Type,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.parser.Feature:void <clinit>()",
+                "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSON:byte[] toJSONBytes(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(byte[],java.lang.reflect.Type,com.alibaba.fastjson.parser.Feature[])",
+                "com.alibaba.fastjson.JSON:byte[] toJSONBytes(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(byte[],java.lang.reflect.Type,com.alibaba.fastjson.parser.Feature[])",
+                    "com.alibaba.fastjson.JSON:byte[] toJSONBytes(java.lang.Object,com.alibaba.fastjson.serializer.SerializerFeature[])"
+                ]
+            }
+        }
+    }
+}

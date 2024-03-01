@@ -1,0 +1,16 @@
+{
+    "project name": "royclarkson_spring-rest-service-oauth",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.0.7.RELEASE": {
+            "used-method num": 6,
+            "used method": [
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setSupportRefreshToken(boolean)",
+                "org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore:void <init>()",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()"
+            ]
+        }
+    }
+}

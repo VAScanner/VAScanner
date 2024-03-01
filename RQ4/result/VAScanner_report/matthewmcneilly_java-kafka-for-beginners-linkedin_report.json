@@ -1,0 +1,58 @@
+{
+    "project name": "matthewmcneilly_java-kafka-for-beginners-linkedin",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:2.1.1": {
+            "used-method num": 28,
+            "used method": [
+                "org.apache.kafka.common.header.internals.RecordHeaders$1:boolean hasNext()",
+                "org.apache.kafka.common.header.internals.RecordHeaders$1:org.apache.kafka.common.header.Header next()",
+                "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:org.apache.kafka.common.record.Record next()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(java.time.Duration)",
+                "org.apache.kafka.clients.producer.RecordMetadata:java.lang.String topic()",
+                "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.Iterator iterator()",
+                "org.apache.kafka.common.utils.LogContext$LocationAwareKafkaLogger:void info(java.lang.String)",
+                "org.apache.kafka.clients.producer.internals.FutureRecordMetadata:org.apache.kafka.clients.producer.RecordMetadata get()",
+                "org.apache.kafka.common.utils.LogContext$LocationIgnorantKafkaLogger:void error(java.lang.String,java.lang.Throwable)",
+                "org.apache.kafka.clients.producer.KafkaProducer:void flush()",
+                "org.apache.kafka.clients.producer.KafkaProducer:java.util.concurrent.Future send(org.apache.kafka.clients.producer.ProducerRecord,org.apache.kafka.clients.producer.Callback)",
+                "org.apache.kafka.common.utils.AbstractIterator:java.lang.Object next()",
+                "org.apache.kafka.clients.producer.ProducerRecord:void <init>(java.lang.String,java.lang.Object)",
+                "org.apache.kafka.clients.producer.KafkaProducer:java.util.concurrent.Future send(org.apache.kafka.clients.producer.ProducerRecord)",
+                "org.apache.kafka.clients.producer.ProducerRecord:void <init>(java.lang.String,java.lang.Object,java.lang.Object)",
+                "org.apache.kafka.common.utils.LogContext$LocationIgnorantKafkaLogger:void info(java.lang.String)",
+                "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:boolean hasNext()",
+                "org.apache.kafka.clients.producer.KafkaProducer:void close()",
+                "org.apache.kafka.clients.producer.RecordMetadata:int partition()",
+                "org.apache.kafka.clients.producer.KafkaProducer$FutureFailure:org.apache.kafka.clients.producer.RecordMetadata get()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <clinit>()",
+                "org.apache.kafka.clients.producer.KafkaProducer:void <clinit>()",
+                "org.apache.kafka.common.utils.LogContext$LocationAwareKafkaLogger:void error(java.lang.String,java.lang.Throwable)",
+                "org.apache.kafka.clients.consumer.ConsumerRecord:int partition()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void subscribe(java.util.Collection)",
+                "org.apache.kafka.common.utils.AbstractIterator:boolean hasNext()"
+            ],
+            "CVE": [
+                "CVE-2023-25194"
+            ],
+            "used vul-method": [
+                "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2023-25194": [
+                    "org.apache.kafka.common.security.JaasContext:org.apache.kafka.common.security.JaasContext defaultContext(org.apache.kafka.common.security.JaasContext$Type,java.lang.String,java.lang.String)",
+                    "org.apache.kafka.common.security.JaasContext:org.apache.kafka.common.security.JaasContext load(org.apache.kafka.common.security.JaasContext$Type,java.lang.String,java.lang.String,org.apache.kafka.common.config.types.Password)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2023-25194": [
+                    "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                    "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)"
+                ]
+            }
+        }
+    }
+}

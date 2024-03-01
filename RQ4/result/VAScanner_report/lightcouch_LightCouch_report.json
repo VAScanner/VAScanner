@@ -1,0 +1,110 @@
+{
+    "project name": "lightcouch_LightCouch",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 83,
+            "used method": [
+                "org.apache.http.impl.client.SystemDefaultCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                "org.apache.http.impl.conn.DefaultClientConnection:void setAttribute(java.lang.String,java.lang.Object)",
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,org.apache.http.conn.scheme.SocketFactory,int)",
+                "org.apache.http.impl.execchain.ConnectionHolder:void close()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry)",
+                "org.apache.http.conn.scheme.PlainSocketFactory:org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void close()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.impl.client.BasicAuthCache:void <init>()",
+                "org.apache.http.auth.AuthState:void setAuthScheme(org.apache.http.auth.AuthScheme)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <init>()",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.net.URI)",
+                "org.apache.http.impl.client.MinimalHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.impl.client.RequestWrapper:org.apache.http.RequestLine getRequestLine()",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.Object getAttribute(java.lang.String)",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void shutdown()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.impl.conn.DefaultClientConnection:java.lang.Object getAttribute(java.lang.String)",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,javax.net.ssl.HostnameVerifier)",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <init>(java.security.KeyStore)",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.apache.http.impl.client.AbstractHttpClient:void close()",
+                "org.apache.http.impl.client.AbstractHttpClient:void addRequestInterceptor(org.apache.http.HttpRequestInterceptor)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.auth.AuthState:org.apache.http.auth.AuthScheme getAuthScheme()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.conn.scheme.SchemeRegistry:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:void addResponseInterceptor(org.apache.http.HttpResponseInterceptor)",
+                "org.apache.http.impl.client.BasicCredentialsProvider:org.apache.http.auth.Credentials getCredentials(org.apache.http.auth.AuthScope)",
+                "org.apache.http.impl.client.SystemDefaultCredentialsProvider:org.apache.http.auth.Credentials getCredentials(org.apache.http.auth.AuthScope)",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.net.URI)",
+                "org.apache.http.conn.scheme.SchemeRegistry:org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme)",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.auth.AuthScope:void <init>(java.lang.String,int)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.net.URI)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder addInterceptorFirst(org.apache.http.HttpRequestInterceptor)",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.client.methods.HttpRequestWrapper:org.apache.http.RequestLine getRequestLine()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder addInterceptorFirst(org.apache.http.HttpResponseInterceptor)",
+                "org.apache.http.impl.client.BasicAuthCache:void put(org.apache.http.HttpHost,org.apache.http.auth.AuthScheme)",
+                "org.apache.http.impl.client.MinimalHttpClient$1:void shutdown()",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.impl.auth.HttpEntityDigester:void close()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.impl.client.InternalHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.impl.client.InternalHttpClient$1:void shutdown()",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.net.URI)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void <init>(org.apache.http.params.HttpParams,org.apache.http.conn.scheme.SchemeRegistry)",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:void abort()",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.apache.http.impl.conn.CPoolProxy:void setAttribute(java.lang.String,java.lang.Object)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.auth.BasicScheme:void <init>()",
+                "org.apache.http.impl.client.HttpClientBuilder$1:void close()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.conn.LoggingOutputStream:void close()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.client.AbstractHttpClient:void addRequestInterceptor(org.apache.http.HttpRequestInterceptor,int)",
+                "org.apache.http.impl.client.HttpClientBuilder$2:void close()",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <clinit>()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.CredentialsProvider getCredentialsProvider()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)"
+                ]
+            }
+        }
+    }
+}

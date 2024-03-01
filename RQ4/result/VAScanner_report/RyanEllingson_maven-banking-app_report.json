@@ -1,0 +1,167 @@
+{
+    "project name": "RyanEllingson_maven-banking-app",
+    "vulnerable dependencies": {
+        "org.apache.tomcat.embed:tomcat-embed-core:8.5.23": {
+            "used-method num": 46,
+            "used method": [
+                "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                "org.apache.catalina.util.LifecycleMBeanBase:void <clinit>()",
+                "org.apache.catalina.webresources.StandardRoot:void <init>(org.apache.catalina.Context)",
+                "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession(boolean)",
+                "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession(boolean)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                "org.apache.catalina.webresources.StandardRoot:void addPreResources(org.apache.catalina.WebResourceSet)",
+                "org.apache.catalina.webresources.AbstractResourceSet:void <clinit>()",
+                "org.apache.catalina.core.ApplicationHttpRequest:java.lang.String getRequestURI()",
+                "org.apache.catalina.core.StandardContext:void setResources(org.apache.catalina.WebResourceRoot)",
+                "org.apache.catalina.core.ApplicationHttpResponse:void setStatus(int)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addWebapp(java.lang.String,java.lang.String)",
+                "org.apache.catalina.webresources.DirResourceSet:void <clinit>()",
+                "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                "org.apache.tomcat.util.collections.ManagedConcurrentWeakHashMap$1$1:java.util.Map$Entry next()",
+                "org.apache.catalina.session.StandardSessionFacade:void invalidate()",
+                "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap$EntryIterator:boolean hasNext()",
+                "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.core.ApplicationHttpRequest:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                "org.apache.catalina.connector.RequestFacade:java.lang.String getRequestURI()",
+                "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                "org.apache.catalina.core.ApplicationHttpRequest:javax.servlet.http.HttpSession getSession(boolean)",
+                "org.apache.catalina.connector.ResponseFacade:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.connector.Response:void setStatus(int)",
+                "org.apache.catalina.session.StandardSessionFacade:void removeAttribute(java.lang.String)",
+                "org.apache.tomcat.util.log.SystemLogHandler:void println(java.lang.String)",
+                "org.apache.catalina.connector.Request:java.io.BufferedReader getReader()",
+                "org.apache.catalina.session.StandardSessionFacade:java.lang.Object getAttribute(java.lang.String)",
+                "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                "org.apache.catalina.webresources.StandardRoot:void <clinit>()",
+                "org.apache.catalina.connector.Request:java.lang.String getRequestURI()",
+                "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.apache.catalina.startup.Tomcat:void <init>()",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap$EntryIterator:java.util.Map$Entry next()",
+                "org.apache.catalina.session.StandardSessionFacade:void setAttribute(java.lang.String,java.lang.Object)",
+                "org.apache.catalina.webresources.DirResourceSet:void <init>(org.apache.catalina.WebResourceRoot,java.lang.String,java.lang.String,java.lang.String)",
+                "org.apache.catalina.connector.Response:java.io.PrintWriter getWriter()",
+                "org.apache.catalina.core.ApplicationHttpResponse:void sendRedirect(java.lang.String)",
+                "org.apache.catalina.core.StandardServer:void await()",
+                "org.apache.catalina.connector.ResponseFacade:void setStatus(int)",
+                "org.apache.catalina.connector.RequestFacade:java.io.BufferedReader getReader()",
+                "org.apache.catalina.util.LifecycleBase:void <clinit>()",
+                "org.apache.catalina.core.ApplicationHttpRequest:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2021-24122",
+                "CVE-2021-33037",
+                "CVE-2018-1305",
+                "CVE-2020-11996",
+                "CVE-2022-42252"
+            ],
+            "used vul-method": [
+                "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession(boolean)",
+                "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession(boolean)",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addWebapp(java.lang.String,java.lang.String)",
+                "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession()",
+                "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.apache.catalina.startup.Tomcat:void start()",
+                "org.apache.catalina.webresources.DirResourceSet:void <init>(org.apache.catalina.WebResourceRoot,java.lang.String,java.lang.String,java.lang.String)"
+            ],
+            "vul-called frequency": 119,
+            "related vul root method": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:java.io.File file(java.lang.String,boolean)",
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:boolean isInvalidWindowsFilename(java.lang.String)"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                    "org.apache.coyote.http11.Http11Processor:void prepareRequest()"
+                ],
+                "CVE-2018-1305": [
+                    "org.apache.catalina.core.StandardContext:javax.servlet.ServletRegistration$Dynamic dynamicServletAdded(org.apache.catalina.Wrapper)",
+                    "org.apache.catalina.core.ApplicationContext:javax.servlet.ServletRegistration$Dynamic addServlet(java.lang.String,java.lang.String,javax.servlet.Servlet,java.util.Map)",
+                    "org.apache.catalina.core.StandardWrapper:void processServletSecurityAnnotation(java.lang.Class)",
+                    "org.apache.catalina.core.StandardWrapper:javax.servlet.Servlet loadServlet()",
+                    "org.apache.catalina.core.StandardWrapper:void servletSecurityAnnotationScan()",
+                    "org.apache.catalina.core.StandardContext:java.util.Set addServletSecurity(javax.servlet.ServletRegistration$Dynamic,javax.servlet.ServletSecurityElement)"
+                ],
+                "CVE-2020-11996": [
+                    "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus parseHeader()",
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus skipLine()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                    "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession(boolean)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession(boolean)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addWebapp(java.lang.String,java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession()",
+                    "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.webresources.DirResourceSet:void <init>(org.apache.catalina.WebResourceRoot,java.lang.String,java.lang.String,java.lang.String)"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)"
+                ],
+                "CVE-2018-1305": [
+                    "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession()",
+                    "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Request:javax.servlet.http.HttpSession getSession(boolean)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession(boolean)",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Server getServer()",
+                    "org.apache.catalina.startup.Tomcat:org.apache.catalina.Context addWebapp(java.lang.String,java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.http.HttpSession getSession()",
+                    "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                    "org.apache.catalina.startup.Tomcat:void start()",
+                    "org.apache.catalina.webresources.DirResourceSet:void <init>(org.apache.catalina.WebResourceRoot,java.lang.String,java.lang.String,java.lang.String)"
+                ],
+                "CVE-2020-11996": [
+                    "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.catalina.connector.Request:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.CoyoteWriter:void write(java.lang.String)",
+                    "org.apache.catalina.connector.ResponseFacade:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.connector.RequestFacade:javax.servlet.RequestDispatcher getRequestDispatcher(java.lang.String)",
+                    "org.apache.catalina.connector.Response:void sendRedirect(java.lang.String)",
+                    "org.apache.catalina.core.ApplicationDispatcher:void forward(javax.servlet.ServletRequest,javax.servlet.ServletResponse)"
+                ]
+            }
+        },
+        "org.postgresql:postgresql:42.2.14": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

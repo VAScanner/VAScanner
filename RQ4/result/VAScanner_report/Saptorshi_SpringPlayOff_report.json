@@ -1,0 +1,35 @@
+{
+    "project name": "Saptorshi_SpringPlayOff",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.0.6.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void <init>()",
+                "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void register(java.lang.Class[])",
+                "org.springframework.web.context.support.AbstractRefreshableWebApplicationContext:void setServletContext(javax.servlet.ServletContext)"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.0.6.RELEASE": {
+            "used-method num": 7,
+            "used method": [
+                "org.springframework.web.servlet.view.UrlBasedViewResolver:void setViewClass(java.lang.Class)",
+                "org.springframework.web.servlet.view.AbstractCachingViewResolver:void <clinit>()",
+                "org.springframework.web.servlet.DispatcherServlet:void <init>(org.springframework.web.context.WebApplicationContext)",
+                "org.springframework.web.servlet.view.InternalResourceViewResolver:void <init>()",
+                "org.springframework.web.servlet.view.InternalResourceViewResolver:void <clinit>()",
+                "org.springframework.web.servlet.DispatcherServlet:void <clinit>()",
+                "org.springframework.web.servlet.FrameworkServlet:void <clinit>()"
+            ]
+        },
+        "org.hibernate:hibernate-core:4.3.6.Final": {
+            "used-method num": 5,
+            "used method": [
+                "org.hibernate.internal.SessionImpl:void persist(java.lang.Object)",
+                "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                "org.hibernate.internal.SessionImpl:org.hibernate.Criteria createCriteria(java.lang.Class)"
+            ]
+        }
+    }
+}

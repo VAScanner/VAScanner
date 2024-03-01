@@ -1,0 +1,32 @@
+{
+    "project name": "zhangbincheng1997_CrowdFunding",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.62": {
+            "used-method num": 5,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                ]
+            }
+        }
+    }
+}

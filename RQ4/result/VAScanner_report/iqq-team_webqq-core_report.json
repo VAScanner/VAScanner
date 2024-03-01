@@ -1,0 +1,80 @@
+{
+    "project name": "iqq-team_webqq-core",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.5": {
+            "used-method num": 34,
+            "used method": [
+                "org.apache.http.impl.client.DefaultRedirectStrategy:org.apache.http.client.methods.HttpUriRequest getRedirect(org.apache.http.HttpRequest,org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper:void writeTo(java.io.OutputStream)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.net.URI)",
+                "org.apache.http.auth.AuthOption:java.lang.String toString()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.impl.client.EntityEnclosingRequestWrapper:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.DefaultRedirectStrategy:java.net.URI createLocationURI(java.lang.String)",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.impl.client.DefaultRedirectStrategy:void <init>()",
+                "org.apache.http.impl.auth.HttpEntityDigester:void close()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicAuthCache:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+            ],
+            "vul-called frequency": 2,
+            "root vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            }
+        },
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 13,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()"
+            ]
+        }
+    }
+}

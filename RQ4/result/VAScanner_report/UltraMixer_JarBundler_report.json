@@ -1,0 +1,114 @@
+{
+    "project name": "UltraMixer_JarBundler",
+    "modules": {
+        "com.ultramixer.jarbundler:jarbundler-parent": {
+            "vulnerable dependencies": {
+                "org.apache.ant:ant:1.9.14": {
+                    "used-method num": 54,
+                    "used method": [
+                        "org.apache.tools.ant.types.PropertySet$1:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.AntClassLoader$ResourceEnumeration:boolean hasMoreElements()",
+                        "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.taskdefs.MatchingTask:void setProject(org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.types.Resource$1:boolean hasNext()",
+                        "org.apache.tools.ant.types.resources.FileResourceIterator:boolean hasNext()",
+                        "org.apache.tools.ant.types.resources.FailFast:boolean hasNext()",
+                        "org.apache.tools.ant.util.FileUtils:org.apache.tools.ant.util.FileUtils getFileUtils()",
+                        "org.apache.tools.ant.util.FileUtils:void close(java.io.Writer)",
+                        "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:boolean hasNext()",
+                        "org.apache.tools.ant.types.AbstractFileSet:void setupDirectoryScanner(org.apache.tools.ant.FileScanner,org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.types.PatternSet:void <init>()",
+                        "org.apache.tools.ant.taskdefs.Chmod:void <init>()",
+                        "org.apache.tools.ant.taskdefs.Delete:void setDir(java.io.File)",
+                        "org.apache.tools.ant.taskdefs.Delete:void <clinit>()",
+                        "org.apache.tools.ant.Project$AntRefTable:java.lang.Object get(java.lang.Object)",
+                        "org.apache.tools.ant.Project:java.io.File resolveFile(java.lang.String)",
+                        "org.apache.tools.ant.types.AbstractFileSet:java.io.File getDir(org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.taskdefs.Delete:void <init>()",
+                        "org.apache.tools.ant.types.resources.FailFast:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.util.FileUtils:void copyFile(java.io.File,java.io.File)",
+                        "org.apache.tools.ant.types.PatternSet$InvertedPatternSet:java.lang.String[] getIncludePatterns(org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.taskdefs.Chmod:void setPerm(java.lang.String)",
+                        "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:boolean hasNext()",
+                        "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:boolean hasNext()",
+                        "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$FilteringIterator:boolean hasNext()",
+                        "org.apache.tools.ant.types.PatternSet:java.lang.String[] getIncludePatterns(org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.BuildException:void <init>(java.lang.Throwable)",
+                        "org.apache.tools.ant.util.CollectionUtils$1:boolean hasMoreElements()",
+                        "org.apache.tools.ant.util.VectorSet:boolean add(java.lang.Object)",
+                        "org.apache.tools.ant.AntClassLoader$ResourceEnumeration:java.net.URL nextElement()",
+                        "org.apache.tools.ant.types.resources.LazyResourceCollectionWrapper$CachedIterator:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.util.FileUtils:void <clinit>()",
+                        "org.apache.tools.ant.types.resources.Resources$MyCollection$MyIterator:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.taskdefs.Chmod:void setProject(org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.util.CollectionUtils$EmptyEnumeration:boolean hasMoreElements()",
+                        "org.apache.tools.ant.types.resources.FileResourceIterator:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.types.Resource$1:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.util.CollectionUtils$1:java.lang.Object nextElement()",
+                        "org.apache.tools.ant.ProjectComponent:org.apache.tools.ant.Project getProject()",
+                        "org.apache.tools.ant.util.CollectionUtils$CompoundEnumeration:java.lang.Object nextElement()",
+                        "org.apache.tools.ant.types.PatternSet:void setIncludes(java.lang.String)",
+                        "org.apache.tools.ant.taskdefs.Chmod:void setFile(java.io.File)",
+                        "org.apache.tools.ant.taskdefs.ExecTask:void <clinit>()",
+                        "org.apache.tools.ant.taskdefs.MatchingTask:void <init>()",
+                        "org.apache.tools.ant.util.VectorSet:boolean addAll(java.util.Collection)",
+                        "org.apache.tools.ant.BuildException:void <init>(java.lang.String)",
+                        "org.apache.tools.ant.types.AbstractFileSet:org.apache.tools.ant.DirectoryScanner getDirectoryScanner(org.apache.tools.ant.Project)",
+                        "org.apache.tools.ant.taskdefs.Chmod:void execute()",
+                        "org.apache.tools.ant.types.resources.Resources$2:org.apache.tools.ant.types.Resource next()",
+                        "org.apache.tools.ant.util.CollectionUtils$CompoundEnumeration:boolean hasMoreElements()",
+                        "org.apache.tools.ant.ProjectHelperRepository$ConstructingIterator:org.apache.tools.ant.ProjectHelper next()",
+                        "org.apache.tools.ant.util.CollectionUtils$EmptyEnumeration:java.lang.Object nextElement()",
+                        "org.apache.tools.ant.taskdefs.Delete:void execute()"
+                    ],
+                    "CVE": [
+                        "CVE-2021-36374",
+                        "CVE-2021-36373",
+                        "CVE-2020-1945"
+                    ],
+                    "used vul-method": [
+                        "org.apache.tools.ant.util.FileUtils:void copyFile(java.io.File,java.io.File)",
+                        "org.apache.tools.ant.taskdefs.Chmod:void execute()",
+                        "org.apache.tools.ant.taskdefs.Delete:void execute()"
+                    ],
+                    "vul-called frequency": 11,
+                    "related vul root method": {
+                        "CVE-2021-36374": [
+                            "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                            "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                            "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                        ],
+                        "CVE-2021-36373": [
+                            "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                            "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                            "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                        ],
+                        "CVE-2020-1945": [
+                            "org.apache.tools.ant.util.FileUtils:java.io.File createTempFile(java.lang.String,java.lang.String,java.io.File,boolean,boolean)",
+                            "org.apache.tools.ant.util.SymbolicLinkUtils:void deleteSymbolicLink(java.io.File,org.apache.tools.ant.Task)",
+                            "org.apache.tools.ant.taskdefs.compilers.DefaultCompilerAdapter:int executeExternalCompile(java.lang.String[],int,boolean)",
+                            "org.apache.tools.ant.taskdefs.Javadoc:void writeExternalArgs(org.apache.tools.ant.types.Commandline)",
+                            "org.apache.tools.ant.util.JavaEnvUtils:java.io.File createVmsJavaOptionFile(java.lang.String[])"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2021-36374": [
+                            "org.apache.tools.ant.util.FileUtils:void copyFile(java.io.File,java.io.File)",
+                            "org.apache.tools.ant.taskdefs.Chmod:void execute()",
+                            "org.apache.tools.ant.taskdefs.Delete:void execute()"
+                        ],
+                        "CVE-2021-36373": [
+                            "org.apache.tools.ant.util.FileUtils:void copyFile(java.io.File,java.io.File)",
+                            "org.apache.tools.ant.taskdefs.Chmod:void execute()",
+                            "org.apache.tools.ant.taskdefs.Delete:void execute()"
+                        ],
+                        "CVE-2020-1945": [
+                            "org.apache.tools.ant.taskdefs.Chmod:void execute()",
+                            "org.apache.tools.ant.taskdefs.Delete:void execute()"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

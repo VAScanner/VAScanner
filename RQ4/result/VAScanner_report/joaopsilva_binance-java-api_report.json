@@ -1,0 +1,51 @@
+{
+    "project name": "joaopsilva_binance-java-api",
+    "vulnerable dependencies": {
+        "com.squareup.retrofit2:retrofit:2.3.0": {
+            "used-method num": 18,
+            "used method": [
+                "retrofit2.Retrofit:java.lang.Object create(java.lang.Class)",
+                "retrofit2.BuiltInConverters$RequestBodyConverter:java.lang.Object convert(java.lang.Object)",
+                "retrofit2.Response:int code()",
+                "retrofit2.BuiltInConverters$ToStringConverter:java.lang.String convert(java.lang.Object)",
+                "retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall:retrofit2.Call clone()",
+                "retrofit2.OkHttpCall:retrofit2.OkHttpCall clone()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder client(okhttp3.OkHttpClient)",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit build()",
+                "retrofit2.Retrofit$Builder:void <init>()",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder baseUrl(java.lang.String)",
+                "retrofit2.RequestBuilder$ContentTypeOverridingRequestBody:void writeTo(okio.BufferedSink)",
+                "retrofit2.BuiltInConverters$BufferingResponseBodyConverter:java.lang.Object convert(java.lang.Object)",
+                "retrofit2.BuiltInConverters$VoidResponseBodyConverter:java.lang.Object convert(java.lang.Object)",
+                "retrofit2.OkHttpCall:retrofit2.Response execute()",
+                "retrofit2.OkHttpCall:void enqueue(retrofit2.Callback)",
+                "retrofit2.BuiltInConverters$StreamingResponseBodyConverter:java.lang.Object convert(java.lang.Object)",
+                "retrofit2.Retrofit$Builder:retrofit2.Retrofit$Builder addConverterFactory(retrofit2.Converter$Factory)",
+                "retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall:void enqueue(retrofit2.Callback)"
+            ],
+            "CVE": [
+                "CVE-2018-1000850"
+            ],
+            "used vul-method": [
+                "retrofit2.OkHttpCall:retrofit2.Response execute()",
+                "retrofit2.OkHttpCall:void enqueue(retrofit2.Callback)"
+            ],
+            "vul-called frequency": 24,
+            "related vul root method": {
+                "CVE-2018-1000850": [
+                    "retrofit2.RequestBuilder:void addPathParam(java.lang.String,java.lang.String,boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2018-1000850": [
+                    "retrofit2.OkHttpCall:retrofit2.Response execute()",
+                    "retrofit2.OkHttpCall:void enqueue(retrofit2.Callback)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

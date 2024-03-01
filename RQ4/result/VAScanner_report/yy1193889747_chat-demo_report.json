@@ -1,0 +1,39 @@
+{
+    "project name": "yy1193889747_chat-demo",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.44": {
+            "used-method num": 8,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.String getString(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSONObject:void <init>()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object remove(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                ]
+            }
+        }
+    }
+}

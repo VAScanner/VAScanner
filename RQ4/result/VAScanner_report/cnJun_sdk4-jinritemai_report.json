@@ -1,0 +1,57 @@
+{
+    "project name": "cnJun_sdk4-jinritemai",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.75": {
+            "used-method num": 20,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:java.util.Set keySet()",
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig)",
+                "com.alibaba.fastjson.PropertyNamingStrategy:void <clinit>()",
+                "com.alibaba.fastjson.serializer.SerializeConfig:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.SerializeConfig:void <init>()",
+                "com.alibaba.fastjson.JSONArray:boolean isEmpty()",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:boolean isEmpty()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()"
+            ],
+            "vul-called frequency": 12,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object,com.alibaba.fastjson.serializer.SerializeConfig)",
+                    "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()"
+                ]
+            }
+        }
+    }
+}

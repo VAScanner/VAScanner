@@ -1,0 +1,35 @@
+{
+    "project name": "jbuider1993_zlt2000-microservices-platform",
+    "modules": {
+        "com.zlt:central-platform": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 4,
+                    "used method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

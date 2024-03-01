@@ -1,0 +1,69 @@
+{
+    "project name": "li5454yong_springboot-httpclient",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.3.1": {
+            "used-method num": 42,
+            "used method": [
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setStaleConnectionCheckEnabled(boolean)",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setParameter(java.lang.String,java.lang.String)",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.conn.ssl.PrivateKeyDetails:java.lang.String toString()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                "org.apache.http.impl.client.HttpClientBuilder:void <clinit>()",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void closeExpiredConnections()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

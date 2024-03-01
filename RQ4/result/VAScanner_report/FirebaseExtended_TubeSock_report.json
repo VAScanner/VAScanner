@@ -1,0 +1,31 @@
+{
+    "project name": "FirebaseExtended_TubeSock",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.0.1": {
+            "used-method num": 3,
+            "used method": [
+                "org.apache.http.conn.ssl.StrictHostnameVerifier:void <init>()",
+                "org.apache.http.conn.ssl.AbstractVerifier:void <clinit>()",
+                "org.apache.http.conn.ssl.AbstractVerifier:void verify(java.lang.String,java.security.cert.X509Certificate)"
+            ],
+            "CVE": [
+                "CVE-2012-6153"
+            ],
+            "used vul-method": [
+                "org.apache.http.conn.ssl.AbstractVerifier:void verify(java.lang.String,java.security.cert.X509Certificate)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2012-6153": [
+                    "org.apache.http.conn.ssl.AbstractVerifier:java.lang.String[] getCNs(java.security.cert.X509Certificate)",
+                    "org.apache.http.conn.ssl.AbstractVerifier:void verify(java.lang.String,java.lang.String[],java.lang.String[],boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2012-6153": [
+                    "org.apache.http.conn.ssl.AbstractVerifier:void verify(java.lang.String,java.security.cert.X509Certificate)"
+                ]
+            }
+        }
+    }
+}

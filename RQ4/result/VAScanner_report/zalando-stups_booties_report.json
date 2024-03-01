@@ -1,0 +1,23 @@
+{
+    "project name": "zalando-stups_booties",
+    "modules": {
+        "org.zalando.stups:booties-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.zalando.stups.build:stups-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.junit.rules.ExternalResource:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

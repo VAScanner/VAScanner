@@ -1,0 +1,24 @@
+{
+    "project name": "OpenTSDB_opentsdb-elasticsearch",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 10,
+            "used method": [
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.lang.String)"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "project name": "gzdzss_gzdzss-oauth2",
+    "modules": {
+        "com.gzdzss:gzdzss-oauth2": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.15": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "com.alibaba:fastjson:1.2.56": {
+                    "used-method num": 6,
+                    "used method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                        "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

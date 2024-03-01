@@ -1,0 +1,94 @@
+{
+    "project name": "DigitalPebble_behemoth",
+    "modules": {
+        "com.digitalpebble.behemoth:behemoth-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.commons:commons-compress:1.9": {
+                    "used-method num": 57,
+                    "used method": [
+                        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void close()",
+                        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void <init>(java.io.InputStream)",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveOutputStream:void close()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                        "org.apache.commons.compress.archivers.dump.TapeInputStream:void close()",
+                        "org.apache.commons.compress.archivers.dump.DumpArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void closeArchiveEntry()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void finish()",
+                        "org.apache.commons.compress.archivers.dump.DumpArchiveEntry:long getSize()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveEntry:long getSize()",
+                        "org.apache.commons.compress.archivers.jar.JarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry:long getSize()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream:void close()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:void <init>(java.lang.String)",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream:void close()",
+                        "org.apache.commons.compress.utils.ChecksumVerifyingInputStream:void close()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.sevenz.BoundedRandomAccessFileInputStream:void close()",
+                        "org.apache.commons.compress.utils.BoundedInputStream:void close()",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                        "org.apache.commons.compress.archivers.ArchiveStreamFactory:org.apache.commons.compress.archivers.ArchiveOutputStream createArchiveOutputStream(java.lang.String,java.io.OutputStream)",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream:void finish()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:java.lang.Object clone()",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream:void closeArchiveEntry()",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveEntry:long getSize()",
+                        "org.apache.commons.compress.archivers.arj.ArjArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void closeArchiveEntry()",
+                        "org.apache.commons.compress.archivers.arj.ArjArchiveInputStream:void close()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:long getSize()",
+                        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream:org.apache.commons.compress.archivers.dump.DumpArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.arj.ArjArchiveInputStream:org.apache.commons.compress.archivers.arj.ArjArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntry:long getSize()",
+                        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream:void close()",
+                        "org.apache.commons.compress.archivers.zip.ZipLong:java.lang.Object clone()",
+                        "org.apache.commons.compress.archivers.ArchiveStreamFactory:void <init>()",
+                        "org.apache.commons.compress.compressors.z._internal_.InternalLZWInputStream:void close()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveOutputStream:void closeArchiveEntry()",
+                        "org.apache.commons.compress.archivers.zip.ZipShort:java.lang.Object clone()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void close()",
+                        "org.apache.commons.compress.archivers.ar.ArArchiveOutputStream:void finish()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:void close()",
+                        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream:void close()",
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream:void finish()",
+                        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream:void close()",
+                        "org.apache.commons.compress.archivers.ArchiveStreamFactory:org.apache.commons.compress.archivers.ArchiveInputStream createArchiveInputStream(java.io.InputStream)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-11771"
+                    ],
+                    "used vul-method": [
+                        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                        "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2018-11771": [
+                            "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:int readStored(byte[],int,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-11771": [
+                            "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()",
+                            "org.apache.commons.compress.archivers.jar.JarArchiveInputStream:org.apache.commons.compress.archivers.ArchiveEntry getNextEntry()"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

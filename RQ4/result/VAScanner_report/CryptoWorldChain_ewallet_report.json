@@ -1,0 +1,42 @@
+{
+    "project name": "CryptoWorldChain_ewallet",
+    "modules": {
+        "com.fr.chain:wallet": {
+            "vulnerable dependencies": {
+                "org.springframework:spring-web:3.1.4.RELEASE": {
+                    "used-method num": 12,
+                    "used method": [
+                        "org.springframework.web.bind.ServletRequestBindingException:void <init>(java.lang.String)",
+                        "org.springframework.web.bind.support.WebArgumentResolver:void <clinit>()",
+                        "org.springframework.http.MediaType:void <init>(java.lang.String,java.lang.String,java.nio.charset.Charset)",
+                        "org.springframework.http.MediaType:void <clinit>()",
+                        "org.springframework.http.MediaType:java.lang.String toString()",
+                        "org.springframework.http.MediaType:boolean equals(java.lang.Object)",
+                        "org.springframework.http.HttpHeaders:boolean equals(java.lang.Object)",
+                        "org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver:void <init>(org.springframework.beans.factory.config.ConfigurableBeanFactory)",
+                        "org.springframework.http.HttpHeaders:int hashCode()",
+                        "org.springframework.web.util.NestedServletException:void <clinit>()",
+                        "org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver$NamedValueInfo:void <init>(java.lang.String,boolean,java.lang.String)",
+                        "org.springframework.http.HttpHeaders:java.lang.String toString()"
+                    ]
+                },
+                "org.springframework:spring-webmvc:3.1.4.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.security:spring-security-web:4.0.1.RELEASE": {
+                    "used-method num": 7,
+                    "used method": [
+                        "org.springframework.security.web.FilterInvocation:javax.servlet.http.HttpServletRequest getRequest()",
+                        "org.springframework.security.web.FilterInvocation:void <clinit>()",
+                        "org.springframework.security.web.FilterInvocation$1:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                        "org.springframework.security.web.FilterInvocation:void <init>(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)",
+                        "org.springframework.security.web.FilterInvocation:java.lang.String toString()",
+                        "org.springframework.security.web.FilterInvocation:javax.servlet.http.HttpServletResponse getResponse()",
+                        "org.springframework.security.web.FilterInvocation:javax.servlet.FilterChain getChain()"
+                    ]
+                }
+            }
+        }
+    }
+}

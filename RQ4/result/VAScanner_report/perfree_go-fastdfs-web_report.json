@@ -1,0 +1,74 @@
+{
+    "project name": "perfree_go-fastdfs-web",
+    "vulnerable dependencies": {
+        "org.apache.shiro:shiro-core:1.8.0": {
+            "used-method num": 25,
+            "used method": [
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toString()",
+                "org.apache.shiro.config.Ini$Section:boolean equals(java.lang.Object)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.realm.CachingRealm:java.lang.String getName()",
+                "org.apache.shiro.crypto.hash.Md5Hash:void <init>(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String,boolean)",
+                "org.apache.shiro.crypto.hash.SimpleHash:boolean equals(java.lang.Object)",
+                "org.apache.shiro.codec.Base64:byte[] decode(java.lang.String)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.authc.IncorrectCredentialsException:void <init>(java.lang.String)",
+                "org.apache.shiro.authc.UsernamePasswordToken:char[] getPassword()",
+                "org.apache.shiro.authz.permission.WildcardPermission:boolean equals(java.lang.Object)",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:boolean equals(java.lang.Object)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:boolean equals(java.lang.Object)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void <clinit>()",
+                "org.apache.shiro.util.SimpleByteSource:boolean equals(java.lang.Object)",
+                "org.apache.shiro.realm.CachingRealm:void <clinit>()",
+                "org.apache.shiro.authc.UnknownAccountException:void <init>(java.lang.String)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <clinit>()",
+                "org.apache.shiro.codec.Base64:void <clinit>()",
+                "org.apache.shiro.config.Ini:boolean equals(java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String getUsername()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)"
+            ]
+        },
+        "com.alibaba:fastjson:1.2.75": {
+            "used-method num": 11,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:java.lang.String getString(java.lang.String)",
+                "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONObject:com.alibaba.fastjson.JSONObject getJSONObject(java.lang.String)",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()",
+                "com.alibaba.fastjson.JSONArray:int size()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONObject:com.alibaba.fastjson.JSONObject getJSONObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSONObject:com.alibaba.fastjson.JSONObject getJSONObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString()"
+                ]
+            }
+        }
+    }
+}

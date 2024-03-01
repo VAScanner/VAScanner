@@ -1,0 +1,141 @@
+{
+    "project name": "gusdecante_ecommerce-ifsp",
+    "vulnerable dependencies": {
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "mysql:mysql-connector-java:8.0.21": {
+            "used-method num": 36,
+            "used method": [
+                "com.mysql.cj.jdbc.ha.MultiHostMySQLConnection:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                "com.mysql.cj.exceptions.CJException:java.lang.String getMessage()",
+                "com.mysql.cj.jdbc.result.ResultSetImpl:java.lang.String getString(java.lang.String)",
+                "com.mysql.cj.jdbc.CallableStatement:java.sql.ResultSet executeQuery()",
+                "com.mysql.cj.jdbc.result.ResultSetImpl:boolean next()",
+                "com.mysql.cj.jdbc.exceptions.MysqlDataTruncation:java.lang.String getMessage()",
+                "com.mysql.cj.protocol.a.result.ResultsetRowsStatic:com.mysql.cj.result.Row next()",
+                "com.mysql.cj.jdbc.MysqlDataSource:void setServerTimezone(java.lang.String)",
+                "com.mysql.cj.jdbc.MysqlDataSource:void <clinit>()",
+                "com.mysql.cj.jdbc.result.UpdatableResultSet:boolean next()",
+                "com.mysql.cj.jdbc.ClientPreparedStatement:void setInt(int,int)",
+                "com.mysql.cj.jdbc.ClientPreparedStatement:void setDouble(int,double)",
+                "com.mysql.cj.jdbc.MysqlDataSource:void setConnectTimeout(int)",
+                "com.mysql.cj.jdbc.ClientPreparedStatement:void setString(int,java.lang.String)",
+                "com.mysql.cj.jdbc.MysqlDataSource:java.sql.Connection getConnection()",
+                "com.mysql.cj.jdbc.ConnectionImpl:void close()",
+                "com.mysql.cj.jdbc.MysqlDataSource:void <init>()",
+                "com.mysql.cj.protocol.a.result.ResultsetRowsCursor:com.mysql.cj.result.Row next()",
+                "com.mysql.cj.protocol.a.result.ResultsetRowsCursor:boolean hasNext()",
+                "com.mysql.cj.jdbc.result.ResultSetImpl:int getInt(int)",
+                "com.mysql.cj.jdbc.exceptions.ConnectionFeatureNotAvailableException:java.lang.String getMessage()",
+                "com.mysql.cj.jdbc.StatementImpl:void close()",
+                "com.mysql.cj.jdbc.result.ResultSetImpl:int getInt(java.lang.String)",
+                "com.mysql.cj.protocol.a.result.ResultsetRowsStreaming:com.mysql.cj.result.Row next()",
+                "com.mysql.cj.jdbc.result.ResultSetImpl:double getDouble(java.lang.String)",
+                "com.mysql.cj.protocol.a.result.ResultsetRowsStreaming:boolean hasNext()",
+                "com.mysql.cj.protocol.a.result.ResultsetRowsStatic:boolean hasNext()",
+                "com.mysql.cj.jdbc.ha.MultiHostMySQLConnection:void close()",
+                "com.mysql.cj.jdbc.ha.LoadBalancedMySQLConnection:void close()",
+                "com.mysql.cj.exceptions.CJConnectionFeatureNotAvailableException:java.lang.String getMessage()",
+                "com.mysql.cj.jdbc.exceptions.CommunicationsException:java.lang.String getMessage()",
+                "com.mysql.cj.jdbc.ClientPreparedStatement:int executeUpdate()",
+                "com.mysql.cj.jdbc.ServerPreparedStatement:void close()",
+                "com.mysql.cj.jdbc.CallableStatement:int executeUpdate()",
+                "com.mysql.cj.jdbc.ConnectionImpl:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                "com.mysql.cj.jdbc.ClientPreparedStatement:java.sql.ResultSet executeQuery()"
+            ]
+        },
+        "org.mongodb:mongo-java-driver:3.12.7": {
+            "used-method num": 45,
+            "used method": [
+                "com.mongodb.client.internal.MongoCollectionImpl:void insertOne(java.lang.Object)",
+                "com.mongodb.MongoClientSettings$Builder:com.mongodb.MongoClientSettings build()",
+                "org.bson.types.ObjectId:void <init>(java.lang.String)",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(com.mongodb.MongoClientSettings)",
+                "com.mongodb.MongoClientSettings:void <clinit>()",
+                "com.mongodb.client.internal.MongoClientImpl:com.mongodb.client.MongoDatabase getDatabase(java.lang.String)",
+                "org.bson.RawBsonArray$RawBsonArrayList$Itr:org.bson.BsonValue next()",
+                "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:java.lang.Object next()",
+                "org.bson.types.StringRangeSet$1:boolean hasNext()",
+                "com.mongodb.internal.connection.ConcurrentLinkedDeque$CLDIterator:boolean hasNext()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                "org.bson.Document:java.lang.String toJson()",
+                "org.bson.RawBsonArray$RawBsonArrayList:int size()",
+                "org.bson.RawBsonArray$RawBsonArrayList$Itr:boolean hasNext()",
+                "com.mongodb.MongoClientSettings$Builder:com.mongodb.MongoClientSettings$Builder applyConnectionString(com.mongodb.ConnectionString)",
+                "com.mongodb.ConnectionString:void <init>(java.lang.String)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:boolean hasNext()",
+                "com.mongodb.operation.BsonArrayWrapper:java.util.Iterator iterator()",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                "com.mongodb.client.internal.MongoIterableImpl:com.mongodb.client.MongoCursor iterator()",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                "org.bson.Document:org.bson.Document append(java.lang.String,java.lang.Object)",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()",
+                "com.mongodb.MongoClientSettings:com.mongodb.MongoClientSettings$Builder builder()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.FindIterable find()",
+                "com.mongodb.operation.BsonArrayWrapper:int size()",
+                "org.bson.BsonArray:java.util.Iterator iterator()",
+                "org.bson.BsonArray:int size()",
+                "com.mongodb.client.internal.MongoDatabaseImpl:com.mongodb.client.MongoCollection getCollection(java.lang.String)",
+                "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                "org.bson.types.StringRangeSet$1:java.lang.String next()",
+                "com.mongodb.internal.connection.ConcurrentLinkedDeque$CLDIterator:java.lang.Object next()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                "org.bson.Document:void <init>()",
+                "org.bson.RawBsonArray$RawBsonArrayList:java.util.Iterator iterator()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.DeleteResult deleteOne(org.bson.conversions.Bson)",
+                "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                "org.bson.types.ObjectId:void <clinit>()",
+                "com.mongodb.BasicDBObject:void <init>()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.FindIterable find(org.bson.conversions.Bson)",
+                "com.mongodb.ConnectionString:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2021-20328"
+            ],
+            "used vul-method": [
+                "com.mongodb.client.internal.MongoCollectionImpl:void insertOne(java.lang.Object)",
+                "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                "com.mongodb.client.internal.MongoIterableImpl:com.mongodb.client.MongoCursor iterator()",
+                "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()",
+                "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.DeleteResult deleteOne(org.bson.conversions.Bson)",
+                "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()"
+            ],
+            "vul-called frequency": 254,
+            "related vul root method": {
+                "CVE-2021-20328": [
+                    "com.mongodb.client.internal.KeyManagementService:java.io.InputStream stream(java.lang.String,java.nio.ByteBuffer)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-20328": [
+                    "com.mongodb.client.internal.MongoCollectionImpl:void insertOne(java.lang.Object)",
+                    "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                    "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                    "com.mongodb.client.internal.MongoIterableImpl:com.mongodb.client.MongoCursor iterator()",
+                    "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                    "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                    "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()",
+                    "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                    "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                    "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                    "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.DeleteResult deleteOne(org.bson.conversions.Bson)",
+                    "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                    "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()"
+                ]
+            }
+        }
+    }
+}

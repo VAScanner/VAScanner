@@ -1,0 +1,32 @@
+{
+    "project name": "Jefferson-Henrique_GetOldTweets-java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5": {
+            "used-method num": 5,
+            "used method": [
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

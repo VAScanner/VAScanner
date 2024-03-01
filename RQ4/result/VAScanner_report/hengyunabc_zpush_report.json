@@ -1,0 +1,39 @@
+{
+    "project name": "hengyunabc_zpush",
+    "vulnerable dependencies": {
+        "io.netty:netty-codec:4.0.27.Final": {
+            "used-method num": 3,
+            "used method": [
+                "io.netty.handler.codec.ByteToMessageDecoder:void <init>()",
+                "io.netty.handler.codec.MessageToByteEncoder:void <init>()",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()"
+            ]
+        },
+        "io.netty:netty-handler:4.0.27.Final": {
+            "used-method num": 7,
+            "used method": [
+                "io.netty.handler.logging.LoggingHandler:void <clinit>()",
+                "io.netty.handler.logging.LoggingHandler:void <init>(io.netty.handler.logging.LogLevel)",
+                "io.netty.handler.ssl.SslHandler:void <clinit>()",
+                "io.netty.handler.timeout.IdleStateHandler:void <init>(int,int,int)",
+                "io.netty.handler.ssl.SslHandler:void <init>(javax.net.ssl.SSLEngine)",
+                "io.netty.handler.timeout.IdleState:void <clinit>()",
+                "io.netty.handler.logging.LogLevel:void <clinit>()"
+            ]
+        },
+        "org.springframework:spring-core:3.2.3.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 5,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)"
+            ]
+        }
+    }
+}

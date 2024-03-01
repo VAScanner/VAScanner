@@ -1,0 +1,79 @@
+{
+    "project name": "rshtishi_pdf-barcodes-processor",
+    "vulnerable dependencies": {
+        "org.apache.pdfbox:pdfbox:2.0.16": {
+            "used-method num": 28,
+            "used method": [
+                "org.apache.pdfbox.pdmodel.PDResources:org.apache.pdfbox.pdmodel.graphics.PDXObject getXObject(org.apache.pdfbox.cos.COSName)",
+                "org.apache.pdfbox.pdmodel.PDPageTree$PageIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:java.util.Iterator iterator()",
+                "org.apache.pdfbox.pdmodel.common.PDPageLabels$LabelGenerator:java.lang.String next()",
+                "org.apache.pdfbox.pdmodel.PDPage:org.apache.pdfbox.pdmodel.PDResources getResources()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void <clinit>()",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree:java.util.Iterator iterator()",
+                "org.apache.pdfbox.io.RandomAccessBuffer:org.apache.pdfbox.io.RandomAccessBuffer clone()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void close()",
+                "org.apache.pdfbox.pdmodel.PDDocumentCatalog:org.apache.pdfbox.pdmodel.PDPageTree getPages()",
+                "org.apache.pdfbox.pdmodel.PDResources:java.lang.Iterable getXObjectNames()",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)",
+                "org.apache.pdfbox.pdmodel.graphics.state.PDTextState:org.apache.pdfbox.pdmodel.graphics.state.PDTextState clone()",
+                "org.apache.pdfbox.pdmodel.common.COSDictionaryMap:java.util.Collection values()",
+                "org.apache.pdfbox.pdmodel.PDPageTree$PageIterator:org.apache.pdfbox.pdmodel.PDPage next()",
+                "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator:org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem next()",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree$FieldIterator:org.apache.pdfbox.pdmodel.interactive.form.PDField next()",
+                "org.apache.pdfbox.pdmodel.common.PDPageLabels$LabelGenerator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree$FieldIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.common.COSDictionaryMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.pdfbox.pdmodel.common.COSDictionaryMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.pdfbox.cos.COSArray:java.util.Iterator iterator()",
+                "org.apache.pdfbox.pdmodel.PDPageTree:java.util.Iterator iterator()",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocumentCatalog getDocumentCatalog()",
+                "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject:java.awt.image.BufferedImage getImage()",
+                "org.apache.pdfbox.pdmodel.common.COSDictionaryMap:java.util.Set keySet()",
+                "org.apache.pdfbox.util.Matrix:org.apache.pdfbox.util.Matrix clone()"
+            ],
+            "CVE": [
+                "CVE-2021-27807",
+                "CVE-2021-31811",
+                "CVE-2021-31812"
+            ],
+            "used vul-method": [
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2021-27807": [
+                    "org.apache.pdfbox.io.RandomAccessBuffer:int readRemainingBytes(byte[],int,int)",
+                    "org.apache.pdfbox.io.RandomAccessBuffer:int read(byte[],int,int)",
+                    "org.apache.pdfbox.pdfparser.InputStreamSource:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.ScratchFileBuffer:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.RandomAccessBuffer:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.RandomAccessBufferedFileInputStream:byte[] readFully(int)"
+                ],
+                "CVE-2021-31811": [
+                    "org.apache.pdfbox.pdfparser.PDFObjectStreamParser:void parse()"
+                ],
+                "CVE-2021-31812": [
+                    "org.apache.pdfbox.pdfparser.BaseParser:void parseCOSDictionaryNameValuePair(org.apache.pdfbox.cos.COSDictionary)",
+                    "org.apache.pdfbox.pdfparser.BaseParser:org.apache.pdfbox.cos.COSArray parseCOSArray()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-27807": [
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)"
+                ],
+                "CVE-2021-31811": [
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)"
+                ],
+                "CVE-2021-31812": [
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

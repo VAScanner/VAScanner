@@ -1,0 +1,32 @@
+{
+    "project name": "hawkular_hawkular-client-java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 22,
+            "used method": [
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.impl.client.BasicAuthCache:void <init>()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext)",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.protocol.HttpClientContext:void setCredentialsProvider(org.apache.http.client.CredentialsProvider)",
+                "org.apache.http.client.protocol.HttpClientContext:void setAuthCache(org.apache.http.client.AuthCache)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.auth.AuthScope:void <init>(java.lang.String,int)",
+                "org.apache.http.client.protocol.HttpClientContext:org.apache.http.client.protocol.HttpClientContext create()",
+                "org.apache.http.impl.client.BasicAuthCache:void put(org.apache.http.HttpHost,org.apache.http.auth.AuthScheme)",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.auth.BasicScheme:void <init>()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void <init>()"
+            ]
+        }
+    }
+}

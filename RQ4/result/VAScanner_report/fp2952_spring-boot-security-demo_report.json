@@ -1,0 +1,45 @@
+{
+    "project name": "fp2952_spring-boot-security-demo",
+    "vulnerable dependencies": {
+        "org.springframework.security:spring-security-web:4.2.3.RELEASE": {
+            "used-method num": 35,
+            "used method": [
+                "org.springframework.security.web.FilterInvocation:javax.servlet.FilterChain getChain()",
+                "org.springframework.security.web.savedrequest.HttpSessionRequestCache:void removeRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)",
+                "org.springframework.security.web.FilterInvocation:javax.servlet.http.HttpServletRequest getRequest()",
+                "org.springframework.security.web.FilterInvocation:void <clinit>()",
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.NegatedRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.FilterInvocation:void <init>(javax.servlet.ServletRequest,javax.servlet.ServletResponse,javax.servlet.FilterChain)",
+                "org.springframework.security.web.authentication.preauth.PreAuthenticatedGrantedAuthoritiesWebAuthenticationDetails:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.MediaTypeRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.authentication.WebAuthenticationDetailsSource:java.lang.Object buildDetails(java.lang.Object)",
+                "org.springframework.security.web.header.writers.ContentSecurityPolicyHeaderWriter:java.lang.String toString()",
+                "org.springframework.security.web.FilterInvocation:java.lang.String getRequestUrl()",
+                "org.springframework.security.web.header.writers.XXssProtectionHeaderWriter:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.RequestHeaderRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:void <init>(java.lang.String,java.lang.String)",
+                "org.springframework.security.web.FilterInvocation$1:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.AndRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.OrRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.DefaultSecurityFilterChain:java.lang.String toString()",
+                "org.springframework.security.web.FilterChainProxy:java.lang.String toString()",
+                "org.springframework.security.web.header.Header:java.lang.String toString()",
+                "org.springframework.security.web.authentication.WebAuthenticationDetails:java.lang.String toString()",
+                "org.springframework.security.web.FilterInvocation:java.lang.String toString()",
+                "org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter:org.springframework.security.authentication.AuthenticationManager getAuthenticationManager()",
+                "org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter:void <init>(org.springframework.security.web.util.matcher.RequestMatcher)",
+                "org.springframework.security.web.FilterInvocation:javax.servlet.http.HttpServletResponse getResponse()",
+                "org.springframework.security.web.savedrequest.DefaultSavedRequest:java.lang.String toString()",
+                "org.springframework.security.web.FilterChainProxy$VirtualFilterChain:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.authentication.preauth.j2ee.J2eeBasedPreAuthenticatedWebAuthenticationDetailsSource:java.lang.Object buildDetails(java.lang.Object)",
+                "org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper:java.lang.String toString()",
+                "org.springframework.security.web.header.writers.StaticHeadersWriter:java.lang.String toString()",
+                "org.springframework.security.web.savedrequest.HttpSessionRequestCache:void <init>()",
+                "org.springframework.security.web.firewall.FirewalledRequest:java.lang.String toString()",
+                "org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken:java.lang.String toString()"
+            ]
+        }
+    }
+}

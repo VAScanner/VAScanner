@@ -1,0 +1,53 @@
+{
+    "project name": "MatiMon_GeSoc-DDS-2020",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.quartz-scheduler:quartz:2.2.1": {
+            "used-method num": 35,
+            "used method": [
+                "org.quartz.JobBuilder:org.quartz.JobBuilder newJob(java.lang.Class)",
+                "org.quartz.core.QuartzScheduler$1:void run()",
+                "org.quartz.impl.triggers.CronTriggerImpl:java.lang.Object clone()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder startNow()",
+                "org.quartz.impl.RemoteScheduler:void start()",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder simpleSchedule()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.JobBuilder:org.quartz.JobDetail build()",
+                "org.quartz.core.JobRunShell:void run()",
+                "org.quartz.impl.RemoteScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.impl.StdSchedulerFactory:org.quartz.Scheduler getScheduler()",
+                "org.quartz.simpl.SimpleThreadPool$WorkerThread:void run()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object clone()",
+                "org.quartz.utils.counter.sampled.SampledCounterImpl$1:void run()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object remove(java.lang.Object)",
+                "org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler:void run()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager:void run()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.utils.UpdateChecker:void run()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.quartz.impl.triggers.AbstractTrigger:java.lang.Object clone()",
+                "org.quartz.impl.JobDetailImpl:java.lang.Object clone()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.impl.StdSchedulerFactory:void <init>()",
+                "org.quartz.impl.StdScheduler:void start()",
+                "org.quartz.utils.DirtyFlagMap:boolean containsKey(java.lang.Object)",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder repeatForever()",
+                "org.quartz.core.QuartzSchedulerThread:void run()",
+                "org.quartz.impl.StdScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.CronExpression:java.lang.Object clone()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder newTrigger()",
+                "org.quartz.TriggerBuilder:org.quartz.Trigger build()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withSchedule(org.quartz.ScheduleBuilder)",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder withIntervalInSeconds(int)"
+            ]
+        },
+        "org.postgresql:postgresql:42.2.18.jre7": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "project name": "klaushauschild1984_selenium-toys",
+    "modules": {
+        "org.apache.commons:core": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.3": {
+                    "used-method num": 17,
+                    "used method": [
+                        "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                        "org.apache.http.impl.client.InternalHttpClient:void close()",
+                        "org.apache.http.impl.client.IdleConnectionEvictor$1:void run()",
+                        "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                        "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                        "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                        "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                        "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                        "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                        "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                        "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                        "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                        "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                        "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                        "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-13956"
+                    ],
+                    "used vul-method": [
+                        "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2020-13956": [
+                            "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-13956": [
+                            "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

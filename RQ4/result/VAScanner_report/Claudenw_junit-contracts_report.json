@@ -1,0 +1,56 @@
+{
+    "project name": "Claudenw_junit-contracts",
+    "modules": {
+        "org.xenei:junit-contracts": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 26,
+                    "used method": [
+                        "org.junit.runners.BlockJUnit4ClassRunner:java.lang.String testName(org.junit.runners.model.FrameworkMethod)",
+                        "org.junit.runners.model.InitializationError:void <init>(java.lang.Throwable)",
+                        "org.junit.runners.model.TestClass:java.lang.Class getJavaClass()",
+                        "org.junit.runners.model.InitializationError:void <init>(java.lang.String)",
+                        "org.junit.runners.BlockJUnit4ClassRunner:void validateOnlyOneConstructor(java.util.List)",
+                        "org.junit.runner.Description:org.junit.runner.Description createTestDescription(java.lang.Class,java.lang.String)",
+                        "org.junit.runners.ParentRunner:void runLeaf(org.junit.runners.model.Statement,org.junit.runner.Description,org.junit.runner.notification.RunNotifier)",
+                        "org.junit.runner.Runner:void <init>()",
+                        "org.junit.runner.Description:void addChild(org.junit.runner.Description)",
+                        "org.junit.runners.ParentRunner:void <init>(java.lang.Class)",
+                        "org.junit.runners.BlockJUnit4ClassRunner:void validateTestMethods(java.util.List)",
+                        "org.junit.runners.model.TestClass:java.lang.reflect.Constructor getOnlyConstructor()",
+                        "org.junit.runners.model.TestClass:void <init>(java.lang.Class)",
+                        "org.junit.runner.Description:org.junit.runner.Description createSuiteDescription(java.lang.Class)",
+                        "org.junit.runners.ParentRunner:org.junit.runners.model.TestClass getTestClass()",
+                        "org.junit.runner.Description:void <clinit>()",
+                        "org.junit.runner.notification.Failure:void <init>(org.junit.runner.Description,java.lang.Throwable)",
+                        "org.junit.runners.BlockJUnit4ClassRunner:org.junit.runner.Description describeChild(org.junit.runners.model.FrameworkMethod)",
+                        "org.junit.runners.ParentRunner:void validatePublicVoidNoArgMethods(java.lang.Class,boolean,java.util.List)",
+                        "org.junit.runners.ParentRunner:java.lang.String getName()",
+                        "org.junit.runners.model.FrameworkMethod:java.lang.reflect.Method getMethod()",
+                        "org.junit.runners.ParentRunner:org.junit.runner.Description getDescription()",
+                        "org.junit.runners.BlockJUnit4ClassRunner:void <init>(java.lang.Class)",
+                        "org.junit.runners.ParentRunner:void run(org.junit.runner.notification.RunNotifier)",
+                        "org.junit.runners.BlockJUnit4ClassRunner:org.junit.runners.model.Statement methodBlock(org.junit.runners.model.FrameworkMethod)",
+                        "org.junit.runners.model.TestClass:java.util.List getAnnotatedMethods(java.lang.Class)"
+                    ]
+                }
+            }
+        },
+        "org.xenei:contract-test-maven-plugin": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.xenei:contracts": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

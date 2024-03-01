@@ -1,0 +1,84 @@
+{
+    "project name": "monkeyk_oauth2-shiro",
+    "modules": {
+        "com.monkeyk:core": {
+            "vulnerable dependencies": {
+                "org.apache.shiro:shiro-core:1.8.0": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.apache.shiro.subject.support.DefaultSubjectContext:org.apache.shiro.authc.AuthenticationToken getAuthenticationToken()",
+                        "org.apache.shiro.subject.support.DefaultSubjectContext:boolean isAuthenticated()",
+                        "org.apache.shiro.realm.jdbc.JdbcRealm:void <init>()",
+                        "org.apache.shiro.subject.support.DefaultSubjectContext:void setAuthenticated(boolean)"
+                    ]
+                },
+                "org.springframework:spring-core:3.2.2.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.monkeyk:authz": {
+            "vulnerable dependencies": {
+                "org.apache.shiro:shiro-core:1.8.0": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                        "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                        "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                        "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)"
+                    ]
+                },
+                "org.springframework:spring-core:3.2.2.RELEASE": {
+                    "used-method num": 10,
+                    "used method": [
+                        "org.springframework.core.NestedCheckedException:java.lang.String getMessage()",
+                        "org.springframework.core.NestedIOException:java.lang.String getMessage()",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                        "org.springframework.core.NestedRuntimeException:java.lang.String getMessage()",
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object get(java.lang.Object)",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.springframework.core.annotation.AnnotationAttributes:java.lang.String toString()"
+                    ]
+                }
+            }
+        },
+        "com.monkeyk:resources": {
+            "vulnerable dependencies": {
+                "org.apache.shiro:shiro-core:1.8.0": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.apache.shiro.authc.AuthenticationException:void <init>()",
+                        "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.String)",
+                        "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)",
+                        "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.String,java.lang.Throwable)",
+                        "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>(java.util.Set)",
+                        "org.apache.shiro.authz.SimpleAuthorizationInfo:void setStringPermissions(java.util.Set)",
+                        "org.apache.shiro.authc.AccountException:void <init>(java.lang.String)",
+                        "org.apache.shiro.util.JdbcUtils:void closeConnection(java.sql.Connection)",
+                        "org.apache.shiro.authc.AuthenticationException:void <init>(java.lang.Throwable)"
+                    ]
+                },
+                "org.springframework:spring-core:3.2.2.RELEASE": {
+                    "used-method num": 11,
+                    "used method": [
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                        "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object get(java.lang.Object)",
+                        "org.springframework.util.Assert:void notNull(java.lang.Object,java.lang.String)",
+                        "org.springframework.core.NestedRuntimeException:java.lang.String getMessage()",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                        "org.springframework.core.NestedCheckedException:java.lang.String getMessage()",
+                        "org.springframework.util.StringUtils:boolean isEmpty(java.lang.Object)",
+                        "org.springframework.util.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.springframework.util.Assert:void notNull(java.lang.Object)",
+                        "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                        "org.springframework.core.NestedIOException:java.lang.String getMessage()"
+                    ]
+                }
+            }
+        }
+    }
+}

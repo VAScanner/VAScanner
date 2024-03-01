@@ -1,0 +1,43 @@
+{
+    "project name": "ScienJus_pixiv-parser",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5": {
+            "used-method num": 16,
+            "used method": [
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.lang.Iterable,java.nio.charset.Charset)",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:int read(byte[])",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.conn.LoggingInputStream:int read(byte[])",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.client.entity.DeflateInputStream:int read(byte[])",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

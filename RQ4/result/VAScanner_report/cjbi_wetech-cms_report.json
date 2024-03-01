@@ -1,0 +1,31 @@
+{
+    "project name": "cjbi_wetech-cms",
+    "modules": {
+        "tech.wetech:wetech-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.apache.commons:commons-compress:1.5": {
+                    "used-method num": 13,
+                    "used method": [
+                        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void close()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void <init>(java.lang.String)",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveEntry:boolean isDirectory()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveEntry:java.lang.String getName()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <clinit>()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void putArchiveEntry(org.apache.commons.compress.archivers.ArchiveEntry)",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveEntry:void setSize(long)",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void <init>(java.io.OutputStream)",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:void <init>(java.io.InputStream)",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void close()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream:org.apache.commons.compress.archivers.tar.TarArchiveEntry getNextTarEntry()",
+                        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:void closeArchiveEntry()",
+                        "org.apache.commons.compress.utils.IOUtils:long copy(java.io.InputStream,java.io.OutputStream)"
+                    ]
+                }
+            }
+        }
+    }
+}

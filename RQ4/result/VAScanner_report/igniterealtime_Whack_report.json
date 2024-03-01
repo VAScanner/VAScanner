@@ -1,0 +1,51 @@
+{
+    "project name": "igniterealtime_Whack",
+    "modules": {
+        "org.igniterealtime.whack:core": {
+            "vulnerable dependencies": {
+                "org.eclipse.jetty:jetty-server:7.0.1.v20091125": {
+                    "used-method num": 21,
+                    "used method": [
+                        "org.eclipse.jetty.server.Response:void setStatus(int)",
+                        "org.eclipse.jetty.server.HttpOutput:void write(byte[])",
+                        "org.eclipse.jetty.server.Response:void setContentType(java.lang.String)",
+                        "org.eclipse.jetty.server.HttpOutput:void write(byte[],int,int)",
+                        "org.eclipse.jetty.server.AbstractConnector:void setPort(int)",
+                        "org.eclipse.jetty.server.HttpOutput:void write(int)",
+                        "org.eclipse.jetty.server.Response:void setContentLength(int)",
+                        "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                        "org.eclipse.jetty.server.Server$ShutdownHookThread:void run()",
+                        "org.eclipse.jetty.server.HttpConnection$Output:void close()",
+                        "org.eclipse.jetty.server.Server:void <init>()",
+                        "org.eclipse.jetty.server.Server:void <clinit>()",
+                        "org.eclipse.jetty.server.Response:void setHeader(java.lang.String,java.lang.String)",
+                        "org.eclipse.jetty.server.Server:void addConnector(org.eclipse.jetty.server.Connector)",
+                        "org.eclipse.jetty.server.Request:java.lang.String getPathInfo()",
+                        "org.eclipse.jetty.server.ssl.SslSelectChannelConnector:void <clinit>()",
+                        "org.eclipse.jetty.server.nio.SelectChannelConnector:void <init>()",
+                        "org.eclipse.jetty.server.Server:void join()",
+                        "org.eclipse.jetty.server.ssl.SslSelectChannelConnector:void <init>()",
+                        "org.eclipse.jetty.server.Response:javax.servlet.ServletOutputStream getOutputStream()",
+                        "org.eclipse.jetty.server.HttpWriter:void flush()"
+                    ]
+                }
+            }
+        },
+        "org.igniterealtime.whack:sample.weather": {
+            "vulnerable dependencies": {
+                "org.eclipse.jetty:jetty-server:7.0.1.v20091125": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.igniterealtime.whack:sample.weatherabstract": {
+            "vulnerable dependencies": {
+                "org.eclipse.jetty:jetty-server:7.0.1.v20091125": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

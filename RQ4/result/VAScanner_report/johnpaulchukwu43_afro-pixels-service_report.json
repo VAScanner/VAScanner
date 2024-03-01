@@ -1,0 +1,74 @@
+{
+    "project name": "johnpaulchukwu43_afro-pixels-service",
+    "vulnerable dependencies": {
+        "org.hibernate.validator:hibernate-validator:6.0.9.Final": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-core:5.0.8.RELEASE": {
+            "used-method num": 34,
+            "used method": [
+                "org.springframework.security.core.userdetails.User:int hashCode()",
+                "org.springframework.security.authentication.BadCredentialsException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.springframework.security.core.context.SecurityContextImpl:int hashCode()",
+                "org.springframework.security.crypto.password.Pbkdf2PasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.crypto.password.LdapShaPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.core.userdetails.User:java.lang.String getUsername()",
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.crypto.password.NoOpPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.core.userdetails.User:void <init>(java.lang.String,java.lang.String,java.util.Collection)",
+                "org.springframework.security.core.userdetails.User:java.util.Collection getAuthorities()",
+                "org.springframework.security.crypto.password.Md4PasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:void <init>()",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()",
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.crypto.scrypt.SCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.core.userdetails.UsernameNotFoundException:void <init>(java.lang.String)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:int hashCode()",
+                "org.springframework.security.core.userdetails.User:boolean equals(java.lang.Object)",
+                "org.springframework.security.core.context.SecurityContextImpl:boolean equals(java.lang.Object)",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:void <init>(java.lang.String)",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.crypto.password.StandardPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.core.context.SecurityContextImpl:void setAuthentication(org.springframework.security.core.Authentication)",
+                "org.springframework.security.crypto.password.MessageDigestPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:int hashCode()",
+                "org.springframework.security.crypto.password.DelegatingPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:java.lang.String getAuthority()",
+                "org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder:java.lang.String encode(java.lang.CharSequence)"
+            ],
+            "CVE": [
+                "CVE-2020-5408"
+            ],
+            "used vul-method": [
+                "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)"
+            ],
+            "vul-called frequency": 2,
+            "root vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-5408": [
+                    "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-5408": [
+                    "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder:java.lang.String encode(java.lang.CharSequence)"
+                ]
+            }
+        },
+        "org.springframework.security.oauth:spring-security-oauth2:2.3.3.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

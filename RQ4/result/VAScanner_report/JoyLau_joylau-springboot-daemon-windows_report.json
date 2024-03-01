@@ -1,0 +1,68 @@
+{
+    "project name": "JoyLau_joylau-springboot-daemon-windows",
+    "vulnerable dependencies": {
+        "org.apache.ant:ant:1.9.7": {
+            "used-method num": 15,
+            "used method": [
+                "org.apache.tools.zip.ZipOutputStream:void putNextEntry(org.apache.tools.zip.ZipEntry)",
+                "org.apache.tools.zip.ZipFile:void <clinit>()",
+                "org.apache.tools.zip.ZipOutputStream:void <init>(java.io.OutputStream)",
+                "org.apache.tools.zip.ZipOutputStream:void closeEntry()",
+                "org.apache.tools.zip.ZipEntry:boolean isDirectory()",
+                "org.apache.tools.zip.ZipOutputStream:void setEncoding(java.lang.String)",
+                "org.apache.tools.zip.ZipFile:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.tools.zip.ZipEntry:void <init>(java.lang.String)",
+                "org.apache.tools.zip.ZipOutputStream:void write(byte[],int,int)",
+                "org.apache.tools.zip.ZipFile:java.io.InputStream getInputStream(org.apache.tools.zip.ZipEntry)",
+                "org.apache.tools.zip.ZipOutputStream:void <clinit>()",
+                "org.apache.tools.zip.ZipEntry:java.lang.String getName()",
+                "org.apache.tools.zip.ZipOutputStream:void close()",
+                "org.apache.tools.zip.ZipFile:void close()",
+                "org.apache.tools.zip.ZipFile:java.util.Enumeration getEntries()"
+            ],
+            "CVE": [
+                "CVE-2021-36374",
+                "CVE-2021-36373"
+            ],
+            "used vul-method": [
+                "org.apache.tools.zip.ZipFile:void <init>(java.lang.String,java.lang.String)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void resolveLocalFileHeaderData(java.util.Map)",
+                    "org.apache.tools.zip.ZipFile:void readCentralDirectoryEntry(java.util.Map)",
+                    "org.apache.tools.tar.TarInputStream:java.util.Map parsePaxHeaders(java.io.InputStream)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-36374": [
+                    "org.apache.tools.zip.ZipFile:void <init>(java.lang.String,java.lang.String)"
+                ],
+                "CVE-2021-36373": [
+                    "org.apache.tools.zip.ZipFile:void <init>(java.lang.String,java.lang.String)"
+                ]
+            }
+        },
+        "org.dom4j:dom4j:2.1.1": {
+            "used-method num": 10,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.File)",
+                "org.dom4j.io.XMLWriter:void <init>(java.io.Writer)",
+                "org.dom4j.io.XMLWriter:void write(org.dom4j.Document)",
+                "org.dom4j.tree.DefaultDocument:org.dom4j.Element getRootElement()",
+                "org.dom4j.io.XMLWriter:void close()",
+                "org.dom4j.tree.AbstractElement:void setText(java.lang.String)",
+                "org.dom4j.tree.DefaultElement:org.dom4j.Element element(java.lang.String)",
+                "org.dom4j.io.XMLWriter:void flush()",
+                "org.dom4j.io.XMLWriter:void <clinit>()"
+            ]
+        }
+    }
+}

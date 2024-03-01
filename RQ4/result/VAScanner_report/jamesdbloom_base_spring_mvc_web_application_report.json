@@ -1,0 +1,113 @@
+{
+    "project name": "jamesdbloom_base_spring_mvc_web_application",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.0.9": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-core:4.0.2.RELEASE": {
+            "used-method num": 23,
+            "used method": [
+                "org.springframework.core.convert.TypeDescriptor:boolean equals(java.lang.Object)",
+                "org.springframework.core.MethodParameter:boolean equals(java.lang.Object)",
+                "org.springframework.core.ResolvableType:boolean equals(java.lang.Object)",
+                "org.springframework.asm.Handle:boolean equals(java.lang.Object)",
+                "org.springframework.core.convert.support.GenericConversionService$ConverterCacheKey:boolean equals(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:boolean hasNext()",
+                "org.springframework.core.env.PropertySource:boolean equals(java.lang.Object)",
+                "org.springframework.core.env.AbstractEnvironment:java.lang.String getProperty(java.lang.String,java.lang.String)",
+                "org.springframework.core.io.UrlResource:boolean equals(java.lang.Object)",
+                "org.springframework.cglib.core.ClassEmitter$FieldInfo:boolean equals(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntryIterator:org.springframework.util.ConcurrentReferenceHashMap$Entry next()",
+                "org.springframework.cglib.core.DefaultNamingPolicy:boolean equals(java.lang.Object)",
+                "org.springframework.core.io.VfsResource:boolean equals(java.lang.Object)",
+                "org.springframework.util.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.springframework.core.env.AbstractEnvironment:java.lang.Object getProperty(java.lang.String,java.lang.Class)",
+                "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.cglib.core.Signature:boolean equals(java.lang.Object)",
+                "org.springframework.core.io.ClassPathResource:boolean equals(java.lang.Object)",
+                "org.springframework.util.LinkedMultiValueMap:boolean equals(java.lang.Object)",
+                "org.springframework.core.env.AbstractEnvironment:java.lang.String getProperty(java.lang.String)",
+                "org.springframework.util.ConcurrentReferenceHashMap$Entry:boolean equals(java.lang.Object)",
+                "org.springframework.core.convert.converter.GenericConverter$ConvertiblePair:boolean equals(java.lang.Object)",
+                "org.springframework.asm.Type:boolean equals(java.lang.Object)"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.0.2.RELEASE": {
+            "used-method num": 14,
+            "used method": [
+                "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()",
+                "org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer:void <init>()",
+                "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap:org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap addAttribute(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.mvc.condition.AbstractRequestCondition:boolean equals(java.lang.Object)",
+                "org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver:void <init>()",
+                "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport:void <clinit>()",
+                "org.springframework.web.servlet.mvc.condition.AbstractNameValueExpression:boolean equals(java.lang.Object)",
+                "org.springframework.web.servlet.mvc.method.RequestMappingInfo:boolean equals(java.lang.Object)",
+                "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.web.servlet.mvc.condition.AbstractMediaTypeExpression:boolean equals(java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.view.AbstractCachingViewResolver:void <clinit>()",
+                "org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer:void enable(java.lang.String)",
+                "org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport:void <init>()"
+            ]
+        },
+        "org.springframework.security:spring-security-core:3.2.2.RELEASE": {
+            "used-method num": 22,
+            "used method": [
+                "org.springframework.security.core.userdetails.User:boolean equals(java.lang.Object)",
+                "org.springframework.security.core.context.SecurityContextImpl:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.BadCredentialsException:void <init>(java.lang.String)",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:boolean equals(java.lang.Object)",
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object)",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.core.authority.AuthorityUtils:java.util.List createAuthorityList(java.lang.String[])",
+                "org.springframework.security.core.authority.AuthorityUtils:void <clinit>()",
+                "org.springframework.security.crypto.password.StandardPasswordEncoder:boolean matches(java.lang.CharSequence,java.lang.String)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getCredentials()",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()",
+                "org.springframework.security.crypto.password.StandardPasswordEncoder:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.core.context.SecurityContextImpl:void setAuthentication(org.springframework.security.core.Authentication)",
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.crypto.password.StandardPasswordEncoder:void <init>(java.lang.CharSequence)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()",
+                "org.springframework.security.access.SecurityConfig:boolean equals(java.lang.Object)"
+            ]
+        },
+        "org.springframework.security:spring-security-config:3.2.2.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter:void <init>()",
+                "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object antMatchers(java.lang.String[])",
+                "org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry:java.lang.Object anyRequest()"
+            ]
+        },
+        "org.springframework.security:spring-security-web:3.2.2.RELEASE": {
+            "used-method num": 5,
+            "used method": [
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:boolean equals(java.lang.Object)",
+                "org.springframework.security.web.csrf.CsrfFilter$SaveOnAccessCsrfToken:java.lang.String getToken()",
+                "org.springframework.security.web.csrf.CsrfFilter$SaveOnAccessCsrfToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.web.savedrequest.SavedRequestAwareWrapper:java.lang.String getHeader(java.lang.String)",
+                "org.springframework.security.web.csrf.CsrfFilter$SaveOnAccessCsrfToken:java.lang.String getParameterName()"
+            ]
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:8.0.3": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.3.3": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

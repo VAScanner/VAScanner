@@ -1,0 +1,65 @@
+{
+    "project name": "Pay-Group_best-pay-sdk",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.7": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.tomcat.embed:tomcat-embed-core:8.5.50": {
+            "used-method num": 1,
+            "used method": [
+                "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+            ],
+            "CVE": [
+                "CVE-2021-24122",
+                "CVE-2021-33037",
+                "CVE-2019-17569,CVE-2020-1935",
+                "CVE-2020-11996",
+                "CVE-2022-42252"
+            ],
+            "used vul-method": [
+                "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2021-24122": [
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:java.io.File file(java.lang.String,boolean)",
+                    "org.apache.catalina.webresources.AbstractFileResourceSet:boolean isInvalidWindowsFilename(java.lang.String)"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.coyote.http11.Http11Processor:void addInputFilter(org.apache.coyote.http11.InputFilter[],java.lang.String)",
+                    "org.apache.coyote.http11.Http11Processor:void prepareRequest()"
+                ],
+                "CVE-2019-17569,CVE-2020-1935": [
+                    "org.apache.tomcat.util.http.parser.TokenList:void parseTokenList(java.util.Enumeration,java.util.Collection)",
+                    "org.apache.tomcat.util.http.parser.TokenList:void parseTokenList(java.io.Reader,java.util.Collection)",
+                    "org.apache.coyote.http11.Http11Processor:void prepareRequest()"
+                ],
+                "CVE-2020-11996": [
+                    "org.apache.coyote.http2.Http2UpgradeHandler:void closeIdleStreams(int)"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus parseHeader()",
+                    "org.apache.coyote.http11.Http11InputBuffer:org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus skipLine()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-24122": [
+                    "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+                ],
+                "CVE-2021-33037": [
+                    "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+                ],
+                "CVE-2019-17569,CVE-2020-1935": [
+                    "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+                ],
+                "CVE-2020-11996": [
+                    "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+                ],
+                "CVE-2022-42252": [
+                    "org.apache.tomcat.util.http.fileupload.IOUtils:void closeQuietly(java.io.Closeable)"
+                ]
+            }
+        }
+    }
+}

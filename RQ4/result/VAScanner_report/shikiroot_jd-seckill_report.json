@@ -1,0 +1,49 @@
+{
+    "project name": "shikiroot_jd-seckill",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.72": {
+            "used-method num": 16,
+            "used method": [
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:void clear()",
+                "com.alibaba.fastjson.JSONObject:java.util.Set keySet()",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSONObject:void <init>()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()"
+            ],
+            "vul-called frequency": 25,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString()",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                ]
+            }
+        }
+    }
+}

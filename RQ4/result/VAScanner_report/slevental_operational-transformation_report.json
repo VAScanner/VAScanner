@@ -1,0 +1,86 @@
+{
+    "project name": "slevental_operational-transformation",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "io.netty:netty-all:4.0.35.Final": {
+            "used-method num": 51,
+            "used method": [
+                "io.netty.util.internal.ReadOnlyIterator:java.lang.Object next()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeySetView:java.util.Iterator iterator()",
+                "io.netty.channel.nio.SelectedSelectionKeySet:java.util.Iterator iterator()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValueIterator:java.lang.Object next()",
+                "io.netty.handler.logging.LoggingHandler:void <init>(io.netty.handler.logging.LogLevel)",
+                "io.netty.util.UniqueName:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap clone()",
+                "io.netty.channel.CombinedChannelDuplexHandler:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.channel.ChannelInitializer:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:java.lang.String text()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object get(java.lang.Object)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$MapEntry:java.lang.Object getValue()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeyIterator:java.lang.Object next()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.util.DefaultAttributeMap:io.netty.util.Attribute attr(io.netty.util.AttributeKey)",
+                "io.netty.handler.codec.http.websocketx.TextWebSocketFrame:void <init>(java.lang.String)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:boolean containsKey(java.lang.Object)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderIterator:boolean hasNext()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory:io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker newHandshaker(io.netty.handler.codec.http.HttpRequest)",
+                "io.netty.handler.logging.LogLevel:void <clinit>()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$BaseIterator:boolean hasNext()",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderEntry:java.lang.String getValue()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker:io.netty.channel.ChannelFuture handshake(io.netty.channel.Channel,io.netty.handler.codec.http.HttpRequest)",
+                "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                "io.netty.handler.codec.http.HttpServerCodec:void <init>()",
+                "io.netty.util.AttributeKey:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntrySetView:java.util.Iterator iterator()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderIterator:java.util.Map$Entry next()",
+                "io.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory:void <init>(java.lang.String,java.lang.String,boolean)",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.util.internal.ReadOnlyIterator:boolean hasNext()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.util.AttributeKey:io.netty.util.AttributeKey valueOf(java.lang.String)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntryIterator:java.util.Map$Entry next()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders$HeaderEntry:java.lang.String getKey()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)"
+                ]
+            }
+        }
+    }
+}

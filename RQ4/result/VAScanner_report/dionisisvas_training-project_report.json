@@ -1,0 +1,28 @@
+{
+    "project name": "dionisisvas_training-project",
+    "vulnerable dependencies": {
+        "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.9": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:4.2.9.RELEASE": {
+            "used-method num": 10,
+            "used method": [
+                "org.springframework.web.filter.GenericFilterBean:void <init>()",
+                "org.springframework.http.HttpEntity:void <clinit>()",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:org.springframework.http.converter.json.Jackson2ObjectMapperBuilder modules(com.fasterxml.jackson.databind.Module[])",
+                "org.springframework.http.ResponseEntity:void <init>(org.springframework.http.HttpStatus)",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:com.fasterxml.jackson.databind.ObjectMapper build()",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:org.springframework.http.converter.json.Jackson2ObjectMapperBuilder json()",
+                "org.springframework.web.util.UriComponentsBuilder:java.lang.Object clone()",
+                "org.springframework.http.ResponseEntity:void <init>(java.lang.Object,org.springframework.http.HttpStatus)",
+                "org.springframework.http.converter.json.Jackson2ObjectMapperBuilder:org.springframework.http.converter.json.Jackson2ObjectMapperBuilder featuresToDisable(java.lang.Object[])",
+                "org.springframework.http.HttpStatus:void <clinit>()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

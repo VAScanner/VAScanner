@@ -1,0 +1,63 @@
+{
+    "project name": "qcloudsms_qcloudsms_java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.3": {
+            "used-method num": 34,
+            "used method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder addParameter(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder setUri(java.net.URI)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void close()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.client.protocol.HttpClientContext:org.apache.http.client.protocol.HttpClientContext create()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setProxy(org.apache.http.HttpHost)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.HttpUriRequest build()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder create(java.lang.String)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder setHeader(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

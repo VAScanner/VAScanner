@@ -1,0 +1,57 @@
+{
+    "project name": "onyxbits_dummydroid",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.3": {
+            "used-method num": 30,
+            "used method": [
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.client.utils.URLEncodedUtils:java.lang.String format(java.util.List,java.lang.String)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <init>(javax.net.ssl.SSLContext)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.CredentialsProvider getCredentialsProvider()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.conn.SchemeRegistryFactory:org.apache.http.conn.scheme.SchemeRegistry createDefault()",
+                "org.apache.http.impl.conn.PoolingClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.conn.EofSensorInputStream:int read()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.conn.PoolingClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)",
+                "org.apache.http.conn.BasicManagedEntity:java.io.InputStream getContent()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper:java.io.InputStream getContent()",
+                "org.apache.http.auth.AuthScope:void <init>(org.apache.http.HttpHost)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.conn.PoolingClientConnectionManager:void <init>(org.apache.http.conn.scheme.SchemeRegistry)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.utils.URLEncodedUtils:void <clinit>()",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <clinit>()",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

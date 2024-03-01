@@ -1,0 +1,27 @@
+{
+    "project name": "thinkaurelius_titan-web-example",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:4.0.3.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:4.0.3.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.eclipse.jetty:jetty-server:9.2.0.v20140526": {
+            "used-method num": 3,
+            "used method": [
+                "org.eclipse.jetty.server.Server:void <init>(int)",
+                "org.eclipse.jetty.server.handler.HandlerWrapper:void setHandler(org.eclipse.jetty.server.Handler)",
+                "org.eclipse.jetty.server.Server:void join()"
+            ]
+        },
+        "org.eclipse.jetty:jetty-webapp:9.2.0.v20140526": {
+            "used-method num": 1,
+            "used method": [
+                "org.eclipse.jetty.webapp.WebAppContext:void <init>()"
+            ]
+        }
+    }
+}

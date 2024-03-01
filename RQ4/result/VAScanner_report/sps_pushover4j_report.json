@@ -1,0 +1,74 @@
+{
+    "project name": "sps_pushover4j",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.3.6": {
+            "used-method num": 43,
+            "used method": [
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.lang.Iterable,java.nio.charset.Charset)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.Header getFirstHeader(java.lang.String)",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder useSystemProperties()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.lang.String toString()",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:java.lang.String toString()",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.conn.ssl.PrivateKeyDetails:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

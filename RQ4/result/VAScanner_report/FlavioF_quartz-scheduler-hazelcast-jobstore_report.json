@@ -1,0 +1,60 @@
+{
+    "project name": "FlavioF_quartz-scheduler-hazelcast-jobstore",
+    "vulnerable dependencies": {
+        "org.quartz-scheduler:quartz:2.2.3": {
+            "used-method num": 46,
+            "used method": [
+                "org.quartz.impl.JobDetailImpl:boolean isConcurrentExectionDisallowed()",
+                "org.quartz.DateBuilder:void <clinit>()",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:void triggered(org.quartz.Calendar)",
+                "org.quartz.utils.Key:int hashCode()",
+                "org.quartz.DateBuilder:java.util.Date build()",
+                "org.quartz.impl.matchers.StringMatcher:java.lang.String getCompareToValue()",
+                "org.quartz.Trigger$CompletedExecutionInstruction:void <clinit>()",
+                "org.quartz.utils.Key:java.lang.String getGroup()",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:java.util.Date getNextFireTime()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getValue()",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set entrySet()",
+                "org.quartz.impl.matchers.GroupMatcher:org.quartz.impl.matchers.GroupMatcher triggerGroupEquals(java.lang.String)",
+                "org.quartz.impl.matchers.GroupMatcher:org.quartz.impl.matchers.GroupMatcher jobGroupEquals(java.lang.String)",
+                "org.quartz.impl.triggers.AbstractTrigger:java.lang.Object clone()",
+                "org.quartz.impl.JobDetailImpl:java.lang.Object clone()",
+                "org.quartz.JobPersistenceException:void <init>(java.lang.String)",
+                "org.quartz.spi.TriggerFiredBundle:void <init>(org.quartz.JobDetail,org.quartz.spi.OperableTrigger,org.quartz.Calendar,boolean,java.util.Date,java.util.Date,java.util.Date,java.util.Date)",
+                "org.quartz.utils.Key:boolean equals(java.lang.Object)",
+                "org.quartz.impl.JobDetailImpl:boolean isPersistJobDataAfterExecution()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.Trigger$TriggerState:void <clinit>()",
+                "org.quartz.impl.matchers.StringMatcher:org.quartz.impl.matchers.StringMatcher$StringOperatorName getCompareWithOperator()",
+                "org.quartz.ObjectAlreadyExistsException:void <init>(java.lang.String)",
+                "org.quartz.impl.JobDetailImpl:org.quartz.JobKey getKey()",
+                "org.quartz.impl.triggers.AbstractTrigger:void setFireInstanceId(java.lang.String)",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:boolean mayFireAgain()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntrySet:java.util.Iterator iterator()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getKey()",
+                "org.quartz.impl.matchers.StringMatcher$StringOperatorName:void <clinit>()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object clone()",
+                "org.quartz.ObjectAlreadyExistsException:void <init>(org.quartz.JobDetail)",
+                "org.quartz.impl.matchers.StringMatcher$StringOperatorName:org.quartz.impl.matchers.StringMatcher$StringOperatorName[] values()",
+                "org.quartz.spi.TriggerFiredResult:void <init>(org.quartz.spi.TriggerFiredBundle)",
+                "org.quartz.impl.triggers.AbstractTrigger:void setKey(org.quartz.TriggerKey)",
+                "org.quartz.impl.triggers.AbstractTrigger:org.quartz.JobKey getJobKey()",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:void updateAfterMisfire(org.quartz.Calendar)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:java.util.Iterator iterator()",
+                "org.quartz.ObjectAlreadyExistsException:void <init>(org.quartz.Trigger)",
+                "org.quartz.impl.triggers.AbstractTrigger:org.quartz.TriggerKey getKey()",
+                "org.quartz.impl.triggers.AbstractTrigger:int getMisfireInstruction()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.impl.triggers.AbstractTrigger:java.lang.String getCalendarName()",
+                "org.quartz.impl.JobDetailImpl:boolean isDurable()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.DateBuilder:org.quartz.DateBuilder newDate()",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:java.util.Date getPreviousFireTime()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

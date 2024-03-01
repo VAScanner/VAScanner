@@ -1,0 +1,19 @@
+{
+    "project name": "longfeizheng_sso-merryyou",
+    "modules": {
+        "cn.merryyou.sso:sso-merryyou": {
+            "vulnerable dependencies": {
+                "org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer$1:java.lang.String encode(java.lang.CharSequence)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setSigningKey(java.lang.String)",
+                        "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()",
+                        "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

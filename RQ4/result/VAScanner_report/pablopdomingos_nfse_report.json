@@ -1,0 +1,89 @@
+{
+    "project name": "pablopdomingos_nfse",
+    "modules": {
+        "com.github.pablopdomingos:nfse-bh": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.9": {
+                    "used-method num": 20,
+                    "used method": [
+                        "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                        "com.thoughtworks.xstream.XStream:void setMode(int)",
+                        "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean addAll(java.util.Collection)",
+                        "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:int size()",
+                        "com.thoughtworks.xstream.core.util.ArrayIterator:boolean hasNext()",
+                        "com.thoughtworks.xstream.XStream:void <init>()",
+                        "com.thoughtworks.xstream.converters.basic.DoubleConverter:void <init>()",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:boolean isEmpty()",
+                        "com.thoughtworks.xstream.XStream:void <clinit>()",
+                        "com.thoughtworks.xstream.core.util.ArrayIterator:java.lang.Object next()",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                        "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()",
+                        "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)",
+                        "com.thoughtworks.xstream.XStream:java.lang.String toXML(java.lang.Object)",
+                        "com.thoughtworks.xstream.XStream:void alias(java.lang.String,java.lang.Class)",
+                        "com.thoughtworks.xstream.XStream:void autodetectAnnotations(boolean)",
+                        "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                        "com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder:java.lang.Object clone()",
+                        "com.thoughtworks.xstream.core.util.CustomObjectInputStream:void close()",
+                        "com.thoughtworks.xstream.XStream:void ignoreUnknownElements()"
+                    ],
+                    "CVE": [
+                        "CVE-2021-29505",
+                        "CVE-2020-26258",
+                        "CVE-2020-26259",
+                        "CVE-2021-43859",
+                        "CVE-2017-7957"
+                    ],
+                    "used vul-method": [
+                        "com.thoughtworks.xstream.XStream:void <init>()",
+                        "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                    ],
+                    "vul-called frequency": 9,
+                    "related vul root method": {
+                        "CVE-2021-29505": [
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ],
+                        "CVE-2020-26258": [
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ],
+                        "CVE-2020-26259": [
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()"
+                        ],
+                        "CVE-2021-43859": [
+                            "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)",
+                            "com.thoughtworks.xstream.core.TreeUnmarshaller:java.lang.Object convert(java.lang.Object,java.lang.Class,com.thoughtworks.xstream.converters.Converter)"
+                        ],
+                        "CVE-2017-7957": [
+                            "com.thoughtworks.xstream.XStream:void setupConverters()",
+                            "com.thoughtworks.xstream.XStream:void addPermission(com.thoughtworks.xstream.security.TypePermission)",
+                            "com.thoughtworks.xstream.XStream:void setupSecurity()",
+                            "com.thoughtworks.xstream.XStream:java.lang.Object unmarshal(com.thoughtworks.xstream.io.HierarchicalStreamReader,java.lang.Object,com.thoughtworks.xstream.converters.DataHolder)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2021-29505": [
+                            "com.thoughtworks.xstream.XStream:void <init>()"
+                        ],
+                        "CVE-2020-26258": [
+                            "com.thoughtworks.xstream.XStream:void <init>()"
+                        ],
+                        "CVE-2020-26259": [
+                            "com.thoughtworks.xstream.XStream:void <init>()"
+                        ],
+                        "CVE-2021-43859": [
+                            "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                        ],
+                        "CVE-2017-7957": [
+                            "com.thoughtworks.xstream.XStream:void <init>()",
+                            "com.thoughtworks.xstream.XStream:java.lang.Object fromXML(java.lang.String)"
+                        ]
+                    }
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "project name": "Junety-C_alarm",
+    "modules": {
+        "cn.junety.alarm:alarm": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.2": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.1.7": {
+                    "used-method num": 3,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object,java.lang.Object)"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "project name": "mose-x_wps-view-java",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.16": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.alibaba:fastjson:1.2.41": {
+            "used-method num": 14,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:void clear()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONObject:java.lang.String getString(java.lang.String)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean isEmpty()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONArray:int size()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)"
+            ],
+            "vul-called frequency": 7,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)"
+                ]
+            }
+        }
+    }
+}

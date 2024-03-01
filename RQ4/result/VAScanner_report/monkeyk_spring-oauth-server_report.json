@@ -1,0 +1,53 @@
+{
+    "project name": "monkeyk_spring-oauth-server",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.3.0.RELEASE": {
+            "used-method num": 43,
+            "used method": [
+                "org.springframework.security.oauth2.provider.AuthorizationRequest:java.lang.String getClientId()",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.client.ClientCredentialsTokenGranter:void <init>(org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4:org.springframework.security.oauth2.common.OAuth2AccessToken grant(java.lang.String,org.springframework.security.oauth2.provider.TokenRequest)",
+                "org.springframework.security.oauth2.provider.implicit.ImplicitTokenGranter:void <init>(org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.code.AuthorizationCodeTokenGranter:void <init>(org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.code.AuthorizationCodeServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.TokenRequest:java.lang.String getClientId()",
+                "org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler:void <init>()",
+                "org.springframework.security.oauth2.provider.client.ClientCredentialsTokenGranter:org.springframework.security.oauth2.common.OAuth2AccessToken grant(java.lang.String,org.springframework.security.oauth2.provider.TokenRequest)",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:org.springframework.security.oauth2.provider.TokenRequest createTokenRequest(java.util.Map,org.springframework.security.oauth2.provider.ClientDetails)",
+                "org.springframework.security.oauth2.provider.TokenRequest:java.util.Set getScope()",
+                "org.springframework.security.oauth2.provider.client.JdbcClientDetailsService:void <init>(javax.sql.DataSource)",
+                "org.springframework.security.oauth2.provider.CompositeTokenGranter:org.springframework.security.oauth2.common.OAuth2AccessToken grant(java.lang.String,org.springframework.security.oauth2.provider.TokenRequest)",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestValidator:void validateScope(org.springframework.security.oauth2.provider.TokenRequest,org.springframework.security.oauth2.provider.ClientDetails)",
+                "org.springframework.security.oauth2.common.exceptions.InvalidGrantException:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:boolean isApproved(org.springframework.security.oauth2.provider.AuthorizationRequest,org.springframework.security.core.Authentication)",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void <init>()",
+                "org.springframework.security.oauth2.provider.client.JdbcClientDetailsService:org.springframework.security.oauth2.provider.ClientDetails loadClientByClientId(java.lang.String)",
+                "org.springframework.security.oauth2.common.util.RandomValueStringGenerator:void <clinit>()",
+                "org.springframework.security.oauth2.common.util.RandomValueStringGenerator:void <init>(int)",
+                "org.springframework.security.oauth2.common.exceptions.BadClientCredentialsException:void <init>()",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void setRequestFactory(org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.token.store.JdbcTokenStore:void <init>(javax.sql.DataSource)",
+                "org.springframework.security.oauth2.common.exceptions.InvalidClientException:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.provider.token.AbstractTokenGranter:org.springframework.security.oauth2.common.OAuth2AccessToken grant(java.lang.String,org.springframework.security.oauth2.provider.TokenRequest)",
+                "org.springframework.security.oauth2.provider.TokenRequest:void setScope(java.util.Collection)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.common.exceptions.InvalidRequestException:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.provider.TokenRequest:java.lang.String getGrantType()",
+                "org.springframework.security.oauth2.common.util.RandomValueStringGenerator:java.lang.String generate()",
+                "org.springframework.security.oauth2.provider.refresh.RefreshTokenGranter:void <init>(org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory:void <init>(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.provider.error.DefaultWebResponseExceptionTranslator:void <init>()",
+                "org.springframework.security.oauth2.provider.code.JdbcAuthorizationCodeServices:void <init>(javax.sql.DataSource)",
+                "org.springframework.security.oauth2.common.util.OAuth2Utils:java.util.Set parseParameterList(java.lang.String)",
+                "org.springframework.security.oauth2.provider.client.JdbcClientDetailsService:void <clinit>()",
+                "org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestValidator:void <init>()",
+                "org.springframework.security.oauth2.common.exceptions.UnsupportedGrantTypeException:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService:org.springframework.security.oauth2.provider.ClientDetails loadClientByClientId(java.lang.String)",
+                "org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                "org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter:void <init>(org.springframework.security.authentication.AuthenticationManager,org.springframework.security.oauth2.provider.token.AuthorizationServerTokenServices,org.springframework.security.oauth2.provider.ClientDetailsService,org.springframework.security.oauth2.provider.OAuth2RequestFactory)",
+                "org.springframework.security.oauth2.provider.error.DefaultWebResponseExceptionTranslator:org.springframework.http.ResponseEntity translate(java.lang.Exception)"
+            ]
+        }
+    }
+}

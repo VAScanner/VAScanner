@@ -1,0 +1,49 @@
+{
+    "project name": "Y4er_fastjson-bypass-autotype-1.2.68",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.68": {
+            "used-method num": 10,
+            "used method": [
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)",
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                ]
+            }
+        },
+        "org.apache.shiro:shiro-core:1.4.2": {
+            "used-method num": 1,
+            "used method": [
+                "org.apache.shiro.jndi.JndiLocator:void <init>()"
+            ]
+        }
+    }
+}

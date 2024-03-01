@@ -1,0 +1,53 @@
+{
+    "project name": "songgeb_BDIndexSpider",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-beanutils:commons-beanutils:1.9.2": {
+            "used-method num": 14,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.DynaProperty:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.ConvertUtils:void register(org.apache.commons.beanutils.Converter,java.lang.Class)",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.MethodUtils$MethodDescriptor:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)",
+                "org.apache.commons.beanutils.WrapDynaClass$CacheKey:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:java.util.Iterator iterator()",
+                "org.apache.commons.beanutils.WeakFastHashMap:int size()"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:boolean equals(java.lang.Object)",
+                "org.apache.commons.beanutils.ConvertUtils:void register(org.apache.commons.beanutils.Converter,java.lang.Class)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+            ],
+            "vul-called frequency": 9,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:boolean equals(java.lang.Object)",
+                    "org.apache.commons.beanutils.ConvertUtils:void register(org.apache.commons.beanutils.Converter,java.lang.Class)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.WrapDynaClass$2:int size()",
+                    "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+                ]
+            }
+        }
+    }
+}

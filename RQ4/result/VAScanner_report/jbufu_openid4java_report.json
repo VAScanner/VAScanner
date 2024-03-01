@@ -1,0 +1,211 @@
+{
+    "project name": "jbufu_openid4java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.1": {
+            "used-method num": 39,
+            "used method": [
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <init>(javax.net.ssl.SSLContext)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.conn.scheme.Scheme:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.conn.SingleClientConnManager:void <init>(org.apache.http.conn.scheme.SchemeRegistry)",
+                "org.apache.http.conn.scheme.SchemeRegistry:void <init>()",
+                "org.apache.http.auth.AuthScope:void <init>(java.lang.String,int,java.lang.String,java.lang.String)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[],int,int)",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void <init>(org.apache.http.conn.scheme.SchemeRegistry)",
+                "org.apache.http.conn.params.ConnPerRouteBean:java.lang.String toString()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <clinit>()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.conn.scheme.PlainSocketFactory:org.apache.http.conn.scheme.PlainSocketFactory getSocketFactory()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.lang.String)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.conn.EofSensorInputStream:int read()",
+                "org.apache.http.auth.NTCredentials:void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+                "org.apache.http.conn.scheme.SchemeRegistry:org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme)",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.conn.ssl.SSLSocketFactory:org.apache.http.conn.ssl.SSLSocketFactory getSocketFactory()",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicAuthCache:java.lang.String toString()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.CredentialsProvider getCredentialsProvider()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "xerces:xercesImpl:2.8.1": {
+            "used-method num": 101,
+            "used method": [
+                "org.apache.xerces.dom.AttrImpl:java.lang.String getNodeValue()",
+                "org.apache.xerces.dom.CharacterDataImpl:java.lang.String getNodeValue()",
+                "org.apache.xerces.util.AugmentationsImpl$SmallContainer:java.lang.String toString()",
+                "org.apache.xerces.dom.ElementDefinitionImpl:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xerces.impl.xpath.regex.RegularExpression:java.lang.String toString()",
+                "org.apache.xerces.dom.CDATASectionImpl:short getNodeType()",
+                "org.apache.xerces.impl.xpath.regex.Token:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.XSModelGroupImpl:java.lang.String toString()",
+                "org.apache.xerces.util.XMLResourceIdentifierImpl:java.lang.String toString()",
+                "org.apache.xerces.dom.NodeImpl:boolean hasAttributes()",
+                "org.apache.xerces.impl.dv.xs.HexBinaryDV$XHex:java.lang.String toString()",
+                "org.apache.xerces.impl.xpath.XPath$NodeTest:java.lang.String toString()",
+                "org.apache.xerces.util.URI:java.lang.String toString()",
+                "org.apache.xerces.impl.xpath.XPath$LocationPath:java.lang.String toString()",
+                "org.apache.xerces.dom.AttrImpl:org.w3c.dom.Node getFirstChild()",
+                "org.apache.xerces.impl.xs.identity.Selector:java.lang.String toString()",
+                "org.apache.xerces.dom.DocumentFragmentImpl:short getNodeType()",
+                "org.apache.xerces.impl.xs.XSParticleDecl:java.lang.String toString()",
+                "org.apache.xerces.dom.CoreDocumentImpl:short getNodeType()",
+                "org.apache.xerces.impl.xs.identity.IdentityConstraint:java.lang.String toString()",
+                "org.apache.xerces.impl.dv.xs.ListDV$ListData:java.lang.String toString()",
+                "org.apache.xerces.dom.NodeImpl:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xerces.xni.XMLString:java.lang.String toString()",
+                "org.apache.xerces.dom.ProcessingInstructionImpl:short getNodeType()",
+                "org.apache.xerces.impl.XMLEntityManager$ScannedEntity:java.lang.String toString()",
+                "org.apache.xerces.xni.QName:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.XMLSchemaValidator$ValueStoreBase:java.lang.String toString()",
+                "org.apache.xerces.dom.ElementDefinitionImpl:short getNodeType()",
+                "org.apache.xerces.impl.xs.XSElementDecl:java.lang.String toString()",
+                "org.apache.xerces.parsers.DOMParser:void parse(org.xml.sax.InputSource)",
+                "org.apache.xerces.impl.xs.XSComplexTypeDecl:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.traversers.XSDocumentInfo:java.lang.String toString()",
+                "org.apache.xerces.dom.DeepNodeListImpl:int getLength()",
+                "org.apache.xerces.dom.ParentNode:org.w3c.dom.Node item(int)",
+                "org.apache.xerces.impl.xs.opti.NodeImpl:short getNodeType()",
+                "org.apache.xerces.util.NamespaceSupport$Prefixes:java.lang.String toString()",
+                "org.apache.xerces.dom.AttrImpl:org.w3c.dom.Node item(int)",
+                "org.apache.xerces.dom.NodeImpl:java.lang.String toString()",
+                "org.apache.html.dom.HTMLElementImpl:org.w3c.dom.NodeList getElementsByTagName(java.lang.String)",
+                "org.apache.xerces.dom.AttrImpl:short getNodeType()",
+                "org.apache.xerces.impl.xs.XSWildcardDecl:java.lang.String toString()",
+                "org.apache.xerces.dom.ElementImpl:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xerces.impl.XMLEntityManager$RewindableInputStream:int read(byte[],int,int)",
+                "org.apache.xerces.impl.io.MalformedByteSequenceException:java.lang.String getMessage()",
+                "org.apache.xerces.dom.NodeImpl:org.w3c.dom.Node getParentNode()",
+                "org.apache.xerces.dom.ChildNode:org.w3c.dom.Node getParentNode()",
+                "org.apache.html.dom.HTMLDocumentImpl:org.w3c.dom.html.HTMLElement getHead()",
+                "org.apache.xerces.dom.AttrImpl:java.lang.String toString()",
+                "org.apache.xerces.xni.parser.XMLParseException:java.lang.String toString()",
+                "org.apache.xerces.impl.dv.xs.FloatDV$XFloat:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.opti.NamedNodeMapImpl:org.w3c.dom.Node getNamedItem(java.lang.String)",
+                "org.apache.xerces.dom.EntityReferenceImpl:short getNodeType()",
+                "org.apache.xerces.impl.XMLEntityManager$RewindableInputStream:void close()",
+                "org.apache.xerces.dom.CoreDocumentImpl:org.w3c.dom.NodeList getElementsByTagNameNS(java.lang.String,java.lang.String)",
+                "org.apache.xerces.parsers.DOMParser:void setFeature(java.lang.String,boolean)",
+                "org.apache.xerces.impl.dtd.models.CMStateSet:java.lang.String toString()",
+                "org.apache.xerces.dom.AttrImpl:int getLength()",
+                "org.apache.xerces.impl.xs.util.XInt:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.opti.ElementImpl:org.w3c.dom.NamedNodeMap getAttributes()",
+                "org.apache.xerces.impl.dtd.models.CMAny:java.lang.String toString()",
+                "org.apache.xerces.util.XMLEntityDescriptionImpl:java.lang.String toString()",
+                "org.apache.xerces.util.AugmentationsImpl$LargeContainer:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.opti.ElementImpl:org.w3c.dom.Node getFirstChild()",
+                "org.apache.xerces.impl.dv.xs.AbstractDateTimeDV$DateTimeData:java.lang.String toString()",
+                "org.apache.xerces.dom.NodeImpl:java.lang.String getNodeValue()",
+                "org.apache.xerces.impl.xs.identity.Field:java.lang.String toString()",
+                "org.apache.xerces.dom.ElementImpl:boolean hasAttributes()",
+                "org.apache.xerces.dom.ParentNode:int getLength()",
+                "org.apache.xerces.dom.NamedNodeMapImpl:org.w3c.dom.Node getNamedItem(java.lang.String)",
+                "org.apache.xerces.impl.xs.opti.ElementImpl:org.w3c.dom.Node getParentNode()",
+                "org.apache.xerces.dom.ElementImpl:short getNodeType()",
+                "org.apache.xerces.impl.dv.xs.DecimalDV$XDecimal:java.lang.String toString()",
+                "org.apache.xerces.impl.dv.xs.DoubleDV$XDouble:java.lang.String toString()",
+                "org.apache.xerces.parsers.DOMParser:void setEntityResolver(org.xml.sax.EntityResolver)",
+                "org.apache.xerces.impl.dv.xs.XSSimpleTypeDecl:java.lang.String toString()",
+                "org.apache.xerces.impl.xpath.XPath:java.lang.String toString()",
+                "org.apache.xerces.dom.EntityImpl:short getNodeType()",
+                "org.apache.xerces.impl.xs.XMLSchemaValidator$ValueStoreCache:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.identity.XPathMatcher:java.lang.String toString()",
+                "org.apache.xerces.impl.dv.xs.PrecisionDecimalDV$XPrecisionDecimal:java.lang.String toString()",
+                "org.apache.xerces.jaxp.datatype.DurationImpl:java.lang.String toString()",
+                "org.apache.xerces.impl.XMLEntityManager$RewindableInputStream:int read()",
+                "org.apache.xerces.impl.dtd.models.CMLeaf:java.lang.String toString()",
+                "org.apache.xerces.impl.dv.xs.QNameDV$XQName:java.lang.String toString()",
+                "org.apache.xerces.dom.DeepNodeListImpl:org.w3c.dom.Node item(int)",
+                "org.apache.xerces.dom.CharacterDataImpl:int getLength()",
+                "org.apache.xerces.dom.RangeImpl:java.lang.String toString()",
+                "org.apache.html.dom.HTMLDocumentImpl:org.w3c.dom.NodeList getElementsByTagNameNS(java.lang.String,java.lang.String)",
+                "org.apache.xerces.parsers.AbstractDOMParser:void <clinit>()",
+                "org.apache.xerces.impl.xpath.XPath$Step:java.lang.String toString()",
+                "org.apache.xerces.dom.ParentNode:org.w3c.dom.Node getFirstChild()",
+                "org.apache.xerces.dom.DocumentTypeImpl:short getNodeType()",
+                "org.apache.xerces.util.AugmentationsImpl:java.lang.String toString()",
+                "org.apache.xerces.dom.CommentImpl:short getNodeType()",
+                "org.apache.html.dom.HTMLDocumentImpl:org.w3c.dom.NodeList getElementsByTagName(java.lang.String)",
+                "org.apache.xerces.impl.dv.xs.Base64BinaryDV$XBase64:java.lang.String toString()",
+                "org.apache.xerces.impl.xs.models.XSCMLeaf:java.lang.String toString()",
+                "org.apache.xerces.parsers.AbstractDOMParser:org.w3c.dom.Document getDocument()",
+                "org.apache.xerces.dom.TextImpl:short getNodeType()",
+                "org.apache.xerces.dom.NotationImpl:short getNodeType()",
+                "org.apache.xerces.dom.NodeImpl:org.w3c.dom.Node getFirstChild()"
+            ],
+            "CVE": [
+                "CVE-2012-0881",
+                "CVE-2009-2625"
+            ],
+            "used vul-method": [
+                "org.apache.xerces.parsers.DOMParser:void parse(org.xml.sax.InputSource)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2012-0881": [
+                    "org.apache.xerces.util.XMLAttributesImpl:org.apache.xerces.xni.QName checkDuplicatesNS()",
+                    "org.apache.xerces.util.XMLAttributesImpl:void prepareTableView()",
+                    "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String,java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:void rehash()",
+                    "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:int hash(java.lang.String)",
+                    "org.apache.xerces.util.SymbolTable:int hash(char[],int,int)",
+                    "org.apache.xerces.util.SymbolTable:java.lang.String addSymbol(char[],int,int)",
+                    "org.apache.xerces.util.XMLAttributesImpl:int addAttribute(org.apache.xerces.xni.QName,java.lang.String,java.lang.String)",
+                    "org.apache.xerces.util.XMLAttributesImpl:int getTableViewBucket(java.lang.String)",
+                    "org.apache.xerces.util.SymbolHash:void <init>()",
+                    "org.apache.xerces.util.SymbolHash:org.apache.xerces.util.SymbolHash makeClone()",
+                    "org.apache.xerces.util.SymbolHash:void clear()",
+                    "org.apache.xerces.util.SymbolHash:void put(java.lang.Object,java.lang.Object)",
+                    "org.apache.xerces.util.SymbolHash:java.lang.Object get(java.lang.Object)",
+                    "org.apache.xerces.util.SymbolTable:void <init>(int,float)"
+                ],
+                "CVE-2009-2625": [
+                    "org.apache.xerces.impl.XMLScanner:void scanExternalID(java.lang.String[],boolean)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2012-0881": [
+                    "org.apache.xerces.parsers.DOMParser:void parse(org.xml.sax.InputSource)"
+                ],
+                "CVE-2009-2625": [
+                    "org.apache.xerces.parsers.DOMParser:void parse(org.xml.sax.InputSource)"
+                ]
+            }
+        }
+    }
+}

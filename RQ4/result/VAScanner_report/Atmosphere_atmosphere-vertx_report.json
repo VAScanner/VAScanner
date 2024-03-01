@@ -1,0 +1,20 @@
+{
+    "project name": "Atmosphere_atmosphere-vertx",
+    "modules": {
+        "org.atmosphere:atmosphere-vertx-project": {
+            "vulnerable dependencies": {
+                "io.vertx:vertx-web:3.5.4": {
+                    "used-method num": 6,
+                    "used method": [
+                        "io.vertx.ext.web.impl.RoutingContextWrapper:io.vertx.core.http.HttpServerRequest request()",
+                        "io.vertx.ext.web.handler.StaticHandler:io.vertx.ext.web.handler.StaticHandler create(java.lang.String)",
+                        "io.vertx.ext.web.impl.RoutingContextDecorator:io.vertx.core.http.HttpServerRequest request()",
+                        "io.vertx.ext.web.impl.RoutingContextImpl:io.vertx.core.http.HttpServerRequest request()",
+                        "io.vertx.ext.web.impl.RouteImpl:io.vertx.ext.web.Route handler(io.vertx.core.Handler)",
+                        "io.vertx.ext.web.Router:io.vertx.ext.web.Router router(io.vertx.core.Vertx)"
+                    ]
+                }
+            }
+        }
+    }
+}

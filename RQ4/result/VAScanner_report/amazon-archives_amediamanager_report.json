@@ -1,0 +1,190 @@
+{
+    "project name": "amazon-archives_amediamanager",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.2.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-web:3.2.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:3.2.4.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "org.springframework.security:spring-security-core:3.1.4.RELEASE": {
+            "used-method num": 12,
+            "used method": [
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:void setDetails(java.lang.Object)",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()",
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:void <init>(java.lang.String)",
+                "org.springframework.security.authentication.BadCredentialsException:void <init>(java.lang.String)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.Object getDetails()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getCredentials()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.core.context.SecurityContextImpl:void setAuthentication(org.springframework.security.core.Authentication)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String getName()"
+            ]
+        },
+        "org.springframework.security:spring-security-web:3.1.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework.security:spring-security-config:3.1.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-fileupload:commons-fileupload:1.2.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.hibernate:hibernate-core:4.1.5.Final": {
+            "used-method num": 90,
+            "used method": [
+                "org.hibernate.collection.internal.PersistentBag:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$SimpleEntry:java.lang.Object getValue()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$ValueIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.PropertyAccessException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$HashIterator:boolean hasMoreElements()",
+                "org.hibernate.internal.util.collections.JoinedIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeySet:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentList:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.IdentityMap:java.util.Set entrySet()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$ValueIterator:java.lang.Object nextElement()",
+                "org.hibernate.internal.util.collections.IdentityMap$IdentityMapEntry:java.lang.Object getValue()",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:boolean hasNext()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$EntryIterator:java.util.Map$Entry next()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean isEmpty()",
+                "org.hibernate.collection.internal.PersistentList:boolean isEmpty()",
+                "org.hibernate.collection.internal.PersistentMap$MapEntryProxy:java.lang.Object getValue()",
+                "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                "org.hibernate.internal.util.collections.IdentitySet:java.util.Iterator iterator()",
+                "org.hibernate.InstantiationException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.EmptyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$SetProxy:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.WrongClassException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.service.classloading.internal.ClassLoaderServiceImpl$2$1:java.net.URL nextElement()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.util.Set entrySet()",
+                "org.hibernate.PropertyValueException:java.lang.String getMessage()",
+                "org.hibernate.NonUniqueObjectException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentMap$MapEntryProxy:java.lang.Object getKey()",
+                "org.hibernate.internal.util.collections.SingletonIterator:boolean hasNext()",
+                "org.hibernate.internal.IteratorImpl:boolean hasNext()",
+                "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session getCurrentSession()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:boolean add(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                "org.hibernate.internal.util.collections.IdentityMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeyIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentBag:boolean add(java.lang.Object)",
+                "org.hibernate.internal.util.collections.JoinedIterable$TypeSafeJoinedIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.mapping.Column:java.lang.Object clone()",
+                "org.hibernate.UnresolvableObjectException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentMap$EntrySetProxy:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.SingletonIterator:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$ValueIterator:java.lang.Object next()",
+                "org.hibernate.QueryException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.EmptyIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.PersistentMap:java.util.Set entrySet()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean add(java.lang.Object)",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeyIterator:java.lang.Object nextElement()",
+                "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.PersistentBag:boolean isEmpty()",
+                "org.hibernate.internal.util.collections.IdentityMap$IdentityMapEntry:java.lang.Object getKey()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$ValueIterator:java.lang.Object nextElement()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:java.lang.Object next()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.util.Set entrySet()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                "org.hibernate.TransientPropertyValueException:java.lang.String getMessage()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$HashIterator:boolean hasNext()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$IteratorProxy:boolean hasNext()",
+                "org.hibernate.internal.AbstractQueryImpl:org.hibernate.Query setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$HashIterator:boolean hasNext()",
+                "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                "org.hibernate.collection.internal.PersistentBag:int size()",
+                "org.hibernate.event.internal.EventCache:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$HashIterator:boolean hasMoreElements()",
+                "org.hibernate.collection.internal.PersistentMap$EntryIteratorProxy:boolean hasNext()",
+                "org.hibernate.internal.util.collections.JoinedIterator:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentList:int size()",
+                "org.hibernate.internal.SessionImpl:void saveOrUpdate(java.lang.Object)",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$SimpleEntry:java.lang.Object getKey()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$KeySet:java.util.Iterator iterator()",
+                "org.hibernate.collection.internal.PersistentSortedMap$SortedSubMap:java.util.Set entrySet()",
+                "org.hibernate.internal.IteratorImpl:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentList:boolean add(java.lang.Object)",
+                "org.hibernate.internal.CollectionFilterImpl:java.util.List list()",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap$EntryIterator:java.util.Map$Entry next()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$KeyIterator:java.lang.Object nextElement()",
+                "org.hibernate.event.internal.EventCache:java.util.Set entrySet()",
+                "org.hibernate.StaleObjectStateException:java.lang.String getMessage()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.Iterator iterator()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.hibernate.collection.internal.PersistentSet:java.util.Iterator iterator()"
+            ],
+            "CVE": [
+                "CVE-2020-25638"
+            ],
+            "used vul-method": [
+                "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                "org.hibernate.internal.CollectionFilterImpl:java.util.List list()"
+            ],
+            "vul-called frequency": 8,
+            "related vul root method": {
+                "CVE-2020-25638": [
+                    "org.hibernate.sql.Delete:java.lang.String toStatementString()",
+                    "org.hibernate.sql.InsertSelect:java.lang.String toStatementString()",
+                    "org.hibernate.sql.Select:java.lang.String toStatementString()",
+                    "org.hibernate.sql.SimpleSelect:java.lang.String toStatementString()",
+                    "org.hibernate.sql.Update:java.lang.String toStatementString()",
+                    "org.hibernate.sql.Insert:java.lang.String toStatementString()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-25638": [
+                    "org.hibernate.internal.SessionImpl:org.hibernate.Query createQuery(java.lang.String)",
+                    "org.hibernate.internal.CollectionFilterImpl:java.util.List list()"
+                ]
+            }
+        },
+        "ch.qos.logback:logback-classic:1.0.13": {
+            "used-method num": 16,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object,java.lang.Object)"
+            ]
+        }
+    }
+}

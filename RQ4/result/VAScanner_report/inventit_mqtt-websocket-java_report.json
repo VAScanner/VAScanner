@@ -1,0 +1,27 @@
+{
+    "project name": "inventit_mqtt-websocket-java",
+    "vulnerable dependencies": {
+        "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2": {
+            "used-method num": 13,
+            "used method": [
+                "org.eclipse.paho.client.mqttv3.TimerPingSender:void <clinit>()",
+                "org.eclipse.paho.client.mqttv3.MqttAsyncClient:void <clinit>()",
+                "org.eclipse.paho.client.mqttv3.TimerPingSender:void <init>()",
+                "org.eclipse.paho.client.mqttv3.persist.MqttDefaultFilePersistence:void <init>()",
+                "org.eclipse.paho.client.mqttv3.MqttConnectOptions:int getConnectionTimeout()",
+                "org.eclipse.paho.client.mqttv3.MqttConnectOptions:java.lang.String[] getServerURIs()",
+                "org.eclipse.paho.client.mqttv3.logging.LoggerFactory:org.eclipse.paho.client.mqttv3.logging.Logger getLogger(java.lang.String,java.lang.String)",
+                "org.eclipse.paho.client.mqttv3.MqttException:void <init>(int,java.lang.Throwable)",
+                "org.eclipse.paho.client.mqttv3.MqttAsyncClient:void <init>(java.lang.String,java.lang.String,org.eclipse.paho.client.mqttv3.MqttClientPersistence,org.eclipse.paho.client.mqttv3.MqttPingSender)",
+                "org.eclipse.paho.client.mqttv3.MqttConnectOptions:int getMqttVersion()",
+                "org.eclipse.paho.client.mqttv3.persist.MqttDefaultFilePersistence:void <clinit>()",
+                "org.eclipse.paho.client.mqttv3.MqttAsyncClient:org.eclipse.paho.client.mqttv3.internal.NetworkModule[] createNetworkModules(java.lang.String,org.eclipse.paho.client.mqttv3.MqttConnectOptions)",
+                "org.eclipse.paho.client.mqttv3.logging.LoggerFactory:void <clinit>()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

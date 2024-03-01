@@ -1,0 +1,41 @@
+{
+    "project name": "leechenxiang_imooc-springboot-wxlogin",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.3.5": {
+            "used-method num": 14,
+            "used method": [
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder addParameter(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List)",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

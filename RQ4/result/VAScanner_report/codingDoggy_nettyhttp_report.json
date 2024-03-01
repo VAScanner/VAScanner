@@ -1,0 +1,134 @@
+{
+    "project name": "codingDoggy_nettyhttp",
+    "vulnerable dependencies": {
+        "io.netty:netty-codec-http:4.1.14.Final": {
+            "used-method num": 71,
+            "used method": [
+                "io.netty.handler.codec.http.multipart.DiskFileUpload:java.lang.String getFilename()",
+                "io.netty.handler.codec.http.multipart.DefaultHttpDataFactory:void <init>(long)",
+                "io.netty.handler.codec.http.HttpMethod:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.multipart.MixedFileUpload:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpResponseEncoder:void <init>()",
+                "io.netty.handler.codec.http.DefaultLastHttpContent:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String uri()",
+                "io.netty.handler.codec.http.multipart.AbstractDiskHttpData:boolean renameTo(java.io.File)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpHeaders:io.netty.handler.codec.http.HttpHeaders add(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.multipart.MixedFileUpload:io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType getHttpDataType()",
+                "io.netty.handler.codec.http.multipart.MixedFileUpload:boolean isCompleted()",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpVersion protocolVersion()",
+                "io.netty.handler.codec.http.HttpVersion:void <clinit>()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <init>(int)",
+                "io.netty.handler.codec.http.multipart.DiskAttribute:io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType getHttpDataType()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:java.lang.String get(java.lang.String)",
+                "io.netty.handler.codec.http.HttpResponseStatus:java.lang.String toString()",
+                "io.netty.handler.codec.http.multipart.MemoryAttribute:io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType getHttpDataType()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpVersion:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.multipart.MemoryFileUpload:io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType getHttpDataType()",
+                "io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType:void <clinit>()",
+                "io.netty.handler.codec.http.HttpMethod:boolean equals(java.lang.Object)",
+                "io.netty.handler.codec.http.multipart.MemoryFileUpload:java.lang.String getFilename()",
+                "io.netty.handler.codec.http.multipart.HttpPostRequestDecoder:void <init>(io.netty.handler.codec.http.multipart.HttpDataFactory,io.netty.handler.codec.http.HttpRequest,java.nio.charset.Charset)",
+                "io.netty.handler.codec.http.multipart.AbstractMemoryHttpData:boolean renameTo(java.io.File)",
+                "io.netty.handler.codec.http.QueryStringDecoder:java.util.Map parameters()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:io.netty.handler.codec.http.HttpMethod method()",
+                "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String toString()",
+                "io.netty.handler.codec.http.multipart.DiskFileUpload:io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType getHttpDataType()",
+                "io.netty.handler.codec.http.HttpHeaders:io.netty.handler.codec.http.HttpHeaders set(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.HttpRequestDecoder:void <init>()",
+                "io.netty.handler.codec.http.multipart.MixedAttribute:java.lang.String getName()",
+                "io.netty.handler.codec.http.multipart.MixedAttribute:java.lang.String getValue()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpResponse:java.lang.String toString()",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:io.netty.handler.codec.http.HttpHeaders add(java.lang.CharSequence,java.lang.Object)",
+                "io.netty.handler.codec.http.HttpHeaders:boolean contains(java.lang.CharSequence,java.lang.CharSequence,boolean)",
+                "io.netty.handler.codec.http.DefaultHttpHeaders:boolean contains(java.lang.CharSequence,java.lang.CharSequence,boolean)",
+                "io.netty.handler.codec.http.DefaultFullHttpRequest:io.netty.buffer.ByteBuf content()",
+                "io.netty.handler.codec.http.multipart.DiskFileUpload:java.lang.String toString()",
+                "io.netty.handler.codec.http.multipart.MixedFileUpload:boolean renameTo(java.io.File)",
+                "io.netty.handler.codec.http.DefaultHttpContent:java.lang.String toString()",
+                "io.netty.handler.codec.http.multipart.MixedAttribute:io.netty.handler.codec.http.multipart.InterfaceHttpData$HttpDataType getHttpDataType()",
+                "io.netty.handler.codec.http.multipart.MixedAttribute:java.lang.String toString()",
+                "io.netty.handler.codec.http.multipart.AbstractHttpData:boolean isCompleted()",
+                "io.netty.handler.codec.http.QueryStringDecoder:void <init>(java.lang.String,java.nio.charset.Charset)",
+                "io.netty.handler.codec.http.DefaultHttpRequest:java.lang.String uri()",
+                "io.netty.handler.codec.http.HttpVersion:java.lang.String toString()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpMethod:void <clinit>()",
+                "io.netty.handler.codec.http.multipart.DiskAttribute:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpResponseStatus:void <clinit>()",
+                "io.netty.handler.codec.http.DefaultFullHttpResponse:void <init>(io.netty.handler.codec.http.HttpVersion,io.netty.handler.codec.http.HttpResponseStatus,io.netty.buffer.ByteBuf)",
+                "io.netty.handler.codec.http.multipart.HttpPostRequestDecoder:java.util.List getBodyHttpDatas()",
+                "io.netty.handler.codec.http.multipart.DiskAttribute:java.lang.String getValue()",
+                "io.netty.handler.codec.http.multipart.MemoryAttribute:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpObjectAggregator:void <clinit>()",
+                "io.netty.handler.codec.http.QueryStringDecoder:java.lang.String toString()",
+                "io.netty.handler.codec.http.multipart.MemoryFileUpload:java.lang.String toString()",
+                "io.netty.handler.codec.http.HttpObjectDecoder:void <clinit>()",
+                "io.netty.handler.codec.http.multipart.MixedFileUpload:java.lang.String getFilename()",
+                "io.netty.handler.codec.http.multipart.HttpPostRequestDecoder:void cleanFiles()",
+                "io.netty.handler.codec.http.multipart.AbstractHttpData:java.lang.String getName()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage:io.netty.handler.codec.http.HttpVersion protocolVersion()",
+                "io.netty.handler.codec.http.DefaultHttpMessage:io.netty.handler.codec.http.HttpHeaders headers()",
+                "io.netty.handler.codec.http.multipart.MemoryAttribute:java.lang.String getValue()",
+                "io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest:io.netty.handler.codec.http.HttpMethod method()"
+            ]
+        },
+        "com.alibaba:fastjson:1.2.41": {
+            "used-method num": 21,
+            "used method": [
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:boolean containsAll(java.util.Collection)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:boolean isEmpty()",
+                "com.alibaba.fastjson.JSONObject:boolean isEmpty()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:int size()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)"
+                ]
+            }
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

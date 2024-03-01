@@ -1,0 +1,20 @@
+{
+    "project name": "coi-gov-pl_spring-clean-architecture",
+    "modules": {
+        "pl.coi.gov.examples.springcleanarchitecture:pom": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.hibernate.validator:hibernate-validator:6.0.7.Final": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.hibernate.validator.internal.util.ConcurrentReferenceHashMap$KeySet:boolean remove(java.lang.Object)",
+                        "org.hibernate.validator.internal.util.ConcurrentReferenceHashMap$EntrySet:boolean remove(java.lang.Object)"
+                    ]
+                }
+            }
+        }
+    }
+}

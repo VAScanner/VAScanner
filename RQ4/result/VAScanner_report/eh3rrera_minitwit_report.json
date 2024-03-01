@@ -1,0 +1,59 @@
+{
+    "project name": "eh3rrera_minitwit",
+    "vulnerable dependencies": {
+        "com.sparkjava:spark-core:2.5.4": {
+            "used-method num": 22,
+            "used method": [
+                "spark.Request:java.lang.String params(java.lang.String)",
+                "spark.Spark:void halt()",
+                "spark.Request:java.lang.String body()",
+                "spark.Spark:void <clinit>()",
+                "spark.Spark:void post(java.lang.String,spark.Route)",
+                "spark.Spark:void halt(int)",
+                "spark.http.matching.ResponseWrapper:void redirect(java.lang.String)",
+                "spark.Spark:void post(java.lang.String,spark.TemplateViewRoute,spark.TemplateEngine)",
+                "spark.Request:java.lang.String queryParams(java.lang.String)",
+                "spark.Spark:void before(java.lang.String,spark.Filter)",
+                "spark.Spark:void halt(int,java.lang.String)",
+                "spark.http.matching.RequestWrapper:spark.Session session()",
+                "spark.http.matching.RequestWrapper:java.lang.String body()",
+                "spark.http.matching.RequestWrapper:java.lang.String queryParams(java.lang.String)",
+                "spark.utils.StringUtils:boolean isEmpty(java.lang.Object)",
+                "spark.Response:void redirect(java.lang.String)",
+                "spark.ModelAndView:void <init>(java.lang.Object,java.lang.String)",
+                "spark.Spark:void get(java.lang.String,spark.TemplateViewRoute,spark.TemplateEngine)",
+                "spark.Spark:void staticFileLocation(java.lang.String)",
+                "spark.http.matching.RequestWrapper:java.lang.String params(java.lang.String)",
+                "spark.Spark:void get(java.lang.String,spark.Route)",
+                "spark.Request:spark.Session session()"
+            ]
+        },
+        "commons-beanutils:commons-beanutils:1.9.3": {
+            "used-method num": 3,
+            "used method": [
+                "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+            ],
+            "CVE": [
+                "CVE-2019-10086"
+            ],
+            "used vul-method": [
+                "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+            ],
+            "vul-called frequency": 35,
+            "related vul root method": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-10086": [
+                    "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                    "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+                ]
+            }
+        }
+    }
+}

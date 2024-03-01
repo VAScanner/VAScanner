@@ -1,0 +1,99 @@
+{
+    "project name": "liumapp_workable-converter",
+    "vulnerable dependencies": {
+        "org.apache.pdfbox:pdfbox:2.0.12": {
+            "used-method num": 41,
+            "used method": [
+                "org.apache.pdfbox.filter.ASCII85OutputStream:void close()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:boolean equals(java.lang.Object)",
+                "org.apache.pdfbox.multipdf.Overlay:org.apache.pdfbox.pdmodel.PDDocument overlay(java.util.Map)",
+                "org.apache.pdfbox.pdfparser.EndstreamOutputStream:void flush()",
+                "org.apache.pdfbox.filter.Predictor$PredictorOutputStream:void flush()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void close()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:int size()",
+                "org.apache.pdfbox.filter.ASCII85OutputStream:void flush()",
+                "org.apache.pdfbox.multipdf.Overlay$Position:void <clinit>()",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree$FieldIterator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void save(java.io.OutputStream)",
+                "org.apache.pdfbox.io.RandomAccessBufferedFileInputStream:void close()",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.InputStream)",
+                "org.apache.pdfbox.pdmodel.PDDocument:void save(java.lang.String)",
+                "org.apache.pdfbox.pdmodel.PDPageTree$PageIterator:boolean hasNext()",
+                "org.apache.pdfbox.rendering.ImageType:void <clinit>()",
+                "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator:boolean hasNext()",
+                "org.apache.pdfbox.filter.CCITTFaxEncoderStream:void close()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:java.util.Iterator iterator()",
+                "org.apache.pdfbox.pdmodel.common.PDPageLabels$LabelGenerator:java.lang.String next()",
+                "org.apache.pdfbox.multipdf.Overlay:void <init>()",
+                "org.apache.pdfbox.pdmodel.PDDocument:void <clinit>()",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:int hashCode()",
+                "org.apache.pdfbox.io.RandomAccessBuffer:org.apache.pdfbox.io.RandomAccessBuffer clone()",
+                "org.apache.pdfbox.cos.COSOutputStream:void close()",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)",
+                "org.apache.pdfbox.pdmodel.common.COSArrayList:java.lang.Object get(int)",
+                "org.apache.pdfbox.pdmodel.graphics.state.PDTextState:org.apache.pdfbox.pdmodel.graphics.state.PDTextState clone()",
+                "org.apache.pdfbox.pdmodel.PDPageTree$PageIterator:org.apache.pdfbox.pdmodel.PDPage next()",
+                "org.apache.pdfbox.cos.COSInputStream$1:void close()",
+                "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator:org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem next()",
+                "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree$FieldIterator:org.apache.pdfbox.pdmodel.interactive.form.PDField next()",
+                "org.apache.pdfbox.pdmodel.common.PDPageLabels$LabelGenerator:boolean hasNext()",
+                "org.apache.pdfbox.pdmodel.PDDocument:int getNumberOfPages()",
+                "org.apache.pdfbox.rendering.PDFRenderer:java.awt.image.BufferedImage renderImageWithDPI(int,float,org.apache.pdfbox.rendering.ImageType)",
+                "org.apache.pdfbox.cos.COSStream$2:void close()",
+                "org.apache.pdfbox.cos.COSStream$1:void close()",
+                "org.apache.pdfbox.filter.CCITTFaxEncoderStream:void flush()",
+                "org.apache.pdfbox.filter.ASCII85InputStream:void close()",
+                "org.apache.pdfbox.util.Matrix:org.apache.pdfbox.util.Matrix clone()",
+                "org.apache.pdfbox.rendering.PDFRenderer:void <init>(org.apache.pdfbox.pdmodel.PDDocument)"
+            ],
+            "CVE": [
+                "CVE-2021-27807",
+                "CVE-2021-31811",
+                "CVE-2021-31812"
+            ],
+            "used vul-method": [
+                "org.apache.pdfbox.multipdf.Overlay:org.apache.pdfbox.pdmodel.PDDocument overlay(java.util.Map)",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.InputStream)",
+                "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)",
+                "org.apache.pdfbox.rendering.PDFRenderer:java.awt.image.BufferedImage renderImageWithDPI(int,float,org.apache.pdfbox.rendering.ImageType)"
+            ],
+            "vul-called frequency": 10,
+            "related vul root method": {
+                "CVE-2021-27807": [
+                    "org.apache.pdfbox.io.RandomAccessBuffer:int readRemainingBytes(byte[],int,int)",
+                    "org.apache.pdfbox.io.RandomAccessBuffer:int read(byte[],int,int)",
+                    "org.apache.pdfbox.pdfparser.InputStreamSource:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.ScratchFileBuffer:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.RandomAccessBuffer:byte[] readFully(int)",
+                    "org.apache.pdfbox.io.RandomAccessBufferedFileInputStream:byte[] readFully(int)"
+                ],
+                "CVE-2021-31811": [
+                    "org.apache.pdfbox.pdfparser.PDFObjectStreamParser:void parse()"
+                ],
+                "CVE-2021-31812": [
+                    "org.apache.pdfbox.pdfparser.BaseParser:void parseCOSDictionaryNameValuePair(org.apache.pdfbox.cos.COSDictionary)",
+                    "org.apache.pdfbox.pdfparser.BaseParser:org.apache.pdfbox.cos.COSArray parseCOSArray()"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2021-27807": [
+                    "org.apache.pdfbox.multipdf.Overlay:org.apache.pdfbox.pdmodel.PDDocument overlay(java.util.Map)",
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.InputStream)",
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)",
+                    "org.apache.pdfbox.rendering.PDFRenderer:java.awt.image.BufferedImage renderImageWithDPI(int,float,org.apache.pdfbox.rendering.ImageType)"
+                ],
+                "CVE-2021-31811": [
+                    "org.apache.pdfbox.multipdf.Overlay:org.apache.pdfbox.pdmodel.PDDocument overlay(java.util.Map)",
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.InputStream)",
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)"
+                ],
+                "CVE-2021-31812": [
+                    "org.apache.pdfbox.multipdf.Overlay:org.apache.pdfbox.pdmodel.PDDocument overlay(java.util.Map)",
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.InputStream)",
+                    "org.apache.pdfbox.pdmodel.PDDocument:org.apache.pdfbox.pdmodel.PDDocument load(java.io.File)",
+                    "org.apache.pdfbox.rendering.PDFRenderer:java.awt.image.BufferedImage renderImageWithDPI(int,float,org.apache.pdfbox.rendering.ImageType)"
+                ]
+            }
+        }
+    }
+}

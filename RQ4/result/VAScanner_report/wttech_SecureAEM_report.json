@@ -1,0 +1,68 @@
+{
+    "project name": "wttech_SecureAEM",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.3": {
+            "used-method num": 39,
+            "used method": [
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.lang.Iterable,java.nio.charset.Charset)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.client.methods.HttpRequestBase:void setURI(java.net.URI)",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List)",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.auth.AuthenticationException:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void <init>()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.conn.scheme.Scheme:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.auth.AuthOption:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.RequestWrapper:java.net.URI getURI()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.conn.HttpInetSocketAddress:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.auth.BasicScheme:org.apache.http.Header authenticate(org.apache.http.auth.Credentials,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.auth.BasicScheme:void <init>()",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.impl.client.BasicAuthCache:java.lang.String toString()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String getUserName()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 12,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

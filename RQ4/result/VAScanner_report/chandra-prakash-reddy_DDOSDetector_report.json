@@ -1,0 +1,58 @@
+{
+    "project name": "chandra-prakash-reddy_DDOSDetector",
+    "vulnerable dependencies": {
+        "org.apache.kafka:kafka-clients:2.3.0": {
+            "used-method num": 28,
+            "used method": [
+                "org.apache.kafka.common.config.AbstractConfig$ResolvingMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.kafka.common.utils.ImplicitLinkedHashCollection$ImplicitLinkedHashCollectionSetView:void clear()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <clinit>()",
+                "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.Iterator iterator()",
+                "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                "org.apache.kafka.common.utils.ImplicitLinkedHashCollection$ImplicitLinkedHashCollectionIterator:org.apache.kafka.common.utils.ImplicitLinkedHashCollection$Element next()",
+                "org.apache.kafka.clients.producer.KafkaProducer:void close()",
+                "org.apache.kafka.common.utils.CopyOnWriteMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.kafka.common.header.internals.RecordHeaders$1:boolean hasNext()",
+                "org.apache.kafka.common.utils.AbstractIterator:java.lang.Object next()",
+                "org.apache.kafka.clients.producer.KafkaProducer:void <clinit>()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(java.time.Duration)",
+                "org.apache.kafka.common.config.AbstractConfig$RecordingMap:java.lang.Object get(java.lang.Object)",
+                "org.apache.kafka.common.utils.ImplicitLinkedHashCollection$ImplicitLinkedHashCollectionSetView:int size()",
+                "org.apache.kafka.clients.producer.KafkaProducer:java.util.concurrent.Future send(org.apache.kafka.clients.producer.ProducerRecord)",
+                "org.apache.kafka.common.utils.CopyOnWriteMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.kafka.common.utils.ImplicitLinkedHashCollection$ImplicitLinkedHashCollectionListView:int size()",
+                "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:boolean hasNext()",
+                "org.apache.kafka.common.utils.ImplicitLinkedHashCollection$ImplicitLinkedHashCollectionSetView:boolean add(java.lang.Object)",
+                "org.apache.kafka.clients.producer.ProducerRecord:void <init>(java.lang.String,java.lang.Object,java.lang.Object)",
+                "org.apache.kafka.common.utils.ImplicitLinkedHashCollection$ImplicitLinkedHashCollectionIterator:boolean hasNext()",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void subscribe(java.util.Collection)",
+                "org.apache.kafka.common.utils.AbstractIterator:boolean hasNext()",
+                "org.apache.kafka.common.header.internals.RecordHeaders$1:org.apache.kafka.common.header.Header next()",
+                "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:org.apache.kafka.common.record.Record next()",
+                "org.apache.kafka.common.utils.CopyOnWriteMap:void clear()",
+                "org.apache.kafka.common.utils.CopyOnWriteMap:boolean containsKey(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2023-25194"
+            ],
+            "used vul-method": [
+                "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2023-25194": [
+                    "org.apache.kafka.common.security.JaasContext:org.apache.kafka.common.security.JaasContext defaultContext(org.apache.kafka.common.security.JaasContext$Type,java.lang.String,java.lang.String)",
+                    "org.apache.kafka.common.security.JaasContext:org.apache.kafka.common.security.JaasContext load(org.apache.kafka.common.security.JaasContext$Type,java.lang.String,java.lang.String,org.apache.kafka.common.config.types.Password)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2023-25194": [
+                    "org.apache.kafka.clients.producer.KafkaProducer:void <init>(java.util.Properties)",
+                    "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)"
+                ]
+            }
+        }
+    }
+}

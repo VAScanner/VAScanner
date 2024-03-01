@@ -1,0 +1,51 @@
+{
+    "project name": "peterszatmary_vaadin-hibernate-tomcat-maven-demo",
+    "vulnerable dependencies": {
+        "org.hibernate:hibernate-core:5.2.2.Final": {
+            "used-method num": 37,
+            "used method": [
+                "org.hibernate.query.internal.AbstractProducedQuery:java.util.List list()",
+                "org.hibernate.procedure.internal.ProcedureCallImpl:org.hibernate.procedure.spi.ProcedureCallImplementor setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.query.internal.AbstractProducedQuery:int executeUpdate()",
+                "org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter:org.hibernate.query.spi.QueryImplementor setFirstResult(int)",
+                "org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter:org.hibernate.query.spi.QueryImplementor setMaxResults(int)",
+                "org.hibernate.internal.SessionImpl:void persist(java.lang.Object)",
+                "org.hibernate.query.internal.CollectionFilterImpl:java.util.List list()",
+                "org.hibernate.internal.SessionImpl:java.lang.Object get(java.lang.Class,java.io.Serializable)",
+                "org.hibernate.collection.internal.PersistentBag:int size()",
+                "org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter:int executeUpdate()",
+                "org.hibernate.internal.SessionImpl:void close()",
+                "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                "org.hibernate.procedure.internal.ProcedureCallImpl:int executeUpdate()",
+                "org.hibernate.internal.AbstractSharedSessionContract:org.hibernate.Transaction getTransaction()",
+                "org.hibernate.collection.internal.PersistentList:int size()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:int size()",
+                "org.hibernate.cfg.Configuration:void <clinit>()",
+                "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session openSession()",
+                "org.hibernate.query.internal.AbstractProducedQuery:org.hibernate.query.spi.QueryImplementor setMaxResults(int)",
+                "org.hibernate.internal.AbstractSharedSessionContract:org.hibernate.query.spi.QueryImplementor createQuery(java.lang.String)",
+                "org.hibernate.cfg.Configuration:org.hibernate.cfg.Configuration configure(java.lang.String)",
+                "org.hibernate.cfg.Configuration:void <init>()",
+                "org.hibernate.query.internal.AbstractProducedQuery:org.hibernate.query.spi.QueryImplementor setFirstResult(int)",
+                "org.hibernate.query.internal.AbstractProducedQuery:java.lang.Object uniqueResult()",
+                "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                "org.hibernate.internal.AbstractSharedSessionContract:org.hibernate.query.spi.QueryImplementor getNamedQuery(java.lang.String)",
+                "org.hibernate.collection.internal.PersistentBag:java.lang.Object get(int)",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.lang.Object get(int)",
+                "org.hibernate.query.internal.AbstractProducedQuery:org.hibernate.query.spi.QueryImplementor setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.lang.Object get(int)",
+                "org.hibernate.internal.AbstractSharedSessionContract:org.hibernate.Transaction beginTransaction()",
+                "org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter:org.hibernate.query.spi.QueryImplementor setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentList:java.lang.Object get(int)",
+                "org.hibernate.cfg.Configuration:org.hibernate.SessionFactory buildSessionFactory()",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:int size()",
+                "org.hibernate.mapping.Column:org.hibernate.mapping.Column clone()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

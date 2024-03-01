@@ -1,0 +1,33 @@
+{
+    "project name": "longofo_PaddingOracleAttack-Shiro-721",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.10": {
+            "used-method num": 6,
+            "used method": [
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

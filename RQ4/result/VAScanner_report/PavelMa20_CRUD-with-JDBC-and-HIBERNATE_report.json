@@ -1,0 +1,43 @@
+{
+    "project name": "PavelMa20_CRUD-with-JDBC-and-HIBERNATE",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.13": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.hibernate:hibernate-core:5.4.0.Final": {
+            "used-method num": 29,
+            "used method": [
+                "org.hibernate.internal.AbstractSessionImpl:org.hibernate.query.Query createQuery(java.lang.String)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:boolean isEmpty()",
+                "org.hibernate.query.internal.AbstractProducedQuery:java.util.List list()",
+                "org.hibernate.procedure.internal.ProcedureCallImpl:org.hibernate.procedure.spi.ProcedureCallImplementor setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentList:boolean isEmpty()",
+                "org.hibernate.cfg.Configuration:void <clinit>()",
+                "org.hibernate.collection.internal.PersistentList:java.util.ListIterator listIterator()",
+                "org.hibernate.boot.registry.StandardServiceRegistryBuilder:void <init>()",
+                "org.hibernate.internal.SessionFactoryImpl:org.hibernate.Session openSession()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:boolean isEmpty()",
+                "org.hibernate.boot.registry.StandardServiceRegistryBuilder:org.hibernate.boot.registry.StandardServiceRegistry build()",
+                "org.hibernate.query.internal.CollectionFilterImpl:java.util.List list()",
+                "org.hibernate.cfg.Configuration:void <init>()",
+                "org.hibernate.internal.SessionImpl:void delete(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentBag:boolean isEmpty()",
+                "org.hibernate.query.internal.AbstractProducedQuery:org.hibernate.query.spi.QueryImplementor setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.internal.SessionImpl:void close()",
+                "org.hibernate.cfg.Configuration:org.hibernate.SessionFactory buildSessionFactory(org.hibernate.service.ServiceRegistry)",
+                "org.hibernate.boot.registry.StandardServiceRegistryBuilder:org.hibernate.boot.registry.StandardServiceRegistryBuilder applySettings(java.util.Map)",
+                "org.hibernate.internal.SessionImpl:java.io.Serializable save(java.lang.Object)",
+                "org.hibernate.internal.AbstractSharedSessionContract:org.hibernate.Transaction beginTransaction()",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListProxy:java.util.ListIterator listIterator()",
+                "org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter:org.hibernate.query.spi.QueryImplementor setParameter(java.lang.String,java.lang.Object)",
+                "org.hibernate.internal.SessionImpl:void update(java.lang.Object)",
+                "org.hibernate.collection.internal.AbstractPersistentCollection$ListIteratorProxy:java.lang.Object next()",
+                "org.hibernate.collection.internal.PersistentBag:java.util.ListIterator listIterator()",
+                "org.hibernate.cfg.Configuration:org.hibernate.cfg.Configuration addAnnotatedClass(java.lang.Class)",
+                "org.hibernate.collection.internal.PersistentIdentifierBag:java.util.ListIterator listIterator()",
+                "org.hibernate.cfg.Configuration:org.hibernate.cfg.Configuration setProperty(java.lang.String,java.lang.String)"
+            ]
+        }
+    }
+}

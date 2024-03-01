@@ -1,0 +1,93 @@
+{
+    "project name": "quhw_xtunnel",
+    "vulnerable dependencies": {
+        "ch.qos.logback:logback-classic:1.1.3": {
+            "used-method num": 5,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)"
+            ]
+        },
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 11,
+            "used method": [
+                "org.dom4j.io.SAXReader:void <init>()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.DocumentException:java.lang.String getMessage()",
+                "org.dom4j.tree.AbstractNode:java.util.List selectNodes(java.lang.String)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.io.SAXReader:org.dom4j.Document read(java.io.InputStream)",
+                "org.dom4j.tree.AbstractNode:org.dom4j.Node selectSingleNode(java.lang.String)",
+                "org.dom4j.Namespace:java.lang.String getStringValue()",
+                "org.dom4j.tree.AbstractNode:java.lang.String getStringValue()",
+                "org.dom4j.tree.AbstractEntity:java.lang.String getStringValue()",
+                "org.dom4j.tree.DefaultElement:java.lang.String getStringValue()"
+            ]
+        },
+        "io.netty:netty-all:4.0.28.Final": {
+            "used-method num": 34,
+            "used method": [
+                "io.netty.handler.ssl.SslHandler:void <clinit>()",
+                "io.netty.util.internal.ReadOnlyIterator:java.lang.Object next()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$KeyIterator:java.lang.Object next()",
+                "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$ValueIterator:java.lang.Object next()",
+                "io.netty.handler.ssl.SslHandler:void <init>(javax.net.ssl.SSLEngine)",
+                "io.netty.bootstrap.Bootstrap:void <clinit>()",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void <init>()",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                "io.netty.channel.ChannelOption:void <clinit>()",
+                "io.netty.util.UniqueName:void <clinit>()",
+                "io.netty.util.internal.ReadOnlyIterator:boolean hasNext()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.bootstrap.Bootstrap:void <init>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$BaseIterator:boolean hasNext()",
+                "io.netty.channel.ChannelInitializer:void <clinit>()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8$EntryIterator:java.util.Map$Entry next()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap group(io.netty.channel.EventLoopGroup)"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>(int)"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "project name": "lhauspie_spring-security-oauth2-resource-server-example",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.2.1.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.security.oauth2.provider.token.DefaultAccessTokenConverter:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.DefaultAccessTokenConverter:org.springframework.security.oauth2.provider.OAuth2Authentication extractAuthentication(java.util.Map)",
+                "org.springframework.security.oauth2.provider.OAuth2Authentication:org.springframework.security.core.Authentication getUserAuthentication()"
+            ]
+        }
+    }
+}

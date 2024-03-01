@@ -1,0 +1,57 @@
+{
+    "project name": "maksim-leshukov_chat-demo-tcp-netty",
+    "modules": {
+        "org.test.chat:chat-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "io.netty:netty-all:4.1.37.Final": {
+                    "used-method num": 22,
+                    "used method": [
+                        "io.netty.buffer.EmptyByteBuf:int readableBytes()",
+                        "io.netty.buffer.AbstractUnpooledSlicedByteBuf:java.lang.CharSequence getCharSequence(int,int,java.nio.charset.Charset)",
+                        "io.netty.buffer.SwappedByteBuf:int writeCharSequence(java.lang.CharSequence,java.nio.charset.Charset)",
+                        "io.netty.buffer.AbstractByteBuf:int writeCharSequence(java.lang.CharSequence,java.nio.charset.Charset)",
+                        "io.netty.buffer.EmptyByteBuf:java.lang.CharSequence getCharSequence(int,int,java.nio.charset.Charset)",
+                        "io.netty.handler.codec.MessageToByteEncoder:void <init>()",
+                        "io.netty.buffer.EmptyByteBuf:int writeCharSequence(java.lang.CharSequence,java.nio.charset.Charset)",
+                        "io.netty.buffer.WrappedByteBuf:java.lang.CharSequence getCharSequence(int,int,java.nio.charset.Charset)",
+                        "io.netty.buffer.AbstractByteBuf:java.lang.CharSequence getCharSequence(int,int,java.nio.charset.Charset)",
+                        "io.netty.buffer.AbstractByteBuf:int readableBytes()",
+                        "io.netty.buffer.WrappedByteBuf:int readableBytes()",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                        "io.netty.util.AsciiString:java.lang.String toString()",
+                        "io.netty.buffer.AdvancedLeakAwareByteBuf:java.lang.CharSequence getCharSequence(int,int,java.nio.charset.Charset)",
+                        "io.netty.buffer.WrappedByteBuf:int writeCharSequence(java.lang.CharSequence,java.nio.charset.Charset)",
+                        "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                        "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:boolean hasNext()",
+                        "io.netty.buffer.AdvancedLeakAwareByteBuf:int writeCharSequence(java.lang.CharSequence,java.nio.charset.Charset)",
+                        "io.netty.buffer.SwappedByteBuf:java.lang.CharSequence getCharSequence(int,int,java.nio.charset.Charset)",
+                        "io.netty.buffer.SwappedByteBuf:int readableBytes()",
+                        "io.netty.util.internal.DefaultPriorityQueue$PriorityQueueIterator:io.netty.util.internal.PriorityQueueNode next()",
+                        "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2019-16869": [
+                            "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-16869": [
+                            "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

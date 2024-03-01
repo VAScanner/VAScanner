@@ -1,0 +1,129 @@
+{
+    "project name": "funnyzpc_mee-admin",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:42.2.18": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.poi:poi-ooxml:3.17": {
+            "used-method num": 76,
+            "used method": [
+                "org.apache.poi.openxml4j.opc.internal.ContentType:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFDataFormat:short getFormat(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFont(org.apache.poi.ss.usermodel.Font)",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setFontHeight(short)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:void setCellType(org.apache.poi.ss.usermodel.CellType)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:java.lang.String getSheetName()",
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.Font createFont()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String getStringCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:int getLastRowNum()",
+                "org.apache.poi.xssf.usermodel.XSSFRichTextString:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:boolean hasNext()",
+                "org.apache.poi.xssf.usermodel.XSSFRow:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setVerticalAlignment(org.apache.poi.ss.usermodel.VerticalAlignment)",
+                "org.apache.poi.xssf.usermodel.XSSFRow:org.apache.poi.xssf.usermodel.XSSFCell getCell(int)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setWrapText(boolean)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:void setColumnWidth(int,int)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setTopBorderColor(short)",
+                "org.apache.poi.xssf.usermodel.XSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <clinit>()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.DataFormat createDataFormat()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setBorderRight(org.apache.poi.ss.usermodel.BorderStyle)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Date)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setRightBorderColor(short)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:org.apache.poi.xssf.usermodel.XSSFSheet getSheetAt(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Calendar)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void write(java.io.OutputStream)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void close()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:double getNumericCellValue()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:org.apache.poi.ss.usermodel.Sheet next()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setColor(short)",
+                "org.apache.poi.xssf.usermodel.XSSFClientAnchor:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:boolean getBooleanCellValue()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setBorderBottom(org.apache.poi.ss.usermodel.BorderStyle)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setLeftBorderColor(short)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                "org.apache.poi.xssf.usermodel.XSSFTextParagraph:java.lang.String toString()",
+                "org.apache.poi.POIXMLDocumentPart:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:boolean dispose()",
+                "org.apache.poi.openxml4j.opc.PackageRelationshipCollection:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void <init>(org.apache.poi.xssf.usermodel.XSSFWorkbook,int,boolean,boolean)",
+                "org.apache.poi.xssf.streaming.SXSSFRow$FilledCellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void <init>(int)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:void setCompressTempFiles(boolean)",
+                "org.apache.poi.xssf.usermodel.XSSFSheet:org.apache.poi.xssf.usermodel.XSSFRow getRow(int)",
+                "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void close()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(boolean)",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.xssf.usermodel.XSSFTextRun:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCell:org.apache.poi.ss.usermodel.CellType getCellTypeEnum()",
+                "org.apache.poi.xssf.usermodel.XSSFFont:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setBorderLeft(org.apache.poi.ss.usermodel.BorderStyle)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setBottomBorderColor(short)",
+                "org.apache.poi.xssf.usermodel.XSSFFont:void setFontHeightInPoints(short)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFillForegroundColor(short)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setAlignment(org.apache.poi.ss.usermodel.HorizontalAlignment)",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:java.lang.Object clone()",
+                "org.apache.poi.xssf.usermodel.XSSFConditionalFormatting:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook:void <init>(java.io.InputStream)",
+                "org.apache.poi.openxml4j.opc.PackagePartName:java.lang.String toString()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setFillPattern(org.apache.poi.ss.usermodel.FillPatternType)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellType(org.apache.poi.ss.usermodel.CellType)",
+                "org.apache.poi.xssf.streaming.SXSSFRow$CellIterator:org.apache.poi.ss.usermodel.Cell next()",
+                "org.apache.poi.openxml4j.opc.internal.MemoryPackagePartOutputStream:void write(byte[])",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setBorderTop(org.apache.poi.ss.usermodel.BorderStyle)",
+                "org.apache.poi.xssf.usermodel.XSSFWorkbook$SheetIterator:boolean hasNext()",
+                "org.apache.poi.openxml4j.opc.PackagePart:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.xssf.streaming.SXSSFSheet createSheet(java.lang.String)",
+                "org.apache.poi.POIXMLDocument:void close()",
+                "org.apache.poi.xssf.usermodel.XSSFCellStyle:void setDataFormat(short)",
+                "org.apache.poi.openxml4j.opc.PackageRelationship:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFWorkbook:org.apache.poi.ss.usermodel.CellStyle createCellStyle()"
+            ],
+            "CVE": [
+                "CVE-2019-12415"
+            ],
+            "used vul-method": [
+                "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(double)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Date)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Calendar)",
+                "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(boolean)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                "org.apache.poi.xssf.streaming.SXSSFCell:void setCellType(org.apache.poi.ss.usermodel.CellType)"
+            ],
+            "vul-called frequency": 70,
+            "related vul root method": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String getStringCellValue()",
+                    "org.apache.poi.xssf.streaming.SheetDataWriter:void writeCell(int,org.apache.poi.ss.usermodel.Cell)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-12415": [
+                    "org.apache.poi.xssf.streaming.SXSSFRow:org.apache.poi.xssf.streaming.SXSSFCell createCell(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(double)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Date)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.util.Calendar)",
+                    "org.apache.poi.xssf.streaming.SXSSFSheet:org.apache.poi.xssf.streaming.SXSSFRow createRow(int)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(boolean)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:java.lang.String toString()",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellValue(java.lang.String)",
+                    "org.apache.poi.xssf.streaming.SXSSFCell:void setCellType(org.apache.poi.ss.usermodel.CellType)"
+                ]
+            }
+        },
+        "io.netty:netty-common:4.1.56.Final": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

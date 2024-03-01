@@ -1,0 +1,101 @@
+{
+    "project name": "Cue_greplin-zookeeper-utils",
+    "vulnerable dependencies": {
+        "org.apache.zookeeper:zookeeper:3.4.5": {
+            "used-method num": 60,
+            "used method": [
+                "org.apache.zookeeper.server.quorum.ObserverRequestProcessor:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer:void run()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void <clinit>()",
+                "org.apache.zookeeper.server.quorum.AuthFastLeaderElection$Messenger$WorkerReceiver:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPeerConfig:void parseProperties(java.util.Properties)",
+                "org.apache.zookeeper.Shell$1:void run()",
+                "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                "org.apache.zookeeper.server.SyncRequestProcessor$1:void run()",
+                "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                "org.apache.zookeeper.server.ZooKeeperServer:void setMinSessionTimeout(int)",
+                "org.apache.zookeeper.ZooKeeper:void <init>(java.lang.String,int,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.server.quorum.QuorumPeer$ResponderThread:void run()",
+                "org.apache.zookeeper.ZooKeeper:void close()",
+                "org.apache.zookeeper.ZooKeeper:void sync(java.lang.String,org.apache.zookeeper.AsyncCallback$VoidCallback,java.lang.Object)",
+                "org.apache.zookeeper.ZooDefs$Ids:void <clinit>()",
+                "org.apache.zookeeper.server.NIOServerCnxn$CommandThread:void run()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.ZooKeeper$States getState()",
+                "org.apache.zookeeper.server.ZooKeeperServer:void setTickTime(int)",
+                "org.apache.zookeeper.server.persistence.FileTxnSnapLog:void <init>(java.io.File,java.io.File)",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,boolean)",
+                "org.apache.zookeeper.server.ServerConfig:int getMaxClientCnxns()",
+                "org.apache.zookeeper.server.ZooKeeperServer:void setMaxSessionTimeout(int)",
+                "org.apache.zookeeper.Login$1:void run()",
+                "org.apache.zookeeper.server.SyncRequestProcessor:void run()",
+                "org.apache.zookeeper.server.ServerConfig:java.net.InetSocketAddress getClientPortAddress()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer:void start()",
+                "org.apache.zookeeper.ZooKeeper:void delete(java.lang.String,int)",
+                "org.apache.zookeeper.ClientCnxn$EventThread:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener:void run()",
+                "org.apache.zookeeper.server.quorum.LearnerHandler$1:void run()",
+                "org.apache.zookeeper.server.SessionTrackerImpl:void run()",
+                "org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerReceiver:void run()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void run()",
+                "org.apache.zookeeper.ZooKeeper:java.lang.String create(java.lang.String,byte[],java.util.List,org.apache.zookeeper.CreateMode)",
+                "org.apache.zookeeper.server.ServerCnxnFactory:void <clinit>()",
+                "org.apache.zookeeper.server.PrepRequestProcessor:void run()",
+                "org.apache.zookeeper.server.quorum.LearnerHandler:void run()",
+                "org.apache.zookeeper.server.ServerConfig:void <init>()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void configure(java.net.InetSocketAddress,int)",
+                "org.apache.zookeeper.ZooKeeper$States:boolean isAlive()",
+                "org.apache.zookeeper.server.quorum.ReadOnlyRequestProcessor:void run()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void join()",
+                "org.apache.zookeeper.server.ZooKeeperServer:void <init>()",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.server.ZooKeeperServer:void <clinit>()",
+                "org.apache.zookeeper.server.quorum.Leader$LearnerCnxAcceptor:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPeer$1:void run()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void <init>()",
+                "org.apache.zookeeper.ZooKeeper:void <clinit>()",
+                "org.apache.zookeeper.server.quorum.FollowerRequestProcessor:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker:void run()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void shutdown()",
+                "org.apache.zookeeper.server.ZooKeeperServer:void setTxnLogFactory(org.apache.zookeeper.server.persistence.FileTxnSnapLog)",
+                "org.apache.zookeeper.CreateMode:void <clinit>()",
+                "org.apache.zookeeper.server.ServerConfig:void readFrom(org.apache.zookeeper.server.quorum.QuorumPeerConfig)",
+                "org.apache.zookeeper.server.quorum.AuthFastLeaderElection$Messenger$WorkerSender:void run()",
+                "org.apache.zookeeper.server.NIOServerCnxnFactory:void startup(org.apache.zookeeper.server.ZooKeeperServer)",
+                "org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender:void run()",
+                "org.apache.zookeeper.server.quorum.QuorumPeerConfig:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2019-0201"
+            ],
+            "used vul-method": [
+                "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                "org.apache.zookeeper.server.SyncRequestProcessor:void run()",
+                "org.apache.zookeeper.server.PrepRequestProcessor:void run()"
+            ],
+            "vul-called frequency": 6,
+            "related vul root method": {
+                "CVE-2019-0201": [
+                    "org.apache.zookeeper.server.FinalRequestProcessor:void processRequest(org.apache.zookeeper.server.Request)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-0201": [
+                    "org.apache.zookeeper.server.quorum.CommitProcessor:void run()",
+                    "org.apache.zookeeper.server.SyncRequestProcessor:void run()",
+                    "org.apache.zookeeper.server.PrepRequestProcessor:void run()"
+                ]
+            }
+        },
+        "ch.qos.logback:logback-classic:1.0.9": {
+            "used-method num": 5,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void warn(java.lang.String)",
+                "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter$ReconfiguringThread:void run()"
+            ]
+        }
+    }
+}

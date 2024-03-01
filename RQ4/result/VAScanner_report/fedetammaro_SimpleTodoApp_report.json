@@ -1,0 +1,22 @@
+{
+    "project name": "fedetammaro_SimpleTodoApp",
+    "modules": {
+        "it.unifi:simpletodoapp": {
+            "vulnerable dependencies": {
+                "org.mongodb:mongo-java-driver:3.12.6": {
+                    "used-method num": 8,
+                    "used method": [
+                        "org.bson.Document:java.util.List getList(java.lang.Object,java.lang.Class)",
+                        "org.bson.Document:void <init>()",
+                        "org.bson.Document:org.bson.Document append(java.lang.String,java.lang.Object)",
+                        "com.mongodb.MongoException:void <init>(java.lang.String)",
+                        "com.mongodb.client.model.Updates:org.bson.conversions.Bson push(java.lang.String,java.lang.Object)",
+                        "org.bson.Document:java.lang.String getString(java.lang.Object)",
+                        "com.mongodb.client.model.Updates:org.bson.conversions.Bson pull(java.lang.String,java.lang.Object)",
+                        "com.mongodb.client.model.Filters:org.bson.conversions.Bson eq(java.lang.String,java.lang.Object)"
+                    ]
+                }
+            }
+        }
+    }
+}

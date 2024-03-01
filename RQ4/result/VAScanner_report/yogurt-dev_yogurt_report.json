@@ -1,0 +1,63 @@
+{
+    "project name": "yogurt-dev_yogurt",
+    "modules": {
+        "com.github.yogurt-dev:root": {
+            "vulnerable dependencies": {
+                "commons-beanutils:commons-beanutils:1.9.3": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.github.yogurt-dev:core": {
+            "vulnerable dependencies": {
+                "commons-beanutils:commons-beanutils:1.9.3": {
+                    "used-method num": 16,
+                    "used method": [
+                        "org.apache.commons.beanutils.converters.NumberConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                        "org.apache.commons.beanutils.converters.ConverterFacade:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.DateTimeConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object get(java.lang.Object)",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:boolean containsKey(java.lang.Object)",
+                        "org.apache.commons.beanutils.converters.AbstractConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.WeakFastHashMap:java.util.Set entrySet()",
+                        "org.apache.commons.beanutils.WeakFastHashMap:boolean containsKey(java.lang.Object)",
+                        "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)",
+                        "org.apache.commons.beanutils.WeakFastHashMap$CollectionView:java.util.Iterator iterator()",
+                        "org.apache.commons.beanutils.DynaProperty:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.ArrayConverter:java.lang.String toString()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-10086"
+                    ],
+                    "used vul-method": [
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:boolean containsKey(java.lang.Object)",
+                        "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)"
+                    ],
+                    "vul-called frequency": 13,
+                    "related vul root method": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                            "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object get(java.lang.Object)",
+                            "org.apache.commons.beanutils.WrapDynaClass$2:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                            "org.apache.commons.beanutils.WrapDynaClass$2:boolean containsKey(java.lang.Object)",
+                            "org.apache.commons.beanutils.PropertyUtils:java.lang.Object getProperty(java.lang.Object,java.lang.String)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

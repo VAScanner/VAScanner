@@ -1,0 +1,18 @@
+{
+    "project name": "ShiftLeftSecurity_tarpit-java",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.3.4": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.logging.log4j:log4j-core:2.10.0": {
+            "used-method num": 4,
+            "used method": [
+                "org.apache.logging.log4j.core.impl.ExtendedClassInfo:java.lang.String toString()",
+                "org.apache.logging.log4j.core.pattern.LogEventPatternConverter:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.logging.log4j.core.impl.ExtendedStackTraceElement:java.lang.String toString()",
+                "org.apache.logging.log4j.core.impl.ThrowableProxy:java.lang.String toString()"
+            ]
+        }
+    }
+}

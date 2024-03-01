@@ -1,0 +1,26 @@
+{
+    "project name": "SpringCloud_spring-cloud-admin",
+    "modules": {
+        "cn.springcloud.admin:spring-cloud-admin": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.3": {
+                    "used-method num": 12,
+                    "used method": [
+                        "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                        "org.apache.http.impl.client.RedirectLocations:void add(int,java.lang.Object)",
+                        "org.apache.http.impl.client.RedirectLocations:java.net.URI remove(int)",
+                        "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                        "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                        "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                        "org.apache.http.impl.client.RedirectLocations:int size()",
+                        "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                        "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                        "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                        "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                        "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "project name": "Flowingsun007_LyonBlog",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.3.4.RELEASE": {
+            "used-method num": 10,
+            "used method": [
+                "org.springframework.web.multipart.support.DefaultMultipartHttpServletRequest:java.lang.String getParameter(java.lang.String)",
+                "org.springframework.web.client.RestTemplate:java.lang.Object getForObject(java.lang.String,java.lang.Class,java.lang.Object[])",
+                "org.springframework.http.server.ServletServerHttpResponse$ServletResponseHttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest:java.util.Iterator getFileNames()",
+                "org.springframework.web.multipart.commons.CommonsMultipartResolver:void <init>(javax.servlet.ServletContext)",
+                "org.springframework.web.client.RestTemplate:void <init>()",
+                "org.springframework.http.HttpHeaders:java.util.List get(java.lang.Object)",
+                "org.springframework.http.HttpHeaders:java.util.Set keySet()",
+                "org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest:java.util.List getFiles(java.lang.String)",
+                "org.springframework.web.client.RestTemplate:void <clinit>()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.3.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "mysql:mysql-connector-java:8.0.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.alibaba:fastjson:1.2.49": {
+            "used-method num": 12,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set keySet()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSONArray:boolean contains(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean remove(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)"
+            ],
+            "vul-called frequency": 25,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONArray parseArray(java.lang.String)"
+                ]
+            }
+        },
+        "org.apache.shiro:shiro-core:1.2.2": {
+            "used-method num": 15,
+            "used method": [
+                "org.apache.shiro.authc.credential.SimpleCredentialsMatcher:void <init>()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toString()",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String getUsername()",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addStringPermission(java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.crypto.SecureRandomNumberGenerator:void <init>()",
+                "org.apache.shiro.authc.UsernamePasswordToken:char[] getPassword()",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.crypto.SecureRandomNumberGenerator:org.apache.shiro.util.ByteSource nextBytes()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addRole(java.lang.String)",
+                "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,java.lang.String)"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.logging.log4j:log4j-core:2.11.1": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

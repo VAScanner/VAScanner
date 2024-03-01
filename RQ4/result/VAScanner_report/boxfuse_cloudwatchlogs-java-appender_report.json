@@ -1,0 +1,71 @@
+{
+    "project name": "boxfuse_cloudwatchlogs-java-appender",
+    "modules": {
+        "com.boxfuse.cloudwatchlogs:cloudwatchlogs-java-appender-parent": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.3": {
+                    "used-method num": 7,
+                    "used method": [
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String getThreadName()",
+                        "ch.qos.logback.classic.spi.ThrowableProxy:ch.qos.logback.classic.spi.IThrowableProxy getCause()",
+                        "ch.qos.logback.classic.spi.ThrowableProxyUtil:void subjoinPackagingData(java.lang.StringBuilder,ch.qos.logback.classic.spi.StackTraceElementProxy)",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String getFormattedMessage()",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.spi.ThrowableProxy:ch.qos.logback.classic.spi.StackTraceElementProxy[] getStackTraceElementProxyArray()",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.util.Map getMDCPropertyMap()"
+                    ]
+                },
+                "org.apache.logging.log4j:log4j-core:2.7": {
+                    "used-method num": 41,
+                    "used method": [
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.Level getLevel()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:java.lang.String getThreadName()",
+                        "org.apache.logging.log4j.core.filter.AbstractFilterable:void start()",
+                        "org.apache.logging.log4j.core.appender.AbstractAppender:void <init>(java.lang.String,org.apache.logging.log4j.core.Filter,org.apache.logging.log4j.core.Layout,boolean)",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.String getLoggerName()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:java.lang.String getLoggerName()",
+                        "org.apache.logging.log4j.core.util.ObjectArrayIterator:boolean hasNext()",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.Throwable getThrown()",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.util.ReadOnlyStringMap getContextData()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:java.lang.Throwable getThrown()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.Throwable getThrown()",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:java.lang.String getThreadName()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:long getTimeMillis()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:java.lang.String getThreadName()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:org.apache.logging.log4j.message.Message getMessage()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.message.Message getMessage()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:org.apache.logging.log4j.util.ReadOnlyStringMap getContextData()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:java.lang.String getLoggerName()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:long getTimeMillis()",
+                        "org.apache.logging.log4j.core.util.ObjectArrayIterator:java.lang.Object next()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:org.apache.logging.log4j.Level getLevel()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.String getLoggerName()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:org.apache.logging.log4j.Marker getMarker()",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.message.Message getMessage()",
+                        "org.apache.logging.log4j.core.util.CoarseCachedClock$1:void run()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.Level getLevel()",
+                        "org.apache.logging.log4j.core.AbstractLifeCycle:void stop()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.util.ReadOnlyStringMap getContextData()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:org.apache.logging.log4j.util.ReadOnlyStringMap getContextData()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:java.lang.Throwable getThrown()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:java.lang.String getThreadName()",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:long getTimeMillis()",
+                        "org.apache.logging.log4j.core.impl.Log4jLogEvent:org.apache.logging.log4j.Marker getMarker()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:org.apache.logging.log4j.Marker getMarker()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:long getTimeMillis()",
+                        "org.apache.logging.log4j.core.appender.AbstractAppender:void <init>(java.lang.String,org.apache.logging.log4j.core.Filter,org.apache.logging.log4j.core.Layout)",
+                        "org.apache.logging.log4j.core.util.ObjectArrayIterator:void remove()",
+                        "org.apache.logging.log4j.core.impl.MutableLogEvent:org.apache.logging.log4j.message.Message getMessage()",
+                        "org.apache.logging.log4j.core.AbstractLogEvent:org.apache.logging.log4j.Level getLevel()",
+                        "org.apache.logging.log4j.core.async.RingBufferLogEvent:org.apache.logging.log4j.Marker getMarker()",
+                        "org.apache.logging.log4j.core.appender.AsyncAppender$AsyncThread:void run()"
+                    ]
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

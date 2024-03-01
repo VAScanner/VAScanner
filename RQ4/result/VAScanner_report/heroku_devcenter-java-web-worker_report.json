@@ -1,0 +1,15 @@
+{
+    "project name": "heroku_devcenter-java-web-worker",
+    "modules": {
+        "com.heroku.devcenter.webworker:parent": {
+            "vulnerable dependencies": {
+                "org.springframework.amqp:spring-amqp:1.4.3.RELEASE": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.springframework.amqp.core.Queue:void <init>(java.lang.String)"
+                    ]
+                }
+            }
+        }
+    }
+}

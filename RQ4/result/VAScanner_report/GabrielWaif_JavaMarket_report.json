@@ -1,0 +1,26 @@
+{
+    "project name": "GabrielWaif_JavaMarket",
+    "vulnerable dependencies": {
+        "org.mongodb:mongodb-driver-sync:4.0.5": {
+            "used-method num": 12,
+            "used method": [
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.FindIterable find()",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:void close()",
+                "com.mongodb.client.internal.MongoClientImpl:com.mongodb.client.MongoDatabase getDatabase(java.lang.String)",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(java.lang.String)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.FindIterable find(org.bson.conversions.Bson)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.InsertOneResult insertOne(java.lang.Object)",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                "com.mongodb.client.internal.MongoDatabaseImpl:org.bson.Document runCommand(org.bson.conversions.Bson)",
+                "com.mongodb.client.internal.MongoIterableImpl:com.mongodb.client.MongoCursor iterator()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.DeleteResult deleteOne(org.bson.conversions.Bson)",
+                "com.mongodb.client.internal.MongoDatabaseImpl:com.mongodb.client.MongoCollection getCollection(java.lang.String)",
+                "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

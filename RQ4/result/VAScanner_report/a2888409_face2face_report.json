@@ -1,0 +1,72 @@
+{
+    "project name": "a2888409_face2face",
+    "modules": {
+        "face2face:face2face": {
+            "vulnerable dependencies": {
+                "ch.qos.logback:logback-classic:1.1.3": {
+                    "used-method num": 5,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object)",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String)"
+                    ]
+                },
+                "io.netty:netty-all:4.0.34.Final": {
+                    "used-method num": 25,
+                    "used method": [
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                        "io.netty.bootstrap.Bootstrap:void <clinit>()",
+                        "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                        "io.netty.channel.ChannelOption:void <clinit>()",
+                        "io.netty.util.UniqueName:void <clinit>()",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "io.netty.bootstrap.Bootstrap:void <init>()",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(java.net.SocketAddress)",
+                        "io.netty.util.internal.chmv8.ForkJoinWorkerThread:void run()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                        "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                        "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                        "io.netty.channel.ChannelInitializer:void <init>()",
+                        "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                        "io.netty.util.internal.ThreadLocalRandom$1:void run()",
+                        "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                        "io.netty.channel.ChannelInitializer:void <clinit>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                        "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                        "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object get(java.lang.Object)",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap group(io.netty.channel.EventLoopGroup)"
+                    ],
+                    "CVE": [
+                        "CVE-2019-16869"
+                    ],
+                    "used vul-method": [
+                        "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                        "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                        "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                        "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(java.net.SocketAddress)"
+                    ],
+                    "vul-called frequency": 8,
+                    "related vul root method": {
+                        "CVE-2019-16869": [
+                            "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-16869": [
+                            "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                            "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                            "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                            "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(java.net.SocketAddress)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

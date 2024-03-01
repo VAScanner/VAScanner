@@ -1,0 +1,79 @@
+{
+    "project name": "githubzengzhifeng_springboot-security-oauth2",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.3.3.RELEASE": {
+            "used-method num": 28,
+            "used method": [
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setClientDetailsService(org.springframework.security.oauth2.provider.ClientDetailsService)",
+                "org.springframework.security.oauth2.common.DefaultOAuth2RefreshToken:int hashCode()",
+                "org.springframework.security.oauth2.provider.TokenRequest:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.OAuth2Request:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                "org.springframework.security.oauth2.provider.approval.Approval:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore:void <clinit>()",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.OAuth2Request:int hashCode()",
+                "org.springframework.security.oauth2.provider.TokenRequest:int hashCode()",
+                "org.springframework.security.oauth2.provider.OAuth2Authentication:int hashCode()",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void <init>()",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:int hashCode()",
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:int hashCode()",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setSupportRefreshToken(boolean)",
+                "org.springframework.security.oauth2.common.DefaultOAuth2RefreshToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setReuseRefreshToken(boolean)",
+                "org.springframework.security.oauth2.provider.AuthorizationRequest:int hashCode()",
+                "org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore:void <init>(org.springframework.data.redis.connection.RedisConnectionFactory)",
+                "org.springframework.security.oauth2.provider.approval.Approval:int hashCode()",
+                "org.springframework.security.oauth2.provider.AuthorizationRequest:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.provider.client.BaseClientDetails:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore:void removeAccessToken(java.lang.String)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenEnhancer(org.springframework.security.oauth2.provider.token.TokenEnhancer)",
+                "org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails:boolean equals(java.lang.Object)",
+                "org.springframework.security.oauth2.provider.OAuth2Authentication:boolean equals(java.lang.Object)"
+            ]
+        },
+        "com.alibaba:fastjson:1.2.47": {
+            "used-method num": 17,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.support.config.FastJsonConfig:void <init>()",
+                "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.support.config.FastJsonConfig:void setSerializerFeatures(com.alibaba.fastjson.serializer.SerializerFeature[])",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONObject:int hashCode()",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:int hashCode()",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)"
+            ],
+            "vul-called frequency": 5,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)"
+                ]
+            }
+        }
+    }
+}

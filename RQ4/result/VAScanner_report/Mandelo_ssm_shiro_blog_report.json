@@ -1,0 +1,28 @@
+{
+    "project name": "Mandelo_ssm_shiro_blog",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.2.7.RELEASE": {
+            "used-method num": 2,
+            "used method": [
+                "org.springframework.web.context.request.RequestContextHolder:void <clinit>()",
+                "org.springframework.web.context.request.RequestContextHolder:org.springframework.web.context.request.RequestAttributes getRequestAttributes()"
+            ]
+        },
+        "org.springframework:spring-webmvc:4.2.7.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.4": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

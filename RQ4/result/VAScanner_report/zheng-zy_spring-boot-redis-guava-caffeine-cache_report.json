@@ -1,0 +1,104 @@
+{
+    "project name": "zheng-zy_spring-boot-redis-guava-caffeine-cache",
+    "modules": {
+        "com.km:spring-boot-redis-cache": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.49": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.boot:spring-boot-starter-parent": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.49": {
+                    "used-method num": 9,
+                    "used method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:java.util.Collection values()",
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer:void <clinit>()",
+                        "com.alibaba.fastjson.JSONArray:java.lang.Object[] toArray()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object remove(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                        "com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer:void <init>()"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                        ]
+                    }
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.km:spring-boot-guava-cache": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.49": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.km:spring-boot-caffeine-cache": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.49": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.km:spring-boot-ehcache": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.49": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.km:spring-boot-redis-guava-caffeine-cache": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.49": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

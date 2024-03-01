@@ -1,0 +1,29 @@
+{
+    "project name": "fedex81_helios",
+    "modules": {
+        "com.spotify:helios-parent": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.5": {
+                    "used-method num": 11,
+                    "used method": [
+                        "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                        "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setHost(java.lang.String)",
+                        "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setPath(java.lang.String)",
+                        "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setScheme(java.lang.String)",
+                        "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                        "org.apache.http.impl.conn.SystemDefaultDnsResolver:void <clinit>()",
+                        "org.apache.http.client.utils.URIBuilder:void <init>()",
+                        "org.apache.http.conn.ssl.DefaultHostnameVerifier:void <init>()",
+                        "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder addParameter(java.lang.String,java.lang.String)",
+                        "org.apache.http.conn.ssl.DefaultHostnameVerifier:boolean verify(java.lang.String,javax.net.ssl.SSLSession)",
+                        "org.apache.http.impl.conn.SystemDefaultDnsResolver:java.net.InetAddress[] resolve(java.lang.String)"
+                    ]
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "project name": "dream-lab_riot-bench",
+    "modules": {
+        "in.dream_lab.bm.stream_iot:iot-bm": {
+            "vulnerable dependencies": {
+                "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2": {
+                    "used-method num": 27,
+                    "used method": [
+                        "org.eclipse.paho.client.mqttv3.MqttConnectOptions:void setUserName(java.lang.String)",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttPublish:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void publish(java.lang.String,byte[],int,boolean)",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:boolean isConnected()",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void setCallback(org.eclipse.paho.client.mqttv3.MqttCallback)",
+                        "org.eclipse.paho.client.mqttv3.MqttTopic:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttException:java.lang.String getMessage()",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttWireMessage:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.internal.Token:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttConnectOptions:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttUnsubscribe:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void subscribe(java.lang.String)",
+                        "org.eclipse.paho.client.mqttv3.internal.CommsTokenStore:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttException:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttSubscribe:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttConnectOptions:void setConnectionTimeout(int)",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttConnect:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void <init>(java.lang.String,java.lang.String,org.eclipse.paho.client.mqttv3.MqttClientPersistence)",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttAck:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.internal.wire.MqttPubRel:java.lang.String toString()",
+                        "org.eclipse.paho.client.mqttv3.MqttConnectOptions:void setKeepAliveInterval(int)",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void <init>(java.lang.String,java.lang.String)",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:java.lang.String getClientId()",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void connect(org.eclipse.paho.client.mqttv3.MqttConnectOptions)",
+                        "org.eclipse.paho.client.mqttv3.MqttClient:void disconnect()",
+                        "org.eclipse.paho.client.mqttv3.MqttConnectOptions:void <init>()",
+                        "org.eclipse.paho.client.mqttv3.MqttMessage:java.lang.String toString()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

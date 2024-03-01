@@ -1,0 +1,42 @@
+{
+    "project name": "dyc87112_didi-eureka-server",
+    "modules": {
+        "com.didispace:eureka-server": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.9": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.cloud:spring-cloud-netflix": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.9": {
+                    "used-method num": 20,
+                    "used method": [
+                        "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:java.lang.Object next()",
+                        "com.thoughtworks.xstream.converters.collections.TreeSetConverter$1$1:boolean add(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:int hashCode()",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:boolean equals(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.util.Set entrySet()",
+                        "com.thoughtworks.xstream.XStream:void registerConverter(com.thoughtworks.xstream.converters.Converter,int)",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.WeakCache:boolean equals(java.lang.Object)",
+                        "com.thoughtworks.xstream.converters.reflection.SerializableConverter$2$1:void run()",
+                        "com.thoughtworks.xstream.core.util.ArrayIterator:boolean hasNext()",
+                        "com.thoughtworks.xstream.core.util.WeakCache:java.lang.Object get(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.OrderRetainingMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.WeakCache:int hashCode()",
+                        "com.thoughtworks.xstream.XStream:void <clinit>()",
+                        "com.thoughtworks.xstream.core.util.ArrayIterator:java.lang.Object next()",
+                        "com.thoughtworks.xstream.core.util.PresortedSet:java.util.Iterator iterator()",
+                        "com.thoughtworks.xstream.core.util.PresortedMap:java.lang.Object get(java.lang.Object)",
+                        "com.thoughtworks.xstream.core.util.PrioritizedList$PrioritizedItemIterator:boolean hasNext()"
+                    ]
+                }
+            }
+        }
+    }
+}

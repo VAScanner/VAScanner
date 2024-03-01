@@ -1,0 +1,199 @@
+{
+    "project name": "alesaudate_rest",
+    "modules": {
+        "br.com.casadocodigo.livros:cap-01": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap-01-cliente": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:rest": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 4,
+                    "used method": [
+                        "com.thoughtworks.xstream.core.util.CompositeClassLoader$1:boolean add(java.lang.Object)",
+                        "com.thoughtworks.xstream.XStream:java.lang.String toXML(java.lang.Object)",
+                        "com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver:void <init>()",
+                        "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                    ],
+                    "CVE": [
+                        "CVE-2017-7957"
+                    ],
+                    "used vul-method": [
+                        "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2017-7957": [
+                            "com.thoughtworks.xstream.XStream:void setupConverters()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2017-7957": [
+                            "com.thoughtworks.xstream.XStream:void <init>(com.thoughtworks.xstream.io.HierarchicalStreamDriver)"
+                        ]
+                    }
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap05": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap06": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap07-server": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap07-jaxrs": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap07-resteasy": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.jboss.resteasy.client.jaxrs.ProxyBuilder:org.jboss.resteasy.client.jaxrs.ProxyBuilder builder(java.lang.Class,javax.ws.rs.client.WebTarget)",
+                        "org.jboss.resteasy.client.jaxrs.ProxyBuilder:java.lang.Object build()",
+                        "org.jboss.resteasy.client.jaxrs.internal.ClientWebTarget:org.jboss.resteasy.client.jaxrs.ResteasyWebTarget clone()"
+                    ]
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap08-ssl": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap08-oauth": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap08-oauth-server": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap08-oauth-server-test": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap09-buscaexemplos": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "br.com.casadocodigo.livros:cap09-interceptacao": {
+            "vulnerable dependencies": {
+                "com.thoughtworks.xstream:xstream:1.4.4": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.jboss.resteasy:resteasy-client:3.0.6.Final": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

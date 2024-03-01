@@ -1,0 +1,72 @@
+{
+    "project name": "dbiir_paraflow",
+    "modules": {
+        "cn.edu.ruc.iir:paraflow": {
+            "vulnerable dependencies": {
+                "org.apache.kafka:kafka-clients:1.1.0": {
+                    "used-method num": 25,
+                    "used method": [
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void close()",
+                        "org.apache.kafka.common.header.internals.RecordHeaders$2:org.apache.kafka.common.header.Header next()",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void <clinit>()",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void commitAsync()",
+                        "org.apache.kafka.common.utils.LogContext$LocationIgnorantKafkaLogger:void error(java.lang.String)",
+                        "org.apache.kafka.common.utils.LogContext$LocationIgnorantKafkaLogger:void debug(java.lang.String)",
+                        "org.apache.kafka.common.utils.LogContext$LocationAwareKafkaLogger:void error(java.lang.String)",
+                        "org.apache.kafka.common.utils.LogContext$LocationIgnorantKafkaLogger:void info(java.lang.String)",
+                        "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.List records(org.apache.kafka.common.TopicPartition)",
+                        "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:boolean hasNext()",
+                        "org.apache.kafka.common.TopicPartition:void <init>(java.lang.String,int)",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                        "org.apache.kafka.common.utils.AbstractIterator:java.lang.Object next()",
+                        "org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread:void run()",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                        "org.apache.kafka.common.header.internals.RecordHeaders$2:boolean hasNext()",
+                        "org.apache.kafka.common.utils.AbstractIterator:boolean hasNext()",
+                        "org.apache.kafka.clients.consumer.ConsumerRecords:java.util.Set partitions()",
+                        "org.apache.kafka.common.TopicPartition:int partition()",
+                        "org.apache.kafka.common.record.DefaultRecordBatch$RecordIterator:org.apache.kafka.common.record.Record next()",
+                        "org.apache.kafka.common.utils.LogContext$LocationAwareKafkaLogger:void info(java.lang.String)",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void wakeup()",
+                        "org.apache.kafka.common.config.AbstractConfig$RecordingMap:java.lang.Object get(java.lang.Object)",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void assign(java.util.Collection)",
+                        "org.apache.kafka.common.utils.LogContext$LocationAwareKafkaLogger:void debug(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2018-17196"
+                    ],
+                    "used vul-method": [
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void close()",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void commitAsync()",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                        "org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread:void run()",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                        "org.apache.kafka.clients.consumer.KafkaConsumer:void assign(java.util.Collection)"
+                    ],
+                    "vul-called frequency": 6,
+                    "related vul root method": {
+                        "CVE-2018-17196": [
+                            "org.apache.kafka.common.requests.ProduceRequest:void validateRecords(short,org.apache.kafka.common.record.MemoryRecords)",
+                            "org.apache.kafka.common.requests.ProduceRequest:void <init>(org.apache.kafka.common.protocol.types.Struct,short)",
+                            "org.apache.kafka.common.requests.ProduceRequest:void <init>(short,short,int,java.util.Map,java.lang.String)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2018-17196": [
+                            "org.apache.kafka.clients.consumer.KafkaConsumer:void close()",
+                            "org.apache.kafka.clients.consumer.KafkaConsumer:void commitAsync()",
+                            "org.apache.kafka.clients.consumer.KafkaConsumer:org.apache.kafka.clients.consumer.ConsumerRecords poll(long)",
+                            "org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread:void run()",
+                            "org.apache.kafka.clients.consumer.KafkaConsumer:void <init>(java.util.Properties)",
+                            "org.apache.kafka.clients.consumer.KafkaConsumer:void assign(java.util.Collection)"
+                        ]
+                    }
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

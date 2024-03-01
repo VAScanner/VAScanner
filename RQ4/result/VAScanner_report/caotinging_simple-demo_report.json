@@ -1,0 +1,70 @@
+{
+    "project name": "caotinging_simple-demo",
+    "modules": {
+        "cao.caotinging.demo:redis-demo": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.10": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "mysql:mysql-connector-java:8.0.18": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "cao.caotinging.demo:zookeeper-demo": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.10": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "mysql:mysql-connector-java:8.0.18": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.caotinging:websocket-demo": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.10": {
+                    "used-method num": 16,
+                    "used method": [
+                        "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,javax.net.ssl.HostnameVerifier)",
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry)",
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                        "org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy:void <clinit>()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                        "org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy:void <init>()",
+                        "org.apache.http.impl.client.DefaultClientConnectionReuseStrategy:void <clinit>()",
+                        "org.apache.http.conn.ssl.NoopHostnameVerifier:void <init>()",
+                        "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                        "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <clinit>()",
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                        "org.apache.http.impl.client.DefaultHttpRequestRetryHandler:void <clinit>()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                        "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                        "org.apache.http.impl.client.DefaultClientConnectionReuseStrategy:void <init>()",
+                        "org.apache.http.impl.client.DefaultHttpRequestRetryHandler:void <init>(int,boolean)"
+                    ]
+                },
+                "mysql:mysql-connector-java:8.0.18": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.caotinging.demo:simple-demo": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.10": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "mysql:mysql-connector-java:8.0.18": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

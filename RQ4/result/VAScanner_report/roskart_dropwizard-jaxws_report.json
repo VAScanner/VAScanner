@@ -1,0 +1,20 @@
+{
+    "project name": "roskart_dropwizard-jaxws",
+    "modules": {
+        "com.github.roskart.dropwizard-jaxws:dropwizard-jaxws-parent": {
+            "vulnerable dependencies": {
+                "org.apache.cxf:cxf-rt-transports-http:3.5.2": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.apache.cxf.transport.servlet.CXFNonSpringServlet:void setBus(org.apache.cxf.Bus)",
+                        "org.apache.cxf.transports.http.configuration.HTTPClientPolicy:void setReceiveTimeout(long)",
+                        "org.apache.cxf.transport.servlet.AbstractHTTPServlet:void <clinit>()",
+                        "org.apache.cxf.transport.http.HTTPConduit:org.apache.cxf.transports.http.configuration.HTTPClientPolicy getClient()",
+                        "org.apache.cxf.transports.http.configuration.HTTPClientPolicy:void setConnectionTimeout(long)",
+                        "org.apache.cxf.transport.servlet.CXFNonSpringServlet:void <init>()"
+                    ]
+                }
+            }
+        }
+    }
+}

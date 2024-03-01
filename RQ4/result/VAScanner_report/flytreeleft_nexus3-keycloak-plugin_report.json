@@ -1,0 +1,86 @@
+{
+    "project name": "flytreeleft_nexus3-keycloak-plugin",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.5": {
+            "used-method num": 59,
+            "used method": [
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder setUri(java.net.URI)",
+                "org.apache.http.auth.BasicUserPrincipal:java.lang.String toString()",
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.lang.String toString()",
+                "org.apache.http.auth.NTCredentials:java.lang.String toString()",
+                "org.apache.http.auth.AuthState:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.auth.DigestScheme:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder post()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder addHeader(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.client.BasicCookieStore:java.lang.String toString()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder put()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.net.URI getURI()",
+                "org.apache.http.auth.AuthScope:void <init>(org.apache.http.HttpHost)",
+                "org.apache.http.client.config.RequestConfig:java.lang.String toString()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setProxy(org.apache.http.HttpHost)",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String toString()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder delete()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.String toString()",
+                "org.apache.http.conn.ssl.TrustAllStrategy:void <clinit>()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.HttpUriRequest build()",
+                "org.apache.http.impl.auth.AuthSchemeBase:java.lang.String toString()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.cookie.CookieOrigin:java.lang.String toString()",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder get()",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.client.methods.RequestBuilder:org.apache.http.client.methods.RequestBuilder addParameter(java.lang.String,java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.String toString()",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.auth.AuthScope:java.lang.String toString()",
+                "org.apache.http.impl.auth.BasicScheme:java.lang.String toString()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.conn.CPoolProxy:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:java.lang.String toString()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder setSSLContext(javax.net.ssl.SSLContext)",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

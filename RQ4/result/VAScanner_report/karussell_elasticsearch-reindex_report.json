@@ -1,0 +1,41 @@
+{
+    "project name": "karussell_elasticsearch-reindex",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.5": {
+            "used-method num": 14,
+            "used method": [
+                "org.apache.http.client.methods.HttpPut:java.lang.String getMethod()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpGet:java.lang.String getMethod()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpPost:java.lang.String getMethod()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.impl.conn.PoolingClientConnectionManager:void <init>()",
+                "org.apache.http.impl.conn.PoolingClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.client.methods.HttpPatch:java.lang.String getMethod()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

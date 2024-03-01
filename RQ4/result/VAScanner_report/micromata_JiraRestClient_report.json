@@ -1,0 +1,71 @@
+{
+    "project name": "micromata_JiraRestClient",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 42,
+            "used method": [
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.impl.client.BasicAuthCache:void <init>()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.net.URI)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicCookieStore:void <init>()",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder addParameter(java.lang.String,java.lang.String)",
+                "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                "org.apache.http.client.utils.URIBuilder:java.lang.String getPath()",
+                "org.apache.http.client.protocol.HttpClientContext:void setAuthCache(org.apache.http.client.AuthCache)",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.HttpClientBuilder custom()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setProxy(org.apache.http.HttpHost)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void setCredentials(org.apache.http.auth.AuthScope,org.apache.http.auth.Credentials)",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.net.URI)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder setPath(java.lang.String)",
+                "org.apache.http.auth.AuthScope:void <init>(java.lang.String,int)",
+                "org.apache.http.client.protocol.HttpClientContext:org.apache.http.client.protocol.HttpClientContext create()",
+                "org.apache.http.impl.client.BasicAuthCache:void put(org.apache.http.HttpHost,org.apache.http.auth.AuthScheme)",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.net.URI)",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.auth.BasicScheme:void <init>()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.client.BasicCredentialsProvider:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 31,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

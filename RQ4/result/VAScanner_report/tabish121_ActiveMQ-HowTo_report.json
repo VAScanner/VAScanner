@@ -1,0 +1,757 @@
+{
+    "project name": "tabish121_ActiveMQ-HowTo",
+    "modules": {
+        "org.apache.activemq.recipes:SimpleJMS": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.apache.activemq.command.ActiveMQTextMessage:java.lang.String getText()",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:javax.jms.Message receive()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducer:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.command.ActiveMQTextMessage:void setText(java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage()"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                    ],
+                    "vul-called frequency": 3,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:JobProducer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 10,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQMessageProducer:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.command.ActiveMQMessage:void setIntProperty(java.lang.String,int)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ]
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:JobConsumer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 11,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.command.ActiveMQMessage:int getIntProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:void stop()"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:TickerProducer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 12,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Message createMessage()",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:void setStringProperty(java.lang.String,java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:float getFloatProperty(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:void setFloatProperty(java.lang.String,float)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQMessageProducer:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ]
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:TopicConsumer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 12,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:float getFloatProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.command.ActiveMQMessage:java.lang.String getStringProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                        "org.apache.activemq.ActiveMQConnection:void stop()"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:SelectiveTopicConsumer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 12,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:float getFloatProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.command.ActiveMQMessage:java.lang.String getStringProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination,java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQConnection:void stop()"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination,java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination,java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination,java.lang.String)",
+                            "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:RequesterExample": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 16,
+                    "used method": [
+                        "org.apache.activemq.command.ActiveMQMessage:java.lang.String getJMSCorrelationID()",
+                        "org.apache.activemq.command.ActiveMQTextMessage:java.lang.String getText()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TemporaryQueue createTemporaryQueue()",
+                        "org.apache.activemq.command.ActiveMQMessage:void setJMSCorrelationID(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.command.ActiveMQMessage:void setJMSReplyTo(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:ResponderExample": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.apache.activemq.command.ActiveMQMessage:java.lang.String getJMSCorrelationID()",
+                        "org.apache.activemq.command.ActiveMQTextMessage:java.lang.String getText()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:javax.jms.Destination getJMSReplyTo()",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:void setJMSCorrelationID(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:MessageScheduling": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQTextMessage:java.lang.String getText()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.command.ActiveMQMessage:void setLongProperty(java.lang.String,long)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.command.ActiveMQMessage:void setIntProperty(java.lang.String,int)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:AdvisoryConsumer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 16,
+                    "used method": [
+                        "org.apache.activemq.command.ActiveMQDestination:java.lang.String getPhysicalName()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.advisory.AdvisorySupport:void <clinit>()",
+                        "org.apache.activemq.advisory.AdvisorySupport:org.apache.activemq.command.ActiveMQTopic getConsumerAdvisoryTopic(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.advisory.AdvisorySupport:org.apache.activemq.command.ActiveMQTopic getProducerAdvisoryTopic(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.command.ActiveMQMessage:javax.jms.Destination getJMSDestination()",
+                        "org.apache.activemq.command.ActiveMQMessage:int getIntProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.command.ActiveMQDestination:boolean equals(java.lang.Object)"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:AdvisoryGeneratorApp": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 10,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:javax.jms.Message receive()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage()"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:EmbeddedActiveMQ": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 14,
+                    "used method": [
+                        "org.apache.activemq.command.ActiveMQTextMessage:java.lang.String getText()",
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:javax.jms.Message receive()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducer:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.command.ActiveMQTextMessage:void setText(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.TextMessage createTextMessage()"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                    ],
+                    "vul-called frequency": 3,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                            "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 2,
+                    "used method": [
+                        "org.apache.activemq.broker.BrokerFactory:org.apache.activemq.broker.BrokerService createBroker(java.lang.String)",
+                        "org.apache.activemq.broker.BrokerFactory:void <clinit>()"
+                    ]
+                }
+            }
+        },
+        "org.apache.activemq.recipes:CoonectionPoolExample": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Message createMessage()",
+                        "org.apache.activemq.ActiveMQMessageProducer:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQSession:void close()",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ]
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.apache.activemq.broker.BrokerService:void <clinit>()",
+                        "org.apache.activemq.broker.BrokerService:void start()",
+                        "org.apache.activemq.broker.BrokerService:org.apache.activemq.broker.TransportConnector addConnector(java.lang.String)",
+                        "org.apache.activemq.broker.BrokerService:void stop()",
+                        "org.apache.activemq.broker.BrokerService:void <init>()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-13920"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.broker.BrokerService:void start()"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2020-13920": [
+                            "org.apache.activemq.broker.jmx.ManagementContext:void createConnector(javax.management.MBeanServer)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-13920": [
+                            "org.apache.activemq.broker.BrokerService:void start()"
+                        ]
+                    }
+                }
+            }
+        },
+        "org.apache.activemq.recipes:VirtualDestinationApp": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 11,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Topic createTopic(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Message createMessage()",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                    ],
+                    "vul-called frequency": 3,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 5,
+                    "used method": [
+                        "org.apache.activemq.broker.BrokerService:void <clinit>()",
+                        "org.apache.activemq.broker.BrokerService:void start()",
+                        "org.apache.activemq.broker.BrokerService:org.apache.activemq.broker.TransportConnector addConnector(java.lang.String)",
+                        "org.apache.activemq.broker.BrokerService:void stop()",
+                        "org.apache.activemq.broker.BrokerService:void <init>()"
+                    ],
+                    "CVE": [
+                        "CVE-2020-13920"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.broker.BrokerService:void start()"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2020-13920": [
+                            "org.apache.activemq.broker.jmx.ManagementContext:void createConnector(javax.management.MBeanServer)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2020-13920": [
+                            "org.apache.activemq.broker.BrokerService:void start()"
+                        ]
+                    }
+                }
+            }
+        },
+        "org.apache.activemq.recipes:FailoverConsumer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 10,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQConnection:void start()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void setMessageListener(javax.jms.MessageListener)",
+                        "org.apache.activemq.command.ActiveMQMessage:int getIntProperty(java.lang.String)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ],
+                    "CVE": [
+                        "CVE-2014-3600",
+                        "CVE-2018-11775"
+                    ],
+                    "used vul-method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageConsumer:void close()"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.filter.XPathExpression:org.apache.activemq.filter.XPathExpression$XPathEvaluator createEvaluator(java.lang.String)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.transport.nio.NIOSSLTransport:void initializeStreams()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2014-3600": [
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ],
+                        "CVE-2018-11775": [
+                            "org.apache.activemq.ActiveMQMessageConsumer:void close()",
+                            "org.apache.activemq.ActiveMQSession:javax.jms.MessageConsumer createConsumer(javax.jms.Destination)"
+                        ]
+                    }
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.apache.activemq.recipes:FailoverProducer": {
+            "vulnerable dependencies": {
+                "org.apache.activemq:activemq-client:5.8.0": {
+                    "used-method num": 10,
+                    "used method": [
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Queue createQueue(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.Message createMessage()",
+                        "org.apache.activemq.ActiveMQConnection:void close()",
+                        "org.apache.activemq.ActiveMQConnectionFactory:void <init>(java.lang.String)",
+                        "org.apache.activemq.ActiveMQSession:javax.jms.MessageProducer createProducer(javax.jms.Destination)",
+                        "org.apache.activemq.ActiveMQMessageProducer:void close()",
+                        "org.apache.activemq.ActiveMQMessageProducerSupport:void send(javax.jms.Message)",
+                        "org.apache.activemq.ActiveMQConnectionFactory:javax.jms.Connection createConnection()",
+                        "org.apache.activemq.command.ActiveMQMessage:void setIntProperty(java.lang.String,int)",
+                        "org.apache.activemq.ActiveMQConnection:javax.jms.Session createSession(boolean,int)"
+                    ]
+                },
+                "org.apache.activemq:activemq-broker:5.8.0": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

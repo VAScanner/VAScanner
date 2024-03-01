@@ -1,0 +1,59 @@
+{
+    "project name": "sps_mustache-spring-view",
+    "vulnerable dependencies": {
+        "org.springframework:spring-webmvc:4.0.3.RELEASE": {
+            "used-method num": 4,
+            "used method": [
+                "org.springframework.web.servlet.view.AbstractTemplateViewResolver:org.springframework.web.servlet.view.AbstractUrlBasedView buildView(java.lang.String)",
+                "org.springframework.web.servlet.view.AbstractTemplateViewResolver:void <init>()",
+                "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()",
+                "org.springframework.web.servlet.view.AbstractTemplateView:void <init>()"
+            ]
+        },
+        "org.springframework:spring-web:4.0.3.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.web.context.support.ServletContextResource:java.io.InputStream getInputStream()"
+            ]
+        },
+        "org.springframework:spring-core:4.0.3.RELEASE": {
+            "used-method num": 11,
+            "used method": [
+                "org.springframework.core.io.VfsResource:java.io.InputStream getInputStream()",
+                "org.springframework.core.io.DefaultResourceLoader:org.springframework.core.io.Resource getResource(java.lang.String)",
+                "org.springframework.core.io.UrlResource:java.io.InputStream getInputStream()",
+                "org.springframework.core.io.VfsResource:boolean exists()",
+                "org.springframework.core.io.FileSystemResource:boolean exists()",
+                "org.springframework.core.io.FileSystemResource:java.io.InputStream getInputStream()",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:org.springframework.core.io.Resource getResource(java.lang.String)",
+                "org.springframework.core.io.AbstractFileResolvingResource:boolean exists()",
+                "org.springframework.core.io.ClassPathResource:boolean exists()",
+                "org.springframework.core.io.ClassPathResource:java.io.InputStream getInputStream()",
+                "org.springframework.core.io.DescriptiveResource:java.io.InputStream getInputStream()"
+            ],
+            "CVE": [
+                "CVE-2014-3578"
+            ],
+            "used vul-method": [
+                "org.springframework.core.io.DefaultResourceLoader:org.springframework.core.io.Resource getResource(java.lang.String)",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:org.springframework.core.io.Resource getResource(java.lang.String)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2014-3578": [
+                    "org.springframework.util.StringUtils:java.lang.String cleanPath(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2014-3578": [
+                    "org.springframework.core.io.DefaultResourceLoader:org.springframework.core.io.Resource getResource(java.lang.String)",
+                    "org.springframework.core.io.support.PathMatchingResourcePatternResolver:org.springframework.core.io.Resource getResource(java.lang.String)"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

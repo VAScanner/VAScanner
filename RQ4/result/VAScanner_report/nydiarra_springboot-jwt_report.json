@@ -1,0 +1,20 @@
+{
+    "project name": "nydiarra_springboot-jwt",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.1.0.RELEASE": {
+            "used-method num": 10,
+            "used method": [
+                "org.springframework.security.oauth2.provider.token.TokenEnhancerChain:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.JwtTokenStore:void <init>(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setSupportRefreshToken(boolean)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void setSigningKey(java.lang.String)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer$1:java.lang.String encode(java.lang.CharSequence)",
+                "org.springframework.security.oauth2.provider.token.DefaultTokenServices:void setTokenStore(org.springframework.security.oauth2.provider.token.TokenStore)",
+                "org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter:void <init>()",
+                "org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter:void <init>()"
+            ]
+        }
+    }
+}

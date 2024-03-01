@@ -1,0 +1,57 @@
+{
+    "project name": "xautlx_12306-hunter",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.1.2": {
+            "used-method num": 19,
+            "used method": [
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <init>(javax.net.ssl.SSLContext)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.conn.EofSensorInputStream:int read(byte[])",
+                "org.apache.http.conn.scheme.SchemeRegistry:org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme)",
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,int,org.apache.http.conn.scheme.SchemeSocketFactory)",
+                "org.apache.http.client.utils.URLEncodedUtils:java.lang.String format(java.util.List,java.lang.String)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <clinit>()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "ch.qos.logback:logback-classic:1.0.9": {
+            "used-method num": 6,
+            "used method": [
+                "ch.qos.logback.classic.Logger:void error(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String,java.lang.Object)",
+                "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                "ch.qos.logback.classic.Logger:void info(java.lang.String)",
+                "ch.qos.logback.classic.Logger:void debug(java.lang.String)",
+                "ch.qos.logback.classic.Logger:boolean isDebugEnabled()"
+            ]
+        }
+    }
+}

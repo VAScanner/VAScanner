@@ -1,0 +1,81 @@
+{
+    "project name": "ghillert_spring-batch-integration-sample",
+    "modules": {
+        "org.springframework.batchintegration.samples:payment-import": {
+            "vulnerable dependencies": {
+                "org.springframework.batch:spring-batch-core:3.0.1.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitCode()",
+                        "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                        "org.springframework.batch.core.listener.ItemListenerSupport:void <init>()",
+                        "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String)",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.batchintegration.samples:payment-import-concurrent-step": {
+            "vulnerable dependencies": {
+                "org.springframework.batch:spring-batch-core:3.0.1.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitCode()",
+                        "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                        "org.springframework.batch.core.listener.ItemListenerSupport:void <init>()",
+                        "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String)",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.batchintegration.samples:payment-import-async-processor": {
+            "vulnerable dependencies": {
+                "org.springframework.batch:spring-batch-core:3.0.1.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitCode()",
+                        "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                        "org.springframework.batch.core.listener.ItemListenerSupport:void <init>()",
+                        "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String)",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.batchintegration.samples:payment-import-remote-chunking": {
+            "vulnerable dependencies": {
+                "org.springframework.batch:spring-batch-core:3.0.1.RELEASE": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.springframework.batch.core.ExitStatus:java.lang.String getExitCode()",
+                        "org.springframework.batch.core.JobParametersBuilder:void <init>()",
+                        "org.springframework.batch.core.listener.ItemListenerSupport:void <init>()",
+                        "org.springframework.batch.core.BatchStatus:void <clinit>()",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParametersBuilder addString(java.lang.String,java.lang.String)",
+                        "org.springframework.batch.core.JobParametersBuilder:org.springframework.batch.core.JobParameters toJobParameters()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

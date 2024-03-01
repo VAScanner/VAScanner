@@ -1,0 +1,123 @@
+{
+    "project name": "yeqifu_warehouse",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.18": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.4.0": {
+            "used-method num": 56,
+            "used method": [
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.String toString()",
+                "org.apache.shiro.config.Ini$Section:java.lang.String toString()",
+                "org.apache.shiro.util.SimpleByteSource:int hashCode()",
+                "org.apache.shiro.config.Ini:org.apache.shiro.config.Ini$Section remove(java.lang.Object)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void addStringPermissions(java.util.Collection)",
+                "org.apache.shiro.crypto.hash.SimpleHash:int hashCode()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,org.apache.shiro.util.ByteSource,java.lang.String)",
+                "org.apache.shiro.config.Ini$Section:java.util.Set entrySet()",
+                "org.apache.shiro.util.MapContext:java.util.Set entrySet()",
+                "org.apache.shiro.crypto.hash.SimpleHash:boolean equals(java.lang.Object)",
+                "org.apache.shiro.config.Ini:void clear()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.util.MapContext:void clear()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:boolean equals(java.lang.Object)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:boolean equals(java.lang.Object)",
+                "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void setHashAlgorithmName(java.lang.String)",
+                "org.apache.shiro.config.Ini:org.apache.shiro.config.Ini$Section get(java.lang.Object)",
+                "org.apache.shiro.util.ByteSource$Util:org.apache.shiro.util.ByteSource bytes(java.lang.String)",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toString()",
+                "org.apache.shiro.realm.CachingRealm:void <clinit>()",
+                "org.apache.shiro.config.Ini$Section:int hashCode()",
+                "org.apache.shiro.config.Ini:java.lang.String toString()",
+                "org.apache.shiro.config.Ini:boolean equals(java.lang.Object)",
+                "org.apache.shiro.util.MapContext:boolean containsKey(java.lang.Object)",
+                "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void <init>()",
+                "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.String toString()",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.config.Ini$Section:boolean containsKey(java.lang.Object)",
+                "org.apache.shiro.authc.UsernamePasswordToken:java.lang.Object getPrincipal()",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toString()",
+                "org.apache.shiro.config.Ini$Section:boolean equals(java.lang.Object)",
+                "org.apache.shiro.authz.permission.WildcardPermission:int hashCode()",
+                "org.apache.shiro.config.Ini:java.util.Set entrySet()",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void setCredentialsMatcher(org.apache.shiro.authc.credential.CredentialsMatcher)",
+                "org.apache.shiro.config.Ini:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.config.Ini:int hashCode()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:int hashCode()",
+                "org.apache.shiro.crypto.hash.Md5Hash:void <init>(java.lang.Object,java.lang.Object,int)",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.config.Ini$Section:void clear()",
+                "org.apache.shiro.config.Ini$Section:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.authz.permission.WildcardPermission:boolean equals(java.lang.Object)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void <clinit>()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:int hashCode()",
+                "org.apache.shiro.util.SimpleByteSource:boolean equals(java.lang.Object)",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:java.lang.String toString()",
+                "org.apache.shiro.realm.AuthorizingRealm:void <clinit>()",
+                "org.apache.shiro.authz.permission.WildcardPermission:java.lang.String toString()",
+                "org.apache.shiro.util.MapContext:java.lang.Object remove(java.lang.Object)",
+                "org.apache.shiro.config.Ini$Section:java.lang.String get(java.lang.Object)",
+                "org.apache.shiro.config.Ini$Section:java.lang.String remove(java.lang.Object)",
+                "org.apache.shiro.config.Ini:boolean containsKey(java.lang.Object)"
+            ]
+        },
+        "com.alibaba:fastjson:1.2.62": {
+            "used-method num": 27,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:void clear()",
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.JSONObject:int hashCode()",
+                "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:int hashCode()",
+                "com.alibaba.fastjson.JSONObject:boolean containsKey(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object remove(java.lang.Object)",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:int hashCode()",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)"
+            ],
+            "vul-called frequency": 5,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)"
+                ]
+            }
+        }
+    }
+}

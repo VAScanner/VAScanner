@@ -1,0 +1,101 @@
+{
+    "project name": "hemin1003_java-spider",
+    "vulnerable dependencies": {
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.logging.log4j:log4j-core:2.6.2": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 21,
+            "used method": [
+                "org.apache.http.impl.execchain.RequestEntityProxy:long getContentLength()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.Header getFirstHeader(java.lang.String)",
+                "org.apache.http.impl.client.RedirectLocations:java.lang.Object set(int,java.lang.Object)",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.conn.LoggingOutputStream:void flush()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.ietf.jgss.GSSException:java.lang.String toString()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "org.quartz-scheduler:quartz:2.2.3": {
+            "used-method num": 40,
+            "used method": [
+                "org.quartz.JobKey:org.quartz.JobKey jobKey(java.lang.String,java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:int size()",
+                "org.quartz.JobDataMap:void <init>(java.util.Map)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getKey()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object clone()",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object remove(java.lang.Object)",
+                "org.quartz.impl.triggers.AbstractTrigger:org.quartz.TriggerKey getKey()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntryIterator:org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry next()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntry:java.lang.Object getValue()",
+                "org.quartz.SchedulerException:java.lang.String toString()",
+                "org.quartz.utils.DirtyFlagMap:java.util.Collection values()",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:long getRepeatInterval()",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder ofType(java.lang.Class)",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap:boolean containsKey(java.lang.Object)",
+                "org.quartz.impl.JobDetailImpl:org.quartz.JobKey getKey()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder newTrigger()",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.SimpleScheduleBuilder repeatMinutelyForever(int)",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set keySet()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withSchedule(org.quartz.ScheduleBuilder)",
+                "org.quartz.utils.DirtyFlagMap:void clear()",
+                "org.quartz.impl.JobDetailImpl:org.quartz.JobDataMap getJobDataMap()",
+                "org.quartz.utils.DirtyFlagMap:java.util.Set entrySet()",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder newJob()",
+                "org.quartz.impl.matchers.GroupMatcher:org.quartz.impl.matchers.GroupMatcher jobGroupEquals(java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.impl.triggers.SimpleTriggerImpl:org.quartz.ScheduleBuilder getScheduleBuilder()",
+                "org.quartz.JobBuilder:org.quartz.JobDetail build()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagMapEntrySet:java.util.Iterator iterator()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagCollection:java.util.Iterator iterator()",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:boolean hasNext()",
+                "org.quartz.utils.StringKeyDirtyFlagMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.quartz.impl.triggers.AbstractTrigger:java.lang.Object clone()",
+                "org.quartz.impl.JobDetailImpl:java.lang.Object clone()",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder forJob(java.lang.String,java.lang.String)",
+                "org.quartz.utils.DirtyFlagMap$DirtyFlagIterator:java.lang.Object next()",
+                "org.quartz.JobBuilder:org.quartz.JobBuilder usingJobData(org.quartz.JobDataMap)",
+                "org.quartz.TriggerBuilder:org.quartz.TriggerBuilder withIdentity(java.lang.String,java.lang.String)",
+                "org.quartz.SimpleScheduleBuilder:org.quartz.spi.MutableTrigger build()",
+                "org.quartz.TriggerBuilder:org.quartz.Trigger build()"
+            ]
+        }
+    }
+}

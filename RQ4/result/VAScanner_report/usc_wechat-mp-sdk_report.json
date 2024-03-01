@@ -1,0 +1,78 @@
+{
+    "project name": "usc_wechat-mp-sdk",
+    "modules": {
+        "org.sonatype.oss:oss-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-beanutils:commons-beanutils:1.9.1": {
+                    "used-method num": 4,
+                    "used method": [
+                        "org.apache.commons.beanutils.WeakFastHashMap:java.util.Set entrySet()",
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                        "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                        "org.apache.commons.beanutils.BeanUtils:java.lang.Object cloneBean(java.lang.Object)"
+                    ],
+                    "CVE": [
+                        "CVE-2019-10086"
+                    ],
+                    "used vul-method": [
+                        "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                        "org.apache.commons.beanutils.BeanUtils:java.lang.Object cloneBean(java.lang.Object)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.WrapDynaClass$2:java.util.Set entrySet()",
+                            "org.apache.commons.beanutils.BeanUtils:java.lang.Object cloneBean(java.lang.Object)"
+                        ]
+                    }
+                }
+            }
+        },
+        "com.github.usc:wechat-mp-web": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "commons-beanutils:commons-beanutils:1.9.1": {
+                    "used-method num": 7,
+                    "used method": [
+                        "org.apache.commons.beanutils.converters.NumberConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.ConverterFacade:java.lang.String toString()",
+                        "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)",
+                        "org.apache.commons.beanutils.converters.AbstractConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.DateTimeConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.DynaProperty:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.ArrayConverter:java.lang.String toString()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-10086"
+                    ],
+                    "used vul-method": [
+                        "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.BeanUtils:void populate(java.lang.Object,java.util.Map)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

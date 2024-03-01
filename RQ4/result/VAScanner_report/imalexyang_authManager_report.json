@@ -1,0 +1,70 @@
+{
+    "project name": "imalexyang_authManager",
+    "vulnerable dependencies": {
+        "org.apache.zookeeper:zookeeper:3.4.6": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:3.2.15.RELEASE": {
+            "used-method num": 3,
+            "used method": [
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:org.springframework.web.servlet.ModelAndView addObject(java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void setViewName(java.lang.String)"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.shiro:shiro-core:1.2.4": {
+            "used-method num": 34,
+            "used method": [
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toString()",
+                "org.apache.shiro.realm.AuthorizingRealm:void clearCachedAuthorizationInfo(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.session.mgt.eis.AbstractSessionDAO:java.io.Serializable generateSessionId(org.apache.shiro.session.Session)",
+                "org.apache.shiro.realm.AuthorizingRealm:void <init>()",
+                "org.apache.shiro.authz.permission.WildcardPermission:boolean implies(org.apache.shiro.authz.Permission)",
+                "org.apache.shiro.authc.UnknownAccountException:void <init>()",
+                "org.apache.shiro.authc.credential.HashedCredentialsMatcher:boolean doCredentialsMatch(org.apache.shiro.authc.AuthenticationToken,org.apache.shiro.authc.AuthenticationInfo)",
+                "org.apache.shiro.crypto.SecureRandomNumberGenerator:void <init>()",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:void <init>(java.lang.Object,java.lang.Object,org.apache.shiro.util.ByteSource,java.lang.String)",
+                "org.apache.shiro.crypto.hash.SimpleHash:void <init>(java.lang.String,java.lang.Object,java.lang.Object,int)",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void <init>()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.Object getPrimaryPrincipal()",
+                "org.apache.shiro.authc.LockedAccountException:void <init>()",
+                "org.apache.shiro.realm.CachingRealm:void clearCache(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.SecurityUtils:org.apache.shiro.subject.Subject getSubject()",
+                "org.apache.shiro.crypto.SecureRandomNumberGenerator:org.apache.shiro.util.ByteSource nextBytes()",
+                "org.apache.shiro.authz.permission.WildcardPermission:void <init>(java.lang.String)",
+                "org.apache.shiro.crypto.hash.SimpleHash:java.lang.String toHex()",
+                "org.apache.shiro.realm.AuthenticatingRealm:void clearCachedAuthenticationInfo(org.apache.shiro.subject.PrincipalCollection)",
+                "org.apache.shiro.util.ByteSource$Util:org.apache.shiro.util.ByteSource bytes(java.lang.String)",
+                "org.apache.shiro.authc.SimpleAuthenticationInfo:java.lang.String toString()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.util.Iterator iterator()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setRoles(java.util.Set)",
+                "org.apache.shiro.authz.permission.WildcardPermission:java.lang.String toString()",
+                "org.apache.shiro.session.mgt.eis.AbstractSessionDAO:void assignSessionId(org.apache.shiro.session.Session,java.io.Serializable)",
+                "org.apache.shiro.authc.credential.HashedCredentialsMatcher:void <init>()",
+                "org.apache.shiro.util.MapContext:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.apache.shiro.util.MapContext:java.util.Set keySet()",
+                "org.apache.shiro.subject.SimplePrincipalCollection:java.lang.String toString()",
+                "org.apache.shiro.authc.ExcessiveAttemptsException:void <init>()",
+                "org.apache.shiro.util.SimpleByteSource:java.lang.String toHex()",
+                "org.apache.shiro.authz.SimpleAuthorizationInfo:void setStringPermissions(java.util.Set)",
+                "org.apache.shiro.util.MapContext:java.lang.Object get(java.lang.Object)",
+                "org.apache.shiro.session.mgt.eis.CachingSessionDAO:void <init>()"
+            ]
+        },
+        "org.apache.shiro:shiro-web:1.2.4": {
+            "used-method num": 5,
+            "used method": [
+                "org.apache.shiro.web.filter.PathMatchingFilter:void <init>()",
+                "org.apache.shiro.web.util.WebUtils:void <clinit>()",
+                "org.apache.shiro.web.util.SavedRequest:void <init>(javax.servlet.http.HttpServletRequest)",
+                "org.apache.shiro.web.filter.authc.FormAuthenticationFilter:void <init>()",
+                "org.apache.shiro.web.util.WebUtils:void redirectToSavedRequest(javax.servlet.ServletRequest,javax.servlet.ServletResponse,java.lang.String)"
+            ]
+        }
+    }
+}

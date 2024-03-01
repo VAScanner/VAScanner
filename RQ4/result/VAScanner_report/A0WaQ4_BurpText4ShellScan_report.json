@@ -1,0 +1,46 @@
+{
+    "project name": "A0WaQ4_BurpText4ShellScan",
+    "vulnerable dependencies": {
+        "dom4j:dom4j:1.6.1": {
+            "used-method num": 18,
+            "used method": [
+                "org.dom4j.tree.ContentListFacade:boolean isEmpty()",
+                "org.dom4j.DocumentException:void printStackTrace(java.io.PrintWriter)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$EntrySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.ContentListFacade:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object get(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:int size()",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object remove(java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.dom4j.tree.ConcurrentReaderHashMap:java.util.Set keySet()",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:java.lang.Object next()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object remove(int)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$HashIterator:boolean hasNext()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object get(int)",
+                "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)",
+                "org.dom4j.tree.ConcurrentReaderHashMap$KeySet:java.util.Iterator iterator()",
+                "org.dom4j.tree.ContentListFacade:java.lang.Object set(int,java.lang.Object)",
+                "org.dom4j.tree.ContentListFacade:boolean add(java.lang.Object)",
+                "org.dom4j.tree.ContentListFacade:void clear()"
+            ],
+            "CVE": [
+                "CVE-2020-10683"
+            ],
+            "used vul-method": [
+                "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)"
+            ],
+            "vul-called frequency": 1,
+            "root vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2020-10683": [
+                    "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-10683": [
+                    "org.dom4j.DocumentHelper:org.dom4j.Document parseText(java.lang.String)"
+                ]
+            }
+        }
+    }
+}

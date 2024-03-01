@@ -1,0 +1,90 @@
+{
+    "project name": "aboullaite_cdi2-javase",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.19.Final": {
+            "used-method num": 61,
+            "used method": [
+                "io.netty.util.ReferenceCountUtil:boolean release(java.lang.Object)",
+                "io.netty.buffer.PooledByteBufAllocatorMetric:java.lang.String toString()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.util.ReferenceCountUtil$ReleasingTask:java.lang.String toString()",
+                "io.netty.util.Signal:java.lang.String toString()",
+                "io.netty.util.internal.shaded.org.jctools.queues.atomic.MpscAtomicArrayQueue:java.lang.String toString()",
+                "io.netty.buffer.AdvancedLeakAwareByteBuf:java.lang.String toString(java.nio.charset.Charset)",
+                "io.netty.buffer.AbstractByteBuf:java.lang.String toString()",
+                "io.netty.buffer.AbstractByteBufAllocator:java.lang.String toString()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.util.AsciiString:java.lang.String toString()",
+                "io.netty.buffer.PoolChunk:java.lang.String toString()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise sync()",
+                "io.netty.bootstrap.ServerBootstrapConfig:java.lang.String toString()",
+                "io.netty.util.internal.shaded.org.jctools.queues.SpscLinkedQueue:java.lang.String toString()",
+                "io.netty.util.ResourceLeakDetector$DefaultResourceLeak:java.lang.String toString()",
+                "io.netty.util.internal.shaded.org.jctools.queues.atomic.SpscLinkedAtomicQueue:java.lang.String toString()",
+                "io.netty.bootstrap.AbstractBootstrap:java.lang.String toString()",
+                "io.netty.util.internal.shaded.org.jctools.queues.BaseMpscLinkedArrayQueue:java.lang.String toString()",
+                "io.netty.buffer.FixedCompositeByteBuf:java.lang.String toString()",
+                "io.netty.util.concurrent.DefaultPromise:java.lang.String toString()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.util.internal.shaded.org.jctools.queues.ConcurrentCircularArrayQueue:java.lang.String toString()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.buffer.EmptyByteBuf:java.lang.String toString(java.nio.charset.Charset)",
+                "io.netty.buffer.PoolSubpage:java.lang.String toString()",
+                "io.netty.util.internal.shaded.org.jctools.queues.atomic.BaseMpscLinkedAtomicArrayQueue:java.lang.String toString()",
+                "io.netty.channel.AbstractChannelHandlerContext:java.lang.String toString()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise sync()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.buffer.PoolArena:java.lang.String toString()",
+                "io.netty.buffer.AbstractByteBuf:java.lang.String toString(java.nio.charset.Charset)",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.Channel channel()",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise sync()",
+                "io.netty.util.internal.logging.AbstractInternalLogger:java.lang.String toString()",
+                "io.netty.util.ReferenceCountUtil:void <clinit>()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.Channel channel()",
+                "io.netty.buffer.WrappedByteBuf:java.lang.String toString()",
+                "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.channel.WriteBufferWaterMark:java.lang.String toString()",
+                "io.netty.util.ResourceLeakDetector$Record:java.lang.String toString()",
+                "io.netty.channel.DefaultChannelId:java.lang.String toString()",
+                "io.netty.buffer.SwappedByteBuf:java.lang.String toString()",
+                "io.netty.buffer.UnpooledByteBufAllocator$UnpooledByteBufAllocatorMetric:java.lang.String toString()",
+                "io.netty.util.AbstractConstant:java.lang.String toString()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.buffer.EmptyByteBuf:java.lang.String toString()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.buffer.SwappedByteBuf:java.lang.String toString(java.nio.charset.Charset)",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.util.AbstractConstant:void <clinit>()",
+                "io.netty.channel.ChannelInboundHandlerAdapter:void <init>()",
+                "io.netty.buffer.CompositeByteBuf:java.lang.String toString()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.Channel channel()",
+                "io.netty.util.concurrent.PromiseTask$RunnableAdapter:java.lang.String toString()",
+                "io.netty.channel.ChannelOption:void <clinit>()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.Channel channel()",
+                "io.netty.buffer.WrappedByteBuf:java.lang.String toString(java.nio.charset.Charset)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()"
+                ]
+            }
+        }
+    }
+}

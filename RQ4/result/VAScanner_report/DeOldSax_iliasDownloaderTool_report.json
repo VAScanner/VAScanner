@@ -1,0 +1,70 @@
+{
+    "project name": "DeOldSax_iliasDownloaderTool",
+    "vulnerable dependencies": {
+        "junit:junit:4.13": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 37,
+            "used method": [
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.lang.Iterable,java.nio.charset.Charset)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <init>()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.conn.ssl.TrustSelfSignedStrategy:void <clinit>()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.conn.ssl.NoopHostnameVerifier:void <clinit>()",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.conn.ssl.TrustSelfSignedStrategy:void <init>()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.impl.execchain.ResponseEntityProxy:java.io.InputStream getContent()",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.client.DefaultRedirectStrategy:void <clinit>()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.impl.client.BasicCookieStore:void <init>()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                "org.apache.http.impl.client.LaxRedirectStrategy:void <init>()",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.entity.DecompressingEntity:java.io.InputStream getContent()",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder setSSLContext(javax.net.ssl.SSLContext)",
+                "org.apache.http.impl.client.BasicCookieStore:void addCookie(org.apache.http.cookie.Cookie)",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.client.BasicCookieStore:java.util.List getCookies()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 16,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

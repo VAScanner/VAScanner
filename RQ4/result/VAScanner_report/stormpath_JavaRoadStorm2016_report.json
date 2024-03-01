@@ -1,0 +1,28 @@
+{
+    "project name": "stormpath_JavaRoadStorm2016",
+    "modules": {
+        "com.stormpath.tutorial:roadstorm-jwt-csrf-tutorial": {
+            "vulnerable dependencies": {
+                "org.apache.zookeeper:zookeeper:3.4.7": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "com.stormpath.tutorial:stormpath-jwt-microservices-tutorial": {
+            "vulnerable dependencies": {
+                "org.apache.zookeeper:zookeeper:3.4.7": {
+                    "used-method num": 6,
+                    "used method": [
+                        "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                        "org.apache.zookeeper.Shell$1:void run()",
+                        "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                        "org.apache.zookeeper.KeeperException:java.lang.String getMessage()",
+                        "org.apache.zookeeper.Login$1:void run()",
+                        "org.apache.zookeeper.ClientCnxn$EventThread:void run()"
+                    ]
+                }
+            }
+        }
+    }
+}

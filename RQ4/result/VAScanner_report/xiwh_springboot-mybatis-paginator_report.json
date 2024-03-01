@@ -1,0 +1,38 @@
+{
+    "project name": "xiwh_springboot-mybatis-paginator",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.21": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.postgresql:postgresql:42.2.14": {
+            "used-method num": 20,
+            "used method": [
+                "org.postgresql.jdbc.PgResultSet:int getInt(java.lang.String)",
+                "org.postgresql.hostchooser.MultiHostChooser$1:org.postgresql.hostchooser.CandidateHost get(int)",
+                "org.postgresql.jdbc.PgStatement:void close()",
+                "org.postgresql.jdbc.PgConnection:java.sql.DatabaseMetaData getMetaData()",
+                "org.postgresql.hostchooser.MultiHostChooser$2:java.lang.Object get(int)",
+                "org.postgresql.jdbc.PgPreparedStatement:java.sql.ResultSet executeQuery()",
+                "org.postgresql.hostchooser.MultiHostChooser$2:int size()",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                "org.postgresql.hostchooser.MultiHostChooser$1:int size()",
+                "org.postgresql.geometric.PGpoint:java.lang.Object clone()",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String,int)",
+                "org.postgresql.util.PGobject:java.lang.Object clone()",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String,java.lang.String[])",
+                "org.postgresql.geometric.PGbox:java.lang.Object clone()",
+                "org.postgresql.jdbc.PgDatabaseMetaData:java.lang.String getURL()",
+                "org.postgresql.hostchooser.MultiHostChooser$3:java.lang.Object get(int)",
+                "org.postgresql.jdbc.PgResultSet:boolean next()",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String,int,int)",
+                "org.postgresql.jdbc.PgResultSet:void close()",
+                "org.postgresql.hostchooser.MultiHostChooser$3:int size()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

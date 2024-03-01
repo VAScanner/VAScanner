@@ -1,0 +1,19 @@
+{
+    "project name": "jshiftio_kubernetes-maven-plugin",
+    "modules": {
+        "io.jshift:k8s-maven-plugin-build": {
+            "vulnerable dependencies": {
+                "org.codehaus.plexus:plexus-archiver:3.5": {
+                    "used-method num": 1,
+                    "used method": [
+                        "org.codehaus.plexus.archiver.diags.TrackingArchiver$Addition:java.lang.String toString()"
+                    ]
+                },
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

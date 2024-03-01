@@ -1,0 +1,71 @@
+{
+    "project name": "soulgalore_crawler",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.2.2": {
+            "used-method num": 38,
+            "used method": [
+                "org.apache.http.conn.scheme.Scheme:void <init>(java.lang.String,org.apache.http.conn.scheme.SocketFactory,int)",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <init>(javax.net.ssl.SSLContext)",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.params.HttpParams getParams()",
+                "org.apache.http.auth.AuthScope:void <init>(java.lang.String,int)",
+                "org.apache.http.client.protocol.RequestAcceptEncoding:void <init>()",
+                "org.apache.http.client.protocol.ResponseContentEncoding:void <init>()",
+                "org.apache.http.client.protocol.ResponseContentEncoding:void process(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.auth.AuthScope:void <clinit>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.impl.cookie.BestMatchSpec:void <init>()",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void shutdown()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.protocol.RequestAcceptEncoding:void process(org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.RequestWrapper:java.net.URI getURI()",
+                "org.apache.http.impl.conn.DefaultClientConnection:java.lang.Object getAttribute(java.lang.String)",
+                "org.apache.http.impl.client.DefaultHttpClient:void <init>(org.apache.http.conn.ClientConnectionManager)",
+                "org.apache.http.client.methods.HttpRequestBase:java.net.URI getURI()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.conn.ClientConnectionManager getConnectionManager()",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.auth.UsernamePasswordCredentials:void <init>(java.lang.String,java.lang.String)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.impl.client.AbstractHttpClient:void addRequestInterceptor(org.apache.http.HttpRequestInterceptor)",
+                "org.apache.http.client.methods.HttpRequestBase:void releaseConnection()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.client.methods.HttpRequestBase:java.lang.Object clone()",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void setMaxTotal(int)",
+                "org.apache.http.impl.client.AbstractHttpClient:void addResponseInterceptor(org.apache.http.HttpResponseInterceptor)",
+                "org.apache.http.impl.cookie.BestMatchSpec:void validate(org.apache.http.cookie.Cookie,org.apache.http.cookie.CookieOrigin)",
+                "org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager:void <init>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.cookie.CookieSpecRegistry getCookieSpecs()",
+                "org.apache.http.conn.scheme.SchemeRegistry:org.apache.http.conn.scheme.Scheme register(org.apache.http.conn.scheme.Scheme)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.conn.ssl.SSLSocketFactory:void <clinit>()",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.CredentialsProvider getCredentialsProvider()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.AbstractHttpClient:org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

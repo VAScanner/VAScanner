@@ -1,0 +1,23 @@
+{
+    "project name": "JMCuixy_SpringWebSocket",
+    "vulnerable dependencies": {
+        "org.springframework:spring-messaging:4.3.13.RELEASE": {
+            "used-method num": 9,
+            "used method": [
+                "org.springframework.messaging.support.NativeMessageHeaderAccessor:java.util.List getNativeHeader(java.lang.String)",
+                "org.springframework.messaging.simp.SimpMessageHeaderAccessor:void setUser(java.security.Principal)",
+                "org.springframework.messaging.simp.stomp.StompHeaderAccessor:org.springframework.messaging.simp.stomp.StompCommand getCommand()",
+                "org.springframework.messaging.support.MessageHeaderAccessor:org.springframework.messaging.support.MessageHeaderAccessor getAccessor(org.springframework.messaging.Message,java.lang.Class)",
+                "org.springframework.messaging.simp.config.ChannelRegistration:org.springframework.messaging.simp.config.ChannelRegistration interceptors(org.springframework.messaging.support.ChannelInterceptor[])",
+                "org.springframework.messaging.support.MessageHeaderAccessor:void <clinit>()",
+                "org.springframework.messaging.simp.SimpMessageHeaderAccessor:java.security.Principal getUser()",
+                "org.springframework.messaging.support.ChannelInterceptorAdapter:void <init>()",
+                "org.springframework.messaging.simp.stomp.StompCommand:void <clinit>()"
+            ]
+        },
+        "junit:junit:4.11": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

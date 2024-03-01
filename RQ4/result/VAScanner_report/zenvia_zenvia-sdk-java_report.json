@@ -1,0 +1,38 @@
+{
+    "project name": "zenvia_zenvia-sdk-java",
+    "modules": {
+        "com.zenvia:zenvia-api-sdk-parent": {
+            "vulnerable dependencies": {
+                "org.apache.httpcomponents:httpclient:4.5.9": {
+                    "used-method num": 24,
+                    "used method": [
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void shutdown()",
+                        "org.apache.http.client.config.RequestConfig:int getSocketTimeout()",
+                        "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                        "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                        "org.apache.http.impl.client.DefaultHttpRequestRetryHandler:void <clinit>()",
+                        "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.HttpClientBuilder create()",
+                        "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                        "org.apache.http.client.config.RequestConfig:int getConnectionRequestTimeout()",
+                        "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                        "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                        "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>()",
+                        "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                        "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                        "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                        "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                        "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                        "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                        "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                        "org.apache.http.client.config.RequestConfig:int getConnectTimeout()",
+                        "org.apache.http.impl.client.DefaultHttpRequestRetryHandler:void <init>(int,boolean)",
+                        "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()"
+                    ]
+                }
+            }
+        }
+    }
+}

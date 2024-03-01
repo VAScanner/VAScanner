@@ -1,0 +1,77 @@
+{
+    "project name": "junjun888_google-translater",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.5.6": {
+            "used-method num": 17,
+            "used method": [
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setProxy(org.apache.http.HttpHost)",
+                "org.apache.http.client.utils.URIBuilder:org.apache.http.client.utils.URIBuilder addParameter(java.lang.String,java.lang.String)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.client.utils.URIBuilder:void <init>(java.lang.String)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()",
+                "org.apache.http.client.utils.URIBuilder:java.net.URI build()",
+                "org.apache.http.impl.client.InternalHttpClient:void close()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.net.URI)",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        },
+        "com.alibaba:fastjson:1.2.54": {
+            "used-method num": 7,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set keySet()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:java.lang.String getString(int)",
+                "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONArray getJSONArray(int)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:java.lang.String getString(int)",
+                "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONArray getJSONArray(int)"
+            ],
+            "vul-called frequency": 4,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)",
+                    "com.alibaba.fastjson.JSONArray:java.lang.String getString(int)",
+                    "com.alibaba.fastjson.JSONArray:com.alibaba.fastjson.JSONArray getJSONArray(int)"
+                ]
+            }
+        }
+    }
+}

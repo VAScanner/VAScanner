@@ -1,0 +1,41 @@
+{
+    "project name": "jellyleo_activiti7",
+    "vulnerable dependencies": {
+        "mysql:mysql-connector-java:8.0.16": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "com.alibaba:fastjson:1.2.62": {
+            "used-method num": 10,
+            "used method": [
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.util.ParameterizedTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.util.GenericArrayTypeImpl:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.util.Set entrySet()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.JSONObject:boolean equals(java.lang.Object)"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)"
+            ],
+            "vul-called frequency": 3,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)"
+                ]
+            }
+        }
+    }
+}

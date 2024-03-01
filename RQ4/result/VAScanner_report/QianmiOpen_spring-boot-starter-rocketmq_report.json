@@ -1,0 +1,25 @@
+{
+    "project name": "QianmiOpen_spring-boot-starter-rocketmq",
+    "vulnerable dependencies": {
+        "org.springframework:spring-messaging:4.3.13.RELEASE": {
+            "used-method num": 15,
+            "used method": [
+                "org.springframework.messaging.support.MessageHeaderAccessor:java.lang.String toString()",
+                "org.springframework.messaging.support.MessageBuilder:org.springframework.messaging.Message build()",
+                "org.springframework.messaging.MessageHeaders:java.lang.String toString()",
+                "org.springframework.messaging.MessageHeaders:boolean isEmpty()",
+                "org.springframework.messaging.MessageHeaders:java.lang.Object get(java.lang.Object)",
+                "org.springframework.messaging.support.GenericMessage:org.springframework.messaging.MessageHeaders getHeaders()",
+                "org.springframework.messaging.support.GenericMessage:java.lang.Object getPayload()",
+                "org.springframework.messaging.MessagingException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.springframework.messaging.support.MessageBuilder:org.springframework.messaging.support.MessageBuilder copyHeaders(java.util.Map)",
+                "org.springframework.messaging.MessagingException:java.lang.String toString()",
+                "org.springframework.messaging.support.MessageBuilder:org.springframework.messaging.support.MessageBuilder withPayload(java.lang.Object)",
+                "org.springframework.messaging.core.AbstractMessageSendingTemplate:void <init>()",
+                "org.springframework.messaging.MessageHeaders:java.util.Set entrySet()",
+                "org.springframework.messaging.support.GenericMessage:java.lang.String toString()",
+                "org.springframework.messaging.support.MessageBuilder:org.springframework.messaging.support.MessageBuilder setHeaderIfAbsent(java.lang.String,java.lang.Object)"
+            ]
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "project name": "RBMHTechnology_vind",
+    "modules": {
+        "com.rbmhtechnology.vind:vind": {
+            "vulnerable dependencies": {
+                "commons-beanutils:commons-beanutils:1.9.3": {
+                    "used-method num": 9,
+                    "used method": [
+                        "org.apache.commons.beanutils.converters.NumberConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.PropertyUtils:java.lang.reflect.Method getReadMethod(java.beans.PropertyDescriptor)",
+                        "org.apache.commons.beanutils.converters.ConverterFacade:java.lang.String toString()",
+                        "org.apache.commons.beanutils.PropertyUtils:java.beans.PropertyDescriptor getPropertyDescriptor(java.lang.Object,java.lang.String)",
+                        "org.apache.commons.beanutils.converters.AbstractConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.DateTimeConverter:java.lang.String toString()",
+                        "org.apache.commons.beanutils.WeakFastHashMap:java.lang.Object clone()",
+                        "org.apache.commons.beanutils.DynaProperty:java.lang.String toString()",
+                        "org.apache.commons.beanutils.converters.ArrayConverter:java.lang.String toString()"
+                    ],
+                    "CVE": [
+                        "CVE-2019-10086"
+                    ],
+                    "used vul-method": [
+                        "org.apache.commons.beanutils.PropertyUtils:java.lang.reflect.Method getReadMethod(java.beans.PropertyDescriptor)",
+                        "org.apache.commons.beanutils.PropertyUtils:java.beans.PropertyDescriptor getPropertyDescriptor(java.lang.Object,java.lang.String)"
+                    ],
+                    "vul-called frequency": 4,
+                    "related vul root method": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.PropertyUtilsBean:void resetBeanIntrospectors()"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2019-10086": [
+                            "org.apache.commons.beanutils.PropertyUtils:java.lang.reflect.Method getReadMethod(java.beans.PropertyDescriptor)",
+                            "org.apache.commons.beanutils.PropertyUtils:java.beans.PropertyDescriptor getPropertyDescriptor(java.lang.Object,java.lang.String)"
+                        ]
+                    }
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

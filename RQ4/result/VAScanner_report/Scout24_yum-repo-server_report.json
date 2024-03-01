@@ -1,0 +1,242 @@
+{
+    "project name": "Scout24_yum-repo-server",
+    "vulnerable dependencies": {
+        "org.springframework:spring-webmvc:4.2.4.RELEASE": {
+            "used-method num": 26,
+            "used method": [
+                "org.springframework.web.servlet.view.InternalResourceViewResolver:void <init>()",
+                "org.springframework.web.servlet.support.ServletUriComponentsBuilder:java.lang.Object clone()",
+                "org.springframework.web.servlet.support.BindStatus:java.lang.String toString()",
+                "org.springframework.web.servlet.view.AbstractUrlBasedView:java.lang.String toString()",
+                "org.springframework.web.servlet.support.ServletUriComponentsBuilder:org.springframework.web.servlet.support.ServletUriComponentsBuilder fromRequest(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.web.servlet.FrameworkServlet:void <clinit>()",
+                "org.springframework.web.servlet.ModelAndView:java.lang.String toString()",
+                "org.springframework.web.servlet.ModelAndView:void <init>()",
+                "org.springframework.web.servlet.handler.HandlerInterceptorAdapter:void <init>()",
+                "org.springframework.web.servlet.HandlerMapping:void <clinit>()",
+                "org.springframework.web.servlet.FlashMap:boolean equals(java.lang.Object)",
+                "org.springframework.web.servlet.DispatcherServlet:void <clinit>()",
+                "org.springframework.web.servlet.FlashMap:java.lang.String toString()",
+                "org.springframework.web.servlet.view.UrlBasedViewResolver:void setPrefix(java.lang.String)",
+                "org.springframework.web.servlet.resource.ResourceHttpRequestHandler:java.lang.String toString()",
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String,java.util.Map)",
+                "org.springframework.web.servlet.view.AbstractCachingViewResolver:void <clinit>()",
+                "org.springframework.web.servlet.view.InternalResourceViewResolver:void <clinit>()",
+                "org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter:void <init>()",
+                "org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver:void <init>()",
+                "org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:void <init>()",
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String,java.lang.String,java.lang.Object)",
+                "org.springframework.web.servlet.ModelAndView:void <init>(java.lang.String)",
+                "org.springframework.web.servlet.view.UrlBasedViewResolver:void setExposeContextBeansAsAttributes(boolean)",
+                "org.springframework.web.servlet.view.UrlBasedViewResolver:void setSuffix(java.lang.String)",
+                "org.springframework.web.servlet.DispatcherServlet:void <init>(org.springframework.web.context.WebApplicationContext)"
+            ]
+        },
+        "org.springframework:spring-web:4.2.4.RELEASE": {
+            "used-method num": 78,
+            "used method": [
+                "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void <init>()",
+                "org.springframework.http.HttpHeaders:void setContentType(org.springframework.http.MediaType)",
+                "org.springframework.web.util.UriComponentsBuilder:org.springframework.web.util.UriComponents build()",
+                "org.springframework.http.ResponseEntity:void <init>(java.lang.Object,org.springframework.util.MultiValueMap,org.springframework.http.HttpStatus)",
+                "org.springframework.web.util.UriComponentsBuilder:void <clinit>()",
+                "org.springframework.web.util.HierarchicalUriComponents:java.lang.String getPath()",
+                "org.springframework.http.HttpHeaders:void <init>()",
+                "org.springframework.http.MediaType:void <clinit>()",
+                "org.springframework.web.context.request.async.WebAsyncManager$2:void run()",
+                "org.springframework.http.converter.FormHttpMessageConverter:org.springframework.util.MultiValueMap read(java.lang.Class,org.springframework.http.HttpInputMessage)",
+                "org.springframework.web.filter.DelegatingFilterProxy:void <init>()",
+                "org.springframework.http.server.ServletServerHttpRequest:void <init>(javax.servlet.http.HttpServletRequest)",
+                "org.springframework.http.HttpStatus:int value()",
+                "org.springframework.http.converter.StringHttpMessageConverter:void setWriteAcceptCharset(boolean)",
+                "org.springframework.http.RequestEntity:java.lang.String toString()",
+                "org.springframework.http.ResponseEntity:void <init>(org.springframework.util.MultiValueMap,org.springframework.http.HttpStatus)",
+                "org.springframework.web.multipart.support.StandardServletMultipartResolver:void <init>()",
+                "org.springframework.http.converter.FormHttpMessageConverter:void <clinit>()",
+                "org.springframework.web.context.request.async.WebAsyncManager$3:void run()",
+                "org.springframework.web.context.ContextLoaderListener:void <init>(org.springframework.web.context.WebApplicationContext)",
+                "org.springframework.http.HttpHeaders:void set(java.lang.String,java.lang.String)",
+                "org.springframework.web.context.ContextLoader:void <clinit>()",
+                "org.springframework.web.util.HierarchicalUriComponents$FullPathComponent:boolean equals(java.lang.Object)",
+                "org.springframework.http.converter.StringHttpMessageConverter:void <init>()",
+                "org.springframework.http.HttpHeaders:void setContentLength(long)",
+                "org.springframework.http.HttpHeaders:boolean equals(java.lang.Object)",
+                "org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter:void <clinit>()",
+                "org.springframework.web.method.ControllerAdviceBean:java.lang.String toString()",
+                "org.springframework.web.util.HierarchicalUriComponents$1:boolean equals(java.lang.Object)",
+                "org.springframework.web.context.request.async.WebAsyncManager$4:void run()",
+                "org.springframework.http.RequestEntity:boolean equals(java.lang.Object)",
+                "org.springframework.web.context.support.ServletContextResource:boolean equals(java.lang.Object)",
+                "org.springframework.http.ResponseEntity:boolean equals(java.lang.Object)",
+                "org.springframework.web.method.HandlerMethod:java.lang.String toString()",
+                "org.springframework.http.converter.ResourceHttpMessageConverter:void <clinit>()",
+                "org.springframework.http.HttpStatus:void <clinit>()",
+                "org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter:void setPrettyPrint(boolean)",
+                "org.springframework.web.method.annotation.ModelFactory$ModelMethod:java.lang.String toString()",
+                "org.springframework.web.util.OpaqueUriComponents:boolean equals(java.lang.Object)",
+                "org.springframework.http.converter.ByteArrayHttpMessageConverter:void <init>()",
+                "org.springframework.http.HttpEntity:void <clinit>()",
+                "org.springframework.web.filter.OncePerRequestFilter:void <init>()",
+                "org.springframework.web.util.UriComponentsBuilder$CompositePathComponentBuilder:java.lang.Object clone()",
+                "org.springframework.http.converter.xml.SourceHttpMessageConverter:void <clinit>()",
+                "org.springframework.web.util.UriComponents:java.lang.String toString()",
+                "org.springframework.http.converter.xml.SourceHttpMessageConverter:void <init>()",
+                "org.springframework.http.converter.FormHttpMessageConverter:void <init>()",
+                "org.springframework.web.util.UriComponentsBuilder$PathSegmentComponentBuilder:java.lang.Object clone()",
+                "org.springframework.web.method.support.ModelAndViewContainer:java.lang.String toString()",
+                "org.springframework.web.context.request.async.WebAsyncManager$5:void run()",
+                "org.springframework.http.converter.StringHttpMessageConverter:void <clinit>()",
+                "org.springframework.http.HttpHeaders:void setLocation(java.net.URI)",
+                "org.springframework.web.method.HandlerMethod:boolean equals(java.lang.Object)",
+                "org.springframework.web.util.UriComponentsBuilder$FullPathComponentBuilder:java.lang.Object clone()",
+                "org.springframework.web.bind.MethodArgumentNotValidException:java.lang.String getMessage()",
+                "org.springframework.web.util.HierarchicalUriComponents:boolean equals(java.lang.Object)",
+                "org.springframework.http.ResponseEntity:java.lang.String toString()",
+                "org.springframework.http.HttpHeaders:java.util.Set entrySet()",
+                "org.springframework.web.context.request.ServletWebRequest:java.lang.String toString()",
+                "org.springframework.http.CacheControl:org.springframework.http.CacheControl maxAge(long,java.util.concurrent.TimeUnit)",
+                "org.springframework.http.HttpEntity:boolean equals(java.lang.Object)",
+                "org.springframework.http.converter.ResourceHttpMessageConverter:void <init>()",
+                "org.springframework.http.HttpStatus:java.lang.String toString()",
+                "org.springframework.web.context.support.AnnotationConfigWebApplicationContext:void register(java.lang.Class[])",
+                "org.springframework.http.MediaType:void <init>(java.lang.String,java.lang.String)",
+                "org.springframework.http.HttpStatus:org.springframework.http.HttpStatus valueOf(int)",
+                "org.springframework.http.MediaType:org.springframework.http.MediaType valueOf(java.lang.String)",
+                "org.springframework.web.util.UriComponentsBuilder:java.lang.Object clone()",
+                "org.springframework.http.converter.json.MappingJackson2HttpMessageConverter:void <init>()",
+                "org.springframework.web.util.UriComponentsBuilder:org.springframework.web.util.UriComponentsBuilder replacePath(java.lang.String)",
+                "org.springframework.http.HttpHeaders:org.springframework.http.MediaType getContentType()",
+                "org.springframework.http.HttpEntity:java.lang.String toString()",
+                "org.springframework.http.HttpHeaders:void <clinit>()",
+                "org.springframework.web.util.HierarchicalUriComponents$PathSegmentComponent:boolean equals(java.lang.Object)",
+                "org.springframework.web.context.request.async.WebAsyncManager$6:void run()",
+                "org.springframework.http.HttpMethod:void <clinit>()",
+                "org.springframework.http.HttpHeaders:java.lang.String toString()",
+                "org.springframework.web.method.ControllerAdviceBean:boolean equals(java.lang.Object)"
+            ]
+        },
+        "org.kohsuke:libpam4j:1.8": {
+            "used-method num": 4,
+            "used method": [
+                "org.jvnet.libpam.PAM:org.jvnet.libpam.UnixUser authenticate(java.lang.String,java.lang.String)",
+                "org.jvnet.libpam.PAM:void <clinit>()",
+                "org.jvnet.libpam.PAM:void dispose()",
+                "org.jvnet.libpam.PAM:void <init>(java.lang.String)"
+            ],
+            "CVE": [
+                "CVE-2017-12197"
+            ],
+            "used vul-method": [
+                "org.jvnet.libpam.PAM:org.jvnet.libpam.UnixUser authenticate(java.lang.String,java.lang.String)"
+            ],
+            "vul-called frequency": 1,
+            "root vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2017-12197": [
+                    "org.jvnet.libpam.PAM:org.jvnet.libpam.UnixUser authenticate(java.lang.String,java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2017-12197": [
+                    "org.jvnet.libpam.PAM:org.jvnet.libpam.UnixUser authenticate(java.lang.String,java.lang.String)"
+                ]
+            }
+        },
+        "org.springframework.security:spring-security-web:4.1.1.RELEASE": {
+            "used-method num": 32,
+            "used method": [
+                "org.springframework.security.web.FilterChainProxy$VirtualFilterChain:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.header.writers.StaticHeadersWriter:java.lang.String toString()",
+                "org.springframework.security.web.DefaultSecurityFilterChain:java.lang.String toString()",
+                "org.springframework.security.web.header.Header:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.OrRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.web.authentication.preauth.PreAuthenticatedGrantedAuthoritiesWebAuthenticationDetails:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.AndRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.authentication.WebAuthenticationDetails:java.lang.String toString()",
+                "org.springframework.security.web.util.OnCommittedResponseWrapper:void sendError(int,java.lang.String)",
+                "org.springframework.security.web.firewall.FirewalledRequest:java.lang.String toString()",
+                "org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:boolean equals(java.lang.Object)",
+                "org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint:void <init>()",
+                "org.springframework.security.web.util.matcher.MediaTypeRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.header.writers.ContentSecurityPolicyHeaderWriter:java.lang.String toString()",
+                "org.springframework.security.web.FilterInvocation$1:void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)",
+                "org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy:java.lang.String toString()",
+                "org.springframework.security.web.savedrequest.SavedRequestAwareWrapper:java.lang.String getHeader(java.lang.String)",
+                "org.springframework.security.web.util.OnCommittedResponseWrapper:void addHeader(java.lang.String,java.lang.String)",
+                "org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper:java.lang.String toString()",
+                "org.springframework.security.web.FilterInvocation:java.lang.String toString()",
+                "org.springframework.security.web.csrf.LazyCsrfTokenRepository$SaveOnAccessCsrfToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.web.util.matcher.AntPathRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.header.writers.XXssProtectionHeaderWriter:java.lang.String toString()",
+                "org.springframework.security.web.authentication.AnonymousAuthenticationFilter:void <init>(java.lang.String)",
+                "org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter:void setAuthenticationDetailsSource(org.springframework.security.authentication.AuthenticationDetailsSource)",
+                "org.springframework.security.web.savedrequest.DefaultSavedRequest:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.NegatedRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.util.matcher.RequestHeaderRequestMatcher:java.lang.String toString()",
+                "org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter:void <init>()",
+                "org.springframework.security.web.FilterChainProxy:java.lang.String toString()"
+            ]
+        },
+        "org.springframework.security:spring-security-core:4.1.1.RELEASE": {
+            "used-method num": 33,
+            "used method": [
+                "org.springframework.security.authentication.BadCredentialsException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.springframework.security.concurrent.DelegatingSecurityContextRunnable:void run()",
+                "org.springframework.security.core.context.SecurityContextHolder:void <clinit>()",
+                "org.springframework.security.concurrent.DelegatingSecurityContextCallable:java.lang.String toString()",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.access.SecurityConfig:boolean equals(java.lang.Object)",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:void <init>(java.lang.String)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.String toString()",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getPrincipal()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:java.lang.Object getCredentials()",
+                "org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource$DefaultCacheKey:java.lang.String toString()",
+                "org.springframework.security.authentication.UsernamePasswordAuthenticationToken:void <init>(java.lang.Object,java.lang.Object,java.util.Collection)",
+                "org.springframework.security.core.context.SecurityContextImpl:void setAuthentication(org.springframework.security.core.Authentication)",
+                "org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource$DefaultCacheKey:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.AuthenticationServiceException:void <init>(java.lang.String,java.lang.Throwable)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:void setDetails(java.lang.Object)",
+                "org.springframework.security.concurrent.DelegatingSecurityContextScheduledExecutorService:void <init>(java.util.concurrent.ScheduledExecutorService,org.springframework.security.core.context.SecurityContext)",
+                "org.springframework.security.access.expression.method.PreInvocationExpressionAttribute:java.lang.String toString()",
+                "org.springframework.security.core.context.SecurityContextImpl:org.springframework.security.core.Authentication getAuthentication()",
+                "org.springframework.security.authentication.AnonymousAuthenticationToken:java.lang.Object getCredentials()",
+                "org.springframework.security.concurrent.DelegatingSecurityContextScheduledExecutorService:java.util.concurrent.ScheduledFuture scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)",
+                "org.springframework.security.core.context.SecurityContextHolder:org.springframework.security.core.context.SecurityContext getContext()",
+                "org.springframework.security.concurrent.DelegatingSecurityContextRunnable:java.lang.String toString()",
+                "org.springframework.security.core.userdetails.User:boolean equals(java.lang.Object)",
+                "org.springframework.security.access.expression.method.PostInvocationExpressionAttribute:java.lang.String toString()",
+                "org.springframework.security.core.context.SecurityContextImpl:boolean equals(java.lang.Object)",
+                "org.springframework.security.authentication.AbstractAuthenticationToken:java.lang.Object getDetails()",
+                "org.springframework.security.core.authority.SimpleGrantedAuthority:boolean equals(java.lang.Object)",
+                "org.springframework.security.core.context.SecurityContextImpl:java.lang.String toString()",
+                "org.springframework.security.concurrent.DelegatingSecurityContextExecutorService:java.util.concurrent.Future submit(java.lang.Runnable)",
+                "org.springframework.security.core.userdetails.User:java.lang.String toString()"
+            ]
+        },
+        "org.apache.commons:commons-compress:1.18": {
+            "used-method num": 3,
+            "used method": [
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream:void close()",
+                "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream:void <init>(java.io.OutputStream)",
+                "org.apache.commons.compress.compressors.xz.XZCompressorInputStream:long skip(long)"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.7": {
+            "used-method num": 4,
+            "used method": [
+                "org.ietf.jgss.Oid:boolean equals(java.lang.Object)",
+                "org.ietf.jgss.Oid:java.lang.String toString()",
+                "org.ietf.jgss.GSSException:java.lang.String getMessage()",
+                "org.ietf.jgss.GSSException:java.lang.String toString()"
+            ]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "project name": "kingrocy_rbac",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.56": {
+            "used-method num": 10,
+            "used method": [
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.JSONObject:void <init>()",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                "com.alibaba.fastjson.JSONArray:boolean contains(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.String,java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:boolean equals(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:int hashCode()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.String toString()"
+            ],
+            "vul-called frequency": 18,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                ]
+            }
+        }
+    }
+}

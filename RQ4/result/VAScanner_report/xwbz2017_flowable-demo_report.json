@@ -1,0 +1,55 @@
+{
+    "project name": "xwbz2017_flowable-demo",
+    "vulnerable dependencies": {
+        "com.alibaba:fastjson:1.2.49": {
+            "used-method num": 18,
+            "used method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object toJavaObject(com.alibaba.fastjson.JSON,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object clone()",
+                "com.alibaba.fastjson.support.config.FastJsonConfig:void <init>()",
+                "com.alibaba.fastjson.support.config.FastJsonConfig:void setCharset(java.nio.charset.Charset)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSONArray:boolean isEmpty()",
+                "com.alibaba.fastjson.serializer.SerializerFeature:void <clinit>()",
+                "com.alibaba.fastjson.JSON:void <clinit>()",
+                "com.alibaba.fastjson.support.config.FastJsonConfig:void setSerializerFeatures(com.alibaba.fastjson.serializer.SerializerFeature[])",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object clone()",
+                "com.alibaba.fastjson.JSONArray:java.lang.Object get(int)",
+                "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)",
+                "com.alibaba.fastjson.JSONArray:int size()",
+                "com.alibaba.fastjson.support.config.FastJsonConfig:void setDateFormat(java.lang.String)",
+                "com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2022-25845"
+            ],
+            "used vul-method": [
+                "com.alibaba.fastjson.JSON:java.lang.Object toJavaObject(com.alibaba.fastjson.JSON,java.lang.Class)",
+                "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)"
+            ],
+            "vul-called frequency": 9,
+            "related vul root method": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2022-25845": [
+                    "com.alibaba.fastjson.JSON:java.lang.Object toJavaObject(com.alibaba.fastjson.JSON,java.lang.Class)",
+                    "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                    "com.alibaba.fastjson.JSON:com.alibaba.fastjson.JSONObject parseObject(java.lang.String)",
+                    "com.alibaba.fastjson.JSON:java.util.List parseArray(java.lang.String,java.lang.Class)"
+                ]
+            }
+        },
+        "mysql:mysql-connector-java:8.0.15": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

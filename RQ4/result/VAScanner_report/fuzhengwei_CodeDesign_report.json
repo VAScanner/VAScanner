@@ -1,0 +1,159 @@
+{
+    "project name": "fuzhengwei_CodeDesign",
+    "modules": {
+        "cn.bugstack.design:CodeDesign": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.0.9": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.boot:cn-bugstack-design-13.0-0": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.0.9": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.boot:cn-bugstack-design-13.0-2": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 9,
+                    "used method": [
+                        "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                        "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                        "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                        "com.alibaba.fastjson.JSON:java.lang.String toString()",
+                        "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                        "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                        "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                        "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                    ],
+                    "vul-called frequency": 3,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                            "com.alibaba.fastjson.JSON:java.lang.Object parseObject(java.lang.String,java.lang.Class)",
+                            "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                        ]
+                    }
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.0.9": {
+                    "used-method num": 8,
+                    "used method": [
+                        "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                        "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()",
+                        "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()"
+                    ]
+                }
+            }
+        },
+        "org.springframework.boot:cn-bugstack-design-26.0-0": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 14,
+                    "used method": [
+                        "com.alibaba.fastjson.serializer.SerializeWriter:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                        "com.alibaba.fastjson.serializer.JSONSerializer:java.lang.String toString()",
+                        "com.alibaba.fastjson.util.GenericArrayTypeImpl:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                        "com.alibaba.fastjson.parser.ParseContext:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONArray:java.util.Iterator iterator()",
+                        "com.alibaba.fastjson.serializer.SerialContext:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSONArray:int size()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                        "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                    ],
+                    "vul-called frequency": 8,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                            "com.alibaba.fastjson.JSON:java.lang.Object toJSON(java.lang.Object)",
+                            "com.alibaba.fastjson.JSONPObject:java.lang.String toString()",
+                            "com.alibaba.fastjson.JSON:java.lang.String toString()"
+                        ]
+                    }
+                },
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "ch.qos.logback:logback-classic:1.0.9": {
+                    "used-method num": 11,
+                    "used method": [
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object,java.lang.Object)",
+                        "ch.qos.logback.classic.spi.LoggingEvent:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.Logger:void error(java.lang.String,java.lang.Throwable)",
+                        "ch.qos.logback.classic.spi.LoggerContextVO:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:void info(java.lang.String,java.lang.Object[])",
+                        "ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter:java.lang.String toString()",
+                        "ch.qos.logback.classic.spi.StackTraceElementProxy:java.lang.String toString()",
+                        "ch.qos.logback.classic.LoggerContext:java.lang.String toString()",
+                        "ch.qos.logback.classic.jmx.JMXConfigurator:java.lang.String toString()",
+                        "ch.qos.logback.classic.Logger:java.lang.String toString()"
+                    ]
+                }
+            }
+        }
+    }
+}

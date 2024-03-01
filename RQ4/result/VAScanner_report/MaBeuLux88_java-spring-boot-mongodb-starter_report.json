@@ -1,0 +1,29 @@
+{
+    "project name": "MaBeuLux88_java-spring-boot-mongodb-starter",
+    "vulnerable dependencies": {
+        "org.mongodb:mongodb-driver-sync:4.1.1": {
+            "used-method num": 19,
+            "used method": [
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.AggregateIterable aggregate(java.util.List,java.lang.Class)",
+                "com.mongodb.client.internal.MongoIterableImpl:java.util.Collection into(java.util.Collection)",
+                "com.mongodb.client.internal.MongoCollectionImpl:java.lang.Object findOneAndReplace(org.bson.conversions.Bson,java.lang.Object,com.mongodb.client.model.FindOneAndReplaceOptions)",
+                "com.mongodb.client.internal.MongoCollectionImpl:long countDocuments()",
+                "com.mongodb.client.internal.ClientSessionImpl:java.lang.Object withTransaction(com.mongodb.client.TransactionBody,com.mongodb.TransactionOptions)",
+                "com.mongodb.client.internal.ClientSessionImpl:void close()",
+                "com.mongodb.client.internal.FindIterableImpl:java.lang.Object first()",
+                "com.mongodb.client.internal.MongoIterableImpl:java.lang.Object first()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.DeleteResult deleteOne(org.bson.conversions.Bson)",
+                "com.mongodb.client.MongoClients:com.mongodb.client.MongoClient create(com.mongodb.MongoClientSettings)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.bulk.BulkWriteResult bulkWrite(com.mongodb.client.ClientSession,java.util.List)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.FindIterable find()",
+                "com.mongodb.client.internal.MongoDatabaseImpl:com.mongodb.client.MongoCollection getCollection(java.lang.String,java.lang.Class)",
+                "com.mongodb.client.internal.MongoClientImpl:com.mongodb.client.ClientSession startSession()",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.InsertManyResult insertMany(com.mongodb.client.ClientSession,java.util.List)",
+                "com.mongodb.client.internal.MongoClientImpl:com.mongodb.client.MongoDatabase getDatabase(java.lang.String)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.FindIterable find(org.bson.conversions.Bson)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.InsertOneResult insertOne(java.lang.Object)",
+                "com.mongodb.client.internal.MongoCollectionImpl:com.mongodb.client.result.DeleteResult deleteMany(com.mongodb.client.ClientSession,org.bson.conversions.Bson)"
+            ]
+        }
+    }
+}

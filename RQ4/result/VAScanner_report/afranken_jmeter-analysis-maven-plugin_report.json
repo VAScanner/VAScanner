@@ -1,0 +1,48 @@
+{
+    "project name": "afranken_jmeter-analysis-maven-plugin",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.2.3.RELEASE": {
+            "used-method num": 15,
+            "used method": [
+                "org.springframework.core.io.UrlResource:java.io.File getFile()",
+                "org.springframework.core.NestedIOException:java.lang.String getMessage()",
+                "org.springframework.core.io.VfsResource:java.lang.String getFilename()",
+                "org.springframework.core.io.VfsResource:java.io.File getFile()",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:org.springframework.core.io.Resource[] getResources(java.lang.String)",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:void <clinit>()",
+                "org.springframework.core.io.ClassPathResource:java.lang.String getFilename()",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:java.lang.String determineRootDir(java.lang.String)",
+                "org.springframework.core.io.FileSystemResource:java.lang.String getFilename()",
+                "org.springframework.util.AntPathMatcher:boolean match(java.lang.String,java.lang.String)",
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:void <init>()",
+                "org.springframework.core.io.UrlResource:java.lang.String getFilename()",
+                "org.springframework.util.AntPathMatcher:void <clinit>()",
+                "org.springframework.util.AntPathMatcher:void <init>()",
+                "org.springframework.core.io.AbstractFileResolvingResource:java.io.File getFile()"
+            ],
+            "CVE": [
+                "CVE-2014-3578"
+            ],
+            "used vul-method": [
+                "org.springframework.core.io.support.PathMatchingResourcePatternResolver:org.springframework.core.io.Resource[] getResources(java.lang.String)"
+            ],
+            "vul-called frequency": 1,
+            "related vul root method": {
+                "CVE-2014-3578": [
+                    "org.springframework.util.StringUtils:java.lang.String cleanPath(java.lang.String)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2014-3578": [
+                    "org.springframework.core.io.support.PathMatchingResourcePatternResolver:org.springframework.core.io.Resource[] getResources(java.lang.String)"
+                ]
+            }
+        },
+        "org.codehaus.plexus:plexus-utils:3.0.12": {
+            "used-method num": 1,
+            "used method": [
+                "org.codehaus.plexus.util.StringUtils:boolean isNotEmpty(java.lang.String)"
+            ]
+        }
+    }
+}

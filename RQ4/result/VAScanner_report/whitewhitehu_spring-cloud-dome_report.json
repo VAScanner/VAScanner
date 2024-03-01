@@ -1,0 +1,47 @@
+{
+    "project name": "whitewhitehu_spring-cloud-dome",
+    "modules": {
+        "com.yangqifang:fast-cloud": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 6,
+                    "used method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:void <clinit>()",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                        "com.alibaba.fastjson.JSONObject:java.lang.Object get(java.lang.Object)",
+                        "com.alibaba.fastjson.JSONArray:boolean add(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                    ],
+                    "vul-called frequency": 2,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                            "com.alibaba.fastjson.JSON:java.lang.Object parse(java.lang.String)"
+                        ]
+                    }
+                }
+            }
+        },
+        "com.yangqifang:fast-oauth2-server": {
+            "vulnerable dependencies": {
+                "com.alibaba:fastjson:1.2.62": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}

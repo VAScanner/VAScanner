@@ -1,0 +1,40 @@
+{
+    "project name": "yahoo_imapnio",
+    "modules": {
+        "com.yahoo.imapnio:imapnio": {
+            "vulnerable dependencies": {
+                "io.netty:netty-handler:4.1.48.Final": {
+                    "used-method num": 26,
+                    "used method": [
+                        "io.netty.handler.ssl.JdkSslContext:javax.net.ssl.SSLEngine newEngine(io.netty.buffer.ByteBufAllocator,java.lang.String,int)",
+                        "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContextBuilder forClient()",
+                        "io.netty.handler.ssl.JdkSslContext:void <clinit>()",
+                        "io.netty.handler.ssl.SslHandler$4:void run()",
+                        "io.netty.handler.ssl.JdkSslEngine:void setSSLParameters(javax.net.ssl.SSLParameters)",
+                        "io.netty.handler.ssl.SslHandler$SslTasksRunner$2:void run()",
+                        "io.netty.handler.timeout.IdleStateEvent:io.netty.handler.timeout.IdleState state()",
+                        "io.netty.handler.ssl.SslContext:void <clinit>()",
+                        "io.netty.handler.ssl.SslHandler:void <clinit>()",
+                        "io.netty.handler.ssl.SslHandler$SslTasksRunner$1:void run()",
+                        "io.netty.handler.ssl.SslHandler$SslTasksRunner:void run()",
+                        "io.netty.handler.ssl.SslHandler$7:void run()",
+                        "io.netty.handler.ssl.SslHandler:void <init>(javax.net.ssl.SSLEngine)",
+                        "io.netty.handler.ssl.OpenSslX509Certificate:java.lang.String toString()",
+                        "io.netty.handler.ssl.SslContextBuilder:io.netty.handler.ssl.SslContext build()",
+                        "io.netty.handler.ssl.SslHandler$8$1:void run()",
+                        "io.netty.handler.ssl.OpenSslJavaxX509Certificate:java.lang.String toString()",
+                        "io.netty.handler.timeout.IdleStateHandler:void <init>(long,long,long,java.util.concurrent.TimeUnit)",
+                        "io.netty.handler.ssl.SslHandler$1:void run()",
+                        "io.netty.handler.ssl.ClientAuth:void <clinit>()",
+                        "io.netty.handler.ssl.SslContext:io.netty.handler.ssl.SslHandler newHandler(io.netty.buffer.ByteBufAllocator,java.lang.String,int)",
+                        "io.netty.handler.ssl.SslHandler$5:void run()",
+                        "io.netty.handler.timeout.IdleState:void <clinit>()",
+                        "io.netty.handler.ssl.SslCompletionEvent:java.lang.String toString()",
+                        "io.netty.handler.ssl.ReferenceCountedOpenSslEngine$3:void run()",
+                        "io.netty.handler.ssl.JdkSslContext:void <init>(javax.net.ssl.SSLContext,boolean,io.netty.handler.ssl.ClientAuth)"
+                    ]
+                }
+            }
+        }
+    }
+}

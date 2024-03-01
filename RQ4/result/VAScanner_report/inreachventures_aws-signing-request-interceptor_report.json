@@ -1,0 +1,19 @@
+{
+    "project name": "inreachventures_aws-signing-request-interceptor",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.4.1": {
+            "used-method num": 5,
+            "used method": [
+                "org.apache.http.client.methods.HttpRequestWrapper:org.apache.http.RequestLine getRequestLine()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.net.URI getURI()",
+                "org.apache.http.client.methods.HttpRequestWrapper:org.apache.http.HttpRequest getOriginal()",
+                "org.apache.http.client.methods.HttpRequestWrapper:java.lang.String toString()",
+                "org.apache.http.client.methods.HttpRequestWrapper$HttpEntityEnclosingRequestWrapper:org.apache.http.HttpEntity getEntity()"
+            ]
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

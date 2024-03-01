@@ -1,0 +1,57 @@
+{
+    "project name": "pyloque_rpckids",
+    "vulnerable dependencies": {
+        "io.netty:netty-common:4.1.1.Final": {
+            "used-method num": 26,
+            "used method": [
+                "io.netty.util.internal.RecyclableArrayList:boolean add(java.lang.Object)",
+                "io.netty.util.internal.chmv8.ForkJoinTask$AdaptedCallable:void run()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "io.netty.util.concurrent.AbstractEventExecutorGroup:io.netty.util.concurrent.ScheduledFuture schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:void clear()",
+                "io.netty.util.concurrent.DefaultPromise$1:void run()",
+                "io.netty.util.concurrent.ScheduledFutureTask:void run()",
+                "io.netty.util.concurrent.SingleThreadEventExecutor:io.netty.util.concurrent.Future shutdownGracefully(long,long,java.util.concurrent.TimeUnit)",
+                "io.netty.util.internal.chmv8.ForkJoinTask$AdaptedRunnableAction:void run()",
+                "io.netty.util.concurrent.DefaultPromise:java.lang.Throwable cause()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object get(java.lang.Object)",
+                "io.netty.util.concurrent.DefaultPromise$3:void run()",
+                "io.netty.util.concurrent.AbstractScheduledEventExecutor:io.netty.util.concurrent.ScheduledFuture schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)",
+                "io.netty.util.internal.ThreadLocalRandom$2:void run()",
+                "io.netty.util.concurrent.MultithreadEventExecutorGroup:io.netty.util.concurrent.Future shutdownGracefully(long,long,java.util.concurrent.TimeUnit)",
+                "io.netty.util.concurrent.AbstractEventExecutor:io.netty.util.concurrent.Future shutdownGracefully()",
+                "io.netty.util.ThreadDeathWatcher$Watcher:void run()",
+                "io.netty.util.internal.chmv8.ConcurrentHashMapV8:java.lang.Object remove(java.lang.Object)",
+                "io.netty.util.internal.chmv8.ForkJoinWorkerThread:void run()",
+                "io.netty.util.concurrent.GlobalEventExecutor$TaskRunner:void run()",
+                "io.netty.util.ReferenceCountUtil$ReleasingTask:void run()",
+                "io.netty.util.concurrent.SingleThreadEventExecutor:void execute(java.lang.Runnable)",
+                "io.netty.util.concurrent.DefaultPromise$2:void run()",
+                "io.netty.util.concurrent.DefaultPromise$4:void run()",
+                "io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator:void run()",
+                "io.netty.util.internal.chmv8.ForkJoinTask$AdaptedRunnable:void run()"
+            ]
+        },
+        "io.netty:netty-handler:4.1.1.Final": {
+            "used-method num": 2,
+            "used method": [
+                "io.netty.handler.timeout.ReadTimeoutHandler$ReadTimeoutTask:void run()",
+                "io.netty.handler.timeout.ReadTimeoutHandler:void <init>(int)"
+            ]
+        },
+        "io.netty:netty-codec:4.1.1.Final": {
+            "used-method num": 9,
+            "used method": [
+                "io.netty.handler.codec.CodecOutputList:boolean add(java.lang.Object)",
+                "io.netty.handler.codec.DecoderException:void <init>(java.lang.String)",
+                "io.netty.handler.codec.ReplayingDecoderByteBuf:io.netty.buffer.ByteBuf writeInt(int)",
+                "io.netty.handler.codec.ReplayingDecoder:void <init>()",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                "io.netty.handler.codec.ReplayingDecoderByteBuf:int readInt()",
+                "io.netty.handler.codec.MessageToMessageEncoder:void <init>()",
+                "io.netty.handler.codec.ReplayingDecoderByteBuf:io.netty.buffer.ByteBuf writeBytes(byte[])",
+                "io.netty.handler.codec.ReplayingDecoderByteBuf:io.netty.buffer.ByteBuf readBytes(byte[])"
+            ]
+        }
+    }
+}

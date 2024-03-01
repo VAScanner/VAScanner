@@ -1,0 +1,76 @@
+{
+    "project name": "Arronlong_httpclientutil",
+    "vulnerable dependencies": {
+        "org.apache.httpcomponents:httpclient:4.4.1": {
+            "used-method num": 47,
+            "used method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:void writeTo(java.io.OutputStream)",
+                "org.apache.http.client.protocol.HttpClientContext:void <init>()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.StatusLine getStatusLine()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setRedirectsEnabled(boolean)",
+                "org.apache.http.impl.conn.DefaultProxyRoutePlanner:void <init>(org.apache.http.HttpHost)",
+                "org.apache.http.impl.client.IdleConnectionEvictor$DefaultThreadFactory:java.lang.Thread newThread(java.lang.Runnable)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void <init>(org.apache.http.config.Registry)",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig$Builder custom()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.client.HttpClientBuilder:org.apache.http.impl.client.CloseableHttpClient build()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectionRequestTimeout(int)",
+                "org.apache.http.conn.socket.PlainConnectionSocketFactory:void <clinit>()",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setDefaultMaxPerRoute(int)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.client.methods.HttpHead:void <init>(java.lang.String)",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.cookie.BasicClientCookie:java.lang.Object clone()",
+                "org.apache.http.impl.cookie.BasicClientCookie2:java.lang.Object clone()",
+                "org.apache.http.client.methods.HttpPatch:void <init>(java.lang.String)",
+                "org.apache.http.conn.ssl.TrustSelfSignedStrategy:void <clinit>()",
+                "org.apache.http.client.config.RequestConfig:org.apache.http.client.config.RequestConfig clone()",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)",
+                "org.apache.http.conn.ssl.SSLConnectionSocketFactory:void <init>(javax.net.ssl.SSLContext,javax.net.ssl.HostnameVerifier)",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.impl.client.RedirectLocations:boolean contains(java.lang.Object)",
+                "org.apache.http.client.protocol.HttpClientContext:org.apache.http.client.protocol.HttpClientContext adapt(org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.conn.PoolingHttpClientConnectionManager:void setMaxTotal(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setSocketTimeout(int)",
+                "org.apache.http.client.methods.HttpOptions:void <init>(java.lang.String)",
+                "org.apache.http.conn.routing.HttpRoute:java.lang.Object clone()",
+                "org.apache.http.impl.client.HttpClientBuilder:void <init>()",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpRequestBase:void setConfig(org.apache.http.client.config.RequestConfig)",
+                "org.apache.http.client.methods.HttpTrace:void <init>(java.lang.String)",
+                "org.apache.http.client.config.RequestConfig:void <clinit>()",
+                "org.apache.http.client.methods.AbstractExecutionAwareRequest:java.lang.Object clone()",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig$Builder setConnectTimeout(int)",
+                "org.apache.http.client.config.RequestConfig$Builder:org.apache.http.client.config.RequestConfig build()",
+                "org.apache.http.impl.client.BasicCookieStore:void <init>()",
+                "org.apache.http.client.methods.HttpPut:void <init>(java.lang.String)",
+                "org.apache.http.client.methods.HttpDelete:void <init>(java.lang.String)",
+                "org.apache.http.conn.routing.RouteTracker:java.lang.Object clone()",
+                "org.apache.http.conn.ssl.TrustSelfSignedStrategy:void <init>()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest)"
+                ]
+            }
+        }
+    }
+}

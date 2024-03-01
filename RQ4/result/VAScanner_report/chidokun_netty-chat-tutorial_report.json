@@ -1,0 +1,101 @@
+{
+    "project name": "chidokun_netty-chat-tutorial",
+    "vulnerable dependencies": {
+        "io.netty:netty-all:4.1.10.Final": {
+            "used-method num": 62,
+            "used method": [
+                "io.netty.channel.nio.SelectedSelectionKeySet:boolean add(java.lang.Object)",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.Channel channel()",
+                "io.netty.bootstrap.Bootstrap:void <clinit>()",
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                "io.netty.channel.ChannelOption:void <clinit>()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap clone()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap group(io.netty.channel.EventLoopGroup,io.netty.channel.EventLoopGroup)",
+                "io.netty.bootstrap.ServerBootstrap:void <init>()",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise await()",
+                "io.netty.channel.ChannelInitializer:void <clinit>()",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.Channel channel()",
+                "io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender:void <init>()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture await()",
+                "io.netty.bootstrap.ServerBootstrap:void <clinit>()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap handler(io.netty.channel.ChannelHandler)",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childOption(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.util.concurrent.AbstractEventExecutor:void <clinit>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.channel.group.DefaultChannelGroup:io.netty.channel.Channel find(io.netty.channel.ChannelId)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap option(io.netty.channel.ChannelOption,java.lang.Object)",
+                "io.netty.channel.SucceededChannelFuture:boolean isSuccess()",
+                "io.netty.bootstrap.Bootstrap:void <init>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext flush()",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise await()",
+                "io.netty.channel.group.DefaultChannelGroup:boolean remove(java.lang.Object)",
+                "io.netty.channel.group.DefaultChannelGroup:java.util.Iterator iterator()",
+                "io.netty.channel.DefaultChannelProgressivePromise:io.netty.channel.ChannelProgressivePromise sync()",
+                "io.netty.util.concurrent.DefaultEventExecutorGroup:void <init>(int)",
+                "io.netty.channel.group.DefaultChannelGroup:void <init>(io.netty.util.concurrent.EventExecutor)",
+                "io.netty.util.concurrent.DefaultPromise:boolean isSuccess()",
+                "io.netty.channel.MultithreadEventLoopGroup:void <clinit>()",
+                "io.netty.util.AbstractConstant:void <clinit>()",
+                "io.netty.bootstrap.Bootstrap:io.netty.bootstrap.Bootstrap clone()",
+                "io.netty.channel.nio.SelectedSelectionKeySet:java.util.Iterator iterator()",
+                "io.netty.util.concurrent.GlobalEventExecutor:void <clinit>()",
+                "io.netty.channel.group.DefaultChannelGroup:void <clinit>()",
+                "io.netty.handler.codec.ByteToMessageDecoder:void <clinit>()",
+                "io.netty.channel.FailedChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap channel(java.lang.Class)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.Channel channel()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.bootstrap.AbstractBootstrap group(io.netty.channel.EventLoopGroup)",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise sync()",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:io.netty.buffer.ByteBuf next()",
+                "io.netty.channel.ChannelInitializer:void <init>()",
+                "io.netty.util.concurrent.AbstractScheduledEventExecutor:void <clinit>()",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.ChannelFuture sync()",
+                "io.netty.handler.codec.protobuf.ProtobufDecoder:void <clinit>()",
+                "io.netty.channel.group.DefaultChannelGroup:boolean contains(java.lang.Object)",
+                "io.netty.channel.DefaultChannelPromise:io.netty.channel.ChannelPromise await()",
+                "io.netty.channel.group.DefaultChannelGroup:boolean add(java.lang.Object)",
+                "io.netty.handler.codec.CodecOutputList:java.lang.Object get(int)",
+                "io.netty.channel.CompleteChannelFuture:io.netty.channel.Channel channel()",
+                "io.netty.handler.codec.protobuf.ProtobufDecoder:void <init>(com.google.protobuf.MessageLite)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)",
+                "io.netty.channel.VoidChannelPromise:io.netty.channel.VoidChannelPromise sync()",
+                "io.netty.bootstrap.ServerBootstrap:io.netty.bootstrap.ServerBootstrap childHandler(io.netty.channel.ChannelHandler)",
+                "io.netty.channel.SimpleChannelInboundHandler:void <init>()",
+                "io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder:void <init>()",
+                "io.netty.handler.codec.protobuf.ProtobufEncoder:void <init>()",
+                "io.netty.buffer.CompositeByteBuf$CompositeByteBufIterator:boolean hasNext()"
+            ],
+            "CVE": [
+                "CVE-2019-16869"
+            ],
+            "used vul-method": [
+                "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext flush()",
+                "io.netty.util.concurrent.DefaultEventExecutorGroup:void <init>(int)",
+                "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)"
+            ],
+            "vul-called frequency": 18,
+            "related vul root method": {
+                "CVE-2019-16869": [
+                    "io.netty.handler.codec.http.HttpObjectDecoder:void splitHeader(io.netty.util.internal.AppendableCharSequence)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2019-16869": [
+                    "io.netty.bootstrap.Bootstrap:io.netty.channel.ChannelFuture connect(java.lang.String,int)",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture close()",
+                    "io.netty.bootstrap.AbstractBootstrap:io.netty.channel.ChannelFuture bind(int)",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelHandlerContext flush()",
+                    "io.netty.util.concurrent.DefaultEventExecutorGroup:void <init>(int)",
+                    "io.netty.channel.nio.NioEventLoopGroup:void <init>()",
+                    "io.netty.channel.AbstractChannelHandlerContext:io.netty.channel.ChannelFuture writeAndFlush(java.lang.Object)"
+                ]
+            }
+        }
+    }
+}

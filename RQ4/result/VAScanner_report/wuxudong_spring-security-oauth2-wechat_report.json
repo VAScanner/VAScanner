@@ -1,0 +1,27 @@
+{
+    "project name": "wuxudong_spring-security-oauth2-wechat",
+    "vulnerable dependencies": {
+        "org.springframework.security.oauth:spring-security-oauth2:2.0.12.RELEASE": {
+            "used-method num": 17,
+            "used method": [
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.lang.String getValue()",
+                "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails:void <init>()",
+                "org.springframework.security.oauth2.common.DefaultOAuth2AccessToken:java.util.Map getAdditionalInformation()",
+                "org.springframework.security.oauth2.client.resource.UserRedirectRequiredException:java.lang.String getStateKey()",
+                "org.springframework.security.oauth2.client.resource.BaseOAuth2ProtectedResourceDetails:java.lang.String getClientId()",
+                "org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest:java.util.List remove(java.lang.Object)",
+                "org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest:java.lang.Object put(java.lang.Object,java.lang.Object)",
+                "org.springframework.security.oauth2.client.OAuth2RestTemplate:void <init>(org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails,org.springframework.security.oauth2.client.OAuth2ClientContext)",
+                "org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest:java.util.List get(java.lang.Object)",
+                "org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeAccessTokenProvider:void <init>()",
+                "org.springframework.security.oauth2.client.resource.UserRedirectRequiredException:java.util.Map getRequestParams()",
+                "org.springframework.security.oauth2.client.token.OAuth2AccessTokenSupport:void <clinit>()",
+                "org.springframework.security.oauth2.client.token.OAuth2AccessTokenSupport:void setMessageConverters(java.util.List)",
+                "org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter:void <init>(java.lang.String)",
+                "org.springframework.security.oauth2.client.resource.UserRedirectRequiredException:java.lang.String getRedirectUri()",
+                "org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter:void <init>()",
+                "org.springframework.security.oauth2.client.OAuth2RestTemplate:void setAccessTokenProvider(org.springframework.security.oauth2.client.token.AccessTokenProvider)"
+            ]
+        }
+    }
+}

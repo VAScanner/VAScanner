@@ -1,0 +1,18 @@
+{
+    "project name": "davidkiss_spring-boot-quartz-demo",
+    "vulnerable dependencies": {
+        "org.quartz-scheduler:quartz:2.2.1": {
+            "used-method num": 8,
+            "used method": [
+                "org.quartz.impl.StdScheduler:void setJobFactory(org.quartz.spi.JobFactory)",
+                "org.quartz.impl.RemoteScheduler:void setJobFactory(org.quartz.spi.JobFactory)",
+                "org.quartz.impl.StdScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.impl.RemoteScheduler:java.util.Date scheduleJob(org.quartz.JobDetail,org.quartz.Trigger)",
+                "org.quartz.utils.DirtyFlagMap:java.lang.Object get(java.lang.Object)",
+                "org.quartz.impl.triggers.AbstractTrigger:org.quartz.JobDataMap getJobDataMap()",
+                "org.quartz.impl.StdScheduler:void start()",
+                "org.quartz.impl.RemoteScheduler:void start()"
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "project name": "yangliu0_DistributedLock",
+    "vulnerable dependencies": {
+        "org.apache.zookeeper:zookeeper:3.4.9": {
+            "used-method num": 12,
+            "used method": [
+                "org.apache.zookeeper.ZooKeeper:void delete(java.lang.String,int)",
+                "org.apache.zookeeper.ZooKeeper:org.apache.zookeeper.data.Stat exists(java.lang.String,boolean)",
+                "org.apache.zookeeper.ClientCnxn$EventThread:void run()",
+                "org.apache.zookeeper.ZooKeeper:java.lang.String create(java.lang.String,byte[],java.util.List,org.apache.zookeeper.CreateMode)",
+                "org.apache.zookeeper.Shell$1:void run()",
+                "org.apache.zookeeper.ClientCnxn$SendThread:void run()",
+                "org.apache.zookeeper.ZooKeeper:void <init>(java.lang.String,int,org.apache.zookeeper.Watcher)",
+                "org.apache.zookeeper.ZooKeeper:void close()",
+                "org.apache.zookeeper.ZooDefs$Ids:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:void <clinit>()",
+                "org.apache.zookeeper.ZooKeeper:java.util.List getChildren(java.lang.String,boolean)",
+                "org.apache.zookeeper.CreateMode:void <clinit>()"
+            ]
+        }
+    }
+}

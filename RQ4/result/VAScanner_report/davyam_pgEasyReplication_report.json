@@ -1,0 +1,47 @@
+{
+    "project name": "davyam_pgEasyReplication",
+    "vulnerable dependencies": {
+        "org.postgresql:postgresql:42.2.9": {
+            "used-method num": 37,
+            "used method": [
+                "org.postgresql.jdbc.PgStatement:boolean execute(java.lang.String)",
+                "org.postgresql.replication.fluent.logical.LogicalStreamBuilder:org.postgresql.replication.fluent.logical.ChainedLogicalStreamBuilder withSlotOption(java.lang.String,java.lang.String)",
+                "org.postgresql.replication.PGReplicationConnectionImpl:org.postgresql.replication.fluent.ChainedStreamBuilder replicationStream()",
+                "org.postgresql.jdbc.PgConnection:void close()",
+                "org.postgresql.jdbc.PgResultSet:java.lang.String getString(int)",
+                "org.postgresql.jdbc.PgConnection:org.postgresql.replication.PGReplicationConnection getReplicationAPI()",
+                "org.postgresql.PGProperty:void <clinit>()",
+                "org.postgresql.jdbc.PgResultSet:boolean next()",
+                "org.postgresql.jdbc.PgPreparedStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                "org.postgresql.replication.fluent.logical.LogicalStreamBuilder:org.postgresql.replication.PGReplicationStream start()",
+                "org.postgresql.jdbc.PgConnection:java.sql.Statement createStatement(int,int)",
+                "org.postgresql.replication.fluent.logical.LogicalCreateSlotBuilder:org.postgresql.replication.fluent.logical.ChainedLogicalCreateSlotBuilder withOutputPlugin(java.lang.String)",
+                "org.postgresql.jdbc.PgPreparedStatement:void setString(int,java.lang.String)",
+                "org.postgresql.PGProperty:void set(java.util.Properties,java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:java.sql.Statement createStatement()",
+                "org.postgresql.jdbc.PgResultSet:void close()",
+                "org.postgresql.jdbc.PgResultSet:int getInt(int)",
+                "org.postgresql.replication.LogSequenceNumber:long asLong()",
+                "org.postgresql.jdbc.PgPreparedStatement:boolean execute(java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:java.sql.PreparedStatement prepareStatement(java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:org.postgresql.copy.CopyManager getCopyAPI()",
+                "org.postgresql.replication.PGReplicationConnectionImpl:org.postgresql.replication.fluent.ChainedCreateReplicationSlotBuilder createReplicationSlot()",
+                "org.postgresql.replication.fluent.logical.LogicalStreamBuilder:org.postgresql.replication.fluent.logical.ChainedLogicalStreamBuilder withStartPosition(org.postgresql.replication.LogSequenceNumber)",
+                "org.postgresql.replication.fluent.ReplicationStreamBuilder:org.postgresql.replication.fluent.logical.ChainedLogicalStreamBuilder logical()",
+                "org.postgresql.replication.PGReplicationConnectionImpl:void dropReplicationSlot(java.lang.String)",
+                "org.postgresql.jdbc.PgStatement:void close()",
+                "org.postgresql.jdbc.PgConnection:java.lang.Object unwrap(java.lang.Class)",
+                "org.postgresql.replication.LogSequenceNumber:org.postgresql.replication.LogSequenceNumber valueOf(long)",
+                "org.postgresql.replication.LogSequenceNumber:void <clinit>()",
+                "org.postgresql.replication.fluent.ReplicationCreateSlotBuilder:org.postgresql.replication.fluent.logical.ChainedLogicalCreateSlotBuilder logical()",
+                "org.postgresql.copy.CopyManager:long copyOut(java.lang.String,java.io.OutputStream)",
+                "org.postgresql.core.v3.replication.V3PGReplicationStream:java.nio.ByteBuffer readPending()",
+                "org.postgresql.Driver:void <clinit>()",
+                "org.postgresql.jdbc.PgStatement:java.sql.ResultSet executeQuery(java.lang.String)",
+                "org.postgresql.jdbc.PgConnection:void setAutoCommit(boolean)",
+                "org.postgresql.jdbc.PgPreparedStatement:java.sql.ResultSet executeQuery()",
+                "org.postgresql.replication.fluent.logical.LogicalCreateSlotBuilder:org.postgresql.replication.ReplicationSlotInfo make()"
+            ]
+        }
+    }
+}

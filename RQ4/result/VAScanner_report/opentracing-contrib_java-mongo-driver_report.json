@@ -1,0 +1,112 @@
+{
+    "project name": "opentracing-contrib_java-mongo-driver",
+    "modules": {
+        "io.opentracing.contrib:opentracing-mongo-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.12": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.mongodb:mongo-java-driver:3.12.1": {
+                    "used-method num": 47,
+                    "used method": [
+                        "com.mongodb.MongoClient:void <init>(com.mongodb.ServerAddress,java.util.List,com.mongodb.MongoClientOptions,com.mongodb.MongoDriverInformation)",
+                        "com.mongodb.MongoClient:void <init>(java.util.List,com.mongodb.MongoClientOptions)",
+                        "com.mongodb.MongoClientOptions$Builder:com.mongodb.MongoClientOptions build()",
+                        "com.mongodb.ServerAddress:void <init>()",
+                        "org.bson.RawBsonArray$RawBsonArrayList$Itr:boolean hasNext()",
+                        "com.mongodb.MongoClientURI:com.mongodb.MongoCredential getCredentials()",
+                        "com.mongodb.MongoClient:void <init>(com.mongodb.ServerAddress,com.mongodb.MongoClientOptions)",
+                        "com.mongodb.MongoClientURI:com.mongodb.MongoClientOptions getOptions()",
+                        "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:boolean hasNext()",
+                        "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                        "com.mongodb.MongoClient:void <init>(java.util.List,java.util.List,com.mongodb.MongoClientOptions)",
+                        "com.mongodb.operation.BsonArrayWrapper:java.util.Iterator iterator()",
+                        "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                        "org.bson.types.StringRangeSet$1:java.lang.String next()",
+                        "com.mongodb.MongoClient:void <init>(java.util.List,com.mongodb.MongoCredential,com.mongodb.MongoClientOptions)",
+                        "com.mongodb.internal.connection.ConcurrentLinkedDeque$CLDIterator:java.lang.Object next()",
+                        "org.bson.RawBsonArray$RawBsonArrayList$Itr:org.bson.BsonValue next()",
+                        "org.bson.BsonArray:java.util.Iterator iterator()",
+                        "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                        "com.mongodb.MongoClient:void <init>(com.mongodb.ServerAddress,java.util.List,com.mongodb.MongoClientOptions)",
+                        "com.mongodb.MongoClientOptions:void <clinit>()",
+                        "com.mongodb.MongoClient:void <init>(com.mongodb.ServerAddress,com.mongodb.MongoCredential,com.mongodb.MongoClientOptions)",
+                        "org.bson.BsonDocumentReader$BsonDocumentMarkableIterator:java.lang.Object next()",
+                        "com.mongodb.MongoClientOptions:com.mongodb.MongoClientOptions$Builder builder(com.mongodb.MongoClientOptions)",
+                        "com.mongodb.MongoClient:void <init>(java.util.List,com.mongodb.MongoCredential,com.mongodb.MongoClientOptions,com.mongodb.MongoDriverInformation)",
+                        "com.mongodb.ServerAddress:void <init>(java.lang.String)",
+                        "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                        "com.mongodb.client.internal.MongoBatchCursorAdapter:boolean hasNext()",
+                        "com.mongodb.DBCursor:com.mongodb.DBObject next()",
+                        "org.bson.types.StringRangeSet$1:boolean hasNext()",
+                        "com.mongodb.MongoClientURI:java.util.List getHosts()",
+                        "com.mongodb.internal.connection.ConcurrentLinkedDeque$CLDIterator:boolean hasNext()",
+                        "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                        "com.mongodb.DBCursor:boolean hasNext()",
+                        "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                        "com.mongodb.MongoCursorAdapter:boolean hasNext()",
+                        "com.mongodb.MongoClientOptions$Builder:com.mongodb.MongoClientOptions$Builder addCommandListener(com.mongodb.event.CommandListener)",
+                        "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                        "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                        "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                        "com.mongodb.MongoClientOptions$Builder:void <init>()",
+                        "com.mongodb.ServerAddress:void <init>(java.lang.String,int)",
+                        "org.bson.RawBsonArray$RawBsonArrayList:java.util.Iterator iterator()",
+                        "com.mongodb.client.internal.MongoBatchCursorAdapter:java.lang.Object next()",
+                        "com.mongodb.MongoCursorAdapter:com.mongodb.DBObject next()",
+                        "com.mongodb.MongoClient:void <init>(java.util.List,java.util.List,com.mongodb.MongoClientOptions,com.mongodb.MongoDriverInformation)",
+                        "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()"
+                    ],
+                    "CVE": [
+                        "CVE-2021-20328"
+                    ],
+                    "used vul-method": [
+                        "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                        "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                        "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                        "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                        "com.mongodb.client.internal.MongoBatchCursorAdapter:boolean hasNext()",
+                        "com.mongodb.DBCursor:com.mongodb.DBObject next()",
+                        "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                        "com.mongodb.DBCursor:boolean hasNext()",
+                        "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                        "com.mongodb.MongoCursorAdapter:boolean hasNext()",
+                        "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                        "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                        "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                        "com.mongodb.client.internal.MongoBatchCursorAdapter:java.lang.Object next()",
+                        "com.mongodb.MongoCursorAdapter:com.mongodb.DBObject next()",
+                        "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()"
+                    ],
+                    "vul-called frequency": 16,
+                    "related vul root method": {
+                        "CVE-2021-20328": [
+                            "com.mongodb.client.internal.KeyManagementService:java.io.InputStream stream(java.lang.String,java.nio.ByteBuffer)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2021-20328": [
+                            "com.mongodb.client.internal.MongoMappingCursor:boolean hasNext()",
+                            "com.mongodb.operation.QueryBatchCursor:boolean hasNext()",
+                            "com.mongodb.operation.ChangeStreamBatchCursor:boolean hasNext()",
+                            "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:boolean hasNext()",
+                            "com.mongodb.client.internal.MongoBatchCursorAdapter:boolean hasNext()",
+                            "com.mongodb.DBCursor:com.mongodb.DBObject next()",
+                            "com.mongodb.operation.ChangeStreamBatchCursor:java.util.List next()",
+                            "com.mongodb.DBCursor:boolean hasNext()",
+                            "com.mongodb.client.internal.MongoChangeStreamCursorImpl:java.lang.Object next()",
+                            "com.mongodb.MongoCursorAdapter:boolean hasNext()",
+                            "com.mongodb.operation.ListCollectionsOperation$ProjectingBatchCursor:java.util.List next()",
+                            "com.mongodb.client.internal.MongoMappingCursor:java.lang.Object next()",
+                            "com.mongodb.operation.QueryBatchCursor:java.util.List next()",
+                            "com.mongodb.client.internal.MongoBatchCursorAdapter:java.lang.Object next()",
+                            "com.mongodb.MongoCursorAdapter:com.mongodb.DBObject next()",
+                            "com.mongodb.client.internal.MongoChangeStreamCursorImpl:boolean hasNext()"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "project name": "jshiftio_jshift-kit",
+    "modules": {
+        "io.jshift:jshift-kit-parent": {
+            "vulnerable dependencies": {
+                "junit:junit:4.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.codehaus.plexus:plexus-archiver:3.5": {
+                    "used-method num": 3,
+                    "used method": [
+                        "org.codehaus.plexus.archiver.tar.TarLongFileMode:void <clinit>()",
+                        "org.codehaus.plexus.archiver.tar.TarArchiver$TarCompressionMethod:void <clinit>()",
+                        "org.codehaus.plexus.archiver.zip.ByteArrayOutputStream:java.lang.String toString()"
+                    ]
+                }
+            }
+        }
+    }
+}

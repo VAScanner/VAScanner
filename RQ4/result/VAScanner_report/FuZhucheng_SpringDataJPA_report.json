@@ -1,0 +1,47 @@
+{
+    "project name": "FuZhucheng_SpringDataJPA",
+    "vulnerable dependencies": {
+        "org.springframework:spring-web:4.0.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:4.0.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-expression:4.0.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-core:4.0.4.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.util.DigestUtils:java.lang.String md5DigestAsHex(byte[])"
+            ]
+        },
+        "org.hibernate:hibernate-core:4.2.6.Final": {
+            "used-method num": 7,
+            "used method": [
+                "org.hibernate.event.internal.EventCache:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.collection.internal.PersistentMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.internal.util.collections.ConcurrentReferenceHashMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.dialect.MySQL5InnoDBDialect:void <init>()",
+                "org.hibernate.internal.util.collections.BoundedConcurrentHashMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.internal.util.collections.IdentityMap:java.lang.Object get(java.lang.Object)",
+                "org.hibernate.mapping.Column:org.hibernate.mapping.Column clone()"
+            ]
+        },
+        "commons-fileupload:commons-fileupload:1.3.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "commons-beanutils:commons-beanutils:1.9.1": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "junit:junit:4.12": {
+            "used-method num": 0,
+            "used method": []
+        }
+    }
+}

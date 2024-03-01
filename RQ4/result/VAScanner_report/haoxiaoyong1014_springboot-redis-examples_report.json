@@ -1,0 +1,49 @@
+{
+    "project name": "haoxiaoyong1014_springboot-redis-examples",
+    "modules": {
+        "com.haoxy.redis:springboot-redis-examples": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "com.alibaba:fastjson:1.2.56": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        },
+        "org.springframework.boot:spring-boot-starter-parent": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.11": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "com.alibaba:fastjson:1.2.56": {
+                    "used-method num": 2,
+                    "used method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)",
+                        "com.alibaba.fastjson.JSON:void <clinit>()"
+                    ],
+                    "CVE": [
+                        "CVE-2022-25845"
+                    ],
+                    "used vul-method": [
+                        "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                    ],
+                    "vul-called frequency": 1,
+                    "related vul root method": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.parser.ParserConfig:java.lang.Class checkAutoType(java.lang.String,java.lang.Class,int)"
+                        ]
+                    },
+                    "CVE-API": {
+                        "CVE-2022-25845": [
+                            "com.alibaba.fastjson.JSON:java.lang.String toJSONString(java.lang.Object)"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

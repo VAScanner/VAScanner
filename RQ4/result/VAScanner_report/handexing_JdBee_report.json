@@ -1,0 +1,62 @@
+{
+    "project name": "handexing_JdBee",
+    "vulnerable dependencies": {
+        "org.springframework:spring-core:3.2.4.RELEASE": {
+            "used-method num": 1,
+            "used method": [
+                "org.springframework.util.LinkedCaseInsensitiveMap:java.lang.Object put(java.lang.Object,java.lang.Object)"
+            ]
+        },
+        "org.springframework:spring-web:3.2.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-oxm:3.2.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.springframework:spring-webmvc:3.2.4.RELEASE": {
+            "used-method num": 0,
+            "used method": []
+        },
+        "org.apache.httpcomponents:httpclient:4.5.2": {
+            "used-method num": 17,
+            "used method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)",
+                "org.apache.http.client.protocol.HttpClientContext:void <init>()",
+                "org.apache.http.conn.EofSensorInputStream:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:org.apache.http.HttpEntity getEntity()",
+                "org.apache.http.impl.conn.LoggingInputStream:void close()",
+                "org.apache.http.impl.execchain.HttpResponseProxy:void close()",
+                "org.apache.http.impl.client.RedirectLocations:java.net.URI get(int)",
+                "org.apache.http.impl.execchain.RequestEntityProxy:org.apache.http.Header getContentType()",
+                "org.apache.http.client.entity.UrlEncodedFormEntity:void <init>(java.util.List,java.lang.String)",
+                "org.apache.http.client.methods.HttpPost:void <init>(java.lang.String)",
+                "org.apache.http.impl.client.RedirectLocations:int size()",
+                "org.apache.http.client.entity.LazyDecompressingInputStream:void close()",
+                "org.apache.http.client.entity.DeflateInputStream:void close()",
+                "org.apache.http.client.methods.HttpEntityEnclosingRequestBase:void setEntity(org.apache.http.HttpEntity)",
+                "org.apache.http.client.methods.HttpGet:void <init>(java.lang.String)",
+                "org.apache.http.client.entity.DeflateInputStream$DeflateStream:void close()",
+                "org.apache.http.impl.client.HttpClients:org.apache.http.impl.client.CloseableHttpClient createDefault()"
+            ],
+            "CVE": [
+                "CVE-2020-13956"
+            ],
+            "used vul-method": [
+                "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)"
+            ],
+            "vul-called frequency": 2,
+            "related vul root method": {
+                "CVE-2020-13956": [
+                    "org.apache.http.client.utils.URIUtils:org.apache.http.HttpHost extractHost(java.net.URI)"
+                ]
+            },
+            "CVE-API": {
+                "CVE-2020-13956": [
+                    "org.apache.http.impl.client.CloseableHttpClient:org.apache.http.client.methods.CloseableHttpResponse execute(org.apache.http.client.methods.HttpUriRequest,org.apache.http.protocol.HttpContext)"
+                ]
+            }
+        }
+    }
+}

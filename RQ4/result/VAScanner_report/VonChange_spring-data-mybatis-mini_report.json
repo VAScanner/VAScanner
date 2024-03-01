@@ -1,0 +1,48 @@
+{
+    "project name": "VonChange_spring-data-mybatis-mini",
+    "modules": {
+        "com.vonchange.common:mybatis-mini-parant": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.16": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.data:spring-data-commons:1.13.1.RELEASE": {
+                    "used-method num": 18,
+                    "used method": [
+                        "org.springframework.data.repository.query.Parameter:java.lang.Class getType()",
+                        "org.springframework.data.repository.query.Parameters:int getPageableIndex()",
+                        "org.springframework.data.repository.query.Parameter:int getIndex()",
+                        "org.springframework.data.repository.query.QueryMethod:boolean isPageQuery()",
+                        "org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupport:void <init>()",
+                        "org.springframework.data.repository.query.Parameters:org.springframework.data.repository.query.Parameters getBindableParameters()",
+                        "org.springframework.data.repository.core.support.TransactionalRepositoryFactoryBeanSupport:void <init>(java.lang.Class)",
+                        "org.springframework.data.repository.query.QueryMethod:boolean isStreamQuery()",
+                        "org.springframework.data.repository.query.QueryMethod:boolean isCollectionQuery()",
+                        "org.springframework.data.auditing.config.AuditingBeanDefinitionRegistrarSupport:void <init>()",
+                        "org.springframework.data.repository.core.support.RepositoryFactorySupport:void <init>()",
+                        "org.springframework.data.repository.query.Parameters:org.springframework.data.repository.query.Parameter getParameter(int)",
+                        "org.springframework.data.util.TypeDiscoverer$SyntheticParamterizedType:java.lang.reflect.Type[] getActualTypeArguments()",
+                        "org.springframework.data.repository.query.QueryMethod:java.lang.Class getReturnedObjectType()",
+                        "org.springframework.data.repository.query.QueryMethod:void <init>(java.lang.reflect.Method,org.springframework.data.repository.core.RepositoryMetadata,org.springframework.data.projection.ProjectionFactory)",
+                        "org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport:void <init>()",
+                        "org.springframework.data.repository.core.support.RepositoryFactorySupport:void <clinit>()",
+                        "org.springframework.data.repository.query.QueryLookupStrategy$Key:void <clinit>()"
+                    ]
+                }
+            }
+        },
+        "org.springframework.boot:spring-boot-starter-parent": {
+            "vulnerable dependencies": {
+                "mysql:mysql-connector-java:8.0.16": {
+                    "used-method num": 0,
+                    "used method": []
+                },
+                "org.springframework.data:spring-data-commons:1.13.1.RELEASE": {
+                    "used-method num": 0,
+                    "used method": []
+                }
+            }
+        }
+    }
+}
